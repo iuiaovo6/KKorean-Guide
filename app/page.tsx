@@ -72,7 +72,7 @@ export default function Home() {
     <main className="app-shell">
       <aside className="sidebar">
         <button className="brand" onClick={() => setActiveTab("today")} aria-label="返回今日学习">
-          <span className="brand-mark">T</span>
+          <span className="brand-mark">🩵</span>
           <span>Talk Guide</span>
         </button>
 
@@ -95,7 +95,7 @@ export default function Home() {
 
       <section className="main-panel">
         <header className="topbar">
-          <div className="mobile-brand"><span className="brand-mark">T</span><strong>Talk Guide</strong></div>
+          <div className="mobile-brand"><span className="brand-mark">🩵</span><strong>Talk Guide</strong></div>
           <label className="search-box">
             <span>⌕</span>
             <input
