@@ -14,6 +14,8 @@ type StudyWord = {
   example: string;
   translation: string;
 };
+type MemoryRating = "again" | "hard" | "good" | "easy";
+type StudyQueueItem = { word: StudyWord; repeat: boolean };
 type ImportWord = {
   korean: string;
   meaning_zh: string;
@@ -47,6 +49,7 @@ export default function Home() {
   const [studyOpen, setStudyOpen] = useState(false);
   const [step, setStep] = useState<StudyStep>("preview");
   const [wordIndex, setWordIndex] = useState(0);
+  const [studyQueue, setStudyQueue] = useState<StudyQueueItem[]>([]);
   const [selected, setSelected] = useState<string | null>(null);
   const [dailyWords, setDailyWords] = useState(10);
   const [spelling, setSpelling] = useState(false);
@@ -60,11 +63,12 @@ export default function Home() {
   const [authMessage, setAuthMessage] = useState("");
   const [authLoading, setAuthLoading] = useState(false);
   const [studyWords, setStudyWords] = useState<StudyWord[]>(fallbackWords);
+  const [todayWords, setTodayWords] = useState<StudyWord[]>(fallbackWords);
   const [dataMessage, setDataMessage] = useState("登录后读取真实学习数据");
   const [isAdmin, setIsAdmin] = useState(false);
   const [dataVersion, setDataVersion] = useState(0);
 
-  const current = studyWords[wordIndex] ?? fallbackWords[0];
+  const current = studyQueue[wordIndex]?.word ?? studyWords[0] ?? fallbackWords[0];
   const filteredBooks = useMemo(
     () => sceneBooks.filter((book) => book.title.includes(search) || book.desc.includes(search)),
     [search],
@@ -81,13 +85,14 @@ export default function Home() {
   useEffect(() => {
     if (!user) {
       setStudyWords(fallbackWords);
+      setTodayWords(fallbackWords);
       setDataMessage("登录后读取真实学习数据");
       setIsAdmin(false);
       return;
     }
 
     async function loadLearningData() {
-      const [wordsResult, profileResult] = await Promise.all([
+      const [wordsResult, profileResult, progressResult] = await Promise.all([
         supabase
           .from("words")
           .select("id, korean, meaning_zh, part_of_speech, example_ko, example_zh")
@@ -98,6 +103,10 @@ export default function Home() {
           .select("daily_new_words, spelling_enabled, is_admin")
           .eq("id", user.id)
           .single(),
+        supabase
+          .from("user_word_progress")
+          .select("word_id, next_review_at, review_count")
+          .eq("user_id", user.id),
       ]);
 
       if (wordsResult.error) {
@@ -116,7 +125,18 @@ export default function Home() {
 
       if (loadedWords.length > 0) {
         setStudyWords(loadedWords);
-        setDataMessage(`已读取 ${loadedWords.length} 个真实单词`);
+        const progress = new Map((progressResult.data ?? []).map((item) => [item.word_id, item]));
+        const dueWords = loadedWords.filter((word) => {
+          const record = progress.get(word.id);
+          return record && new Date(record.next_review_at).getTime() <= Date.now();
+        });
+        const newLimit = profileResult.data?.daily_new_words ?? dailyWords;
+        const newWords = loadedWords.filter((word) => !progress.has(word.id)).slice(0, newLimit);
+        const plannedWords = [...dueWords, ...newWords.filter((word) => !dueWords.some((due) => due.id === word.id))];
+        setTodayWords(plannedWords);
+        setDataMessage(plannedWords.length > 0
+          ? `今天有 ${dueWords.length} 个复习词和 ${newWords.length} 个新词`
+          : "今天的任务完成了，可以去场景区看看");
       }
 
       if (profileResult.data) {
@@ -182,23 +202,33 @@ export default function Home() {
       return;
     }
     setWordIndex(0);
+    const plannedWords = todayWords.length > 0 ? todayWords : studyWords.slice(0, dailyWords);
+    setStudyQueue(plannedWords.map((word) => ({ word, repeat: false })));
     setStep("preview");
     setSelected(null);
     setStudyOpen(true);
   }
 
-  async function saveProgress(word: StudyWord) {
+  async function saveProgress(word: StudyWord, rating: MemoryRating) {
     if (!user || word.id < 0) return;
-    const tomorrow = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
+    const intervalDays = rating === "again" ? 0 : rating === "hard" ? 1 : rating === "good" ? 3 : 7;
+    const nextReviewAt = new Date(Date.now() + intervalDays * 24 * 60 * 60 * 1000).toISOString();
+    const level = rating === "again" ? 0 : rating === "hard" ? 1 : rating === "good" ? 2 : 3;
+    const { data: previous } = await supabase
+      .from("user_word_progress")
+      .select("review_count")
+      .eq("user_id", user.id)
+      .eq("word_id", word.id)
+      .maybeSingle();
     const { error } = await supabase.from("user_word_progress").upsert(
       {
         user_id: user.id,
         word_id: word.id,
-        meaning_level: 1,
-        listening_level: 1,
-        spelling_level: spelling ? 1 : 0,
-        review_count: 1,
-        next_review_at: tomorrow,
+        meaning_level: level,
+        listening_level: level,
+        spelling_level: spelling ? level : 0,
+        review_count: (previous?.review_count ?? 0) + 1,
+        next_review_at: nextReviewAt,
         last_reviewed_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
       },
@@ -252,19 +282,28 @@ export default function Home() {
       ? ["preview", "meaning", "sound", "context", "result"]
       : ["preview", "meaning", "sound", "context", "result"];
     const index = order.indexOf(step);
-    if (step === "result") await saveProgress(current);
-    if (step === "result" && wordIndex < studyWords.length - 1) {
+    setStep(order[index + 1]);
+  }
+
+  async function rateWord(rating: MemoryRating) {
+    await saveProgress(current, rating);
+    const shouldRepeat = rating === "again" || rating === "hard";
+    const nextQueue = shouldRepeat
+      ? [...studyQueue, { word: current, repeat: true }]
+      : studyQueue;
+    if (shouldRepeat) setStudyQueue(nextQueue);
+
+    if (wordIndex < nextQueue.length - 1) {
       setWordIndex((value) => value + 1);
       setStep("preview");
+      setSelected(null);
       return;
     }
-    if (step === "result") {
-      setStudyOpen(false);
-      setToast("本组学习完成，稍后会再次遇见这些词");
-      window.setTimeout(() => setToast(""), 2800);
-      return;
-    }
-    setStep(order[index + 1]);
+
+    setStudyOpen(false);
+    setDataVersion((value) => value + 1);
+    setToast("本组完成。系统已经排好下一次复习");
+    window.setTimeout(() => setToast(""), 2800);
   }
 
   return (
@@ -496,15 +535,24 @@ export default function Home() {
           <div className="study-modal">
             <header className="study-header">
               <button onClick={() => setStudyOpen(false)} aria-label="关闭学习">×</button>
-              <div className="study-progress"><i style={{ width: `${((wordIndex + 1) / studyWords.length) * 100}%` }} /></div>
-              <span>{wordIndex + 1} / {studyWords.length}</span>
+              <div className="study-progress"><i style={{ width: `${((wordIndex + 1) / Math.max(studyQueue.length, 1)) * 100}%` }} /></div>
+              <span>{wordIndex + 1} / {studyQueue.length}</span>
             </header>
             <StudyCard step={step} word={current} selected={selected} setSelected={setSelected} onSpeak={speakKorean} />
             <footer className="study-footer">
-              <button className="ghost-button" onClick={() => setToast("这个词会更早再次出现")}>不太记得</button>
-              <button className="primary-button" onClick={nextStudyStep}>
-                {step === "result" ? (wordIndex === studyWords.length - 1 ? "完成本组" : "下一个词") : "继续"} <span>→</span>
-              </button>
+              {step === "result" ? (
+                <div className="rating-grid">
+                  <button onClick={() => void rateWord("again")}><strong>不认识</strong><small>本轮再来</small></button>
+                  <button onClick={() => void rateWord("hard")}><strong>有点模糊</strong><small>本轮再来</small></button>
+                  <button onClick={() => void rateWord("good")}><strong>认识</strong><small>3 天后</small></button>
+                  <button onClick={() => void rateWord("easy")}><strong>太简单</strong><small>7 天后</small></button>
+                </div>
+              ) : (
+                <>
+                  <span className="study-tip">{studyQueue[wordIndex]?.repeat ? "这是本轮再次出现的词" : "按自己的真实记忆作答"}</span>
+                  <button className="primary-button" onClick={nextStudyStep} disabled={(step === "meaning" || step === "sound") && !selected}>继续 <span>→</span></button>
+                </>
+              )}
             </footer>
           </div>
         </div>
@@ -545,7 +593,7 @@ function StudyCard({
       <p className="eyebrow">MEANING · 选择词义</p>
       <h2 className="question-word">{word.korean}</h2>
       <div className="answer-grid">
-        {["期待", word.meaning, "回忆", "应援"].map((answer) => (
+        {Array.from(new Set(["期待", word.meaning, "回忆", "应援"])).map((answer) => (
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
         ))}
       </div>
@@ -557,7 +605,7 @@ function StudyCard({
       <p className="eyebrow">LISTEN · 听音识别</p>
       <button className="big-audio-button" aria-label="播放单词发音" onClick={() => onSpeak(word.korean)}>♬<small>再听一次</small></button>
       <div className="answer-grid compact">
-        {[word.korean, "설레요", "소중하다", "기억하다"].map((answer) => (
+        {Array.from(new Set([word.korean, "설레요", "소중하다", "기억하다"])).map((answer) => (
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
         ))}
       </div>
