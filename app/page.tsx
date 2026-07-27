@@ -152,7 +152,7 @@ export default function Home() {
             <span className="avatar">{user?.email?.slice(0, 1).toUpperCase() ?? "?"}</span>
             <span className="profile-copy">
               <strong>{user ? user.email : "登录以保存进度"}</strong>
-              <small>{user ? "已连接 Supabase · 点击退出" : "注册 / 登录"}</small>
+              <small>{user ? "已登录 · 点击退出" : "注册 / 登录"}</small>
             </span>
             <span>→</span>
           </button>
