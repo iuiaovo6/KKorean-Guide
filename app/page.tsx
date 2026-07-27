@@ -1,6 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import type { User } from "@supabase/supabase-js";
+import { useEffect, useMemo, useState } from "react";
+import { supabase } from "../lib/supabase";
 
 type Tab = "today" | "words" | "scenes" | "talk";
 type StudyStep = "preview" | "meaning" | "sound" | "context" | "result";
@@ -34,12 +36,73 @@ export default function Home() {
   const [spelling, setSpelling] = useState(false);
   const [search, setSearch] = useState("");
   const [toast, setToast] = useState("");
+  const [user, setUser] = useState<User | null>(null);
+  const [authOpen, setAuthOpen] = useState(false);
+  const [authMode, setAuthMode] = useState<"login" | "signup">("login");
+  const [authEmail, setAuthEmail] = useState("");
+  const [authPassword, setAuthPassword] = useState("");
+  const [authMessage, setAuthMessage] = useState("");
+  const [authLoading, setAuthLoading] = useState(false);
 
   const current = words[wordIndex];
   const filteredBooks = useMemo(
     () => sceneBooks.filter((book) => book.title.includes(search) || book.desc.includes(search)),
     [search],
   );
+
+  useEffect(() => {
+    supabase.auth.getUser().then(({ data }) => setUser(data.user));
+    const { data } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+    });
+    return () => data.subscription.unsubscribe();
+  }, []);
+
+  async function submitAuth(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setAuthLoading(true);
+    setAuthMessage("");
+
+    if (authMode === "signup") {
+      const { data, error } = await supabase.auth.signUp({
+        email: authEmail,
+        password: authPassword,
+        options: { emailRedirectTo: window.location.origin },
+      });
+      if (error) {
+        setAuthMessage(error.message);
+      } else if (!data.session) {
+        setAuthMessage("注册成功，请打开邮箱里的确认链接，再回来登录。");
+      } else {
+        setAuthOpen(false);
+        setToast("注册成功，已经登录");
+        window.setTimeout(() => setToast(""), 2500);
+      }
+    } else {
+      const { error } = await supabase.auth.signInWithPassword({
+        email: authEmail,
+        password: authPassword,
+      });
+      if (error) {
+        setAuthMessage(error.message);
+      } else {
+        setAuthOpen(false);
+        setToast("登录成功，欢迎回来");
+        window.setTimeout(() => setToast(""), 2500);
+      }
+    }
+    setAuthLoading(false);
+  }
+
+  async function handleProfileClick() {
+    if (user) {
+      await supabase.auth.signOut();
+      setToast("已经退出登录");
+      window.setTimeout(() => setToast(""), 2200);
+      return;
+    }
+    setAuthOpen(true);
+  }
 
   function startStudy() {
     setWordIndex(0);
@@ -85,10 +148,13 @@ export default function Home() {
 
         <div className="sidebar-bottom">
           <button className="nav-button muted"><span>?</span><span>使用帮助</span></button>
-          <button className="profile-button">
-            <span className="avatar">Y</span>
-            <span className="profile-copy"><strong>오늘도 화이팅</strong><small>初级 · 学习第 6 天</small></span>
-            <span>•••</span>
+          <button className="profile-button" onClick={handleProfileClick}>
+            <span className="avatar">{user?.email?.slice(0, 1).toUpperCase() ?? "?"}</span>
+            <span className="profile-copy">
+              <strong>{user ? user.email : "登录以保存进度"}</strong>
+              <small>{user ? "已连接 Supabase · 点击退出" : "注册 / 登录"}</small>
+            </span>
+            <span>→</span>
           </button>
         </div>
       </aside>
@@ -222,6 +288,60 @@ export default function Home() {
           <NavButton active={activeTab === "talk"} icon="▶" label="Talk" onClick={() => setActiveTab("talk")} />
         </nav>
       </section>
+
+      {authOpen && (
+        <div className="study-overlay" role="dialog" aria-modal="true" aria-label={authMode === "login" ? "登录" : "注册"}>
+          <div className="auth-modal">
+            <button className="auth-close" onClick={() => setAuthOpen(false)} aria-label="关闭">×</button>
+            <span className="brand-mark">🩵</span>
+            <p className="eyebrow">TALK GUIDE ACCOUNT</p>
+            <h2>{authMode === "login" ? "欢迎回来" : "创建学习账号"}</h2>
+            <p className="auth-intro">
+              {authMode === "login"
+                ? "登录后，之后学习的单词和复习进度会与你的账号关联。"
+                : "使用邮箱注册。Supabase 会安全处理密码，我们不会保存明文密码。"}
+            </p>
+            <form onSubmit={submitAuth} className="auth-form">
+              <label>
+                <span>邮箱</span>
+                <input
+                  type="email"
+                  value={authEmail}
+                  onChange={(event) => setAuthEmail(event.target.value)}
+                  placeholder="name@example.com"
+                  required
+                  autoComplete="email"
+                />
+              </label>
+              <label>
+                <span>密码</span>
+                <input
+                  type="password"
+                  value={authPassword}
+                  onChange={(event) => setAuthPassword(event.target.value)}
+                  placeholder="至少 6 位"
+                  minLength={6}
+                  required
+                  autoComplete={authMode === "login" ? "current-password" : "new-password"}
+                />
+              </label>
+              {authMessage && <p className="auth-message">{authMessage}</p>}
+              <button className="primary-button auth-submit" type="submit" disabled={authLoading}>
+                {authLoading ? "请稍候…" : authMode === "login" ? "登录" : "注册"} <span>→</span>
+              </button>
+            </form>
+            <button
+              className="auth-switch"
+              onClick={() => {
+                setAuthMode(authMode === "login" ? "signup" : "login");
+                setAuthMessage("");
+              }}
+            >
+              {authMode === "login" ? "还没有账号？去注册" : "已经有账号？去登录"}
+            </button>
+          </div>
+        </div>
+      )}
 
       {studyOpen && (
         <div className="study-overlay" role="dialog" aria-modal="true" aria-label="单词学习">
