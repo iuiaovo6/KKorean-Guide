@@ -179,6 +179,8 @@ button { color: inherit; }
 .auth-switch { width: 100%; border: 0; background: transparent; color: var(--blue-strong); margin-top: 18px; font-size: 10px; cursor: pointer; }
 .inner-page { padding-top: 58px; }
 .page-title { align-items: center; }
+.page-actions { display: flex; align-items: stretch; gap: 9px; }
+.page-actions .ghost-button { min-height: 43px; }
 .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 28px; }
 .stats-grid > div { background: white; border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: grid; gap: 5px; }
 .stats-grid strong { font-size: 26px; letter-spacing: -.04em; }
@@ -207,6 +209,24 @@ button { color: inherit; }
 .empty-talk > p { max-width: 520px; color: var(--muted); font-size: 11px; line-height: 1.7; }
 .talk-steps { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 22px; }
 .talk-steps span { border: 1px solid var(--line); padding: 10px 13px; border-radius: 8px; font-size: 9px; color: #666b73; }
+.import-card { background: white; border: 1px solid var(--line); border-radius: 18px; padding: 28px; }
+.import-card h1 { margin: 0 0 10px; }
+.import-card > p { color: var(--muted); font-size: 11px; }
+.file-drop { min-height: 150px; border: 1px dashed #add5f3; background: #f6fbff; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center; padding: 22px; cursor: pointer; }
+.file-drop strong { font-size: 15px; }
+.file-drop span { color: var(--muted); font-size: 10px; }
+.file-drop input { max-width: 100%; margin-top: 8px; font-size: 11px; }
+.csv-example { display: grid; gap: 8px; margin-top: 18px; }
+.csv-example strong { font-size: 10px; color: var(--muted); }
+.csv-example code { overflow-x: auto; padding: 12px; border-radius: 9px; background: #f5f6f8; color: #58616d; font-size: 10px; }
+.import-message, .preview-note { color: var(--muted); font-size: 10px; margin: 16px 0; }
+.import-preview { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin-top: 18px; }
+.import-preview-head, .import-preview-row { display: grid; grid-template-columns: 1fr 1.3fr .7fr 1fr; gap: 14px; padding: 13px 16px; align-items: center; }
+.import-preview-head { background: #f8f9fa; color: var(--muted); font-size: 9px; }
+.import-preview-row { border-top: 1px solid var(--line); font-size: 11px; }
+.import-preview-row span { color: var(--muted); }
+.import-submit { margin-top: 4px; }
+.import-submit:disabled { opacity: .6; cursor: wait; }
 
 @media (max-width: 1050px) {
   .scene-grid { grid-template-columns: 1fr 1fr; }
@@ -224,6 +244,9 @@ button { color: inherit; }
   .top-actions .icon-button:last-child { display: none; }
   .content { padding: 32px 18px 45px; }
   .welcome-row, .page-title { align-items: flex-start; gap: 20px; }
+  .page-title { flex-direction: column; }
+  .page-actions { width: 100%; }
+  .page-actions .primary-button { flex: 1; }
   .settings-link { display: none; }
   .study-card { grid-template-columns: 105px 1fr; padding: 20px; min-height: 285px; }
   .card-topline { top: 18px; left: 20px; right: 20px; }
@@ -242,6 +265,8 @@ button { color: inherit; }
   .table-head { display: none; }
   .table-row { grid-template-columns: 1fr 1fr; }
   .table-row span:last-child { display: none; }
+  .import-preview { overflow-x: auto; }
+  .import-preview-head, .import-preview-row { min-width: 620px; }
   .book-card { grid-template-columns: 120px 1fr; }
   .book-cover { min-height: 165px; }
   .learning-card { margin: 10px; padding: 28px 22px; }

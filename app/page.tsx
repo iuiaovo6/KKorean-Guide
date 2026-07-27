@@ -4,7 +4,7 @@ import type { User } from "@supabase/supabase-js";
 import { useEffect, useMemo, useState } from "react";
 import { supabase } from "../lib/supabase";
 
-type Tab = "today" | "words" | "scenes" | "talk";
+type Tab = "today" | "words" | "scenes" | "talk" | "import";
 type StudyStep = "preview" | "meaning" | "sound" | "context" | "result";
 type StudyWord = {
   id: number;
@@ -13,6 +13,14 @@ type StudyWord = {
   type: string;
   example: string;
   translation: string;
+};
+type ImportWord = {
+  korean: string;
+  meaning_zh: string;
+  part_of_speech: string | null;
+  example_ko: string | null;
+  example_zh: string | null;
+  tags: string[];
 };
 
 const fallbackWords: StudyWord[] = [
@@ -53,6 +61,8 @@ export default function Home() {
   const [authLoading, setAuthLoading] = useState(false);
   const [studyWords, setStudyWords] = useState<StudyWord[]>(fallbackWords);
   const [dataMessage, setDataMessage] = useState("登录后读取真实学习数据");
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [dataVersion, setDataVersion] = useState(0);
 
   const current = studyWords[wordIndex] ?? fallbackWords[0];
   const filteredBooks = useMemo(
@@ -72,6 +82,7 @@ export default function Home() {
     if (!user) {
       setStudyWords(fallbackWords);
       setDataMessage("登录后读取真实学习数据");
+      setIsAdmin(false);
       return;
     }
 
@@ -84,7 +95,7 @@ export default function Home() {
           .limit(100),
         supabase
           .from("profiles")
-          .select("daily_new_words, spelling_enabled")
+          .select("daily_new_words, spelling_enabled, is_admin")
           .eq("id", user.id)
           .single(),
       ]);
@@ -111,11 +122,12 @@ export default function Home() {
       if (profileResult.data) {
         setDailyWords(profileResult.data.daily_new_words);
         setSpelling(profileResult.data.spelling_enabled);
+        setIsAdmin(profileResult.data.is_admin ?? false);
       }
     }
 
     void loadLearningData();
-  }, [user]);
+  }, [user, dataVersion]);
 
   async function submitAuth(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -268,6 +280,7 @@ export default function Home() {
           <NavButton active={activeTab === "words"} icon="◫" label="单词本" onClick={() => setActiveTab("words")} />
           <NavButton active={activeTab === "scenes"} icon="◉" label="追星场景" onClick={() => setActiveTab("scenes")} />
           <NavButton active={activeTab === "talk"} icon="▶" label="Talk 听力" badge="BETA" onClick={() => setActiveTab("talk")} />
+          {isAdmin && <NavButton active={activeTab === "import"} icon="＋" label="导入单词" onClick={() => setActiveTab("import")} />}
         </nav>
 
         <div className="sidebar-bottom">
@@ -401,9 +414,20 @@ export default function Home() {
           </div>
         )}
 
-        {activeTab === "words" && <WordsPage startStudy={startStudy} words={studyWords} />}
+        {activeTab === "words" && <WordsPage startStudy={startStudy} words={studyWords} isAdmin={isAdmin} openImport={() => setActiveTab("import")} />}
         {activeTab === "scenes" && <ScenesPage books={search ? filteredBooks : sceneBooks} />}
         {activeTab === "talk" && <TalkPage />}
+        {activeTab === "import" && (
+          <ImportPage
+            allowed={Boolean(user && isAdmin)}
+            onImported={() => {
+              setDataVersion((value) => value + 1);
+              setActiveTab("words");
+              setToast("单词已导入，词库已经刷新");
+              window.setTimeout(() => setToast(""), 2400);
+            }}
+          />
+        )}
 
         <nav className="mobile-nav" aria-label="移动端导航">
           <NavButton active={activeTab === "today"} icon="⌂" label="今日" onClick={() => setActiveTab("today")} />
@@ -560,9 +584,9 @@ function StudyCard({
   );
 }
 
-function WordsPage({ startStudy, words }: { startStudy: () => void; words: StudyWord[] }) {
+function WordsPage({ startStudy, words, isAdmin, openImport }: { startStudy: () => void; words: StudyWord[]; isAdmin: boolean; openImport: () => void }) {
   return <div className="content inner-page">
-    <div className="page-title"><div><p className="eyebrow">MY VOCABULARY</p><h1>我的单词本</h1><p>不是收藏夹，而是一份会主动叫你回来复习的清单。</p></div><button className="primary-button" onClick={startStudy}>开始今日复习 →</button></div>
+    <div className="page-title"><div><p className="eyebrow">MY VOCABULARY</p><h1>我的单词本</h1><p>不是收藏夹，而是一份会主动叫你回来复习的清单。</p></div><div className="page-actions">{isAdmin && <button className="ghost-button" onClick={openImport}>导入 CSV</button>}<button className="primary-button" onClick={startStudy}>开始今日复习 →</button></div></div>
     <div className="stats-grid"><div><strong>{words.length}</strong><span>当前词库</span></div><div><strong>0</strong><span>稳定识别</span></div><div><strong>{words.length}</strong><span>等待初学</span></div><div><strong>—</strong><span>近7日记忆率</span></div></div>
     <div className="word-table">
       <div className="table-head"><span>单词</span><span>词义</span><span>掌握状态</span><span>下次复习</span></div>
@@ -570,6 +594,126 @@ function WordsPage({ startStudy, words }: { startStudy: () => void; words: Study
         <button className="table-row" key={item.id} onClick={startStudy}><strong>{item.korean}</strong><span>{item.meaning}</span><span><i className="status-dot blue" />等待初学</span><span>今天</span></button>
       ))}
     </div>
+  </div>;
+}
+
+function parseCsv(text: string): string[][] {
+  const rows: string[][] = [];
+  let row: string[] = [];
+  let cell = "";
+  let quoted = false;
+  for (let index = 0; index < text.length; index += 1) {
+    const character = text[index];
+    if (character === '"') {
+      if (quoted && text[index + 1] === '"') {
+        cell += '"';
+        index += 1;
+      } else {
+        quoted = !quoted;
+      }
+    } else if (character === "," && !quoted) {
+      row.push(cell.trim());
+      cell = "";
+    } else if ((character === "\n" || character === "\r") && !quoted) {
+      if (character === "\r" && text[index + 1] === "\n") index += 1;
+      row.push(cell.trim());
+      if (row.some(Boolean)) rows.push(row);
+      row = [];
+      cell = "";
+    } else {
+      cell += character;
+    }
+  }
+  row.push(cell.trim());
+  if (row.some(Boolean)) rows.push(row);
+  return rows;
+}
+
+function ImportPage({ allowed, onImported }: { allowed: boolean; onImported: () => void }) {
+  const [rows, setRows] = useState<ImportWord[]>([]);
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  async function readFile(file: File) {
+    setMessage("");
+    const parsed = parseCsv(await file.text());
+    const headers = (parsed[0] ?? []).map((header) => header.replace(/^\uFEFF/, "").trim());
+    const koreanIndex = headers.indexOf("korean");
+    const meaningIndex = headers.indexOf("meaning_zh");
+    if (koreanIndex < 0 || meaningIndex < 0) {
+      setRows([]);
+      setMessage("表头缺少 korean 或 meaning_zh，请使用页面下方的格式。");
+      return;
+    }
+    const indexOf = (name: string) => headers.indexOf(name);
+    const seen = new Set<string>();
+    const imported: ImportWord[] = [];
+    let skipped = 0;
+    for (const values of parsed.slice(1)) {
+      const korean = values[koreanIndex]?.trim() ?? "";
+      const meaning = values[meaningIndex]?.trim() ?? "";
+      const key = `${korean}\u0000${meaning}`;
+      if (!korean || !meaning || seen.has(key)) {
+        skipped += 1;
+        continue;
+      }
+      seen.add(key);
+      const value = (name: string) => {
+        const index = indexOf(name);
+        return index >= 0 ? values[index]?.trim() || null : null;
+      };
+      imported.push({
+        korean,
+        meaning_zh: meaning,
+        part_of_speech: value("part_of_speech"),
+        example_ko: value("example_ko"),
+        example_zh: value("example_zh"),
+        tags: (value("tags") ?? "").split("|").map((tag) => tag.trim()).filter(Boolean),
+      });
+    }
+    setRows(imported);
+    setMessage(`识别到 ${imported.length} 个单词${skipped ? `，跳过 ${skipped} 行空白或重复内容` : ""}。`);
+  }
+
+  async function importWords() {
+    if (!allowed || rows.length === 0) return;
+    setLoading(true);
+    const { error } = await supabase.from("words").upsert(rows, {
+      onConflict: "korean,meaning_zh",
+      ignoreDuplicates: true,
+    });
+    setLoading(false);
+    if (error) {
+      setMessage(`导入失败：${error.message}`);
+      return;
+    }
+    onImported();
+  }
+
+  if (!allowed) return <div className="content inner-page"><article className="import-card"><h1>这里需要管理员权限</h1><p>普通用户不能修改大家共用的词库。</p></article></div>;
+
+  return <div className="content inner-page">
+    <div className="page-title"><div><p className="eyebrow">ADMIN · WORD LIBRARY</p><h1>批量导入单词</h1><p>选一个 CSV 文件，确认预览无误后再写入公共词库。</p></div></div>
+    <article className="import-card">
+      <label className="file-drop">
+        <strong>选择 CSV 文件</strong>
+        <span>必填列：korean、meaning_zh；标签之间用 | 分隔。</span>
+        <input type="file" accept=".csv,text/csv" onChange={(event) => {
+          const file = event.target.files?.[0];
+          if (file) void readFile(file);
+        }} />
+      </label>
+      <div className="csv-example"><strong>表头示例</strong><code>korean,meaning_zh,part_of_speech,example_ko,example_zh,tags</code></div>
+      {message && <p className="import-message">{message}</p>}
+      {rows.length > 0 && <>
+        <div className="import-preview">
+          <div className="import-preview-head"><span>韩语</span><span>中文</span><span>词性</span><span>标签</span></div>
+          {rows.slice(0, 8).map((word) => <div className="import-preview-row" key={`${word.korean}-${word.meaning_zh}`}><strong>{word.korean}</strong><span>{word.meaning_zh}</span><span>{word.part_of_speech || "—"}</span><span>{word.tags.join("、") || "—"}</span></div>)}
+        </div>
+        {rows.length > 8 && <p className="preview-note">这里只预览前 8 行，实际会导入全部 {rows.length} 行。</p>}
+        <button className="primary-button import-submit" onClick={() => void importWords()} disabled={loading}>{loading ? "正在导入…" : `确认导入 ${rows.length} 个单词`}</button>
+      </>}
+    </article>
   </div>;
 }
 
