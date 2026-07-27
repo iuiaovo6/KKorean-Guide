@@ -211,6 +211,29 @@ export default function Home() {
     window.setTimeout(() => setToast(""), 1800);
   }
 
+  function speakKorean(text: string) {
+    if (!("speechSynthesis" in window)) {
+      setToast("当前浏览器不支持语音朗读");
+      window.setTimeout(() => setToast(""), 2400);
+      return;
+    }
+
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "ko-KR";
+    utterance.rate = 0.82;
+    utterance.pitch = 1;
+    const koreanVoice = window.speechSynthesis
+      .getVoices()
+      .find((voice) => voice.lang.toLowerCase().startsWith("ko"));
+    if (koreanVoice) utterance.voice = koreanVoice;
+    utterance.onerror = () => {
+      setToast("系统没有可用的韩语语音，请检查设备语音设置");
+      window.setTimeout(() => setToast(""), 2800);
+    };
+    window.speechSynthesis.speak(utterance);
+  }
+
   async function nextStudyStep() {
     setSelected(null);
     const order: StudyStep[] = spelling
@@ -452,7 +475,7 @@ export default function Home() {
               <div className="study-progress"><i style={{ width: `${((wordIndex + 1) / studyWords.length) * 100}%` }} /></div>
               <span>{wordIndex + 1} / {studyWords.length}</span>
             </header>
-            <StudyCard step={step} word={current} selected={selected} setSelected={setSelected} />
+            <StudyCard step={step} word={current} selected={selected} setSelected={setSelected} onSpeak={speakKorean} />
             <footer className="study-footer">
               <button className="ghost-button" onClick={() => setToast("这个词会更早再次出现")}>不太记得</button>
               <button className="primary-button" onClick={nextStudyStep}>
@@ -471,11 +494,23 @@ function NavButton({ active, icon, label, badge, onClick }: { active: boolean; i
   return <button className={`nav-button ${active ? "active" : ""}`} onClick={onClick}><span>{icon}</span><span>{label}</span>{badge && <small>{badge}</small>}</button>;
 }
 
-function StudyCard({ step, word, selected, setSelected }: { step: StudyStep; word: StudyWord; selected: string | null; setSelected: (value: string) => void }) {
+function StudyCard({
+  step,
+  word,
+  selected,
+  setSelected,
+  onSpeak,
+}: {
+  step: StudyStep;
+  word: StudyWord;
+  selected: string | null;
+  setSelected: (value: string) => void;
+  onSpeak: (text: string) => void;
+}) {
   if (step === "preview") return (
     <div className="learning-card center-card">
       <p className="eyebrow">FIRST LOOK · 初次见面</p>
-      <button className="sound-button" aria-label="播放发音">♬</button>
+      <button className="sound-button" aria-label="播放发音" onClick={() => onSpeak(word.korean)}>♬</button>
       <h2>{word.korean}</h2>
       <span className="word-type">{word.type}</span>
       <p className="learning-hint">先看一眼、听一遍。下一张卡会检查你是否认得。</p>
@@ -496,7 +531,7 @@ function StudyCard({ step, word, selected, setSelected }: { step: StudyStep; wor
   if (step === "sound") return (
     <div className="learning-card">
       <p className="eyebrow">LISTEN · 听音识别</p>
-      <button className="big-audio-button" aria-label="播放单词发音">♬<small>再听一次</small></button>
+      <button className="big-audio-button" aria-label="播放单词发音" onClick={() => onSpeak(word.korean)}>♬<small>再听一次</small></button>
       <div className="answer-grid compact">
         {[word.korean, "설레요", "소중하다", "기억하다"].map((answer) => (
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
@@ -509,6 +544,7 @@ function StudyCard({ step, word, selected, setSelected }: { step: StudyStep; wor
       <p className="eyebrow">IN CONTEXT · 放进句子</p>
       <div className="context-box">
         <span>“</span><h2>{word.example}</h2><p>{word.translation}</p>
+        <button className="sentence-audio" onClick={() => onSpeak(word.example)} aria-label="播放完整例句">♬ 听整句</button>
       </div>
       <div className="word-breakdown"><strong>{word.korean}</strong><span>{word.meaning}</span><small>在这句话里表达自然、真诚的情绪。</small></div>
     </div>

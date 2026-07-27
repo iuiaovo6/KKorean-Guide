@@ -150,6 +150,8 @@ button { color: inherit; }
 .context-box > span { color: #8cc8f5; font-size: 50px; position: absolute; top: 8px; }
 .context-box h2 { font-size: 24px; line-height: 1.5; margin: 26px 0 10px; }
 .context-box p { color: #aeb5c1; font-size: 11px; }
+.sentence-audio { border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.08); color: #dceeff; border-radius: 8px; padding: 8px 11px; margin-top: 10px; font-size: 9px; cursor: pointer; }
+.sentence-audio:hover { background: rgba(255,255,255,.14); }
 .word-breakdown { border-left: 3px solid var(--blue); display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; margin-top: 20px; padding: 4px 14px; }
 .word-breakdown strong { font-size: 18px; }
 .word-breakdown span { color: var(--blue-strong); font-size: 12px; align-self: center; }
