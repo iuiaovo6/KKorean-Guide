@@ -6,11 +6,19 @@ import { supabase } from "../lib/supabase";
 
 type Tab = "today" | "words" | "scenes" | "talk";
 type StudyStep = "preview" | "meaning" | "sound" | "context" | "result";
+type StudyWord = {
+  id: number;
+  korean: string;
+  meaning: string;
+  type: string;
+  example: string;
+  translation: string;
+};
 
-const words = [
-  { korean: "설레다", meaning: "心动、激动", type: "动词", example: "오늘 무대가 너무 설레요.", translation: "今天的舞台让我特别心动。" },
-  { korean: "기대하다", meaning: "期待", type: "动词", example: "다음 공연도 기대해 주세요.", translation: "也请期待下一场演出。" },
-  { korean: "소중하다", meaning: "珍贵、宝贵", type: "形容词", example: "여러분은 저에게 정말 소중해요.", translation: "大家对我来说真的很珍贵。" },
+const fallbackWords: StudyWord[] = [
+  { id: -1, korean: "설레다", meaning: "心动、激动", type: "动词", example: "오늘 무대가 너무 설레요.", translation: "今天的舞台让我特别心动。" },
+  { id: -2, korean: "기대하다", meaning: "期待", type: "动词", example: "다음 공연도 기대해 주세요.", translation: "也请期待下一场演出。" },
+  { id: -3, korean: "소중하다", meaning: "珍贵、宝贵", type: "形容词", example: "여러분은 저에게 정말 소중해요.", translation: "大家对我来说真的很珍贵。" },
 ];
 
 const reviewWords = [
@@ -43,8 +51,10 @@ export default function Home() {
   const [authPassword, setAuthPassword] = useState("");
   const [authMessage, setAuthMessage] = useState("");
   const [authLoading, setAuthLoading] = useState(false);
+  const [studyWords, setStudyWords] = useState<StudyWord[]>(fallbackWords);
+  const [dataMessage, setDataMessage] = useState("登录后读取真实学习数据");
 
-  const current = words[wordIndex];
+  const current = studyWords[wordIndex] ?? fallbackWords[0];
   const filteredBooks = useMemo(
     () => sceneBooks.filter((book) => book.title.includes(search) || book.desc.includes(search)),
     [search],
@@ -57,6 +67,55 @@ export default function Home() {
     });
     return () => data.subscription.unsubscribe();
   }, []);
+
+  useEffect(() => {
+    if (!user) {
+      setStudyWords(fallbackWords);
+      setDataMessage("登录后读取真实学习数据");
+      return;
+    }
+
+    async function loadLearningData() {
+      const [wordsResult, profileResult] = await Promise.all([
+        supabase
+          .from("words")
+          .select("id, korean, meaning_zh, part_of_speech, example_ko, example_zh")
+          .order("id")
+          .limit(100),
+        supabase
+          .from("profiles")
+          .select("daily_new_words, spelling_enabled")
+          .eq("id", user.id)
+          .single(),
+      ]);
+
+      if (wordsResult.error) {
+        setDataMessage("数据库尚未准备好，请先运行建表脚本");
+        return;
+      }
+
+      const loadedWords: StudyWord[] = (wordsResult.data ?? []).map((word) => ({
+        id: word.id,
+        korean: word.korean,
+        meaning: word.meaning_zh,
+        type: word.part_of_speech ?? "",
+        example: word.example_ko ?? "",
+        translation: word.example_zh ?? "",
+      }));
+
+      if (loadedWords.length > 0) {
+        setStudyWords(loadedWords);
+        setDataMessage(`已读取 ${loadedWords.length} 个真实单词`);
+      }
+
+      if (profileResult.data) {
+        setDailyWords(profileResult.data.daily_new_words);
+        setSpelling(profileResult.data.spelling_enabled);
+      }
+    }
+
+    void loadLearningData();
+  }, [user]);
 
   async function submitAuth(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -105,19 +164,61 @@ export default function Home() {
   }
 
   function startStudy() {
+    if (!user) {
+      setAuthOpen(true);
+      setAuthMessage("请先登录，学习记录才能保存。");
+      return;
+    }
     setWordIndex(0);
     setStep("preview");
     setSelected(null);
     setStudyOpen(true);
   }
 
-  function nextStudyStep() {
+  async function saveProgress(word: StudyWord) {
+    if (!user || word.id < 0) return;
+    const tomorrow = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
+    const { error } = await supabase.from("user_word_progress").upsert(
+      {
+        user_id: user.id,
+        word_id: word.id,
+        meaning_level: 1,
+        listening_level: 1,
+        spelling_level: spelling ? 1 : 0,
+        review_count: 1,
+        next_review_at: tomorrow,
+        last_reviewed_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      },
+      { onConflict: "user_id,word_id" },
+    );
+    if (error) setToast(`保存失败：${error.message}`);
+  }
+
+  async function saveSettings(nextDailyWords: number, nextSpelling: boolean) {
+    setDailyWords(nextDailyWords);
+    setSpelling(nextSpelling);
+    if (!user) return;
+    const { error } = await supabase
+      .from("profiles")
+      .update({
+        daily_new_words: nextDailyWords,
+        spelling_enabled: nextSpelling,
+        updated_at: new Date().toISOString(),
+      })
+      .eq("id", user.id);
+    setToast(error ? `设置保存失败：${error.message}` : "学习设置已保存");
+    window.setTimeout(() => setToast(""), 1800);
+  }
+
+  async function nextStudyStep() {
     setSelected(null);
     const order: StudyStep[] = spelling
       ? ["preview", "meaning", "sound", "context", "result"]
       : ["preview", "meaning", "sound", "context", "result"];
     const index = order.indexOf(step);
-    if (step === "result" && wordIndex < words.length - 1) {
+    if (step === "result") await saveProgress(current);
+    if (step === "result" && wordIndex < studyWords.length - 1) {
       setWordIndex((value) => value + 1);
       setStep("preview");
       return;
@@ -198,11 +299,11 @@ export default function Home() {
                   <span className="quiet">约 18 分钟</span>
                 </div>
                 <div className="progress-ring" aria-label="今日进度 30%">
-                  <div className="ring-inner"><strong>3</strong><span>/ 10 词</span></div>
+                  <div className="ring-inner"><strong>{Math.min(3, studyWords.length)}</strong><span>/ {dailyWords} 词</span></div>
                 </div>
                 <div className="study-copy">
                   <h2>先把今天的词记牢</h2>
-                  <p>7 个新词 · 3 个到期复习</p>
+                  <p>{dataMessage}</p>
                   <div className="mini-tags">
                     <span>识义</span><span>听音</span><span>语境</span>{spelling && <span>拼写</span>}
                   </div>
@@ -264,20 +365,20 @@ export default function Home() {
                 <div className="section-heading"><h3>每日设置</h3><span className="saved-label">自动保存</span></div>
                 <label className="setting-row">
                   <span><strong>每日新词</strong><small>复习词会另外加入</small></span>
-                  <select value={dailyWords} onChange={(event) => setDailyWords(Number(event.target.value))}>
+                  <select value={dailyWords} onChange={(event) => void saveSettings(Number(event.target.value), spelling)}>
                     <option value={5}>5 词</option><option value={10}>10 词</option><option value={15}>15 词</option><option value={20}>20 词</option>
                   </select>
                 </label>
                 <label className="setting-row">
                   <span><strong>拼写训练</strong><small>关闭后只练看到、听到能认出</small></span>
-                  <input className="switch" type="checkbox" checked={spelling} onChange={(event) => setSpelling(event.target.checked)} />
+                  <input className="switch" type="checkbox" checked={spelling} onChange={(event) => void saveSettings(dailyWords, event.target.checked)} />
                 </label>
               </article>
             </section>
           </div>
         )}
 
-        {activeTab === "words" && <WordsPage startStudy={startStudy} />}
+        {activeTab === "words" && <WordsPage startStudy={startStudy} words={studyWords} />}
         {activeTab === "scenes" && <ScenesPage books={search ? filteredBooks : sceneBooks} />}
         {activeTab === "talk" && <TalkPage />}
 
@@ -348,14 +449,14 @@ export default function Home() {
           <div className="study-modal">
             <header className="study-header">
               <button onClick={() => setStudyOpen(false)} aria-label="关闭学习">×</button>
-              <div className="study-progress"><i style={{ width: `${((wordIndex + 1) / words.length) * 100}%` }} /></div>
-              <span>{wordIndex + 1} / {words.length}</span>
+              <div className="study-progress"><i style={{ width: `${((wordIndex + 1) / studyWords.length) * 100}%` }} /></div>
+              <span>{wordIndex + 1} / {studyWords.length}</span>
             </header>
             <StudyCard step={step} word={current} selected={selected} setSelected={setSelected} />
             <footer className="study-footer">
               <button className="ghost-button" onClick={() => setToast("这个词会更早再次出现")}>不太记得</button>
               <button className="primary-button" onClick={nextStudyStep}>
-                {step === "result" ? (wordIndex === words.length - 1 ? "完成本组" : "下一个词") : "继续"} <span>→</span>
+                {step === "result" ? (wordIndex === studyWords.length - 1 ? "完成本组" : "下一个词") : "继续"} <span>→</span>
               </button>
             </footer>
           </div>
@@ -370,7 +471,7 @@ function NavButton({ active, icon, label, badge, onClick }: { active: boolean; i
   return <button className={`nav-button ${active ? "active" : ""}`} onClick={onClick}><span>{icon}</span><span>{label}</span>{badge && <small>{badge}</small>}</button>;
 }
 
-function StudyCard({ step, word, selected, setSelected }: { step: StudyStep; word: typeof words[number]; selected: string | null; setSelected: (value: string) => void }) {
+function StudyCard({ step, word, selected, setSelected }: { step: StudyStep; word: StudyWord; selected: string | null; setSelected: (value: string) => void }) {
   if (step === "preview") return (
     <div className="learning-card center-card">
       <p className="eyebrow">FIRST LOOK · 初次见面</p>
@@ -423,14 +524,14 @@ function StudyCard({ step, word, selected, setSelected }: { step: StudyStep; wor
   );
 }
 
-function WordsPage({ startStudy }: { startStudy: () => void }) {
+function WordsPage({ startStudy, words }: { startStudy: () => void; words: StudyWord[] }) {
   return <div className="content inner-page">
     <div className="page-title"><div><p className="eyebrow">MY VOCABULARY</p><h1>我的单词本</h1><p>不是收藏夹，而是一份会主动叫你回来复习的清单。</p></div><button className="primary-button" onClick={startStudy}>开始今日复习 →</button></div>
-    <div className="stats-grid"><div><strong>237</strong><span>已加入</span></div><div><strong>84</strong><span>稳定识别</span></div><div><strong>12</strong><span>今日到期</span></div><div><strong>68%</strong><span>近7日记忆率</span></div></div>
+    <div className="stats-grid"><div><strong>{words.length}</strong><span>当前词库</span></div><div><strong>0</strong><span>稳定识别</span></div><div><strong>{words.length}</strong><span>等待初学</span></div><div><strong>—</strong><span>近7日记忆率</span></div></div>
     <div className="word-table">
       <div className="table-head"><span>单词</span><span>词义</span><span>掌握状态</span><span>下次复习</span></div>
-      {[...reviewWords, { word: "설레다", meaning: "心动、激动", level: "正在学习", tone: "blue" }, { word: "소중하다", meaning: "珍贵、宝贵", level: "稳定识别", tone: "gray" }].map((item) => (
-        <button className="table-row" key={item.word} onClick={startStudy}><strong>{item.word}</strong><span>{item.meaning}</span><span><i className={`status-dot ${item.tone}`} />{item.level}</span><span>{item.level === "稳定识别" ? "4天后" : "今天"}</span></button>
+      {words.map((item) => (
+        <button className="table-row" key={item.id} onClick={startStudy}><strong>{item.korean}</strong><span>{item.meaning}</span><span><i className="status-dot blue" />等待初学</span><span>今天</span></button>
       ))}
     </div>
   </div>;
