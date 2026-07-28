@@ -38,12 +38,6 @@ const fallbackWords: StudyWord[] = [
   { id: -3, korean: "소중하다", meaning: "珍贵、宝贵", type: "形容词", example: "여러분은 저에게 정말 소중해요.", translation: "大家对我来说真的很珍贵。" },
 ];
 
-const reviewWords = [
-  { word: "무대", meaning: "舞台", level: "听音模糊", tone: "orange" },
-  { word: "응원", meaning: "应援、支持", level: "今日到期", tone: "blue" },
-  { word: "추억", meaning: "回忆", level: "拼写可跳过", tone: "gray" },
-];
-
 const sceneBooks = [
   { icon: "♡", title: "表达感受", count: 86, desc: "心动、感动、紧张与期待", progress: 36, color: "blue" },
   { icon: "⌁", title: "讲近况", count: 64, desc: "最近在做什么、吃了什么", progress: 18, color: "mint" },
@@ -81,6 +75,12 @@ export default function Home() {
     () => sceneBooks.filter((book) => book.title.includes(search) || book.desc.includes(search)),
     [search],
   );
+  const reviewItems = useMemo(() => studyWords
+    .map((word) => ({ word, record: wordProgress[word.id] }))
+    .filter(({ record }) => record && Math.min(record.meaning_level, record.listening_level) < 2)
+    .sort((a, b) => new Date(a.record!.next_review_at).getTime() - new Date(b.record!.next_review_at).getTime())
+    .slice(0, 3), [studyWords, wordProgress]);
+  const todayCompleted = Boolean(user && studyWords.length > 0 && todayWords.length === 0);
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data }) => setUser(data.user));
@@ -212,9 +212,18 @@ export default function Home() {
       setAuthMessage("请先登录，学习记录才能保存。");
       return;
     }
+    if (studyWords.length === 0) {
+      setToast("词库里还没有单词，先去导入一批吧");
+      window.setTimeout(() => setToast(""), 2400);
+      return;
+    }
+    if (todayWords.length === 0) {
+      setToast("今天的学习已经完成，明天再来复习吧");
+      window.setTimeout(() => setToast(""), 2400);
+      return;
+    }
     setWordIndex(0);
-    const plannedWords = todayWords.length > 0 ? todayWords : studyWords.slice(0, dailyWords);
-    setStudyQueue(plannedWords.map((word) => ({ word, repeat: false })));
+    setStudyQueue(todayWords.map((word) => ({ word, repeat: false })));
     setStep("preview");
     setSelected(null);
     setStudyOpen(true);
@@ -369,7 +378,7 @@ export default function Home() {
           <div className="content">
             <section className="welcome-row">
               <div>
-                <p className="eyebrow">JUL 27 · SUNDAY</p>
+                <p className="eyebrow">TODAY · DAILY PLAN</p>
                 <h1>오늘도 같이 해요 <span>↗</span></h1>
                 <p>今天也一起学吧。你的复习已经为你排好了。</p>
               </div>
@@ -384,16 +393,16 @@ export default function Home() {
                   <span className="pill blue-pill">今日计划</span>
                   <span className="quiet">约 18 分钟</span>
                 </div>
-                <div className="progress-ring" aria-label="今日进度 30%">
-                  <div className="ring-inner"><strong>{Math.min(3, studyWords.length)}</strong><span>/ {dailyWords} 词</span></div>
+                <div className="progress-ring" aria-label={todayCompleted ? "今日任务已完成" : `今日还有 ${todayWords.length} 个词`}>
+                  <div className="ring-inner"><strong>{todayCompleted ? "✓" : todayWords.length}</strong><span>{todayCompleted ? "今日完成" : "待学"}</span></div>
                 </div>
                 <div className="study-copy">
-                  <h2>先把今天的词记牢</h2>
+                  <h2>{todayCompleted ? "今天已经学完啦" : "先把今天的词记牢"}</h2>
                   <p>{dataMessage}</p>
                   <div className="mini-tags">
                     <span>识义</span><span>听音</span><span>语境</span>{spelling && <span>拼写</span>}
                   </div>
-                  <button className="primary-button" onClick={startStudy}>继续学习 <span>→</span></button>
+                  <button className="primary-button" onClick={todayCompleted ? () => setActiveTab("scenes") : startStudy}>{todayCompleted ? "去看看追星场景" : "继续学习"} <span>→</span></button>
                 </div>
               </article>
 
@@ -403,14 +412,15 @@ export default function Home() {
                   <button onClick={() => setActiveTab("words")}>查看全部 ↗</button>
                 </div>
                 <div className="review-list">
-                  {reviewWords.map((item) => (
-                    <button key={item.word} className="review-row" onClick={startStudy}>
-                      <span className={`status-dot ${item.tone}`} />
-                      <span className="review-word"><strong>{item.word}</strong><small>{item.meaning}</small></span>
-                      <span className="review-level">{item.level}</span>
+                  {reviewItems.length > 0 ? reviewItems.map(({ word, record }) => {
+                    const status = progressLabel(record);
+                    return <button key={word.id} className="review-row" onClick={startStudy}>
+                      <span className={`status-dot ${status.tone}`} />
+                      <span className="review-word"><strong>{word.korean}</strong><small>{word.meaning}</small></span>
+                      <span className="review-level">{status.label}</span>
                       <span className="arrow">→</span>
-                    </button>
-                  ))}
+                    </button>;
+                  }) : <p className="empty-review">{user ? "暂时没有需要重点复习的词。" : "登录后会显示你的真实复习提醒。"}</p>}
                 </div>
               </article>
             </section>

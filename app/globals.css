@@ -76,6 +76,7 @@ button { color: inherit; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 16px; }
 .section-heading .pill { margin-bottom: 8px; }
 .review-list { margin-top: 17px; display: grid; }
+.empty-review { margin: 0; padding: 23px 4px; border-top: 1px solid var(--line); color: #8d939b; font-size: 13px; line-height: 1.6; }
 .review-row { border: 0; border-top: 1px solid var(--line); background: transparent; min-height: 68px; display: grid; grid-template-columns: 10px 1fr auto 18px; gap: 12px; align-items: center; cursor: pointer; text-align: left; padding: 0 4px; }
 .review-row:hover .arrow { color: var(--blue); transform: translateX(3px); }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #b9bdc3; display: inline-block; }
