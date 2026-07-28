@@ -16,6 +16,13 @@ type StudyWord = {
 };
 type MemoryRating = "again" | "hard" | "good" | "easy";
 type StudyQueueItem = { word: StudyWord; repeat: boolean };
+type WordProgress = {
+  word_id: number;
+  meaning_level: number;
+  listening_level: number;
+  review_count: number;
+  next_review_at: string;
+};
 type ImportWord = {
   korean: string;
   meaning_zh: string;
@@ -64,6 +71,7 @@ export default function Home() {
   const [authLoading, setAuthLoading] = useState(false);
   const [studyWords, setStudyWords] = useState<StudyWord[]>(fallbackWords);
   const [todayWords, setTodayWords] = useState<StudyWord[]>(fallbackWords);
+  const [wordProgress, setWordProgress] = useState<Record<number, WordProgress>>({});
   const [dataMessage, setDataMessage] = useState("登录后读取真实学习数据");
   const [isAdmin, setIsAdmin] = useState(false);
   const [dataVersion, setDataVersion] = useState(0);
@@ -86,6 +94,7 @@ export default function Home() {
     if (!user) {
       setStudyWords(fallbackWords);
       setTodayWords(fallbackWords);
+      setWordProgress({});
       setDataMessage("登录后读取真实学习数据");
       setIsAdmin(false);
       return;
@@ -105,7 +114,7 @@ export default function Home() {
           .single(),
         supabase
           .from("user_word_progress")
-          .select("word_id, next_review_at, review_count")
+          .select("word_id, meaning_level, listening_level, next_review_at, review_count")
           .eq("user_id", user.id),
       ]);
 
@@ -125,7 +134,9 @@ export default function Home() {
 
       if (loadedWords.length > 0) {
         setStudyWords(loadedWords);
-        const progress = new Map((progressResult.data ?? []).map((item) => [item.word_id, item]));
+        const progressRows = (progressResult.data ?? []) as WordProgress[];
+        const progress = new Map(progressRows.map((item) => [item.word_id, item]));
+        setWordProgress(Object.fromEntries(progressRows.map((item) => [item.word_id, item])));
         const dueWords = loadedWords.filter((word) => {
           const record = progress.get(word.id);
           return record && new Date(record.next_review_at).getTime() <= Date.now();
@@ -453,7 +464,7 @@ export default function Home() {
           </div>
         )}
 
-        {activeTab === "words" && <WordsPage startStudy={startStudy} words={studyWords} isAdmin={isAdmin} openImport={() => setActiveTab("import")} />}
+        {activeTab === "words" && <WordsPage startStudy={startStudy} words={studyWords} progress={wordProgress} isAdmin={isAdmin} openImport={() => setActiveTab("import")} />}
         {activeTab === "scenes" && <ScenesPage books={search ? filteredBooks : sceneBooks} />}
         {activeTab === "talk" && <TalkPage />}
         {activeTab === "import" && (
@@ -632,15 +643,42 @@ function StudyCard({
   );
 }
 
-function WordsPage({ startStudy, words, isAdmin, openImport }: { startStudy: () => void; words: StudyWord[]; isAdmin: boolean; openImport: () => void }) {
+function progressLabel(record?: WordProgress) {
+  if (!record) return { label: "等待初学", tone: "gray" };
+  const level = Math.min(record.meaning_level, record.listening_level);
+  if (level === 0) return { label: "需要重学", tone: "orange" };
+  if (level === 1) return { label: "有点模糊", tone: "orange" };
+  if (level === 2) return { label: "已经认识", tone: "blue" };
+  return { label: "稳定识别", tone: "green" };
+}
+
+function reviewDate(value?: string) {
+  if (!value) return "首次学习";
+  const date = new Date(value);
+  const today = new Date();
+  const startToday = new Date(today.getFullYear(), today.getMonth(), today.getDate()).getTime();
+  const startDate = new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
+  const days = Math.round((startDate - startToday) / (24 * 60 * 60 * 1000));
+  if (days <= 0) return "今天";
+  if (days === 1) return "明天";
+  return date.toLocaleDateString("zh-CN", { month: "numeric", day: "numeric" });
+}
+
+function WordsPage({ startStudy, words, progress, isAdmin, openImport }: { startStudy: () => void; words: StudyWord[]; progress: Record<number, WordProgress>; isAdmin: boolean; openImport: () => void }) {
+  const records = Object.values(progress);
+  const stableCount = records.filter((record) => Math.min(record.meaning_level, record.listening_level) >= 3).length;
+  const dueCount = records.filter((record) => new Date(record.next_review_at).getTime() <= Date.now()).length;
+  const newCount = words.filter((word) => !progress[word.id]).length;
   return <div className="content inner-page">
     <div className="page-title"><div><p className="eyebrow">MY VOCABULARY</p><h1>我的单词本</h1><p>不是收藏夹，而是一份会主动叫你回来复习的清单。</p></div><div className="page-actions">{isAdmin && <button className="ghost-button" onClick={openImport}>导入 CSV</button>}<button className="primary-button" onClick={startStudy}>开始今日复习 →</button></div></div>
-    <div className="stats-grid"><div><strong>{words.length}</strong><span>当前词库</span></div><div><strong>0</strong><span>稳定识别</span></div><div><strong>{words.length}</strong><span>等待初学</span></div><div><strong>—</strong><span>近7日记忆率</span></div></div>
+    <div className="stats-grid"><div><strong>{words.length}</strong><span>当前词库</span></div><div><strong>{stableCount}</strong><span>稳定识别</span></div><div><strong>{newCount}</strong><span>等待初学</span></div><div><strong>{dueCount}</strong><span>今日到期</span></div></div>
     <div className="word-table">
       <div className="table-head"><span>单词</span><span>词义</span><span>掌握状态</span><span>下次复习</span></div>
-      {words.map((item) => (
-        <button className="table-row" key={item.id} onClick={startStudy}><strong>{item.korean}</strong><span>{item.meaning}</span><span><i className="status-dot blue" />等待初学</span><span>今天</span></button>
-      ))}
+      {words.map((item) => {
+        const record = progress[item.id];
+        const status = progressLabel(record);
+        return <button className="table-row" key={item.id} onClick={startStudy}><strong>{item.korean}</strong><span>{item.meaning}</span><span><i className={`status-dot ${status.tone}`} />{status.label}</span><span>{reviewDate(record?.next_review_at)}</span></button>;
+      })}
     </div>
   </div>;
 }

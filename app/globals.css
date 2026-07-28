@@ -82,6 +82,7 @@ button { color: inherit; }
 .status-dot.orange { background: #ff9b51; }
 .status-dot.blue { background: var(--blue); }
 .status-dot.gray { background: #aeb2b8; }
+.status-dot.green { background: #58a67d; }
 .review-word { display: grid; gap: 4px; }
 .review-word strong { font-size: 15px; }
 .review-word small, .review-level { color: var(--muted); font-size: 10px; }
