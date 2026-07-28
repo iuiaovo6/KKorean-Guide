@@ -106,7 +106,7 @@ export default function Home() {
           .from("words")
           .select("id, korean, meaning_zh, part_of_speech, example_ko, example_zh")
           .order("id")
-          .limit(100),
+          .limit(1000),
         supabase
           .from("profiles")
           .select("daily_new_words, spelling_enabled, is_admin")
@@ -636,8 +636,8 @@ function StudyCard({
     <div className="learning-card">
       <p className="eyebrow">IN CONTEXT · 放进句子</p>
       <div className="context-box">
-        <span>“</span><h2>{word.example}</h2><p>{word.translation}</p>
-        <button className="sentence-audio" onClick={() => onSpeak(word.example)} aria-label="播放完整例句">♬ 听整句</button>
+        {word.example ? <><span>“</span><h2>{word.example}</h2><p>{word.translation}</p>
+          <button className="sentence-audio" onClick={() => onSpeak(word.example)} aria-label="播放完整例句">♬ 听整句</button></> : <p className="learning-hint">这张基础词卡暂时没有例句。先练到看到和听到都能认出它。</p>}
       </div>
       <div className="word-breakdown"><strong>{word.korean}</strong><span>{word.meaning}</span><small>在这句话里表达自然、真诚的情绪。</small></div>
     </div>
