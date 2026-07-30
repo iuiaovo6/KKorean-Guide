@@ -13,6 +13,7 @@ type StudyWord = {
   type: string;
   example: string;
   translation: string;
+  tags: string[];
 };
 type MemoryRating = "again" | "hard" | "good" | "easy";
 type StudyQueueItem = { word: StudyWord; repeat: boolean };
@@ -33,17 +34,18 @@ type ImportWord = {
 };
 
 const fallbackWords: StudyWord[] = [
-  { id: -1, korean: "설레다", meaning: "心动、激动", type: "动词", example: "오늘 무대가 너무 설레요.", translation: "今天的舞台让我特别心动。" },
-  { id: -2, korean: "기대하다", meaning: "期待", type: "动词", example: "다음 공연도 기대해 주세요.", translation: "也请期待下一场演出。" },
-  { id: -3, korean: "소중하다", meaning: "珍贵、宝贵", type: "形容词", example: "여러분은 저에게 정말 소중해요.", translation: "大家对我来说真的很珍贵。" },
+  { id: -1, korean: "설레다", meaning: "心动、激动", type: "动词", example: "오늘 무대가 너무 설레요.", translation: "今天的舞台让我特别心动。", tags: ["追星", "感受"] },
+  { id: -2, korean: "기대하다", meaning: "期待", type: "动词", example: "다음 공연도 기대해 주세요.", translation: "也请期待下一场演出。", tags: ["追星", "演唱会"] },
+  { id: -3, korean: "소중하다", meaning: "珍贵、宝贵", type: "形容词", example: "여러분은 저에게 정말 소중해요.", translation: "大家对我来说真的很珍贵。", tags: ["追星", "粉丝"] },
 ];
 
 const sceneBooks = [
-  { icon: "♡", title: "表达感受", count: 86, desc: "心动、感动、紧张与期待", progress: 36, color: "blue" },
-  { icon: "⌁", title: "讲近况", count: 64, desc: "最近在做什么、吃了什么", progress: 18, color: "mint" },
-  { icon: "✦", title: "舞台与演出", count: 112, desc: "舞台、练习、服装与现场", progress: 8, color: "lavender" },
-  { icon: "☺", title: "开玩笑", count: 58, desc: "口语缩略、语气与韩网梗", progress: 0, color: "yellow" },
-];
+  { icon: "◎", title: "线下活动", desc: "预录、签售、演唱会与应援", color: "blue", tags: ["线下活动", "演唱会", "应援", "签售", "购票", "打歌"] },
+  { icon: "♡", title: "互动交流", desc: "夸赞、提问、感谢与关心", color: "mint", tags: ["互动", "感受", "粉丝", "问候"] },
+  { icon: "✦", title: "舞台与造型", desc: "舞台、音乐、服装和妆发", color: "lavender", tags: ["造型", "舞台", "音乐"] },
+  { icon: "⌁", title: "泡泡与数字生活", desc: "泡泡、社媒、直播和短视频", color: "yellow", tags: ["数字生活", "泡泡", "社交媒体"] },
+  { icon: "☻", title: "饭圈用语", desc: "缩写、物料、梗与粉丝交流", color: "blue", tags: ["饭圈", "口语", "周边"] },
+] as const;
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<Tab>("today");
@@ -71,11 +73,20 @@ export default function Home() {
   const [dataVersion, setDataVersion] = useState(0);
   const [koreanVoices, setKoreanVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [selectedVoiceURI, setSelectedVoiceURI] = useState("");
+  const [activeSceneTitle, setActiveSceneTitle] = useState<(typeof sceneBooks)[number]["title"]>(sceneBooks[0].title);
 
   const current = studyQueue[wordIndex]?.word ?? studyWords[0] ?? fallbackWords[0];
+  const sceneCards = useMemo(() => sceneBooks.map((book) => {
+    const words = studyWords.filter((word) => word.tags.some((tag) => (book.tags as readonly string[]).includes(tag)));
+    const learned = words.filter((word) => {
+      const progress = wordProgress[word.id];
+      return progress && Math.min(progress.meaning_level, progress.listening_level) >= 2;
+    }).length;
+    return { ...book, count: words.length, progress: words.length ? Math.round((learned / words.length) * 100) : 0 };
+  }), [studyWords, wordProgress]);
   const filteredBooks = useMemo(
-    () => sceneBooks.filter((book) => book.title.includes(search) || book.desc.includes(search)),
-    [search],
+    () => sceneCards.filter((book) => book.title.includes(search) || book.desc.includes(search)),
+    [search, sceneCards],
   );
   const reviewItems = useMemo(() => studyWords
     .map((word) => ({ word, record: wordProgress[word.id] }))
@@ -120,7 +131,7 @@ export default function Home() {
       const [wordsResult, profileResult, progressResult] = await Promise.all([
         supabase
           .from("words")
-          .select("id, korean, meaning_zh, part_of_speech, example_ko, example_zh")
+          .select("id, korean, meaning_zh, part_of_speech, example_ko, example_zh, tags")
           .order("id")
           .limit(1000),
         supabase
@@ -144,8 +155,9 @@ export default function Home() {
         korean: word.korean,
         meaning: word.meaning_zh,
         type: word.part_of_speech ?? "",
-        example: word.example_ko ?? "",
-        translation: word.example_zh ?? "",
+          example: word.example_ko ?? "",
+          translation: word.example_zh ?? "",
+          tags: word.tags ?? [],
       }));
 
       if (loadedWords.length > 0) {
@@ -222,24 +234,25 @@ export default function Home() {
     setAuthOpen(true);
   }
 
-  function startStudy() {
+  function startStudy(words?: StudyWord[]) {
     if (!user) {
       setAuthOpen(true);
       setAuthMessage("请先登录，学习记录才能保存。");
       return;
     }
-    if (studyWords.length === 0) {
+    const plannedWords = words ?? todayWords;
+    if (plannedWords.length === 0 && studyWords.length === 0) {
       setToast("词库里还没有单词，先去导入一批吧");
       window.setTimeout(() => setToast(""), 2400);
       return;
     }
-    if (todayWords.length === 0) {
+    if (!words && todayWords.length === 0) {
       setToast("今天的学习已经完成，明天再来复习吧");
       window.setTimeout(() => setToast(""), 2400);
       return;
     }
     setWordIndex(0);
-    setStudyQueue(todayWords.map((word) => ({ word, repeat: false })));
+    setStudyQueue(plannedWords.slice(0, dailyWords).map((word) => ({ word, repeat: false })));
     setStep("preview");
     setSelected(null);
     setStudyOpen(true);
@@ -453,7 +466,7 @@ export default function Home() {
               </div>
               <div className="scene-grid">
                 {(search ? filteredBooks : sceneBooks).map((book) => (
-                  <button className="scene-card" key={book.title} onClick={() => setActiveTab("scenes")}>
+                  <button className="scene-card" key={book.title} onClick={() => { setActiveSceneTitle(book.title); setActiveTab("scenes"); }}>
                     <span className={`scene-icon ${book.color}`}>{book.icon}</span>
                     <span className="scene-title"><strong>{book.title}</strong><small>{book.desc}</small></span>
                     <span className="scene-count">{book.count} 词</span>
@@ -505,7 +518,7 @@ export default function Home() {
         )}
 
         {activeTab === "words" && <WordsPage startStudy={startStudy} words={studyWords} progress={wordProgress} isAdmin={isAdmin} openImport={() => setActiveTab("import")} />}
-        {activeTab === "scenes" && <ScenesPage books={search ? filteredBooks : sceneBooks} />}
+        {activeTab === "scenes" && <ScenesPage books={search ? filteredBooks : sceneCards} words={studyWords} progress={wordProgress} dailyWords={dailyWords} activeSceneTitle={activeSceneTitle} setActiveSceneTitle={setActiveSceneTitle} startStudy={startStudy} />}
         {activeTab === "talk" && <TalkPage />}
         {activeTab === "import" && (
           <ImportPage
@@ -843,12 +856,19 @@ function ImportPage({ allowed, onImported }: { allowed: boolean; onImported: () 
   </div>;
 }
 
-function ScenesPage({ books }: { books: typeof sceneBooks }) {
+type SceneCard = (typeof sceneBooks)[number] & { count: number; progress: number };
+
+function ScenesPage({ books, words, progress, dailyWords, activeSceneTitle, setActiveSceneTitle, startStudy }: { books: SceneCard[]; words: StudyWord[]; progress: Record<number, WordProgress>; dailyWords: number; activeSceneTitle: string; setActiveSceneTitle: (title: (typeof sceneBooks)[number]["title"]) => void; startStudy: (words?: StudyWord[]) => void }) {
+  const activeScene = books.find((book) => book.title === activeSceneTitle) ?? books[0];
+  const sceneWords = activeScene ? words.filter((word) => word.tags.some((tag) => (activeScene.tags as readonly string[]).includes(tag))) : [];
+  const readyWords = sceneWords.filter((word) => !progress[word.id] || Math.min(progress[word.id].meaning_level, progress[word.id].listening_level) < 2);
   return <div className="content inner-page">
-    <div className="page-title"><div><p className="eyebrow">FANDOM KOREAN</p><h1>追星场景词书</h1><p>先记住真实会遇到的词，再把它们带进对话和听力。</p></div></div>
-    <div className="book-grid">{books.map((book, index) => (
-      <article className="book-card" key={book.title}><div className={`book-cover ${book.color}`}><span>0{index + 1}</span><strong>{book.title}</strong><small>TALK GUIDE WORD BOOK</small></div><div className="book-info"><h3>{book.title}</h3><p>{book.desc}</p><div><span>{book.count} 词</span><span>{book.progress ? `已学 ${book.progress}%` : "尚未开始"}</span></div><button>{book.progress ? "继续学习" : "加入词书"} →</button></div></article>
-    ))}</div>
+    <div className="page-title"><div><p className="eyebrow">FANDOM KOREAN · REAL SITUATIONS</p><h1>追星场景词书</h1><p>先选你最近会遇到的场景，再把需要说出口的词练熟。</p></div></div>
+    <div className="scene-tabs" role="tablist" aria-label="选择追星场景">{books.map((book) => <button key={book.title} role="tab" aria-selected={book.title === activeScene?.title} className={book.title === activeScene?.title ? "active" : ""} onClick={() => setActiveSceneTitle(book.title)}>{book.icon} {book.title}<small>{book.count}</small></button>)}</div>
+    {activeScene && <section className="scene-detail">
+      <div className={`scene-detail-cover ${activeScene.color}`}><span>{activeScene.icon}</span><div><p className="eyebrow">SCENE WORD BOOK</p><h2>{activeScene.title}</h2><p>{activeScene.desc}</p></div><strong>{activeScene.count}<small>词</small></strong></div>
+      <div className="scene-detail-body"><div><h3>这一组先学什么</h3><p>{readyWords.length > 0 ? `这里有 ${readyWords.length} 个还不稳定的词。每次从中选 ${Math.min(dailyWords, readyWords.length)} 个练习。` : "这组词已经练得很稳了，可以换一个场景。"}</p><div className="scene-word-chips">{sceneWords.slice(0, 12).map((word) => <span key={word.id}><strong>{word.korean}</strong>{word.meaning}</span>)}</div></div><button className="primary-button" onClick={() => startStudy(readyWords.length > 0 ? readyWords : sceneWords)} disabled={sceneWords.length === 0}>{readyWords.length > 0 ? "开始本场景练习" : "复习本场景"} <span>→</span></button></div>
+    </section>}
   </div>;
 }
 
