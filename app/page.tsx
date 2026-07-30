@@ -69,6 +69,8 @@ export default function Home() {
   const [dataMessage, setDataMessage] = useState("登录后读取真实学习数据");
   const [isAdmin, setIsAdmin] = useState(false);
   const [dataVersion, setDataVersion] = useState(0);
+  const [koreanVoices, setKoreanVoices] = useState<SpeechSynthesisVoice[]>([]);
+  const [selectedVoiceURI, setSelectedVoiceURI] = useState("");
 
   const current = studyQueue[wordIndex]?.word ?? studyWords[0] ?? fallbackWords[0];
   const filteredBooks = useMemo(
@@ -88,6 +90,20 @@ export default function Home() {
       setUser(session?.user ?? null);
     });
     return () => data.subscription.unsubscribe();
+  }, []);
+
+  useEffect(() => {
+    if (!("speechSynthesis" in window)) return;
+    const loadKoreanVoices = () => {
+      const voices = window.speechSynthesis.getVoices().filter((voice) => voice.lang.toLowerCase().startsWith("ko"));
+      setKoreanVoices(voices);
+      const savedVoiceURI = window.localStorage.getItem("talk-guide-korean-voice") ?? "";
+      const preferredVoice = voices.find((voice) => /yuna|heami|sunhi|female|natural/i.test(voice.name)) ?? voices[0];
+      setSelectedVoiceURI((current) => current || (voices.some((voice) => voice.voiceURI === savedVoiceURI) ? savedVoiceURI : preferredVoice?.voiceURI ?? ""));
+    };
+    loadKoreanVoices();
+    window.speechSynthesis.addEventListener("voiceschanged", loadKoreanVoices);
+    return () => window.speechSynthesis.removeEventListener("voiceschanged", loadKoreanVoices);
   }, []);
 
   useEffect(() => {
@@ -283,17 +299,22 @@ export default function Home() {
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "ko-KR";
-    utterance.rate = 0.82;
+    utterance.rate = 0.94;
     utterance.pitch = 1;
-    const koreanVoice = window.speechSynthesis
-      .getVoices()
-      .find((voice) => voice.lang.toLowerCase().startsWith("ko"));
+    const koreanVoice = koreanVoices.find((voice) => voice.voiceURI === selectedVoiceURI)
+      ?? koreanVoices.find((voice) => /yuna|heami|sunhi|female|natural/i.test(voice.name))
+      ?? window.speechSynthesis.getVoices().find((voice) => voice.lang.toLowerCase().startsWith("ko"));
     if (koreanVoice) utterance.voice = koreanVoice;
     utterance.onerror = () => {
       setToast("系统没有可用的韩语语音，请检查设备语音设置");
       window.setTimeout(() => setToast(""), 2800);
     };
     window.speechSynthesis.speak(utterance);
+  }
+
+  function changeKoreanVoice(voiceURI: string) {
+    setSelectedVoiceURI(voiceURI);
+    window.localStorage.setItem("talk-guide-korean-voice", voiceURI);
   }
 
   async function nextStudyStep() {
@@ -469,6 +490,15 @@ export default function Home() {
                   <span><strong>拼写训练</strong><small>关闭后只练看到、听到能认出</small></span>
                   <input className="switch" type="checkbox" checked={spelling} onChange={(event) => void saveSettings(dailyWords, event.target.checked)} />
                 </label>
+                <div className="setting-row">
+                  <span><strong>韩语发音</strong><small>{koreanVoices.length > 1 ? "从这台设备可用的韩语语音中选择" : "由这台设备的系统语音提供"}</small></span>
+                  <div className="voice-control">
+                    <select value={selectedVoiceURI} onChange={(event) => changeKoreanVoice(event.target.value)} disabled={koreanVoices.length === 0} aria-label="选择韩语发音">
+                      {koreanVoices.length > 0 ? koreanVoices.map((voice) => <option value={voice.voiceURI} key={voice.voiceURI}>{voice.name}</option>) : <option>未发现韩语语音</option>}
+                    </select>
+                    <button className="voice-test" onClick={() => speakKorean("안녕하세요. 오늘도 같이 한국어를 공부해요.")} disabled={koreanVoices.length === 0}>试听</button>
+                  </div>
+                </div>
               </article>
             </section>
           </div>
