@@ -776,7 +776,7 @@ function ImportPage({ allowed, onImported }: { allowed: boolean; onImported: () 
     setLoading(true);
     const { error } = await supabase.from("words").upsert(rows, {
       onConflict: "korean,meaning_zh",
-      ignoreDuplicates: true,
+      ignoreDuplicates: false,
     });
     setLoading(false);
     if (error) {
@@ -793,7 +793,7 @@ function ImportPage({ allowed, onImported }: { allowed: boolean; onImported: () 
     <article className="import-card">
       <label className="file-drop">
         <strong>选择 CSV 文件</strong>
-        <span>必填列：korean、meaning_zh；标签之间用 | 分隔。</span>
+        <span>必填列：korean、meaning_zh；同一词条再次导入会更新例句和标签。</span>
         <input type="file" accept=".csv,text/csv" onChange={(event) => {
           const file = event.target.files?.[0];
           if (file) void readFile(file);
