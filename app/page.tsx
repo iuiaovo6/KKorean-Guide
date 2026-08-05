@@ -256,7 +256,7 @@ export default function Home() {
       return;
     }
     setWordIndex(0);
-    setStudyQueue(plannedWords.slice(0, dailyWords).map((word) => ({ word, repeat: false })));
+    setStudyQueue(shuffleWords(plannedWords.slice(0, dailyWords)).map((word) => ({ word, repeat: false })));
     setStep("preview");
     setSelected(null);
     setStudyOpen(true);
@@ -699,6 +699,15 @@ function StudyCard({
       <div className="memory-options"><span>看到能认出</span><span>听到能认出</span></div>
     </div>
   );
+}
+
+function shuffleWords(words: StudyWord[]) {
+  const shuffled = [...words];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const target = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[target]] = [shuffled[target], shuffled[index]];
+  }
+  return shuffled;
 }
 
 function calculateStudyStreak(records: WordProgress[]) {
