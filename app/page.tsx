@@ -336,6 +336,15 @@ export default function Home() {
 
   async function nextStudyStep() {
     setSelected(null);
+    if (step === "preview") {
+      if (wordIndex < studyQueue.length - 1) {
+        setWordIndex((value) => value + 1);
+        return;
+      }
+      setWordIndex(0);
+      setStep("meaning");
+      return;
+    }
     const order: StudyStep[] = spelling
       ? ["preview", "meaning", "sound", "context", "result"]
       : ["preview", "meaning", "sound", "context", "result"];
@@ -353,7 +362,7 @@ export default function Home() {
 
     if (wordIndex < nextQueue.length - 1) {
       setWordIndex((value) => value + 1);
-      setStep("preview");
+      setStep("meaning");
       setSelected(null);
       return;
     }
@@ -452,7 +461,7 @@ export default function Home() {
                 <div className="review-list">
                   {reviewItems.length > 0 ? reviewItems.map(({ word, record }) => {
                     const status = progressLabel(record);
-                    return <button key={word.id} className="review-row" onClick={startStudy}>
+                    return <button key={word.id} className="review-row" onClick={() => startStudy()}>
                       <span className={`status-dot ${status.tone}`} />
                       <span className="review-word"><strong>{word.korean}</strong><small>{word.meaning}</small></span>
                       <span className="review-level">{status.label}</span>
@@ -779,14 +788,14 @@ function WordsPage({ startStudy, words, progress, isAdmin, openImport }: { start
   const dueCount = records.filter((record) => new Date(record.next_review_at).getTime() <= Date.now()).length;
   const newCount = words.filter((word) => !progress[word.id]).length;
   return <div className="content inner-page">
-    <div className="page-title"><div><p className="eyebrow">MY VOCABULARY</p><h1>我的单词本</h1><p>不是收藏夹，而是一份会主动叫你回来复习的清单。</p></div><div className="page-actions">{isAdmin && <button className="ghost-button" onClick={openImport}>导入 CSV</button>}<button className="primary-button" onClick={startStudy}>开始今日复习 →</button></div></div>
+    <div className="page-title"><div><p className="eyebrow">MY VOCABULARY</p><h1>我的单词本</h1><p>不是收藏夹，而是一份会主动叫你回来复习的清单。</p></div><div className="page-actions">{isAdmin && <button className="ghost-button" onClick={openImport}>导入 CSV</button>}<button className="primary-button" onClick={() => startStudy()}>开始今日复习 →</button></div></div>
     <div className="stats-grid"><div><strong>{words.length}</strong><span>当前词库</span></div><div><strong>{stableCount}</strong><span>稳定识别</span></div><div><strong>{newCount}</strong><span>等待初学</span></div><div><strong>{dueCount}</strong><span>今日到期</span></div></div>
     <div className="word-table">
       <div className="table-head"><span>单词</span><span>词义</span><span>掌握状态</span><span>下次复习</span></div>
       {words.map((item) => {
         const record = progress[item.id];
         const status = progressLabel(record);
-        return <button className="table-row" key={item.id} onClick={startStudy}><strong>{item.korean}</strong><span>{item.meaning}</span><span><i className={`status-dot ${status.tone}`} />{status.label}</span><span>{reviewDate(record?.next_review_at)}</span></button>;
+        return <button className="table-row" key={item.id} onClick={() => startStudy()}><strong>{item.korean}</strong><span>{item.meaning}</span><span><i className={`status-dot ${status.tone}`} />{status.label}</span><span>{reviewDate(record?.next_review_at)}</span></button>;
       })}
     </div>
   </div>;
