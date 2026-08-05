@@ -336,20 +336,19 @@ export default function Home() {
 
   async function nextStudyStep() {
     setSelected(null);
-    if (step === "preview") {
-      if (wordIndex < studyQueue.length - 1) {
-        setWordIndex((value) => value + 1);
-        return;
-      }
-      setWordIndex(0);
-      setStep("meaning");
-      return;
-    }
     const order: StudyStep[] = spelling
       ? ["preview", "meaning", "sound", "context", "result"]
       : ["preview", "meaning", "sound", "context", "result"];
     const index = order.indexOf(step);
-    setStep(order[index + 1]);
+    if (wordIndex < studyQueue.length - 1) {
+      setWordIndex((value) => value + 1);
+      return;
+    }
+    const nextStep = order[index + 1];
+    if (!nextStep) return;
+    setStudyQueue(shuffleQueue(studyQueue));
+    setWordIndex(0);
+    setStep(nextStep);
   }
 
   async function rateWord(rating: MemoryRating) {
@@ -362,7 +361,7 @@ export default function Home() {
 
     if (wordIndex < nextQueue.length - 1) {
       setWordIndex((value) => value + 1);
-      setStep("meaning");
+      setStep("result");
       setSelected(null);
       return;
     }
@@ -712,6 +711,15 @@ function StudyCard({
 
 function shuffleWords(words: StudyWord[]) {
   const shuffled = [...words];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const target = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[target]] = [shuffled[target], shuffled[index]];
+  }
+  return shuffled;
+}
+
+function shuffleQueue(queue: StudyQueueItem[]) {
+  const shuffled = [...queue];
   for (let index = shuffled.length - 1; index > 0; index -= 1) {
     const target = Math.floor(Math.random() * (index + 1));
     [shuffled[index], shuffled[target]] = [shuffled[target], shuffled[index]];
