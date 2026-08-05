@@ -448,7 +448,7 @@ export default function Home() {
                   <div className="mini-tags">
                     <span>识义</span><span>听音</span><span>语境</span>{spelling && <span>拼写</span>}
                   </div>
-                  <button className="primary-button" onClick={todayCompleted ? () => setActiveTab("scenes") : startStudy}>{todayCompleted ? "去看看追星场景" : "继续学习"} <span>→</span></button>
+                  <button className="primary-button" onClick={todayCompleted ? () => setActiveTab("scenes") : () => startStudy()}>{todayCompleted ? "去看看追星场景" : "继续学习"} <span>→</span></button>
                 </div>
               </article>
 
