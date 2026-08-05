@@ -132,6 +132,7 @@ button { color: inherit; }
 .talk-copy h3, .settings-card h3 { margin: 14px 0 8px; font-size: 17px; }
 .talk-copy p { color: var(--muted); font-size: 11px; line-height: 1.7; margin: 0 0 9px; }
 .settings-card { padding: 20px; }
+.preferences-card { max-width: 760px; padding: 28px 32px; }
 .settings-card .section-heading { align-items: center; margin-bottom: 8px; }
 .settings-card h3 { margin: 0; }
 .saved-label { color: #64a486; background: #eaf7f0; border-radius: 99px; padding: 5px 8px; font-size: 9px; }
@@ -273,7 +274,7 @@ button { color: inherit; }
   .search-box { width: 44px; margin-left: auto; }
   .search-box input, .search-box kbd { display: none; }
   .top-actions { position: static; }
-  .top-actions .icon-button:last-child { display: none; }
+  .top-actions .icon-button:last-child { display: block; }
   .content { padding: 32px 18px 45px; }
   .welcome-row, .page-title { align-items: flex-start; gap: 20px; }
   .page-title { flex-direction: column; }

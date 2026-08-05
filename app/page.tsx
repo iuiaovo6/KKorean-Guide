@@ -4,7 +4,7 @@ import type { User } from "@supabase/supabase-js";
 import { useEffect, useMemo, useState } from "react";
 import { supabase } from "../lib/supabase";
 
-type Tab = "today" | "words" | "scenes" | "talk" | "import";
+type Tab = "today" | "words" | "scenes" | "talk" | "import" | "preferences";
 type StudyStep = "preview" | "meaning" | "sound" | "context" | "result";
 type StudyWord = {
   id: number;
@@ -23,6 +23,7 @@ type WordProgress = {
   listening_level: number;
   review_count: number;
   next_review_at: string;
+  last_reviewed_at: string | null;
 };
 type ImportWord = {
   korean: string;
@@ -74,6 +75,7 @@ export default function Home() {
   const [koreanVoices, setKoreanVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [selectedVoiceURI, setSelectedVoiceURI] = useState("");
   const [activeSceneTitle, setActiveSceneTitle] = useState<(typeof sceneBooks)[number]["title"]>(sceneBooks[0].title);
+  const [streakDays, setStreakDays] = useState(0);
 
   const current = studyQueue[wordIndex]?.word ?? studyWords[0] ?? fallbackWords[0];
   const sceneCards = useMemo(() => sceneBooks.map((book) => {
@@ -122,6 +124,7 @@ export default function Home() {
       setStudyWords(fallbackWords);
       setTodayWords(fallbackWords);
       setWordProgress({});
+      setStreakDays(0);
       setDataMessage("登录后读取真实学习数据");
       setIsAdmin(false);
       return;
@@ -141,7 +144,7 @@ export default function Home() {
           .single(),
         supabase
           .from("user_word_progress")
-          .select("word_id, meaning_level, listening_level, next_review_at, review_count")
+          .select("word_id, meaning_level, listening_level, next_review_at, review_count, last_reviewed_at")
           .eq("user_id", user.id),
       ]);
 
@@ -165,6 +168,7 @@ export default function Home() {
         const progressRows = (progressResult.data ?? []) as WordProgress[];
         const progress = new Map(progressRows.map((item) => [item.word_id, item]));
         setWordProgress(Object.fromEntries(progressRows.map((item) => [item.word_id, item])));
+        setStreakDays(calculateStudyStreak(progressRows));
         const dueWords = loadedWords.filter((word) => {
           const record = progress.get(word.id);
           return record && new Date(record.next_review_at).getTime() <= Date.now();
@@ -403,8 +407,8 @@ export default function Home() {
             <kbd>⌘ K</kbd>
           </label>
           <div className="top-actions">
-            <button className="icon-button" aria-label="连续学习">♨<span className="streak">6</span></button>
-            <button className="icon-button" aria-label="通知">♢</button>
+            <button className="icon-button" aria-label={`连续学习 ${streakDays} 天`} onClick={() => setActiveTab("today")}>♨<span className="streak">{streakDays}</span></button>
+            <button className="icon-button" aria-label="打开个人偏好" onClick={() => setActiveTab("preferences")}>♢</button>
           </div>
         </header>
 
@@ -492,7 +496,7 @@ export default function Home() {
               </article>
 
               <article className="settings-card" id="daily-settings">
-                <div className="section-heading"><h3>每日设置</h3><span className="saved-label">自动保存</span></div>
+                <div className="section-heading"><h3>个人偏好</h3><span className="saved-label">自动保存</span></div>
                 <label className="setting-row">
                   <span><strong>每日新词</strong><small>复习词会另外加入</small></span>
                   <select value={dailyWords} onChange={(event) => void saveSettings(Number(event.target.value), spelling)}>
@@ -520,6 +524,7 @@ export default function Home() {
         {activeTab === "words" && <WordsPage startStudy={startStudy} words={studyWords} progress={wordProgress} isAdmin={isAdmin} openImport={() => setActiveTab("import")} />}
         {activeTab === "scenes" && <ScenesPage books={search ? filteredBooks : sceneCards} words={studyWords} progress={wordProgress} dailyWords={dailyWords} activeSceneTitle={activeSceneTitle} setActiveSceneTitle={setActiveSceneTitle} startStudy={startStudy} />}
         {activeTab === "talk" && <TalkPage />}
+        {activeTab === "preferences" && <PreferencesPage dailyWords={dailyWords} spelling={spelling} saveSettings={saveSettings} koreanVoices={koreanVoices} selectedVoiceURI={selectedVoiceURI} changeKoreanVoice={changeKoreanVoice} onSpeak={speakKorean} />}
         {activeTab === "import" && (
           <ImportPage
             allowed={Boolean(user && isAdmin)}
@@ -696,6 +701,24 @@ function StudyCard({
   );
 }
 
+function calculateStudyStreak(records: WordProgress[]) {
+  const dates = new Set(records.map((record) => record.last_reviewed_at?.slice(0, 10)).filter(Boolean));
+  if (dates.size === 0) return 0;
+  const today = new Date();
+  const todayKey = today.toISOString().slice(0, 10);
+  const yesterday = new Date(today);
+  yesterday.setDate(yesterday.getDate() - 1);
+  const yesterdayKey = yesterday.toISOString().slice(0, 10);
+  if (!dates.has(todayKey) && !dates.has(yesterdayKey)) return 0;
+  const cursor = new Date(dates.has(todayKey) ? today : yesterday);
+  let streak = 0;
+  while (dates.has(cursor.toISOString().slice(0, 10))) {
+    streak += 1;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+  return streak;
+}
+
 function progressLabel(record?: WordProgress) {
   if (!record) return { label: "等待初学", tone: "gray" };
   const level = Math.min(record.meaning_level, record.listening_level);
@@ -715,6 +738,30 @@ function reviewDate(value?: string) {
   if (days <= 0) return "今天";
   if (days === 1) return "明天";
   return date.toLocaleDateString("zh-CN", { month: "numeric", day: "numeric" });
+}
+
+function PreferencesPage({ dailyWords, spelling, saveSettings, koreanVoices, selectedVoiceURI, changeKoreanVoice, onSpeak }: { dailyWords: number; spelling: boolean; saveSettings: (dailyWords: number, spelling: boolean) => Promise<void>; koreanVoices: SpeechSynthesisVoice[]; selectedVoiceURI: string; changeKoreanVoice: (voiceURI: string) => void; onSpeak: (text: string) => void }) {
+  return <div className="content inner-page">
+    <div className="page-title"><div><p className="eyebrow">YOUR LEARNING SPACE</p><h1>个人偏好</h1><p>调整每天学多少、要不要练拼写，以及你想听到的韩语发音。</p></div></div>
+    <article className="preferences-card settings-card">
+      <div className="section-heading"><h3>学习方式</h3><span className="saved-label">自动保存</span></div>
+      <label className="setting-row">
+        <span><strong>每日新词</strong><small>复习词会另外加入</small></span>
+        <select value={dailyWords} onChange={(event) => void saveSettings(Number(event.target.value), spelling)}><option value={5}>5 词</option><option value={10}>10 词</option><option value={15}>15 词</option><option value={20}>20 词</option></select>
+      </label>
+      <label className="setting-row">
+        <span><strong>拼写训练</strong><small>关闭后只练看到、听到能认出</small></span>
+        <input className="switch" type="checkbox" checked={spelling} onChange={(event) => void saveSettings(dailyWords, event.target.checked)} />
+      </label>
+      <div className="setting-row">
+        <span><strong>韩语发音</strong><small>{koreanVoices.length > 1 ? "从这台设备可用的韩语语音中选择" : "由这台设备的系统语音提供"}</small></span>
+        <div className="voice-control">
+          <select value={selectedVoiceURI} onChange={(event) => changeKoreanVoice(event.target.value)} disabled={koreanVoices.length === 0} aria-label="选择韩语发音">{koreanVoices.length > 0 ? koreanVoices.map((voice) => <option value={voice.voiceURI} key={voice.voiceURI}>{voice.name}</option>) : <option>未发现韩语语音</option>}</select>
+          <button className="voice-test" onClick={() => onSpeak("안녕하세요. 오늘도 같이 한국어를 공부해요.")} disabled={koreanVoices.length === 0}>试听</button>
+        </div>
+      </div>
+    </article>
+  </div>;
 }
 
 function WordsPage({ startStudy, words, progress, isAdmin, openImport }: { startStudy: () => void; words: StudyWord[]; progress: Record<number, WordProgress>; isAdmin: boolean; openImport: () => void }) {
