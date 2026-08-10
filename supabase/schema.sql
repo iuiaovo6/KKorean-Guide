@@ -53,9 +53,10 @@ using ((select auth.uid()) = id)
 with check ((select auth.uid()) = id);
 
 drop policy if exists "Signed-in users can read words" on public.words;
-create policy "Signed-in users can read words"
+drop policy if exists "Anyone can read words" on public.words;
+create policy "Anyone can read words"
 on public.words for select
-to authenticated
+to anon, authenticated
 using (true);
 
 drop policy if exists "Users can read their own progress" on public.user_word_progress;
