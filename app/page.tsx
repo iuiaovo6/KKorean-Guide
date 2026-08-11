@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { supabase } from "../lib/supabase";
 
 type Tab = "today" | "words" | "scenes" | "talk" | "import" | "preferences";
-type StudyStep = "preview" | "meaning" | "sound" | "context" | "result";
+type StudyStep = "meaning" | "reverse" | "recall" | "result";
 type StudyWord = {
   id: number;
   korean: string;
@@ -15,7 +15,7 @@ type StudyWord = {
   translation: string;
   tags: string[];
 };
-type MemoryRating = "again" | "hard" | "good" | "easy";
+type MemoryRating = "again" | "hard" | "good" | "easy" | "mastered";
 type StudyQueueItem = { word: StudyWord; repeat: boolean };
 type WordProgress = {
   word_id: number;
@@ -51,10 +51,11 @@ const sceneBooks = [
 export default function Home() {
   const [activeTab, setActiveTab] = useState<Tab>("today");
   const [studyOpen, setStudyOpen] = useState(false);
-  const [step, setStep] = useState<StudyStep>("preview");
+  const [step, setStep] = useState<StudyStep>("meaning");
   const [wordIndex, setWordIndex] = useState(0);
   const [studyQueue, setStudyQueue] = useState<StudyQueueItem[]>([]);
   const [selected, setSelected] = useState<string | null>(null);
+  const [typedAnswer, setTypedAnswer] = useState("");
   const [dailyWords, setDailyWords] = useState(10);
   const [spelling, setSpelling] = useState(false);
   const [search, setSearch] = useState("");
@@ -74,6 +75,7 @@ export default function Home() {
   const [dataVersion, setDataVersion] = useState(0);
   const [koreanVoices, setKoreanVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [selectedVoiceURI, setSelectedVoiceURI] = useState("");
+  const [autoSpeak, setAutoSpeak] = useState(false);
   const [activeSceneTitle, setActiveSceneTitle] = useState<(typeof sceneBooks)[number]["title"]>(sceneBooks[0].title);
   const [streakDays, setStreakDays] = useState(0);
 
@@ -104,6 +106,16 @@ export default function Home() {
     });
     return () => data.subscription.unsubscribe();
   }, []);
+
+  useEffect(() => {
+    setAutoSpeak(window.localStorage.getItem("talk-guide-auto-speak") === "true");
+  }, []);
+
+  useEffect(() => {
+    if (!studyOpen || !autoSpeak || step === "result") return;
+    const timer = window.setTimeout(() => speakKorean(current.korean), 120);
+    return () => window.clearTimeout(timer);
+  }, [studyOpen, autoSpeak, step, wordIndex, current.korean]);
 
   useEffect(() => {
     if (!("speechSynthesis" in window)) return;
@@ -289,16 +301,17 @@ export default function Home() {
     }
     setWordIndex(0);
     setStudyQueue(shuffleWords(plannedWords.slice(0, dailyWords)).map((word) => ({ word, repeat: false })));
-    setStep("preview");
+    setStep("meaning");
     setSelected(null);
+    setTypedAnswer("");
     setStudyOpen(true);
   }
 
   async function saveProgress(word: StudyWord, rating: MemoryRating) {
     if (!user || word.id < 0) return;
-    const intervalDays = rating === "again" ? 0 : rating === "hard" ? 1 : rating === "good" ? 3 : 7;
+    const intervalDays = rating === "mastered" ? 36500 : rating === "again" ? 0 : rating === "hard" ? 1 : rating === "good" ? 3 : 7;
     const nextReviewAt = new Date(Date.now() + intervalDays * 24 * 60 * 60 * 1000).toISOString();
-    const level = rating === "again" ? 0 : rating === "hard" ? 1 : rating === "good" ? 2 : 3;
+    const level = rating === "mastered" ? 5 : rating === "again" ? 0 : rating === "hard" ? 1 : rating === "good" ? 2 : 3;
     const { data: previous } = await supabase
       .from("user_word_progress")
       .select("review_count")
@@ -366,11 +379,14 @@ export default function Home() {
     window.localStorage.setItem("talk-guide-korean-voice", voiceURI);
   }
 
+  function changeAutoSpeak(enabled: boolean) {
+    setAutoSpeak(enabled);
+    window.localStorage.setItem("talk-guide-auto-speak", String(enabled));
+  }
+
   async function nextStudyStep() {
     setSelected(null);
-    const order: StudyStep[] = spelling
-      ? ["preview", "meaning", "sound", "context", "result"]
-      : ["preview", "meaning", "sound", "context", "result"];
+    const order: StudyStep[] = ["meaning", "reverse", "recall", "result"];
     const index = order.indexOf(step);
     if (wordIndex < studyQueue.length - 1) {
       setWordIndex((value) => value + 1);
@@ -381,6 +397,7 @@ export default function Home() {
     setStudyQueue(shuffleQueue(studyQueue));
     setWordIndex(0);
     setStep(nextStep);
+    setTypedAnswer("");
   }
 
   async function rateWord(rating: MemoryRating) {
@@ -564,7 +581,7 @@ export default function Home() {
         {activeTab === "words" && <WordsPage startStudy={startStudy} words={studyWords} progress={wordProgress} isAdmin={isAdmin} openImport={() => setActiveTab("import")} />}
         {activeTab === "scenes" && <ScenesPage books={search ? filteredBooks : sceneCards} words={studyWords} progress={wordProgress} dailyWords={dailyWords} activeSceneTitle={activeSceneTitle} setActiveSceneTitle={setActiveSceneTitle} startStudy={startStudy} />}
         {activeTab === "talk" && <TalkPage />}
-        {activeTab === "preferences" && <PreferencesPage dailyWords={dailyWords} spelling={spelling} saveSettings={saveSettings} koreanVoices={koreanVoices} selectedVoiceURI={selectedVoiceURI} changeKoreanVoice={changeKoreanVoice} onSpeak={speakKorean} />}
+        {activeTab === "preferences" && <PreferencesPage dailyWords={dailyWords} spelling={spelling} autoSpeak={autoSpeak} saveSettings={saveSettings} changeAutoSpeak={changeAutoSpeak} koreanVoices={koreanVoices} selectedVoiceURI={selectedVoiceURI} changeKoreanVoice={changeKoreanVoice} onSpeak={speakKorean} />}
         {activeTab === "import" && (
           <ImportPage
             allowed={Boolean(user && isAdmin)}
@@ -647,7 +664,7 @@ export default function Home() {
               <div className="study-progress"><i style={{ width: `${((wordIndex + 1) / Math.max(studyQueue.length, 1)) * 100}%` }} /></div>
               <span>{wordIndex + 1} / {studyQueue.length}</span>
             </header>
-            <StudyCard step={step} word={current} selected={selected} setSelected={setSelected} onSpeak={speakKorean} />
+            <StudyCard step={step} word={current} selected={selected} setSelected={setSelected} typedAnswer={typedAnswer} setTypedAnswer={setTypedAnswer} spelling={spelling} onSpeak={speakKorean} onMastered={() => void rateWord("mastered")} />
             <footer className="study-footer">
               {step === "result" ? (
                 <div className="rating-grid">
@@ -659,7 +676,7 @@ export default function Home() {
               ) : (
                 <>
                   <span className="study-tip">{studyQueue[wordIndex]?.repeat ? "这是本轮再次出现的词" : "按自己的真实记忆作答"}</span>
-                  <button className="primary-button" onClick={nextStudyStep} disabled={(step === "meaning" || step === "sound") && !selected}>继续 <span>→</span></button>
+                  <button className="primary-button" onClick={nextStudyStep} disabled={(step === "meaning" || step === "reverse") && !selected || step === "recall" && (!selected || spelling && !typedAnswer.trim())}>继续 <span>→</span></button>
                 </>
               )}
             </footer>
@@ -680,39 +697,39 @@ function StudyCard({
   word,
   selected,
   setSelected,
+  typedAnswer,
+  setTypedAnswer,
+  spelling,
   onSpeak,
+  onMastered,
 }: {
   step: StudyStep;
   word: StudyWord;
   selected: string | null;
   setSelected: (value: string) => void;
+  typedAnswer: string;
+  setTypedAnswer: (value: string) => void;
+  spelling: boolean;
   onSpeak: (text: string) => void;
+  onMastered: () => void;
 }) {
-  if (step === "preview") return (
-    <div className="learning-card center-card">
-      <p className="eyebrow">FIRST LOOK · 初次见面</p>
-      <button className="sound-button" aria-label="播放发音" onClick={() => onSpeak(word.korean)}>♬</button>
-      <h2>{word.korean}</h2>
-      <span className="word-type">{word.type}</span>
-      <p className="learning-hint">先看一眼、听一遍。下一张卡会检查你是否认得。</p>
-    </div>
-  );
   if (step === "meaning") return (
     <div className="learning-card">
-      <p className="eyebrow">MEANING · 选择词义</p>
+      <p className="eyebrow">ROUND 1 · 听音看词选意思</p>
+      <button className="sound-button" aria-label="播放发音" onClick={() => onSpeak(word.korean)}>♬</button>
       <h2 className="question-word">{word.korean}</h2>
       <div className="answer-grid">
         {Array.from(new Set(["期待", word.meaning, "回忆", "应援"])).map((answer) => (
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
         ))}
       </div>
-      {selected && <p className={`answer-note ${selected === word.meaning ? "correct" : ""}`}>{selected === word.meaning ? "认出来了。稍后还会换一种方式再见。" : `正确含义是：${word.meaning}`}</p>}
+      {selected === word.meaning && word.example ? <div className="mini-example"><strong>{word.example}</strong><span>{word.translation}</span></div> : selected && <p className="answer-note">正确含义是：{word.meaning}</p>}
     </div>
   );
-  if (step === "sound") return (
+  if (step === "reverse") return (
     <div className="learning-card">
-      <p className="eyebrow">LISTEN · 听音识别</p>
-      <button className="big-audio-button" aria-label="播放单词发音" onClick={() => onSpeak(word.korean)}>♬<small>再听一次</small></button>
+      <p className="eyebrow">ROUND 2 · 看汉语选单词</p>
+      <h2 className="question-word meaning-question">{word.meaning}</h2>
       <div className="answer-grid compact">
         {Array.from(new Set([word.korean, "설레요", "소중하다", "기억하다"])).map((answer) => (
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
@@ -720,23 +737,25 @@ function StudyCard({
       </div>
     </div>
   );
-  if (step === "context") return (
+  if (step === "recall") return (
     <div className="learning-card">
-      <p className="eyebrow">IN CONTEXT · 放进句子</p>
-      <div className="context-box">
-        {word.example ? <><span>“</span><h2>{word.example}</h2><p>{word.translation}</p>
-          <button className="sentence-audio" onClick={() => onSpeak(word.example)} aria-label="播放完整例句">♬ 听整句</button></> : <p className="learning-hint">这张基础词卡暂时没有例句。先练到看到和听到都能认出它。</p>}
+      <p className="eyebrow">ROUND 3 · 听音选汉语，再写韩语</p>
+      <button className="big-audio-button" aria-label="播放单词发音" onClick={() => onSpeak(word.korean)}>♬<small>再听一次</small></button>
+      <div className="answer-grid">
+        {Array.from(new Set([word.meaning, "期待", "回忆", "应援"])).map((answer) => (
+          <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
+        ))}
       </div>
-      <div className="word-breakdown"><strong>{word.korean}</strong><span>{word.meaning}</span><small>在这句话里表达自然、真诚的情绪。</small></div>
+      {spelling && <label className="spelling-input"><span>试着写出刚才听到的韩语</span><input value={typedAnswer} onChange={(event) => setTypedAnswer(event.target.value)} placeholder="输入韩文" /></label>}
     </div>
   );
   return (
-    <div className="learning-card center-card">
+    <div className="learning-card center-card result-card">
+      <button className="mastery-button" onClick={onMastered}>完全认识 ✓</button>
       <span className="result-check">✓</span>
       <p className="eyebrow">ONE MORE TIME</p>
       <h2>{word.korean}</h2><h3>{word.meaning}</h3>
-      <p className="learning-hint">这不是结束。系统会根据你的表现，在今天稍后和未来几天安排复习。</p>
-      <div className="memory-options"><span>看到能认出</span><span>听到能认出</span></div>
+      <p className="learning-hint">我们还能再见面吗？</p>
     </div>
   );
 }
@@ -798,7 +817,7 @@ function reviewDate(value?: string) {
   return date.toLocaleDateString("zh-CN", { month: "numeric", day: "numeric" });
 }
 
-function PreferencesPage({ dailyWords, spelling, saveSettings, koreanVoices, selectedVoiceURI, changeKoreanVoice, onSpeak }: { dailyWords: number; spelling: boolean; saveSettings: (dailyWords: number, spelling: boolean) => Promise<void>; koreanVoices: SpeechSynthesisVoice[]; selectedVoiceURI: string; changeKoreanVoice: (voiceURI: string) => void; onSpeak: (text: string) => void }) {
+function PreferencesPage({ dailyWords, spelling, autoSpeak, saveSettings, changeAutoSpeak, koreanVoices, selectedVoiceURI, changeKoreanVoice, onSpeak }: { dailyWords: number; spelling: boolean; autoSpeak: boolean; saveSettings: (dailyWords: number, spelling: boolean) => Promise<void>; changeAutoSpeak: (enabled: boolean) => void; koreanVoices: SpeechSynthesisVoice[]; selectedVoiceURI: string; changeKoreanVoice: (voiceURI: string) => void; onSpeak: (text: string) => void }) {
   return <div className="content inner-page">
     <div className="page-title"><div><p className="eyebrow">YOUR LEARNING SPACE</p><h1>个人偏好</h1><p>调整每天学多少、要不要练拼写，以及你想听到的韩语发音。</p></div></div>
     <article className="preferences-card settings-card">
@@ -810,6 +829,10 @@ function PreferencesPage({ dailyWords, spelling, saveSettings, koreanVoices, sel
       <label className="setting-row">
         <span><strong>拼写训练</strong><small>关闭后只练看到、听到能认出</small></span>
         <input className="switch" type="checkbox" checked={spelling} onChange={(event) => void saveSettings(dailyWords, event.target.checked)} />
+      </label>
+      <label className="setting-row">
+        <span><strong>自动读单词</strong><small>进入每一轮时自动播放韩语发音</small></span>
+        <input className="switch" type="checkbox" checked={autoSpeak} onChange={(event) => changeAutoSpeak(event.target.checked)} />
       </label>
       <div className="setting-row">
         <span><strong>韩语发音</strong><small>{koreanVoices.length > 1 ? "从这台设备可用的韩语语音中选择" : "由这台设备的系统语音提供"}</small></span>

@@ -173,6 +173,14 @@ button { color: inherit; }
 .big-audio-button { width: 100px; height: 100px; border: 0; background: #111318; color: white; border-radius: 50%; margin: 10px auto 36px; display: grid; place-items: center; cursor: pointer; font-size: 25px; }
 .big-audio-button small { font-size: 8px; color: #a7adba; }
 .answer-grid.compact button { text-align: center; font-size: 16px; }
+.meaning-question { color: var(--blue-strong); font-size: 32px; }
+.mini-example { display: grid; gap: 5px; margin-top: 16px; padding: 13px 15px; border-left: 3px solid var(--blue); background: var(--blue-soft); border-radius: 8px; }
+.mini-example strong { font-size: 14px; line-height: 1.5; }
+.mini-example span { color: var(--muted); font-size: 11px; line-height: 1.5; }
+.spelling-input { display: grid; gap: 7px; margin-top: 18px; }
+.spelling-input span { color: var(--muted); font-size: 10px; }
+.spelling-input input { height: 42px; border: 1px solid var(--line); border-radius: 9px; padding: 0 12px; font-size: 15px; outline: 0; }
+.spelling-input input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px var(--blue-soft); }
 .context-box { background: #111318; color: white; border-radius: 14px; padding: 32px; position: relative; }
 .context-box > span { color: #8cc8f5; font-size: 50px; position: absolute; top: 8px; }
 .context-box h2 { font-size: 24px; line-height: 1.5; margin: 26px 0 10px; }
@@ -185,6 +193,9 @@ button { color: inherit; }
 .word-breakdown small { color: var(--muted); grid-column: 1 / -1; }
 .result-check { width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; background: #eaf7f0; color: #3a916b; font-size: 21px; }
 .center-card h3 { margin: 0; color: var(--blue-strong); font-size: 15px; }
+.result-card { position: relative; }
+.mastery-button { position: absolute; top: 16px; right: 18px; border: 1px solid #b9dff8; background: var(--blue-soft); color: var(--blue-ink); border-radius: 8px; padding: 8px 10px; font-size: 10px; cursor: pointer; }
+.mastery-button:hover { background: #dceffd; }
 .memory-options { display: flex; gap: 8px; }
 .memory-options span { background: var(--soft); border-radius: 7px; padding: 7px 10px; font-size: 10px; }
 .study-footer { background: white; border-top: 1px solid var(--line); padding: 16px 22px; display: flex; justify-content: space-between; }
