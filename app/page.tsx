@@ -122,12 +122,6 @@ export default function Home() {
   }, [studyOpen, autoSpeak, step, wordIndex, current.korean]);
 
   useEffect(() => {
-    if (!studyOpen || step !== "recall" || recallReadyToRate || recallFeedbackTone === "answer" || normalizeAnswer(typedAnswer) !== normalizeAnswer(current.meaning)) return;
-    const timer = window.setTimeout(() => setRecallReadyToRate(true), 550);
-    return () => window.clearTimeout(timer);
-  }, [studyOpen, step, wordIndex, typedAnswer, current.meaning, recallReadyToRate, recallFeedbackTone]);
-
-  useEffect(() => {
     if (!("speechSynthesis" in window)) return;
     const loadKoreanVoices = () => {
       const voices = window.speechSynthesis.getVoices().filter((voice) => voice.lang.toLowerCase().startsWith("ko"));
@@ -399,12 +393,9 @@ export default function Home() {
 
   function updateRecallAnswer(value: string) {
     setTypedAnswer(value);
-    if (normalizeAnswer(value) === normalizeAnswer(current.meaning)) {
-      setRecallFeedback("✓ 答对了");
-      setRecallFeedbackTone("correct");
-      return;
-    }
     setRecallReadyToRate(false);
+    setRecallFeedback("");
+    setRecallFeedbackTone(null);
   }
 
   function chooseRecallOption(answer: string) {
@@ -456,7 +447,7 @@ export default function Home() {
         setRecallFeedbackTone("wrong");
         return;
       }
-      if (normalizeAnswer(typedAnswer) !== normalizeAnswer(current.meaning)) {
+      if (!isAcceptedMeaning(typedAnswer, current.meaning)) {
         setRecallFeedback("中文意思还不对，再想一下。可以重新听一遍。");
         setRecallFeedbackTone("wrong");
         return;
@@ -860,7 +851,13 @@ function shuffledOptions(options: string[], seed: string) {
 }
 
 function normalizeAnswer(value: string) {
-  return value.trim().replace(/[，、]/g, "、").replace(/\s+/g, "");
+  return value.trim().replace(/\s+/g, "");
+}
+
+function isAcceptedMeaning(value: string, meaning: string) {
+  const answer = normalizeAnswer(value);
+  const accepted = meaning.split(/[·/、，,；;]+/).map(normalizeAnswer).filter(Boolean);
+  return accepted.includes(answer) || normalizeAnswer(meaning) === answer;
 }
 
 function shuffleWords(words: StudyWord[]) {
