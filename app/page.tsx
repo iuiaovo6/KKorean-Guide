@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { supabase } from "../lib/supabase";
 
 type Tab = "today" | "words" | "scenes" | "talk" | "import" | "preferences";
-type StudyStep = "meaning" | "reverse" | "recall" | "result";
+type StudyStep = "meaning" | "reverse" | "recall";
 type StudyWord = {
   id: number;
   korean: string;
@@ -56,6 +56,8 @@ export default function Home() {
   const [studyQueue, setStudyQueue] = useState<StudyQueueItem[]>([]);
   const [selected, setSelected] = useState<string | null>(null);
   const [typedAnswer, setTypedAnswer] = useState("");
+  const [recallFeedback, setRecallFeedback] = useState("");
+  const [recallReadyToRate, setRecallReadyToRate] = useState(false);
   const [dailyWords, setDailyWords] = useState(10);
   const [spelling, setSpelling] = useState(false);
   const [search, setSearch] = useState("");
@@ -112,7 +114,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (!studyOpen || !autoSpeak || step === "result") return;
+    if (!studyOpen || !autoSpeak) return;
     const timer = window.setTimeout(() => speakKorean(current.korean), 120);
     return () => window.clearTimeout(timer);
   }, [studyOpen, autoSpeak, step, wordIndex, current.korean]);
@@ -304,6 +306,8 @@ export default function Home() {
     setStep("meaning");
     setSelected(null);
     setTypedAnswer("");
+    setRecallFeedback("");
+    setRecallReadyToRate(false);
     setStudyOpen(true);
   }
 
@@ -384,9 +388,54 @@ export default function Home() {
     window.localStorage.setItem("talk-guide-auto-speak", String(enabled));
   }
 
-  async function nextStudyStep() {
+  function updateRecallAnswer(value: string) {
+    setTypedAnswer(value);
+    if (normalizeAnswer(value) === normalizeAnswer(current.meaning)) {
+      setRecallFeedback("");
+      setRecallReadyToRate(true);
+      return;
+    }
+    setRecallReadyToRate(false);
+  }
+
+  async function markCurrentMastered() {
+    await saveProgress(current, "mastered");
+    const nextQueue = studyQueue.filter((_, index) => index !== wordIndex);
+    if (nextQueue.length === 0) {
+      setStudyOpen(false);
+      setDataVersion((value) => value + 1);
+      setToast("已标记为完全认识，不会再安排复习");
+      window.setTimeout(() => setToast(""), 2400);
+      return;
+    }
+    setStudyQueue(nextQueue);
+    setWordIndex((value) => Math.min(value, nextQueue.length - 1));
     setSelected(null);
-    const order: StudyStep[] = ["meaning", "reverse", "recall", "result"];
+    setTypedAnswer("");
+    setRecallFeedback("");
+    setRecallReadyToRate(false);
+    setToast("已标记为完全认识，不会再安排复习");
+    window.setTimeout(() => setToast(""), 2400);
+  }
+
+  async function nextStudyStep() {
+    if (step === "recall") {
+      if (selected !== current.korean) {
+        setRecallFeedback("先选对刚才听到的韩语，再继续。");
+        return;
+      }
+      if (normalizeAnswer(typedAnswer) !== normalizeAnswer(current.meaning)) {
+        setRecallFeedback("中文意思还不对，再想一下。可以重新听一遍。");
+        return;
+      }
+      setRecallFeedback("");
+      setRecallReadyToRate(true);
+      return;
+    }
+
+    setSelected(null);
+    setTypedAnswer("");
+    const order: StudyStep[] = ["meaning", "reverse", "recall"];
     const index = order.indexOf(step);
     if (wordIndex < studyQueue.length - 1) {
       setWordIndex((value) => value + 1);
@@ -398,6 +447,8 @@ export default function Home() {
     setWordIndex(0);
     setStep(nextStep);
     setTypedAnswer("");
+    setRecallFeedback("");
+    setRecallReadyToRate(false);
   }
 
   async function rateWord(rating: MemoryRating) {
@@ -410,8 +461,10 @@ export default function Home() {
 
     if (wordIndex < nextQueue.length - 1) {
       setWordIndex((value) => value + 1);
-      setStep("result");
       setSelected(null);
+      setTypedAnswer("");
+      setRecallFeedback("");
+      setRecallReadyToRate(false);
       return;
     }
 
@@ -662,11 +715,11 @@ export default function Home() {
             <header className="study-header">
               <button onClick={() => setStudyOpen(false)} aria-label="关闭学习">×</button>
               <div className="study-progress"><i style={{ width: `${((wordIndex + 1) / Math.max(studyQueue.length, 1)) * 100}%` }} /></div>
-              <span>{wordIndex + 1} / {studyQueue.length}</span>
+              <div className="study-header-actions"><button className="mastery-header" onClick={() => void markCurrentMastered()}>完全认识</button><span>{wordIndex + 1} / {studyQueue.length}</span></div>
             </header>
-            <StudyCard step={step} word={current} selected={selected} setSelected={setSelected} typedAnswer={typedAnswer} setTypedAnswer={setTypedAnswer} spelling={spelling} onSpeak={speakKorean} onMastered={() => void rateWord("mastered")} />
+            <StudyCard step={step} word={current} selected={selected} setSelected={setSelected} typedAnswer={typedAnswer} setTypedAnswer={updateRecallAnswer} recallFeedback={recallFeedback} onSpeak={speakKorean} />
             <footer className="study-footer">
-              {step === "result" ? (
+              {step === "recall" && recallReadyToRate ? (
                 <div className="rating-grid">
                   <button onClick={() => void rateWord("again")}><strong>不认识</strong><small>本轮再来</small></button>
                   <button onClick={() => void rateWord("hard")}><strong>有点模糊</strong><small>本轮再来</small></button>
@@ -676,7 +729,7 @@ export default function Home() {
               ) : (
                 <>
                   <span className="study-tip">{studyQueue[wordIndex]?.repeat ? "这是本轮再次出现的词" : "按自己的真实记忆作答"}</span>
-                  <button className="primary-button" onClick={nextStudyStep} disabled={(step === "meaning" || step === "reverse") && !selected || step === "recall" && (!selected || spelling && !typedAnswer.trim())}>继续 <span>→</span></button>
+                  <button className="primary-button" onClick={nextStudyStep} disabled={(step === "meaning" || step === "reverse") && !selected || step === "recall" && (selected !== current.korean || !typedAnswer.trim())}>{step === "recall" ? "确认答案" : "继续"} <span>→</span></button>
                 </>
               )}
             </footer>
@@ -699,9 +752,8 @@ function StudyCard({
   setSelected,
   typedAnswer,
   setTypedAnswer,
-  spelling,
+  recallFeedback,
   onSpeak,
-  onMastered,
 }: {
   step: StudyStep;
   word: StudyWord;
@@ -709,29 +761,28 @@ function StudyCard({
   setSelected: (value: string) => void;
   typedAnswer: string;
   setTypedAnswer: (value: string) => void;
-  spelling: boolean;
+  recallFeedback: string;
   onSpeak: (text: string) => void;
-  onMastered: () => void;
 }) {
   if (step === "meaning") return (
     <div className="learning-card">
-      <p className="eyebrow">ROUND 1 · 听音看词选意思</p>
+      <p className="eyebrow">ROUND 1 · 听词选义</p>
       <button className="sound-button" aria-label="播放发音" onClick={() => onSpeak(word.korean)}>♬</button>
       <h2 className="question-word">{word.korean}</h2>
       <div className="answer-grid">
-        {Array.from(new Set(["期待", word.meaning, "回忆", "应援"])).map((answer) => (
+        {shuffledOptions(["期待", word.meaning, "回忆", "应援"], `${word.id}-meaning`).map((answer) => (
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
         ))}
       </div>
-      {selected === word.meaning && word.example ? <div className="mini-example"><strong>{word.example}</strong><span>{word.translation}</span></div> : selected && <p className="answer-note">正确含义是：{word.meaning}</p>}
+      {selected === word.meaning && word.example ? <div className="mini-example"><strong>{word.example}</strong><span>{word.translation}</span><button className="sentence-audio mini-sentence-audio" onClick={() => onSpeak(word.example)}>♬ 播放例句</button></div> : selected && <p className="answer-note">正确含义是：{word.meaning}</p>}
     </div>
   );
   if (step === "reverse") return (
     <div className="learning-card">
-      <p className="eyebrow">ROUND 2 · 看汉语选单词</p>
+      <p className="eyebrow">ROUND 2 · 汉义选词</p>
       <h2 className="question-word meaning-question">{word.meaning}</h2>
       <div className="answer-grid compact">
-        {Array.from(new Set([word.korean, "설레요", "소중하다", "기억하다"])).map((answer) => (
+        {shuffledOptions([word.korean, "설레요", "소중하다", "기억하다"], `${word.id}-reverse`).map((answer) => (
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
         ))}
       </div>
@@ -739,25 +790,33 @@ function StudyCard({
   );
   if (step === "recall") return (
     <div className="learning-card">
-      <p className="eyebrow">ROUND 3 · 听音选汉语，再写韩语</p>
-      <button className="big-audio-button" aria-label="播放单词发音" onClick={() => onSpeak(word.korean)}>♬<small>再听一次</small></button>
-      <div className="answer-grid">
-        {Array.from(new Set([word.meaning, "期待", "回忆", "应援"])).map((answer) => (
+      <p className="eyebrow">ROUND 3 · 听音选词</p>
+      <button className="big-audio-button blue-audio-button" aria-label="播放单词发音" onClick={() => onSpeak(word.korean)}>♬<small>再听一次</small></button>
+      <div className="answer-grid compact">
+        {shuffledOptions([word.korean, "설레요", "소중하다", "기억하다"], `${word.id}-recall`).map((answer) => (
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
         ))}
       </div>
-      {spelling && <label className="spelling-input"><span>试着写出刚才听到的韩语</span><input value={typedAnswer} onChange={(event) => setTypedAnswer(event.target.value)} placeholder="输入韩文" /></label>}
+      {selected === word.korean && <label className="spelling-input"><span>写出它对应的中文意思</span><input value={typedAnswer} onChange={(event) => setTypedAnswer(event.target.value)} placeholder="输入中文" autoFocus /></label>}
+      {recallFeedback && <p className="answer-note">{recallFeedback}</p>}
     </div>
   );
-  return (
-    <div className="learning-card center-card result-card">
-      <button className="mastery-button" onClick={onMastered}>完全认识 ✓</button>
-      <span className="result-check">✓</span>
-      <p className="eyebrow">ONE MORE TIME</p>
-      <h2>{word.korean}</h2><h3>{word.meaning}</h3>
-      <p className="learning-hint">我们还能再见面吗？</p>
-    </div>
-  );
+  return null;
+}
+
+function shuffledOptions(options: string[], seed: string) {
+  const unique = Array.from(new Set(options));
+  let value = Array.from(seed).reduce((total, character) => ((total << 5) - total + character.charCodeAt(0)) | 0, 0) >>> 0;
+  for (let index = unique.length - 1; index > 0; index -= 1) {
+    value = (value * 1664525 + 1013904223) >>> 0;
+    const target = value % (index + 1);
+    [unique[index], unique[target]] = [unique[target], unique[index]];
+  }
+  return unique;
+}
+
+function normalizeAnswer(value: string) {
+  return value.trim().replace(/[，、]/g, "、").replace(/\s+/g, "");
 }
 
 function shuffleWords(words: StudyWord[]) {
