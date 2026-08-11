@@ -425,7 +425,7 @@ export default function Home() {
     <main className="app-shell">
       <aside className="sidebar">
         <button className="brand" onClick={() => setActiveTab("today")} aria-label="返回今日学习">
-          <span className="brand-mark">🩵</span>
+          <img className="brand-mark" src="/logo-k-heart.svg" alt="Talk Guide" />
           <span>Talk Guide</span>
         </button>
 
@@ -452,7 +452,7 @@ export default function Home() {
 
       <section className="main-panel">
         <header className="topbar">
-          <div className="mobile-brand"><span className="brand-mark">🩵</span><strong>Talk Guide</strong></div>
+          <div className="mobile-brand"><img className="brand-mark" src="/logo-k-heart.svg" alt="Talk Guide" /><strong>Talk Guide</strong></div>
           <label className="search-box">
             <span>⌕</span>
             <input
@@ -606,7 +606,7 @@ export default function Home() {
         <div className="study-overlay" role="dialog" aria-modal="true" aria-label={authMode === "login" ? "登录" : "注册"}>
           <div className="auth-modal">
             <button className="auth-close" onClick={() => setAuthOpen(false)} aria-label="关闭">×</button>
-            <span className="brand-mark">🩵</span>
+            <img className="brand-mark" src="/logo-k-heart.svg" alt="Talk Guide" />
             <p className="eyebrow">TALK GUIDE ACCOUNT</p>
             <h2>{authMode === "login" ? "欢迎回来" : "创建学习账号"}</h2>
             <p className="auth-intro">
@@ -859,7 +859,7 @@ function WordsPage({ startStudy, words, progress, isAdmin, openImport }: { start
     : drawer === "stable" ? words.filter((word) => progress[word.id] && Math.min(progress[word.id].meaning_level, progress[word.id].listening_level) >= 3)
       : drawer === "new" ? words.filter((word) => !progress[word.id])
         : drawer === "due" ? dueWords : [];
-  const drawerTitles = { library: "当前词库", stable: "稳定识别", new: "等待初学", due: "今日到期" } as const;
+  const drawerTitles = { library: "当前词库", stable: "稳定识别", new: "等待初学", due: "待复习" } as const;
 
   useEffect(() => {
     if (!drawer) return;
@@ -876,7 +876,7 @@ function WordsPage({ startStudy, words, progress, isAdmin, openImport }: { start
       <button className="stat-card" onClick={() => setDrawer("library")}><strong>{words.length}</strong><span>当前词库</span><small>点击查看全部</small></button>
       <button className="stat-card" onClick={() => setDrawer("stable")}><strong>{stableCount}</strong><span>稳定识别</span><small>点击查看词单</small></button>
       <button className="stat-card" onClick={() => setDrawer("new")}><strong>{newCount}</strong><span>等待初学</span><small>点击查看词单</small></button>
-      <button className="stat-card" onClick={() => setDrawer("due")}><strong>{dueCount}</strong><span>今日到期</span><small>今天需要复习</small></button>
+      <button className="stat-card" onClick={() => setDrawer("due")}><strong>{dueCount}</strong><span>待复习</span><small>今天需要复习</small></button>
     </div>
     <div className="word-table">
       <div className="table-head"><span>单词</span><span>词义</span><span>掌握状态</span><span>下次复习</span></div>

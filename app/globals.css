@@ -19,7 +19,7 @@ button { color: inherit; }
 .app-shell { min-height: 100vh; display: flex; }
 .sidebar { position: fixed; inset: 0 auto 0 0; width: 232px; background: #0e1013; color: #fff; padding: 28px 18px 20px; display: flex; flex-direction: column; z-index: 20; }
 .brand { border: 0; background: transparent; color: white; display: flex; align-items: center; gap: 12px; padding: 0 10px; font-size: 17px; font-weight: 700; cursor: pointer; letter-spacing: -.02em; }
-.brand-mark { width: 30px; height: 30px; display: grid; place-items: center; background: #e8f5ff; border: 1px solid #cfeaff; color: var(--blue-strong); border-radius: 10px; font-size: 16px; font-weight: 800; transform: rotate(-3deg); }
+.brand-mark { width: 30px; height: 30px; display: block; object-fit: contain; border-radius: 10px; transform: rotate(-3deg); }
 .nav-list { display: grid; gap: 6px; margin-top: 44px; }
 .nav-button { width: 100%; border: 0; background: transparent; color: #8e939d; border-radius: 9px; padding: 12px 13px; display: flex; align-items: center; gap: 13px; cursor: pointer; text-align: left; transition: .2s ease; }
 .nav-button:hover { color: white; background: #181b20; }
