@@ -6,6 +6,7 @@ import { supabase } from "../lib/supabase";
 
 type Tab = "today" | "words" | "scenes" | "talk" | "import" | "preferences";
 type StudyStep = "meaning" | "reverse" | "recall";
+type FeedbackTone = "correct" | "wrong" | "answer" | null;
 type StudyWord = {
   id: number;
   korean: string;
@@ -57,6 +58,7 @@ export default function Home() {
   const [selected, setSelected] = useState<string | null>(null);
   const [typedAnswer, setTypedAnswer] = useState("");
   const [recallFeedback, setRecallFeedback] = useState("");
+  const [recallFeedbackTone, setRecallFeedbackTone] = useState<FeedbackTone>(null);
   const [recallReadyToRate, setRecallReadyToRate] = useState(false);
   const [dailyWords, setDailyWords] = useState(10);
   const [spelling, setSpelling] = useState(false);
@@ -118,6 +120,12 @@ export default function Home() {
     const timer = window.setTimeout(() => speakKorean(current.korean), 120);
     return () => window.clearTimeout(timer);
   }, [studyOpen, autoSpeak, step, wordIndex, current.korean]);
+
+  useEffect(() => {
+    if (!studyOpen || step !== "recall" || recallReadyToRate || recallFeedbackTone === "answer" || normalizeAnswer(typedAnswer) !== normalizeAnswer(current.meaning)) return;
+    const timer = window.setTimeout(() => setRecallReadyToRate(true), 550);
+    return () => window.clearTimeout(timer);
+  }, [studyOpen, step, wordIndex, typedAnswer, current.meaning, recallReadyToRate, recallFeedbackTone]);
 
   useEffect(() => {
     if (!("speechSynthesis" in window)) return;
@@ -307,6 +315,7 @@ export default function Home() {
     setSelected(null);
     setTypedAnswer("");
     setRecallFeedback("");
+    setRecallFeedbackTone(null);
     setRecallReadyToRate(false);
     setStudyOpen(true);
   }
@@ -391,11 +400,32 @@ export default function Home() {
   function updateRecallAnswer(value: string) {
     setTypedAnswer(value);
     if (normalizeAnswer(value) === normalizeAnswer(current.meaning)) {
-      setRecallFeedback("");
-      setRecallReadyToRate(true);
+      setRecallFeedback("✓ 答对了");
+      setRecallFeedbackTone("correct");
       return;
     }
     setRecallReadyToRate(false);
+  }
+
+  function chooseRecallOption(answer: string) {
+    setSelected(answer);
+    setTypedAnswer("");
+    setRecallReadyToRate(false);
+    if (answer === current.korean) {
+      setRecallFeedback("✓ 答对了，请写出中文意思");
+      setRecallFeedbackTone("correct");
+    } else {
+      setRecallFeedback("还不对，再听一次试试。");
+      setRecallFeedbackTone("wrong");
+    }
+  }
+
+  function revealRecallAnswer() {
+    setSelected(current.korean);
+    setTypedAnswer(current.meaning);
+    setRecallFeedback(`答案：${current.korean} · ${current.meaning}`);
+    setRecallFeedbackTone("answer");
+    setRecallReadyToRate(true);
   }
 
   async function markCurrentMastered() {
@@ -413,6 +443,7 @@ export default function Home() {
     setSelected(null);
     setTypedAnswer("");
     setRecallFeedback("");
+    setRecallFeedbackTone(null);
     setRecallReadyToRate(false);
     setToast("已标记为完全认识，不会再安排复习");
     window.setTimeout(() => setToast(""), 2400);
@@ -422,13 +453,16 @@ export default function Home() {
     if (step === "recall") {
       if (selected !== current.korean) {
         setRecallFeedback("先选对刚才听到的韩语，再继续。");
+        setRecallFeedbackTone("wrong");
         return;
       }
       if (normalizeAnswer(typedAnswer) !== normalizeAnswer(current.meaning)) {
         setRecallFeedback("中文意思还不对，再想一下。可以重新听一遍。");
+        setRecallFeedbackTone("wrong");
         return;
       }
-      setRecallFeedback("");
+      setRecallFeedback("✓ 答对了");
+      setRecallFeedbackTone("correct");
       setRecallReadyToRate(true);
       return;
     }
@@ -448,6 +482,7 @@ export default function Home() {
     setStep(nextStep);
     setTypedAnswer("");
     setRecallFeedback("");
+    setRecallFeedbackTone(null);
     setRecallReadyToRate(false);
   }
 
@@ -464,6 +499,7 @@ export default function Home() {
       setSelected(null);
       setTypedAnswer("");
       setRecallFeedback("");
+      setRecallFeedbackTone(null);
       setRecallReadyToRate(false);
       return;
     }
@@ -717,7 +753,7 @@ export default function Home() {
               <div className="study-progress"><i style={{ width: `${((wordIndex + 1) / Math.max(studyQueue.length, 1)) * 100}%` }} /></div>
               <div className="study-header-actions"><button className="mastery-header" onClick={() => void markCurrentMastered()}>完全认识</button><span>{wordIndex + 1} / {studyQueue.length}</span></div>
             </header>
-            <StudyCard step={step} word={current} selected={selected} setSelected={setSelected} typedAnswer={typedAnswer} setTypedAnswer={updateRecallAnswer} recallFeedback={recallFeedback} onSpeak={speakKorean} />
+            <StudyCard step={step} word={current} selected={selected} setSelected={setSelected} typedAnswer={typedAnswer} setTypedAnswer={updateRecallAnswer} recallFeedback={recallFeedback} recallFeedbackTone={recallFeedbackTone} onRecallOptionSelect={chooseRecallOption} onSpeak={speakKorean} />
             <footer className="study-footer">
               {step === "recall" && recallReadyToRate ? (
                 <div className="rating-grid">
@@ -729,6 +765,7 @@ export default function Home() {
               ) : (
                 <>
                   <span className="study-tip">{studyQueue[wordIndex]?.repeat ? "这是本轮再次出现的词" : "按自己的真实记忆作答"}</span>
+                  {step === "recall" && <button className="forgot-button" onClick={revealRecallAnswer}>忘记了</button>}
                   <button className="primary-button" onClick={nextStudyStep} disabled={(step === "meaning" || step === "reverse") && !selected || step === "recall" && (selected !== current.korean || !typedAnswer.trim())}>{step === "recall" ? "确认答案" : "继续"} <span>→</span></button>
                 </>
               )}
@@ -753,6 +790,8 @@ function StudyCard({
   typedAnswer,
   setTypedAnswer,
   recallFeedback,
+  recallFeedbackTone,
+  onRecallOptionSelect,
   onSpeak,
 }: {
   step: StudyStep;
@@ -762,6 +801,8 @@ function StudyCard({
   typedAnswer: string;
   setTypedAnswer: (value: string) => void;
   recallFeedback: string;
+  recallFeedbackTone: FeedbackTone;
+  onRecallOptionSelect: (answer: string) => void;
   onSpeak: (text: string) => void;
 }) {
   if (step === "meaning") return (
@@ -774,7 +815,8 @@ function StudyCard({
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
         ))}
       </div>
-      {selected === word.meaning && word.example ? <div className="mini-example"><strong>{word.example}</strong><span>{word.translation}</span><button className="sentence-audio mini-sentence-audio" onClick={() => onSpeak(word.example)}>♬ 播放例句</button></div> : selected && <p className="answer-note">正确含义是：{word.meaning}</p>}
+      {selected === word.meaning && <p className="answer-note correct">✓ 答对了</p>}
+      {selected === word.meaning && word.example ? <div className="mini-example"><strong>{word.example}</strong><span>{word.translation}</span><button className="sentence-audio mini-sentence-audio" onClick={() => onSpeak(word.example)}>♬ 播放例句</button></div> : selected && selected !== word.meaning && <p className="answer-note">正确含义是：{word.meaning}</p>}
     </div>
   );
   if (step === "reverse") return (
@@ -786,6 +828,7 @@ function StudyCard({
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
         ))}
       </div>
+      {selected && <p className={`answer-note ${selected === word.korean ? "correct" : ""}`}>{selected === word.korean ? "✓ 答对了" : `正确答案是：${word.korean}`}</p>}
     </div>
   );
   if (step === "recall") return (
@@ -794,11 +837,12 @@ function StudyCard({
       <button className="big-audio-button blue-audio-button" aria-label="播放单词发音" onClick={() => onSpeak(word.korean)}>♬<small>再听一次</small></button>
       <div className="answer-grid compact">
         {shuffledOptions([word.korean, "설레요", "소중하다", "기억하다"], `${word.id}-recall`).map((answer) => (
-          <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
+          <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => onRecallOptionSelect(answer)}>{answer}</button>
         ))}
       </div>
       {selected === word.korean && <label className="spelling-input"><span>写出它对应的中文意思</span><input value={typedAnswer} onChange={(event) => setTypedAnswer(event.target.value)} placeholder="输入中文" autoFocus /></label>}
-      {recallFeedback && <p className="answer-note">{recallFeedback}</p>}
+      {recallFeedback && <p className={`answer-note recall-feedback ${recallFeedbackTone ?? ""}`}>{recallFeedback}</p>}
+      {recallFeedbackTone === "answer" && <button className="answer-audio" onClick={() => onSpeak(word.korean)}>再听一次</button>}
     </div>
   );
   return null;

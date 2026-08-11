@@ -196,6 +196,8 @@ button { color: inherit; }
 .context-box p { color: #aeb5c1; font-size: 11px; }
 .sentence-audio { border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.08); color: #dceeff; border-radius: 8px; padding: 8px 11px; margin-top: 10px; font-size: 9px; cursor: pointer; }
 .sentence-audio:hover { background: rgba(255,255,255,.14); }
+.mini-example .mini-sentence-audio { border: 1px solid #d8dde4; background: white; color: #171a20; }
+.mini-example .mini-sentence-audio:hover { background: #f4f5f7; }
 .word-breakdown { border-left: 3px solid var(--blue); display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; margin-top: 20px; padding: 4px 14px; }
 .word-breakdown strong { font-size: 18px; }
 .word-breakdown span { color: var(--blue-strong); font-size: 12px; align-self: center; }
@@ -209,6 +211,14 @@ button { color: inherit; }
 .memory-options span { background: var(--soft); border-radius: 7px; padding: 7px 10px; font-size: 10px; }
 .study-footer { background: white; border-top: 1px solid var(--line); padding: 16px 22px; display: flex; justify-content: space-between; }
 .study-tip { color: var(--muted); font-size: 10px; align-self: center; }
+.forgot-button { margin-left: auto; border: 0; background: transparent; color: #bf4b4b; font-size: 11px; cursor: pointer; padding: 9px 12px; }
+.forgot-button:hover { color: #a93e3e; text-decoration: underline; }
+.recall-feedback { animation: feedback-in .2s ease both; }
+.recall-feedback.correct { background: #eaf7f0; color: #378666; }
+.recall-feedback.wrong { background: #fff0e6; color: #b56527; }
+.recall-feedback.answer { background: #fff1f1; color: #bd4242; border: 1px solid #f3c3c3; }
+.answer-audio { align-self: flex-start; margin-top: 8px; border: 0; background: transparent; color: var(--blue-strong); font-size: 10px; cursor: pointer; }
+@keyframes feedback-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 .rating-grid { width: 100%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 .rating-grid button { min-height: 54px; border: 1px solid var(--line); border-radius: 10px; background: white; display: grid; place-items: center; align-content: center; gap: 3px; cursor: pointer; }
 .rating-grid button:hover { border-color: #9dcdf1; background: var(--blue-soft); }
