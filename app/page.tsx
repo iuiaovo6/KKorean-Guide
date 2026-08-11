@@ -845,22 +845,57 @@ function PreferencesPage({ dailyWords, spelling, autoSpeak, saveSettings, change
   </div>;
 }
 
-function WordsPage({ startStudy, words, progress, isAdmin, openImport }: { startStudy: () => void; words: StudyWord[]; progress: Record<number, WordProgress>; isAdmin: boolean; openImport: () => void }) {
+function WordsPage({ startStudy, words, progress, isAdmin, openImport }: { startStudy: (words?: StudyWord[]) => void; words: StudyWord[]; progress: Record<number, WordProgress>; isAdmin: boolean; openImport: () => void }) {
+  const [drawer, setDrawer] = useState<"library" | "stable" | "new" | "due" | null>(null);
   const records = Object.values(progress);
   const stableCount = records.filter((record) => Math.min(record.meaning_level, record.listening_level) >= 3).length;
   const dueCount = records.filter((record) => new Date(record.next_review_at).getTime() <= Date.now()).length;
   const newCount = words.filter((word) => !progress[word.id]).length;
+  const dueWords = words.filter((word) => {
+    const record = progress[word.id];
+    return record && new Date(record.next_review_at).getTime() <= Date.now();
+  });
+  const drawerItems = drawer === "library" ? words
+    : drawer === "stable" ? words.filter((word) => progress[word.id] && Math.min(progress[word.id].meaning_level, progress[word.id].listening_level) >= 3)
+      : drawer === "new" ? words.filter((word) => !progress[word.id])
+        : drawer === "due" ? dueWords : [];
+  const drawerTitles = { library: "当前词库", stable: "稳定识别", new: "等待初学", due: "今日到期" } as const;
+
+  useEffect(() => {
+    if (!drawer) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setDrawer(null);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [drawer]);
+
   return <div className="content inner-page">
     <div className="page-title"><div><p className="eyebrow">MY VOCABULARY</p><h1>我的单词本</h1><p>不是收藏夹，而是一份会主动叫你回来复习的清单。</p></div><div className="page-actions">{isAdmin && <button className="ghost-button" onClick={openImport}>导入 CSV</button>}<button className="primary-button" onClick={() => startStudy()}>开始今日复习 →</button></div></div>
-    <div className="stats-grid"><div><strong>{words.length}</strong><span>当前词库</span></div><div><strong>{stableCount}</strong><span>稳定识别</span></div><div><strong>{newCount}</strong><span>等待初学</span></div><div><strong>{dueCount}</strong><span>今日到期</span></div></div>
+    <div className="stats-grid">
+      <button className="stat-card" onClick={() => setDrawer("library")}><strong>{words.length}</strong><span>当前词库</span><small>点击查看全部</small></button>
+      <button className="stat-card" onClick={() => setDrawer("stable")}><strong>{stableCount}</strong><span>稳定识别</span><small>点击查看词单</small></button>
+      <button className="stat-card" onClick={() => setDrawer("new")}><strong>{newCount}</strong><span>等待初学</span><small>点击查看词单</small></button>
+      <button className="stat-card" onClick={() => setDrawer("due")}><strong>{dueCount}</strong><span>今日到期</span><small>今天需要复习</small></button>
+    </div>
     <div className="word-table">
       <div className="table-head"><span>单词</span><span>词义</span><span>掌握状态</span><span>下次复习</span></div>
       {words.map((item) => {
         const record = progress[item.id];
         const status = progressLabel(record);
-        return <button className="table-row" key={item.id} onClick={() => startStudy()}><strong>{item.korean}</strong><span>{item.meaning}</span><span><i className={`status-dot ${status.tone}`} />{status.label}</span><span>{reviewDate(record?.next_review_at)}</span></button>;
+        return <button className="table-row" key={item.id} onClick={() => startStudy([item])}><strong>{item.korean}</strong><span>{item.meaning}</span><span><i className={`status-dot ${status.tone}`} />{status.label}</span><span>{reviewDate(record?.next_review_at)}</span></button>;
       })}
     </div>
+    {drawer && <div className="drawer-backdrop" role="presentation" onMouseDown={(event) => { if (event.currentTarget === event.target) setDrawer(null); }}>
+      <aside className="word-drawer" role="dialog" aria-modal="true" aria-labelledby="word-drawer-title">
+        <header className="drawer-header"><div><p className="eyebrow">WORD LIST</p><h2 id="word-drawer-title">{drawerTitles[drawer]}</h2><span>{drawerItems.length} 个词</span></div><button onClick={() => setDrawer(null)} aria-label="关闭词单">×</button></header>
+        <div className="drawer-list">{drawerItems.length > 0 ? drawerItems.map((item) => {
+          const record = progress[item.id];
+          const status = progressLabel(record);
+          return <button className="drawer-word" key={item.id} onClick={() => { setDrawer(null); startStudy([item]); }}><span><strong>{item.korean}</strong><small>{item.meaning}</small></span><span className="drawer-status"><i className={`status-dot ${status.tone}`} />{status.label}<b>→</b></span></button>;
+        }) : <p className="drawer-empty">这里暂时没有单词。</p>}</div>
+      </aside>
+    </div>}
   </div>;
 }
 
