@@ -35,6 +35,10 @@ type ImportWord = {
   tags: string[];
 };
 
+// 与 layout.tsx 保持一致：GitHub Pages 子路径下，公开静态资源需带 /KKorean-Guide 前缀。
+// NEXT_PUBLIC_ 前缀保证该值被打进客户端包；本地预览时为空串，等价于站点根。
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const fallbackWords: StudyWord[] = [
   { id: -1, korean: "설레다", meaning: "心动、激动", type: "动词", example: "오늘 무대가 너무 설레요.", translation: "今天的舞台让我特别心动。", tags: ["追星", "感受"] },
   { id: -2, korean: "기대하다", meaning: "期待", type: "动词", example: "다음 공연도 기대해 주세요.", translation: "也请期待下一场演出。", tags: ["追星", "演唱会"] },
@@ -523,7 +527,7 @@ export default function Home() {
     <main className="app-shell">
       <aside className="sidebar">
         <button className="brand" onClick={() => setActiveTab("today")} aria-label="返回今日学习">
-          <img className="brand-mark" src="/logo-k-heart.svg" alt="Talk Guide" />
+          <img className="brand-mark" src={`${basePath}/logo-k-heart.svg`} alt="Talk Guide" />
           <span>Talk Guide</span>
         </button>
 
@@ -550,7 +554,7 @@ export default function Home() {
 
       <section className="main-panel">
         <header className="topbar">
-          <div className="mobile-brand"><img className="brand-mark" src="/logo-k-heart.svg" alt="Talk Guide" /><strong>Talk Guide</strong></div>
+          <div className="mobile-brand"><img className="brand-mark" src={`${basePath}/logo-k-heart.svg`} alt="Talk Guide" /><strong>Talk Guide</strong></div>
           <label className="search-box">
             <span>⌕</span>
             <input
@@ -719,7 +723,7 @@ export default function Home() {
         <div className="study-overlay" role="dialog" aria-modal="true" aria-label={authMode === "login" ? "登录" : "注册"}>
           <div className="auth-modal">
             <button className="auth-close" onClick={() => setAuthOpen(false)} aria-label="关闭">×</button>
-            <img className="brand-mark" src="/logo-k-heart.svg" alt="Talk Guide" />
+            <img className="brand-mark" src={`${basePath}/logo-k-heart.svg`} alt="Talk Guide" />
             <p className="eyebrow">TALK GUIDE ACCOUNT</p>
             <h2>{authMode === "login" ? "欢迎回来" : "创建学习账号"}</h2>
             <p className="auth-intro">

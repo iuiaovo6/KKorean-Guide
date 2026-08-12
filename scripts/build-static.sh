@@ -18,6 +18,10 @@ unset CODEBUDDY_SAFE_DELETE_BULK_STATE_DIR CODEBUDDY_TOOL_CALL_ID 2>/dev/null ||
 export NEXT_PUBLIC_SUPABASE_URL="${NEXT_PUBLIC_SUPABASE_URL:-https://placeholder.supabase.co}"
 export NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY="${NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY:-public-placeholder-key}"
 
+# 静态托管在 GitHub Pages 子路径 /KKorean-Guide 下；该前缀会打进客户端包，
+# 供 layout.tsx（图标/OG 图）与 page.tsx（品牌 <img>）拼出正确的资源路径。
+export NEXT_PUBLIC_BASE_PATH="${NEXT_PUBLIC_BASE_PATH:-/KKorean-Guide}"
+
 REPO_NAME="KKorean-Guide"
 BASE="/$REPO_NAME"
 
