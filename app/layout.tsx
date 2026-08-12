@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,14 +12,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export async function generateMetadata(): Promise<Metadata> {
-  const requestHeaders = await headers();
-  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "localhost:3000";
-  const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
-  const origin = `${protocol}://${host}`;
+// 静态导出（GitHub Pages）时使用固定 origin；本地预览用 localhost。
+const siteOrigin =
+  process.env.GITHUB_PAGES === "1"
+    ? "https://iuiaovo6.github.io/KKorean-Guide"
+    : "http://localhost:3000";
 
+export const dynamic = "force-static";
+
+export async function generateMetadata(): Promise<Metadata> {
   return {
-    metadataBase: new URL(origin),
+    metadataBase: new URL(siteOrigin),
     title: "Talk Guide — 在喜欢的语境里学会韩语",
     description: "为初级追星用户设计的韩语单词学习与间隔复习工具。",
     icons: {
@@ -30,13 +32,13 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: "Talk Guide — 在喜欢的语境里学会韩语",
       description: "多轮首次学习、间隔复习与真实追星语境。",
-      images: [{ url: `${origin}/og.png`, width: 1200, height: 630, alt: "Talk Guide 韩语学习" }],
+      images: [{ url: "/og.png", width: 1200, height: 630, alt: "Talk Guide 韩语学习" }],
     },
     twitter: {
       card: "summary_large_image",
       title: "Talk Guide — 在喜欢的语境里学会韩语",
       description: "多轮首次学习、间隔复习与真实追星语境。",
-      images: [`${origin}/og.png`],
+      images: ["/og.png"],
     },
   };
 }

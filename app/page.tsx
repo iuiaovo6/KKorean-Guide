@@ -138,40 +138,44 @@ export default function Home() {
 
   useEffect(() => {
     const loadPublicWords = async () => {
-      const wordsResult = await supabase
-        .from("words")
-        .select("id, korean, meaning_zh, part_of_speech, example_ko, example_zh, tags")
-        .order("id")
-        .limit(1000);
-
-      if (wordsResult.error) {
+      try {
+        const res = await fetch("words.json", { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const raw = (await res.json()) as Array<{
+          id: number;
+          korean: string;
+          meaning_zh: string;
+          part_of_speech: string | null;
+          example_ko: string | null;
+          example_zh: string | null;
+          tags?: string[];
+        }>;
+        const loadedWords: StudyWord[] = raw.map((word) => ({
+          id: word.id,
+          korean: word.korean,
+          meaning: word.meaning_zh,
+          type: word.part_of_speech ?? "",
+          example: word.example_ko ?? "",
+          translation: word.example_zh ?? "",
+          tags: word.tags ?? [],
+        }));
+        const visibleWords = loadedWords.length > 0 ? loadedWords : fallbackWords;
+        setStudyWords(visibleWords);
+        setTodayWords(visibleWords.slice(0, dailyWords));
+        setWordProgress({});
+        setStreakDays(0);
+        setIsAdmin(false);
+        setDataMessage(loadedWords.length > 0
+          ? "词库已公开浏览，登录后即可开始学习并保存进度"
+          : "登录后读取真实学习数据");
+      } catch {
         setStudyWords(fallbackWords);
         setTodayWords(fallbackWords);
         setWordProgress({});
         setStreakDays(0);
         setIsAdmin(false);
-        setDataMessage("登录后读取真实学习数据");
-        return;
+        setDataMessage("词库加载失败，请检查网络");
       }
-
-      const loadedWords: StudyWord[] = (wordsResult.data ?? []).map((word) => ({
-        id: word.id,
-        korean: word.korean,
-        meaning: word.meaning_zh,
-        type: word.part_of_speech ?? "",
-        example: word.example_ko ?? "",
-        translation: word.example_zh ?? "",
-        tags: word.tags ?? [],
-      }));
-      const visibleWords = loadedWords.length > 0 ? loadedWords : fallbackWords;
-      setStudyWords(visibleWords);
-      setTodayWords(visibleWords.slice(0, dailyWords));
-      setWordProgress({});
-      setStreakDays(0);
-      setIsAdmin(false);
-      setDataMessage(loadedWords.length > 0
-        ? "词库已公开浏览，登录后即可开始学习并保存进度"
-        : "登录后读取真实学习数据");
     };
 
     if (!user) {

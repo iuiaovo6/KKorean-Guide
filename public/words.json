@@ -1,0 +1,9623 @@
+[
+{
+"korean": "1빠",
+"meaning_zh": "第一个（评论/购买）",
+"part_of_speech": "名词",
+"example_ko": "1빠로 달았어요.",
+"example_zh": "第一个留言了。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 1
+},
+{
+"korean": "1위",
+"meaning_zh": "第一名",
+"part_of_speech": "名词",
+"example_ko": "드디어 1위 했어요!",
+"example_zh": "终于拿到第一名了！",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 2
+},
+{
+"korean": "MC",
+"meaning_zh": "主持人",
+"part_of_speech": "名词",
+"example_ko": "MC가 질문했어요.",
+"example_zh": "主持人问了问题。",
+"tags": [
+"追星",
+"综艺"
+],
+"id": 3
+},
+{
+"korean": "OST",
+"meaning_zh": "原声带（影视插曲）",
+"part_of_speech": "名词",
+"example_ko": "드라마 OST 불렀어요.",
+"example_zh": "唱了电视剧原声带。",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 4
+},
+{
+"korean": "가능",
+"meaning_zh": "可以/可能",
+"part_of_speech": "名词",
+"example_ko": "여기서 촬영 가능해요?",
+"example_zh": "这里可以拍摄吗？",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 5
+},
+{
+"korean": "가요",
+"meaning_zh": "去",
+"part_of_speech": "动词",
+"example_ko": "오늘도 가요.",
+"example_zh": "今天也去。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 6
+},
+{
+"korean": "가을",
+"meaning_zh": "秋天",
+"part_of_speech": "名词",
+"example_ko": "오늘 가을에 대해 이야기해요.",
+"example_zh": "今天聊秋天。",
+"tags": [
+"基础",
+"时间"
+],
+"id": 7
+},
+{
+"korean": "가장 좋아하는 노래",
+"meaning_zh": "最喜欢的歌",
+"part_of_speech": "表达",
+"example_ko": "가장 좋아하는 노래.",
+"example_zh": "最喜欢的歌",
+"tags": [
+"追星",
+"互动"
+],
+"id": 8
+},
+{
+"korean": "가족",
+"meaning_zh": "家人",
+"part_of_speech": "名词",
+"example_ko": "오늘 가족에 대해 이야기해요.",
+"example_zh": "今天聊家人。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 9
+},
+{
+"korean": "감동이에요",
+"meaning_zh": "很感动",
+"part_of_speech": "表达",
+"example_ko": "감동이에요.",
+"example_zh": "很感动",
+"tags": [
+"追星",
+"感受"
+],
+"id": 10
+},
+{
+"korean": "감사합니다",
+"meaning_zh": "谢谢（正式）",
+"part_of_speech": "表达",
+"example_ko": "감사합니다.",
+"example_zh": "谢谢（正式）",
+"tags": [
+"基础",
+"感谢"
+],
+"id": 11
+},
+{
+"korean": "감사해요 정말",
+"meaning_zh": "真的谢谢你",
+"part_of_speech": "表达",
+"example_ko": "감사해요 정말.",
+"example_zh": "真的谢谢你",
+"tags": [
+"追星",
+"互动"
+],
+"id": 12
+},
+{
+"korean": "같아요",
+"meaning_zh": "好像/似乎",
+"part_of_speech": "表达",
+"example_ko": "오늘 비가 올 것 같아요.",
+"example_zh": "今天好像会下雨。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 13
+},
+{
+"korean": "같이",
+"meaning_zh": "一起",
+"part_of_speech": "副词",
+"example_ko": "오늘 같이 연습해요.",
+"example_zh": "今天一起练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 14
+},
+{
+"korean": "같이 걸어가요",
+"meaning_zh": "一起走下去",
+"part_of_speech": "短语",
+"example_ko": "앞으로도 같이 걸어가요.",
+"example_zh": "以后也一起走下去。",
+"tags": [
+"追星",
+"互动",
+"粉丝"
+],
+"id": 15
+},
+{
+"korean": "개봉",
+"meaning_zh": "开封",
+"part_of_speech": "名词",
+"example_ko": "팬들이 개봉에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论开封。",
+"tags": [
+"饭圈",
+"周边"
+],
+"id": 16
+},
+{
+"korean": "개인 사진",
+"meaning_zh": "单人照",
+"part_of_speech": "名词",
+"example_ko": "오늘 개인 사진이 있어요.",
+"example_zh": "今天有单人照。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 17
+},
+{
+"korean": "개인정보",
+"meaning_zh": "个人信息",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 개인정보를 확인해 주세요.",
+"example_zh": "请在手机上确认个人信息。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 18
+},
+{
+"korean": "거기",
+"meaning_zh": "那里",
+"part_of_speech": "名词",
+"example_ko": "오늘 거기에 대해 이야기해요.",
+"example_zh": "今天聊那里。",
+"tags": [
+"基础",
+"地点"
+],
+"id": 19
+},
+{
+"korean": "걱정",
+"meaning_zh": "担心",
+"part_of_speech": "名词",
+"example_ko": "오늘 걱정에 대해 이야기해요.",
+"example_zh": "今天聊担心。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 20
+},
+{
+"korean": "걱정하지 마세요",
+"meaning_zh": "请别担心",
+"part_of_speech": "表达",
+"example_ko": "걱정하지 마세요.",
+"example_zh": "请别担心",
+"tags": [
+"追星",
+"互动"
+],
+"id": 21
+},
+{
+"korean": "건강하세요",
+"meaning_zh": "请注意健康",
+"part_of_speech": "表达",
+"example_ko": "건강하세요.",
+"example_zh": "请注意健康",
+"tags": [
+"追星",
+"互动"
+],
+"id": 22
+},
+{
+"korean": "검색",
+"meaning_zh": "搜索",
+"part_of_speech": "名词",
+"example_ko": "멤버 이름을 검색했어요.",
+"example_zh": "我搜索了成员的名字。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 23
+},
+{
+"korean": "검정",
+"meaning_zh": "黑色",
+"part_of_speech": "名词",
+"example_ko": "오늘 검정이 정말 잘 어울려요.",
+"example_zh": "今天的黑色真的很搭。",
+"tags": [
+"基础",
+"造型"
+],
+"id": 24
+},
+{
+"korean": "게스트",
+"meaning_zh": "嘉宾",
+"part_of_speech": "名词",
+"example_ko": "오늘 게스트로 나왔어요.",
+"example_zh": "今天以嘉宾身份出现了。",
+"tags": [
+"追星",
+"综艺"
+],
+"id": 25
+},
+{
+"korean": "게시물",
+"meaning_zh": "帖子",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 게시물을 확인해 주세요.",
+"example_zh": "请在手机上确认帖子。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 26
+},
+{
+"korean": "겨울",
+"meaning_zh": "冬天",
+"part_of_speech": "名词",
+"example_ko": "오늘 겨울에 대해 이야기해요.",
+"example_zh": "今天聊冬天。",
+"tags": [
+"基础",
+"时间"
+],
+"id": 27
+},
+{
+"korean": "결제",
+"meaning_zh": "支付",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 결제를 확인해 주세요.",
+"example_zh": "请在手机上确认支付。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 28
+},
+{
+"korean": "경품",
+"meaning_zh": "抽奖奖品",
+"part_of_speech": "名词",
+"example_ko": "경품에 당첨됐어요!",
+"example_zh": "中奖了！",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 29
+},
+{
+"korean": "계정",
+"meaning_zh": "账号",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 계정을 확인해 주세요.",
+"example_zh": "请在手机上确认账号。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 30
+},
+{
+"korean": "고개 끄덕",
+"meaning_zh": "点头",
+"part_of_speech": "名词",
+"example_ko": "고개 끄덕여 줬어요.",
+"example_zh": "朝我点了头。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 31
+},
+{
+"korean": "고마워요",
+"meaning_zh": "谢谢",
+"part_of_speech": "表达",
+"example_ko": "고마워요.",
+"example_zh": "谢谢",
+"tags": [
+"基础",
+"感谢"
+],
+"id": 32
+},
+{
+"korean": "고생했어요",
+"meaning_zh": "辛苦了",
+"part_of_speech": "表达",
+"example_ko": "고생했어요.",
+"example_zh": "辛苦了",
+"tags": [
+"追星",
+"应援"
+],
+"id": 33
+},
+{
+"korean": "고음",
+"meaning_zh": "高音",
+"part_of_speech": "名词",
+"example_ko": "팬들이 고음에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论高音。",
+"tags": [
+"饭圈",
+"音乐"
+],
+"id": 34
+},
+{
+"korean": "고화질",
+"meaning_zh": "高清",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 고화질을 확인해 주세요.",
+"example_zh": "请在手机上确认高清。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 35
+},
+{
+"korean": "공개",
+"meaning_zh": "公开",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 공개를 확인해 주세요.",
+"example_zh": "请在手机上确认公开。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 36
+},
+{
+"korean": "공개방송",
+"meaning_zh": "公开放送",
+"part_of_speech": "名词",
+"example_ko": "오늘 공개방송에 대해 이야기해요.",
+"example_zh": "今天聊公开放送。",
+"tags": [
+"追星",
+"打歌"
+],
+"id": 37
+},
+{
+"korean": "공구",
+"meaning_zh": "团购（缩写）",
+"part_of_speech": "名词",
+"example_ko": "팬들이 공구에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论团购（缩写）。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 38
+},
+{
+"korean": "공동구매",
+"meaning_zh": "共同购买",
+"part_of_speech": "名词",
+"example_ko": "팬들이 공동구매에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论共同购买。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 39
+},
+{
+"korean": "공방",
+"meaning_zh": "公开放送（缩写）",
+"part_of_speech": "名词",
+"example_ko": "팬들이 공방에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论公开放送（缩写）。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 40
+},
+{
+"korean": "공부",
+"meaning_zh": "学习",
+"part_of_speech": "名词",
+"example_ko": "오늘 공부에 대해 이야기해요.",
+"example_zh": "今天聊学习。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 41
+},
+{
+"korean": "공식",
+"meaning_zh": "官方",
+"part_of_speech": "名词",
+"example_ko": "팬들이 공식에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论官方。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 42
+},
+{
+"korean": "공식 굿즈",
+"meaning_zh": "官方周边",
+"part_of_speech": "名词",
+"example_ko": "공식 굿즈 다 모았어요.",
+"example_zh": "把官方周边都集齐了。",
+"tags": [
+"追星",
+"周边"
+],
+"id": 43
+},
+{
+"korean": "공식 발표",
+"meaning_zh": "官方宣布",
+"part_of_speech": "名词",
+"example_ko": "공식 발표 났어요.",
+"example_zh": "官方宣布了。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 44
+},
+{
+"korean": "공식 응원봉",
+"meaning_zh": "官方应援棒",
+"part_of_speech": "名词",
+"example_ko": "공식 응원봉 샀어요.",
+"example_zh": "买了官方应援棒。",
+"tags": [
+"追星",
+"应援",
+"周边"
+],
+"id": 45
+},
+{
+"korean": "공식 팬카페",
+"meaning_zh": "官方粉丝社区",
+"part_of_speech": "名词",
+"example_ko": "공식 팬카페에서 확인했어요.",
+"example_zh": "在官方粉丝社区确认了。",
+"tags": [
+"追星",
+"粉丝",
+"数字生活"
+],
+"id": 46
+},
+{
+"korean": "공식 팬클럽",
+"meaning_zh": "官方粉丝会",
+"part_of_speech": "名词",
+"example_ko": "공식 팬클럽에 가입했어요.",
+"example_zh": "加入了官方粉丝会。",
+"tags": [
+"追星",
+"粉丝",
+"应援"
+],
+"id": 47
+},
+{
+"korean": "공연",
+"meaning_zh": "演出",
+"part_of_speech": "名词",
+"example_ko": "오늘 공연이 있어요.",
+"example_zh": "今天有演出。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 48
+},
+{
+"korean": "공유",
+"meaning_zh": "分享",
+"part_of_speech": "名词",
+"example_ko": "친구에게 영상을 공유했어요.",
+"example_zh": "我把视频分享给了朋友。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 49
+},
+{
+"korean": "공유해 주세요",
+"meaning_zh": "请分享",
+"part_of_speech": "表达",
+"example_ko": "공유해 주세요.",
+"example_zh": "请分享",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 50
+},
+{
+"korean": "공항",
+"meaning_zh": "机场",
+"part_of_speech": "名词",
+"example_ko": "오늘 공항에 대해 이야기해요.",
+"example_zh": "今天聊机场。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 51
+},
+{
+"korean": "공항 스케줄",
+"meaning_zh": "机场日程",
+"part_of_speech": "名词",
+"example_ko": "공항 스케줄 확인했어요.",
+"example_zh": "确认了机场日程。",
+"tags": [
+"追星",
+"线下活动",
+"出行"
+],
+"id": 52
+},
+{
+"korean": "괜찮아요",
+"meaning_zh": "没关系/可以",
+"part_of_speech": "表达",
+"example_ko": "괜찮아요.",
+"example_zh": "没关系/可以",
+"tags": [
+"基础",
+"对话"
+],
+"id": 53
+},
+{
+"korean": "교환",
+"meaning_zh": "交换",
+"part_of_speech": "名词",
+"example_ko": "팬들이 교환에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论交换。",
+"tags": [
+"饭圈",
+"周边"
+],
+"id": 54
+},
+{
+"korean": "구독",
+"meaning_zh": "订阅",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 구독을 확인해 주세요.",
+"example_zh": "请在手机上确认订阅。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 55
+},
+{
+"korean": "구독해 주세요",
+"meaning_zh": "请订阅",
+"part_of_speech": "表达",
+"example_ko": "구독해 주세요.",
+"example_zh": "请订阅",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 56
+},
+{
+"korean": "구매",
+"meaning_zh": "购买",
+"part_of_speech": "名词",
+"example_ko": "팬들이 구매에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论购买。",
+"tags": [
+"饭圈",
+"周边"
+],
+"id": 57
+},
+{
+"korean": "구역",
+"meaning_zh": "区域",
+"part_of_speech": "名词",
+"example_ko": "오늘 구역이 있어요.",
+"example_zh": "今天有区域。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 58
+},
+{
+"korean": "국내",
+"meaning_zh": "国内",
+"part_of_speech": "名词",
+"example_ko": "오늘 국내에 대해 이야기해요.",
+"example_zh": "今天聊国内。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 59
+},
+{
+"korean": "군입대",
+"meaning_zh": "入伍",
+"part_of_speech": "名词",
+"example_ko": "군입대 소식이 떴어요.",
+"example_zh": "入伍消息出来了。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 60
+},
+{
+"korean": "굿즈",
+"meaning_zh": "周边",
+"part_of_speech": "名词",
+"example_ko": "새 굿즈를 구매했어요.",
+"example_zh": "我买了新周边。",
+"tags": [
+"饭圈",
+"周边"
+],
+"id": 61
+},
+{
+"korean": "귀걸이",
+"meaning_zh": "耳环",
+"part_of_speech": "名词",
+"example_ko": "오늘 귀걸이가 정말 잘 어울려요.",
+"example_zh": "今天的耳环真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 62
+},
+{
+"korean": "귀여워 죽겠어요",
+"meaning_zh": "可爱死了",
+"part_of_speech": "表达",
+"example_ko": "귀여워 죽겠어요.",
+"example_zh": "可爱死了",
+"tags": [
+"追星",
+"感受"
+],
+"id": 63
+},
+{
+"korean": "귀여워요",
+"meaning_zh": "可爱",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 귀여워요.",
+"example_zh": "今天真的可爱。",
+"tags": [
+"基础",
+"追星"
+],
+"id": 64
+},
+{
+"korean": "그것",
+"meaning_zh": "那个",
+"part_of_speech": "代词",
+"example_ko": "그것도 정말 좋아요.",
+"example_zh": "那个也真的很好。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 65
+},
+{
+"korean": "그냥 다 좋아요",
+"meaning_zh": "就是什么都喜欢",
+"part_of_speech": "短语",
+"example_ko": "그냥 다 좋아요, 이유 없이.",
+"example_zh": "就是什么都喜欢，没有理由。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 66
+},
+{
+"korean": "그래서",
+"meaning_zh": "所以",
+"part_of_speech": "连接词",
+"example_ko": "그래서 더 열심히 연습해요.",
+"example_zh": "所以会更努力练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 67
+},
+{
+"korean": "그리고",
+"meaning_zh": "还有/然后",
+"part_of_speech": "连接词",
+"example_ko": "그리고 다음 무대도 기대해요.",
+"example_zh": "而且也期待下一首舞台。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 68
+},
+{
+"korean": "금발",
+"meaning_zh": "金发",
+"part_of_speech": "名词",
+"example_ko": "오늘 금발이 정말 잘 어울려요.",
+"example_zh": "今天的金发真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 69
+},
+{
+"korean": "금지",
+"meaning_zh": "禁止",
+"part_of_speech": "名词",
+"example_ko": "사진 촬영은 금지예요.",
+"example_zh": "禁止拍照。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 70
+},
+{
+"korean": "기다려요",
+"meaning_zh": "等",
+"part_of_speech": "动词",
+"example_ko": "오늘도 기다려요.",
+"example_zh": "今天也等。",
+"tags": [
+"基础",
+"线下"
+],
+"id": 71
+},
+{
+"korean": "기다리고 있을게요",
+"meaning_zh": "我会等你的",
+"part_of_speech": "短语",
+"example_ko": "복귀 기다리고 있을게요.",
+"example_zh": "等你回归。",
+"tags": [
+"追星",
+"互动",
+"粉丝"
+],
+"id": 72
+},
+{
+"korean": "기분",
+"meaning_zh": "心情",
+"part_of_speech": "名词",
+"example_ko": "오늘 기분에 대해 이야기해요.",
+"example_zh": "今天聊心情。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 73
+},
+{
+"korean": "기억해 주세요",
+"meaning_zh": "请记住我",
+"part_of_speech": "表达",
+"example_ko": "기억해 주세요.",
+"example_zh": "请记住我",
+"tags": [
+"追星",
+"互动"
+],
+"id": 74
+},
+{
+"korean": "길",
+"meaning_zh": "路",
+"part_of_speech": "名词",
+"example_ko": "오늘 길에 대해 이야기해요.",
+"example_zh": "今天聊路。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 75
+},
+{
+"korean": "길을 잃었어요",
+"meaning_zh": "我迷路了",
+"part_of_speech": "表达",
+"example_ko": "길을 잃었어요.",
+"example_zh": "我迷路了",
+"tags": [
+"基础",
+"出行"
+],
+"id": 76
+},
+{
+"korean": "꿈",
+"meaning_zh": "梦想",
+"part_of_speech": "名词",
+"example_ko": "오늘 꿈에 대해 이야기해요.",
+"example_zh": "今天聊梦想。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 77
+},
+{
+"korean": "끝났어요",
+"meaning_zh": "结束了",
+"part_of_speech": "表达",
+"example_ko": "끝났어요.",
+"example_zh": "结束了",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 78
+},
+{
+"korean": "나",
+"meaning_zh": "我",
+"part_of_speech": "代词",
+"example_ko": "나는 한국어를 배우고 있어요.",
+"example_zh": "我正在学韩语。",
+"tags": [
+"基础",
+"自我介绍"
+],
+"id": 79
+},
+{
+"korean": "나중에",
+"meaning_zh": "之后",
+"part_of_speech": "副词",
+"example_ko": "오늘 나중에 연습해요.",
+"example_zh": "今天之后练习。",
+"tags": [
+"基础",
+"时间"
+],
+"id": 80
+},
+{
+"korean": "낙첨",
+"meaning_zh": "落选、没中签",
+"part_of_speech": "名词",
+"example_ko": "또 낙첨됐어요.",
+"example_zh": "又没中签。",
+"tags": [
+"追星",
+"线下活动",
+"饭圈用语"
+],
+"id": 81
+},
+{
+"korean": "날",
+"meaning_zh": "天/日子",
+"part_of_speech": "名词",
+"example_ko": "오늘 날에 대해 이야기해요.",
+"example_zh": "今天聊天/日子。",
+"tags": [
+"基础",
+"时间"
+],
+"id": 82
+},
+{
+"korean": "날씨",
+"meaning_zh": "天气",
+"part_of_speech": "名词",
+"example_ko": "오늘 날씨에 대해 이야기해요.",
+"example_zh": "今天聊天气。",
+"tags": [
+"基础",
+"天气"
+],
+"id": 83
+},
+{
+"korean": "내일",
+"meaning_zh": "明天",
+"part_of_speech": "名词",
+"example_ko": "오늘 내일에 대해 이야기해요.",
+"example_zh": "今天聊明天。",
+"tags": [
+"基础",
+"时间"
+],
+"id": 84
+},
+{
+"korean": "너",
+"meaning_zh": "你",
+"part_of_speech": "代词",
+"example_ko": "너 오늘 정말 멋있어.",
+"example_zh": "你今天真的很帅。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 85
+},
+{
+"korean": "너무",
+"meaning_zh": "太/非常",
+"part_of_speech": "副词",
+"example_ko": "오늘 너무 연습해요.",
+"example_zh": "今天太/非常练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 86
+},
+{
+"korean": "네",
+"meaning_zh": "是的",
+"part_of_speech": "感叹词",
+"example_ko": "네.",
+"example_zh": "是的",
+"tags": [
+"基础",
+"对话"
+],
+"id": 87
+},
+{
+"korean": "네일",
+"meaning_zh": "美甲",
+"part_of_speech": "名词",
+"example_ko": "오늘 네일이 정말 잘 어울려요.",
+"example_zh": "今天的美甲真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 88
+},
+{
+"korean": "넷",
+"meaning_zh": "四个",
+"part_of_speech": "数词",
+"example_ko": "넷이서 사진을 찍어요.",
+"example_zh": "四个人一起拍照。",
+"tags": [
+"基础",
+"数字"
+],
+"id": 89
+},
+{
+"korean": "노란색",
+"meaning_zh": "黄色",
+"part_of_speech": "名词",
+"example_ko": "오늘 노란색이 정말 잘 어울려요.",
+"example_zh": "今天的黄色真的很搭。",
+"tags": [
+"基础",
+"造型"
+],
+"id": 90
+},
+{
+"korean": "노래",
+"meaning_zh": "歌曲",
+"part_of_speech": "名词",
+"example_ko": "오늘 노래에 대해 이야기해요.",
+"example_zh": "今天聊歌曲。",
+"tags": [
+"基础",
+"追星"
+],
+"id": 91
+},
+{
+"korean": "노래 너무 좋아요",
+"meaning_zh": "歌太好听了",
+"part_of_speech": "表达",
+"example_ko": "노래 너무 좋아요.",
+"example_zh": "歌太好听了",
+"tags": [
+"追星",
+"互动"
+],
+"id": 92
+},
+{
+"korean": "노래 추천해 주세요",
+"meaning_zh": "请推荐一首歌",
+"part_of_speech": "表达",
+"example_ko": "노래 추천해 주세요.",
+"example_zh": "请推荐一首歌",
+"tags": [
+"追星",
+"互动"
+],
+"id": 93
+},
+{
+"korean": "녹음",
+"meaning_zh": "录音",
+"part_of_speech": "名词",
+"example_ko": "오늘 녹음에 대해 이야기해요.",
+"example_zh": "今天聊录音。",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 94
+},
+{
+"korean": "녹화",
+"meaning_zh": "录像",
+"part_of_speech": "名词",
+"example_ko": "오늘 녹화가 있어요.",
+"example_zh": "今天有录像。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 95
+},
+{
+"korean": "뇌절",
+"meaning_zh": "反复回放/无法自拔",
+"part_of_speech": "名词",
+"example_ko": "이 영상 뇌절하고 있어요.",
+"example_zh": "这个视频我反复看停不下来。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 96
+},
+{
+"korean": "누구",
+"meaning_zh": "谁",
+"part_of_speech": "疑问词",
+"example_ko": "저분은 누구예요?",
+"example_zh": "那位是谁？",
+"tags": [
+"基础",
+"对话"
+],
+"id": 97
+},
+{
+"korean": "눈",
+"meaning_zh": "眼睛",
+"part_of_speech": "名词",
+"example_ko": "오늘 눈에 대해 이야기해요.",
+"example_zh": "今天聊眼睛。",
+"tags": [
+"基础",
+"身体"
+],
+"id": 98
+},
+{
+"korean": "눈 마주쳐 주세요",
+"meaning_zh": "请和我对视",
+"part_of_speech": "表达",
+"example_ko": "눈 마주쳐 주세요.",
+"example_zh": "请和我对视",
+"tags": [
+"追星",
+"互动"
+],
+"id": 99
+},
+{
+"korean": "눈 맞춤",
+"meaning_zh": "对视、眼神交流",
+"part_of_speech": "名词",
+"example_ko": "눈 맞춤 했어요.",
+"example_zh": "和我对视了。",
+"tags": [
+"追星",
+"互动",
+"线下活动"
+],
+"id": 100
+},
+{
+"korean": "눈물 쏟다",
+"meaning_zh": "泪如雨下",
+"part_of_speech": "短语",
+"example_ko": "무대 끝나고 눈물 쏟았어요.",
+"example_zh": "舞台结束后泪如雨下。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 101
+},
+{
+"korean": "눈빛",
+"meaning_zh": "眼神",
+"part_of_speech": "名词",
+"example_ko": "오늘 눈빛라는 말을 들었어요.",
+"example_zh": "今天听到了“眼神”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 102
+},
+{
+"korean": "눈이 호강이에요",
+"meaning_zh": "眼睛在享福（视觉盛宴）",
+"part_of_speech": "短语",
+"example_ko": "눈이 호강이에요.",
+"example_zh": "眼睛在享福。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 103
+},
+{
+"korean": "느려요",
+"meaning_zh": "慢",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 느려요.",
+"example_zh": "今天真的慢。",
+"tags": [
+"基础",
+"描述"
+],
+"id": 104
+},
+{
+"korean": "늦었어요",
+"meaning_zh": "我迟到了",
+"part_of_speech": "表达",
+"example_ko": "늦었어요.",
+"example_zh": "我迟到了",
+"tags": [
+"基础",
+"出行"
+],
+"id": 105
+},
+{
+"korean": "다섯",
+"meaning_zh": "五个",
+"part_of_speech": "数词",
+"example_ko": "다섯 시에 만나요.",
+"example_zh": "五点见面。",
+"tags": [
+"基础",
+"数字"
+],
+"id": 106
+},
+{
+"korean": "다시",
+"meaning_zh": "再次",
+"part_of_speech": "副词",
+"example_ko": "오늘 다시 연습해요.",
+"example_zh": "今天再次练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 107
+},
+{
+"korean": "다시 말해 주세요",
+"meaning_zh": "请再说一次",
+"part_of_speech": "表达",
+"example_ko": "다시 말해 주세요.",
+"example_zh": "请再说一次",
+"tags": [
+"追星",
+"互动"
+],
+"id": 108
+},
+{
+"korean": "다시보기",
+"meaning_zh": "回放",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 다시보기를 확인해 주세요.",
+"example_zh": "请在手机上确认回放。",
+"tags": [
+"追星",
+"数字生活"
+],
+"id": 109
+},
+{
+"korean": "다운로드",
+"meaning_zh": "下载",
+"part_of_speech": "名词",
+"example_ko": "영상을 다운로드했어요.",
+"example_zh": "我下载了视频。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 110
+},
+{
+"korean": "다음에 또 만나요",
+"meaning_zh": "下次再见",
+"part_of_speech": "表达",
+"example_ko": "다음에 또 만나요.",
+"example_zh": "下次再见",
+"tags": [
+"追星",
+"互动"
+],
+"id": 111
+},
+{
+"korean": "다재다능",
+"meaning_zh": "多才多艺",
+"part_of_speech": "形容词",
+"example_ko": "다재다능한 아이돌이에요.",
+"example_zh": "是多才多艺的偶像。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 112
+},
+{
+"korean": "단발",
+"meaning_zh": "短发",
+"part_of_speech": "名词",
+"example_ko": "오늘 단발이 정말 잘 어울려요.",
+"example_zh": "今天的短发真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 113
+},
+{
+"korean": "단어",
+"meaning_zh": "单词",
+"part_of_speech": "名词",
+"example_ko": "오늘 단어에 대해 이야기해요.",
+"example_zh": "今天聊单词。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 114
+},
+{
+"korean": "단체 사진",
+"meaning_zh": "合照",
+"part_of_speech": "名词",
+"example_ko": "오늘 단체 사진이 있어요.",
+"example_zh": "今天有合照。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 115
+},
+{
+"korean": "단체 채팅",
+"meaning_zh": "群聊",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 단체 채팅을 확인해 주세요.",
+"example_zh": "请在手机上确认群聊。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 116
+},
+{
+"korean": "답",
+"meaning_zh": "回答",
+"part_of_speech": "名词",
+"example_ko": "오늘 답에 대해 이야기해요.",
+"example_zh": "今天聊回答。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 117
+},
+{
+"korean": "답글",
+"meaning_zh": "回复评论",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 답글을 확인해 주세요.",
+"example_zh": "请在手机上确认回复评论。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 118
+},
+{
+"korean": "당첨",
+"meaning_zh": "中签、中奖",
+"part_of_speech": "名词",
+"example_ko": "팬미팅 당첨됐어요.",
+"example_zh": "粉丝见面会中签了。",
+"tags": [
+"追星",
+"线下活动",
+"饭圈用语"
+],
+"id": 119
+},
+{
+"korean": "대기",
+"meaning_zh": "等待",
+"part_of_speech": "名词",
+"example_ko": "여기서 잠시 대기해 주세요.",
+"example_zh": "请在这里稍等。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 120
+},
+{
+"korean": "대기실",
+"meaning_zh": "等候室",
+"part_of_speech": "名词",
+"example_ko": "오늘 대기실이 있어요.",
+"example_zh": "今天有等候室。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 121
+},
+{
+"korean": "대리",
+"meaning_zh": "代办/代拍",
+"part_of_speech": "名词",
+"example_ko": "팬들이 대리에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论代办/代拍。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 122
+},
+{
+"korean": "대박",
+"meaning_zh": "太厉害了/大发",
+"part_of_speech": "感叹词",
+"example_ko": "대박.",
+"example_zh": "太厉害了/大发",
+"tags": [
+"追星",
+"口语"
+],
+"id": 123
+},
+{
+"korean": "댓글",
+"meaning_zh": "评论",
+"part_of_speech": "名词",
+"example_ko": "영상에 댓글을 남겼어요.",
+"example_zh": "我给视频留了评论。",
+"tags": [
+"基础",
+"泡泡"
+],
+"id": 124
+},
+{
+"korean": "댓글 남겨 주세요",
+"meaning_zh": "请留言",
+"part_of_speech": "表达",
+"example_ko": "댓글 남겨 주세요.",
+"example_zh": "请留言",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 125
+},
+{
+"korean": "더워요",
+"meaning_zh": "热",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 더워요.",
+"example_zh": "今天真的热。",
+"tags": [
+"基础",
+"天气"
+],
+"id": 126
+},
+{
+"korean": "덕계정",
+"meaning_zh": "追星号（덕질 계정缩写）",
+"part_of_speech": "名词",
+"example_ko": "덕계정 팔로해요.",
+"example_zh": "关注追星号。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 127
+},
+{
+"korean": "덕력",
+"meaning_zh": "追星实力/资历",
+"part_of_speech": "名词",
+"example_ko": "덕력 몇 년이에요?",
+"example_zh": "追了几年了？",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 128
+},
+{
+"korean": "덕메",
+"meaning_zh": "追星朋友",
+"part_of_speech": "名词",
+"example_ko": "팬들이 덕메에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论追星朋友。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 129
+},
+{
+"korean": "덕질",
+"meaning_zh": "追星活动",
+"part_of_speech": "名词",
+"example_ko": "팬들이 덕질에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论追星活动。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 130
+},
+{
+"korean": "덕질 계정",
+"meaning_zh": "追星专用账号",
+"part_of_speech": "名词",
+"example_ko": "덕질 계정 따로 있어요.",
+"example_zh": "有专门的追星账号。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 131
+},
+{
+"korean": "덕질 비용",
+"meaning_zh": "追星费用",
+"part_of_speech": "名词",
+"example_ko": "덕질 비용이 많이 들어요.",
+"example_zh": "追星花费了很多钱。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 132
+},
+{
+"korean": "덕친",
+"meaning_zh": "追星好友",
+"part_of_speech": "名词",
+"example_ko": "팬들이 덕친에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论追星好友。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 133
+},
+{
+"korean": "덕후",
+"meaning_zh": "宅、铁粉（深度爱好者）",
+"part_of_speech": "名词",
+"example_ko": "완전 덕후예요.",
+"example_zh": "完完全全是铁粉。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 134
+},
+{
+"korean": "데뷔",
+"meaning_zh": "出道",
+"part_of_speech": "名词",
+"example_ko": "팬들이 데뷔에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论出道。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 135
+},
+{
+"korean": "데뷔 전",
+"meaning_zh": "出道前",
+"part_of_speech": "名词",
+"example_ko": "데뷔 전 영상이에요.",
+"example_zh": "这是出道前的视频。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 136
+},
+{
+"korean": "데이터",
+"meaning_zh": "流量/数据",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 데이터를 확인해 주세요.",
+"example_zh": "请在手机上确认流量/数据。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 137
+},
+{
+"korean": "도와주세요",
+"meaning_zh": "请帮帮我",
+"part_of_speech": "表达",
+"example_ko": "도와주세요.",
+"example_zh": "请帮帮我",
+"tags": [
+"基础",
+"求助"
+],
+"id": 138
+},
+{
+"korean": "도와주실 수 있어요",
+"meaning_zh": "可以帮我吗",
+"part_of_speech": "表达",
+"example_ko": "도와주실 수 있어요.",
+"example_zh": "可以帮我吗",
+"tags": [
+"基础",
+"求助"
+],
+"id": 139
+},
+{
+"korean": "도착",
+"meaning_zh": "到达",
+"part_of_speech": "名词",
+"example_ko": "오늘 도착에 대해 이야기해요.",
+"example_zh": "今天聊到达。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 140
+},
+{
+"korean": "도착하다",
+"meaning_zh": "到达",
+"part_of_speech": "动词",
+"example_ko": "오늘도 도착해요.",
+"example_zh": "今天也到达。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 141
+},
+{
+"korean": "도착했어요",
+"meaning_zh": "我到了",
+"part_of_speech": "表达",
+"example_ko": "도착했어요.",
+"example_zh": "我到了",
+"tags": [
+"基础",
+"出行"
+],
+"id": 142
+},
+{
+"korean": "돈",
+"meaning_zh": "钱",
+"part_of_speech": "名词",
+"example_ko": "오늘 돈에 대해 이야기해요.",
+"example_zh": "今天聊钱。",
+"tags": [
+"基础",
+"点单"
+],
+"id": 143
+},
+{
+"korean": "두근두근",
+"meaning_zh": "怦怦直跳（心跳声）",
+"part_of_speech": "副词",
+"example_ko": "두근두근해요.",
+"example_zh": "心怦怦跳。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 144
+},
+{
+"korean": "둘",
+"meaning_zh": "两个",
+"part_of_speech": "数词",
+"example_ko": "둘이 같이 왔어요.",
+"example_zh": "两个人一起来的。",
+"tags": [
+"基础",
+"数字"
+],
+"id": 145
+},
+{
+"korean": "뒤",
+"meaning_zh": "后面",
+"part_of_speech": "名词",
+"example_ko": "오늘 뒤에 대해 이야기해요.",
+"example_zh": "今天聊后面。",
+"tags": [
+"基础",
+"地点"
+],
+"id": 146
+},
+{
+"korean": "들어요",
+"meaning_zh": "听",
+"part_of_speech": "动词",
+"example_ko": "오늘도 들어요.",
+"example_zh": "今天也听。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 147
+},
+{
+"korean": "디데이",
+"meaning_zh": "D-Day、倒计时",
+"part_of_speech": "名词",
+"example_ko": "컴백 디데이예요!",
+"example_zh": "回归D-Day！",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 148
+},
+{
+"korean": "디엠",
+"meaning_zh": "私信（缩写）",
+"part_of_speech": "名词",
+"example_ko": "디엠으로 메시지를 보냈어요.",
+"example_zh": "我通过私信发了消息。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 149
+},
+{
+"korean": "디지털 싱글",
+"meaning_zh": "数字单曲",
+"part_of_speech": "名词",
+"example_ko": "디지털 싱글로 공개됐어요.",
+"example_zh": "以数字单曲形式公开了。",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 150
+},
+{
+"korean": "떡밥",
+"meaning_zh": "官方投喂的物料/线索",
+"part_of_speech": "名词",
+"example_ko": "오늘 떡밥이 많이 나왔어요.",
+"example_zh": "今天出了很多物料。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 151
+},
+{
+"korean": "떡밥 회수",
+"meaning_zh": "回收伏笔",
+"part_of_speech": "名词",
+"example_ko": "팬들이 떡밥 회수에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论回收伏笔。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 152
+},
+{
+"korean": "떨려요",
+"meaning_zh": "紧张/发抖",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 떨려요.",
+"example_zh": "今天真的紧张/发抖。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 153
+},
+{
+"korean": "떴다 떴다",
+"meaning_zh": "出来了出来了！（更新了）",
+"part_of_speech": "感叹词",
+"example_ko": "떴다 떴다! 새 영상이에요!",
+"example_zh": "出来了出来了！新视频！",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 154
+},
+{
+"korean": "떼창",
+"meaning_zh": "大合唱",
+"part_of_speech": "名词",
+"example_ko": "오늘 떼창이 있어요.",
+"example_zh": "今天有大合唱。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 155
+},
+{
+"korean": "또",
+"meaning_zh": "又/还",
+"part_of_speech": "副词",
+"example_ko": "오늘 또 연습해요.",
+"example_zh": "今天又/还练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 156
+},
+{
+"korean": "또 봐요",
+"meaning_zh": "下次见",
+"part_of_speech": "表达",
+"example_ko": "또 봐요.",
+"example_zh": "下次见",
+"tags": [
+"基础",
+"问候"
+],
+"id": 157
+},
+{
+"korean": "뜻",
+"meaning_zh": "意思",
+"part_of_speech": "名词",
+"example_ko": "오늘 뜻에 대해 이야기해요.",
+"example_zh": "今天聊意思。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 158
+},
+{
+"korean": "라디오",
+"meaning_zh": "广播、电台",
+"part_of_speech": "名词",
+"example_ko": "오늘 라디오 진행했어요.",
+"example_zh": "今天主持了电台节目。",
+"tags": [
+"追星",
+"综艺"
+],
+"id": 159
+},
+{
+"korean": "라이브",
+"meaning_zh": "直播",
+"part_of_speech": "名词",
+"example_ko": "오늘 라이브에 대해 이야기해요.",
+"example_zh": "今天聊直播。",
+"tags": [
+"追星",
+"泡泡"
+],
+"id": 160
+},
+{
+"korean": "라이브 방송",
+"meaning_zh": "直播",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 라이브 방송을 확인해 주세요.",
+"example_zh": "请在手机上确认直播。",
+"tags": [
+"追星",
+"数字生活"
+],
+"id": 161
+},
+{
+"korean": "라이브 실력",
+"meaning_zh": "现场实力",
+"part_of_speech": "名词",
+"example_ko": "팬들이 라이브 실력에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论现场实力。",
+"tags": [
+"饭圈",
+"舞台"
+],
+"id": 162
+},
+{
+"korean": "랜덤 포카",
+"meaning_zh": "随机小卡",
+"part_of_speech": "名词",
+"example_ko": "랜덤 포카 최애 나왔어요!",
+"example_zh": "随机小卡抽到本命了！",
+"tags": [
+"追星",
+"周边",
+"饭圈用语"
+],
+"id": 163
+},
+{
+"korean": "레전드",
+"meaning_zh": "传奇级/神级",
+"part_of_speech": "名词",
+"example_ko": "팬들이 레전드에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论传奇级/神级。",
+"tags": [
+"饭圈",
+"口语"
+],
+"id": 164
+},
+{
+"korean": "로그아웃",
+"meaning_zh": "退出登录",
+"part_of_speech": "名词",
+"example_ko": "사용 후에 로그아웃해 주세요.",
+"example_zh": "使用后请退出登录。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 165
+},
+{
+"korean": "로그인",
+"meaning_zh": "登录",
+"part_of_speech": "名词",
+"example_ko": "계정에 로그인했어요.",
+"example_zh": "我登录了账号。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 166
+},
+{
+"korean": "리마인더",
+"meaning_zh": "提醒",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 리마인더를 확인해 주세요.",
+"example_zh": "请在手机上确认提醒。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 167
+},
+{
+"korean": "리액션",
+"meaning_zh": "反应、互动",
+"part_of_speech": "名词",
+"example_ko": "리액션이 너무 귀여워요.",
+"example_zh": "反应太可爱了。",
+"tags": [
+"追星",
+"综艺",
+"感受"
+],
+"id": 168
+},
+{
+"korean": "리얼리티",
+"meaning_zh": "真人秀",
+"part_of_speech": "名词",
+"example_ko": "리얼리티 영상이 올라왔어요.",
+"example_zh": "真人秀视频更新了。",
+"tags": [
+"追星",
+"综艺"
+],
+"id": 169
+},
+{
+"korean": "리트윗",
+"meaning_zh": "转推",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 리트윗을 확인해 주세요.",
+"example_zh": "请在手机上确认转推。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 170
+},
+{
+"korean": "리프팅",
+"meaning_zh": "升降台（舞台升降装置）",
+"part_of_speech": "名词",
+"example_ko": "리프팅 타고 등장했어요.",
+"example_zh": "乘升降台登场了。",
+"tags": [
+"追星",
+"舞台",
+"演唱会"
+],
+"id": 171
+},
+{
+"korean": "릴스",
+"meaning_zh": "短视频",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 릴스를 확인해 주세요.",
+"example_zh": "请在手机上确认短视频。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 172
+},
+{
+"korean": "링크",
+"meaning_zh": "链接",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 링크를 확인해 주세요.",
+"example_zh": "请在手机上确认链接。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 173
+},
+{
+"korean": "마셔요",
+"meaning_zh": "喝",
+"part_of_speech": "动词",
+"example_ko": "오늘도 마셔요.",
+"example_zh": "今天也喝。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 174
+},
+{
+"korean": "마스터",
+"meaning_zh": "站长",
+"part_of_speech": "名词",
+"example_ko": "팬들이 마스터에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论站长。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 175
+},
+{
+"korean": "마음",
+"meaning_zh": "心/心意",
+"part_of_speech": "名词",
+"example_ko": "오늘 마음에 대해 이야기해요.",
+"example_zh": "今天聊心/心意。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 176
+},
+{
+"korean": "마이크",
+"meaning_zh": "麦克风",
+"part_of_speech": "名词",
+"example_ko": "오늘 마이크가 있어요.",
+"example_zh": "今天有麦克风。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 177
+},
+{
+"korean": "막내 온 탑",
+"meaning_zh": "老幺在顶（最小成员最强）",
+"part_of_speech": "名词",
+"example_ko": "막내 온 탑이에요.",
+"example_zh": "老幺在顶！",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 178
+},
+{
+"korean": "막방",
+"meaning_zh": "最后一次打歌舞台",
+"part_of_speech": "名词",
+"example_ko": "팬들이 막방에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论最后一次打歌舞台。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 179
+},
+{
+"korean": "만나요",
+"meaning_zh": "见面",
+"part_of_speech": "动词",
+"example_ko": "오늘도 만나요.",
+"example_zh": "今天也见面。",
+"tags": [
+"基础",
+"线下"
+],
+"id": 180
+},
+{
+"korean": "많아요",
+"meaning_zh": "多",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 많아요.",
+"example_zh": "今天真的多。",
+"tags": [
+"基础",
+"描述"
+],
+"id": 181
+},
+{
+"korean": "말해요",
+"meaning_zh": "说",
+"part_of_speech": "动词",
+"example_ko": "오늘도 말해요.",
+"example_zh": "今天也说。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 182
+},
+{
+"korean": "맛있어요",
+"meaning_zh": "好吃",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 맛있어요.",
+"example_zh": "今天真的好吃。",
+"tags": [
+"基础",
+"点单"
+],
+"id": 183
+},
+{
+"korean": "맞아요",
+"meaning_zh": "对/没错",
+"part_of_speech": "表达",
+"example_ko": "맞아요.",
+"example_zh": "对/没错",
+"tags": [
+"基础",
+"对话"
+],
+"id": 184
+},
+{
+"korean": "먹어요",
+"meaning_zh": "吃",
+"part_of_speech": "动词",
+"example_ko": "오늘도 먹어요.",
+"example_zh": "今天也吃。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 185
+},
+{
+"korean": "멋있어요",
+"meaning_zh": "帅/很酷",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 멋있어요.",
+"example_zh": "今天真的帅/很酷。",
+"tags": [
+"基础",
+"追星"
+],
+"id": 186
+},
+{
+"korean": "멍하다",
+"meaning_zh": "发呆、愣住",
+"part_of_speech": "形容词",
+"example_ko": "너무 예뻐서 멍해졌어요.",
+"example_zh": "太漂亮了我愣住了。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 187
+},
+{
+"korean": "메모",
+"meaning_zh": "备忘录",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 메모를 확인해 주세요.",
+"example_zh": "请在手机上确认备忘录。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 188
+},
+{
+"korean": "메시지",
+"meaning_zh": "消息",
+"part_of_speech": "名词",
+"example_ko": "오늘 메시지에 대해 이야기해요.",
+"example_zh": "今天聊消息。",
+"tags": [
+"基础",
+"泡泡"
+],
+"id": 189
+},
+{
+"korean": "메이크업",
+"meaning_zh": "妆容",
+"part_of_speech": "名词",
+"example_ko": "오늘 메이크업이 정말 잘 어울려요.",
+"example_zh": "今天的妆容真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 190
+},
+{
+"korean": "멘트",
+"meaning_zh": "讲话/感言",
+"part_of_speech": "名词",
+"example_ko": "오늘 멘트가 있어요.",
+"example_zh": "今天有讲话/感言。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 191
+},
+{
+"korean": "멤버",
+"meaning_zh": "成员",
+"part_of_speech": "名词",
+"example_ko": "오늘 멤버에 대해 이야기해요.",
+"example_zh": "今天聊成员。",
+"tags": [
+"追星",
+"粉丝"
+],
+"id": 192
+},
+{
+"korean": "모자",
+"meaning_zh": "帽子",
+"part_of_speech": "名词",
+"example_ko": "오늘 모자가 정말 잘 어울려요.",
+"example_zh": "今天的帽子真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 193
+},
+{
+"korean": "목걸이",
+"meaning_zh": "项链",
+"part_of_speech": "名词",
+"example_ko": "오늘 목걸이가 정말 잘 어울려요.",
+"example_zh": "今天的项链真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 194
+},
+{
+"korean": "목소리",
+"meaning_zh": "声音",
+"part_of_speech": "名词",
+"example_ko": "오늘 목소리라는 말을 들었어요.",
+"example_zh": "今天听到了“声音”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 195
+},
+{
+"korean": "목숨 바쳐 사랑해요",
+"meaning_zh": "用生命爱你（夸张表达极度喜爱）",
+"part_of_speech": "短语",
+"example_ko": "목숨 바쳐 사랑해요.",
+"example_zh": "用生命爱你。",
+"tags": [
+"追星",
+"感受",
+"互动"
+],
+"id": 196
+},
+{
+"korean": "몰라요",
+"meaning_zh": "不知道",
+"part_of_speech": "动词",
+"example_ko": "오늘도 몰라요.",
+"example_zh": "今天也不知道。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 197
+},
+{
+"korean": "몸풀기",
+"meaning_zh": "热身",
+"part_of_speech": "名词",
+"example_ko": "공연 전에 몸풀기 해요.",
+"example_zh": "演出前做热身。",
+"tags": [
+"追星",
+"舞台"
+],
+"id": 198
+},
+{
+"korean": "못 들었어요",
+"meaning_zh": "我没听清",
+"part_of_speech": "表达",
+"example_ko": "못 들었어요.",
+"example_zh": "我没听清",
+"tags": [
+"追星",
+"互动"
+],
+"id": 199
+},
+{
+"korean": "무대",
+"meaning_zh": "舞台",
+"part_of_speech": "名词",
+"example_ko": "오늘 무대가 있어요.",
+"example_zh": "今天有舞台。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 200
+},
+{
+"korean": "무대 기대할게요",
+"meaning_zh": "我会期待舞台",
+"part_of_speech": "表达",
+"example_ko": "무대 기대할게요.",
+"example_zh": "我会期待舞台",
+"tags": [
+"追星",
+"互动"
+],
+"id": 201
+},
+{
+"korean": "무대 세트",
+"meaning_zh": "舞台布景",
+"part_of_speech": "名词",
+"example_ko": "무대 세트가 화려해요.",
+"example_zh": "舞台布景很华丽。",
+"tags": [
+"追星",
+"舞台",
+"演唱会"
+],
+"id": 202
+},
+{
+"korean": "무대 앞",
+"meaning_zh": "舞台前方",
+"part_of_speech": "名词",
+"example_ko": "무대 앞에서 봤어요.",
+"example_zh": "在舞台前方看的。",
+"tags": [
+"追星",
+"演唱会",
+"线下活动"
+],
+"id": 203
+},
+{
+"korean": "무대 의상",
+"meaning_zh": "舞台服装",
+"part_of_speech": "名词",
+"example_ko": "오늘 무대 의상이 정말 잘 어울려요.",
+"example_zh": "今天的舞台服装真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 204
+},
+{
+"korean": "무대 최고예요",
+"meaning_zh": "舞台最棒了",
+"part_of_speech": "表达",
+"example_ko": "무대 최고예요.",
+"example_zh": "舞台最棒了",
+"tags": [
+"追星",
+"互动"
+],
+"id": 205
+},
+{
+"korean": "무대인사",
+"meaning_zh": "舞台问候",
+"part_of_speech": "名词",
+"example_ko": "오늘 무대인사가 있어요.",
+"example_zh": "今天有舞台问候。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 206
+},
+{
+"korean": "무료",
+"meaning_zh": "免费",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 무료를 확인해 주세요.",
+"example_zh": "请在手机上确认免费。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 207
+},
+{
+"korean": "무직 타임",
+"meaning_zh": "无业（休团/休息）期",
+"part_of_speech": "名词",
+"example_ko": "무직 타임이지만 기다려요.",
+"example_zh": "虽然在休息期但我等着。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 208
+},
+{
+"korean": "문장",
+"meaning_zh": "句子",
+"part_of_speech": "名词",
+"example_ko": "오늘 문장에 대해 이야기해요.",
+"example_zh": "今天聊句子。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 209
+},
+{
+"korean": "물",
+"meaning_zh": "水",
+"part_of_speech": "名词",
+"example_ko": "오늘 물에 대해 이야기해요.",
+"example_zh": "今天聊水。",
+"tags": [
+"基础",
+"点单"
+],
+"id": 210
+},
+{
+"korean": "뭐",
+"meaning_zh": "什么",
+"part_of_speech": "疑问词",
+"example_ko": "오늘 뭐 먹었어요?",
+"example_zh": "你今天吃了什么？",
+"tags": [
+"基础",
+"对话"
+],
+"id": 211
+},
+{
+"korean": "뮤비 조회수",
+"meaning_zh": "MV观看量",
+"part_of_speech": "名词",
+"example_ko": "뮤비 조회수 5천만 넘었어요.",
+"example_zh": "MV观看量超5千万了。",
+"tags": [
+"追星",
+"数字生活",
+"音乐"
+],
+"id": 212
+},
+{
+"korean": "뮤직비디오",
+"meaning_zh": "音乐视频",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 뮤직비디오를 확인해 주세요.",
+"example_zh": "请在手机上确认音乐视频。",
+"tags": [
+"饭圈",
+"数字生活"
+],
+"id": 213
+},
+{
+"korean": "미공포",
+"meaning_zh": "未公开小卡",
+"part_of_speech": "名词",
+"example_ko": "팬들이 미공포에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论未公开小卡。",
+"tags": [
+"饭圈",
+"周边"
+],
+"id": 214
+},
+{
+"korean": "미니 앨범",
+"meaning_zh": "迷你专辑",
+"part_of_speech": "名词",
+"example_ko": "미니 앨범 구매했어요.",
+"example_zh": "买了迷你专辑。",
+"tags": [
+"追星",
+"音乐",
+"周边"
+],
+"id": 215
+},
+{
+"korean": "미소",
+"meaning_zh": "微笑",
+"part_of_speech": "名词",
+"example_ko": "오늘 미소라는 말을 들었어요.",
+"example_zh": "今天听到了“微笑”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 216
+},
+{
+"korean": "미안해요",
+"meaning_zh": "对不起",
+"part_of_speech": "表达",
+"example_ko": "미안해요.",
+"example_zh": "对不起",
+"tags": [
+"基础",
+"道歉"
+],
+"id": 217
+},
+{
+"korean": "믿음의 구매",
+"meaning_zh": "无脑买（靠信任直接下单）",
+"part_of_speech": "名词",
+"example_ko": "믿음의 구매했어요.",
+"example_zh": "无脑买了。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 218
+},
+{
+"korean": "밈",
+"meaning_zh": "梗/迷因",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 밈을 확인해 주세요.",
+"example_zh": "请在手机上确认梗/迷因。",
+"tags": [
+"数字生活",
+"饭圈用语"
+],
+"id": 219
+},
+{
+"korean": "바빠요",
+"meaning_zh": "忙",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 바빠요.",
+"example_zh": "今天真的忙。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 220
+},
+{
+"korean": "반가워요",
+"meaning_zh": "很高兴见到你",
+"part_of_speech": "表达",
+"example_ko": "반가워요.",
+"example_zh": "很高兴见到你",
+"tags": [
+"基础",
+"问候"
+],
+"id": 221
+},
+{
+"korean": "반복 재생",
+"meaning_zh": "循环播放",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 반복 재생을 확인해 주세요.",
+"example_zh": "请在手机上确认循环播放。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 222
+},
+{
+"korean": "반지",
+"meaning_zh": "戒指",
+"part_of_speech": "名词",
+"example_ko": "오늘 반지가 정말 잘 어울려요.",
+"example_zh": "今天的戒指真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 223
+},
+{
+"korean": "발음",
+"meaning_zh": "发音",
+"part_of_speech": "名词",
+"example_ko": "오늘 발음에 대해 이야기해요.",
+"example_zh": "今天聊发音。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 224
+},
+{
+"korean": "밤",
+"meaning_zh": "夜晚",
+"part_of_speech": "名词",
+"example_ko": "오늘 밤에 대해 이야기해요.",
+"example_zh": "今天聊夜晚。",
+"tags": [
+"基础",
+"时间"
+],
+"id": 225
+},
+{
+"korean": "밥",
+"meaning_zh": "饭",
+"part_of_speech": "名词",
+"example_ko": "오늘 밥에 대해 이야기해요.",
+"example_zh": "今天聊饭。",
+"tags": [
+"基础",
+"点单"
+],
+"id": 226
+},
+{
+"korean": "밥 잘 챙겨 드세요",
+"meaning_zh": "请好好吃饭",
+"part_of_speech": "表达",
+"example_ko": "밥 잘 챙겨 드세요.",
+"example_zh": "请好好吃饭",
+"tags": [
+"追星",
+"互动"
+],
+"id": 227
+},
+{
+"korean": "방청",
+"meaning_zh": "录制观众席",
+"part_of_speech": "名词",
+"example_ko": "오늘 방청이 있어요.",
+"example_zh": "今天有录制观众席。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 228
+},
+{
+"korean": "배경화면",
+"meaning_zh": "壁纸、桌面背景",
+"part_of_speech": "名词",
+"example_ko": "배경화면 바꿨어요.",
+"example_zh": "换壁纸了。",
+"tags": [
+"追星",
+"日常"
+],
+"id": 229
+},
+{
+"korean": "배고파요",
+"meaning_zh": "饿",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 배고파요.",
+"example_zh": "今天真的饿。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 230
+},
+{
+"korean": "배너",
+"meaning_zh": "横幅",
+"part_of_speech": "名词",
+"example_ko": "오늘 배너가 있어요.",
+"example_zh": "今天有横幅。",
+"tags": [
+"追星",
+"应援"
+],
+"id": 231
+},
+{
+"korean": "배송",
+"meaning_zh": "配送",
+"part_of_speech": "名词",
+"example_ko": "팬들이 배송에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论配送。",
+"tags": [
+"饭圈",
+"周边"
+],
+"id": 232
+},
+{
+"korean": "배송비",
+"meaning_zh": "运费",
+"part_of_speech": "名词",
+"example_ko": "오늘 배송비에 대해 이야기해요.",
+"example_zh": "今天聊运费。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 233
+},
+{
+"korean": "배워요",
+"meaning_zh": "学习/学会",
+"part_of_speech": "动词",
+"example_ko": "오늘도 배워요.",
+"example_zh": "今天也学习/学会。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 234
+},
+{
+"korean": "배터리",
+"meaning_zh": "电池",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 배터리를 확인해 주세요.",
+"example_zh": "请在手机上确认电池。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 235
+},
+{
+"korean": "버그",
+"meaning_zh": "程序问题",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 버그를 확인해 주세요.",
+"example_zh": "请在手机上确认程序问题。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 236
+},
+{
+"korean": "버블",
+"meaning_zh": "泡泡私信",
+"part_of_speech": "名词",
+"example_ko": "오늘 버블이 왔어요.",
+"example_zh": "今天收到泡泡消息了。",
+"tags": [
+"追星",
+"数字生活"
+],
+"id": 237
+},
+{
+"korean": "버블 구독",
+"meaning_zh": "订阅Bubble私信",
+"part_of_speech": "名词",
+"example_ko": "버블 구독하고 있어요.",
+"example_zh": "我订阅了Bubble。",
+"tags": [
+"追星",
+"数字生活",
+"社交媒体"
+],
+"id": 238
+},
+{
+"korean": "버블 메시지",
+"meaning_zh": "Bubble消息",
+"part_of_speech": "名词",
+"example_ko": "버블 메시지 왔어요!",
+"example_zh": "Bubble来消息了！",
+"tags": [
+"追星",
+"数字生活",
+"社交媒体"
+],
+"id": 239
+},
+{
+"korean": "버스",
+"meaning_zh": "公交车",
+"part_of_speech": "名词",
+"example_ko": "오늘 버스에 대해 이야기해요.",
+"example_zh": "今天聊公交车。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 240
+},
+{
+"korean": "번역기",
+"meaning_zh": "翻译器",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 번역기를 확인해 주세요.",
+"example_zh": "请在手机上确认翻译器。",
+"tags": [
+"数字生活",
+"学习"
+],
+"id": 241
+},
+{
+"korean": "번역해 주세요",
+"meaning_zh": "请翻译",
+"part_of_speech": "表达",
+"example_ko": "번역해 주세요.",
+"example_zh": "请翻译",
+"tags": [
+"追星",
+"互动"
+],
+"id": 242
+},
+{
+"korean": "번호",
+"meaning_zh": "号码",
+"part_of_speech": "名词",
+"example_ko": "오늘 번호에 대해 이야기해요.",
+"example_zh": "今天聊号码。",
+"tags": [
+"基础",
+"线下"
+],
+"id": 243
+},
+{
+"korean": "번호표",
+"meaning_zh": "号码牌",
+"part_of_speech": "名词",
+"example_ko": "오늘 번호표가 있어요.",
+"example_zh": "今天有号码牌。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 244
+},
+{
+"korean": "보고 싶어",
+"meaning_zh": "想你",
+"part_of_speech": "表达",
+"example_ko": "보고 싶어.",
+"example_zh": "想你",
+"tags": [
+"追星",
+"粉丝"
+],
+"id": 245
+},
+{
+"korean": "보고 싶어 죽겠어요",
+"meaning_zh": "想死你了（极度想念）",
+"part_of_speech": "短语",
+"example_ko": "보고 싶어 죽겠어요.",
+"example_zh": "想你想得快要死了。",
+"tags": [
+"追星",
+"感受",
+"互动"
+],
+"id": 246
+},
+{
+"korean": "보고 싶었어요",
+"meaning_zh": "我想你了",
+"part_of_speech": "表达",
+"example_ko": "보고 싶었어요.",
+"example_zh": "我想你了",
+"tags": [
+"追星",
+"粉丝"
+],
+"id": 247
+},
+{
+"korean": "보라색",
+"meaning_zh": "紫色",
+"part_of_speech": "名词",
+"example_ko": "오늘 보라색이 정말 잘 어울려요.",
+"example_zh": "今天的紫色真的很搭。",
+"tags": [
+"基础",
+"造型"
+],
+"id": 248
+},
+{
+"korean": "보정",
+"meaning_zh": "修图",
+"part_of_speech": "名词",
+"example_ko": "오늘 보정이 정말 잘 어울려요.",
+"example_zh": "今天的修图真的很搭。",
+"tags": [
+"数字生活",
+"造型"
+],
+"id": 249
+},
+{
+"korean": "보정하다",
+"meaning_zh": "修图",
+"part_of_speech": "动词",
+"example_ko": "오늘도 보정해요.",
+"example_zh": "今天也修图。",
+"tags": [
+"数字生活",
+"造型"
+],
+"id": 250
+},
+{
+"korean": "복구",
+"meaning_zh": "恢复",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 복구를 확인해 주세요.",
+"example_zh": "请在手机上确认恢复。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 251
+},
+{
+"korean": "복귀",
+"meaning_zh": "回归（休息后重新出道/活动）",
+"part_of_speech": "名词",
+"example_ko": "드디어 복귀했어요!",
+"example_zh": "终于回归了！",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 252
+},
+{
+"korean": "본계",
+"meaning_zh": "主号",
+"part_of_speech": "名词",
+"example_ko": "본계에는 안 올려요.",
+"example_zh": "不发到主号。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 253
+},
+{
+"korean": "본인 선물",
+"meaning_zh": "给本人的礼物（直接递给偶像的礼物）",
+"part_of_speech": "名词",
+"example_ko": "본인 선물을 준비했어요.",
+"example_zh": "准备了直接给偶像的礼物。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 254
+},
+{
+"korean": "본인 확인",
+"meaning_zh": "身份核验",
+"part_of_speech": "名词",
+"example_ko": "입장 전에 본인 확인을 해요.",
+"example_zh": "入场前进行身份核验。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 255
+},
+{
+"korean": "본진",
+"meaning_zh": "最爱（粉丝的本命团）",
+"part_of_speech": "名词",
+"example_ko": "제 본진이에요.",
+"example_zh": "这是我的本命团。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 256
+},
+{
+"korean": "볼하트",
+"meaning_zh": "脸颊爱心（用脸做爱心）",
+"part_of_speech": "名词",
+"example_ko": "볼하트가 너무 귀여워요.",
+"example_zh": "脸颊爱心太可爱了。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 257
+},
+{
+"korean": "봄",
+"meaning_zh": "春天",
+"part_of_speech": "名词",
+"example_ko": "오늘 봄에 대해 이야기해요.",
+"example_zh": "今天聊春天。",
+"tags": [
+"基础",
+"时间"
+],
+"id": 258
+},
+{
+"korean": "봐요",
+"meaning_zh": "看/见",
+"part_of_speech": "动词",
+"example_ko": "오늘도 봐요.",
+"example_zh": "今天也看/见。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 259
+},
+{
+"korean": "부츠",
+"meaning_zh": "靴子",
+"part_of_speech": "名词",
+"example_ko": "오늘 부츠가 정말 잘 어울려요.",
+"example_zh": "今天的靴子真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 260
+},
+{
+"korean": "부캐",
+"meaning_zh": "副角色（次要喜好、副本命）",
+"part_of_speech": "名词",
+"example_ko": "부캐로 빠졌어요.",
+"example_zh": "又爱上了一个副本命。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 261
+},
+{
+"korean": "북클릿",
+"meaning_zh": "专辑内页小册子",
+"part_of_speech": "名词",
+"example_ko": "북클릿 정독했어요.",
+"example_zh": "仔细看了专辑小册子。",
+"tags": [
+"追星",
+"周边",
+"音乐"
+],
+"id": 262
+},
+{
+"korean": "분위기",
+"meaning_zh": "氛围",
+"part_of_speech": "名词",
+"example_ko": "오늘 분위기라는 말을 들었어요.",
+"example_zh": "今天听到了“氛围”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 263
+},
+{
+"korean": "분위기 메이커",
+"meaning_zh": "气氛担当",
+"part_of_speech": "名词",
+"example_ko": "그는 분위기 메이커예요.",
+"example_zh": "他是气氛担当。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 264
+},
+{
+"korean": "분장",
+"meaning_zh": "妆造/扮相",
+"part_of_speech": "名词",
+"example_ko": "오늘 분장이 정말 잘 어울려요.",
+"example_zh": "今天的妆造/扮相真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 265
+},
+{
+"korean": "분철",
+"meaning_zh": "拆分团购",
+"part_of_speech": "名词",
+"example_ko": "팬들이 분철에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论拆分团购。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 266
+},
+{
+"korean": "분홍색",
+"meaning_zh": "粉色",
+"part_of_speech": "名词",
+"example_ko": "오늘 분홍색이 정말 잘 어울려요.",
+"example_zh": "今天的粉色真的很搭。",
+"tags": [
+"基础",
+"造型"
+],
+"id": 267
+},
+{
+"korean": "불가능",
+"meaning_zh": "不可以/不可能",
+"part_of_speech": "名词",
+"example_ko": "지금은 입장이 불가능해요.",
+"example_zh": "现在不能入场。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 268
+},
+{
+"korean": "불꽃놀이",
+"meaning_zh": "烟花表演",
+"part_of_speech": "名词",
+"example_ko": "불꽃놀이 터졌어요!",
+"example_zh": "烟花表演开始了！",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 269
+},
+{
+"korean": "브이로그",
+"meaning_zh": "Vlog（视频日记）",
+"part_of_speech": "名词",
+"example_ko": "오늘 브이로그 너무 좋았어요.",
+"example_zh": "今天的Vlog太好看了。",
+"tags": [
+"追星",
+"数字生活"
+],
+"id": 270
+},
+{
+"korean": "비",
+"meaning_zh": "雨",
+"part_of_speech": "名词",
+"example_ko": "오늘 비에 대해 이야기해요.",
+"example_zh": "今天聊雨。",
+"tags": [
+"基础",
+"天气"
+],
+"id": 271
+},
+{
+"korean": "비공개",
+"meaning_zh": "私密",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 비공개를 확인해 주세요.",
+"example_zh": "请在手机上确认私密。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 272
+},
+{
+"korean": "비공식",
+"meaning_zh": "非官方",
+"part_of_speech": "名词",
+"example_ko": "팬들이 비공식에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论非官方。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 273
+},
+{
+"korean": "비공식 굿즈",
+"meaning_zh": "非官方周边（粉丝自制）",
+"part_of_speech": "名词",
+"example_ko": "비공식 굿즈 예쁘게 만들었어요.",
+"example_zh": "非官方周边做得很漂亮。",
+"tags": [
+"追星",
+"周边",
+"饭圈用语"
+],
+"id": 274
+},
+{
+"korean": "비밀",
+"meaning_zh": "秘密",
+"part_of_speech": "名词",
+"example_ko": "오늘 비밀라는 말을 들었어요.",
+"example_zh": "今天听到了“秘密”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 275
+},
+{
+"korean": "비밀번호",
+"meaning_zh": "密码",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 비밀번호를 확인해 주세요.",
+"example_zh": "请在手机上确认密码。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 276
+},
+{
+"korean": "비주얼",
+"meaning_zh": "视觉/颜值",
+"part_of_speech": "名词",
+"example_ko": "팬들이 비주얼에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论视觉/颜值。",
+"tags": [
+"饭圈",
+"造型"
+],
+"id": 277
+},
+{
+"korean": "비하인드",
+"meaning_zh": "幕后花絮",
+"part_of_speech": "名词",
+"example_ko": "비하인드 영상이 올라왔어요.",
+"example_zh": "幕后花絮视频更新了。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 278
+},
+{
+"korean": "빛나요",
+"meaning_zh": "闪闪发光",
+"part_of_speech": "动词",
+"example_ko": "오늘도 빛나요.",
+"example_zh": "今天也闪闪发光。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 279
+},
+{
+"korean": "빨간색",
+"meaning_zh": "红色",
+"part_of_speech": "名词",
+"example_ko": "오늘 빨간색이 정말 잘 어울려요.",
+"example_zh": "今天的红色真的很搭。",
+"tags": [
+"基础",
+"造型"
+],
+"id": 280
+},
+{
+"korean": "빨라요",
+"meaning_zh": "快",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 빨라요.",
+"example_zh": "今天真的快。",
+"tags": [
+"基础",
+"描述"
+],
+"id": 281
+},
+{
+"korean": "빨리",
+"meaning_zh": "快点",
+"part_of_speech": "副词",
+"example_ko": "오늘 빨리 연습해요.",
+"example_zh": "今天快点练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 282
+},
+{
+"korean": "사람",
+"meaning_zh": "人",
+"part_of_speech": "名词",
+"example_ko": "오늘 사람에 대해 이야기해요.",
+"example_zh": "今天聊人。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 283
+},
+{
+"korean": "사랑한다고 해 주세요",
+"meaning_zh": "请说爱我",
+"part_of_speech": "表达",
+"example_ko": "사랑한다고 해 주세요.",
+"example_zh": "请说爱我",
+"tags": [
+"追星",
+"互动"
+],
+"id": 284
+},
+{
+"korean": "사랑해",
+"meaning_zh": "我爱你",
+"part_of_speech": "表达",
+"example_ko": "사랑해.",
+"example_zh": "我爱你",
+"tags": [
+"追星",
+"粉丝"
+],
+"id": 285
+},
+{
+"korean": "사랑해요",
+"meaning_zh": "爱你",
+"part_of_speech": "动词",
+"example_ko": "오늘도 사랑해요.",
+"example_zh": "今天也爱你。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 286
+},
+{
+"korean": "사연",
+"meaning_zh": "（听众/粉丝投稿的）故事、信件",
+"part_of_speech": "名词",
+"example_ko": "팬의 사연을 읽었어요.",
+"example_zh": "读了粉丝的来信。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 287
+},
+{
+"korean": "사이드",
+"meaning_zh": "侧舞台",
+"part_of_speech": "名词",
+"example_ko": "사이드 무대도 있었어요.",
+"example_zh": "也有侧舞台。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 288
+},
+{
+"korean": "사인",
+"meaning_zh": "签名",
+"part_of_speech": "名词",
+"example_ko": "오늘 사인이 있어요.",
+"example_zh": "今天有签名。",
+"tags": [
+"追星",
+"签售"
+],
+"id": 289
+},
+{
+"korean": "사인 부탁드려요",
+"meaning_zh": "请给我签名",
+"part_of_speech": "表达",
+"example_ko": "사인 부탁드려요.",
+"example_zh": "请给我签名",
+"tags": [
+"追星",
+"签售"
+],
+"id": 290
+},
+{
+"korean": "사인 소품",
+"meaning_zh": "签名道具（带来让偶像签名的物品）",
+"part_of_speech": "名词",
+"example_ko": "사인 소품 미리 준비했어요.",
+"example_zh": "提前准备好了签名道具。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 291
+},
+{
+"korean": "사인회",
+"meaning_zh": "签售会",
+"part_of_speech": "名词",
+"example_ko": "이번 주에 사인회가 있어요.",
+"example_zh": "这周有签售会。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 292
+},
+{
+"korean": "사전 녹화",
+"meaning_zh": "预录",
+"part_of_speech": "名词",
+"example_ko": "내일 사전 녹화에 가요.",
+"example_zh": "明天去参加预录。",
+"tags": [
+"追星",
+"打歌"
+],
+"id": 293
+},
+{
+"korean": "사전 투표",
+"meaning_zh": "事前投票",
+"part_of_speech": "名词",
+"example_ko": "팬들이 사전 투표에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论事前投票。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 294
+},
+{
+"korean": "사진",
+"meaning_zh": "照片",
+"part_of_speech": "名词",
+"example_ko": "오늘 사진에 대해 이야기해요.",
+"example_zh": "今天聊照片。",
+"tags": [
+"基础",
+"线下"
+],
+"id": 295
+},
+{
+"korean": "사진 저장",
+"meaning_zh": "保存照片",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 사진 저장을 확인해 주세요.",
+"example_zh": "请在手机上确认保存照片。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 296
+},
+{
+"korean": "사진 찍어도 돼요",
+"meaning_zh": "可以拍照吗",
+"part_of_speech": "表达",
+"example_ko": "사진 찍어도 돼요.",
+"example_zh": "可以拍照吗",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 297
+},
+{
+"korean": "사진첩",
+"meaning_zh": "相册",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 사진첩을 확인해 주세요.",
+"example_zh": "请在手机上确认相册。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 298
+},
+{
+"korean": "삭제",
+"meaning_zh": "删除",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 삭제를 확인해 주세요.",
+"example_zh": "请在手机上确认删除。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 299
+},
+{
+"korean": "새 앨범 축하해요",
+"meaning_zh": "恭喜新专辑",
+"part_of_speech": "表达",
+"example_ko": "새 앨범 축하해요.",
+"example_zh": "恭喜新专辑",
+"tags": [
+"追星",
+"互动"
+],
+"id": 300
+},
+{
+"korean": "새로워요",
+"meaning_zh": "新",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 새로워요.",
+"example_zh": "今天真的新。",
+"tags": [
+"基础",
+"描述"
+],
+"id": 301
+},
+{
+"korean": "색깔",
+"meaning_zh": "颜色",
+"part_of_speech": "名词",
+"example_ko": "오늘 색깔이 정말 잘 어울려요.",
+"example_zh": "今天的颜色真的很搭。",
+"tags": [
+"基础",
+"造型"
+],
+"id": 302
+},
+{
+"korean": "생각",
+"meaning_zh": "想法",
+"part_of_speech": "名词",
+"example_ko": "오늘 생각에 대해 이야기해요.",
+"example_zh": "今天聊想法。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 303
+},
+{
+"korean": "생일",
+"meaning_zh": "生日",
+"part_of_speech": "名词",
+"example_ko": "오늘 생일에 대해 이야기해요.",
+"example_zh": "今天聊生日。",
+"tags": [
+"基础",
+"祝福"
+],
+"id": 304
+},
+{
+"korean": "생일 축하해요",
+"meaning_zh": "生日快乐",
+"part_of_speech": "表达",
+"example_ko": "생일 축하해요.",
+"example_zh": "生日快乐",
+"tags": [
+"基础",
+"祝福"
+],
+"id": 305
+},
+{
+"korean": "생일 카페",
+"meaning_zh": "生日咖啡厅（粉丝包咖啡厅为偶像庆生）",
+"part_of_speech": "名词",
+"example_ko": "생일 카페 예약했어요.",
+"example_zh": "预约了生日咖啡厅。",
+"tags": [
+"追星",
+"应援",
+"饭圈用语"
+],
+"id": 306
+},
+{
+"korean": "서사",
+"meaning_zh": "故事线/叙事",
+"part_of_speech": "名词",
+"example_ko": "팬들이 서사에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论故事线/叙事。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 307
+},
+{
+"korean": "선곡",
+"meaning_zh": "选曲",
+"part_of_speech": "名词",
+"example_ko": "오늘 선곡이 완벽해요.",
+"example_zh": "今天的选曲太完美了。",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 308
+},
+{
+"korean": "선물",
+"meaning_zh": "礼物",
+"part_of_speech": "名词",
+"example_ko": "오늘 선물에 대해 이야기해요.",
+"example_zh": "今天聊礼物。",
+"tags": [
+"基础",
+"线下"
+],
+"id": 309
+},
+{
+"korean": "설레요",
+"meaning_zh": "心动",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 설레요.",
+"example_zh": "今天真的心动。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 310
+},
+{
+"korean": "설정",
+"meaning_zh": "设置",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 설정을 확인해 주세요.",
+"example_zh": "请在手机上确认设置。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 311
+},
+{
+"korean": "성장",
+"meaning_zh": "成长",
+"part_of_speech": "名词",
+"example_ko": "성장 모습이 감동이에요.",
+"example_zh": "成长的样子很感动。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 312
+},
+{
+"korean": "성지",
+"meaning_zh": "圣地（偶像相关的地点）",
+"part_of_speech": "名词",
+"example_ko": "성지 순례 갔어요.",
+"example_zh": "去圣地巡礼了。",
+"tags": [
+"追星",
+"出行"
+],
+"id": 313
+},
+{
+"korean": "성지 순례",
+"meaning_zh": "圣地巡礼",
+"part_of_speech": "名词",
+"example_ko": "성지 순례 코스 정했어요.",
+"example_zh": "定好了圣地巡礼路线。",
+"tags": [
+"追星",
+"出行"
+],
+"id": 314
+},
+{
+"korean": "센터",
+"meaning_zh": "中心位（舞台中间）",
+"part_of_speech": "名词",
+"example_ko": "센터에 서 있었어요.",
+"example_zh": "站在中心位。",
+"tags": [
+"追星",
+"舞台",
+"饭圈用语"
+],
+"id": 315
+},
+{
+"korean": "셀카",
+"meaning_zh": "自拍",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 셀카를 확인해 주세요.",
+"example_zh": "请在手机上确认自拍。",
+"tags": [
+"追星",
+"数字生活"
+],
+"id": 316
+},
+{
+"korean": "셀카 저장",
+"meaning_zh": "保存偶像自拍",
+"part_of_speech": "短语",
+"example_ko": "셀카 저장 완료!",
+"example_zh": "偶像自拍保存完成！",
+"tags": [
+"追星",
+"日常"
+],
+"id": 317
+},
+{
+"korean": "셀카 포즈",
+"meaning_zh": "自拍姿势",
+"part_of_speech": "名词",
+"example_ko": "오늘 셀카 포즈라는 말을 들었어요.",
+"example_zh": "今天听到了“自拍姿势”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 318
+},
+{
+"korean": "셋",
+"meaning_zh": "三个",
+"part_of_speech": "数词",
+"example_ko": "셋 중에 하나를 골라요.",
+"example_zh": "三者中选一个。",
+"tags": [
+"基础",
+"数字"
+],
+"id": 319
+},
+{
+"korean": "셋리스트",
+"meaning_zh": "歌单/曲目表",
+"part_of_speech": "名词",
+"example_ko": "오늘 셋리스트가 있어요.",
+"example_zh": "今天有歌单/曲目表。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 320
+},
+{
+"korean": "셔츠",
+"meaning_zh": "衬衫",
+"part_of_speech": "名词",
+"example_ko": "오늘 셔츠가 정말 잘 어울려요.",
+"example_zh": "今天的衬衫真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 321
+},
+{
+"korean": "소속사",
+"meaning_zh": "经纪公司",
+"part_of_speech": "名词",
+"example_ko": "소속사 앞에서 기다렸어요.",
+"example_zh": "在经纪公司门口等候了。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 322
+},
+{
+"korean": "소원",
+"meaning_zh": "愿望",
+"part_of_speech": "名词",
+"example_ko": "오늘 소원라는 말을 들었어요.",
+"example_zh": "今天听到了“愿望”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 323
+},
+{
+"korean": "소원 들어 주세요",
+"meaning_zh": "请实现我的愿望",
+"part_of_speech": "表达",
+"example_ko": "소원 들어 주세요.",
+"example_zh": "请实现我的愿望",
+"tags": [
+"追星",
+"互动"
+],
+"id": 324
+},
+{
+"korean": "손",
+"meaning_zh": "手",
+"part_of_speech": "名词",
+"example_ko": "오늘 손에 대해 이야기해요.",
+"example_zh": "今天聊手。",
+"tags": [
+"基础",
+"身体"
+],
+"id": 325
+},
+{
+"korean": "손 흔들어 주세요",
+"meaning_zh": "请挥挥手",
+"part_of_speech": "表达",
+"example_ko": "손 흔들어 주세요.",
+"example_zh": "请挥挥手",
+"tags": [
+"追星",
+"互动"
+],
+"id": 326
+},
+{
+"korean": "손목띠",
+"meaning_zh": "手环",
+"part_of_speech": "名词",
+"example_ko": "오늘 손목띠가 있어요.",
+"example_zh": "今天有手环。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 327
+},
+{
+"korean": "손인사",
+"meaning_zh": "挥手打招呼",
+"part_of_speech": "名词",
+"example_ko": "손인사 받았어요.",
+"example_zh": "收到了挥手打招呼。",
+"tags": [
+"追星",
+"互动",
+"线下活动"
+],
+"id": 328
+},
+{
+"korean": "손하트",
+"meaning_zh": "手指心",
+"part_of_speech": "名词",
+"example_ko": "손하트 해 줬어요.",
+"example_zh": "做了手指心。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 329
+},
+{
+"korean": "솔로",
+"meaning_zh": "个人出道",
+"part_of_speech": "名词",
+"example_ko": "솔로 데뷔했어요.",
+"example_zh": "以个人名义出道了。",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 330
+},
+{
+"korean": "숏폼",
+"meaning_zh": "短视频内容",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 숏폼을 확인해 주세요.",
+"example_zh": "请在手机上确认短视频内容。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 331
+},
+{
+"korean": "수고했어요",
+"meaning_zh": "辛苦了",
+"part_of_speech": "表达",
+"example_ko": "수고했어요.",
+"example_zh": "辛苦了",
+"tags": [
+"基础",
+"日常"
+],
+"id": 332
+},
+{
+"korean": "수록곡",
+"meaning_zh": "收录曲",
+"part_of_speech": "名词",
+"example_ko": "팬들이 수록곡에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论收录曲。",
+"tags": [
+"饭圈",
+"音乐"
+],
+"id": 333
+},
+{
+"korean": "숙소",
+"meaning_zh": "住处",
+"part_of_speech": "名词",
+"example_ko": "오늘 숙소에 대해 이야기해요.",
+"example_zh": "今天聊住处。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 334
+},
+{
+"korean": "순서",
+"meaning_zh": "顺序",
+"part_of_speech": "名词",
+"example_ko": "오늘 순서가 있어요.",
+"example_zh": "今天有顺序。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 335
+},
+{
+"korean": "순위",
+"meaning_zh": "排名",
+"part_of_speech": "名词",
+"example_ko": "팬들이 순위에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论排名。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 336
+},
+{
+"korean": "스압",
+"meaning_zh": "长文预警（스크롤 압박）",
+"part_of_speech": "名词",
+"example_ko": "스압 주의예요.",
+"example_zh": "长文预警。",
+"tags": [
+"追星",
+"饭圈用语",
+"社交媒体"
+],
+"id": 337
+},
+{
+"korean": "스크린샷",
+"meaning_zh": "截图",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 스크린샷을 확인해 주세요.",
+"example_zh": "请在手机上确认截图。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 338
+},
+{
+"korean": "스타일링",
+"meaning_zh": "造型搭配",
+"part_of_speech": "名词",
+"example_ko": "오늘 스타일링이 정말 잘 어울려요.",
+"example_zh": "今天的造型搭配真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 339
+},
+{
+"korean": "스탠딩",
+"meaning_zh": "站席",
+"part_of_speech": "名词",
+"example_ko": "오늘 스탠딩이 있어요.",
+"example_zh": "今天有站席。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 340
+},
+{
+"korean": "스토리",
+"meaning_zh": "限时动态",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 스토리를 확인해 주세요.",
+"example_zh": "请在手机上确认限时动态。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 341
+},
+{
+"korean": "스트리밍",
+"meaning_zh": "流媒体播放",
+"part_of_speech": "名词",
+"example_ko": "신곡을 스트리밍하고 있어요.",
+"example_zh": "正在循环播放新歌。",
+"tags": [
+"饭圈",
+"数字生活"
+],
+"id": 342
+},
+{
+"korean": "스티커",
+"meaning_zh": "贴纸",
+"part_of_speech": "名词",
+"example_ko": "스티커 붙였어요.",
+"example_zh": "贴上贴纸了。",
+"tags": [
+"追星",
+"周边"
+],
+"id": 343
+},
+{
+"korean": "스포",
+"meaning_zh": "剧透",
+"part_of_speech": "名词",
+"example_ko": "팬들이 스포에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论剧透。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 344
+},
+{
+"korean": "스포일러",
+"meaning_zh": "剧透",
+"part_of_speech": "名词",
+"example_ko": "팬들이 스포일러에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论剧透。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 345
+},
+{
+"korean": "스피커",
+"meaning_zh": "音响",
+"part_of_speech": "名词",
+"example_ko": "오늘 스피커가 있어요.",
+"example_zh": "今天有音响。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 346
+},
+{
+"korean": "슬로건",
+"meaning_zh": "手幅",
+"part_of_speech": "名词",
+"example_ko": "오늘 슬로건이 있어요.",
+"example_zh": "今天有手幅。",
+"tags": [
+"追星",
+"应援"
+],
+"id": 347
+},
+{
+"korean": "슬퍼요",
+"meaning_zh": "难过",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 슬퍼요.",
+"example_zh": "今天真的难过。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 348
+},
+{
+"korean": "시간",
+"meaning_zh": "时间",
+"part_of_speech": "名词",
+"example_ko": "오늘 시간에 대해 이야기해요.",
+"example_zh": "今天聊时间。",
+"tags": [
+"基础",
+"时间"
+],
+"id": 349
+},
+{
+"korean": "시선처리",
+"meaning_zh": "眼神处理（表演时的视线)",
+"part_of_speech": "名词",
+"example_ko": "시선처리가 치명적이에요.",
+"example_zh": "眼神处理太致命了。",
+"tags": [
+"追星",
+"舞台",
+"感受"
+],
+"id": 350
+},
+{
+"korean": "시작해요",
+"meaning_zh": "开始",
+"part_of_speech": "表达",
+"example_ko": "시작해요.",
+"example_zh": "开始",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 351
+},
+{
+"korean": "식당",
+"meaning_zh": "餐厅",
+"part_of_speech": "名词",
+"example_ko": "오늘 식당에 대해 이야기해요.",
+"example_zh": "今天聊餐厅。",
+"tags": [
+"基础",
+"点单"
+],
+"id": 352
+},
+{
+"korean": "신고",
+"meaning_zh": "举报",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 신고를 확인해 주세요.",
+"example_zh": "请在手机上确认举报。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 353
+},
+{
+"korean": "신곡",
+"meaning_zh": "新歌",
+"part_of_speech": "名词",
+"example_ko": "팬들이 신곡에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论新歌。",
+"tags": [
+"饭圈",
+"音乐"
+],
+"id": 354
+},
+{
+"korean": "신발",
+"meaning_zh": "鞋子",
+"part_of_speech": "名词",
+"example_ko": "오늘 신발이 정말 잘 어울려요.",
+"example_zh": "今天的鞋子真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 355
+},
+{
+"korean": "신분증",
+"meaning_zh": "身份证件",
+"part_of_speech": "名词",
+"example_ko": "신분증을 꼭 가져오세요.",
+"example_zh": "请一定带上证件。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 356
+},
+{
+"korean": "실력파",
+"meaning_zh": "实力派",
+"part_of_speech": "名词",
+"example_ko": "실력파 아이돌이에요.",
+"example_zh": "是实力派偶像。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 357
+},
+{
+"korean": "실시간",
+"meaning_zh": "实时",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 실시간을 확인해 주세요.",
+"example_zh": "请在手机上确认实时。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 358
+},
+{
+"korean": "실시간 트렌드",
+"meaning_zh": "实时趋势",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 실시간 트렌드를 확인해 주세요.",
+"example_zh": "请在手机上确认实时趋势。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 359
+},
+{
+"korean": "실존이에요",
+"meaning_zh": "真实存在的（太完美了不像真实的人）",
+"part_of_speech": "短语",
+"example_ko": "실존이에요? 너무 완벽해요.",
+"example_zh": "真实存在的吗？太完美了。",
+"tags": [
+"追星",
+"饭圈用语",
+"感受"
+],
+"id": 360
+},
+{
+"korean": "실트",
+"meaning_zh": "实时热搜（缩写）",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 실트를 확인해 주세요.",
+"example_zh": "请在手机上确认实时热搜（缩写）。",
+"tags": [
+"数字生活",
+"饭圈用语"
+],
+"id": 361
+},
+{
+"korean": "심쿵",
+"meaning_zh": "心跳加速、被萌到",
+"part_of_speech": "感叹词",
+"example_ko": "심쿵했어요.",
+"example_zh": "心跳加速了。",
+"tags": [
+"追星",
+"感受",
+"饭圈用语"
+],
+"id": 362
+},
+{
+"korean": "싱글",
+"meaning_zh": "单曲",
+"part_of_speech": "名词",
+"example_ko": "새 싱글 나왔어요!",
+"example_zh": "新单曲出了！",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 363
+},
+{
+"korean": "써요",
+"meaning_zh": "写",
+"part_of_speech": "动词",
+"example_ko": "오늘도 써요.",
+"example_zh": "今天也写。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 364
+},
+{
+"korean": "아니요",
+"meaning_zh": "不是/不",
+"part_of_speech": "感叹词",
+"example_ko": "아니요.",
+"example_zh": "不是/不",
+"tags": [
+"基础",
+"对话"
+],
+"id": 365
+},
+{
+"korean": "아래",
+"meaning_zh": "下面",
+"part_of_speech": "名词",
+"example_ko": "오늘 아래에 대해 이야기해요.",
+"example_zh": "今天聊下面。",
+"tags": [
+"基础",
+"地点"
+],
+"id": 366
+},
+{
+"korean": "아무튼 귀엽다",
+"meaning_zh": "反正就是可爱",
+"part_of_speech": "短语",
+"example_ko": "아무튼 귀엽다.",
+"example_zh": "反正就是可爱。",
+"tags": [
+"追星",
+"饭圈用语",
+"感受"
+],
+"id": 367
+},
+{
+"korean": "아이돌",
+"meaning_zh": "偶像",
+"part_of_speech": "名词",
+"example_ko": "오늘 아이돌에 대해 이야기해요.",
+"example_zh": "今天聊偶像。",
+"tags": [
+"追星",
+"粉丝"
+],
+"id": 368
+},
+{
+"korean": "아이디",
+"meaning_zh": "用户名/ID",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 아이디를 확인해 주세요.",
+"example_zh": "请在手机上确认用户名/ID。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 369
+},
+{
+"korean": "아주",
+"meaning_zh": "很/非常",
+"part_of_speech": "副词",
+"example_ko": "오늘 아주 연습해요.",
+"example_zh": "今天很/非常练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 370
+},
+{
+"korean": "아직",
+"meaning_zh": "还/尚未",
+"part_of_speech": "副词",
+"example_ko": "오늘 아직 연습해요.",
+"example_zh": "今天还/尚未练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 371
+},
+{
+"korean": "아침",
+"meaning_zh": "早上",
+"part_of_speech": "名词",
+"example_ko": "오늘 아침에 대해 이야기해요.",
+"example_zh": "今天聊早上。",
+"tags": [
+"基础",
+"时间"
+],
+"id": 372
+},
+{
+"korean": "아크릴 스탠드",
+"meaning_zh": "亚克力立牌",
+"part_of_speech": "名词",
+"example_ko": "아크릴 스탠드 세워 놨어요.",
+"example_zh": "立好了亚克力立牌。",
+"tags": [
+"追星",
+"周边"
+],
+"id": 373
+},
+{
+"korean": "아파요",
+"meaning_zh": "疼/不舒服",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 아파요.",
+"example_zh": "今天真的疼/不舒服。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 374
+},
+{
+"korean": "안 읽음",
+"meaning_zh": "未读",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 안 읽음을 확인해 주세요.",
+"example_zh": "请在手机上确认未读。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 375
+},
+{
+"korean": "안경",
+"meaning_zh": "眼镜",
+"part_of_speech": "名词",
+"example_ko": "오늘 안경이 정말 잘 어울려요.",
+"example_zh": "今天的眼镜真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 376
+},
+{
+"korean": "안녕",
+"meaning_zh": "嗨/再见",
+"part_of_speech": "感叹词",
+"example_ko": "안녕.",
+"example_zh": "嗨/再见",
+"tags": [
+"基础",
+"问候"
+],
+"id": 377
+},
+{
+"korean": "안녕하세요",
+"meaning_zh": "你好",
+"part_of_speech": "感叹词",
+"example_ko": "안녕하세요.",
+"example_zh": "你好",
+"tags": [
+"基础",
+"问候"
+],
+"id": 378
+},
+{
+"korean": "안무",
+"meaning_zh": "编舞",
+"part_of_speech": "名词",
+"example_ko": "팬들이 안무에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论编舞。",
+"tags": [
+"饭圈",
+"舞台"
+],
+"id": 379
+},
+{
+"korean": "안무 연습",
+"meaning_zh": "练习室舞蹈",
+"part_of_speech": "名词",
+"example_ko": "팬들이 안무 연습에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论练习室舞蹈。",
+"tags": [
+"饭圈",
+"舞台"
+],
+"id": 380
+},
+{
+"korean": "알고리즘",
+"meaning_zh": "算法",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 알고리즘을 확인해 주세요.",
+"example_zh": "请在手机上确认算法。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 381
+},
+{
+"korean": "알림",
+"meaning_zh": "通知",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 알림을 확인해 주세요.",
+"example_zh": "请在手机上确认通知。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 382
+},
+{
+"korean": "알림 설정했어요",
+"meaning_zh": "设置了提醒/通知",
+"part_of_speech": "短语",
+"example_ko": "유튜브 알림 설정했어요.",
+"example_zh": "设置了YouTube通知。",
+"tags": [
+"追星",
+"数字生活"
+],
+"id": 383
+},
+{
+"korean": "알림 켜기",
+"meaning_zh": "打开通知",
+"part_of_speech": "表达",
+"example_ko": "알림 켜기.",
+"example_zh": "打开通知",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 384
+},
+{
+"korean": "알아들었어요",
+"meaning_zh": "我听懂了",
+"part_of_speech": "表达",
+"example_ko": "알아들었어요.",
+"example_zh": "我听懂了",
+"tags": [
+"追星",
+"互动"
+],
+"id": 385
+},
+{
+"korean": "알아요",
+"meaning_zh": "知道",
+"part_of_speech": "动词",
+"example_ko": "오늘도 알아요.",
+"example_zh": "今天也知道。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 386
+},
+{
+"korean": "앞",
+"meaning_zh": "前面",
+"part_of_speech": "名词",
+"example_ko": "오늘 앞에 대해 이야기해요.",
+"example_zh": "今天聊前面。",
+"tags": [
+"基础",
+"地点"
+],
+"id": 387
+},
+{
+"korean": "앞머리",
+"meaning_zh": "刘海",
+"part_of_speech": "名词",
+"example_ko": "오늘 앞머리가 정말 잘 어울려요.",
+"example_zh": "今天的刘海真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 388
+},
+{
+"korean": "앞으로도 잘 부탁해요",
+"meaning_zh": "以后也请多关照",
+"part_of_speech": "短语",
+"example_ko": "앞으로도 잘 부탁해요!",
+"example_zh": "以后也请多关照！",
+"tags": [
+"追星",
+"互动"
+],
+"id": 389
+},
+{
+"korean": "애교 해 주세요",
+"meaning_zh": "请撒娇",
+"part_of_speech": "表达",
+"example_ko": "애교 해 주세요.",
+"example_zh": "请撒娇",
+"tags": [
+"追星",
+"互动"
+],
+"id": 390
+},
+{
+"korean": "액세서리",
+"meaning_zh": "配饰",
+"part_of_speech": "名词",
+"example_ko": "오늘 액세서리가 정말 잘 어울려요.",
+"example_zh": "今天的配饰真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 391
+},
+{
+"korean": "앨범",
+"meaning_zh": "专辑",
+"part_of_speech": "名词",
+"example_ko": "오늘 앨범에 대해 이야기해요.",
+"example_zh": "今天聊专辑。",
+"tags": [
+"追星",
+"粉丝"
+],
+"id": 392
+},
+{
+"korean": "앨범 개봉",
+"meaning_zh": "开专辑",
+"part_of_speech": "名词",
+"example_ko": "앨범 개봉 영상 올렸어요.",
+"example_zh": "发了开专辑视频。",
+"tags": [
+"追星",
+"周边",
+"음악"
+],
+"id": 393
+},
+{
+"korean": "앵콜",
+"meaning_zh": "安可",
+"part_of_speech": "名词",
+"example_ko": "오늘 앵콜이 있어요.",
+"example_zh": "今天有安可。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 394
+},
+{
+"korean": "야광봉",
+"meaning_zh": "荧光棒",
+"part_of_speech": "名词",
+"example_ko": "야광봉 흔들었어요.",
+"example_zh": "挥动了荧光棒。",
+"tags": [
+"追星",
+"演唱会",
+"应援"
+],
+"id": 395
+},
+{
+"korean": "약속",
+"meaning_zh": "约定",
+"part_of_speech": "名词",
+"example_ko": "오늘 약속라는 말을 들었어요.",
+"example_zh": "今天听到了“约定”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 396
+},
+{
+"korean": "약속해요",
+"meaning_zh": "约定哦",
+"part_of_speech": "表达",
+"example_ko": "약속해요.",
+"example_zh": "约定哦",
+"tags": [
+"追星",
+"互动"
+],
+"id": 397
+},
+{
+"korean": "양도",
+"meaning_zh": "转让",
+"part_of_speech": "名词",
+"example_ko": "팬들이 양도에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论转让。",
+"tags": [
+"饭圈",
+"购票"
+],
+"id": 398
+},
+{
+"korean": "양수",
+"meaning_zh": "收票/接手",
+"part_of_speech": "名词",
+"example_ko": "팬들이 양수에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论收票/接手。",
+"tags": [
+"饭圈",
+"购票"
+],
+"id": 399
+},
+{
+"korean": "어디",
+"meaning_zh": "哪里",
+"part_of_speech": "疑问词",
+"example_ko": "어디에서 만날까요?",
+"example_zh": "我们在哪里见面呢？",
+"tags": [
+"基础",
+"对话"
+],
+"id": 400
+},
+{
+"korean": "어떻게",
+"meaning_zh": "怎么",
+"part_of_speech": "疑问词",
+"example_ko": "이거 어떻게 해요?",
+"example_zh": "这个怎么做？",
+"tags": [
+"基础",
+"对话"
+],
+"id": 401
+},
+{
+"korean": "어떻게 이래요",
+"meaning_zh": "怎么可以这样（被迷到）",
+"part_of_speech": "短语",
+"example_ko": "어떻게 이래요, 너무 귀여워요.",
+"example_zh": "怎么可以这样，太可爱了。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 402
+},
+{
+"korean": "어제",
+"meaning_zh": "昨天",
+"part_of_speech": "名词",
+"example_ko": "오늘 어제에 대해 이야기해요.",
+"example_zh": "今天聊昨天。",
+"tags": [
+"基础",
+"时间"
+],
+"id": 403
+},
+{
+"korean": "언박싱",
+"meaning_zh": "开箱",
+"part_of_speech": "名词",
+"example_ko": "언박싱 영상 봤어요?",
+"example_zh": "看开箱视频了吗？",
+"tags": [
+"追星",
+"周边",
+"数字生活"
+],
+"id": 404
+},
+{
+"korean": "언제",
+"meaning_zh": "什么时候",
+"part_of_speech": "疑问词",
+"example_ko": "언제 다시 만나요?",
+"example_zh": "什么时候再见面？",
+"tags": [
+"基础",
+"对话"
+],
+"id": 405
+},
+{
+"korean": "언제나 응원해요",
+"meaning_zh": "永远支持你",
+"part_of_speech": "短语",
+"example_ko": "언제나 응원해요, 힘내세요!",
+"example_zh": "永远支持你，加油！",
+"tags": [
+"追星",
+"应援",
+"互动"
+],
+"id": 406
+},
+{
+"korean": "언팔",
+"meaning_zh": "取消关注（缩写）",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 언팔을 확인해 주세요.",
+"example_zh": "请在手机上确认取消关注（缩写）。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 407
+},
+{
+"korean": "얼굴",
+"meaning_zh": "脸",
+"part_of_speech": "名词",
+"example_ko": "오늘 얼굴에 대해 이야기해요.",
+"example_zh": "今天聊脸。",
+"tags": [
+"基础",
+"身体"
+],
+"id": 408
+},
+{
+"korean": "얼굴천재",
+"meaning_zh": "脸蛋天才/颜值天才",
+"part_of_speech": "名词",
+"example_ko": "팬들이 얼굴천재에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论脸蛋天才/颜值天才。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 409
+},
+{
+"korean": "얼마",
+"meaning_zh": "多少/多少钱",
+"part_of_speech": "疑问词",
+"example_ko": "오늘 얼마에 대해 이야기해요.",
+"example_zh": "今天聊多少/多少钱。",
+"tags": [
+"基础",
+"点单"
+],
+"id": 410
+},
+{
+"korean": "얼마나 기다렸는지",
+"meaning_zh": "等了多久了（期待已久）",
+"part_of_speech": "短语",
+"example_ko": "얼마나 기다렸는지 몰라요.",
+"example_zh": "不知道等了多久了。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 411
+},
+{
+"korean": "업데이트",
+"meaning_zh": "更新",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 업데이트를 확인해 주세요.",
+"example_zh": "请在手机上确认更新。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 412
+},
+{
+"korean": "업로드",
+"meaning_zh": "上传",
+"part_of_speech": "名词",
+"example_ko": "사진을 업로드했어요.",
+"example_zh": "我上传了照片。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 413
+},
+{
+"korean": "없어요",
+"meaning_zh": "没有",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 없어요.",
+"example_zh": "今天真的没有。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 414
+},
+{
+"korean": "에너지",
+"meaning_zh": "活力、气场",
+"part_of_speech": "名词",
+"example_ko": "무대 에너지가 넘쳐요.",
+"example_zh": "舞台气场溢出来了。",
+"tags": [
+"追星",
+"舞台"
+],
+"id": 415
+},
+{
+"korean": "엑스",
+"meaning_zh": "X（原推特）",
+"part_of_speech": "名词",
+"example_ko": "엑스에서 트렌드 됐어요.",
+"example_zh": "在X上成了热搜。",
+"tags": [
+"追星",
+"数字生活",
+"社交媒体"
+],
+"id": 416
+},
+{
+"korean": "엔딩",
+"meaning_zh": "结尾",
+"part_of_speech": "名词",
+"example_ko": "오늘 엔딩이 있어요.",
+"example_zh": "今天有结尾。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 417
+},
+{
+"korean": "여권",
+"meaning_zh": "护照",
+"part_of_speech": "名词",
+"example_ko": "오늘 여권에 대해 이야기해요.",
+"example_zh": "今天聊护照。",
+"tags": [
+"追星",
+"出行"
+],
+"id": 418
+},
+{
+"korean": "여기",
+"meaning_zh": "这里",
+"part_of_speech": "名词",
+"example_ko": "오늘 여기에 대해 이야기해요.",
+"example_zh": "今天聊这里。",
+"tags": [
+"基础",
+"地点"
+],
+"id": 419
+},
+{
+"korean": "여기에 해 주세요",
+"meaning_zh": "请写在这里",
+"part_of_speech": "表达",
+"example_ko": "여기에 해 주세요.",
+"example_zh": "请写在这里",
+"tags": [
+"追星",
+"签售"
+],
+"id": 420
+},
+{
+"korean": "여기요",
+"meaning_zh": "这里/劳驾",
+"part_of_speech": "表达",
+"example_ko": "여기요.",
+"example_zh": "这里/劳驾",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 421
+},
+{
+"korean": "여름",
+"meaning_zh": "夏天",
+"part_of_speech": "名词",
+"example_ko": "오늘 여름에 대해 이야기해요.",
+"example_zh": "今天聊夏天。",
+"tags": [
+"基础",
+"时间"
+],
+"id": 422
+},
+{
+"korean": "여행",
+"meaning_zh": "旅行",
+"part_of_speech": "名词",
+"example_ko": "오늘 여행에 대해 이야기해요.",
+"example_zh": "今天聊旅行。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 423
+},
+{
+"korean": "역",
+"meaning_zh": "车站",
+"part_of_speech": "名词",
+"example_ko": "오늘 역에 대해 이야기해요.",
+"example_zh": "今天聊车站。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 424
+},
+{
+"korean": "역주행",
+"meaning_zh": "逆行（旧歌突然翻红）",
+"part_of_speech": "名词",
+"example_ko": "역주행하고 있어요.",
+"example_zh": "旧歌在逆行。",
+"tags": [
+"追星",
+"音乐",
+"饭圈用语"
+],
+"id": 425
+},
+{
+"korean": "연습",
+"meaning_zh": "练习",
+"part_of_speech": "名词",
+"example_ko": "오늘 연습에 대해 이야기해요.",
+"example_zh": "今天聊练习。",
+"tags": [
+"追星",
+"日常"
+],
+"id": 426
+},
+{
+"korean": "연습생",
+"meaning_zh": "练习生",
+"part_of_speech": "名词",
+"example_ko": "연습생 시절이 힘들었어요.",
+"example_zh": "练习生时期很辛苦。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 427
+},
+{
+"korean": "연습실",
+"meaning_zh": "练习室",
+"part_of_speech": "名词",
+"example_ko": "팬들이 연습실에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论练习室。",
+"tags": [
+"饭圈",
+"舞台"
+],
+"id": 428
+},
+{
+"korean": "연습해요",
+"meaning_zh": "练习",
+"part_of_speech": "动词",
+"example_ko": "오늘도 연습해요.",
+"example_zh": "今天也练习。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 429
+},
+{
+"korean": "염색",
+"meaning_zh": "染发",
+"part_of_speech": "名词",
+"example_ko": "오늘 염색이 정말 잘 어울려요.",
+"example_zh": "今天的染发真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 430
+},
+{
+"korean": "엽서",
+"meaning_zh": "明信片",
+"part_of_speech": "名词",
+"example_ko": "엽서 교환해요.",
+"example_zh": "交换明信片吧。",
+"tags": [
+"追星",
+"周边"
+],
+"id": 431
+},
+{
+"korean": "영상",
+"meaning_zh": "视频",
+"part_of_speech": "名词",
+"example_ko": "오늘 영상에 대해 이야기해요.",
+"example_zh": "今天聊视频。",
+"tags": [
+"基础",
+"追星"
+],
+"id": 432
+},
+{
+"korean": "영상 찍어도 돼요",
+"meaning_zh": "可以录视频吗",
+"part_of_speech": "表达",
+"example_ko": "영상 찍어도 돼요.",
+"example_zh": "可以录视频吗",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 433
+},
+{
+"korean": "영상통화",
+"meaning_zh": "视频通话",
+"part_of_speech": "名词",
+"example_ko": "오늘 영상통화에 대해 이야기해요.",
+"example_zh": "今天聊视频通话。",
+"tags": [
+"追星",
+"线上互动"
+],
+"id": 434
+},
+{
+"korean": "영수증",
+"meaning_zh": "收据",
+"part_of_speech": "名词",
+"example_ko": "오늘 영수증에 대해 이야기해요.",
+"example_zh": "今天聊收据。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 435
+},
+{
+"korean": "영어",
+"meaning_zh": "英语",
+"part_of_speech": "名词",
+"example_ko": "오늘 영어에 대해 이야기해요.",
+"example_zh": "今天聊英语。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 436
+},
+{
+"korean": "영통팬싸",
+"meaning_zh": "视频签售",
+"part_of_speech": "名词",
+"example_ko": "팬들이 영통팬싸에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论视频签售。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 437
+},
+{
+"korean": "예능",
+"meaning_zh": "综艺（节目）",
+"part_of_speech": "名词",
+"example_ko": "오늘 예능 너무 재밌었어요.",
+"example_zh": "今天的综艺太好笑了。",
+"tags": [
+"追星",
+"综艺"
+],
+"id": 438
+},
+{
+"korean": "예능감",
+"meaning_zh": "综艺感（综艺天赋）",
+"part_of_speech": "名词",
+"example_ko": "예능감이 터졌어요.",
+"example_zh": "综艺感爆发了。",
+"tags": [
+"追星",
+"综艺",
+"饭圈用语"
+],
+"id": 439
+},
+{
+"korean": "예매",
+"meaning_zh": "预售/订票",
+"part_of_speech": "名词",
+"example_ko": "오늘 예매에 대해 이야기해요.",
+"example_zh": "今天聊预售/订票。",
+"tags": [
+"追星",
+"购票"
+],
+"id": 440
+},
+{
+"korean": "예뻐요",
+"meaning_zh": "漂亮",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 예뻐요.",
+"example_zh": "今天真的漂亮。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 441
+},
+{
+"korean": "예약",
+"meaning_zh": "预约/预定",
+"part_of_speech": "名词",
+"example_ko": "오늘 예약에 대해 이야기해요.",
+"example_zh": "今天聊预约/预定。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 442
+},
+{
+"korean": "예약하다",
+"meaning_zh": "预约/预定",
+"part_of_speech": "动词",
+"example_ko": "오늘도 예약해요.",
+"example_zh": "今天也预约/预定。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 443
+},
+{
+"korean": "오늘",
+"meaning_zh": "今天",
+"part_of_speech": "名词",
+"example_ko": "오늘 오늘에 대해 이야기해요.",
+"example_zh": "今天聊今天。",
+"tags": [
+"基础",
+"时间"
+],
+"id": 444
+},
+{
+"korean": "오늘 기분 어때요",
+"meaning_zh": "你今天心情怎么样",
+"part_of_speech": "表达",
+"example_ko": "오늘 기분 어때요.",
+"example_zh": "你今天心情怎么样",
+"tags": [
+"追星",
+"互动"
+],
+"id": 445
+},
+{
+"korean": "오늘 너무 멋있어요",
+"meaning_zh": "你今天太帅了",
+"part_of_speech": "表达",
+"example_ko": "오늘 너무 멋있어요.",
+"example_zh": "你今天太帅了",
+"tags": [
+"追星",
+"互动"
+],
+"id": 446
+},
+{
+"korean": "오늘 너무 예뻐요",
+"meaning_zh": "你今天太漂亮了",
+"part_of_speech": "表达",
+"example_ko": "오늘 너무 예뻐요.",
+"example_zh": "你今天太漂亮了",
+"tags": [
+"追星",
+"互动"
+],
+"id": 447
+},
+{
+"korean": "오늘도 수고했어요",
+"meaning_zh": "今天也辛苦了",
+"part_of_speech": "表达",
+"example_ko": "오늘도 수고했어요.",
+"example_zh": "今天也辛苦了",
+"tags": [
+"追星",
+"互动"
+],
+"id": 448
+},
+{
+"korean": "오래됐어요",
+"meaning_zh": "旧/很久了",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 오래됐어요.",
+"example_zh": "今天真的旧/很久了。",
+"tags": [
+"基础",
+"描述"
+],
+"id": 449
+},
+{
+"korean": "오랜만이에요",
+"meaning_zh": "好久不见",
+"part_of_speech": "表达",
+"example_ko": "오랜만이에요.",
+"example_zh": "好久不见",
+"tags": [
+"追星",
+"互动"
+],
+"id": 450
+},
+{
+"korean": "오류",
+"meaning_zh": "错误/故障",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 오류를 확인해 주세요.",
+"example_zh": "请在手机上确认错误/故障。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 451
+},
+{
+"korean": "오른손",
+"meaning_zh": "右手",
+"part_of_speech": "名词",
+"example_ko": "오늘 오른손에 대해 이야기해요.",
+"example_zh": "今天聊右手。",
+"tags": [
+"基础",
+"身体"
+],
+"id": 452
+},
+{
+"korean": "오른쪽",
+"meaning_zh": "右边",
+"part_of_speech": "名词",
+"example_ko": "오늘 오른쪽에 대해 이야기해요.",
+"example_zh": "今天聊右边。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 453
+},
+{
+"korean": "오열",
+"meaning_zh": "嚎啕大哭（被感动到哭）",
+"part_of_speech": "名词",
+"example_ko": "무대 보고 오열했어요.",
+"example_zh": "看完舞台嚎啕大哭。",
+"tags": [
+"追星",
+"感受",
+"饭圈用语"
+],
+"id": 454
+},
+{
+"korean": "오프닝",
+"meaning_zh": "开场",
+"part_of_speech": "名词",
+"example_ko": "오늘 오프닝이 있어요.",
+"example_zh": "今天有开场。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 455
+},
+{
+"korean": "오프라인",
+"meaning_zh": "离线",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 오프라인을 확인해 주세요.",
+"example_zh": "请在手机上确认离线。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 456
+},
+{
+"korean": "오프라인 굿즈",
+"meaning_zh": "现场限定周边",
+"part_of_speech": "名词",
+"example_ko": "오프라인 굿즈만 판매해요.",
+"example_zh": "只在现场销售的周边。",
+"tags": [
+"追星",
+"周边",
+"线下活动"
+],
+"id": 457
+},
+{
+"korean": "오픈런",
+"meaning_zh": "开门即跑（抢头位排队）",
+"part_of_speech": "名词",
+"example_ko": "오픈런 해야 돼요.",
+"example_zh": "得开门就冲。",
+"tags": [
+"追星",
+"线下活动",
+"饭圈用语"
+],
+"id": 458
+},
+{
+"korean": "오픈채팅",
+"meaning_zh": "开放群聊",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 오픈채팅을 확인해 주세요.",
+"example_zh": "请在手机上确认开放群聊。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 459
+},
+{
+"korean": "온라인",
+"meaning_zh": "在线",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 온라인을 확인해 주세요.",
+"example_zh": "请在手机上确认在线。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 460
+},
+{
+"korean": "올킬",
+"meaning_zh": "全杀（包揽所有榜单第一）",
+"part_of_speech": "名词",
+"example_ko": "음원차트 올킬했어요!",
+"example_zh": "音源榜单全杀了！",
+"tags": [
+"追星",
+"饭圈用语",
+"音乐"
+],
+"id": 461
+},
+{
+"korean": "와요",
+"meaning_zh": "来",
+"part_of_speech": "动词",
+"example_ko": "오늘도 와요.",
+"example_zh": "今天也来。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 462
+},
+{
+"korean": "와이파이",
+"meaning_zh": "Wi-Fi",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 와이파이를 확인해 주세요.",
+"example_zh": "请在手机上确认Wi-Fi。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 463
+},
+{
+"korean": "완벽해요",
+"meaning_zh": "完美",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 완벽해요.",
+"example_zh": "今天真的完美。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 464
+},
+{
+"korean": "완성도",
+"meaning_zh": "完成度",
+"part_of_speech": "名词",
+"example_ko": "완성도가 너무 높아요.",
+"example_zh": "完成度太高了。",
+"tags": [
+"追星",
+"舞台"
+],
+"id": 465
+},
+{
+"korean": "왜",
+"meaning_zh": "为什么",
+"part_of_speech": "疑问词",
+"example_ko": "왜 이렇게 귀여워요?",
+"example_zh": "为什么这么可爱？",
+"tags": [
+"基础",
+"对话"
+],
+"id": 466
+},
+{
+"korean": "왼손",
+"meaning_zh": "左手",
+"part_of_speech": "名词",
+"example_ko": "오늘 왼손에 대해 이야기해요.",
+"example_zh": "今天聊左手。",
+"tags": [
+"基础",
+"身体"
+],
+"id": 467
+},
+{
+"korean": "왼쪽",
+"meaning_zh": "左边",
+"part_of_speech": "名词",
+"example_ko": "오늘 왼쪽에 대해 이야기해요.",
+"example_zh": "今天聊左边。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 468
+},
+{
+"korean": "요즘 뭐 해요",
+"meaning_zh": "最近在做什么",
+"part_of_speech": "表达",
+"example_ko": "요즘 뭐 해요.",
+"example_zh": "最近在做什么",
+"tags": [
+"追星",
+"互动"
+],
+"id": 469
+},
+{
+"korean": "요즘 어떻게 지내요",
+"meaning_zh": "最近过得怎么样",
+"part_of_speech": "表达",
+"example_ko": "요즘 어떻게 지내요.",
+"example_zh": "最近过得怎么样",
+"tags": [
+"追星",
+"互动"
+],
+"id": 470
+},
+{
+"korean": "용기",
+"meaning_zh": "勇气",
+"part_of_speech": "名词",
+"example_ko": "오늘 용기라는 말을 들었어요.",
+"example_zh": "今天听到了“勇气”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 471
+},
+{
+"korean": "용량",
+"meaning_zh": "容量",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 용량을 확인해 주세요.",
+"example_zh": "请在手机上确认容量。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 472
+},
+{
+"korean": "우리",
+"meaning_zh": "我们",
+"part_of_speech": "代词",
+"example_ko": "우리는 같은 팀이에요.",
+"example_zh": "我们是同一组。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 473
+},
+{
+"korean": "우편번호",
+"meaning_zh": "邮编",
+"part_of_speech": "名词",
+"example_ko": "오늘 우편번호에 대해 이야기해요.",
+"example_zh": "今天聊邮编。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 474
+},
+{
+"korean": "울어요",
+"meaning_zh": "哭",
+"part_of_speech": "动词",
+"example_ko": "오늘도 울어요.",
+"example_zh": "今天也哭。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 475
+},
+{
+"korean": "움짤",
+"meaning_zh": "动态表情图",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 움짤을 확인해 주세요.",
+"example_zh": "请在手机上确认动态表情图。",
+"tags": [
+"数字生活",
+"饭圈用语"
+],
+"id": 476
+},
+{
+"korean": "움짤 저장",
+"meaning_zh": "保存动图",
+"part_of_speech": "短语",
+"example_ko": "움짤 저장 완료했어요.",
+"example_zh": "动图保存完成。",
+"tags": [
+"追星",
+"数字生活"
+],
+"id": 477
+},
+{
+"korean": "웃어요",
+"meaning_zh": "笑",
+"part_of_speech": "动词",
+"example_ko": "오늘도 웃어요.",
+"example_zh": "今天也笑。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 478
+},
+{
+"korean": "웃음",
+"meaning_zh": "笑容",
+"part_of_speech": "名词",
+"example_ko": "오늘 웃음라는 말을 들었어요.",
+"example_zh": "今天听到了“笑容”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 479
+},
+{
+"korean": "웃음 참기",
+"meaning_zh": "忍住不笑",
+"part_of_speech": "名词",
+"example_ko": "웃음 참기가 너무 힘들어요.",
+"example_zh": "忍住不笑太难了。",
+"tags": [
+"追星",
+"综艺"
+],
+"id": 480
+},
+{
+"korean": "원정",
+"meaning_zh": "（海外/远程）追星远征",
+"part_of_speech": "名词",
+"example_ko": "콘서트 원정 갔어요.",
+"example_zh": "去远征演唱会了。",
+"tags": [
+"追星",
+"线下活动",
+"出行"
+],
+"id": 481
+},
+{
+"korean": "원정 팬",
+"meaning_zh": "远征粉（从外地专程来的粉丝）",
+"part_of_speech": "名词",
+"example_ko": "원정 팬이에요.",
+"example_zh": "我是远征粉。",
+"tags": [
+"追星",
+"粉丝",
+"出行"
+],
+"id": 482
+},
+{
+"korean": "원피스",
+"meaning_zh": "连衣裙",
+"part_of_speech": "名词",
+"example_ko": "오늘 원피스가 정말 잘 어울려요.",
+"example_zh": "今天的连衣裙真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 483
+},
+{
+"korean": "원해요",
+"meaning_zh": "想要",
+"part_of_speech": "动词",
+"example_ko": "오늘도 원해요.",
+"example_zh": "今天也想要。",
+"tags": [
+"基础",
+"点单"
+],
+"id": 484
+},
+{
+"korean": "월드 투어",
+"meaning_zh": "世界巡回演唱会",
+"part_of_speech": "名词",
+"example_ko": "월드 투어 일정 떴어요!",
+"example_zh": "世界巡演日程公布了！",
+"tags": [
+"追星",
+"演唱会",
+"线下活动"
+],
+"id": 485
+},
+{
+"korean": "위",
+"meaning_zh": "上面",
+"part_of_speech": "名词",
+"example_ko": "오늘 위에 대해 이야기해요.",
+"example_zh": "今天聊上面。",
+"tags": [
+"基础",
+"地点"
+],
+"id": 486
+},
+{
+"korean": "위버스",
+"meaning_zh": "Weverse",
+"part_of_speech": "名词",
+"example_ko": "위버스에 글을 올렸어요.",
+"example_zh": "我在 Weverse 发了帖子。",
+"tags": [
+"追星",
+"数字生活"
+],
+"id": 487
+},
+{
+"korean": "위버스 게시물",
+"meaning_zh": "Weverse帖子",
+"part_of_speech": "名词",
+"example_ko": "위버스 게시물 올라왔어요!",
+"example_zh": "Weverse发帖了！",
+"tags": [
+"追星",
+"数字生活",
+"社交媒体"
+],
+"id": 488
+},
+{
+"korean": "위버스 댓글",
+"meaning_zh": "Weverse评论",
+"part_of_speech": "名词",
+"example_ko": "위버스 댓글 달았어요.",
+"example_zh": "在Weverse评论了。",
+"tags": [
+"追星",
+"数字生活",
+"社交媒体"
+],
+"id": 489
+},
+{
+"korean": "윙크",
+"meaning_zh": "眨眼、wink",
+"part_of_speech": "名词",
+"example_ko": "윙크해 줬어요.",
+"example_zh": "对我眨了眨眼。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 490
+},
+{
+"korean": "유닛",
+"meaning_zh": "小分队（团队内的子单元）",
+"part_of_speech": "名词",
+"example_ko": "유닛 활동 시작했어요.",
+"example_zh": "小分队开始活动了。",
+"tags": [
+"追星",
+"音乐",
+"饭圈用语"
+],
+"id": 491
+},
+{
+"korean": "유료",
+"meaning_zh": "付费",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 유료를 확인해 주세요.",
+"example_zh": "请在手机上确认付费。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 492
+},
+{
+"korean": "유튜브",
+"meaning_zh": "YouTube",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 유튜브를 확인해 주세요.",
+"example_zh": "请在手机上确认YouTube。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 493
+},
+{
+"korean": "유튜브 쇼츠",
+"meaning_zh": "YouTube Shorts",
+"part_of_speech": "名词",
+"example_ko": "유튜브 쇼츠 올라왔어요.",
+"example_zh": "YouTube Shorts更新了。",
+"tags": [
+"追星",
+"数字生活",
+"社交媒体"
+],
+"id": 494
+},
+{
+"korean": "음방",
+"meaning_zh": "音乐节目（缩写）",
+"part_of_speech": "名词",
+"example_ko": "팬들이 음방에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论音乐节目（缩写）。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 495
+},
+{
+"korean": "음소거",
+"meaning_zh": "静音",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 음소거를 확인해 주세요.",
+"example_zh": "请在手机上确认静音。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 496
+},
+{
+"korean": "음악",
+"meaning_zh": "音乐",
+"part_of_speech": "名词",
+"example_ko": "오늘 음악에 대해 이야기해요.",
+"example_zh": "今天聊音乐。",
+"tags": [
+"基础",
+"追星"
+],
+"id": 497
+},
+{
+"korean": "음악 방송",
+"meaning_zh": "音乐节目",
+"part_of_speech": "名词",
+"example_ko": "오늘 음악 방송에 대해 이야기해요.",
+"example_zh": "今天聊音乐节目。",
+"tags": [
+"追星",
+"打歌"
+],
+"id": 498
+},
+{
+"korean": "음원",
+"meaning_zh": "音源",
+"part_of_speech": "名词",
+"example_ko": "팬들이 음원에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论音源。",
+"tags": [
+"饭圈",
+"音乐"
+],
+"id": 499
+},
+{
+"korean": "음원 사재기",
+"meaning_zh": "刷音源（买榜）",
+"part_of_speech": "名词",
+"example_ko": "음원 사재기 의혹이 있어요.",
+"example_zh": "有刷音源嫌疑。",
+"tags": [
+"追星",
+"饭圈用语",
+"音乐"
+],
+"id": 500
+},
+{
+"korean": "음원 차트",
+"meaning_zh": "音源榜单",
+"part_of_speech": "名词",
+"example_ko": "팬들이 음원 차트에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论音源榜单。",
+"tags": [
+"饭圈",
+"音乐"
+],
+"id": 501
+},
+{
+"korean": "음원 총공",
+"meaning_zh": "集中刷音源",
+"part_of_speech": "名词",
+"example_ko": "음원 총공 시작해요!",
+"example_zh": "开始集中刷音源！",
+"tags": [
+"追星",
+"饭圈用语",
+"音乐"
+],
+"id": 502
+},
+{
+"korean": "응원",
+"meaning_zh": "应援/支持",
+"part_of_speech": "名词",
+"example_ko": "오늘 응원에 대해 이야기해요.",
+"example_zh": "今天聊应援/支持。",
+"tags": [
+"追星",
+"粉丝"
+],
+"id": 503
+},
+{
+"korean": "응원 메시지",
+"meaning_zh": "应援留言",
+"part_of_speech": "名词",
+"example_ko": "오늘 응원 메시지라는 말을 들었어요.",
+"example_zh": "今天听到了“应援留言”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 504
+},
+{
+"korean": "응원가",
+"meaning_zh": "应援歌",
+"part_of_speech": "名词",
+"example_ko": "응원가를 미리 외웠어요.",
+"example_zh": "提前把应援歌背下来了。",
+"tags": [
+"追星",
+"应援",
+"演唱会"
+],
+"id": 505
+},
+{
+"korean": "응원법",
+"meaning_zh": "应援法",
+"part_of_speech": "名词",
+"example_ko": "오늘 응원법이 있어요.",
+"example_zh": "今天有应援法。",
+"tags": [
+"追星",
+"应援"
+],
+"id": 506
+},
+{
+"korean": "응원봉",
+"meaning_zh": "应援棒",
+"part_of_speech": "名词",
+"example_ko": "응원봉을 꼭 챙겨 오세요.",
+"example_zh": "请一定带上应援棒。",
+"tags": [
+"追星",
+"应援"
+],
+"id": 507
+},
+{
+"korean": "응원색",
+"meaning_zh": "应援色（偶像官方颜色）",
+"part_of_speech": "名词",
+"example_ko": "응원색은 보라색이에요.",
+"example_zh": "应援色是紫色。",
+"tags": [
+"追星",
+"应援",
+"线下活动"
+],
+"id": 508
+},
+{
+"korean": "의상",
+"meaning_zh": "服装",
+"part_of_speech": "名词",
+"example_ko": "오늘 의상이 정말 잘 어울려요.",
+"example_zh": "今天的服装真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 509
+},
+{
+"korean": "이것",
+"meaning_zh": "这个",
+"part_of_speech": "代词",
+"example_ko": "이것은 제 응원봉이에요.",
+"example_zh": "这是我的应援棒。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 510
+},
+{
+"korean": "이런 모습도 좋아요",
+"meaning_zh": "这样的样子也喜欢",
+"part_of_speech": "短语",
+"example_ko": "이런 모습도 좋아요, 다 좋아요.",
+"example_zh": "这样的样子也喜欢，什么都喜欢。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 511
+},
+{
+"korean": "이름",
+"meaning_zh": "名字",
+"part_of_speech": "名词",
+"example_ko": "오늘 이름에 대해 이야기해요.",
+"example_zh": "今天聊名字。",
+"tags": [
+"基础",
+"自我介绍"
+],
+"id": 512
+},
+{
+"korean": "이름 써 주세요",
+"meaning_zh": "请写名字",
+"part_of_speech": "表达",
+"example_ko": "이름 써 주세요.",
+"example_zh": "请写名字",
+"tags": [
+"追星",
+"签售"
+],
+"id": 513
+},
+{
+"korean": "이미",
+"meaning_zh": "已经",
+"part_of_speech": "副词",
+"example_ko": "오늘 이미 연습해요.",
+"example_zh": "今天已经练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 514
+},
+{
+"korean": "이번 활동",
+"meaning_zh": "这次活动期",
+"part_of_speech": "名词",
+"example_ko": "오늘 이번 활동에 대해 이야기해요.",
+"example_zh": "今天聊这次活动期。",
+"tags": [
+"追星",
+"打歌"
+],
+"id": 515
+},
+{
+"korean": "이벤트 존",
+"meaning_zh": "活动区域",
+"part_of_speech": "名词",
+"example_ko": "이벤트 존에서 진행했어요.",
+"example_zh": "在活动区域进行的。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 516
+},
+{
+"korean": "이벤트 진행",
+"meaning_zh": "应援活动进行中",
+"part_of_speech": "名词",
+"example_ko": "생일 이벤트 진행 중이에요.",
+"example_zh": "生日应援活动进行中。",
+"tags": [
+"追星",
+"应援"
+],
+"id": 517
+},
+{
+"korean": "이어폰",
+"meaning_zh": "耳机",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 이어폰을 확인해 주세요.",
+"example_zh": "请在手机上确认耳机。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 518
+},
+{
+"korean": "이해 못 해요",
+"meaning_zh": "不理解",
+"part_of_speech": "表达",
+"example_ko": "이해 못 해요.",
+"example_zh": "不理解",
+"tags": [
+"基础",
+"对话"
+],
+"id": 519
+},
+{
+"korean": "이해해요",
+"meaning_zh": "理解",
+"part_of_speech": "动词",
+"example_ko": "오늘도 이해해요.",
+"example_zh": "今天也理解。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 520
+},
+{
+"korean": "인생네컷",
+"meaning_zh": "人生四格照",
+"part_of_speech": "名词",
+"example_ko": "오늘 인생네컷이 정말 잘 어울려요.",
+"example_zh": "今天的人生四格照真的很搭。",
+"tags": [
+"数字生活",
+"造型"
+],
+"id": 521
+},
+{
+"korean": "인스타 라이브",
+"meaning_zh": "Instagram直播",
+"part_of_speech": "名词",
+"example_ko": "인스타 라이브 켰어요!",
+"example_zh": "开了Instagram直播！",
+"tags": [
+"追星",
+"数字生活",
+"社交媒体"
+],
+"id": 522
+},
+{
+"korean": "인스타 스토리",
+"meaning_zh": "Instagram Stories",
+"part_of_speech": "名词",
+"example_ko": "인스타 스토리 올렸어요.",
+"example_zh": "发了Instagram Stories。",
+"tags": [
+"追星",
+"数字生活",
+"社交媒体"
+],
+"id": 523
+},
+{
+"korean": "인스타그램",
+"meaning_zh": "Instagram",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 인스타그램을 확인해 주세요.",
+"example_zh": "请在手机上确认Instagram。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 524
+},
+{
+"korean": "인용",
+"meaning_zh": "引用转发",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 인용을 확인해 주세요.",
+"example_zh": "请在手机上确认引用转发。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 525
+},
+{
+"korean": "인증",
+"meaning_zh": "验证",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 인증을 확인해 주세요.",
+"example_zh": "请在手机上确认验证。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 526
+},
+{
+"korean": "인증번호",
+"meaning_zh": "验证码",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 인증번호를 확인해 주세요.",
+"example_zh": "请在手机上确认验证码。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 527
+},
+{
+"korean": "인증샷",
+"meaning_zh": "认证照片",
+"part_of_speech": "名词",
+"example_ko": "투표 인증샷을 올렸어요.",
+"example_zh": "我上传了投票认证照。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 528
+},
+{
+"korean": "인터넷",
+"meaning_zh": "网络",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 인터넷을 확인해 주세요.",
+"example_zh": "请在手机上确认网络。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 529
+},
+{
+"korean": "일시정지",
+"meaning_zh": "暂停",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 일시정지를 확인해 주세요.",
+"example_zh": "请在手机上确认暂停。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 530
+},
+{
+"korean": "일정",
+"meaning_zh": "日程",
+"part_of_speech": "名词",
+"example_ko": "오늘 일정에 대해 이야기해요.",
+"example_zh": "今天聊日程。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 531
+},
+{
+"korean": "읽어요",
+"meaning_zh": "读",
+"part_of_speech": "动词",
+"example_ko": "오늘도 읽어요.",
+"example_zh": "今天也读。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 532
+},
+{
+"korean": "읽음",
+"meaning_zh": "已读",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 읽음을 확인해 주세요.",
+"example_zh": "请在手机上确认已读。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 533
+},
+{
+"korean": "잃어버렸어요",
+"meaning_zh": "我弄丢了",
+"part_of_speech": "表达",
+"example_ko": "잃어버렸어요.",
+"example_zh": "我弄丢了",
+"tags": [
+"基础",
+"出行"
+],
+"id": 534
+},
+{
+"korean": "입구",
+"meaning_zh": "入口",
+"part_of_speech": "名词",
+"example_ko": "오늘 입구에 대해 이야기해요.",
+"example_zh": "今天聊入口。",
+"tags": [
+"基础",
+"线下"
+],
+"id": 535
+},
+{
+"korean": "입국장",
+"meaning_zh": "入境大厅（追机场时等候处）",
+"part_of_speech": "名词",
+"example_ko": "입국장에서 기다렸어요.",
+"example_zh": "在入境大厅等候了。",
+"tags": [
+"追星",
+"线下活动",
+"出行"
+],
+"id": 536
+},
+{
+"korean": "입덕",
+"meaning_zh": "入坑",
+"part_of_speech": "名词",
+"example_ko": "팬들이 입덕에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论入坑。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 537
+},
+{
+"korean": "입덕 계기",
+"meaning_zh": "入坑原因/契机",
+"part_of_speech": "名词",
+"example_ko": "입덕 계기가 뭐예요?",
+"example_zh": "入坑原因是什么？",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 538
+},
+{
+"korean": "입덕 직캠",
+"meaning_zh": "入坑直拍",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 입덕 직캠을 확인해 주세요.",
+"example_zh": "请在手机上确认入坑直拍。",
+"tags": [
+"饭圈",
+"数字生活"
+],
+"id": 539
+},
+{
+"korean": "입덕 폭발",
+"meaning_zh": "入坑爆炸（突然深陷）",
+"part_of_speech": "名词",
+"example_ko": "이 영상 보고 입덕 폭발했어요.",
+"example_zh": "看了这个视频直接入坑爆炸。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 540
+},
+{
+"korean": "입장",
+"meaning_zh": "入场",
+"part_of_speech": "名词",
+"example_ko": "오늘 입장이 있어요.",
+"example_zh": "今天有入场。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 541
+},
+{
+"korean": "입장 음악",
+"meaning_zh": "入场音乐",
+"part_of_speech": "名词",
+"example_ko": "입장 음악이 흘렀어요.",
+"example_zh": "入场音乐响起来了。",
+"tags": [
+"追星",
+"演唱会",
+"舞台"
+],
+"id": 542
+},
+{
+"korean": "있어요",
+"meaning_zh": "有/在",
+"part_of_speech": "动词",
+"example_ko": "오늘도 있어요.",
+"example_zh": "今天也有/在。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 543
+},
+{
+"korean": "자동 번역",
+"meaning_zh": "自动翻译",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 자동 번역을 확인해 주세요.",
+"example_zh": "请在手机上确认自动翻译。",
+"tags": [
+"数字生活",
+"学习"
+],
+"id": 544
+},
+{
+"korean": "자랑스러워요",
+"meaning_zh": "很骄傲",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 자랑스러워요.",
+"example_zh": "今天真的很骄傲。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 545
+},
+{
+"korean": "자리",
+"meaning_zh": "位置/座位",
+"part_of_speech": "名词",
+"example_ko": "오늘 자리에 대해 이야기해요.",
+"example_zh": "今天聊位置/座位。",
+"tags": [
+"基础",
+"线下"
+],
+"id": 546
+},
+{
+"korean": "자막",
+"meaning_zh": "字幕",
+"part_of_speech": "名词",
+"example_ko": "자막을 켜고 영상을 봐요.",
+"example_zh": "打开字幕看视频。",
+"tags": [
+"追星",
+"数字生活"
+],
+"id": 547
+},
+{
+"korean": "자작곡",
+"meaning_zh": "自作曲（自己创作的歌）",
+"part_of_speech": "名词",
+"example_ko": "이 곡은 자작곡이에요.",
+"example_zh": "这首歌是自作曲。",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 548
+},
+{
+"korean": "자켓",
+"meaning_zh": "夹克",
+"part_of_speech": "名词",
+"example_ko": "오늘 자켓이 정말 잘 어울려요.",
+"example_zh": "今天的夹克真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 549
+},
+{
+"korean": "작곡",
+"meaning_zh": "作曲",
+"part_of_speech": "名词",
+"example_ko": "직접 작곡했어요.",
+"example_zh": "亲自作曲了。",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 550
+},
+{
+"korean": "작사",
+"meaning_zh": "作词",
+"part_of_speech": "名词",
+"example_ko": "직접 작사했어요.",
+"example_zh": "亲自作词了。",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 551
+},
+{
+"korean": "작아요",
+"meaning_zh": "小",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 작아요.",
+"example_zh": "今天真的小。",
+"tags": [
+"基础",
+"描述"
+],
+"id": 552
+},
+{
+"korean": "잘 가요",
+"meaning_zh": "慢走/再见",
+"part_of_speech": "表达",
+"example_ko": "잘 가요.",
+"example_zh": "慢走/再见",
+"tags": [
+"基础",
+"问候"
+],
+"id": 553
+},
+{
+"korean": "잘 도착했어요",
+"meaning_zh": "安全到达了",
+"part_of_speech": "短语",
+"example_ko": "숙소에 잘 도착했어요?",
+"example_zh": "安全到达酒店了吗？",
+"tags": [
+"追星",
+"互动",
+"问候"
+],
+"id": 554
+},
+{
+"korean": "잘 들었어요",
+"meaning_zh": "我听清楚了",
+"part_of_speech": "表达",
+"example_ko": "잘 들었어요.",
+"example_zh": "我听清楚了",
+"tags": [
+"追星",
+"互动"
+],
+"id": 555
+},
+{
+"korean": "잘 먹고 있어요?",
+"meaning_zh": "吃得好吗？",
+"part_of_speech": "短语",
+"example_ko": "잘 먹고 있어요? 걱정돼요.",
+"example_zh": "吃得好吗？好担心。",
+"tags": [
+"追星",
+"互动",
+"问候"
+],
+"id": 556
+},
+{
+"korean": "잘 쉬었어요?",
+"meaning_zh": "休息得好吗？",
+"part_of_speech": "短语",
+"example_ko": "잘 쉬었어요? 피곤하지 않아요?",
+"example_zh": "休息得好吗？不累吗？",
+"tags": [
+"追星",
+"互动",
+"问候"
+],
+"id": 557
+},
+{
+"korean": "잘 자요",
+"meaning_zh": "晚安",
+"part_of_speech": "表达",
+"example_ko": "잘 자요.",
+"example_zh": "晚安",
+"tags": [
+"基础",
+"日常"
+],
+"id": 558
+},
+{
+"korean": "잘생겼어요",
+"meaning_zh": "长得帅",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 잘생겼어요.",
+"example_zh": "今天真的长得帅。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 559
+},
+{
+"korean": "잠금화면",
+"meaning_zh": "锁屏壁纸",
+"part_of_speech": "名词",
+"example_ko": "잠금화면도 오빠예요.",
+"example_zh": "锁屏也是哥哥。",
+"tags": [
+"追星",
+"日常"
+],
+"id": 560
+},
+{
+"korean": "잠깐",
+"meaning_zh": "一下/稍等",
+"part_of_speech": "副词",
+"example_ko": "오늘 잠깐 연습해요.",
+"example_zh": "今天一下/稍等练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 561
+},
+{
+"korean": "잠수",
+"meaning_zh": "潜水（偶像长时间不更新）",
+"part_of_speech": "名词",
+"example_ko": "또 잠수 탔어요.",
+"example_zh": "又潜水了。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 562
+},
+{
+"korean": "잠시만요",
+"meaning_zh": "请稍等",
+"part_of_speech": "表达",
+"example_ko": "잠시만요.",
+"example_zh": "请稍等",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 563
+},
+{
+"korean": "장발",
+"meaning_zh": "长发",
+"part_of_speech": "名词",
+"example_ko": "오늘 장발이 정말 잘 어울려요.",
+"example_zh": "今天的长发真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 564
+},
+{
+"korean": "재계약",
+"meaning_zh": "续约",
+"part_of_speech": "名词",
+"example_ko": "재계약 했어요!",
+"example_zh": "续约了！",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 565
+},
+{
+"korean": "재고",
+"meaning_zh": "库存",
+"part_of_speech": "名词",
+"example_ko": "팬들이 재고에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论库存。",
+"tags": [
+"饭圈",
+"周边"
+],
+"id": 566
+},
+{
+"korean": "재미있어요",
+"meaning_zh": "有趣",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 재미있어요.",
+"example_zh": "今天真的有趣。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 567
+},
+{
+"korean": "재생",
+"meaning_zh": "播放",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 재생을 확인해 주세요.",
+"example_zh": "请在手机上确认播放。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 568
+},
+{
+"korean": "재생 수",
+"meaning_zh": "播放量",
+"part_of_speech": "名词",
+"example_ko": "재생 수 1억 넘었어요!",
+"example_zh": "播放量超1亿了！",
+"tags": [
+"追星",
+"数字生活",
+"音乐"
+],
+"id": 569
+},
+{
+"korean": "재생목록",
+"meaning_zh": "播放列表",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 재생목록을 확인해 주세요.",
+"example_zh": "请在手机上确认播放列表。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 570
+},
+{
+"korean": "저",
+"meaning_zh": "我（敬语）",
+"part_of_speech": "代词",
+"example_ko": "저는 중국에서 왔어요.",
+"example_zh": "我来自中国。",
+"tags": [
+"基础",
+"敬语"
+],
+"id": 571
+},
+{
+"korean": "저기요",
+"meaning_zh": "那个/劳驾",
+"part_of_speech": "表达",
+"example_ko": "저기요.",
+"example_zh": "那个/劳驾",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 572
+},
+{
+"korean": "저음",
+"meaning_zh": "低音",
+"part_of_speech": "名词",
+"example_ko": "팬들이 저음에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论低音。",
+"tags": [
+"饭圈",
+"音乐"
+],
+"id": 573
+},
+{
+"korean": "저장",
+"meaning_zh": "保存",
+"part_of_speech": "名词",
+"example_ko": "마음에 드는 사진을 저장했어요.",
+"example_zh": "我保存了喜欢的照片。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 574
+},
+{
+"korean": "저화질",
+"meaning_zh": "低清",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 저화질을 확인해 주세요.",
+"example_zh": "请在手机上确认低清。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 575
+},
+{
+"korean": "적어요",
+"meaning_zh": "少",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 적어요.",
+"example_zh": "今天真的少。",
+"tags": [
+"基础",
+"描述"
+],
+"id": 576
+},
+{
+"korean": "전광판 광고",
+"meaning_zh": "大屏广告应援",
+"part_of_speech": "名词",
+"example_ko": "전광판 광고 떴어요!",
+"example_zh": "大屏广告应援出来了！",
+"tags": [
+"追星",
+"应援",
+"饭圈用语"
+],
+"id": 577
+},
+{
+"korean": "전역",
+"meaning_zh": "退伍",
+"part_of_speech": "名词",
+"example_ko": "전역하고 돌아왔어요!",
+"example_zh": "退伍回来了！",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 578
+},
+{
+"korean": "접속",
+"meaning_zh": "连接/上线",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 접속을 확인해 주세요.",
+"example_zh": "请在手机上确认连接/上线。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 579
+},
+{
+"korean": "정규 앨범",
+"meaning_zh": "正规专辑",
+"part_of_speech": "名词",
+"example_ko": "정규 앨범이 드디어 나왔어요.",
+"example_zh": "正规专辑终于出了。",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 580
+},
+{
+"korean": "정말",
+"meaning_zh": "真的/非常",
+"part_of_speech": "副词",
+"example_ko": "오늘 정말 연습해요.",
+"example_zh": "今天真的/非常练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 581
+},
+{
+"korean": "제 이름은",
+"meaning_zh": "我的名字是",
+"part_of_speech": "表达",
+"example_ko": "제 이름은 유나예요.",
+"example_zh": "我的名字是 Yuna。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 582
+},
+{
+"korean": "제가 왜 이래요",
+"meaning_zh": "我怎么了（被迷到质疑自己）",
+"part_of_speech": "短语",
+"example_ko": "제가 왜 이래요, 또 봤어요.",
+"example_zh": "我怎么了，又看了一遍。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 583
+},
+{
+"korean": "제일 좋아하는",
+"meaning_zh": "最喜欢的",
+"part_of_speech": "表达",
+"example_ko": "제일 좋아하는 노래가 뭐예요?",
+"example_zh": "你最喜欢的歌是什么？",
+"tags": [
+"追星",
+"互动"
+],
+"id": 584
+},
+{
+"korean": "조공",
+"meaning_zh": "粉丝向偶像送礼/应援",
+"part_of_speech": "名词",
+"example_ko": "생일 조공 준비 중이에요.",
+"example_zh": "正在准备生日应援。",
+"tags": [
+"追星",
+"应援",
+"饭圈用语"
+],
+"id": 585
+},
+{
+"korean": "조금",
+"meaning_zh": "一点",
+"part_of_speech": "副词",
+"example_ko": "오늘 조금 연습해요.",
+"example_zh": "今天一点练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 586
+},
+{
+"korean": "조명",
+"meaning_zh": "灯光",
+"part_of_speech": "名词",
+"example_ko": "조명이 너무 예뻐요.",
+"example_zh": "灯光太漂亮了。",
+"tags": [
+"追星",
+"舞台",
+"演唱会"
+],
+"id": 587
+},
+{
+"korean": "조심히 가세요",
+"meaning_zh": "请慢走/路上小心",
+"part_of_speech": "表达",
+"example_ko": "조심히 가세요.",
+"example_zh": "请慢走/路上小心",
+"tags": [
+"基础",
+"问候"
+],
+"id": 588
+},
+{
+"korean": "존재감",
+"meaning_zh": "存在感",
+"part_of_speech": "名词",
+"example_ko": "존재감이 엄청나요.",
+"example_zh": "存在感太强了。",
+"tags": [
+"追星",
+"舞台"
+],
+"id": 589
+},
+{
+"korean": "좋아요",
+"meaning_zh": "好/喜欢",
+"part_of_speech": "形容词",
+"example_ko": "게시물에 좋아요를 눌렀어요.",
+"example_zh": "我给帖子点了赞。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 590
+},
+{
+"korean": "좋아요 눌러 주세요",
+"meaning_zh": "请点赞",
+"part_of_speech": "表达",
+"example_ko": "좋아요 눌러 주세요.",
+"example_zh": "请点赞",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 591
+},
+{
+"korean": "좋아해요",
+"meaning_zh": "喜欢",
+"part_of_speech": "动词",
+"example_ko": "오늘도 좋아해요.",
+"example_zh": "今天也喜欢。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 592
+},
+{
+"korean": "좋은 아침이에요",
+"meaning_zh": "早上好",
+"part_of_speech": "表达",
+"example_ko": "좋은 아침이에요.",
+"example_zh": "早上好",
+"tags": [
+"基础",
+"问候"
+],
+"id": 593
+},
+{
+"korean": "좌석",
+"meaning_zh": "座位",
+"part_of_speech": "名词",
+"example_ko": "오늘 좌석이 있어요.",
+"example_zh": "今天有座位。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 594
+},
+{
+"korean": "죄송합니다",
+"meaning_zh": "对不起（正式）",
+"part_of_speech": "表达",
+"example_ko": "죄송합니다.",
+"example_zh": "对不起（正式）",
+"tags": [
+"基础",
+"道歉"
+],
+"id": 595
+},
+{
+"korean": "주세요",
+"meaning_zh": "请给我",
+"part_of_speech": "表达",
+"example_ko": "주세요.",
+"example_zh": "请给我",
+"tags": [
+"基础",
+"点单"
+],
+"id": 596
+},
+{
+"korean": "주소",
+"meaning_zh": "地址",
+"part_of_speech": "名词",
+"example_ko": "오늘 주소에 대해 이야기해요.",
+"example_zh": "今天聊地址。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 597
+},
+{
+"korean": "줄",
+"meaning_zh": "队伍",
+"part_of_speech": "名词",
+"example_ko": "오늘 줄에 대해 이야기해요.",
+"example_zh": "今天聊队伍。",
+"tags": [
+"基础",
+"线下"
+],
+"id": 598
+},
+{
+"korean": "줄 서기",
+"meaning_zh": "排队",
+"part_of_speech": "名词",
+"example_ko": "여기서 줄 서기 시작해요.",
+"example_zh": "从这里开始排队。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 599
+},
+{
+"korean": "중국어",
+"meaning_zh": "中文",
+"part_of_speech": "名词",
+"example_ko": "오늘 중국어에 대해 이야기해요.",
+"example_zh": "今天聊中文。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 600
+},
+{
+"korean": "중증",
+"meaning_zh": "重症（深度粉丝）",
+"part_of_speech": "名词",
+"example_ko": "이미 중증이에요.",
+"example_zh": "已经是重度粉丝了。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 601
+},
+{
+"korean": "즉구",
+"meaning_zh": "即刻购买、秒杀",
+"part_of_speech": "名词",
+"example_ko": "즉구했어요.",
+"example_zh": "秒了。",
+"tags": [
+"追星",
+"饭圈用语",
+"周边"
+],
+"id": 602
+},
+{
+"korean": "증명사진",
+"meaning_zh": "证件照",
+"part_of_speech": "名词",
+"example_ko": "오늘 증명사진이 정말 잘 어울려요.",
+"example_zh": "今天的证件照真的很搭。",
+"tags": [
+"基础",
+"造型"
+],
+"id": 603
+},
+{
+"korean": "지금",
+"meaning_zh": "现在",
+"part_of_speech": "副词",
+"example_ko": "오늘 지금 연습해요.",
+"example_zh": "今天现在练习。",
+"tags": [
+"基础",
+"时间"
+],
+"id": 604
+},
+{
+"korean": "지도",
+"meaning_zh": "地图",
+"part_of_speech": "名词",
+"example_ko": "오늘 지도에 대해 이야기해요.",
+"example_zh": "今天聊地图。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 605
+},
+{
+"korean": "지정석",
+"meaning_zh": "对号座位",
+"part_of_speech": "名词",
+"example_ko": "오늘 지정석이 있어요.",
+"example_zh": "今天有对号座位。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 606
+},
+{
+"korean": "지하철",
+"meaning_zh": "地铁",
+"part_of_speech": "名词",
+"example_ko": "오늘 지하철에 대해 이야기해요.",
+"example_zh": "今天聊地铁。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 607
+},
+{
+"korean": "직접 봤어요",
+"meaning_zh": "我亲眼看到了（现场见到偶像）",
+"part_of_speech": "短语",
+"example_ko": "직접 봤어요, 너무 예뻐요.",
+"example_zh": "亲眼看到了，太漂亮了。",
+"tags": [
+"追星",
+"线下活动",
+"感受"
+],
+"id": 608
+},
+{
+"korean": "직캠",
+"meaning_zh": "直拍",
+"part_of_speech": "名词",
+"example_ko": "새 직캠을 봤어요.",
+"example_zh": "我看了新的直拍。",
+"tags": [
+"饭圈",
+"数字生活"
+],
+"id": 609
+},
+{
+"korean": "진심이에요",
+"meaning_zh": "我是认真的",
+"part_of_speech": "表达",
+"example_ko": "진심이에요.",
+"example_zh": "我是认真的",
+"tags": [
+"追星",
+"互动"
+],
+"id": 610
+},
+{
+"korean": "진짜요",
+"meaning_zh": "真的吗/真的",
+"part_of_speech": "表达",
+"example_ko": "진짜요.",
+"example_zh": "真的吗/真的",
+"tags": [
+"基础",
+"对话"
+],
+"id": 611
+},
+{
+"korean": "질문",
+"meaning_zh": "问题",
+"part_of_speech": "名词",
+"example_ko": "오늘 질문에 대해 이야기해요.",
+"example_zh": "今天聊问题。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 612
+},
+{
+"korean": "집",
+"meaning_zh": "家",
+"part_of_speech": "名词",
+"example_ko": "오늘 집에 대해 이야기해요.",
+"example_zh": "今天聊家。",
+"tags": [
+"基础",
+"地点"
+],
+"id": 613
+},
+{
+"korean": "짤",
+"meaning_zh": "表情包/梗图",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 짤을 확인해 주세요.",
+"example_zh": "请在手机上确认表情包/梗图。",
+"tags": [
+"数字生活",
+"饭圈用语"
+],
+"id": 614
+},
+{
+"korean": "짤 제조기",
+"meaning_zh": "表情包制造机",
+"part_of_speech": "名词",
+"example_ko": "짤 제조기예요.",
+"example_zh": "是个表情包制造机。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 615
+},
+{
+"korean": "짤방",
+"meaning_zh": "梗图",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 짤방을 확인해 주세요.",
+"example_zh": "请在手机上确认梗图。",
+"tags": [
+"数字生活",
+"饭圈用语"
+],
+"id": 616
+},
+{
+"korean": "쪽지",
+"meaning_zh": "私信",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 쪽지를 확인해 주세요.",
+"example_zh": "请在手机上确认私信。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 617
+},
+{
+"korean": "차단",
+"meaning_zh": "拉黑/屏蔽",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 차단을 확인해 주세요.",
+"example_zh": "请在手机上确认拉黑/屏蔽。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 618
+},
+{
+"korean": "차례",
+"meaning_zh": "轮到的次序",
+"part_of_speech": "名词",
+"example_ko": "오늘 차례가 있어요.",
+"example_zh": "今天有轮到的次序。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 619
+},
+{
+"korean": "차애",
+"meaning_zh": "第二喜欢",
+"part_of_speech": "名词",
+"example_ko": "팬들이 차애에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论第二喜欢。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 620
+},
+{
+"korean": "착장",
+"meaning_zh": "穿搭/服装造型",
+"part_of_speech": "名词",
+"example_ko": "팬들이 착장에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论穿搭/服装造型。",
+"tags": [
+"饭圈",
+"造型"
+],
+"id": 621
+},
+{
+"korean": "착장 정보",
+"meaning_zh": "穿搭信息",
+"part_of_speech": "名词",
+"example_ko": "팬들이 착장 정보에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论穿搭信息。",
+"tags": [
+"饭圈",
+"造型"
+],
+"id": 622
+},
+{
+"korean": "찾아요",
+"meaning_zh": "寻找",
+"part_of_speech": "动词",
+"example_ko": "오늘도 찾아요.",
+"example_zh": "今天也寻找。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 623
+},
+{
+"korean": "채택",
+"meaning_zh": "被选中（信件/留言被选中读出）",
+"part_of_speech": "名词",
+"example_ko": "제 사연이 채택됐어요!",
+"example_zh": "我的来信被选中了！",
+"tags": [
+"追星",
+"互动",
+"饭圈用语"
+],
+"id": 624
+},
+{
+"korean": "채팅",
+"meaning_zh": "聊天",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 채팅을 확인해 주세요.",
+"example_zh": "请在手机上确认聊天。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 625
+},
+{
+"korean": "처음 왔어요",
+"meaning_zh": "我是第一次来",
+"part_of_speech": "表达",
+"example_ko": "처음 왔어요.",
+"example_zh": "我是第一次来",
+"tags": [
+"追星",
+"互动"
+],
+"id": 626
+},
+{
+"korean": "천천히",
+"meaning_zh": "慢慢地",
+"part_of_speech": "副词",
+"example_ko": "오늘 천천히 연습해요.",
+"example_zh": "今天慢慢地练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 627
+},
+{
+"korean": "천천히 말해 주세요",
+"meaning_zh": "请说慢一点",
+"part_of_speech": "表达",
+"example_ko": "천천히 말해 주세요.",
+"example_zh": "请说慢一点",
+"tags": [
+"追星",
+"互动"
+],
+"id": 628
+},
+{
+"korean": "청바지",
+"meaning_zh": "牛仔裤",
+"part_of_speech": "名词",
+"example_ko": "오늘 청바지가 정말 잘 어울려요.",
+"example_zh": "今天的牛仔裤真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 629
+},
+{
+"korean": "초록색",
+"meaning_zh": "绿色",
+"part_of_speech": "名词",
+"example_ko": "오늘 초록색이 정말 잘 어울려요.",
+"example_zh": "今天的绿色真的很搭。",
+"tags": [
+"基础",
+"造型"
+],
+"id": 630
+},
+{
+"korean": "총공",
+"meaning_zh": "总攻（集中打榜/刷数据）",
+"part_of_speech": "名词",
+"example_ko": "차트 총공 들어갑니다.",
+"example_zh": "开始集中打榜了。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 631
+},
+{
+"korean": "촬영",
+"meaning_zh": "拍摄",
+"part_of_speech": "名词",
+"example_ko": "오늘 촬영이 있어요.",
+"example_zh": "今天有拍摄。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 632
+},
+{
+"korean": "최고",
+"meaning_zh": "最棒",
+"part_of_speech": "名词",
+"example_ko": "팬들이 최고에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论最棒。",
+"tags": [
+"饭圈",
+"口语"
+],
+"id": 633
+},
+{
+"korean": "최애",
+"meaning_zh": "本命",
+"part_of_speech": "名词",
+"example_ko": "팬들이 최애에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论本命。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 634
+},
+{
+"korean": "최애 사진",
+"meaning_zh": "最爱（本命）的照片",
+"part_of_speech": "名词",
+"example_ko": "최애 사진 배경화면 해놨어요.",
+"example_zh": "把本命的照片设成壁纸了。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 635
+},
+{
+"korean": "최애 생일",
+"meaning_zh": "本命生日",
+"part_of_speech": "名词",
+"example_ko": "최애 생일 축하해요!",
+"example_zh": "本命生日快乐！",
+"tags": [
+"追星",
+"应援"
+],
+"id": 636
+},
+{
+"korean": "최애 지갑",
+"meaning_zh": "为本命豪掷",
+"part_of_speech": "名词",
+"example_ko": "최애 지갑 열었어요.",
+"example_zh": "为本命打开钱包了。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 637
+},
+{
+"korean": "최애가 최고야",
+"meaning_zh": "本命最棒了",
+"part_of_speech": "短语",
+"example_ko": "최애가 최고야, 역시.",
+"example_zh": "本命最棒了，果然。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 638
+},
+{
+"korean": "추억",
+"meaning_zh": "回忆",
+"part_of_speech": "名词",
+"example_ko": "오늘 추억에 대해 이야기해요.",
+"example_zh": "今天聊回忆。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 639
+},
+{
+"korean": "추워요",
+"meaning_zh": "冷",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 추워요.",
+"example_zh": "今天真的冷。",
+"tags": [
+"基础",
+"天气"
+],
+"id": 640
+},
+{
+"korean": "추천해 주세요",
+"meaning_zh": "请推荐",
+"part_of_speech": "表达",
+"example_ko": "추천해 주세요.",
+"example_zh": "请推荐",
+"tags": [
+"追星",
+"互动"
+],
+"id": 641
+},
+{
+"korean": "추첨",
+"meaning_zh": "抽签",
+"part_of_speech": "名词",
+"example_ko": "추첨으로 결정해요.",
+"example_zh": "用抽签决定。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 642
+},
+{
+"korean": "축하해요",
+"meaning_zh": "恭喜",
+"part_of_speech": "表达",
+"example_ko": "축하해요.",
+"example_zh": "恭喜",
+"tags": [
+"基础",
+"祝福"
+],
+"id": 643
+},
+{
+"korean": "출구",
+"meaning_zh": "出口",
+"part_of_speech": "名词",
+"example_ko": "오늘 출구에 대해 이야기해요.",
+"example_zh": "今天聊出口。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 644
+},
+{
+"korean": "출국장",
+"meaning_zh": "出境大厅（机场送偶像的地方）",
+"part_of_speech": "名词",
+"example_ko": "출국장까지 배웅했어요.",
+"example_zh": "在出境大厅送行了。",
+"tags": [
+"追星",
+"线下活动",
+"出行"
+],
+"id": 645
+},
+{
+"korean": "출근길",
+"meaning_zh": "上班路活动",
+"part_of_speech": "名词",
+"example_ko": "오늘 출근길이 있어요.",
+"example_zh": "今天有上班路活动。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 646
+},
+{
+"korean": "출발",
+"meaning_zh": "出发",
+"part_of_speech": "名词",
+"example_ko": "오늘 출발에 대해 이야기해요.",
+"example_zh": "今天聊出发。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 647
+},
+{
+"korean": "출발하다",
+"meaning_zh": "出发",
+"part_of_speech": "动词",
+"example_ko": "오늘도 출발해요.",
+"example_zh": "今天也出发。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 648
+},
+{
+"korean": "출퇴근 길",
+"meaning_zh": "偶像上下班路（去公司的路）",
+"part_of_speech": "名词",
+"example_ko": "출퇴근 길 응원했어요.",
+"example_zh": "在偶像上下班路上应援了。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 649
+},
+{
+"korean": "춤",
+"meaning_zh": "舞蹈",
+"part_of_speech": "名词",
+"example_ko": "오늘 춤에 대해 이야기해요.",
+"example_zh": "今天聊舞蹈。",
+"tags": [
+"基础",
+"追星"
+],
+"id": 650
+},
+{
+"korean": "춤선",
+"meaning_zh": "舞蹈线条",
+"part_of_speech": "名词",
+"example_ko": "팬들이 춤선에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论舞蹈线条。",
+"tags": [
+"饭圈",
+"舞台"
+],
+"id": 651
+},
+{
+"korean": "충전",
+"meaning_zh": "充电",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 충전을 확인해 주세요.",
+"example_zh": "请在手机上确认充电。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 652
+},
+{
+"korean": "충전기",
+"meaning_zh": "充电器",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 충전기를 확인해 주세요.",
+"example_zh": "请在手机上确认充电器。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 653
+},
+{
+"korean": "취소표",
+"meaning_zh": "退票",
+"part_of_speech": "名词",
+"example_ko": "오늘 취소표에 대해 이야기해요.",
+"example_zh": "今天聊退票。",
+"tags": [
+"追星",
+"购票"
+],
+"id": 654
+},
+{
+"korean": "치마",
+"meaning_zh": "裙子",
+"part_of_speech": "名词",
+"example_ko": "오늘 치마가 정말 잘 어울려요.",
+"example_zh": "今天的裙子真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 655
+},
+{
+"korean": "치명타",
+"meaning_zh": "致命一击（被电到）",
+"part_of_speech": "名词",
+"example_ko": "치명타 맞았어요.",
+"example_zh": "中了致命一击。",
+"tags": [
+"追星",
+"饭圈用语",
+"感受"
+],
+"id": 656
+},
+{
+"korean": "친구",
+"meaning_zh": "朋友",
+"part_of_speech": "名词",
+"example_ko": "오늘 친구에 대해 이야기해요.",
+"example_zh": "今天聊朋友。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 657
+},
+{
+"korean": "카드",
+"meaning_zh": "卡",
+"part_of_speech": "名词",
+"example_ko": "오늘 카드에 대해 이야기해요.",
+"example_zh": "今天聊卡。",
+"tags": [
+"基础",
+"点单"
+],
+"id": 658
+},
+{
+"korean": "카메라",
+"meaning_zh": "相机",
+"part_of_speech": "名词",
+"example_ko": "오늘 카메라가 있어요.",
+"example_zh": "今天有相机。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 659
+},
+{
+"korean": "카운트다운",
+"meaning_zh": "倒计时",
+"part_of_speech": "名词",
+"example_ko": "컴백 카운트다운 시작이에요.",
+"example_zh": "开始回归倒计时了。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 660
+},
+{
+"korean": "카페",
+"meaning_zh": "咖啡馆",
+"part_of_speech": "名词",
+"example_ko": "오늘 카페에 대해 이야기해요.",
+"example_zh": "今天聊咖啡馆。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 661
+},
+{
+"korean": "칼군무",
+"meaning_zh": "刀群舞",
+"part_of_speech": "名词",
+"example_ko": "팬들이 칼군무에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论刀群舞。",
+"tags": [
+"饭圈",
+"舞台"
+],
+"id": 662
+},
+{
+"korean": "칼춤",
+"meaning_zh": "整齐划一的舞蹈（切齐）",
+"part_of_speech": "名词",
+"example_ko": "칼춤이 정말 대단해요.",
+"example_zh": "舞蹈整齐得令人叹为观止。",
+"tags": [
+"追星",
+"舞台"
+],
+"id": 663
+},
+{
+"korean": "캘린더",
+"meaning_zh": "日历",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 캘린더를 확인해 주세요.",
+"example_zh": "请在手机上确认日历。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 664
+},
+{
+"korean": "캡처",
+"meaning_zh": "截屏",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 캡처를 확인해 주세요.",
+"example_zh": "请在手机上确认截屏。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 665
+},
+{
+"korean": "캡처본",
+"meaning_zh": "截图合集",
+"part_of_speech": "名词",
+"example_ko": "캡처본 공유할게요.",
+"example_zh": "分享截图合集。",
+"tags": [
+"追星",
+"数字生活",
+"社交媒体"
+],
+"id": 666
+},
+{
+"korean": "커버곡",
+"meaning_zh": "翻唱曲",
+"part_of_speech": "名词",
+"example_ko": "커버곡 올렸어요.",
+"example_zh": "发了翻唱曲。",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 667
+},
+{
+"korean": "커요",
+"meaning_zh": "大",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 커요.",
+"example_zh": "今天真的大。",
+"tags": [
+"基础",
+"描述"
+],
+"id": 668
+},
+{
+"korean": "커피",
+"meaning_zh": "咖啡",
+"part_of_speech": "名词",
+"example_ko": "오늘 커피에 대해 이야기해요.",
+"example_zh": "今天聊咖啡。",
+"tags": [
+"基础",
+"点单"
+],
+"id": 669
+},
+{
+"korean": "컨셉 포토",
+"meaning_zh": "概念照",
+"part_of_speech": "名词",
+"example_ko": "오늘 컨셉 포토가 정말 잘 어울려요.",
+"example_zh": "今天的概念照真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 670
+},
+{
+"korean": "컴백",
+"meaning_zh": "回归",
+"part_of_speech": "名词",
+"example_ko": "이번 컴백이 정말 기대돼요.",
+"example_zh": "真的很期待这次回归。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 671
+},
+{
+"korean": "컴백 날짜",
+"meaning_zh": "回归日期",
+"part_of_speech": "名词",
+"example_ko": "컴백 날짜 발표됐어요.",
+"example_zh": "回归日期公布了。",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 672
+},
+{
+"korean": "컴백 예고",
+"meaning_zh": "回归预告",
+"part_of_speech": "名词",
+"example_ko": "컴백 예고 떴어요!",
+"example_zh": "回归预告出来了！",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 673
+},
+{
+"korean": "컴백 축하해요",
+"meaning_zh": "恭喜回归",
+"part_of_speech": "表达",
+"example_ko": "컴백 축하해요.",
+"example_zh": "恭喜回归",
+"tags": [
+"追星",
+"互动"
+],
+"id": 674
+},
+{
+"korean": "케미",
+"meaning_zh": "成员间化学反应",
+"part_of_speech": "名词",
+"example_ko": "두 멤버의 케미가 좋아요.",
+"example_zh": "两位成员之间的互动很有爱。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 675
+},
+{
+"korean": "케미 맛집",
+"meaning_zh": "互动很好嗑",
+"part_of_speech": "表达",
+"example_ko": "케미 맛집.",
+"example_zh": "互动很好嗑",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 676
+},
+{
+"korean": "콘서트",
+"meaning_zh": "演唱会",
+"part_of_speech": "名词",
+"example_ko": "오늘 콘서트가 있어요.",
+"example_zh": "今天有演唱会。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 677
+},
+{
+"korean": "콘서트 준비물",
+"meaning_zh": "演唱会必备物品",
+"part_of_speech": "名词",
+"example_ko": "콘서트 준비물 체크했어요?",
+"example_zh": "演唱会必备物品检查了吗？",
+"tags": [
+"追星",
+"演唱会",
+"线下活动"
+],
+"id": 678
+},
+{
+"korean": "콘셉트",
+"meaning_zh": "概念/风格",
+"part_of_speech": "名词",
+"example_ko": "팬들이 콘셉트에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论概念/风格。",
+"tags": [
+"饭圈",
+"造型"
+],
+"id": 679
+},
+{
+"korean": "쿠폰",
+"meaning_zh": "优惠券",
+"part_of_speech": "名词",
+"example_ko": "오늘 쿠폰에 대해 이야기해요.",
+"example_zh": "今天聊优惠券。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 680
+},
+{
+"korean": "클라우드",
+"meaning_zh": "云端",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 클라우드를 확인해 주세요.",
+"example_zh": "请在手机上确认云端。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 681
+},
+{
+"korean": "키링",
+"meaning_zh": "钥匙扣",
+"part_of_speech": "名词",
+"example_ko": "키링 달았어요.",
+"example_zh": "挂上钥匙扣了。",
+"tags": [
+"追星",
+"周边"
+],
+"id": 682
+},
+{
+"korean": "킬링파트",
+"meaning_zh": "点睛部分",
+"part_of_speech": "名词",
+"example_ko": "팬들이 킬링파트에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论点睛部分。",
+"tags": [
+"饭圈",
+"音乐"
+],
+"id": 683
+},
+{
+"korean": "타이틀곡",
+"meaning_zh": "主打歌",
+"part_of_speech": "名词",
+"example_ko": "팬들이 타이틀곡에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论主打歌。",
+"tags": [
+"饭圈",
+"音乐"
+],
+"id": 684
+},
+{
+"korean": "탈덕",
+"meaning_zh": "脱粉",
+"part_of_speech": "名词",
+"example_ko": "팬들이 탈덕에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论脱粉。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 685
+},
+{
+"korean": "택시",
+"meaning_zh": "出租车",
+"part_of_speech": "名词",
+"example_ko": "오늘 택시에 대해 이야기해요.",
+"example_zh": "今天聊出租车。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 686
+},
+{
+"korean": "토크",
+"meaning_zh": "聊天环节",
+"part_of_speech": "名词",
+"example_ko": "오늘 토크가 있어요.",
+"example_zh": "今天有聊天环节。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 687
+},
+{
+"korean": "통화",
+"meaning_zh": "通话",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 통화를 확인해 주세요.",
+"example_zh": "请在手机上确认通话。",
+"tags": [
+"基础",
+"数字生活"
+],
+"id": 688
+},
+{
+"korean": "퇴근길",
+"meaning_zh": "下班路活动",
+"part_of_speech": "名词",
+"example_ko": "오늘 퇴근길이 있어요.",
+"example_zh": "今天有下班路活动。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 689
+},
+{
+"korean": "퇴장",
+"meaning_zh": "退场",
+"part_of_speech": "名词",
+"example_ko": "오늘 퇴장이 있어요.",
+"example_zh": "今天有退场。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 690
+},
+{
+"korean": "투표",
+"meaning_zh": "投票",
+"part_of_speech": "名词",
+"example_ko": "오늘 사전 투표를 했어요.",
+"example_zh": "我今天参加了事前投票。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 691
+},
+{
+"korean": "트렌드",
+"meaning_zh": "趋势",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 트렌드를 확인해 주세요.",
+"example_zh": "请在手机上确认趋势。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 692
+},
+{
+"korean": "트위터",
+"meaning_zh": "X/推特",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 트위터를 확인해 주세요.",
+"example_zh": "请在手机上确认X/推特。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 693
+},
+{
+"korean": "특수효과",
+"meaning_zh": "特效",
+"part_of_speech": "名词",
+"example_ko": "특수효과가 대박이에요.",
+"example_zh": "特效太厉害了。",
+"tags": [
+"追星",
+"舞台",
+"演唱会"
+],
+"id": 694
+},
+{
+"korean": "특전",
+"meaning_zh": "特典",
+"part_of_speech": "名词",
+"example_ko": "팬들이 특전에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论特典。",
+"tags": [
+"饭圈",
+"周边"
+],
+"id": 695
+},
+{
+"korean": "티셔츠",
+"meaning_zh": "T恤",
+"part_of_speech": "名词",
+"example_ko": "오늘 티셔츠가 정말 잘 어울려요.",
+"example_zh": "今天的T恤真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 696
+},
+{
+"korean": "티저",
+"meaning_zh": "预告",
+"part_of_speech": "名词",
+"example_ko": "새 티저가 공개됐어요.",
+"example_zh": "新的预告公开了。",
+"tags": [
+"饭圈",
+"数字生活"
+],
+"id": 697
+},
+{
+"korean": "티켓",
+"meaning_zh": "票券",
+"part_of_speech": "名词",
+"example_ko": "오늘 티켓이 있어요.",
+"example_zh": "今天有票券。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 698
+},
+{
+"korean": "틱톡",
+"meaning_zh": "TikTok",
+"part_of_speech": "名词",
+"example_ko": "틱톡에 올렸어요.",
+"example_zh": "发到TikTok了。",
+"tags": [
+"追星",
+"数字生活",
+"社交媒体"
+],
+"id": 699
+},
+{
+"korean": "파란색",
+"meaning_zh": "蓝色",
+"part_of_speech": "名词",
+"example_ko": "오늘 파란색이 정말 잘 어울려요.",
+"example_zh": "今天的蓝色真的很搭。",
+"tags": [
+"基础",
+"造型"
+],
+"id": 700
+},
+{
+"korean": "파마",
+"meaning_zh": "烫发",
+"part_of_speech": "名词",
+"example_ko": "오늘 파마가 정말 잘 어울려요.",
+"example_zh": "今天的烫发真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 701
+},
+{
+"korean": "파일",
+"meaning_zh": "文件",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 파일을 확인해 주세요.",
+"example_zh": "请在手机上确认文件。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 702
+},
+{
+"korean": "파트",
+"meaning_zh": "分词/部分",
+"part_of_speech": "名词",
+"example_ko": "팬들이 파트에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论分词/部分。",
+"tags": [
+"饭圈",
+"音乐"
+],
+"id": 703
+},
+{
+"korean": "판매",
+"meaning_zh": "出售",
+"part_of_speech": "名词",
+"example_ko": "팬들이 판매에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论出售。",
+"tags": [
+"饭圈",
+"周边"
+],
+"id": 704
+},
+{
+"korean": "팔로우",
+"meaning_zh": "关注",
+"part_of_speech": "名词",
+"example_ko": "공식 계정을 팔로우했어요.",
+"example_zh": "我关注了官方账号。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 705
+},
+{
+"korean": "팔찌",
+"meaning_zh": "手链",
+"part_of_speech": "名词",
+"example_ko": "오늘 팔찌가 정말 잘 어울려요.",
+"example_zh": "今天的手链真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 706
+},
+{
+"korean": "팬",
+"meaning_zh": "粉丝",
+"part_of_speech": "名词",
+"example_ko": "오늘 팬에 대해 이야기해요.",
+"example_zh": "今天聊粉丝。",
+"tags": [
+"追星",
+"粉丝"
+],
+"id": 707
+},
+{
+"korean": "팬 아트",
+"meaning_zh": "粉丝创作、fan art",
+"part_of_speech": "名词",
+"example_ko": "팬 아트 올렸어요.",
+"example_zh": "发了粉丝创作。",
+"tags": [
+"追星",
+"粉丝",
+"数字生活"
+],
+"id": 708
+},
+{
+"korean": "팬덤",
+"meaning_zh": "粉丝圈",
+"part_of_speech": "名词",
+"example_ko": "팬들이 팬덤에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论粉丝圈。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 709
+},
+{
+"korean": "팬레터",
+"meaning_zh": "粉丝信",
+"part_of_speech": "名词",
+"example_ko": "오늘 팬레터라는 말을 들었어요.",
+"example_zh": "今天听到了“粉丝信”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 710
+},
+{
+"korean": "팬미팅",
+"meaning_zh": "粉丝见面会",
+"part_of_speech": "名词",
+"example_ko": "팬미팅에서 다시 만나요.",
+"example_zh": "在粉丝见面会上再见。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 711
+},
+{
+"korean": "팬싸",
+"meaning_zh": "签售会（缩写）",
+"part_of_speech": "名词",
+"example_ko": "팬들이 팬싸에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论签售会（缩写）。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 712
+},
+{
+"korean": "팬으로 태어나서 다행이에요",
+"meaning_zh": "庆幸成为你的粉丝",
+"part_of_speech": "短语",
+"example_ko": "팬으로 태어나서 다행이에요.",
+"example_zh": "庆幸成为你的粉丝。",
+"tags": [
+"追星",
+"感受",
+"粉丝"
+],
+"id": 713
+},
+{
+"korean": "팬카페",
+"meaning_zh": "粉丝社区（Daum/Naver粉丝贴吧）",
+"part_of_speech": "名词",
+"example_ko": "팬카페 가입했어요.",
+"example_zh": "加入了粉丝社区。",
+"tags": [
+"追星",
+"粉丝",
+"数字生活"
+],
+"id": 714
+},
+{
+"korean": "팬캠",
+"meaning_zh": "粉丝直拍",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 팬캠을 확인해 주세요.",
+"example_zh": "请在手机上确认粉丝直拍。",
+"tags": [
+"饭圈",
+"数字生活"
+],
+"id": 715
+},
+{
+"korean": "팬클럽 이름",
+"meaning_zh": "粉丝名",
+"part_of_speech": "名词",
+"example_ko": "팬클럽 이름이 뭐예요?",
+"example_zh": "粉丝名叫什么？",
+"tags": [
+"追星",
+"粉丝"
+],
+"id": 716
+},
+{
+"korean": "팬픽",
+"meaning_zh": "同人文、粉丝小说",
+"part_of_speech": "名词",
+"example_ko": "팬픽 읽었어요.",
+"example_zh": "读了同人文。",
+"tags": [
+"追星",
+"粉丝",
+"饭圈用语"
+],
+"id": 717
+},
+{
+"korean": "편지",
+"meaning_zh": "信",
+"part_of_speech": "名词",
+"example_ko": "오늘 편지에 대해 이야기해요.",
+"example_zh": "今天聊信。",
+"tags": [
+"基础",
+"粉丝"
+],
+"id": 718
+},
+{
+"korean": "포스터",
+"meaning_zh": "海报",
+"part_of_speech": "名词",
+"example_ko": "포스터 붙여 놨어요.",
+"example_zh": "贴上海报了。",
+"tags": [
+"追星",
+"周边"
+],
+"id": 719
+},
+{
+"korean": "포스팅",
+"meaning_zh": "发帖",
+"part_of_speech": "名词",
+"example_ko": "포스팅 올렸어요.",
+"example_zh": "发帖了。",
+"tags": [
+"追星",
+"数字生活",
+"社交媒体"
+],
+"id": 720
+},
+{
+"korean": "포인트 댄스",
+"meaning_zh": "点睛舞步（副歌代表动作）",
+"part_of_speech": "名词",
+"example_ko": "포인트 댄스 배웠어요.",
+"example_zh": "学了副歌的点睛舞步。",
+"tags": [
+"追星",
+"舞台",
+"音乐"
+],
+"id": 721
+},
+{
+"korean": "포장",
+"meaning_zh": "包装",
+"part_of_speech": "名词",
+"example_ko": "팬들이 포장에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论包装。",
+"tags": [
+"饭圈",
+"周边"
+],
+"id": 722
+},
+{
+"korean": "포즈 해 주세요",
+"meaning_zh": "请摆个姿势",
+"part_of_speech": "表达",
+"example_ko": "포즈 해 주세요.",
+"example_zh": "请摆个姿势",
+"tags": [
+"追星",
+"互动"
+],
+"id": 723
+},
+{
+"korean": "포카",
+"meaning_zh": "小卡（缩写）",
+"part_of_speech": "名词",
+"example_ko": "포카를 교환하고 싶어요.",
+"example_zh": "我想交换小卡。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 724
+},
+{
+"korean": "포카 교환",
+"meaning_zh": "小卡交换",
+"part_of_speech": "名词",
+"example_ko": "팬들이 포카 교환에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论小卡交换。",
+"tags": [
+"饭圈",
+"周边"
+],
+"id": 725
+},
+{
+"korean": "포카 수집",
+"meaning_zh": "收集小卡",
+"part_of_speech": "名词",
+"example_ko": "포카 수집이 취미예요.",
+"example_zh": "收集小卡是我的爱好。",
+"tags": [
+"追星",
+"周边",
+"饭圈用语"
+],
+"id": 726
+},
+{
+"korean": "포토 부스",
+"meaning_zh": "拍照亭、大头贴机",
+"part_of_speech": "名词",
+"example_ko": "포토 부스에서 찍었어요.",
+"example_zh": "在拍照亭拍了大头贴。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 727
+},
+{
+"korean": "포토존",
+"meaning_zh": "拍照区",
+"part_of_speech": "名词",
+"example_ko": "포토존에서 찍었어요.",
+"example_zh": "在拍照区拍了照。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 728
+},
+{
+"korean": "포토카드",
+"meaning_zh": "小卡",
+"part_of_speech": "名词",
+"example_ko": "오늘 포토카드에 대해 이야기해요.",
+"example_zh": "今天聊小卡。",
+"tags": [
+"追星",
+"周边"
+],
+"id": 729
+},
+{
+"korean": "포토타임",
+"meaning_zh": "拍照时间",
+"part_of_speech": "名词",
+"example_ko": "오늘 포토타임이 있어요.",
+"example_zh": "今天有拍照时间。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 730
+},
+{
+"korean": "폴더",
+"meaning_zh": "文件夹",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 폴더를 확인해 주세요.",
+"example_zh": "请在手机上确认文件夹。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 731
+},
+{
+"korean": "표",
+"meaning_zh": "票",
+"part_of_speech": "名词",
+"example_ko": "오늘 표에 대해 이야기해요.",
+"example_zh": "今天聊票。",
+"tags": [
+"基础",
+"线下"
+],
+"id": 732
+},
+{
+"korean": "표정",
+"meaning_zh": "表情",
+"part_of_speech": "名词",
+"example_ko": "오늘 표정라는 말을 들었어요.",
+"example_zh": "今天听到了“表情”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 733
+},
+{
+"korean": "표정 관리",
+"meaning_zh": "管理表情（控制表情不失控）",
+"part_of_speech": "名词",
+"example_ko": "표정 관리가 안 돼요.",
+"example_zh": "表情管理失控了。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 734
+},
+{
+"korean": "표정 연기",
+"meaning_zh": "表情演技",
+"part_of_speech": "名词",
+"example_ko": "표정 연기가 완벽해요.",
+"example_zh": "表情演技太完美了。",
+"tags": [
+"追星",
+"舞台"
+],
+"id": 735
+},
+{
+"korean": "푹 쉬세요",
+"meaning_zh": "请好好休息",
+"part_of_speech": "表达",
+"example_ko": "푹 쉬세요.",
+"example_zh": "请好好休息",
+"tags": [
+"追星",
+"互动"
+],
+"id": 736
+},
+{
+"korean": "품절",
+"meaning_zh": "售罄",
+"part_of_speech": "名词",
+"example_ko": "팬들이 품절에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论售罄。",
+"tags": [
+"饭圈",
+"周边"
+],
+"id": 737
+},
+{
+"korean": "프로듀싱",
+"meaning_zh": "制作、编曲",
+"part_of_speech": "名词",
+"example_ko": "앨범 프로듀싱에 참여했어요.",
+"example_zh": "参与了专辑制作。",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 738
+},
+{
+"korean": "프로필",
+"meaning_zh": "个人资料",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 프로필을 확인해 주세요.",
+"example_zh": "请在手机上确认个人资料。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 739
+},
+{
+"korean": "플래시",
+"meaning_zh": "闪光灯",
+"part_of_speech": "名词",
+"example_ko": "오늘 플래시가 있어요.",
+"example_zh": "今天有闪光灯。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 740
+},
+{
+"korean": "피곤해요",
+"meaning_zh": "累",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 피곤해요.",
+"example_zh": "今天真的累。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 741
+},
+{
+"korean": "피드",
+"meaning_zh": "动态流",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 피드를 확인해 주세요.",
+"example_zh": "请在手机上确认动态流。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 742
+},
+{
+"korean": "피어싱",
+"meaning_zh": "穿孔饰品",
+"part_of_speech": "名词",
+"example_ko": "오늘 피어싱이 정말 잘 어울려요.",
+"example_zh": "今天的穿孔饰品真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 743
+},
+{
+"korean": "피처링",
+"meaning_zh": "特邀合作（featuring）",
+"part_of_speech": "名词",
+"example_ko": "피처링으로 참여했어요.",
+"example_zh": "以特邀合作形式参与了。",
+"tags": [
+"追星",
+"音乐"
+],
+"id": 744
+},
+{
+"korean": "피켓",
+"meaning_zh": "手举牌",
+"part_of_speech": "名词",
+"example_ko": "오늘 피켓이 있어요.",
+"example_zh": "今天有手举牌。",
+"tags": [
+"追星",
+"应援"
+],
+"id": 745
+},
+{
+"korean": "필요해요",
+"meaning_zh": "需要",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 필요해요.",
+"example_zh": "今天真的需要。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 746
+},
+{
+"korean": "필터",
+"meaning_zh": "滤镜",
+"part_of_speech": "名词",
+"example_ko": "오늘 필터가 정말 잘 어울려요.",
+"example_zh": "今天的滤镜真的很搭。",
+"tags": [
+"数字生活",
+"造型"
+],
+"id": 747
+},
+{
+"korean": "하나",
+"meaning_zh": "一个",
+"part_of_speech": "数词",
+"example_ko": "하나만 주세요.",
+"example_zh": "请给我一个。",
+"tags": [
+"基础",
+"数字"
+],
+"id": 748
+},
+{
+"korean": "하얀색",
+"meaning_zh": "白色",
+"part_of_speech": "名词",
+"example_ko": "오늘 하얀색이 정말 잘 어울려요.",
+"example_zh": "今天的白色真的很搭。",
+"tags": [
+"基础",
+"造型"
+],
+"id": 749
+},
+{
+"korean": "하이터치",
+"meaning_zh": "击掌活动",
+"part_of_speech": "名词",
+"example_ko": "오늘 하이터치가 있어요.",
+"example_zh": "今天有击掌活动。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 750
+},
+{
+"korean": "하지만",
+"meaning_zh": "但是",
+"part_of_speech": "连接词",
+"example_ko": "하지만 저는 괜찮아요.",
+"example_zh": "但是我没关系。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 751
+},
+{
+"korean": "하트 해 주세요",
+"meaning_zh": "请比个心",
+"part_of_speech": "表达",
+"example_ko": "하트 해 주세요.",
+"example_zh": "请比个心",
+"tags": [
+"追星",
+"互动"
+],
+"id": 752
+},
+{
+"korean": "학교",
+"meaning_zh": "学校",
+"part_of_speech": "名词",
+"example_ko": "오늘 학교에 대해 이야기해요.",
+"example_zh": "今天聊学校。",
+"tags": [
+"基础",
+"地点"
+],
+"id": 753
+},
+{
+"korean": "한국 방문",
+"meaning_zh": "访问韩国",
+"part_of_speech": "名词",
+"example_ko": "한국 방문 계획 중이에요.",
+"example_zh": "正在计划访问韩国。",
+"tags": [
+"追星",
+"出行"
+],
+"id": 754
+},
+{
+"korean": "한국어",
+"meaning_zh": "韩语",
+"part_of_speech": "名词",
+"example_ko": "오늘 한국어에 대해 이야기해요.",
+"example_zh": "今天聊韩语。",
+"tags": [
+"基础",
+"学习"
+],
+"id": 755
+},
+{
+"korean": "한국어를 잘 못해요",
+"meaning_zh": "我不太会韩语",
+"part_of_speech": "表达",
+"example_ko": "한국어를 잘 못해요.",
+"example_zh": "我不太会韩语",
+"tags": [
+"追星",
+"互动"
+],
+"id": 756
+},
+{
+"korean": "한국에 또 올게요",
+"meaning_zh": "我还会再来韩国",
+"part_of_speech": "表达",
+"example_ko": "한국에 또 올게요.",
+"example_zh": "我还会再来韩国",
+"tags": [
+"追星",
+"互动"
+],
+"id": 757
+},
+{
+"korean": "한마디 해 주세요",
+"meaning_zh": "请说一句话",
+"part_of_speech": "表达",
+"example_ko": "한마디 해 주세요.",
+"example_zh": "请说一句话",
+"tags": [
+"追星",
+"互动"
+],
+"id": 758
+},
+{
+"korean": "한정판",
+"meaning_zh": "限定版",
+"part_of_speech": "名词",
+"example_ko": "한정판 굿즈 샀어요.",
+"example_zh": "买了限定版周边。",
+"tags": [
+"追星",
+"周边"
+],
+"id": 759
+},
+{
+"korean": "할인",
+"meaning_zh": "折扣",
+"part_of_speech": "名词",
+"example_ko": "오늘 할인에 대해 이야기해요.",
+"example_zh": "今天聊折扣。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 760
+},
+{
+"korean": "항상",
+"meaning_zh": "总是",
+"part_of_speech": "副词",
+"example_ko": "오늘 항상 연습해요.",
+"example_zh": "今天总是练习。",
+"tags": [
+"基础",
+"对话"
+],
+"id": 761
+},
+{
+"korean": "항상 곁에 있을게요",
+"meaning_zh": "我会一直在你身边",
+"part_of_speech": "短语",
+"example_ko": "항상 곁에 있을게요.",
+"example_zh": "我会一直在你身边。",
+"tags": [
+"追星",
+"互动",
+"粉丝"
+],
+"id": 762
+},
+{
+"korean": "항상 응원할게요",
+"meaning_zh": "我会一直支持你",
+"part_of_speech": "表达",
+"example_ko": "항상 응원할게요.",
+"example_zh": "我会一直支持你",
+"tags": [
+"追星",
+"互动"
+],
+"id": 763
+},
+{
+"korean": "해시태그",
+"meaning_zh": "标签",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 해시태그를 확인해 주세요.",
+"example_zh": "请在手机上确认标签。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 764
+},
+{
+"korean": "해외",
+"meaning_zh": "海外",
+"part_of_speech": "名词",
+"example_ko": "오늘 해외에 대해 이야기해요.",
+"example_zh": "今天聊海外。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 765
+},
+{
+"korean": "해외 팬",
+"meaning_zh": "海外粉丝",
+"part_of_speech": "名词",
+"example_ko": "해외 팬도 많아요.",
+"example_zh": "海外粉丝也很多。",
+"tags": [
+"追星",
+"粉丝"
+],
+"id": 766
+},
+{
+"korean": "해요",
+"meaning_zh": "做",
+"part_of_speech": "动词",
+"example_ko": "오늘도 해요.",
+"example_zh": "今天也做。",
+"tags": [
+"基础",
+"日常"
+],
+"id": 767
+},
+{
+"korean": "행복하게 해줄게요",
+"meaning_zh": "我会让你幸福的",
+"part_of_speech": "短语",
+"example_ko": "우리가 행복하게 해줄게요.",
+"example_zh": "我们会让你幸福的。",
+"tags": [
+"追星",
+"互动",
+"粉丝"
+],
+"id": 768
+},
+{
+"korean": "행복해요",
+"meaning_zh": "幸福/开心",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 행복해요.",
+"example_zh": "今天真的幸福/开心。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 769
+},
+{
+"korean": "행운",
+"meaning_zh": "幸运",
+"part_of_speech": "名词",
+"example_ko": "오늘 행운라는 말을 들었어요.",
+"example_zh": "今天听到了“幸运”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 770
+},
+{
+"korean": "헐",
+"meaning_zh": "天啊",
+"part_of_speech": "感叹词",
+"example_ko": "헐.",
+"example_zh": "天啊",
+"tags": [
+"追星",
+"口语"
+],
+"id": 771
+},
+{
+"korean": "헤어",
+"meaning_zh": "发型",
+"part_of_speech": "名词",
+"example_ko": "오늘 헤어가 정말 잘 어울려요.",
+"example_zh": "今天的发型真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 772
+},
+{
+"korean": "헤어스타일",
+"meaning_zh": "发型",
+"part_of_speech": "名词",
+"example_ko": "오늘 헤어스타일이 정말 잘 어울려요.",
+"example_zh": "今天的发型真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 773
+},
+{
+"korean": "현수막",
+"meaning_zh": "横幅布条",
+"part_of_speech": "名词",
+"example_ko": "오늘 현수막이 있어요.",
+"example_zh": "今天有横幅布条。",
+"tags": [
+"追星",
+"应援"
+],
+"id": 774
+},
+{
+"korean": "현장 수령",
+"meaning_zh": "现场取票",
+"part_of_speech": "名词",
+"example_ko": "오늘 현장 수령이 있어요.",
+"example_zh": "今天有现场取票。",
+"tags": [
+"追星",
+"线下活动"
+],
+"id": 775
+},
+{
+"korean": "현타",
+"meaning_zh": "现实感来袭（追星陷太深的清醒感）",
+"part_of_speech": "名词",
+"example_ko": "갑자기 현타 왔어요.",
+"example_zh": "突然现实感来袭。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 776
+},
+{
+"korean": "홈마",
+"meaning_zh": "站姐",
+"part_of_speech": "名词",
+"example_ko": "팬들이 홈마에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论站姐。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 777
+},
+{
+"korean": "홈마스터",
+"meaning_zh": "站姐/站长",
+"part_of_speech": "名词",
+"example_ko": "팬들이 홈마스터에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论站姐/站长。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 778
+},
+{
+"korean": "화면",
+"meaning_zh": "大屏幕",
+"part_of_speech": "名词",
+"example_ko": "화면으로 얼굴 봤어요.",
+"example_zh": "通过大屏幕看到了脸。",
+"tags": [
+"追星",
+"演唱会"
+],
+"id": 779
+},
+{
+"korean": "화보",
+"meaning_zh": "画报",
+"part_of_speech": "名词",
+"example_ko": "오늘 화보가 정말 잘 어울려요.",
+"example_zh": "今天的画报真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 780
+},
+{
+"korean": "화이팅",
+"meaning_zh": "加油",
+"part_of_speech": "感叹词",
+"example_ko": "화이팅.",
+"example_zh": "加油",
+"tags": [
+"追星",
+"应援"
+],
+"id": 781
+},
+{
+"korean": "화장실",
+"meaning_zh": "洗手间",
+"part_of_speech": "名词",
+"example_ko": "오늘 화장실에 대해 이야기해요.",
+"example_zh": "今天聊洗手间。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 782
+},
+{
+"korean": "화질",
+"meaning_zh": "画质",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 화질을 확인해 주세요.",
+"example_zh": "请在手机上确认画质。",
+"tags": [
+"数字生活",
+"社交媒体"
+],
+"id": 783
+},
+{
+"korean": "환승",
+"meaning_zh": "换乘",
+"part_of_speech": "名词",
+"example_ko": "오늘 환승에 대해 이야기해요.",
+"example_zh": "今天聊换乘。",
+"tags": [
+"基础",
+"出行"
+],
+"id": 784
+},
+{
+"korean": "활동 기간",
+"meaning_zh": "活动期间",
+"part_of_speech": "名词",
+"example_ko": "오늘 활동 기간에 대해 이야기해요.",
+"example_zh": "今天聊活动期间。",
+"tags": [
+"追星",
+"打歌"
+],
+"id": 785
+},
+{
+"korean": "활동 중",
+"meaning_zh": "活动中（正在做宣传期）",
+"part_of_speech": "名词",
+"example_ko": "현재 활동 중이에요.",
+"example_zh": "目前在活动中。",
+"tags": [
+"追星",
+"日常"
+],
+"id": 786
+},
+{
+"korean": "황홀하다",
+"meaning_zh": "心醉神迷",
+"part_of_speech": "形容词",
+"example_ko": "무대가 너무 황홀했어요.",
+"example_zh": "舞台太让人心醉了。",
+"tags": [
+"追星",
+"感受"
+],
+"id": 787
+},
+{
+"korean": "회사",
+"meaning_zh": "公司",
+"part_of_speech": "名词",
+"example_ko": "오늘 회사에 대해 이야기해요.",
+"example_zh": "今天聊公司。",
+"tags": [
+"基础",
+"地点"
+],
+"id": 788
+},
+{
+"korean": "휴대폰",
+"meaning_zh": "手机",
+"part_of_speech": "名词",
+"example_ko": "휴대폰에서 휴대폰을 확인해 주세요.",
+"example_zh": "请在手机上确认手机。",
+"tags": [
+"数字生活",
+"日常"
+],
+"id": 789
+},
+{
+"korean": "휴덕",
+"meaning_zh": "暂时休追星",
+"part_of_speech": "名词",
+"example_ko": "팬들이 휴덕에 대해 이야기하고 있어요.",
+"example_zh": "粉丝们正在讨论暂时休追星。",
+"tags": [
+"饭圈",
+"饭圈用语"
+],
+"id": 790
+},
+{
+"korean": "흑발",
+"meaning_zh": "黑发",
+"part_of_speech": "名词",
+"example_ko": "오늘 흑발이 정말 잘 어울려요.",
+"example_zh": "今天的黑发真的很搭。",
+"tags": [
+"追星",
+"造型"
+],
+"id": 791
+},
+{
+"korean": "흑역사",
+"meaning_zh": "黑历史",
+"part_of_speech": "名词",
+"example_ko": "흑역사 발굴됐어요.",
+"example_zh": "黑历史被挖出来了。",
+"tags": [
+"追星",
+"饭圈用语"
+],
+"id": 792
+},
+{
+"korean": "힘",
+"meaning_zh": "力量",
+"part_of_speech": "名词",
+"example_ko": "오늘 힘라는 말을 들었어요.",
+"example_zh": "今天听到了“力量”这句话。",
+"tags": [
+"追星",
+"互动"
+],
+"id": 793
+},
+{
+"korean": "힘내세요",
+"meaning_zh": "请加油",
+"part_of_speech": "表达",
+"example_ko": "힘내세요.",
+"example_zh": "请加油",
+"tags": [
+"追星",
+"互动"
+],
+"id": 794
+},
+{
+"korean": "힘들어요",
+"meaning_zh": "很累/辛苦",
+"part_of_speech": "形容词",
+"example_ko": "오늘 정말 힘들어요.",
+"example_zh": "今天真的很累/辛苦。",
+"tags": [
+"基础",
+"感受"
+],
+"id": 795
+}
+]
