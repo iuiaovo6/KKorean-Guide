@@ -10,6 +10,14 @@ set -euo pipefail
 
 unset CODEBUDDY_SAFE_DELETE_BULK_STATE_DIR CODEBUDDY_TOOL_CALL_ID 2>/dev/null || true
 
+# 静态站点不依赖 Supabase（公开浏览走 words.json；登录在大陆本就不可用）。
+# 但 lib/supabase.ts 在缺少环境变量时会 throw，导致 vinext start 渲染首页返回 500，
+# 被脚本原样存成 index.html（曾经因此部署出 21 字节的 “Internal Server Error”）。
+# 这里注入占位值，仅为让 supabase 客户端成功初始化；静态站不会真正调用 Supabase。
+# 若环境本身已提供真实值，则 ${VAR:-占位} 会保留真实值，不影响本地/Cloudflare 构建。
+export NEXT_PUBLIC_SUPABASE_URL="${NEXT_PUBLIC_SUPABASE_URL:-https://placeholder.supabase.co}"
+export NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY="${NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY:-public-placeholder-key}"
+
 REPO_NAME="KKorean-Guide"
 BASE="/$REPO_NAME"
 
@@ -19,15 +27,19 @@ GITHUB_PAGES=1 npx vinext build
 echo "==> 启动生产服务器，预渲染首页为 index.html"
 GITHUB_PAGES=1 npx vinext start > /tmp/vinext-start.log 2>&1 &
 SVR=$!
-for i in $(seq 1 30); do
-  if curl --noproxy '*' -s -o /dev/null "http://127.0.0.1:3000/" 2>/dev/null; then break; fi
+# 等待【目标路由】/KKorean-Guide/ 返回 200（而非仅根路径）。CI 环境可能更慢，给 60s。
+for i in $(seq 1 60); do
+  if curl --noproxy '*' -s -f -o /dev/null "http://127.0.0.1:3000${BASE}/" 2>/dev/null; then break; fi
   sleep 1
 done
-curl --noproxy '*' -s -o dist/client/index.html "http://127.0.0.1:3000${BASE}/"
+# 抓取首页并校验 HTTP 状态码；任何非 200 都视为失败，绝不静默部署坏页面。
+code=$(curl --noproxy '*' -s -o dist/client/index.html -w "%{http_code}" "http://127.0.0.1:3000${BASE}/" || echo 000)
 kill "$SVR" 2>/dev/null || true
 
-if [ ! -s dist/client/index.html ]; then
-  echo "预渲染失败：未生成 dist/client/index.html" >&2
+if [ "$code" != "200" ] || [ ! -s dist/client/index.html ]; then
+  echo "预渲染失败：HTTP $code（期望 200）" >&2
+  echo "--- vinext start 日志 ---" >&2
+  tail -30 /tmp/vinext-start.log >&2
   exit 1
 fi
 
