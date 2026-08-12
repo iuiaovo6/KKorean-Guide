@@ -51,6 +51,7 @@ const sceneBooks = [
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<Tab>("today");
+  const [installGuideOpen, setInstallGuideOpen] = useState(false);
   const [studyOpen, setStudyOpen] = useState(false);
   const [step, setStep] = useState<StudyStep>("meaning");
   const [wordIndex, setWordIndex] = useState(0);
@@ -562,6 +563,12 @@ export default function Home() {
               </button>
             </section>
 
+            <section className="mobile-welcome-card">
+              <div className="mobile-welcome-mark">K</div>
+              <div><strong>把 Talk Guide 放到桌面</strong><p>像 App 一样一点就开，学习不会断。</p></div>
+              <button onClick={() => setInstallGuideOpen(true)}>查看教程 →</button>
+            </section>
+
             <section className="hero-grid">
               <article className="study-card">
                 <div className="card-topline">
@@ -681,6 +688,14 @@ export default function Home() {
           <NavButton active={activeTab === "talk"} icon="▶" label="Talk" onClick={() => setActiveTab("talk")} />
         </nav>
       </section>
+
+      {installGuideOpen && <div className="install-overlay" role="presentation" onMouseDown={(event) => { if (event.currentTarget === event.target) setInstallGuideOpen(false); }}>
+        <section className="install-sheet" role="dialog" aria-modal="true" aria-labelledby="install-guide-title">
+          <header><button onClick={() => setInstallGuideOpen(false)} aria-label="关闭安装教程">×</button><p className="eyebrow">ADD TO HOME SCREEN</p><h2 id="install-guide-title">把 Talk Guide 带回家</h2><p>加到手机桌面，像 App 一样随时打开。</p></header>
+          <article className="install-steps"><h3>iPhone / iPad</h3><ol><li>用 Safari 打开这个网页</li><li>点底部中间的「分享」按钮</li><li>往下找到「添加到主屏幕」</li><li>确认后，桌面就会出现图标</li></ol></article>
+          <article className="install-steps"><h3>安卓 Android</h3><ol><li>用 Chrome 打开这个网页</li><li>点右上角「⋮」菜单</li><li>选择「安装应用」或「添加到主屏幕」</li><li>确认后，从桌面打开即可</li></ol></article>
+        </section>
+      </div>}
 
       {authOpen && (
         <div className="study-overlay" role="dialog" aria-modal="true" aria-label={authMode === "login" ? "登录" : "注册"}>
