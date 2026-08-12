@@ -46,6 +46,7 @@ fi
 echo "==> 修正字体/资源 basePath ($BASE)"
 sed -i.bak "s#/assets/_vinext_fonts#${BASE}/assets/_vinext_fonts#g" dist/client/index.html
 sed -i.bak "s#href=\"/logo-k-heart.svg\"#href=\"${BASE}/logo-k-heart.svg\"#g" dist/client/index.html
+sed -i.bak "s#href=\"/apple-touch-icon.png\"#href=\"${BASE}/apple-touch-icon.png\"#g" dist/client/index.html
 rm -f dist/client/index.html.bak
 for f in dist/client/assets/*.css; do
   [ -f "$f" ] || continue

@@ -26,8 +26,9 @@ export async function generateMetadata(): Promise<Metadata> {
     title: "Talk Guide — 在喜欢的语境里学会韩语",
     description: "为初级追星用户设计的韩语单词学习与间隔复习工具。",
     icons: {
-      icon: "/favicon.svg",
-      shortcut: "/favicon.svg",
+      icon: "/logo-k-heart.svg",
+      shortcut: "/logo-k-heart.svg",
+      apple: "/apple-touch-icon.png",
     },
     openGraph: {
       title: "Talk Guide — 在喜欢的语境里学会韩语",

@@ -365,6 +365,13 @@ button { color: inherit; }
   .install-steps ol { list-style: none; padding: 0; margin: 0; counter-reset: install; }
   .install-steps li { counter-increment: install; position: relative; border-top: 1px solid #dce4ea; min-height: 42px; display: flex; align-items: center; padding: 9px 0 9px 39px; color: #3f4a54; font-size: 13px; }
   .install-steps li::before { content: counter(install); position: absolute; left: 0; width: 25px; height: 25px; border: 1px solid #9dcbed; color: #397cad; background: #edf8ff; border-radius: 50%; display: grid; place-items: center; font-size: 11px; font-weight: 700; }
+  .shortcut-steps { border-color: #9dcbed; background: #f7fcff; }
+  .shortcut-url { width: 100%; margin-top: 14px; border: 1px solid #86bee5; background: #e3f4ff; color: #1d638f; border-radius: 11px; padding: 12px 13px; display: grid; gap: 5px; text-align: left; cursor: pointer; transition: transform .18s ease, background .18s ease; }
+  .shortcut-url:hover { background: #d7efff; transform: translateY(-1px); }
+  .shortcut-url:active { transform: scale(.985); }
+  .shortcut-url span { font-size: 10px; font-weight: 700; }
+  .shortcut-url strong { font-size: 11px; line-height: 1.45; overflow-wrap: anywhere; font-weight: 600; }
+  .shortcut-url.copied { background: #e8f7f0; border-color: #9ed7bc; color: #317857; }
   @keyframes install-rise { from { transform: translateY(28px); opacity: .6; } to { transform: translateY(0); opacity: 1; } }
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .table-head { display: none; }

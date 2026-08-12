@@ -52,6 +52,7 @@ const sceneBooks = [
 export default function Home() {
   const [activeTab, setActiveTab] = useState<Tab>("today");
   const [installGuideOpen, setInstallGuideOpen] = useState(false);
+  const [urlCopied, setUrlCopied] = useState(false);
   const [studyOpen, setStudyOpen] = useState(false);
   const [step, setStep] = useState<StudyStep>("meaning");
   const [wordIndex, setWordIndex] = useState(0);
@@ -396,6 +397,18 @@ export default function Home() {
     window.localStorage.setItem("talk-guide-auto-speak", String(enabled));
   }
 
+  async function copyShortcutUrl() {
+    const shortcutUrl = "https://iuiaovo6.github.io/KKorean-Guide/";
+    try {
+      await navigator.clipboard.writeText(shortcutUrl);
+      setUrlCopied(true);
+      window.setTimeout(() => setUrlCopied(false), 1800);
+    } catch {
+      setToast("复制失败，请长按网址复制");
+      window.setTimeout(() => setToast(""), 2200);
+    }
+  }
+
   function updateRecallAnswer(value: string) {
     setTypedAnswer(value);
     setRecallReadyToRate(false);
@@ -697,6 +710,7 @@ export default function Home() {
         <section className="install-sheet" role="dialog" aria-modal="true" aria-labelledby="install-guide-title">
           <header><button onClick={() => setInstallGuideOpen(false)} aria-label="关闭安装教程">×</button><p className="eyebrow">ADD TO HOME SCREEN</p><h2 id="install-guide-title">把 Talk Guide 带回家</h2><p>加到手机桌面，像 App 一样随时打开。</p></header>
           <article className="install-steps"><h3>iPhone / iPad</h3><ol><li>用 Safari 打开这个网页</li><li>点底部中间的「共享」按钮</li><li>往下找到「添加到主屏幕」</li><li>确认后，桌面就会出现图标</li></ol></article>
+          <article className="install-steps shortcut-steps"><h3>苹果快捷指令</h3><ol><li>打开手机自带的「快捷指令」，点右上角「＋」</li><li>搜索并添加操作「打开 URL」</li><li>点击蓝色的「URL」，填入下面的网址</li><li>点底部共享图标，选择「添加到主屏幕」；可自行改名称和图标</li></ol><button className={`shortcut-url ${urlCopied ? "copied" : ""}`} onClick={() => void copyShortcutUrl()} aria-label="点击复制快捷指令网址"><span>{urlCopied ? "已复制 ✓" : "点击复制网址"}</span><strong>https://iuiaovo6.github.io/KKorean-Guide/</strong></button></article>
           <article className="install-steps"><h3>安卓 Android</h3><ol><li>用 Chrome 打开这个网页</li><li>点右上角「⋮」菜单</li><li>选择「安装应用」或「添加到主屏幕」</li><li>确认后，从桌面打开即可</li></ol></article>
         </section>
       </div>}
