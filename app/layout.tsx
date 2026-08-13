@@ -30,9 +30,10 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL(siteOrigin),
     title: "Korean Guide — 在喜欢的语境里学会韩语",
     description: "为初级追星用户设计的韩语单词学习与间隔复习工具。",
+    manifest: `${basePath}/site.webmanifest`,
     icons: {
-      icon: `${basePath}/logo-k-heart.svg`,
-      shortcut: `${basePath}/logo-k-heart.svg`,
+      icon: `${basePath}/korean-guide-icon.png`,
+      shortcut: `${basePath}/korean-guide-icon.png`,
       apple: `${basePath}/apple-touch-icon.png`,
     },
     openGraph: {

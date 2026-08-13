@@ -538,7 +538,7 @@ export default function Home() {
     <main className="app-shell">
       <aside className="sidebar">
         <button className="brand" onClick={handleProfileClick} aria-label="打开账号与个人偏好">
-          <img className="brand-mark" src={`${basePath}/logo-k-heart.svg`} alt="Korean Guide" />
+          <img className="brand-mark" src={`${basePath}/korean-guide-icon.png`} alt="Korean Guide" />
           <span>Korean Guide</span>
         </button>
 
@@ -565,7 +565,7 @@ export default function Home() {
 
       <section className="main-panel">
         <header className="topbar">
-          <button className="mobile-brand" onClick={handleProfileClick} aria-label="打开账号与个人偏好"><img className="brand-mark" src={`${basePath}/logo-k-heart.svg`} alt="Korean Guide" /><strong>Korean Guide</strong></button>
+          <button className="mobile-brand" onClick={handleProfileClick} aria-label="打开账号与个人偏好"><img className="brand-mark" src={`${basePath}/korean-guide-icon.png`} alt="Korean Guide" /><strong>Korean Guide</strong></button>
           <label className="search-box">
             <span>⌕</span>
             <input
@@ -695,7 +695,7 @@ export default function Home() {
       {profileDrawerOpen && <div className="profile-drawer-backdrop" role="presentation" onMouseDown={(event) => { if (event.currentTarget === event.target) setProfileDrawerOpen(false); }}>
         <aside className="profile-drawer" role="dialog" aria-modal="true" aria-labelledby="profile-drawer-title">
           <header className="profile-drawer-header">
-            <div className="profile-drawer-brand"><img src={`${basePath}/logo-k-heart.svg`} alt="" /><span><strong>Korean Guide</strong><small>MY LEARNING SPACE</small></span></div>
+            <div className="profile-drawer-brand"><img src={`${basePath}/korean-guide-icon.png`} alt="" /><span><strong>Korean Guide</strong><small>MY LEARNING SPACE</small></span></div>
             <button onClick={() => setProfileDrawerOpen(false)} aria-label="关闭侧边栏">×</button>
           </header>
 
@@ -728,7 +728,7 @@ export default function Home() {
         <div className="study-overlay" role="dialog" aria-modal="true" aria-label={authMode === "login" ? "登录" : "注册"}>
           <div className="auth-modal">
             <button className="auth-close" onClick={() => setAuthOpen(false)} aria-label="关闭">×</button>
-            <img className="brand-mark" src={`${basePath}/logo-k-heart.svg`} alt="Korean Guide" />
+            <img className="brand-mark" src={`${basePath}/korean-guide-icon.png`} alt="Korean Guide" />
             <p className="eyebrow">KOREAN GUIDE ACCOUNT</p>
             <h2>{authMode === "login" ? "欢迎回来" : "创建学习账号"}</h2>
             <p className="auth-intro">
