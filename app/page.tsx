@@ -4,7 +4,7 @@ import type { User } from "@supabase/supabase-js";
 import { useEffect, useMemo, useState } from "react";
 import { supabase } from "../lib/supabase";
 
-type Tab = "today" | "words" | "scenes" | "talk" | "import" | "preferences";
+type Tab = "today" | "words" | "scenes" | "talk" | "import";
 type StudyStep = "meaning" | "reverse" | "recall";
 type FeedbackTone = "correct" | "wrong" | "answer" | null;
 type StudyWord = {
@@ -55,6 +55,7 @@ const sceneBooks = [
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<Tab>("today");
+  const [profileDrawerOpen, setProfileDrawerOpen] = useState(false);
   const [installGuideOpen, setInstallGuideOpen] = useState(false);
   const [urlCopied, setUrlCopied] = useState(false);
   const [studyOpen, setStudyOpen] = useState(false);
@@ -120,6 +121,15 @@ export default function Home() {
   useEffect(() => {
     setAutoSpeak(window.localStorage.getItem("talk-guide-auto-speak") === "true");
   }, []);
+
+  useEffect(() => {
+    if (!profileDrawerOpen) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setProfileDrawerOpen(false);
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [profileDrawerOpen]);
 
   useEffect(() => {
     if (!studyOpen || !autoSpeak) return;
@@ -286,14 +296,15 @@ export default function Home() {
     setAuthLoading(false);
   }
 
-  async function handleProfileClick() {
-    if (user) {
-      await supabase.auth.signOut();
-      setToast("已经退出登录");
-      window.setTimeout(() => setToast(""), 2200);
-      return;
-    }
-    setAuthOpen(true);
+  function handleProfileClick() {
+    setProfileDrawerOpen(true);
+  }
+
+  async function signOut() {
+    await supabase.auth.signOut();
+    setProfileDrawerOpen(false);
+    setToast("已经退出登录");
+    window.setTimeout(() => setToast(""), 2200);
   }
 
   function startStudy(words?: StudyWord[]) {
@@ -526,9 +537,9 @@ export default function Home() {
   return (
     <main className="app-shell">
       <aside className="sidebar">
-        <button className="brand" onClick={() => setActiveTab("today")} aria-label="返回今日学习">
-          <img className="brand-mark" src={`${basePath}/logo-k-heart.svg`} alt="Talk Guide" />
-          <span>Talk Guide</span>
+        <button className="brand" onClick={handleProfileClick} aria-label="打开账号与个人偏好">
+          <img className="brand-mark" src={`${basePath}/logo-k-heart.svg`} alt="Korean Guide" />
+          <span>Korean Guide</span>
         </button>
 
         <nav className="nav-list" aria-label="主导航">
@@ -545,7 +556,7 @@ export default function Home() {
             <span className="avatar">{user?.email?.slice(0, 1).toUpperCase() ?? "?"}</span>
             <span className="profile-copy">
               <strong>{user ? user.email : "登录以保存进度"}</strong>
-              <small>{user ? "已登录 · 点击退出" : "注册 / 登录"}</small>
+              <small>{user ? "账号与个人偏好" : "注册 / 登录"}</small>
             </span>
             <span>→</span>
           </button>
@@ -554,7 +565,7 @@ export default function Home() {
 
       <section className="main-panel">
         <header className="topbar">
-          <div className="mobile-brand"><img className="brand-mark" src={`${basePath}/logo-k-heart.svg`} alt="Talk Guide" /><strong>Talk Guide</strong></div>
+          <button className="mobile-brand" onClick={handleProfileClick} aria-label="打开账号与个人偏好"><img className="brand-mark" src={`${basePath}/logo-k-heart.svg`} alt="Korean Guide" /><strong>Korean Guide</strong></button>
           <label className="search-box">
             <span>⌕</span>
             <input
@@ -567,7 +578,7 @@ export default function Home() {
           </label>
           <div className="top-actions">
             <button className="icon-button" aria-label={`连续学习 ${streakDays} 天`} onClick={() => setActiveTab("today")}>♨<span className="streak">{streakDays}</span></button>
-            <button className="icon-button" aria-label="打开个人偏好" onClick={() => setActiveTab("preferences")}>♢</button>
+            <button className="icon-button" aria-label="打开账号与个人偏好" onClick={handleProfileClick}>♢</button>
           </div>
         </header>
 
@@ -579,15 +590,9 @@ export default function Home() {
                 <h1>오늘도 같이 해요 <span>↗</span></h1>
                 <p>今天也一起学吧。你的复习已经为你排好了。</p>
               </div>
-              <button className="settings-link" onClick={() => document.getElementById("daily-settings")?.scrollIntoView({ behavior: "smooth" })}>
-                学习设置 <span>↗</span>
+              <button className="settings-link" onClick={handleProfileClick}>
+                我的设置 <span>↗</span>
               </button>
-            </section>
-
-            <section className="mobile-welcome-card">
-              <div className="mobile-welcome-mark">K</div>
-              <div><strong>把 Talk Guide 放到桌面</strong><p>像 App 一样一点就开，学习不会断。</p></div>
-              <button onClick={() => setInstallGuideOpen(true)}>查看教程 →</button>
             </section>
 
             <section className="hero-grid">
@@ -660,28 +665,6 @@ export default function Home() {
                 </div>
               </article>
 
-              <article className="settings-card" id="daily-settings">
-                <div className="section-heading"><h3>个人偏好</h3><span className="saved-label">自动保存</span></div>
-                <label className="setting-row">
-                  <span><strong>每日新词</strong><small>复习词会另外加入</small></span>
-                  <select value={dailyWords} onChange={(event) => void saveSettings(Number(event.target.value), spelling)}>
-                    <option value={5}>5 词</option><option value={10}>10 词</option><option value={15}>15 词</option><option value={20}>20 词</option>
-                  </select>
-                </label>
-                <label className="setting-row">
-                  <span><strong>拼写训练</strong><small>关闭后只练看到、听到能认出</small></span>
-                  <input className="switch" type="checkbox" checked={spelling} onChange={(event) => void saveSettings(dailyWords, event.target.checked)} />
-                </label>
-                <div className="setting-row">
-                  <span><strong>韩语发音</strong><small>{koreanVoices.length > 1 ? "从这台设备可用的韩语语音中选择" : "由这台设备的系统语音提供"}</small></span>
-                  <div className="voice-control">
-                    <select value={selectedVoiceURI} onChange={(event) => changeKoreanVoice(event.target.value)} disabled={koreanVoices.length === 0} aria-label="选择韩语发音">
-                      {koreanVoices.length > 0 ? koreanVoices.map((voice) => <option value={voice.voiceURI} key={voice.voiceURI}>{voice.name}</option>) : <option>未发现韩语语音</option>}
-                    </select>
-                    <button className="voice-test" onClick={() => speakKorean("안녕하세요. 오늘도 같이 한국어를 공부해요.")} disabled={koreanVoices.length === 0}>试听</button>
-                  </div>
-                </div>
-              </article>
             </section>
           </div>
         )}
@@ -689,7 +672,6 @@ export default function Home() {
         {activeTab === "words" && <WordsPage startStudy={startStudy} words={studyWords} progress={wordProgress} isAdmin={isAdmin} openImport={() => setActiveTab("import")} />}
         {activeTab === "scenes" && <ScenesPage books={search ? filteredBooks : sceneCards} words={studyWords} progress={wordProgress} dailyWords={dailyWords} activeSceneTitle={activeSceneTitle} setActiveSceneTitle={setActiveSceneTitle} startStudy={startStudy} />}
         {activeTab === "talk" && <TalkPage />}
-        {activeTab === "preferences" && <PreferencesPage dailyWords={dailyWords} spelling={spelling} autoSpeak={autoSpeak} saveSettings={saveSettings} changeAutoSpeak={changeAutoSpeak} koreanVoices={koreanVoices} selectedVoiceURI={selectedVoiceURI} changeKoreanVoice={changeKoreanVoice} onSpeak={speakKorean} />}
         {activeTab === "import" && (
           <ImportPage
             allowed={Boolean(user && isAdmin)}
@@ -710,9 +692,32 @@ export default function Home() {
         </nav>
       </section>
 
+      {profileDrawerOpen && <div className="profile-drawer-backdrop" role="presentation" onMouseDown={(event) => { if (event.currentTarget === event.target) setProfileDrawerOpen(false); }}>
+        <aside className="profile-drawer" role="dialog" aria-modal="true" aria-labelledby="profile-drawer-title">
+          <header className="profile-drawer-header">
+            <div className="profile-drawer-brand"><img src={`${basePath}/logo-k-heart.svg`} alt="" /><span><strong>Korean Guide</strong><small>MY LEARNING SPACE</small></span></div>
+            <button onClick={() => setProfileDrawerOpen(false)} aria-label="关闭侧边栏">×</button>
+          </header>
+
+          <section className="drawer-section account-panel">
+            <p className="drawer-section-label">账号</p>
+            {user ? <div className="signed-account"><span className="drawer-avatar">{user.email?.slice(0, 1).toUpperCase()}</span><span><strong>{user.email}</strong><small>学习进度已连接到这个账号</small></span><button onClick={() => void signOut()}>退出</button></div> : <div className="guest-account"><div><strong>登录后保存学习进度</strong><p>在不同设备继续复习，不会丢掉熟练度记录。</p></div><button className="primary-button" onClick={() => { setProfileDrawerOpen(false); setAuthMode("login"); setAuthOpen(true); }}>登录 / 注册 <span>→</span></button></div>}
+          </section>
+
+          <section className="drawer-section drawer-preferences">
+            <div className="drawer-section-heading"><div><p className="drawer-section-label">个人偏好</p><h2 id="profile-drawer-title">我的学习方式</h2></div><span className="saved-label">自动保存</span></div>
+            <label className="setting-row"><span><strong>每日新词</strong><small>复习词会另外加入</small></span><select value={dailyWords} onChange={(event) => void saveSettings(Number(event.target.value), spelling)}><option value={5}>5 词</option><option value={10}>10 词</option><option value={15}>15 词</option><option value={20}>20 词</option></select></label>
+            <label className="setting-row"><span><strong>自动读单词</strong><small>进入每一轮时自动播放</small></span><input className="switch" type="checkbox" checked={autoSpeak} onChange={(event) => changeAutoSpeak(event.target.checked)} /></label>
+            <div className="setting-row drawer-voice-row"><span><strong>韩语发音</strong><small>{koreanVoices.length > 1 ? "选择这台设备上的韩语语音" : "由设备系统语音提供"}</small></span><div className="voice-control"><select value={selectedVoiceURI} onChange={(event) => changeKoreanVoice(event.target.value)} disabled={koreanVoices.length === 0} aria-label="选择韩语发音">{koreanVoices.length > 0 ? koreanVoices.map((voice) => <option value={voice.voiceURI} key={voice.voiceURI}>{voice.name}</option>) : <option>未发现韩语语音</option>}</select><button className="voice-test" onClick={() => speakKorean("안녕하세요. 오늘도 같이 한국어를 공부해요.")} disabled={koreanVoices.length === 0}>试听</button></div></div>
+          </section>
+
+          <button className="install-entry" onClick={() => { setProfileDrawerOpen(false); setInstallGuideOpen(true); }}><span className="install-entry-icon">⌂</span><span><strong>放到手机桌面</strong><small>查看 iPhone、快捷指令和安卓教程</small></span><b>→</b></button>
+        </aside>
+      </div>}
+
       {installGuideOpen && <div className="install-overlay" role="presentation" onMouseDown={(event) => { if (event.currentTarget === event.target) setInstallGuideOpen(false); }}>
         <section className="install-sheet" role="dialog" aria-modal="true" aria-labelledby="install-guide-title">
-          <header><button onClick={() => setInstallGuideOpen(false)} aria-label="关闭安装教程">×</button><p className="eyebrow">ADD TO HOME SCREEN</p><h2 id="install-guide-title">把 Talk Guide 带回家</h2><p>加到手机桌面，像 App 一样随时打开。</p></header>
+          <header><button onClick={() => setInstallGuideOpen(false)} aria-label="关闭安装教程">×</button><p className="eyebrow">ADD TO HOME SCREEN</p><h2 id="install-guide-title">把 Korean Guide 带回家</h2><p>加到手机桌面，像 App 一样随时打开。</p></header>
           <article className="install-steps"><h3>iPhone / iPad</h3><ol><li>用 Safari 打开这个网页</li><li>点底部中间的「共享」按钮</li><li>往下找到「添加到主屏幕」</li><li>确认后，桌面就会出现图标</li></ol></article>
           <article className="install-steps shortcut-steps"><h3>苹果快捷指令</h3><ol><li>打开手机自带的「快捷指令」，点右上角「＋」</li><li>搜索并添加操作「打开 URL」</li><li>点击蓝色的「URL」，填入下面的网址</li><li>点底部共享图标，选择「添加到主屏幕」；可自行改名称和图标</li></ol><button className={`shortcut-url ${urlCopied ? "copied" : ""}`} onClick={() => void copyShortcutUrl()} aria-label="点击复制快捷指令网址"><span>{urlCopied ? "已复制 ✓" : "点击复制网址"}</span><strong>https://iuiaovo6.github.io/KKorean-Guide/</strong></button></article>
           <article className="install-steps"><h3>安卓 Android</h3><ol><li>用 Chrome 打开这个网页</li><li>点右上角「⋮」菜单</li><li>选择「安装应用」或「添加到主屏幕」</li><li>确认后，从桌面打开即可</li></ol></article>
@@ -723,8 +728,8 @@ export default function Home() {
         <div className="study-overlay" role="dialog" aria-modal="true" aria-label={authMode === "login" ? "登录" : "注册"}>
           <div className="auth-modal">
             <button className="auth-close" onClick={() => setAuthOpen(false)} aria-label="关闭">×</button>
-            <img className="brand-mark" src={`${basePath}/logo-k-heart.svg`} alt="Talk Guide" />
-            <p className="eyebrow">TALK GUIDE ACCOUNT</p>
+            <img className="brand-mark" src={`${basePath}/logo-k-heart.svg`} alt="Korean Guide" />
+            <p className="eyebrow">KOREAN GUIDE ACCOUNT</p>
             <h2>{authMode === "login" ? "欢迎回来" : "创建学习账号"}</h2>
             <p className="auth-intro">
               {authMode === "login"
@@ -952,34 +957,6 @@ function reviewDate(value?: string) {
   if (days <= 0) return "今天";
   if (days === 1) return "明天";
   return date.toLocaleDateString("zh-CN", { month: "numeric", day: "numeric" });
-}
-
-function PreferencesPage({ dailyWords, spelling, autoSpeak, saveSettings, changeAutoSpeak, koreanVoices, selectedVoiceURI, changeKoreanVoice, onSpeak }: { dailyWords: number; spelling: boolean; autoSpeak: boolean; saveSettings: (dailyWords: number, spelling: boolean) => Promise<void>; changeAutoSpeak: (enabled: boolean) => void; koreanVoices: SpeechSynthesisVoice[]; selectedVoiceURI: string; changeKoreanVoice: (voiceURI: string) => void; onSpeak: (text: string) => void }) {
-  return <div className="content inner-page">
-    <div className="page-title"><div><p className="eyebrow">YOUR LEARNING SPACE</p><h1>个人偏好</h1><p>调整每天学多少、要不要练拼写，以及你想听到的韩语发音。</p></div></div>
-    <article className="preferences-card settings-card">
-      <div className="section-heading"><h3>学习方式</h3><span className="saved-label">自动保存</span></div>
-      <label className="setting-row">
-        <span><strong>每日新词</strong><small>复习词会另外加入</small></span>
-        <select value={dailyWords} onChange={(event) => void saveSettings(Number(event.target.value), spelling)}><option value={5}>5 词</option><option value={10}>10 词</option><option value={15}>15 词</option><option value={20}>20 词</option></select>
-      </label>
-      <label className="setting-row">
-        <span><strong>拼写训练</strong><small>关闭后只练看到、听到能认出</small></span>
-        <input className="switch" type="checkbox" checked={spelling} onChange={(event) => void saveSettings(dailyWords, event.target.checked)} />
-      </label>
-      <label className="setting-row">
-        <span><strong>自动读单词</strong><small>进入每一轮时自动播放韩语发音</small></span>
-        <input className="switch" type="checkbox" checked={autoSpeak} onChange={(event) => changeAutoSpeak(event.target.checked)} />
-      </label>
-      <div className="setting-row">
-        <span><strong>韩语发音</strong><small>{koreanVoices.length > 1 ? "从这台设备可用的韩语语音中选择" : "由这台设备的系统语音提供"}</small></span>
-        <div className="voice-control">
-          <select value={selectedVoiceURI} onChange={(event) => changeKoreanVoice(event.target.value)} disabled={koreanVoices.length === 0} aria-label="选择韩语发音">{koreanVoices.length > 0 ? koreanVoices.map((voice) => <option value={voice.voiceURI} key={voice.voiceURI}>{voice.name}</option>) : <option>未发现韩语语音</option>}</select>
-          <button className="voice-test" onClick={() => onSpeak("안녕하세요. 오늘도 같이 한국어를 공부해요.")} disabled={koreanVoices.length === 0}>试听</button>
-        </div>
-      </div>
-    </article>
-  </div>;
 }
 
 function WordsPage({ startStudy, words, progress, isAdmin, openImport }: { startStudy: (words?: StudyWord[]) => void; words: StudyWord[]; progress: Record<number, WordProgress>; isAdmin: boolean; openImport: () => void }) {

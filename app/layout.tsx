@@ -28,7 +28,7 @@ export const dynamic = "force-static";
 export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: new URL(siteOrigin),
-    title: "Talk Guide — 在喜欢的语境里学会韩语",
+    title: "Korean Guide — 在喜欢的语境里学会韩语",
     description: "为初级追星用户设计的韩语单词学习与间隔复习工具。",
     icons: {
       icon: `${basePath}/logo-k-heart.svg`,
@@ -36,13 +36,13 @@ export async function generateMetadata(): Promise<Metadata> {
       apple: `${basePath}/apple-touch-icon.png`,
     },
     openGraph: {
-      title: "Talk Guide — 在喜欢的语境里学会韩语",
+      title: "Korean Guide — 在喜欢的语境里学会韩语",
       description: "多轮首次学习、间隔复习与真实追星语境。",
-      images: [{ url: `${basePath}/og.png`, width: 1200, height: 630, alt: "Talk Guide 韩语学习" }],
+      images: [{ url: `${basePath}/og.png`, width: 1200, height: 630, alt: "Korean Guide 韩语学习" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Talk Guide — 在喜欢的语境里学会韩语",
+      title: "Korean Guide — 在喜欢的语境里学会韩语",
       description: "多轮首次学习、间隔复习与真实追星语境。",
       images: [`${basePath}/og.png`],
     },
