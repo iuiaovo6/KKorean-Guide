@@ -68,7 +68,6 @@ export default function Home() {
   const [recallFeedbackTone, setRecallFeedbackTone] = useState<FeedbackTone>(null);
   const [recallReadyToRate, setRecallReadyToRate] = useState(false);
   const [dailyWords, setDailyWords] = useState(10);
-  const [spelling, setSpelling] = useState(false);
   const [search, setSearch] = useState("");
   const [toast, setToast] = useState("");
   const [user, setUser] = useState<User | null>(null);
@@ -86,7 +85,7 @@ export default function Home() {
   const [dataVersion, setDataVersion] = useState(0);
   const [koreanVoices, setKoreanVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [selectedVoiceURI, setSelectedVoiceURI] = useState("");
-  const [autoSpeak, setAutoSpeak] = useState(false);
+  const [autoSpeak, setAutoSpeak] = useState(true);
   const [activeSceneTitle, setActiveSceneTitle] = useState<(typeof sceneBooks)[number]["title"]>(sceneBooks[0].title);
   const [streakDays, setStreakDays] = useState(0);
 
@@ -119,7 +118,8 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    setAutoSpeak(window.localStorage.getItem("talk-guide-auto-speak") === "true");
+    const savedAutoSpeak = window.localStorage.getItem("talk-guide-auto-speak");
+    setAutoSpeak(savedAutoSpeak === null ? true : savedAutoSpeak === "true");
   }, []);
 
   useEffect(() => {
@@ -143,7 +143,9 @@ export default function Home() {
       const voices = window.speechSynthesis.getVoices().filter((voice) => voice.lang.toLowerCase().startsWith("ko"));
       setKoreanVoices(voices);
       const savedVoiceURI = window.localStorage.getItem("talk-guide-korean-voice") ?? "";
-      const preferredVoice = voices.find((voice) => /yuna|heami|sunhi|female|natural/i.test(voice.name)) ?? voices[0];
+      const preferredVoice = voices.find((voice) => /google/i.test(voice.name))
+        ?? voices.find((voice) => /yuna|heami|sunhi|female|natural/i.test(voice.name))
+        ?? voices[0];
       setSelectedVoiceURI((current) => current || (voices.some((voice) => voice.voiceURI === savedVoiceURI) ? savedVoiceURI : preferredVoice?.voiceURI ?? ""));
     };
     loadKoreanVoices();
@@ -252,7 +254,6 @@ export default function Home() {
 
       if (profileResult.data) {
         setDailyWords(profileResult.data.daily_new_words);
-        setSpelling(profileResult.data.spelling_enabled);
         setIsAdmin(profileResult.data.is_admin ?? false);
       }
     }
@@ -352,7 +353,7 @@ export default function Home() {
         word_id: word.id,
         meaning_level: level,
         listening_level: level,
-        spelling_level: spelling ? level : 0,
+        spelling_level: 0,
         review_count: (previous?.review_count ?? 0) + 1,
         next_review_at: nextReviewAt,
         last_reviewed_at: new Date().toISOString(),
@@ -363,15 +364,13 @@ export default function Home() {
     if (error) setToast(`保存失败：${error.message}`);
   }
 
-  async function saveSettings(nextDailyWords: number, nextSpelling: boolean) {
+  async function saveSettings(nextDailyWords: number) {
     setDailyWords(nextDailyWords);
-    setSpelling(nextSpelling);
     if (!user) return;
     const { error } = await supabase
       .from("profiles")
       .update({
         daily_new_words: nextDailyWords,
-        spelling_enabled: nextSpelling,
         updated_at: new Date().toISOString(),
       })
       .eq("id", user.id);
@@ -392,6 +391,7 @@ export default function Home() {
     utterance.rate = 0.94;
     utterance.pitch = 1;
     const koreanVoice = koreanVoices.find((voice) => voice.voiceURI === selectedVoiceURI)
+      ?? koreanVoices.find((voice) => /google/i.test(voice.name))
       ?? koreanVoices.find((voice) => /yuna|heami|sunhi|female|natural/i.test(voice.name))
       ?? window.speechSynthesis.getVoices().find((voice) => voice.lang.toLowerCase().startsWith("ko"));
     if (koreanVoice) utterance.voice = koreanVoice;
@@ -608,7 +608,7 @@ export default function Home() {
                   <h2>{todayCompleted ? "今天已经学完啦" : "先把今天的词记牢"}</h2>
                   <p>{dataMessage}</p>
                   <div className="mini-tags">
-                    <span>识义</span><span>听音</span><span>语境</span>{spelling && <span>拼写</span>}
+                    <span>识义</span><span>听音</span><span>回想</span>
                   </div>
                   <button className="primary-button" onClick={todayCompleted ? () => setActiveTab("scenes") : () => startStudy()}>{todayCompleted ? "去看看追星场景" : "继续学习"} <span>→</span></button>
                 </div>
@@ -706,7 +706,7 @@ export default function Home() {
 
           <section className="drawer-section drawer-preferences">
             <div className="drawer-section-heading"><div><p className="drawer-section-label">个人偏好</p><h2 id="profile-drawer-title">我的学习方式</h2></div><span className="saved-label">自动保存</span></div>
-            <label className="setting-row"><span><strong>每日新词</strong><small>复习词会另外加入</small></span><select value={dailyWords} onChange={(event) => void saveSettings(Number(event.target.value), spelling)}><option value={5}>5 词</option><option value={10}>10 词</option><option value={15}>15 词</option><option value={20}>20 词</option></select></label>
+            <label className="setting-row"><span><strong>每日新词</strong><small>复习词会另外加入</small></span><select value={dailyWords} onChange={(event) => void saveSettings(Number(event.target.value))}><option value={5}>5 词</option><option value={10}>10 词</option><option value={15}>15 词</option><option value={20}>20 词</option></select></label>
             <label className="setting-row"><span><strong>自动读单词</strong><small>进入每一轮时自动播放</small></span><input className="switch" type="checkbox" checked={autoSpeak} onChange={(event) => changeAutoSpeak(event.target.checked)} /></label>
             <div className="setting-row drawer-voice-row"><span><strong>韩语发音</strong><small>{koreanVoices.length > 1 ? "选择这台设备上的韩语语音" : "由设备系统语音提供"}</small></span><div className="voice-control"><select value={selectedVoiceURI} onChange={(event) => changeKoreanVoice(event.target.value)} disabled={koreanVoices.length === 0} aria-label="选择韩语发音">{koreanVoices.length > 0 ? koreanVoices.map((voice) => <option value={voice.voiceURI} key={voice.voiceURI}>{voice.name}</option>) : <option>未发现韩语语音</option>}</select><button className="voice-test" onClick={() => speakKorean("안녕하세요. 오늘도 같이 한국어를 공부해요.")} disabled={koreanVoices.length === 0}>试听</button></div></div>
           </section>
