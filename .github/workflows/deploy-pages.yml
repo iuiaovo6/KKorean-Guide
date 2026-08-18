@@ -25,6 +25,11 @@ jobs:
           cache: npm
       - run: npm install
       - run: npm run build:static
+        env:
+          # 真实 Supabase 地址（anon/publishable key 本就是公开的前端凭据）。
+          # 不开梯子时 supabase.co 被墙，仅浏览不受影响；开梯子即可登录/同步。
+          NEXT_PUBLIC_SUPABASE_URL: ${{ vars.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ vars.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/client
