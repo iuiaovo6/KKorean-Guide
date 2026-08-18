@@ -9,10 +9,7 @@
       "表达感受"
     ],
     "id": 1,
-    "romanization": "seolleda",
-    "polite_form": "설레요",
-    "plain_form": "설레",
-    "usage": "用于表达感受场景的动词表达。"
+    "romanization": "seolleda"
   },
   {
     "korean": "기대하다",
@@ -24,10 +21,7 @@
       "表达感受"
     ],
     "id": 2,
-    "romanization": "gidaehada",
-    "polite_form": "기대해요",
-    "plain_form": "기대해",
-    "usage": "用于表达感受场景的动词表达。"
+    "romanization": "gidaehada"
   },
   {
     "korean": "소중하다",
@@ -39,10 +33,7 @@
       "感谢粉丝"
     ],
     "id": 3,
-    "romanization": "sojunghada",
-    "polite_form": "소중해요",
-    "plain_form": "소중해",
-    "usage": "用于感谢粉丝场景的形容词表达。"
+    "romanization": "sojunghada"
   },
   {
     "korean": "안녕하세요",
@@ -55,10 +46,7 @@
       "问候"
     ],
     "id": 4,
-    "romanization": "annyeonghaseyo",
-    "polite_form": "안녕하세요",
-    "plain_form": "안녕하세요",
-    "usage": "用于基础、问候场景的感叹词表达。"
+    "romanization": "annyeonghaseyo"
   },
   {
     "korean": "고마워요",
@@ -71,10 +59,7 @@
       "感谢"
     ],
     "id": 5,
-    "romanization": "gomawoyo",
-    "polite_form": "고마워요",
-    "plain_form": "고마워요",
-    "usage": "用于基础、感谢场景的表达表达。"
+    "romanization": "gomawoyo"
   },
   {
     "korean": "보고 싶었어요",
@@ -87,10 +72,7 @@
       "粉丝"
     ],
     "id": 6,
-    "romanization": "bogo sipeosseoyo",
-    "polite_form": "보고 싶었어요",
-    "plain_form": "보고 싶었어요",
-    "usage": "用于追星、粉丝场景的表达表达。"
+    "romanization": "bogo sipeoseoyo"
   },
   {
     "korean": "재미있어요",
@@ -103,10 +85,7 @@
       "演出"
     ],
     "id": 7,
-    "romanization": "jaemiisseoyo",
-    "polite_form": "재미있어요",
-    "plain_form": "재미있어요",
-    "usage": "用于感受、演出场景的形容词表达。"
+    "romanization": "jaemiiseoyo"
   },
   {
     "korean": "기대해 주세요",
@@ -119,10 +98,7 @@
       "常用表达"
     ],
     "id": 8,
-    "romanization": "gidaehae juseyo",
-    "polite_form": "기대해 주세요",
-    "plain_form": "기대해 주세요",
-    "usage": "用于舞台、常用表达场景的常用表达表达。"
+    "romanization": "gidaehae juseyo"
   },
   {
     "korean": "나",
@@ -135,10 +111,7 @@
       "自我介绍"
     ],
     "id": 9,
-    "romanization": "na",
-    "polite_form": "나",
-    "plain_form": "나",
-    "usage": "用于基础、自我介绍场景的代词表达。"
+    "romanization": "na"
   },
   {
     "korean": "너",
@@ -151,10 +124,7 @@
       "对话"
     ],
     "id": 10,
-    "romanization": "neo",
-    "polite_form": "너",
-    "plain_form": "너",
-    "usage": "用于基础、对话场景的代词表达。"
+    "romanization": "neo"
   },
   {
     "korean": "우리",
@@ -167,10 +137,7 @@
       "对话"
     ],
     "id": 11,
-    "romanization": "uri",
-    "polite_form": "우리",
-    "plain_form": "우리",
-    "usage": "用于基础、对话场景的代词表达。"
+    "romanization": "uri"
   },
   {
     "korean": "저",
@@ -183,10 +150,7 @@
       "敬语"
     ],
     "id": 12,
-    "romanization": "jeo",
-    "polite_form": "저",
-    "plain_form": "저",
-    "usage": "用于基础、敬语场景的代词表达。"
+    "romanization": "jeo"
   },
   {
     "korean": "이것",
@@ -199,10 +163,7 @@
       "对话"
     ],
     "id": 13,
-    "romanization": "igeos",
-    "polite_form": "이것",
-    "plain_form": "이것",
-    "usage": "用于基础、对话场景的代词表达。"
+    "romanization": "igeot"
   },
   {
     "korean": "그것",
@@ -215,10 +176,7 @@
       "对话"
     ],
     "id": 14,
-    "romanization": "geugeos",
-    "polite_form": "그것",
-    "plain_form": "그것",
-    "usage": "用于基础、对话场景的代词表达。"
+    "romanization": "geugeot"
   },
   {
     "korean": "어디",
@@ -231,10 +189,7 @@
       "对话"
     ],
     "id": 15,
-    "romanization": "eodi",
-    "polite_form": "어디",
-    "plain_form": "어디",
-    "usage": "用于基础、对话场景的疑问词表达。"
+    "romanization": "eodi"
   },
   {
     "korean": "누구",
@@ -247,10 +202,7 @@
       "对话"
     ],
     "id": 16,
-    "romanization": "nugu",
-    "polite_form": "누구",
-    "plain_form": "누구",
-    "usage": "用于基础、对话场景的疑问词表达。"
+    "romanization": "nugu"
   },
   {
     "korean": "뭐",
@@ -263,10 +215,7 @@
       "对话"
     ],
     "id": 17,
-    "romanization": "mwo",
-    "polite_form": "뭐",
-    "plain_form": "뭐",
-    "usage": "用于基础、对话场景的疑问词表达。"
+    "romanization": "mwo"
   },
   {
     "korean": "왜",
@@ -279,10 +228,7 @@
       "对话"
     ],
     "id": 18,
-    "romanization": "wae",
-    "polite_form": "왜",
-    "plain_form": "왜",
-    "usage": "用于基础、对话场景的疑问词表达。"
+    "romanization": "wae"
   },
   {
     "korean": "언제",
@@ -295,10 +241,7 @@
       "对话"
     ],
     "id": 19,
-    "romanization": "eonje",
-    "polite_form": "언제",
-    "plain_form": "언제",
-    "usage": "用于基础、对话场景的疑问词表达。"
+    "romanization": "eonje"
   },
   {
     "korean": "어떻게",
@@ -311,10 +254,7 @@
       "对话"
     ],
     "id": 20,
-    "romanization": "eotteohge",
-    "polite_form": "어떻게",
-    "plain_form": "어떻게",
-    "usage": "用于基础、对话场景的疑问词表达。"
+    "romanization": "eotteoge"
   },
   {
     "korean": "네",
@@ -327,10 +267,7 @@
       "对话"
     ],
     "id": 21,
-    "romanization": "ne",
-    "polite_form": "네",
-    "plain_form": "네",
-    "usage": "用于基础、对话场景的感叹词表达。"
+    "romanization": "ne"
   },
   {
     "korean": "아니요",
@@ -343,10 +280,7 @@
       "对话"
     ],
     "id": 22,
-    "romanization": "aniyo",
-    "polite_form": "아니요",
-    "plain_form": "아니요",
-    "usage": "用于基础、对话场景的感叹词表达。"
+    "romanization": "aniyo"
   },
   {
     "korean": "안녕",
@@ -359,10 +293,7 @@
       "问候"
     ],
     "id": 24,
-    "romanization": "annyeong",
-    "polite_form": "안녕",
-    "plain_form": "안녕",
-    "usage": "用于基础、问候场景的感叹词表达。"
+    "romanization": "annyeong"
   },
   {
     "korean": "반가워요",
@@ -375,10 +306,7 @@
       "问候"
     ],
     "id": 25,
-    "romanization": "bangawoyo",
-    "polite_form": "반가워요",
-    "plain_form": "반가워요",
-    "usage": "用于基础、问候场景的表达表达。"
+    "romanization": "bangawoyo"
   },
   {
     "korean": "감사합니다",
@@ -391,10 +319,7 @@
       "感谢"
     ],
     "id": 26,
-    "romanization": "gamsahabnida",
-    "polite_form": "감사합니다",
-    "plain_form": "감사합니다",
-    "usage": "用于基础、感谢场景的表达表达。"
+    "romanization": "gamsahamnida"
   },
   {
     "korean": "죄송합니다",
@@ -407,10 +332,7 @@
       "道歉"
     ],
     "id": 28,
-    "romanization": "joesonghabnida",
-    "polite_form": "죄송합니다",
-    "plain_form": "죄송합니다",
-    "usage": "用于基础、道歉场景的表达表达。"
+    "romanization": "joesonghamnida"
   },
   {
     "korean": "미안해요",
@@ -423,10 +345,7 @@
       "道歉"
     ],
     "id": 29,
-    "romanization": "mianhaeyo",
-    "polite_form": "미안해요",
-    "plain_form": "미안해요",
-    "usage": "用于基础、道歉场景的表达表达。"
+    "romanization": "mianhaeyo"
   },
   {
     "korean": "괜찮아요",
@@ -439,10 +358,7 @@
       "对话"
     ],
     "id": 30,
-    "romanization": "gwaenchanhayo",
-    "polite_form": "괜찮아요",
-    "plain_form": "괜찮아요",
-    "usage": "用于基础、对话场景的表达表达。"
+    "romanization": "gwaenchanhayo"
   },
   {
     "korean": "잘 가요",
@@ -455,10 +371,7 @@
       "问候"
     ],
     "id": 31,
-    "romanization": "jal gayo",
-    "polite_form": "잘 가요",
-    "plain_form": "잘 가요",
-    "usage": "用于基础、问候场景的表达表达。"
+    "romanization": "jal gayo"
   },
   {
     "korean": "또 봐요",
@@ -471,10 +384,7 @@
       "问候"
     ],
     "id": 32,
-    "romanization": "tto bwayo",
-    "polite_form": "또 봐요",
-    "plain_form": "또 봐요",
-    "usage": "用于基础、问候场景的表达表达。"
+    "romanization": "tto bwayo"
   },
   {
     "korean": "주세요",
@@ -487,10 +397,7 @@
       "点单"
     ],
     "id": 33,
-    "romanization": "juseyo",
-    "polite_form": "주세요",
-    "plain_form": "주세요",
-    "usage": "用于基础、点单场景的表达表达。"
+    "romanization": "juseyo"
   },
   {
     "korean": "있어요",
@@ -503,10 +410,7 @@
       "对话"
     ],
     "id": 34,
-    "romanization": "isseoyo",
-    "polite_form": "있어요",
-    "plain_form": "있어요",
-    "usage": "用于基础、对话场景的动词表达。"
+    "romanization": "iseoyo"
   },
   {
     "korean": "없어요",
@@ -519,10 +423,7 @@
       "对话"
     ],
     "id": 35,
-    "romanization": "eobseoyo",
-    "polite_form": "없어요",
-    "plain_form": "없어요",
-    "usage": "用于基础、对话场景的形容词表达。"
+    "romanization": "eopseoyo"
   },
   {
     "korean": "가요",
@@ -535,10 +436,7 @@
       "出行"
     ],
     "id": 36,
-    "romanization": "gayo",
-    "polite_form": "가요",
-    "plain_form": "가요",
-    "usage": "用于基础、出行场景的动词表达。"
+    "romanization": "gayo"
   },
   {
     "korean": "와요",
@@ -551,10 +449,7 @@
       "对话"
     ],
     "id": 37,
-    "romanization": "wayo",
-    "polite_form": "와요",
-    "plain_form": "와요",
-    "usage": "用于基础、对话场景的动词表达。"
+    "romanization": "wayo"
   },
   {
     "korean": "먹어요",
@@ -567,10 +462,7 @@
       "日常"
     ],
     "id": 38,
-    "romanization": "meongeoyo",
-    "polite_form": "먹어요",
-    "plain_form": "먹어요",
-    "usage": "用于基础、日常场景的动词表达。"
+    "romanization": "meogeoyo"
   },
   {
     "korean": "마셔요",
@@ -583,10 +475,7 @@
       "日常"
     ],
     "id": 39,
-    "romanization": "masyeoyo",
-    "polite_form": "마셔요",
-    "plain_form": "마셔요",
-    "usage": "用于基础、日常场景的动词表达。"
+    "romanization": "masyeoyo"
   },
   {
     "korean": "봐요",
@@ -599,10 +488,7 @@
       "日常"
     ],
     "id": 40,
-    "romanization": "bwayo",
-    "polite_form": "봐요",
-    "plain_form": "봐요",
-    "usage": "用于基础、日常场景的动词表达。"
+    "romanization": "bwayo"
   },
   {
     "korean": "들어요",
@@ -615,10 +501,7 @@
       "日常"
     ],
     "id": 41,
-    "romanization": "deuleoyo",
-    "polite_form": "들어요",
-    "plain_form": "들어요",
-    "usage": "用于基础、日常场景的动词表达。"
+    "romanization": "deureoyo"
   },
   {
     "korean": "말해요",
@@ -631,10 +514,7 @@
       "对话"
     ],
     "id": 42,
-    "romanization": "malhaeyo",
-    "polite_form": "말해요",
-    "plain_form": "말해요",
-    "usage": "用于基础、对话场景的动词表达。"
+    "romanization": "malhaeyo"
   },
   {
     "korean": "해요",
@@ -647,10 +527,7 @@
       "日常"
     ],
     "id": 43,
-    "romanization": "haeyo",
-    "polite_form": "해요",
-    "plain_form": "해요",
-    "usage": "用于基础、日常场景的动词表达。"
+    "romanization": "haeyo"
   },
   {
     "korean": "좋아해요",
@@ -663,10 +540,7 @@
       "感受"
     ],
     "id": 44,
-    "romanization": "johahaeyo",
-    "polite_form": "좋아해요",
-    "plain_form": "좋아해요",
-    "usage": "用于基础、感受场景的动词表达。"
+    "romanization": "joahaeyo"
   },
   {
     "korean": "사랑해요",
@@ -679,10 +553,7 @@
       "感受"
     ],
     "id": 45,
-    "romanization": "saranghaeyo",
-    "polite_form": "사랑해요",
-    "plain_form": "사랑해요",
-    "usage": "用于基础、感受场景的动词表达。"
+    "romanization": "saranghaeyo"
   },
   {
     "korean": "알아요",
@@ -695,10 +566,7 @@
       "对话"
     ],
     "id": 46,
-    "romanization": "alayo",
-    "polite_form": "알아요",
-    "plain_form": "알아요",
-    "usage": "用于基础、对话场景的动词表达。"
+    "romanization": "arayo"
   },
   {
     "korean": "몰라요",
@@ -711,10 +579,7 @@
       "对话"
     ],
     "id": 47,
-    "romanization": "mollayo",
-    "polite_form": "몰라요",
-    "plain_form": "몰라요",
-    "usage": "用于基础、对话场景的动词表达。"
+    "romanization": "mollayo"
   },
   {
     "korean": "원해요",
@@ -727,10 +592,7 @@
       "点单"
     ],
     "id": 48,
-    "romanization": "wonhaeyo",
-    "polite_form": "원해요",
-    "plain_form": "원해요",
-    "usage": "用于基础、点单场景的动词表达。"
+    "romanization": "wonhaeyo"
   },
   {
     "korean": "필요해요",
@@ -743,10 +605,7 @@
       "日常"
     ],
     "id": 49,
-    "romanization": "pilyohaeyo",
-    "polite_form": "필요해요",
-    "plain_form": "필요해요",
-    "usage": "用于基础、日常场景的形容词表达。"
+    "romanization": "piryohaeyo"
   },
   {
     "korean": "기다려요",
@@ -759,10 +618,7 @@
       "线下"
     ],
     "id": 50,
-    "romanization": "gidaryeoyo",
-    "polite_form": "기다려요",
-    "plain_form": "기다려요",
-    "usage": "用于基础、线下场景的动词表达。"
+    "romanization": "gidaryeoyo"
   },
   {
     "korean": "만나요",
@@ -775,10 +631,7 @@
       "线下"
     ],
     "id": 51,
-    "romanization": "mannayo",
-    "polite_form": "만나요",
-    "plain_form": "만나요",
-    "usage": "用于基础、线下场景的动词表达。"
+    "romanization": "mannayo"
   },
   {
     "korean": "사진",
@@ -791,10 +644,7 @@
       "线下"
     ],
     "id": 52,
-    "romanization": "sajin",
-    "polite_form": "사진",
-    "plain_form": "사진",
-    "usage": "用于基础、线下场景的名词表达。"
+    "romanization": "sajin"
   },
   {
     "korean": "영상",
@@ -807,10 +657,7 @@
       "追星"
     ],
     "id": 53,
-    "romanization": "yeongsang",
-    "polite_form": "영상",
-    "plain_form": "영상",
-    "usage": "用于基础、追星场景的名词表达。"
+    "romanization": "yeongsang"
   },
   {
     "korean": "음악",
@@ -823,10 +670,7 @@
       "追星"
     ],
     "id": 54,
-    "romanization": "eumag",
-    "polite_form": "음악",
-    "plain_form": "음악",
-    "usage": "用于基础、追星场景的名词表达。"
+    "romanization": "eumak"
   },
   {
     "korean": "노래",
@@ -839,10 +683,7 @@
       "追星"
     ],
     "id": 55,
-    "romanization": "norae",
-    "polite_form": "노래",
-    "plain_form": "노래",
-    "usage": "用于基础、追星场景的名词表达。"
+    "romanization": "norae"
   },
   {
     "korean": "춤",
@@ -855,10 +696,7 @@
       "追星"
     ],
     "id": 56,
-    "romanization": "chum",
-    "polite_form": "춤",
-    "plain_form": "춤",
-    "usage": "用于基础、追星场景的名词表达。"
+    "romanization": "chum"
   },
   {
     "korean": "무대",
@@ -871,10 +709,7 @@
       "演唱会"
     ],
     "id": 57,
-    "romanization": "mudae",
-    "polite_form": "무대",
-    "plain_form": "무대",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "mudae"
   },
   {
     "korean": "공연",
@@ -887,10 +722,7 @@
       "演唱会"
     ],
     "id": 58,
-    "romanization": "gongyeon",
-    "polite_form": "공연",
-    "plain_form": "공연",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "goyeon"
   },
   {
     "korean": "콘서트",
@@ -903,10 +735,7 @@
       "演唱会"
     ],
     "id": 59,
-    "romanization": "konseoteu",
-    "polite_form": "콘서트",
-    "plain_form": "콘서트",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "konseoteu"
   },
   {
     "korean": "팬",
@@ -919,10 +748,7 @@
       "粉丝"
     ],
     "id": 60,
-    "romanization": "paen",
-    "polite_form": "팬",
-    "plain_form": "팬",
-    "usage": "用于追星、粉丝场景的名词表达。"
+    "romanization": "paen"
   },
   {
     "korean": "아이돌",
@@ -935,10 +761,7 @@
       "粉丝"
     ],
     "id": 61,
-    "romanization": "aidol",
-    "polite_form": "아이돌",
-    "plain_form": "아이돌",
-    "usage": "用于追星、粉丝场景的名词表达。"
+    "romanization": "aidol"
   },
   {
     "korean": "멤버",
@@ -951,10 +774,7 @@
       "粉丝"
     ],
     "id": 62,
-    "romanization": "membeo",
-    "polite_form": "멤버",
-    "plain_form": "멤버",
-    "usage": "用于追星、粉丝场景的名词表达。"
+    "romanization": "membeo"
   },
   {
     "korean": "응원",
@@ -967,10 +787,7 @@
       "粉丝"
     ],
     "id": 63,
-    "romanization": "eungwon",
-    "polite_form": "응원",
-    "plain_form": "응원",
-    "usage": "用于追星、粉丝场景的名词表达。"
+    "romanization": "euwon"
   },
   {
     "korean": "앨범",
@@ -983,10 +800,7 @@
       "粉丝"
     ],
     "id": 64,
-    "romanization": "aelbeom",
-    "polite_form": "앨범",
-    "plain_form": "앨범",
-    "usage": "用于追星、粉丝场景的名词表达。"
+    "romanization": "aelbeom"
   },
   {
     "korean": "포토카드",
@@ -999,10 +813,7 @@
       "周边"
     ],
     "id": 65,
-    "romanization": "potokadeu",
-    "polite_form": "포토카드",
-    "plain_form": "포토카드",
-    "usage": "用于追星、周边场景的名词表达。"
+    "romanization": "potokadeu"
   },
   {
     "korean": "사인",
@@ -1015,10 +826,7 @@
       "签售"
     ],
     "id": 66,
-    "romanization": "sain",
-    "polite_form": "사인",
-    "plain_form": "사인",
-    "usage": "用于追星、签售场景的名词表达。"
+    "romanization": "sain"
   },
   {
     "korean": "이름",
@@ -1031,10 +839,7 @@
       "自我介绍"
     ],
     "id": 67,
-    "romanization": "ireum",
-    "polite_form": "이름",
-    "plain_form": "이름",
-    "usage": "用于基础、自我介绍场景的名词表达。"
+    "romanization": "ireum"
   },
   {
     "korean": "친구",
@@ -1047,10 +852,7 @@
       "日常"
     ],
     "id": 68,
-    "romanization": "chingu",
-    "polite_form": "친구",
-    "plain_form": "친구",
-    "usage": "用于基础、日常场景的名词表达。"
+    "romanization": "chingu"
   },
   {
     "korean": "가족",
@@ -1063,10 +865,7 @@
       "日常"
     ],
     "id": 69,
-    "romanization": "gajog",
-    "polite_form": "가족",
-    "plain_form": "가족",
-    "usage": "用于基础、日常场景的名词表达。"
+    "romanization": "gajok"
   },
   {
     "korean": "사람",
@@ -1079,10 +878,7 @@
       "日常"
     ],
     "id": 70,
-    "romanization": "saram",
-    "polite_form": "사람",
-    "plain_form": "사람",
-    "usage": "用于基础、日常场景的名词表达。"
+    "romanization": "saram"
   },
   {
     "korean": "오늘",
@@ -1095,10 +891,7 @@
       "时间"
     ],
     "id": 71,
-    "romanization": "oneul",
-    "polite_form": "오늘",
-    "plain_form": "오늘",
-    "usage": "用于基础、时间场景的名词表达。"
+    "romanization": "oneul"
   },
   {
     "korean": "내일",
@@ -1111,10 +904,7 @@
       "时间"
     ],
     "id": 72,
-    "romanization": "naeil",
-    "polite_form": "내일",
-    "plain_form": "내일",
-    "usage": "用于基础、时间场景的名词表达。"
+    "romanization": "naeil"
   },
   {
     "korean": "어제",
@@ -1127,10 +917,7 @@
       "时间"
     ],
     "id": 73,
-    "romanization": "eoje",
-    "polite_form": "어제",
-    "plain_form": "어제",
-    "usage": "用于基础、时间场景的名词表达。"
+    "romanization": "eoje"
   },
   {
     "korean": "지금",
@@ -1143,10 +930,7 @@
       "时间"
     ],
     "id": 74,
-    "romanization": "jigeum",
-    "polite_form": "지금",
-    "plain_form": "지금",
-    "usage": "用于基础、时间场景的副词表达。"
+    "romanization": "jigeum"
   },
   {
     "korean": "나중에",
@@ -1159,10 +943,7 @@
       "时间"
     ],
     "id": 75,
-    "romanization": "najunge",
-    "polite_form": "나중에",
-    "plain_form": "나중에",
-    "usage": "用于基础、时间场景的副词表达。"
+    "romanization": "najue"
   },
   {
     "korean": "아침",
@@ -1175,10 +956,7 @@
       "时间"
     ],
     "id": 76,
-    "romanization": "achim",
-    "polite_form": "아침",
-    "plain_form": "아침",
-    "usage": "用于基础、时间场景的名词表达。"
+    "romanization": "achim"
   },
   {
     "korean": "밤",
@@ -1191,10 +969,7 @@
       "时间"
     ],
     "id": 77,
-    "romanization": "bam",
-    "polite_form": "밤",
-    "plain_form": "밤",
-    "usage": "用于基础、时间场景的名词表达。"
+    "romanization": "bam"
   },
   {
     "korean": "시간",
@@ -1207,10 +982,7 @@
       "时间"
     ],
     "id": 78,
-    "romanization": "sigan",
-    "polite_form": "시간",
-    "plain_form": "시간",
-    "usage": "用于基础、时间场景的名词表达。"
+    "romanization": "sigan"
   },
   {
     "korean": "날",
@@ -1223,10 +995,7 @@
       "时间"
     ],
     "id": 79,
-    "romanization": "nal",
-    "polite_form": "날",
-    "plain_form": "날",
-    "usage": "用于基础、时间场景的名词表达。"
+    "romanization": "nal"
   },
   {
     "korean": "집",
@@ -1239,10 +1008,7 @@
       "地点"
     ],
     "id": 80,
-    "romanization": "jib",
-    "polite_form": "집",
-    "plain_form": "집",
-    "usage": "用于基础、地点场景的名词表达。"
+    "romanization": "jip"
   },
   {
     "korean": "학교",
@@ -1255,10 +1021,7 @@
       "地点"
     ],
     "id": 81,
-    "romanization": "haggyo",
-    "polite_form": "학교",
-    "plain_form": "학교",
-    "usage": "用于基础、地点场景的名词表达。"
+    "romanization": "hakgyo"
   },
   {
     "korean": "회사",
@@ -1271,10 +1034,7 @@
       "地点"
     ],
     "id": 82,
-    "romanization": "hoesa",
-    "polite_form": "회사",
-    "plain_form": "회사",
-    "usage": "用于基础、地点场景的名词表达。"
+    "romanization": "hoesa"
   },
   {
     "korean": "화장실",
@@ -1287,10 +1047,7 @@
       "出行"
     ],
     "id": 83,
-    "romanization": "hwajangsil",
-    "polite_form": "화장실",
-    "plain_form": "화장실",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "hwajangsil"
   },
   {
     "korean": "역",
@@ -1303,10 +1060,7 @@
       "出行"
     ],
     "id": 84,
-    "romanization": "yeog",
-    "polite_form": "역",
-    "plain_form": "역",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "yeok"
   },
   {
     "korean": "공항",
@@ -1319,10 +1073,7 @@
       "出行"
     ],
     "id": 85,
-    "romanization": "gonghang",
-    "polite_form": "공항",
-    "plain_form": "공항",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "gonghang"
   },
   {
     "korean": "카페",
@@ -1335,10 +1086,7 @@
       "日常"
     ],
     "id": 86,
-    "romanization": "kape",
-    "polite_form": "카페",
-    "plain_form": "카페",
-    "usage": "用于基础、日常场景的名词表达。"
+    "romanization": "kape"
   },
   {
     "korean": "식당",
@@ -1351,10 +1099,7 @@
       "点单"
     ],
     "id": 87,
-    "romanization": "sigdang",
-    "polite_form": "식당",
-    "plain_form": "식당",
-    "usage": "用于基础、点单场景的名词表达。"
+    "romanization": "sikdang"
   },
   {
     "korean": "물",
@@ -1367,10 +1112,7 @@
       "点单"
     ],
     "id": 88,
-    "romanization": "mul",
-    "polite_form": "물",
-    "plain_form": "물",
-    "usage": "用于基础、点单场景的名词表达。"
+    "romanization": "mul"
   },
   {
     "korean": "커피",
@@ -1383,10 +1125,7 @@
       "点单"
     ],
     "id": 89,
-    "romanization": "keopi",
-    "polite_form": "커피",
-    "plain_form": "커피",
-    "usage": "用于基础、点单场景的名词表达。"
+    "romanization": "keopi"
   },
   {
     "korean": "밥",
@@ -1399,10 +1138,7 @@
       "点单"
     ],
     "id": 90,
-    "romanization": "bab",
-    "polite_form": "밥",
-    "plain_form": "밥",
-    "usage": "用于基础、点单场景的名词表达。"
+    "romanization": "bap"
   },
   {
     "korean": "맛있어요",
@@ -1415,10 +1151,7 @@
       "点单"
     ],
     "id": 91,
-    "romanization": "mamisseoyo",
-    "polite_form": "맛있어요",
-    "plain_form": "맛있어요",
-    "usage": "用于基础、点单场景的形容词表达。"
+    "romanization": "masiseoyo"
   },
   {
     "korean": "배고파요",
@@ -1431,10 +1164,7 @@
       "日常"
     ],
     "id": 92,
-    "romanization": "baegopayo",
-    "polite_form": "배고파요",
-    "plain_form": "배고파요",
-    "usage": "用于基础、日常场景的形容词表达。"
+    "romanization": "baegopayo"
   },
   {
     "korean": "예뻐요",
@@ -1447,10 +1177,7 @@
       "感受"
     ],
     "id": 93,
-    "romanization": "yeppeoyo",
-    "polite_form": "예뻐요",
-    "plain_form": "예뻐요",
-    "usage": "用于基础、感受场景的形容词表达。"
+    "romanization": "yeppeoyo"
   },
   {
     "korean": "귀여워요",
@@ -1463,10 +1190,7 @@
       "追星"
     ],
     "id": 94,
-    "romanization": "gwiyeowoyo",
-    "polite_form": "귀여워요",
-    "plain_form": "귀여워요",
-    "usage": "用于基础、追星场景的形容词表达。"
+    "romanization": "gwiyeowoyo"
   },
   {
     "korean": "멋있어요",
@@ -1479,10 +1203,7 @@
       "追星"
     ],
     "id": 95,
-    "romanization": "meomisseoyo",
-    "polite_form": "멋있어요",
-    "plain_form": "멋있어요",
-    "usage": "用于基础、追星场景的形容词表达。"
+    "romanization": "meosiseoyo"
   },
   {
     "korean": "좋아요",
@@ -1495,10 +1216,7 @@
       "感受"
     ],
     "id": 96,
-    "romanization": "johayo",
-    "polite_form": "좋아요",
-    "plain_form": "좋아요",
-    "usage": "用于基础、感受场景的形容词表达。"
+    "romanization": "joayo"
   },
   {
     "korean": "재미있어요",
@@ -1511,10 +1229,7 @@
       "感受"
     ],
     "id": 97,
-    "romanization": "jaemiisseoyo",
-    "polite_form": "재미있어요",
-    "plain_form": "재미있어요",
-    "usage": "用于基础、感受场景的形容词表达。"
+    "romanization": "jaemiiseoyo"
   },
   {
     "korean": "행복해요",
@@ -1527,10 +1242,7 @@
       "感受"
     ],
     "id": 98,
-    "romanization": "haengboghaeyo",
-    "polite_form": "행복해요",
-    "plain_form": "행복해요",
-    "usage": "用于基础、感受场景的形容词表达。"
+    "romanization": "haengbokhaeyo"
   },
   {
     "korean": "슬퍼요",
@@ -1543,10 +1255,7 @@
       "感受"
     ],
     "id": 99,
-    "romanization": "seulpeoyo",
-    "polite_form": "슬퍼요",
-    "plain_form": "슬퍼요",
-    "usage": "用于基础、感受场景的形容词表达。"
+    "romanization": "seulpeoyo"
   },
   {
     "korean": "피곤해요",
@@ -1559,10 +1268,7 @@
       "日常"
     ],
     "id": 100,
-    "romanization": "pigonhaeyo",
-    "polite_form": "피곤해요",
-    "plain_form": "피곤해요",
-    "usage": "用于基础、日常场景的形容词表达。"
+    "romanization": "pigonhaeyo"
   },
   {
     "korean": "바빠요",
@@ -1575,10 +1281,7 @@
       "日常"
     ],
     "id": 101,
-    "romanization": "bappayo",
-    "polite_form": "바빠요",
-    "plain_form": "바빠요",
-    "usage": "用于基础、日常场景的形容词表达。"
+    "romanization": "bappayo"
   },
   {
     "korean": "아파요",
@@ -1591,10 +1294,7 @@
       "日常"
     ],
     "id": 102,
-    "romanization": "apayo",
-    "polite_form": "아파요",
-    "plain_form": "아파요",
-    "usage": "用于基础、日常场景的形容词表达。"
+    "romanization": "apayo"
   },
   {
     "korean": "추워요",
@@ -1607,10 +1307,7 @@
       "天气"
     ],
     "id": 103,
-    "romanization": "chuwoyo",
-    "polite_form": "추워요",
-    "plain_form": "추워요",
-    "usage": "用于基础、天气场景的形容词表达。"
+    "romanization": "chuwoyo"
   },
   {
     "korean": "더워요",
@@ -1623,10 +1320,7 @@
       "天气"
     ],
     "id": 104,
-    "romanization": "deowoyo",
-    "polite_form": "더워요",
-    "plain_form": "더워요",
-    "usage": "用于基础、天气场景的形容词表达。"
+    "romanization": "deowoyo"
   },
   {
     "korean": "커요",
@@ -1639,10 +1333,7 @@
       "描述"
     ],
     "id": 105,
-    "romanization": "keoyo",
-    "polite_form": "커요",
-    "plain_form": "커요",
-    "usage": "用于基础、描述场景的形容词表达。"
+    "romanization": "keoyo"
   },
   {
     "korean": "작아요",
@@ -1655,10 +1346,7 @@
       "描述"
     ],
     "id": 106,
-    "romanization": "jagayo",
-    "polite_form": "작아요",
-    "plain_form": "작아요",
-    "usage": "用于基础、描述场景的形容词表达。"
+    "romanization": "jagayo"
   },
   {
     "korean": "많아요",
@@ -1671,10 +1359,7 @@
       "描述"
     ],
     "id": 107,
-    "romanization": "manhayo",
-    "polite_form": "많아요",
-    "plain_form": "많아요",
-    "usage": "用于基础、描述场景的形容词表达。"
+    "romanization": "manhayo"
   },
   {
     "korean": "적어요",
@@ -1687,10 +1372,7 @@
       "描述"
     ],
     "id": 108,
-    "romanization": "jeogeoyo",
-    "polite_form": "적어요",
-    "plain_form": "적어요",
-    "usage": "用于基础、描述场景的形容词表达。"
+    "romanization": "jeogeoyo"
   },
   {
     "korean": "빨라요",
@@ -1703,10 +1385,7 @@
       "描述"
     ],
     "id": 109,
-    "romanization": "ppallayo",
-    "polite_form": "빨라요",
-    "plain_form": "빨라요",
-    "usage": "用于基础、描述场景的形容词表达。"
+    "romanization": "ppallayo"
   },
   {
     "korean": "느려요",
@@ -1719,10 +1398,7 @@
       "描述"
     ],
     "id": 110,
-    "romanization": "neuryeoyo",
-    "polite_form": "느려요",
-    "plain_form": "느려요",
-    "usage": "用于基础、描述场景的形容词表达。"
+    "romanization": "neuryeoyo"
   },
   {
     "korean": "새로워요",
@@ -1735,10 +1411,7 @@
       "描述"
     ],
     "id": 111,
-    "romanization": "saerowoyo",
-    "polite_form": "새로워요",
-    "plain_form": "새로워요",
-    "usage": "用于基础、描述场景的形容词表达。"
+    "romanization": "saerowoyo"
   },
   {
     "korean": "오래됐어요",
@@ -1751,10 +1424,7 @@
       "描述"
     ],
     "id": 112,
-    "romanization": "oraedwaesseoyo",
-    "polite_form": "오래됐어요",
-    "plain_form": "오래됐어요",
-    "usage": "用于基础、描述场景的形容词表达。"
+    "romanization": "oraedwaeseoyo"
   },
   {
     "korean": "정말",
@@ -1767,10 +1437,7 @@
       "对话"
     ],
     "id": 113,
-    "romanization": "jeongmal",
-    "polite_form": "정말",
-    "plain_form": "정말",
-    "usage": "用于基础、对话场景的副词表达。"
+    "romanization": "jeongmal"
   },
   {
     "korean": "너무",
@@ -1783,10 +1450,7 @@
       "对话"
     ],
     "id": 114,
-    "romanization": "neomu",
-    "polite_form": "너무",
-    "plain_form": "너무",
-    "usage": "用于基础、对话场景的副词表达。"
+    "romanization": "neomu"
   },
   {
     "korean": "아주",
@@ -1799,10 +1463,7 @@
       "对话"
     ],
     "id": 115,
-    "romanization": "aju",
-    "polite_form": "아주",
-    "plain_form": "아주",
-    "usage": "用于基础、对话场景的副词表达。"
+    "romanization": "aju"
   },
   {
     "korean": "조금",
@@ -1815,10 +1476,7 @@
       "对话"
     ],
     "id": 116,
-    "romanization": "jogeum",
-    "polite_form": "조금",
-    "plain_form": "조금",
-    "usage": "用于基础、对话场景的副词表达。"
+    "romanization": "jogeum"
   },
   {
     "korean": "같이",
@@ -1831,10 +1489,7 @@
       "对话"
     ],
     "id": 117,
-    "romanization": "gati",
-    "polite_form": "같이",
-    "plain_form": "같이",
-    "usage": "用于基础、对话场景的副词表达。"
+    "romanization": "gati"
   },
   {
     "korean": "다시",
@@ -1847,10 +1502,7 @@
       "对话"
     ],
     "id": 118,
-    "romanization": "dasi",
-    "polite_form": "다시",
-    "plain_form": "다시",
-    "usage": "用于基础、对话场景的副词表达。"
+    "romanization": "dasi"
   },
   {
     "korean": "항상",
@@ -1863,10 +1515,7 @@
       "对话"
     ],
     "id": 119,
-    "romanization": "hangsang",
-    "polite_form": "항상",
-    "plain_form": "항상",
-    "usage": "用于基础、对话场景的副词表达。"
+    "romanization": "hangsang"
   },
   {
     "korean": "아직",
@@ -1879,10 +1528,7 @@
       "对话"
     ],
     "id": 120,
-    "romanization": "ajig",
-    "polite_form": "아직",
-    "plain_form": "아직",
-    "usage": "用于基础、对话场景的副词表达。"
+    "romanization": "ajik"
   },
   {
     "korean": "이미",
@@ -1895,10 +1541,7 @@
       "对话"
     ],
     "id": 121,
-    "romanization": "imi",
-    "polite_form": "이미",
-    "plain_form": "이미",
-    "usage": "用于基础、对话场景的副词表达。"
+    "romanization": "imi"
   },
   {
     "korean": "그리고",
@@ -1911,10 +1554,7 @@
       "对话"
     ],
     "id": 122,
-    "romanization": "geurigo",
-    "polite_form": "그리고",
-    "plain_form": "그리고",
-    "usage": "用于基础、对话场景的连接词表达。"
+    "romanization": "geurigo"
   },
   {
     "korean": "하지만",
@@ -1927,10 +1567,7 @@
       "对话"
     ],
     "id": 123,
-    "romanization": "hajiman",
-    "polite_form": "하지만",
-    "plain_form": "하지만",
-    "usage": "用于基础、对话场景的连接词表达。"
+    "romanization": "hajiman"
   },
   {
     "korean": "그래서",
@@ -1943,10 +1580,7 @@
       "对话"
     ],
     "id": 124,
-    "romanization": "geuraeseo",
-    "polite_form": "그래서",
-    "plain_form": "그래서",
-    "usage": "用于基础、对话场景的连接词表达。"
+    "romanization": "geuraeseo"
   },
   {
     "korean": "또",
@@ -1959,10 +1593,7 @@
       "对话"
     ],
     "id": 125,
-    "romanization": "tto",
-    "polite_form": "또",
-    "plain_form": "또",
-    "usage": "用于基础、对话场景的副词表达。"
+    "romanization": "tto"
   },
   {
     "korean": "여기",
@@ -1975,10 +1606,7 @@
       "地点"
     ],
     "id": 126,
-    "romanization": "yeogi",
-    "polite_form": "여기",
-    "plain_form": "여기",
-    "usage": "用于基础、地点场景的名词表达。"
+    "romanization": "yeogi"
   },
   {
     "korean": "거기",
@@ -1991,10 +1619,7 @@
       "地点"
     ],
     "id": 127,
-    "romanization": "geogi",
-    "polite_form": "거기",
-    "plain_form": "거기",
-    "usage": "用于基础、地点场景的名词表达。"
+    "romanization": "geogi"
   },
   {
     "korean": "왼쪽",
@@ -2007,10 +1632,7 @@
       "出行"
     ],
     "id": 128,
-    "romanization": "oenjjog",
-    "polite_form": "왼쪽",
-    "plain_form": "왼쪽",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "oenjjok"
   },
   {
     "korean": "오른쪽",
@@ -2023,10 +1645,7 @@
       "出行"
     ],
     "id": 129,
-    "romanization": "oreuljjog",
-    "polite_form": "오른쪽",
-    "plain_form": "오른쪽",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "oreunjjok"
   },
   {
     "korean": "앞",
@@ -2039,10 +1658,7 @@
       "地点"
     ],
     "id": 130,
-    "romanization": "ap",
-    "polite_form": "앞",
-    "plain_form": "앞",
-    "usage": "用于基础、地点场景的名词表达。"
+    "romanization": "ap"
   },
   {
     "korean": "뒤",
@@ -2055,10 +1671,7 @@
       "地点"
     ],
     "id": 131,
-    "romanization": "dwi",
-    "polite_form": "뒤",
-    "plain_form": "뒤",
-    "usage": "用于基础、地点场景的名词表达。"
+    "romanization": "dwi"
   },
   {
     "korean": "위",
@@ -2071,10 +1684,7 @@
       "地点"
     ],
     "id": 132,
-    "romanization": "wi",
-    "polite_form": "위",
-    "plain_form": "위",
-    "usage": "用于基础、地点场景的名词表达。"
+    "romanization": "wi"
   },
   {
     "korean": "아래",
@@ -2087,10 +1697,7 @@
       "地点"
     ],
     "id": 133,
-    "romanization": "arae",
-    "polite_form": "아래",
-    "plain_form": "아래",
-    "usage": "用于基础、地点场景的名词表达。"
+    "romanization": "arae"
   },
   {
     "korean": "하나",
@@ -2103,10 +1710,7 @@
       "数字"
     ],
     "id": 134,
-    "romanization": "hana",
-    "polite_form": "하나",
-    "plain_form": "하나",
-    "usage": "用于基础、数字场景的数词表达。"
+    "romanization": "hana"
   },
   {
     "korean": "둘",
@@ -2119,10 +1723,7 @@
       "数字"
     ],
     "id": 135,
-    "romanization": "dul",
-    "polite_form": "둘",
-    "plain_form": "둘",
-    "usage": "用于基础、数字场景的数词表达。"
+    "romanization": "dul"
   },
   {
     "korean": "셋",
@@ -2135,10 +1736,7 @@
       "数字"
     ],
     "id": 136,
-    "romanization": "ses",
-    "polite_form": "셋",
-    "plain_form": "셋",
-    "usage": "用于基础、数字场景的数词表达。"
+    "romanization": "set"
   },
   {
     "korean": "넷",
@@ -2151,10 +1749,7 @@
       "数字"
     ],
     "id": 137,
-    "romanization": "nem",
-    "polite_form": "넷",
-    "plain_form": "넷",
-    "usage": "用于基础、数字场景的数词表达。"
+    "romanization": "net"
   },
   {
     "korean": "다섯",
@@ -2167,10 +1762,7 @@
       "数字"
     ],
     "id": 138,
-    "romanization": "daseos",
-    "polite_form": "다섯",
-    "plain_form": "다섯",
-    "usage": "用于基础、数字场景的数词表达。"
+    "romanization": "daseot"
   },
   {
     "korean": "얼마",
@@ -2183,10 +1775,7 @@
       "点单"
     ],
     "id": 139,
-    "romanization": "eolma",
-    "polite_form": "얼마",
-    "plain_form": "얼마",
-    "usage": "用于基础、点单场景的疑问词表达。"
+    "romanization": "eolma"
   },
   {
     "korean": "돈",
@@ -2199,10 +1788,7 @@
       "点单"
     ],
     "id": 140,
-    "romanization": "don",
-    "polite_form": "돈",
-    "plain_form": "돈",
-    "usage": "用于基础、点单场景的名词表达。"
+    "romanization": "don"
   },
   {
     "korean": "카드",
@@ -2215,10 +1801,7 @@
       "点单"
     ],
     "id": 141,
-    "romanization": "kadeu",
-    "polite_form": "카드",
-    "plain_form": "카드",
-    "usage": "用于基础、点单场景的名词表达。"
+    "romanization": "kadeu"
   },
   {
     "korean": "표",
@@ -2231,10 +1814,7 @@
       "线下"
     ],
     "id": 142,
-    "romanization": "pyo",
-    "polite_form": "표",
-    "plain_form": "표",
-    "usage": "用于基础、线下场景的名词表达。"
+    "romanization": "pyo"
   },
   {
     "korean": "줄",
@@ -2247,10 +1827,7 @@
       "线下"
     ],
     "id": 143,
-    "romanization": "jul",
-    "polite_form": "줄",
-    "plain_form": "줄",
-    "usage": "用于基础、线下场景的名词表达。"
+    "romanization": "jul"
   },
   {
     "korean": "번호",
@@ -2263,10 +1840,7 @@
       "线下"
     ],
     "id": 144,
-    "romanization": "beonho",
-    "polite_form": "번호",
-    "plain_form": "번호",
-    "usage": "用于基础、线下场景的名词表达。"
+    "romanization": "beonho"
   },
   {
     "korean": "자리",
@@ -2279,10 +1853,7 @@
       "线下"
     ],
     "id": 145,
-    "romanization": "jari",
-    "polite_form": "자리",
-    "plain_form": "자리",
-    "usage": "用于基础、线下场景的名词表达。"
+    "romanization": "jari"
   },
   {
     "korean": "입구",
@@ -2295,10 +1866,7 @@
       "线下"
     ],
     "id": 146,
-    "romanization": "ibgu",
-    "polite_form": "입구",
-    "plain_form": "입구",
-    "usage": "用于基础、线下场景的名词表达。"
+    "romanization": "ipgu"
   },
   {
     "korean": "출구",
@@ -2311,10 +1879,7 @@
       "出行"
     ],
     "id": 147,
-    "romanization": "chulgu",
-    "polite_form": "출구",
-    "plain_form": "출구",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "chulgu"
   },
   {
     "korean": "왼손",
@@ -2327,10 +1892,7 @@
       "身体"
     ],
     "id": 148,
-    "romanization": "oenson",
-    "polite_form": "왼손",
-    "plain_form": "왼손",
-    "usage": "用于基础、身体场景的名词表达。"
+    "romanization": "oenson"
   },
   {
     "korean": "오른손",
@@ -2343,10 +1905,7 @@
       "身体"
     ],
     "id": 149,
-    "romanization": "oreulson",
-    "polite_form": "오른손",
-    "plain_form": "오른손",
-    "usage": "用于基础、身体场景的名词表达。"
+    "romanization": "oreunson"
   },
   {
     "korean": "얼굴",
@@ -2359,10 +1918,7 @@
       "身体"
     ],
     "id": 150,
-    "romanization": "eolgul",
-    "polite_form": "얼굴",
-    "plain_form": "얼굴",
-    "usage": "用于基础、身体场景的名词表达。"
+    "romanization": "eolgul"
   },
   {
     "korean": "눈",
@@ -2375,10 +1931,7 @@
       "身体"
     ],
     "id": 151,
-    "romanization": "nun",
-    "polite_form": "눈",
-    "plain_form": "눈",
-    "usage": "用于基础、身体场景的名词表达。"
+    "romanization": "nun"
   },
   {
     "korean": "손",
@@ -2391,10 +1944,7 @@
       "身体"
     ],
     "id": 152,
-    "romanization": "son",
-    "polite_form": "손",
-    "plain_form": "손",
-    "usage": "用于基础、身体场景的名词表达。"
+    "romanization": "son"
   },
   {
     "korean": "마음",
@@ -2407,10 +1957,7 @@
       "感受"
     ],
     "id": 153,
-    "romanization": "maeum",
-    "polite_form": "마음",
-    "plain_form": "마음",
-    "usage": "用于基础、感受场景的名词表达。"
+    "romanization": "maeum"
   },
   {
     "korean": "기분",
@@ -2423,10 +1970,7 @@
       "感受"
     ],
     "id": 154,
-    "romanization": "gibun",
-    "polite_form": "기분",
-    "plain_form": "기분",
-    "usage": "用于基础、感受场景的名词表达。"
+    "romanization": "gibun"
   },
   {
     "korean": "생각",
@@ -2439,10 +1983,7 @@
       "对话"
     ],
     "id": 155,
-    "romanization": "saenggag",
-    "polite_form": "생각",
-    "plain_form": "생각",
-    "usage": "用于基础、对话场景的名词表达。"
+    "romanization": "saenggak"
   },
   {
     "korean": "꿈",
@@ -2455,10 +1996,7 @@
       "感受"
     ],
     "id": 156,
-    "romanization": "kkum",
-    "polite_form": "꿈",
-    "plain_form": "꿈",
-    "usage": "用于基础、感受场景的名词表达。"
+    "romanization": "kkum"
   },
   {
     "korean": "추억",
@@ -2471,10 +2009,7 @@
       "感受"
     ],
     "id": 157,
-    "romanization": "chueog",
-    "polite_form": "추억",
-    "plain_form": "추억",
-    "usage": "用于追星、感受场景的名词表达。"
+    "romanization": "chueok"
   },
   {
     "korean": "선물",
@@ -2487,10 +2022,7 @@
       "线下"
     ],
     "id": 158,
-    "romanization": "seonmul",
-    "polite_form": "선물",
-    "plain_form": "선물",
-    "usage": "用于基础、线下场景的名词表达。"
+    "romanization": "seonmul"
   },
   {
     "korean": "편지",
@@ -2503,10 +2035,7 @@
       "粉丝"
     ],
     "id": 159,
-    "romanization": "pyeonji",
-    "polite_form": "편지",
-    "plain_form": "편지",
-    "usage": "用于基础、粉丝场景的名词表达。"
+    "romanization": "pyeonji"
   },
   {
     "korean": "메시지",
@@ -2519,10 +2048,7 @@
       "泡泡"
     ],
     "id": 160,
-    "romanization": "mesiji",
-    "polite_form": "메시지",
-    "plain_form": "메시지",
-    "usage": "用于基础、泡泡场景的名词表达。"
+    "romanization": "mesiji"
   },
   {
     "korean": "댓글",
@@ -2535,10 +2061,7 @@
       "泡泡"
     ],
     "id": 161,
-    "romanization": "daesgeul",
-    "polite_form": "댓글",
-    "plain_form": "댓글",
-    "usage": "用于基础、泡泡场景的名词表达。"
+    "romanization": "daetgeul"
   },
   {
     "korean": "라이브",
@@ -2551,10 +2074,7 @@
       "泡泡"
     ],
     "id": 162,
-    "romanization": "raibeu",
-    "polite_form": "라이브",
-    "plain_form": "라이브",
-    "usage": "用于追星、泡泡场景的名词表达。"
+    "romanization": "raibeu"
   },
   {
     "korean": "연습",
@@ -2567,10 +2087,7 @@
       "日常"
     ],
     "id": 163,
-    "romanization": "yeonseub",
-    "polite_form": "연습",
-    "plain_form": "연습",
-    "usage": "用于追星、日常场景的名词表达。"
+    "romanization": "yeonseup"
   },
   {
     "korean": "녹음",
@@ -2583,10 +2100,7 @@
       "音乐"
     ],
     "id": 164,
-    "romanization": "nongeum",
-    "polite_form": "녹음",
-    "plain_form": "녹음",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "nogeum"
   },
   {
     "korean": "여행",
@@ -2599,10 +2113,7 @@
       "日常"
     ],
     "id": 165,
-    "romanization": "yeohaeng",
-    "polite_form": "여행",
-    "plain_form": "여행",
-    "usage": "用于基础、日常场景的名词表达。"
+    "romanization": "yeohaeng"
   },
   {
     "korean": "숙소",
@@ -2615,10 +2126,7 @@
       "出行"
     ],
     "id": 166,
-    "romanization": "sugso",
-    "polite_form": "숙소",
-    "plain_form": "숙소",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "sukso"
   },
   {
     "korean": "날씨",
@@ -2631,10 +2139,7 @@
       "天气"
     ],
     "id": 167,
-    "romanization": "nalssi",
-    "polite_form": "날씨",
-    "plain_form": "날씨",
-    "usage": "用于基础、天气场景的名词表达。"
+    "romanization": "nalssi"
   },
   {
     "korean": "비",
@@ -2647,10 +2152,7 @@
       "天气"
     ],
     "id": 168,
-    "romanization": "bi",
-    "polite_form": "비",
-    "plain_form": "비",
-    "usage": "用于基础、天气场景的名词表达。"
+    "romanization": "bi"
   },
   {
     "korean": "눈",
@@ -2663,10 +2165,7 @@
       "天气"
     ],
     "id": 169,
-    "romanization": "nun",
-    "polite_form": "눈",
-    "plain_form": "눈",
-    "usage": "用于基础、天气场景的名词表达。"
+    "romanization": "nun"
   },
   {
     "korean": "봄",
@@ -2679,10 +2178,7 @@
       "时间"
     ],
     "id": 170,
-    "romanization": "bom",
-    "polite_form": "봄",
-    "plain_form": "봄",
-    "usage": "用于基础、时间场景的名词表达。"
+    "romanization": "bom"
   },
   {
     "korean": "여름",
@@ -2695,10 +2191,7 @@
       "时间"
     ],
     "id": 171,
-    "romanization": "yeoreum",
-    "polite_form": "여름",
-    "plain_form": "여름",
-    "usage": "用于基础、时间场景的名词表达。"
+    "romanization": "yeoreum"
   },
   {
     "korean": "가을",
@@ -2711,10 +2204,7 @@
       "时间"
     ],
     "id": 172,
-    "romanization": "gaeul",
-    "polite_form": "가을",
-    "plain_form": "가을",
-    "usage": "用于基础、时间场景的名词表达。"
+    "romanization": "gaeul"
   },
   {
     "korean": "겨울",
@@ -2727,10 +2217,7 @@
       "时间"
     ],
     "id": 173,
-    "romanization": "gyeoul",
-    "polite_form": "겨울",
-    "plain_form": "겨울",
-    "usage": "用于基础、时间场景的名词表达。"
+    "romanization": "gyeoul"
   },
   {
     "korean": "빨리",
@@ -2743,10 +2230,7 @@
       "对话"
     ],
     "id": 174,
-    "romanization": "ppalli",
-    "polite_form": "빨리",
-    "plain_form": "빨리",
-    "usage": "用于基础、对话场景的副词表达。"
+    "romanization": "ppalli"
   },
   {
     "korean": "천천히",
@@ -2759,10 +2243,7 @@
       "对话"
     ],
     "id": 175,
-    "romanization": "cheoncheonhi",
-    "polite_form": "천천히",
-    "plain_form": "천천히",
-    "usage": "用于基础、对话场景的副词表达。"
+    "romanization": "cheoncheonhi"
   },
   {
     "korean": "잠깐",
@@ -2775,10 +2256,7 @@
       "对话"
     ],
     "id": 176,
-    "romanization": "jamkkan",
-    "polite_form": "잠깐",
-    "plain_form": "잠깐",
-    "usage": "用于基础、对话场景的副词表达。"
+    "romanization": "jamkkan"
   },
   {
     "korean": "같아요",
@@ -2791,10 +2269,7 @@
       "对话"
     ],
     "id": 177,
-    "romanization": "gatayo",
-    "polite_form": "같아요",
-    "plain_form": "같아요",
-    "usage": "用于基础、对话场景的表达表达。"
+    "romanization": "gatayo"
   },
   {
     "korean": "맞아요",
@@ -2807,10 +2282,7 @@
       "对话"
     ],
     "id": 178,
-    "romanization": "manayo",
-    "polite_form": "맞아요",
-    "plain_form": "맞아요",
-    "usage": "用于基础、对话场景的表达表达。"
+    "romanization": "majayo"
   },
   {
     "korean": "진짜요",
@@ -2823,10 +2295,7 @@
       "对话"
     ],
     "id": 179,
-    "romanization": "jinjjayo",
-    "polite_form": "진짜요",
-    "plain_form": "진짜요",
-    "usage": "用于基础、对话场景的表达表达。"
+    "romanization": "jinjjayo"
   },
   {
     "korean": "대박",
@@ -2839,10 +2308,7 @@
       "口语"
     ],
     "id": 180,
-    "romanization": "daebag",
-    "polite_form": "대박",
-    "plain_form": "대박",
-    "usage": "用于追星、口语场景的感叹词表达。"
+    "romanization": "daebak"
   },
   {
     "korean": "헐",
@@ -2855,10 +2321,7 @@
       "口语"
     ],
     "id": 181,
-    "romanization": "heol",
-    "polite_form": "헐",
-    "plain_form": "헐",
-    "usage": "用于追星、口语场景的感叹词表达。"
+    "romanization": "heol"
   },
   {
     "korean": "화이팅",
@@ -2871,10 +2334,7 @@
       "应援"
     ],
     "id": 182,
-    "romanization": "hwaiting",
-    "polite_form": "화이팅",
-    "plain_form": "화이팅",
-    "usage": "用于追星、应援场景的感叹词表达。"
+    "romanization": "hwaiting"
   },
   {
     "korean": "사랑해",
@@ -2887,10 +2347,7 @@
       "粉丝"
     ],
     "id": 183,
-    "romanization": "saranghae",
-    "polite_form": "사랑해",
-    "plain_form": "사랑해",
-    "usage": "用于追星、粉丝场景的表达表达。"
+    "romanization": "saranghae"
   },
   {
     "korean": "보고 싶어",
@@ -2903,10 +2360,7 @@
       "粉丝"
     ],
     "id": 184,
-    "romanization": "bogo sipeo",
-    "polite_form": "보고 싶어",
-    "plain_form": "보고 싶어",
-    "usage": "用于追星、粉丝场景的表达表达。"
+    "romanization": "bogo sipeo"
   },
   {
     "korean": "고생했어요",
@@ -2919,10 +2373,7 @@
       "应援"
     ],
     "id": 186,
-    "romanization": "gosaenghaesseoyo",
-    "polite_form": "고생했어요",
-    "plain_form": "고생했어요",
-    "usage": "用于追星、应援场景的表达表达。"
+    "romanization": "gosaenghaeseoyo"
   },
   {
     "korean": "수고했어요",
@@ -2935,10 +2386,7 @@
       "日常"
     ],
     "id": 187,
-    "romanization": "sugohaesseoyo",
-    "polite_form": "수고했어요",
-    "plain_form": "수고했어요",
-    "usage": "用于基础、日常场景的表达表达。"
+    "romanization": "sugohaeseoyo"
   },
   {
     "korean": "축하해요",
@@ -2951,10 +2399,7 @@
       "祝福"
     ],
     "id": 188,
-    "romanization": "chughahaeyo",
-    "polite_form": "축하해요",
-    "plain_form": "축하해요",
-    "usage": "用于基础、祝福场景的表达表达。"
+    "romanization": "chukhahaeyo"
   },
   {
     "korean": "생일",
@@ -2967,10 +2412,7 @@
       "祝福"
     ],
     "id": 189,
-    "romanization": "saengil",
-    "polite_form": "생일",
-    "plain_form": "생일",
-    "usage": "用于基础、祝福场景的名词表达。"
+    "romanization": "saeil"
   },
   {
     "korean": "생일 축하해요",
@@ -2983,10 +2425,7 @@
       "祝福"
     ],
     "id": 190,
-    "romanization": "saengil chughahaeyo",
-    "polite_form": "생일 축하해요",
-    "plain_form": "생일 축하해요",
-    "usage": "用于基础、祝福场景的表达表达。"
+    "romanization": "saeil chukhahaeyo"
   },
   {
     "korean": "잘 자요",
@@ -2999,10 +2438,7 @@
       "日常"
     ],
     "id": 191,
-    "romanization": "jal jayo",
-    "polite_form": "잘 자요",
-    "plain_form": "잘 자요",
-    "usage": "用于基础、日常场景的表达表达。"
+    "romanization": "jal jayo"
   },
   {
     "korean": "좋은 아침이에요",
@@ -3015,10 +2451,7 @@
       "问候"
     ],
     "id": 192,
-    "romanization": "joheun achimieyo",
-    "polite_form": "좋은 아침이에요",
-    "plain_form": "좋은 아침이에요",
-    "usage": "用于基础、问候场景的表达表达。"
+    "romanization": "joeun achimieyo"
   },
   {
     "korean": "조심히 가세요",
@@ -3031,10 +2464,7 @@
       "问候"
     ],
     "id": 193,
-    "romanization": "josimhi gaseyo",
-    "polite_form": "조심히 가세요",
-    "plain_form": "조심히 가세요",
-    "usage": "用于基础、问候场景的表达表达。"
+    "romanization": "josimhi gaseyo"
   },
   {
     "korean": "도와주세요",
@@ -3047,10 +2477,7 @@
       "求助"
     ],
     "id": 194,
-    "romanization": "dowajuseyo",
-    "polite_form": "도와주세요",
-    "plain_form": "도와주세요",
-    "usage": "用于基础、求助场景的表达表达。"
+    "romanization": "dowajuseyo"
   },
   {
     "korean": "이해해요",
@@ -3063,10 +2490,7 @@
       "对话"
     ],
     "id": 195,
-    "romanization": "ihaehaeyo",
-    "polite_form": "이해해요",
-    "plain_form": "이해해요",
-    "usage": "用于基础、对话场景的动词表达。"
+    "romanization": "ihaehaeyo"
   },
   {
     "korean": "이해 못 해요",
@@ -3079,10 +2503,7 @@
       "对话"
     ],
     "id": 196,
-    "romanization": "ihae mom haeyo",
-    "polite_form": "이해 못 해요",
-    "plain_form": "이해 못 해요",
-    "usage": "用于基础、对话场景的表达表达。"
+    "romanization": "ihae mot haeyo"
   },
   {
     "korean": "한국어",
@@ -3095,10 +2516,7 @@
       "学习"
     ],
     "id": 197,
-    "romanization": "hangugeo",
-    "polite_form": "한국어",
-    "plain_form": "한국어",
-    "usage": "用于基础、学习场景的名词表达。"
+    "romanization": "hangugeo"
   },
   {
     "korean": "중국어",
@@ -3111,10 +2529,7 @@
       "学习"
     ],
     "id": 198,
-    "romanization": "junggugeo",
-    "polite_form": "중국어",
-    "plain_form": "중국어",
-    "usage": "用于基础、学习场景的名词表达。"
+    "romanization": "junggugeo"
   },
   {
     "korean": "영어",
@@ -3127,10 +2542,7 @@
       "学习"
     ],
     "id": 199,
-    "romanization": "yeongeo",
-    "polite_form": "영어",
-    "plain_form": "영어",
-    "usage": "用于基础、学习场景的名词表达。"
+    "romanization": "yeoeo"
   },
   {
     "korean": "공부",
@@ -3143,10 +2555,7 @@
       "学习"
     ],
     "id": 200,
-    "romanization": "gongbu",
-    "polite_form": "공부",
-    "plain_form": "공부",
-    "usage": "用于基础、学习场景的名词表达。"
+    "romanization": "gongbu"
   },
   {
     "korean": "배워요",
@@ -3159,10 +2568,7 @@
       "学习"
     ],
     "id": 201,
-    "romanization": "baewoyo",
-    "polite_form": "배워요",
-    "plain_form": "배워요",
-    "usage": "用于基础、学习场景的动词表达。"
+    "romanization": "baewoyo"
   },
   {
     "korean": "연습해요",
@@ -3175,10 +2581,7 @@
       "学习"
     ],
     "id": 202,
-    "romanization": "yeonseubhaeyo",
-    "polite_form": "연습해요",
-    "plain_form": "연습해요",
-    "usage": "用于基础、学习场景的动词表达。"
+    "romanization": "yeonseuphaeyo"
   },
   {
     "korean": "읽어요",
@@ -3191,10 +2594,7 @@
       "学习"
     ],
     "id": 203,
-    "romanization": "ilgeoyo",
-    "polite_form": "읽어요",
-    "plain_form": "읽어요",
-    "usage": "用于基础、学习场景的动词表达。"
+    "romanization": "ilgeoyo"
   },
   {
     "korean": "써요",
@@ -3207,10 +2607,7 @@
       "学习"
     ],
     "id": 204,
-    "romanization": "sseoyo",
-    "polite_form": "써요",
-    "plain_form": "써요",
-    "usage": "用于基础、学习场景的动词表达。"
+    "romanization": "sseoyo"
   },
   {
     "korean": "질문",
@@ -3223,10 +2620,7 @@
       "学习"
     ],
     "id": 205,
-    "romanization": "jilmun",
-    "polite_form": "질문",
-    "plain_form": "질문",
-    "usage": "用于基础、学习场景的名词表达。"
+    "romanization": "jilmun"
   },
   {
     "korean": "답",
@@ -3239,10 +2633,7 @@
       "学习"
     ],
     "id": 206,
-    "romanization": "dab",
-    "polite_form": "답",
-    "plain_form": "답",
-    "usage": "用于基础、学习场景的名词表达。"
+    "romanization": "dap"
   },
   {
     "korean": "발음",
@@ -3255,10 +2646,7 @@
       "学习"
     ],
     "id": 207,
-    "romanization": "baleum",
-    "polite_form": "발음",
-    "plain_form": "발음",
-    "usage": "用于基础、学习场景的名词表达。"
+    "romanization": "bareum"
   },
   {
     "korean": "뜻",
@@ -3271,10 +2659,7 @@
       "学习"
     ],
     "id": 208,
-    "romanization": "tteus",
-    "polite_form": "뜻",
-    "plain_form": "뜻",
-    "usage": "用于基础、学习场景的名词表达。"
+    "romanization": "tteut"
   },
   {
     "korean": "단어",
@@ -3287,10 +2672,7 @@
       "学习"
     ],
     "id": 209,
-    "romanization": "daneo",
-    "polite_form": "단어",
-    "plain_form": "단어",
-    "usage": "用于基础、学习场景的名词表达。"
+    "romanization": "daneo"
   },
   {
     "korean": "문장",
@@ -3303,10 +2685,7 @@
       "学习"
     ],
     "id": 210,
-    "romanization": "munjang",
-    "polite_form": "문장",
-    "plain_form": "문장",
-    "usage": "用于基础、学习场景的名词表达。"
+    "romanization": "munjang"
   },
   {
     "korean": "팬미팅",
@@ -3319,10 +2698,7 @@
       "线下活动"
     ],
     "id": 211,
-    "romanization": "paenmiting",
-    "polite_form": "팬미팅",
-    "plain_form": "팬미팅",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "paenmiting"
   },
   {
     "korean": "사인회",
@@ -3335,10 +2711,7 @@
       "线下活动"
     ],
     "id": 212,
-    "romanization": "sainhoe",
-    "polite_form": "사인회",
-    "plain_form": "사인회",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "sainhoe"
   },
   {
     "korean": "음악 방송",
@@ -3351,10 +2724,7 @@
       "打歌"
     ],
     "id": 213,
-    "romanization": "eumag bangsong",
-    "polite_form": "음악 방송",
-    "plain_form": "음악 방송",
-    "usage": "用于追星、打歌场景的名词表达。"
+    "romanization": "eumak bangsong"
   },
   {
     "korean": "사전 녹화",
@@ -3367,10 +2737,7 @@
       "打歌"
     ],
     "id": 214,
-    "romanization": "sajeon nonghwa",
-    "polite_form": "사전 녹화",
-    "plain_form": "사전 녹화",
-    "usage": "用于追星、打歌场景的名词表达。"
+    "romanization": "sajeon nokhwa"
   },
   {
     "korean": "출근길",
@@ -3383,10 +2750,7 @@
       "线下活动"
     ],
     "id": 215,
-    "romanization": "chulgeungil",
-    "polite_form": "출근길",
-    "plain_form": "출근길",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "chulgeungil"
   },
   {
     "korean": "퇴근길",
@@ -3399,10 +2763,7 @@
       "线下活动"
     ],
     "id": 216,
-    "romanization": "toegeungil",
-    "polite_form": "퇴근길",
-    "plain_form": "퇴근길",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "toegeungil"
   },
   {
     "korean": "공개방송",
@@ -3415,10 +2776,7 @@
       "打歌"
     ],
     "id": 217,
-    "romanization": "gonggaebangsong",
-    "polite_form": "공개방송",
-    "plain_form": "공개방송",
-    "usage": "用于追星、打歌场景的名词表达。"
+    "romanization": "gonggaebangsong"
   },
   {
     "korean": "방청",
@@ -3431,10 +2789,7 @@
       "线下活动"
     ],
     "id": 218,
-    "romanization": "bangcheong",
-    "polite_form": "방청",
-    "plain_form": "방청",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "bangcheong"
   },
   {
     "korean": "입장",
@@ -3447,10 +2802,7 @@
       "线下活动"
     ],
     "id": 219,
-    "romanization": "ibjang",
-    "polite_form": "입장",
-    "plain_form": "입장",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "ipjang"
   },
   {
     "korean": "퇴장",
@@ -3463,10 +2815,7 @@
       "线下活动"
     ],
     "id": 220,
-    "romanization": "toejang",
-    "polite_form": "퇴장",
-    "plain_form": "퇴장",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "toejang"
   },
   {
     "korean": "대기",
@@ -3479,10 +2828,7 @@
       "线下活动"
     ],
     "id": 221,
-    "romanization": "daegi",
-    "polite_form": "대기",
-    "plain_form": "대기",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "daegi"
   },
   {
     "korean": "대기실",
@@ -3495,10 +2841,7 @@
       "线下活动"
     ],
     "id": 222,
-    "romanization": "daegisil",
-    "polite_form": "대기실",
-    "plain_form": "대기실",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "daegisil"
   },
   {
     "korean": "본인 확인",
@@ -3511,10 +2854,7 @@
       "线下活动"
     ],
     "id": 223,
-    "romanization": "bonin hwagin",
-    "polite_form": "본인 확인",
-    "plain_form": "본인 확인",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "bonin hwagin"
   },
   {
     "korean": "신분증",
@@ -3527,10 +2867,7 @@
       "线下活动"
     ],
     "id": 224,
-    "romanization": "sinbunjeung",
-    "polite_form": "신분증",
-    "plain_form": "신분증",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "sinbunjeung"
   },
   {
     "korean": "여권",
@@ -3543,10 +2880,7 @@
       "出行"
     ],
     "id": 225,
-    "romanization": "yeogwon",
-    "polite_form": "여권",
-    "plain_form": "여권",
-    "usage": "用于追星、出行场景的名词表达。"
+    "romanization": "yeogwon"
   },
   {
     "korean": "티켓",
@@ -3559,10 +2893,7 @@
       "线下活动"
     ],
     "id": 226,
-    "romanization": "tikes",
-    "polite_form": "티켓",
-    "plain_form": "티켓",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "tiket"
   },
   {
     "korean": "예매",
@@ -3575,10 +2906,7 @@
       "购票"
     ],
     "id": 227,
-    "romanization": "yemae",
-    "polite_form": "예매",
-    "plain_form": "예매",
-    "usage": "用于追星、购票场景的名词表达。"
+    "romanization": "yemae"
   },
   {
     "korean": "취소표",
@@ -3591,10 +2919,7 @@
       "购票"
     ],
     "id": 228,
-    "romanization": "chwisopyo",
-    "polite_form": "취소표",
-    "plain_form": "취소표",
-    "usage": "用于追星、购票场景的名词表达。"
+    "romanization": "chwisopyo"
   },
   {
     "korean": "현장 수령",
@@ -3607,10 +2932,7 @@
       "线下活动"
     ],
     "id": 229,
-    "romanization": "hyeonjang suryeong",
-    "polite_form": "현장 수령",
-    "plain_form": "현장 수령",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "hyeonjang suryeong"
   },
   {
     "korean": "좌석",
@@ -3623,10 +2945,7 @@
       "演唱会"
     ],
     "id": 230,
-    "romanization": "jwaseog",
-    "polite_form": "좌석",
-    "plain_form": "좌석",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "jwaseok"
   },
   {
     "korean": "스탠딩",
@@ -3639,10 +2958,7 @@
       "演唱会"
     ],
     "id": 231,
-    "romanization": "seutaending",
-    "polite_form": "스탠딩",
-    "plain_form": "스탠딩",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "seutaending"
   },
   {
     "korean": "지정석",
@@ -3655,10 +2971,7 @@
       "演唱会"
     ],
     "id": 232,
-    "romanization": "jijeongseog",
-    "polite_form": "지정석",
-    "plain_form": "지정석",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "jijeongseok"
   },
   {
     "korean": "구역",
@@ -3671,10 +2984,7 @@
       "演唱会"
     ],
     "id": 233,
-    "romanization": "guyeog",
-    "polite_form": "구역",
-    "plain_form": "구역",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "guyeok"
   },
   {
     "korean": "번호표",
@@ -3687,10 +2997,7 @@
       "线下活动"
     ],
     "id": 234,
-    "romanization": "beonhopyo",
-    "polite_form": "번호표",
-    "plain_form": "번호표",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "beonhopyo"
   },
   {
     "korean": "손목띠",
@@ -3703,10 +3010,7 @@
       "线下活动"
     ],
     "id": 235,
-    "romanization": "sonmongtti",
-    "polite_form": "손목띠",
-    "plain_form": "손목띠",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "sonmoktti"
   },
   {
     "korean": "응원봉",
@@ -3719,10 +3023,7 @@
       "应援"
     ],
     "id": 236,
-    "romanization": "eungwonbong",
-    "polite_form": "응원봉",
-    "plain_form": "응원봉",
-    "usage": "用于追星、应援场景的名词表达。"
+    "romanization": "euwonbong"
   },
   {
     "korean": "슬로건",
@@ -3735,10 +3036,7 @@
       "应援"
     ],
     "id": 237,
-    "romanization": "seullogeon",
-    "polite_form": "슬로건",
-    "plain_form": "슬로건",
-    "usage": "用于追星、应援场景的名词表达。"
+    "romanization": "seullogeon"
   },
   {
     "korean": "배너",
@@ -3751,10 +3049,7 @@
       "应援"
     ],
     "id": 238,
-    "romanization": "baeneo",
-    "polite_form": "배너",
-    "plain_form": "배너",
-    "usage": "用于追星、应援场景的名词表达。"
+    "romanization": "baeneo"
   },
   {
     "korean": "피켓",
@@ -3767,10 +3062,7 @@
       "应援"
     ],
     "id": 239,
-    "romanization": "pikes",
-    "polite_form": "피켓",
-    "plain_form": "피켓",
-    "usage": "用于追星、应援场景的名词表达。"
+    "romanization": "piket"
   },
   {
     "korean": "현수막",
@@ -3783,10 +3075,7 @@
       "应援"
     ],
     "id": 240,
-    "romanization": "hyeonsumang",
-    "polite_form": "현수막",
-    "plain_form": "현수막",
-    "usage": "用于追星、应援场景的名词表达。"
+    "romanization": "hyeonsumak"
   },
   {
     "korean": "응원법",
@@ -3799,10 +3088,7 @@
       "应援"
     ],
     "id": 241,
-    "romanization": "eungwonbeob",
-    "polite_form": "응원법",
-    "plain_form": "응원법",
-    "usage": "用于追星、应援场景的名词表达。"
+    "romanization": "euwonbeop"
   },
   {
     "korean": "떼창",
@@ -3815,10 +3101,7 @@
       "演唱会"
     ],
     "id": 242,
-    "romanization": "ttechang",
-    "polite_form": "떼창",
-    "plain_form": "떼창",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "ttechang"
   },
   {
     "korean": "앵콜",
@@ -3831,10 +3114,7 @@
       "演唱会"
     ],
     "id": 243,
-    "romanization": "aengkol",
-    "polite_form": "앵콜",
-    "plain_form": "앵콜",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "aengkol"
   },
   {
     "korean": "멘트",
@@ -3847,10 +3127,7 @@
       "演唱会"
     ],
     "id": 244,
-    "romanization": "menteu",
-    "polite_form": "멘트",
-    "plain_form": "멘트",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "menteu"
   },
   {
     "korean": "토크",
@@ -3863,10 +3140,7 @@
       "演唱会"
     ],
     "id": 245,
-    "romanization": "tokeu",
-    "polite_form": "토크",
-    "plain_form": "토크",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "tokeu"
   },
   {
     "korean": "셋리스트",
@@ -3879,10 +3153,7 @@
       "演唱会"
     ],
     "id": 246,
-    "romanization": "sesriseuteu",
-    "polite_form": "셋리스트",
-    "plain_form": "셋리스트",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "setriseuteu"
   },
   {
     "korean": "오프닝",
@@ -3895,10 +3166,7 @@
       "演唱会"
     ],
     "id": 247,
-    "romanization": "opeuning",
-    "polite_form": "오프닝",
-    "plain_form": "오프닝",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "opeuning"
   },
   {
     "korean": "엔딩",
@@ -3911,10 +3179,7 @@
       "演唱会"
     ],
     "id": 248,
-    "romanization": "ending",
-    "polite_form": "엔딩",
-    "plain_form": "엔딩",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "ending"
   },
   {
     "korean": "무대인사",
@@ -3927,10 +3192,7 @@
       "线下活动"
     ],
     "id": 249,
-    "romanization": "mudaeinsa",
-    "polite_form": "무대인사",
-    "plain_form": "무대인사",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "mudaeinsa"
   },
   {
     "korean": "하이터치",
@@ -3943,10 +3205,7 @@
       "线下活动"
     ],
     "id": 250,
-    "romanization": "haiteochi",
-    "polite_form": "하이터치",
-    "plain_form": "하이터치",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "haiteochi"
   },
   {
     "korean": "포토타임",
@@ -3959,10 +3218,7 @@
       "线下活动"
     ],
     "id": 251,
-    "romanization": "pototaim",
-    "polite_form": "포토타임",
-    "plain_form": "포토타임",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "pototaim"
   },
   {
     "korean": "단체 사진",
@@ -3975,10 +3231,7 @@
       "线下活动"
     ],
     "id": 252,
-    "romanization": "danche sajin",
-    "polite_form": "단체 사진",
-    "plain_form": "단체 사진",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "danche sajin"
   },
   {
     "korean": "개인 사진",
@@ -3991,10 +3244,7 @@
       "线下活动"
     ],
     "id": 253,
-    "romanization": "gaein sajin",
-    "polite_form": "개인 사진",
-    "plain_form": "개인 사진",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "gaein sajin"
   },
   {
     "korean": "셀카",
@@ -4007,10 +3257,7 @@
       "数字生活"
     ],
     "id": 254,
-    "romanization": "selka",
-    "polite_form": "셀카",
-    "plain_form": "셀카",
-    "usage": "用于追星、数字生活场景的名词表达。"
+    "romanization": "selka"
   },
   {
     "korean": "영상통화",
@@ -4023,10 +3270,7 @@
       "线上互动"
     ],
     "id": 255,
-    "romanization": "yeongsangtonghwa",
-    "polite_form": "영상통화",
-    "plain_form": "영상통화",
-    "usage": "用于追星、线上互动场景的名词表达。"
+    "romanization": "yeongsangtonghwa"
   },
   {
     "korean": "통화",
@@ -4039,10 +3283,7 @@
       "数字生活"
     ],
     "id": 256,
-    "romanization": "tonghwa",
-    "polite_form": "통화",
-    "plain_form": "통화",
-    "usage": "用于基础、数字生活场景的名词表达。"
+    "romanization": "tonghwa"
   },
   {
     "korean": "마이크",
@@ -4055,10 +3296,7 @@
       "演唱会"
     ],
     "id": 257,
-    "romanization": "maikeu",
-    "polite_form": "마이크",
-    "plain_form": "마이크",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "maikeu"
   },
   {
     "korean": "스피커",
@@ -4071,10 +3309,7 @@
       "演唱会"
     ],
     "id": 258,
-    "romanization": "seupikeo",
-    "polite_form": "스피커",
-    "plain_form": "스피커",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "seupikeo"
   },
   {
     "korean": "카메라",
@@ -4087,10 +3322,7 @@
       "线下活动"
     ],
     "id": 259,
-    "romanization": "kamera",
-    "polite_form": "카메라",
-    "plain_form": "카메라",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "kamera"
   },
   {
     "korean": "촬영",
@@ -4103,10 +3335,7 @@
       "线下活动"
     ],
     "id": 260,
-    "romanization": "chwalyeong",
-    "polite_form": "촬영",
-    "plain_form": "촬영",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "chwaryeong"
   },
   {
     "korean": "녹화",
@@ -4119,10 +3348,7 @@
       "线下活动"
     ],
     "id": 261,
-    "romanization": "nonghwa",
-    "polite_form": "녹화",
-    "plain_form": "녹화",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "nokhwa"
   },
   {
     "korean": "플래시",
@@ -4135,10 +3361,7 @@
       "线下活动"
     ],
     "id": 262,
-    "romanization": "peullaesi",
-    "polite_form": "플래시",
-    "plain_form": "플래시",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "peullaesi"
   },
   {
     "korean": "금지",
@@ -4151,10 +3374,7 @@
       "线下活动"
     ],
     "id": 263,
-    "romanization": "geumji",
-    "polite_form": "금지",
-    "plain_form": "금지",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "geumji"
   },
   {
     "korean": "가능",
@@ -4167,10 +3387,7 @@
       "线下活动"
     ],
     "id": 264,
-    "romanization": "ganeung",
-    "polite_form": "가능",
-    "plain_form": "가능",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "ganeung"
   },
   {
     "korean": "불가능",
@@ -4183,10 +3400,7 @@
       "线下活动"
     ],
     "id": 265,
-    "romanization": "bulganeung",
-    "polite_form": "불가능",
-    "plain_form": "불가능",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "bulganeung"
   },
   {
     "korean": "줄 서기",
@@ -4199,10 +3413,7 @@
       "线下活动"
     ],
     "id": 266,
-    "romanization": "jul seogi",
-    "polite_form": "줄 서기",
-    "plain_form": "줄 서기",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "jul seogi"
   },
   {
     "korean": "순서",
@@ -4215,10 +3426,7 @@
       "线下活动"
     ],
     "id": 267,
-    "romanization": "sunseo",
-    "polite_form": "순서",
-    "plain_form": "순서",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "sunseo"
   },
   {
     "korean": "차례",
@@ -4231,10 +3439,7 @@
       "线下活动"
     ],
     "id": 268,
-    "romanization": "charye",
-    "polite_form": "차례",
-    "plain_form": "차례",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "charye"
   },
   {
     "korean": "끝났어요",
@@ -4247,10 +3452,7 @@
       "线下活动"
     ],
     "id": 269,
-    "romanization": "kkeutnasseoyo",
-    "polite_form": "끝났어요",
-    "plain_form": "끝났어요",
-    "usage": "用于追星、线下活动场景的表达表达。"
+    "romanization": "kkeunnaseoyo"
   },
   {
     "korean": "시작해요",
@@ -4263,10 +3465,7 @@
       "线下活动"
     ],
     "id": 270,
-    "romanization": "sijaghaeyo",
-    "polite_form": "시작해요",
-    "plain_form": "시작해요",
-    "usage": "用于追星、线下活动场景的表达表达。"
+    "romanization": "sijakhaeyo"
   },
   {
     "korean": "잠시만요",
@@ -4279,10 +3478,7 @@
       "线下活动"
     ],
     "id": 271,
-    "romanization": "jamsimanyo",
-    "polite_form": "잠시만요",
-    "plain_form": "잠시만요",
-    "usage": "用于追星、线下活动场景的表达表达。"
+    "romanization": "jamsimanyo"
   },
   {
     "korean": "여기요",
@@ -4295,10 +3491,7 @@
       "线下活动"
     ],
     "id": 272,
-    "romanization": "yeogiyo",
-    "polite_form": "여기요",
-    "plain_form": "여기요",
-    "usage": "用于追星、线下活动场景的表达表达。"
+    "romanization": "yeogiyo"
   },
   {
     "korean": "저기요",
@@ -4311,10 +3504,7 @@
       "线下活动"
     ],
     "id": 273,
-    "romanization": "jeogiyo",
-    "polite_form": "저기요",
-    "plain_form": "저기요",
-    "usage": "用于追星、线下活动场景的表达表达。"
+    "romanization": "jeogiyo"
   },
   {
     "korean": "사진 찍어도 돼요",
@@ -4327,10 +3517,7 @@
       "线下活动"
     ],
     "id": 274,
-    "romanization": "sajin jjigeodo dwaeyo",
-    "polite_form": "사진 찍어도 돼요",
-    "plain_form": "사진 찍어도 돼요",
-    "usage": "用于追星、线下活动场景的表达表达。"
+    "romanization": "sajin jjigeodo dwaeyo"
   },
   {
     "korean": "영상 찍어도 돼요",
@@ -4343,10 +3530,7 @@
       "线下活动"
     ],
     "id": 275,
-    "romanization": "yeongsang jjigeodo dwaeyo",
-    "polite_form": "영상 찍어도 돼요",
-    "plain_form": "영상 찍어도 돼요",
-    "usage": "用于追星、线下活动场景的表达表达。"
+    "romanization": "yeongsang jjigeodo dwaeyo"
   },
   {
     "korean": "사인 부탁드려요",
@@ -4359,10 +3543,7 @@
       "签售"
     ],
     "id": 276,
-    "romanization": "sain butagdeuryeoyo",
-    "polite_form": "사인 부탁드려요",
-    "plain_form": "사인 부탁드려요",
-    "usage": "用于追星、签售场景的表达表达。"
+    "romanization": "sain butakdeuryeoyo"
   },
   {
     "korean": "이름 써 주세요",
@@ -4375,10 +3556,7 @@
       "签售"
     ],
     "id": 277,
-    "romanization": "ireum sseo juseyo",
-    "polite_form": "이름 써 주세요",
-    "plain_form": "이름 써 주세요",
-    "usage": "用于追星、签售场景的表达表达。"
+    "romanization": "ireum sseo juseyo"
   },
   {
     "korean": "여기에 해 주세요",
@@ -4391,10 +3569,7 @@
       "签售"
     ],
     "id": 278,
-    "romanization": "yeogie hae juseyo",
-    "polite_form": "여기에 해 주세요",
-    "plain_form": "여기에 해 주세요",
-    "usage": "用于追星、签售场景的表达表达。"
+    "romanization": "yeogie hae juseyo"
   },
   {
     "korean": "감사해요 정말",
@@ -4407,10 +3582,7 @@
       "互动"
     ],
     "id": 279,
-    "romanization": "gamsahaeyo jeongmal",
-    "polite_form": "감사해요 정말",
-    "plain_form": "감사해요 정말",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "gamsahaeyo jeongmal"
   },
   {
     "korean": "오늘 너무 예뻐요",
@@ -4423,10 +3595,7 @@
       "互动"
     ],
     "id": 280,
-    "romanization": "oneul neomu yeppeoyo",
-    "polite_form": "오늘 너무 예뻐요",
-    "plain_form": "오늘 너무 예뻐요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "oneul neomu yeppeoyo"
   },
   {
     "korean": "오늘 너무 멋있어요",
@@ -4439,10 +3608,7 @@
       "互动"
     ],
     "id": 281,
-    "romanization": "oneul neomu meomisseoyo",
-    "polite_form": "오늘 너무 멋있어요",
-    "plain_form": "오늘 너무 멋있어요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "oneul neomu meosiseoyo"
   },
   {
     "korean": "무대 최고예요",
@@ -4455,10 +3621,7 @@
       "互动"
     ],
     "id": 282,
-    "romanization": "mudae choegoyeyo",
-    "polite_form": "무대 최고예요",
-    "plain_form": "무대 최고예요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "mudae choegoyeyo"
   },
   {
     "korean": "노래 너무 좋아요",
@@ -4471,10 +3634,7 @@
       "互动"
     ],
     "id": 283,
-    "romanization": "norae neomu johayo",
-    "polite_form": "노래 너무 좋아요",
-    "plain_form": "노래 너무 좋아요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "norae neomu joayo"
   },
   {
     "korean": "항상 응원할게요",
@@ -4487,10 +3647,7 @@
       "互动"
     ],
     "id": 284,
-    "romanization": "hangsang eungwonhalgeyo",
-    "polite_form": "항상 응원할게요",
-    "plain_form": "항상 응원할게요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "hangsang euwonhalgeyo"
   },
   {
     "korean": "건강하세요",
@@ -4503,10 +3660,7 @@
       "互动"
     ],
     "id": 285,
-    "romanization": "geonganghaseyo",
-    "polite_form": "건강하세요",
-    "plain_form": "건강하세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "geonganghaseyo"
   },
   {
     "korean": "밥 잘 챙겨 드세요",
@@ -4519,10 +3673,7 @@
       "互动"
     ],
     "id": 286,
-    "romanization": "bab jal chaenggyeo deuseyo",
-    "polite_form": "밥 잘 챙겨 드세요",
-    "plain_form": "밥 잘 챙겨 드세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "bap jal chaenggyeo deuseyo"
   },
   {
     "korean": "푹 쉬세요",
@@ -4535,10 +3686,7 @@
       "互动"
     ],
     "id": 287,
-    "romanization": "pug swiseyo",
-    "polite_form": "푹 쉬세요",
-    "plain_form": "푹 쉬세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "puk swiseyo"
   },
   {
     "korean": "다음에 또 만나요",
@@ -4551,10 +3699,7 @@
       "互动"
     ],
     "id": 288,
-    "romanization": "daeume tto mannayo",
-    "polite_form": "다음에 또 만나요",
-    "plain_form": "다음에 또 만나요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "daeume tto mannayo"
   },
   {
     "korean": "한국에 또 올게요",
@@ -4567,10 +3712,7 @@
       "互动"
     ],
     "id": 289,
-    "romanization": "hanguge tto olgeyo",
-    "polite_form": "한국에 또 올게요",
-    "plain_form": "한국에 또 올게요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "hanguge tto olgeyo"
   },
   {
     "korean": "기억해 주세요",
@@ -4583,10 +3725,7 @@
       "互动"
     ],
     "id": 290,
-    "romanization": "gieoghae juseyo",
-    "polite_form": "기억해 주세요",
-    "plain_form": "기억해 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "gieokhae juseyo"
   },
   {
     "korean": "제 이름은",
@@ -4599,10 +3738,7 @@
       "互动"
     ],
     "id": 291,
-    "romanization": "je ireumeun",
-    "polite_form": "제 이름은",
-    "plain_form": "제 이름은",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "je ireumeun"
   },
   {
     "korean": "처음 왔어요",
@@ -4615,10 +3751,7 @@
       "互动"
     ],
     "id": 292,
-    "romanization": "cheoeum wasseoyo",
-    "polite_form": "처음 왔어요",
-    "plain_form": "처음 왔어요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "cheoeum waseoyo"
   },
   {
     "korean": "오랜만이에요",
@@ -4631,10 +3764,7 @@
       "互动"
     ],
     "id": 293,
-    "romanization": "oraelmanieyo",
-    "polite_form": "오랜만이에요",
-    "plain_form": "오랜만이에요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "oraenmanieyo"
   },
   {
     "korean": "오늘 기분 어때요",
@@ -4647,10 +3777,7 @@
       "互动"
     ],
     "id": 294,
-    "romanization": "oneul gibun eottaeyo",
-    "polite_form": "오늘 기분 어때요",
-    "plain_form": "오늘 기분 어때요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "oneul gibun eottaeyo"
   },
   {
     "korean": "요즘 어떻게 지내요",
@@ -4663,10 +3790,7 @@
       "互动"
     ],
     "id": 295,
-    "romanization": "yojeum eotteohge jinaeyo",
-    "polite_form": "요즘 어떻게 지내요",
-    "plain_form": "요즘 어떻게 지내요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "yojeum eotteoge jinaeyo"
   },
   {
     "korean": "요즘 뭐 해요",
@@ -4679,10 +3803,7 @@
       "互动"
     ],
     "id": 296,
-    "romanization": "yojeum mwo haeyo",
-    "polite_form": "요즘 뭐 해요",
-    "plain_form": "요즘 뭐 해요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "yojeum mwo haeyo"
   },
   {
     "korean": "제일 좋아하는",
@@ -4695,10 +3816,7 @@
       "互动"
     ],
     "id": 297,
-    "romanization": "jeil johahaneun",
-    "polite_form": "제일 좋아하는",
-    "plain_form": "제일 좋아하는",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "jeil joahaneun"
   },
   {
     "korean": "추천해 주세요",
@@ -4711,10 +3829,7 @@
       "互动"
     ],
     "id": 298,
-    "romanization": "chucheonhae juseyo",
-    "polite_form": "추천해 주세요",
-    "plain_form": "추천해 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "chucheonhae juseyo"
   },
   {
     "korean": "한마디 해 주세요",
@@ -4727,10 +3842,7 @@
       "互动"
     ],
     "id": 299,
-    "romanization": "hanmadi hae juseyo",
-    "polite_form": "한마디 해 주세요",
-    "plain_form": "한마디 해 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "hanmadi hae juseyo"
   },
   {
     "korean": "포즈 해 주세요",
@@ -4743,10 +3855,7 @@
       "互动"
     ],
     "id": 300,
-    "romanization": "pojeu hae juseyo",
-    "polite_form": "포즈 해 주세요",
-    "plain_form": "포즈 해 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "pojeu hae juseyo"
   },
   {
     "korean": "하트 해 주세요",
@@ -4759,10 +3868,7 @@
       "互动"
     ],
     "id": 301,
-    "romanization": "hateu hae juseyo",
-    "polite_form": "하트 해 주세요",
-    "plain_form": "하트 해 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "hateu hae juseyo"
   },
   {
     "korean": "손 흔들어 주세요",
@@ -4775,10 +3881,7 @@
       "互动"
     ],
     "id": 302,
-    "romanization": "son heundeuleo juseyo",
-    "polite_form": "손 흔들어 주세요",
-    "plain_form": "손 흔들어 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "son heundeureo juseyo"
   },
   {
     "korean": "눈 마주쳐 주세요",
@@ -4791,10 +3894,7 @@
       "互动"
     ],
     "id": 303,
-    "romanization": "nun majuchyeo juseyo",
-    "polite_form": "눈 마주쳐 주세요",
-    "plain_form": "눈 마주쳐 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "nun majuchyeo juseyo"
   },
   {
     "korean": "사랑한다고 해 주세요",
@@ -4807,10 +3907,7 @@
       "互动"
     ],
     "id": 304,
-    "romanization": "saranghandago hae juseyo",
-    "polite_form": "사랑한다고 해 주세요",
-    "plain_form": "사랑한다고 해 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "saranghandago hae juseyo"
   },
   {
     "korean": "애교 해 주세요",
@@ -4823,10 +3920,7 @@
       "互动"
     ],
     "id": 305,
-    "romanization": "aegyo hae juseyo",
-    "polite_form": "애교 해 주세요",
-    "plain_form": "애교 해 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "aegyo hae juseyo"
   },
   {
     "korean": "한국어를 잘 못해요",
@@ -4839,10 +3933,7 @@
       "互动"
     ],
     "id": 306,
-    "romanization": "hangugeoreul jal momhaeyo",
-    "polite_form": "한국어를 잘 못해요",
-    "plain_form": "한국어를 잘 못해요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "hangugeoreul jal mothaeyo"
   },
   {
     "korean": "천천히 말해 주세요",
@@ -4855,10 +3946,7 @@
       "互动"
     ],
     "id": 307,
-    "romanization": "cheoncheonhi malhae juseyo",
-    "polite_form": "천천히 말해 주세요",
-    "plain_form": "천천히 말해 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "cheoncheonhi malhae juseyo"
   },
   {
     "korean": "다시 말해 주세요",
@@ -4871,10 +3959,7 @@
       "互动"
     ],
     "id": 308,
-    "romanization": "dasi malhae juseyo",
-    "polite_form": "다시 말해 주세요",
-    "plain_form": "다시 말해 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "dasi malhae juseyo"
   },
   {
     "korean": "잘 들었어요",
@@ -4887,10 +3972,7 @@
       "互动"
     ],
     "id": 309,
-    "romanization": "jal deuleosseoyo",
-    "polite_form": "잘 들었어요",
-    "plain_form": "잘 들었어요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "jal deureoseoyo"
   },
   {
     "korean": "못 들었어요",
@@ -4903,10 +3985,7 @@
       "互动"
     ],
     "id": 310,
-    "romanization": "mom deuleosseoyo",
-    "polite_form": "못 들었어요",
-    "plain_form": "못 들었어요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "mot deureoseoyo"
   },
   {
     "korean": "알아들었어요",
@@ -4919,10 +3998,7 @@
       "互动"
     ],
     "id": 311,
-    "romanization": "aladeuleosseoyo",
-    "polite_form": "알아들었어요",
-    "plain_form": "알아들었어요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "aradeureoseoyo"
   },
   {
     "korean": "번역해 주세요",
@@ -4935,10 +4011,7 @@
       "互动"
     ],
     "id": 312,
-    "romanization": "beonyeoghae juseyo",
-    "polite_form": "번역해 주세요",
-    "plain_form": "번역해 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "beonyeokhae juseyo"
   },
   {
     "korean": "진심이에요",
@@ -4951,10 +4024,7 @@
       "互动"
     ],
     "id": 313,
-    "romanization": "jinsimieyo",
-    "polite_form": "진심이에요",
-    "plain_form": "진심이에요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "jinsimieyo"
   },
   {
     "korean": "약속해요",
@@ -4967,10 +4037,7 @@
       "互动"
     ],
     "id": 314,
-    "romanization": "yagsoghaeyo",
-    "polite_form": "약속해요",
-    "plain_form": "약속해요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "yaksokhaeyo"
   },
   {
     "korean": "약속",
@@ -4983,10 +4050,7 @@
       "互动"
     ],
     "id": 315,
-    "romanization": "yagsog",
-    "polite_form": "약속",
-    "plain_form": "약속",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "yaksok"
   },
   {
     "korean": "비밀",
@@ -4999,10 +4063,7 @@
       "互动"
     ],
     "id": 316,
-    "romanization": "bimil",
-    "polite_form": "비밀",
-    "plain_form": "비밀",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "bimil"
   },
   {
     "korean": "소원",
@@ -5015,10 +4076,7 @@
       "互动"
     ],
     "id": 317,
-    "romanization": "sowon",
-    "polite_form": "소원",
-    "plain_form": "소원",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "sowon"
   },
   {
     "korean": "소원 들어 주세요",
@@ -5031,10 +4089,7 @@
       "互动"
     ],
     "id": 318,
-    "romanization": "sowon deuleo juseyo",
-    "polite_form": "소원 들어 주세요",
-    "plain_form": "소원 들어 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "sowon deureo juseyo"
   },
   {
     "korean": "행운",
@@ -5047,10 +4102,7 @@
       "互动"
     ],
     "id": 319,
-    "romanization": "haengun",
-    "polite_form": "행운",
-    "plain_form": "행운",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "haeun"
   },
   {
     "korean": "용기",
@@ -5063,10 +4115,7 @@
       "互动"
     ],
     "id": 320,
-    "romanization": "yonggi",
-    "polite_form": "용기",
-    "plain_form": "용기",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "yonggi"
   },
   {
     "korean": "힘",
@@ -5079,10 +4128,7 @@
       "互动"
     ],
     "id": 321,
-    "romanization": "him",
-    "polite_form": "힘",
-    "plain_form": "힘",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "him"
   },
   {
     "korean": "힘내세요",
@@ -5095,10 +4141,7 @@
       "互动"
     ],
     "id": 322,
-    "romanization": "himnaeseyo",
-    "polite_form": "힘내세요",
-    "plain_form": "힘내세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "himnaeseyo"
   },
   {
     "korean": "힘들어요",
@@ -5111,10 +4154,7 @@
       "感受"
     ],
     "id": 323,
-    "romanization": "himdeuleoyo",
-    "polite_form": "힘들어요",
-    "plain_form": "힘들어요",
-    "usage": "用于基础、感受场景的形容词表达。"
+    "romanization": "himdeureoyo"
   },
   {
     "korean": "걱정",
@@ -5127,10 +4167,7 @@
       "感受"
     ],
     "id": 324,
-    "romanization": "geogjeong",
-    "polite_form": "걱정",
-    "plain_form": "걱정",
-    "usage": "用于基础、感受场景的名词表达。"
+    "romanization": "geokjeong"
   },
   {
     "korean": "걱정하지 마세요",
@@ -5143,10 +4180,7 @@
       "互动"
     ],
     "id": 325,
-    "romanization": "geogjeonghaji maseyo",
-    "polite_form": "걱정하지 마세요",
-    "plain_form": "걱정하지 마세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "geokjeonghaji maseyo"
   },
   {
     "korean": "웃어요",
@@ -5159,10 +4193,7 @@
       "感受"
     ],
     "id": 326,
-    "romanization": "useoyo",
-    "polite_form": "웃어요",
-    "plain_form": "웃어요",
-    "usage": "用于基础、感受场景的动词表达。"
+    "romanization": "useoyo"
   },
   {
     "korean": "울어요",
@@ -5175,10 +4206,7 @@
       "感受"
     ],
     "id": 327,
-    "romanization": "uleoyo",
-    "polite_form": "울어요",
-    "plain_form": "울어요",
-    "usage": "用于基础、感受场景的动词表达。"
+    "romanization": "ureoyo"
   },
   {
     "korean": "웃음",
@@ -5191,10 +4219,7 @@
       "互动"
     ],
     "id": 328,
-    "romanization": "useum",
-    "polite_form": "웃음",
-    "plain_form": "웃음",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "useum"
   },
   {
     "korean": "미소",
@@ -5207,10 +4232,7 @@
       "互动"
     ],
     "id": 329,
-    "romanization": "miso",
-    "polite_form": "미소",
-    "plain_form": "미소",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "miso"
   },
   {
     "korean": "목소리",
@@ -5223,10 +4245,7 @@
       "互动"
     ],
     "id": 330,
-    "romanization": "mongsori",
-    "polite_form": "목소리",
-    "plain_form": "목소리",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "moksori"
   },
   {
     "korean": "눈빛",
@@ -5239,10 +4258,7 @@
       "互动"
     ],
     "id": 331,
-    "romanization": "nunbich",
-    "polite_form": "눈빛",
-    "plain_form": "눈빛",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "nunbit"
   },
   {
     "korean": "표정",
@@ -5255,10 +4271,7 @@
       "互动"
     ],
     "id": 332,
-    "romanization": "pyojeong",
-    "polite_form": "표정",
-    "plain_form": "표정",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "pyojeong"
   },
   {
     "korean": "분위기",
@@ -5271,10 +4284,7 @@
       "互动"
     ],
     "id": 333,
-    "romanization": "bunwigi",
-    "polite_form": "분위기",
-    "plain_form": "분위기",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "bunwigi"
   },
   {
     "korean": "설레요",
@@ -5287,10 +4297,7 @@
       "感受"
     ],
     "id": 334,
-    "romanization": "seolleyo",
-    "polite_form": "설레요",
-    "plain_form": "설레요",
-    "usage": "用于追星、感受场景的形容词表达。"
+    "romanization": "seolleyo"
   },
   {
     "korean": "떨려요",
@@ -5303,10 +4310,7 @@
       "感受"
     ],
     "id": 335,
-    "romanization": "tteollyeoyo",
-    "polite_form": "떨려요",
-    "plain_form": "떨려요",
-    "usage": "用于追星、感受场景的形容词表达。"
+    "romanization": "tteollyeoyo"
   },
   {
     "korean": "감동이에요",
@@ -5319,10 +4323,7 @@
       "感受"
     ],
     "id": 336,
-    "romanization": "gamdongieyo",
-    "polite_form": "감동이에요",
-    "plain_form": "감동이에요",
-    "usage": "用于追星、感受场景的表达表达。"
+    "romanization": "gamdoieyo"
   },
   {
     "korean": "자랑스러워요",
@@ -5335,10 +4336,7 @@
       "感受"
     ],
     "id": 337,
-    "romanization": "jarangseureowoyo",
-    "polite_form": "자랑스러워요",
-    "plain_form": "자랑스러워요",
-    "usage": "用于追星、感受场景的形容词表达。"
+    "romanization": "jarangseureowoyo"
   },
   {
     "korean": "귀여워 죽겠어요",
@@ -5351,10 +4349,7 @@
       "感受"
     ],
     "id": 338,
-    "romanization": "gwiyeowo juggesseoyo",
-    "polite_form": "귀여워 죽겠어요",
-    "plain_form": "귀여워 죽겠어요",
-    "usage": "用于追星、感受场景的表达表达。"
+    "romanization": "gwiyeowo jukgeseoyo"
   },
   {
     "korean": "잘생겼어요",
@@ -5367,10 +4362,7 @@
       "感受"
     ],
     "id": 339,
-    "romanization": "jalsaenggyeosseoyo",
-    "polite_form": "잘생겼어요",
-    "plain_form": "잘생겼어요",
-    "usage": "用于追星、感受场景的形容词表达。"
+    "romanization": "jalsaenggyeoseoyo"
   },
   {
     "korean": "빛나요",
@@ -5383,10 +4375,7 @@
       "感受"
     ],
     "id": 340,
-    "romanization": "bichnayo",
-    "polite_form": "빛나요",
-    "plain_form": "빛나요",
-    "usage": "用于追星、感受场景的动词表达。"
+    "romanization": "binnayo"
   },
   {
     "korean": "완벽해요",
@@ -5399,10 +4388,7 @@
       "感受"
     ],
     "id": 341,
-    "romanization": "wanbyeoghaeyo",
-    "polite_form": "완벽해요",
-    "plain_form": "완벽해요",
-    "usage": "用于追星、感受场景的形容词表达。"
+    "romanization": "wanbyeokhaeyo"
   },
   {
     "korean": "레전드",
@@ -5415,10 +4401,7 @@
       "口语"
     ],
     "id": 342,
-    "romanization": "rejeondeu",
-    "polite_form": "레전드",
-    "plain_form": "레전드",
-    "usage": "用于饭圈、口语场景的名词表达。"
+    "romanization": "rejeondeu"
   },
   {
     "korean": "최고",
@@ -5431,10 +4414,7 @@
       "口语"
     ],
     "id": 343,
-    "romanization": "choego",
-    "polite_form": "최고",
-    "plain_form": "최고",
-    "usage": "用于饭圈、口语场景的名词表达。"
+    "romanization": "choego"
   },
   {
     "korean": "최애",
@@ -5447,10 +4427,7 @@
       "饭圈用语"
     ],
     "id": 344,
-    "romanization": "choeae",
-    "polite_form": "최애",
-    "plain_form": "최애",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "choeae"
   },
   {
     "korean": "차애",
@@ -5463,10 +4440,7 @@
       "饭圈用语"
     ],
     "id": 345,
-    "romanization": "chaae",
-    "polite_form": "차애",
-    "plain_form": "차애",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "chaae"
   },
   {
     "korean": "입덕",
@@ -5479,10 +4453,7 @@
       "饭圈用语"
     ],
     "id": 346,
-    "romanization": "ibdeog",
-    "polite_form": "입덕",
-    "plain_form": "입덕",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "ipdeok"
   },
   {
     "korean": "덕질",
@@ -5495,10 +4466,7 @@
       "饭圈用语"
     ],
     "id": 347,
-    "romanization": "deogjil",
-    "polite_form": "덕질",
-    "plain_form": "덕질",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "deokjil"
   },
   {
     "korean": "탈덕",
@@ -5511,10 +4479,7 @@
       "饭圈用语"
     ],
     "id": 348,
-    "romanization": "taldeog",
-    "polite_form": "탈덕",
-    "plain_form": "탈덕",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "taldeok"
   },
   {
     "korean": "휴덕",
@@ -5527,10 +4492,7 @@
       "饭圈用语"
     ],
     "id": 349,
-    "romanization": "hyudeog",
-    "polite_form": "휴덕",
-    "plain_form": "휴덕",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "hyudeok"
   },
   {
     "korean": "덕메",
@@ -5543,10 +4505,7 @@
       "饭圈用语"
     ],
     "id": 350,
-    "romanization": "deogme",
-    "polite_form": "덕메",
-    "plain_form": "덕메",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "deongme"
   },
   {
     "korean": "덕친",
@@ -5559,10 +4518,7 @@
       "饭圈用语"
     ],
     "id": 351,
-    "romanization": "deogchin",
-    "polite_form": "덕친",
-    "plain_form": "덕친",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "deokchin"
   },
   {
     "korean": "팬덤",
@@ -5575,10 +4531,7 @@
       "饭圈用语"
     ],
     "id": 352,
-    "romanization": "paendeom",
-    "polite_form": "팬덤",
-    "plain_form": "팬덤",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "paendeom"
   },
   {
     "korean": "팬싸",
@@ -5591,10 +4544,7 @@
       "饭圈用语"
     ],
     "id": 353,
-    "romanization": "paenssa",
-    "polite_form": "팬싸",
-    "plain_form": "팬싸",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "paenssa"
   },
   {
     "korean": "영통팬싸",
@@ -5607,10 +4557,7 @@
       "饭圈用语"
     ],
     "id": 354,
-    "romanization": "yeongtongpaenssa",
-    "polite_form": "영통팬싸",
-    "plain_form": "영통팬싸",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "yeongtongpaenssa"
   },
   {
     "korean": "공방",
@@ -5623,10 +4570,7 @@
       "饭圈用语"
     ],
     "id": 355,
-    "romanization": "gongbang",
-    "polite_form": "공방",
-    "plain_form": "공방",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "gongbang"
   },
   {
     "korean": "막방",
@@ -5639,10 +4583,7 @@
       "饭圈用语"
     ],
     "id": 356,
-    "romanization": "mangbang",
-    "polite_form": "막방",
-    "plain_form": "막방",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "makbang"
   },
   {
     "korean": "음방",
@@ -5655,10 +4596,7 @@
       "饭圈用语"
     ],
     "id": 357,
-    "romanization": "eumbang",
-    "polite_form": "음방",
-    "plain_form": "음방",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "eumbang"
   },
   {
     "korean": "직캠",
@@ -5671,10 +4609,7 @@
       "数字生活"
     ],
     "id": 358,
-    "romanization": "jigkaem",
-    "polite_form": "직캠",
-    "plain_form": "직캠",
-    "usage": "用于饭圈、数字生活场景的名词表达。"
+    "romanization": "jikkaem"
   },
   {
     "korean": "입덕 직캠",
@@ -5687,10 +4622,7 @@
       "数字生活"
     ],
     "id": 359,
-    "romanization": "ibdeog jigkaem",
-    "polite_form": "입덕 직캠",
-    "plain_form": "입덕 직캠",
-    "usage": "用于饭圈、数字生活场景的名词表达。"
+    "romanization": "ipdeok jikkaem"
   },
   {
     "korean": "팬캠",
@@ -5703,10 +4635,7 @@
       "数字生活"
     ],
     "id": 360,
-    "romanization": "paenkaem",
-    "polite_form": "팬캠",
-    "plain_form": "팬캠",
-    "usage": "用于饭圈、数字生活场景的名词表达。"
+    "romanization": "paenkaem"
   },
   {
     "korean": "홈마",
@@ -5719,10 +4648,7 @@
       "饭圈用语"
     ],
     "id": 361,
-    "romanization": "homma",
-    "polite_form": "홈마",
-    "plain_form": "홈마",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "homma"
   },
   {
     "korean": "홈마스터",
@@ -5735,10 +4661,7 @@
       "饭圈用语"
     ],
     "id": 362,
-    "romanization": "hommaseuteo",
-    "polite_form": "홈마스터",
-    "plain_form": "홈마스터",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "hommaseuteo"
   },
   {
     "korean": "마스터",
@@ -5751,10 +4674,7 @@
       "饭圈用语"
     ],
     "id": 363,
-    "romanization": "maseuteo",
-    "polite_form": "마스터",
-    "plain_form": "마스터",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "maseuteo"
   },
   {
     "korean": "포카",
@@ -5767,10 +4687,7 @@
       "饭圈用语"
     ],
     "id": 364,
-    "romanization": "poka",
-    "polite_form": "포카",
-    "plain_form": "포카",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "poka"
   },
   {
     "korean": "포카 교환",
@@ -5783,10 +4700,7 @@
       "周边"
     ],
     "id": 365,
-    "romanization": "poka gyohwan",
-    "polite_form": "포카 교환",
-    "plain_form": "포카 교환",
-    "usage": "用于饭圈、周边场景的名词表达。"
+    "romanization": "poka gyohwan"
   },
   {
     "korean": "양도",
@@ -5799,10 +4713,7 @@
       "购票"
     ],
     "id": 366,
-    "romanization": "yangdo",
-    "polite_form": "양도",
-    "plain_form": "양도",
-    "usage": "用于饭圈、购票场景的名词表达。"
+    "romanization": "yangdo"
   },
   {
     "korean": "양수",
@@ -5815,10 +4726,7 @@
       "购票"
     ],
     "id": 367,
-    "romanization": "yangsu",
-    "polite_form": "양수",
-    "plain_form": "양수",
-    "usage": "用于饭圈、购票场景的名词表达。"
+    "romanization": "yangsu"
   },
   {
     "korean": "대리",
@@ -5831,10 +4739,7 @@
       "饭圈用语"
     ],
     "id": 368,
-    "romanization": "daeri",
-    "polite_form": "대리",
-    "plain_form": "대리",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "daeri"
   },
   {
     "korean": "굿즈",
@@ -5847,10 +4752,7 @@
       "周边"
     ],
     "id": 369,
-    "romanization": "gusjeu",
-    "polite_form": "굿즈",
-    "plain_form": "굿즈",
-    "usage": "用于饭圈、周边场景的名词表达。"
+    "romanization": "gutjeu"
   },
   {
     "korean": "특전",
@@ -5863,10 +4765,7 @@
       "周边"
     ],
     "id": 370,
-    "romanization": "teugjeon",
-    "polite_form": "특전",
-    "plain_form": "특전",
-    "usage": "用于饭圈、周边场景的名词表达。"
+    "romanization": "teukjeon"
   },
   {
     "korean": "미공포",
@@ -5879,10 +4778,7 @@
       "周边"
     ],
     "id": 371,
-    "romanization": "migongpo",
-    "polite_form": "미공포",
-    "plain_form": "미공포",
-    "usage": "用于饭圈、周边场景的名词表达。"
+    "romanization": "migongpo"
   },
   {
     "korean": "공구",
@@ -5895,10 +4791,7 @@
       "饭圈用语"
     ],
     "id": 372,
-    "romanization": "gonggu",
-    "polite_form": "공구",
-    "plain_form": "공구",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "gonggu"
   },
   {
     "korean": "공동구매",
@@ -5911,10 +4804,7 @@
       "饭圈用语"
     ],
     "id": 373,
-    "romanization": "gongdonggumae",
-    "polite_form": "공동구매",
-    "plain_form": "공동구매",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "gongdonggumae"
   },
   {
     "korean": "분철",
@@ -5927,10 +4817,7 @@
       "饭圈用语"
     ],
     "id": 374,
-    "romanization": "buncheol",
-    "polite_form": "분철",
-    "plain_form": "분철",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "buncheol"
   },
   {
     "korean": "배송",
@@ -5943,10 +4830,7 @@
       "周边"
     ],
     "id": 375,
-    "romanization": "baesong",
-    "polite_form": "배송",
-    "plain_form": "배송",
-    "usage": "用于饭圈、周边场景的名词表达。"
+    "romanization": "baesong"
   },
   {
     "korean": "포장",
@@ -5959,10 +4843,7 @@
       "周边"
     ],
     "id": 376,
-    "romanization": "pojang",
-    "polite_form": "포장",
-    "plain_form": "포장",
-    "usage": "用于饭圈、周边场景的名词表达。"
+    "romanization": "pojang"
   },
   {
     "korean": "개봉",
@@ -5975,10 +4856,7 @@
       "周边"
     ],
     "id": 377,
-    "romanization": "gaebong",
-    "polite_form": "개봉",
-    "plain_form": "개봉",
-    "usage": "用于饭圈、周边场景的名词表达。"
+    "romanization": "gaebong"
   },
   {
     "korean": "교환",
@@ -5991,10 +4869,7 @@
       "周边"
     ],
     "id": 378,
-    "romanization": "gyohwan",
-    "polite_form": "교환",
-    "plain_form": "교환",
-    "usage": "用于饭圈、周边场景的名词表达。"
+    "romanization": "gyohwan"
   },
   {
     "korean": "판매",
@@ -6007,10 +4882,7 @@
       "周边"
     ],
     "id": 379,
-    "romanization": "panmae",
-    "polite_form": "판매",
-    "plain_form": "판매",
-    "usage": "用于饭圈、周边场景的名词表达。"
+    "romanization": "panmae"
   },
   {
     "korean": "구매",
@@ -6023,10 +4895,7 @@
       "周边"
     ],
     "id": 380,
-    "romanization": "gumae",
-    "polite_form": "구매",
-    "plain_form": "구매",
-    "usage": "用于饭圈、周边场景的名词表达。"
+    "romanization": "gumae"
   },
   {
     "korean": "품절",
@@ -6039,10 +4908,7 @@
       "周边"
     ],
     "id": 381,
-    "romanization": "pumjeol",
-    "polite_form": "품절",
-    "plain_form": "품절",
-    "usage": "用于饭圈、周边场景的名词表达。"
+    "romanization": "pumjeol"
   },
   {
     "korean": "재고",
@@ -6055,10 +4921,7 @@
       "周边"
     ],
     "id": 382,
-    "romanization": "jaego",
-    "polite_form": "재고",
-    "plain_form": "재고",
-    "usage": "用于饭圈、周边场景的名词表达。"
+    "romanization": "jaego"
   },
   {
     "korean": "공식",
@@ -6071,10 +4934,7 @@
       "饭圈用语"
     ],
     "id": 383,
-    "romanization": "gongsig",
-    "polite_form": "공식",
-    "plain_form": "공식",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "gongsik"
   },
   {
     "korean": "비공식",
@@ -6087,10 +4947,7 @@
       "饭圈用语"
     ],
     "id": 384,
-    "romanization": "bigongsig",
-    "polite_form": "비공식",
-    "plain_form": "비공식",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "bigongsik"
   },
   {
     "korean": "컴백",
@@ -6103,10 +4960,7 @@
       "饭圈用语"
     ],
     "id": 385,
-    "romanization": "keombaeg",
-    "polite_form": "컴백",
-    "plain_form": "컴백",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "keombaek"
   },
   {
     "korean": "데뷔",
@@ -6119,10 +4973,7 @@
       "饭圈用语"
     ],
     "id": 386,
-    "romanization": "debwi",
-    "polite_form": "데뷔",
-    "plain_form": "데뷔",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "debwi"
   },
   {
     "korean": "신곡",
@@ -6135,10 +4986,7 @@
       "音乐"
     ],
     "id": 387,
-    "romanization": "singog",
-    "polite_form": "신곡",
-    "plain_form": "신곡",
-    "usage": "用于饭圈、音乐场景的名词表达。"
+    "romanization": "singok"
   },
   {
     "korean": "타이틀곡",
@@ -6151,10 +4999,7 @@
       "音乐"
     ],
     "id": 388,
-    "romanization": "taiteulgog",
-    "polite_form": "타이틀곡",
-    "plain_form": "타이틀곡",
-    "usage": "用于饭圈、音乐场景的名词表达。"
+    "romanization": "taiteulgok"
   },
   {
     "korean": "수록곡",
@@ -6167,10 +5012,7 @@
       "音乐"
     ],
     "id": 389,
-    "romanization": "suroggog",
-    "polite_form": "수록곡",
-    "plain_form": "수록곡",
-    "usage": "用于饭圈、音乐场景的名词表达。"
+    "romanization": "surokgok"
   },
   {
     "korean": "뮤직비디오",
@@ -6183,10 +5025,7 @@
       "数字生活"
     ],
     "id": 390,
-    "romanization": "myujigbidio",
-    "polite_form": "뮤직비디오",
-    "plain_form": "뮤직비디오",
-    "usage": "用于饭圈、数字生活场景的名词表达。"
+    "romanization": "myujikbidio"
   },
   {
     "korean": "티저",
@@ -6199,10 +5038,7 @@
       "数字生活"
     ],
     "id": 391,
-    "romanization": "tijeo",
-    "polite_form": "티저",
-    "plain_form": "티저",
-    "usage": "用于饭圈、数字生活场景的名词表达。"
+    "romanization": "tijeo"
   },
   {
     "korean": "콘셉트",
@@ -6215,10 +5051,7 @@
       "造型"
     ],
     "id": 392,
-    "romanization": "konsebteu",
-    "polite_form": "콘셉트",
-    "plain_form": "콘셉트",
-    "usage": "用于饭圈、造型场景的名词表达。"
+    "romanization": "konsepteu"
   },
   {
     "korean": "스포",
@@ -6231,10 +5064,7 @@
       "饭圈用语"
     ],
     "id": 393,
-    "romanization": "seupo",
-    "polite_form": "스포",
-    "plain_form": "스포",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "seupo"
   },
   {
     "korean": "스포일러",
@@ -6247,10 +5077,7 @@
       "饭圈用语"
     ],
     "id": 394,
-    "romanization": "seupoilleo",
-    "polite_form": "스포일러",
-    "plain_form": "스포일러",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "seupoilleo"
   },
   {
     "korean": "떡밥",
@@ -6263,10 +5090,7 @@
       "饭圈用语"
     ],
     "id": 395,
-    "romanization": "tteogbab",
-    "polite_form": "떡밥",
-    "plain_form": "떡밥",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "tteokbap"
   },
   {
     "korean": "떡밥 회수",
@@ -6279,10 +5103,7 @@
       "饭圈用语"
     ],
     "id": 396,
-    "romanization": "tteogbab hoesu",
-    "polite_form": "떡밥 회수",
-    "plain_form": "떡밥 회수",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "tteokbap hoesu"
   },
   {
     "korean": "서사",
@@ -6295,10 +5116,7 @@
       "饭圈用语"
     ],
     "id": 397,
-    "romanization": "seosa",
-    "polite_form": "서사",
-    "plain_form": "서사",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "seosa"
   },
   {
     "korean": "케미",
@@ -6311,10 +5129,7 @@
       "饭圈用语"
     ],
     "id": 398,
-    "romanization": "kemi",
-    "polite_form": "케미",
-    "plain_form": "케미",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "kemi"
   },
   {
     "korean": "케미 맛집",
@@ -6327,10 +5142,7 @@
       "饭圈用语"
     ],
     "id": 399,
-    "romanization": "kemi mamjib",
-    "polite_form": "케미 맛집",
-    "plain_form": "케미 맛집",
-    "usage": "用于饭圈、饭圈用语场景的表达表达。"
+    "romanization": "kemi matjip"
   },
   {
     "korean": "비주얼",
@@ -6343,10 +5155,7 @@
       "造型"
     ],
     "id": 400,
-    "romanization": "bijueol",
-    "polite_form": "비주얼",
-    "plain_form": "비주얼",
-    "usage": "用于饭圈、造型场景的名词表达。"
+    "romanization": "bijueol"
   },
   {
     "korean": "얼굴천재",
@@ -6359,10 +5168,7 @@
       "饭圈用语"
     ],
     "id": 401,
-    "romanization": "eolgulcheonjae",
-    "polite_form": "얼굴천재",
-    "plain_form": "얼굴천재",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "eolgulcheonjae"
   },
   {
     "korean": "춤선",
@@ -6375,10 +5181,7 @@
       "舞台"
     ],
     "id": 402,
-    "romanization": "chumseon",
-    "polite_form": "춤선",
-    "plain_form": "춤선",
-    "usage": "用于饭圈、舞台场景的名词表达。"
+    "romanization": "chumseon"
   },
   {
     "korean": "칼군무",
@@ -6391,10 +5194,7 @@
       "舞台"
     ],
     "id": 403,
-    "romanization": "kalgunmu",
-    "polite_form": "칼군무",
-    "plain_form": "칼군무",
-    "usage": "用于饭圈、舞台场景的名词表达。"
+    "romanization": "kalgunmu"
   },
   {
     "korean": "라이브 실력",
@@ -6407,10 +5207,7 @@
       "舞台"
     ],
     "id": 404,
-    "romanization": "raibeu sillyeog",
-    "polite_form": "라이브 실력",
-    "plain_form": "라이브 실력",
-    "usage": "用于饭圈、舞台场景的名词表达。"
+    "romanization": "raibeu sillyeok"
   },
   {
     "korean": "고음",
@@ -6423,10 +5220,7 @@
       "音乐"
     ],
     "id": 405,
-    "romanization": "goeum",
-    "polite_form": "고음",
-    "plain_form": "고음",
-    "usage": "用于饭圈、音乐场景的名词表达。"
+    "romanization": "goeum"
   },
   {
     "korean": "저음",
@@ -6439,10 +5233,7 @@
       "音乐"
     ],
     "id": 406,
-    "romanization": "jeoeum",
-    "polite_form": "저음",
-    "plain_form": "저음",
-    "usage": "用于饭圈、音乐场景的名词表达。"
+    "romanization": "jeoeum"
   },
   {
     "korean": "킬링파트",
@@ -6455,10 +5246,7 @@
       "音乐"
     ],
     "id": 407,
-    "romanization": "killingpateu",
-    "polite_form": "킬링파트",
-    "plain_form": "킬링파트",
-    "usage": "用于饭圈、音乐场景的名词表达。"
+    "romanization": "killingpateu"
   },
   {
     "korean": "파트",
@@ -6471,10 +5259,7 @@
       "音乐"
     ],
     "id": 408,
-    "romanization": "pateu",
-    "polite_form": "파트",
-    "plain_form": "파트",
-    "usage": "用于饭圈、音乐场景的名词表达。"
+    "romanization": "pateu"
   },
   {
     "korean": "안무",
@@ -6487,10 +5272,7 @@
       "舞台"
     ],
     "id": 409,
-    "romanization": "anmu",
-    "polite_form": "안무",
-    "plain_form": "안무",
-    "usage": "用于饭圈、舞台场景的名词表达。"
+    "romanization": "anmu"
   },
   {
     "korean": "안무 연습",
@@ -6503,10 +5285,7 @@
       "舞台"
     ],
     "id": 410,
-    "romanization": "anmu yeonseub",
-    "polite_form": "안무 연습",
-    "plain_form": "안무 연습",
-    "usage": "用于饭圈、舞台场景的名词表达。"
+    "romanization": "anmu yeonseup"
   },
   {
     "korean": "연습실",
@@ -6519,10 +5298,7 @@
       "舞台"
     ],
     "id": 411,
-    "romanization": "yeonseubsil",
-    "polite_form": "연습실",
-    "plain_form": "연습실",
-    "usage": "用于饭圈、舞台场景的名词表达。"
+    "romanization": "yeonseupsil"
   },
   {
     "korean": "의상",
@@ -6535,10 +5311,7 @@
       "造型"
     ],
     "id": 412,
-    "romanization": "uisang",
-    "polite_form": "의상",
-    "plain_form": "의상",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "uisang"
   },
   {
     "korean": "스타일링",
@@ -6551,10 +5324,7 @@
       "造型"
     ],
     "id": 413,
-    "romanization": "seutailling",
-    "polite_form": "스타일링",
-    "plain_form": "스타일링",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "seutailling"
   },
   {
     "korean": "헤어",
@@ -6567,10 +5337,7 @@
       "造型"
     ],
     "id": 414,
-    "romanization": "heeo",
-    "polite_form": "헤어",
-    "plain_form": "헤어",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "heeo"
   },
   {
     "korean": "메이크업",
@@ -6583,10 +5350,7 @@
       "造型"
     ],
     "id": 415,
-    "romanization": "meikeueob",
-    "polite_form": "메이크업",
-    "plain_form": "메이크업",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "meikeueop"
   },
   {
     "korean": "네일",
@@ -6599,10 +5363,7 @@
       "造型"
     ],
     "id": 416,
-    "romanization": "neil",
-    "polite_form": "네일",
-    "plain_form": "네일",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "neil"
   },
   {
     "korean": "액세서리",
@@ -6615,10 +5376,7 @@
       "造型"
     ],
     "id": 417,
-    "romanization": "aegseseori",
-    "polite_form": "액세서리",
-    "plain_form": "액세서리",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "aekseseori"
   },
   {
     "korean": "귀걸이",
@@ -6631,10 +5389,7 @@
       "造型"
     ],
     "id": 418,
-    "romanization": "gwigeoli",
-    "polite_form": "귀걸이",
-    "plain_form": "귀걸이",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "gwigeori"
   },
   {
     "korean": "목걸이",
@@ -6647,10 +5402,7 @@
       "造型"
     ],
     "id": 419,
-    "romanization": "monggeoli",
-    "polite_form": "목걸이",
-    "plain_form": "목걸이",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "mokgeori"
   },
   {
     "korean": "반지",
@@ -6663,10 +5415,7 @@
       "造型"
     ],
     "id": 420,
-    "romanization": "banji",
-    "polite_form": "반지",
-    "plain_form": "반지",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "banji"
   },
   {
     "korean": "팔찌",
@@ -6679,10 +5428,7 @@
       "造型"
     ],
     "id": 421,
-    "romanization": "paljji",
-    "polite_form": "팔찌",
-    "plain_form": "팔찌",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "paljji"
   },
   {
     "korean": "모자",
@@ -6695,10 +5441,7 @@
       "造型"
     ],
     "id": 422,
-    "romanization": "moja",
-    "polite_form": "모자",
-    "plain_form": "모자",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "moja"
   },
   {
     "korean": "안경",
@@ -6711,10 +5454,7 @@
       "造型"
     ],
     "id": 423,
-    "romanization": "angyeong",
-    "polite_form": "안경",
-    "plain_form": "안경",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "angyeong"
   },
   {
     "korean": "신발",
@@ -6727,10 +5467,7 @@
       "造型"
     ],
     "id": 424,
-    "romanization": "sinbal",
-    "polite_form": "신발",
-    "plain_form": "신발",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "sinbal"
   },
   {
     "korean": "부츠",
@@ -6743,10 +5480,7 @@
       "造型"
     ],
     "id": 425,
-    "romanization": "bucheu",
-    "polite_form": "부츠",
-    "plain_form": "부츠",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "bucheu"
   },
   {
     "korean": "자켓",
@@ -6759,10 +5493,7 @@
       "造型"
     ],
     "id": 426,
-    "romanization": "jakes",
-    "polite_form": "자켓",
-    "plain_form": "자켓",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "jaket"
   },
   {
     "korean": "셔츠",
@@ -6775,10 +5506,7 @@
       "造型"
     ],
     "id": 427,
-    "romanization": "syeocheu",
-    "polite_form": "셔츠",
-    "plain_form": "셔츠",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "syeocheu"
   },
   {
     "korean": "티셔츠",
@@ -6791,10 +5519,7 @@
       "造型"
     ],
     "id": 428,
-    "romanization": "tisyeocheu",
-    "polite_form": "티셔츠",
-    "plain_form": "티셔츠",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "tisyeocheu"
   },
   {
     "korean": "청바지",
@@ -6807,10 +5532,7 @@
       "造型"
     ],
     "id": 429,
-    "romanization": "cheongbaji",
-    "polite_form": "청바지",
-    "plain_form": "청바지",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "cheongbaji"
   },
   {
     "korean": "치마",
@@ -6823,10 +5545,7 @@
       "造型"
     ],
     "id": 430,
-    "romanization": "chima",
-    "polite_form": "치마",
-    "plain_form": "치마",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "chima"
   },
   {
     "korean": "원피스",
@@ -6839,10 +5558,7 @@
       "造型"
     ],
     "id": 431,
-    "romanization": "wonpiseu",
-    "polite_form": "원피스",
-    "plain_form": "원피스",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "wonpiseu"
   },
   {
     "korean": "색깔",
@@ -6855,10 +5571,7 @@
       "造型"
     ],
     "id": 432,
-    "romanization": "saegkkal",
-    "polite_form": "색깔",
-    "plain_form": "색깔",
-    "usage": "用于基础、造型场景的名词表达。"
+    "romanization": "saekkkal"
   },
   {
     "korean": "검정",
@@ -6871,10 +5584,7 @@
       "造型"
     ],
     "id": 433,
-    "romanization": "geomjeong",
-    "polite_form": "검정",
-    "plain_form": "검정",
-    "usage": "用于基础、造型场景的名词表达。"
+    "romanization": "geomjeong"
   },
   {
     "korean": "하얀색",
@@ -6887,10 +5597,7 @@
       "造型"
     ],
     "id": 434,
-    "romanization": "hayansaeg",
-    "polite_form": "하얀색",
-    "plain_form": "하얀색",
-    "usage": "用于基础、造型场景的名词表达。"
+    "romanization": "hayansaek"
   },
   {
     "korean": "빨간색",
@@ -6903,10 +5610,7 @@
       "造型"
     ],
     "id": 435,
-    "romanization": "ppalgansaeg",
-    "polite_form": "빨간색",
-    "plain_form": "빨간색",
-    "usage": "用于基础、造型场景的名词表达。"
+    "romanization": "ppalgansaek"
   },
   {
     "korean": "파란색",
@@ -6919,10 +5623,7 @@
       "造型"
     ],
     "id": 436,
-    "romanization": "paralsaeg",
-    "polite_form": "파란색",
-    "plain_form": "파란색",
-    "usage": "用于基础、造型场景的名词表达。"
+    "romanization": "paransaek"
   },
   {
     "korean": "분홍색",
@@ -6935,10 +5636,7 @@
       "造型"
     ],
     "id": 437,
-    "romanization": "bunhongsaeg",
-    "polite_form": "분홍색",
-    "plain_form": "분홍색",
-    "usage": "用于基础、造型场景的名词表达。"
+    "romanization": "bunhongsaek"
   },
   {
     "korean": "보라색",
@@ -6951,10 +5649,7 @@
       "造型"
     ],
     "id": 438,
-    "romanization": "borasaeg",
-    "polite_form": "보라색",
-    "plain_form": "보라색",
-    "usage": "用于基础、造型场景的名词表达。"
+    "romanization": "borasaek"
   },
   {
     "korean": "노란색",
@@ -6967,10 +5662,7 @@
       "造型"
     ],
     "id": 439,
-    "romanization": "noralsaeg",
-    "polite_form": "노란색",
-    "plain_form": "노란색",
-    "usage": "用于基础、造型场景的名词表达。"
+    "romanization": "noransaek"
   },
   {
     "korean": "초록색",
@@ -6983,10 +5675,7 @@
       "造型"
     ],
     "id": 440,
-    "romanization": "chorogsaeg",
-    "polite_form": "초록색",
-    "plain_form": "초록색",
-    "usage": "用于基础、造型场景的名词表达。"
+    "romanization": "choroksaek"
   },
   {
     "korean": "금발",
@@ -6999,10 +5688,7 @@
       "造型"
     ],
     "id": 441,
-    "romanization": "geumbal",
-    "polite_form": "금발",
-    "plain_form": "금발",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "geumbal"
   },
   {
     "korean": "흑발",
@@ -7015,10 +5701,7 @@
       "造型"
     ],
     "id": 442,
-    "romanization": "heugbal",
-    "polite_form": "흑발",
-    "plain_form": "흑발",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "heukbal"
   },
   {
     "korean": "염색",
@@ -7031,10 +5714,7 @@
       "造型"
     ],
     "id": 443,
-    "romanization": "yeomsaeg",
-    "polite_form": "염색",
-    "plain_form": "염색",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "yeomsaek"
   },
   {
     "korean": "앞머리",
@@ -7047,10 +5727,7 @@
       "造型"
     ],
     "id": 444,
-    "romanization": "apmeori",
-    "polite_form": "앞머리",
-    "plain_form": "앞머리",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "ammeori"
   },
   {
     "korean": "장발",
@@ -7063,10 +5740,7 @@
       "造型"
     ],
     "id": 445,
-    "romanization": "jangbal",
-    "polite_form": "장발",
-    "plain_form": "장발",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "jangbal"
   },
   {
     "korean": "단발",
@@ -7079,10 +5753,7 @@
       "造型"
     ],
     "id": 446,
-    "romanization": "danbal",
-    "polite_form": "단발",
-    "plain_form": "단발",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "danbal"
   },
   {
     "korean": "파마",
@@ -7095,10 +5766,7 @@
       "造型"
     ],
     "id": 447,
-    "romanization": "pama",
-    "polite_form": "파마",
-    "plain_form": "파마",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "pama"
   },
   {
     "korean": "피어싱",
@@ -7111,10 +5779,7 @@
       "造型"
     ],
     "id": 448,
-    "romanization": "pieosing",
-    "polite_form": "피어싱",
-    "plain_form": "피어싱",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "pieosing"
   },
   {
     "korean": "화보",
@@ -7127,10 +5792,7 @@
       "造型"
     ],
     "id": 449,
-    "romanization": "hwabo",
-    "polite_form": "화보",
-    "plain_form": "화보",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "hwabo"
   },
   {
     "korean": "컨셉 포토",
@@ -7143,10 +5805,7 @@
       "造型"
     ],
     "id": 450,
-    "romanization": "keonseb poto",
-    "polite_form": "컨셉 포토",
-    "plain_form": "컨셉 포토",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "keonsep poto"
   },
   {
     "korean": "증명사진",
@@ -7159,10 +5818,7 @@
       "造型"
     ],
     "id": 451,
-    "romanization": "jeungmyeongsajin",
-    "polite_form": "증명사진",
-    "plain_form": "증명사진",
-    "usage": "用于基础、造型场景的名词表达。"
+    "romanization": "jeungmyeongsajin"
   },
   {
     "korean": "필터",
@@ -7175,10 +5831,7 @@
       "造型"
     ],
     "id": 452,
-    "romanization": "pilteo",
-    "polite_form": "필터",
-    "plain_form": "필터",
-    "usage": "用于数字生活、造型场景的名词表达。"
+    "romanization": "pilteo"
   },
   {
     "korean": "보정",
@@ -7191,10 +5844,7 @@
       "造型"
     ],
     "id": 453,
-    "romanization": "bojeong",
-    "polite_form": "보정",
-    "plain_form": "보정",
-    "usage": "用于数字生活、造型场景的名词表达。"
+    "romanization": "bojeong"
   },
   {
     "korean": "보정하다",
@@ -7207,10 +5857,7 @@
       "造型"
     ],
     "id": 454,
-    "romanization": "bojeonghada",
-    "polite_form": "보정해요",
-    "plain_form": "보정해",
-    "usage": "用于数字生活、造型场景的动词表达。"
+    "romanization": "bojeonghada"
   },
   {
     "korean": "업로드",
@@ -7223,10 +5870,7 @@
       "社交媒体"
     ],
     "id": 455,
-    "romanization": "eobrodeu",
-    "polite_form": "업로드",
-    "plain_form": "업로드",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "eoprodeu"
   },
   {
     "korean": "다운로드",
@@ -7239,10 +5883,7 @@
       "社交媒体"
     ],
     "id": 456,
-    "romanization": "daunlodeu",
-    "polite_form": "다운로드",
-    "plain_form": "다운로드",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "daullodeu"
   },
   {
     "korean": "로그인",
@@ -7255,10 +5896,7 @@
       "社交媒体"
     ],
     "id": 457,
-    "romanization": "rogeuin",
-    "polite_form": "로그인",
-    "plain_form": "로그인",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "rogeuin"
   },
   {
     "korean": "로그아웃",
@@ -7271,10 +5909,7 @@
       "社交媒体"
     ],
     "id": 458,
-    "romanization": "rogeuaus",
-    "polite_form": "로그아웃",
-    "plain_form": "로그아웃",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "rogeuaut"
   },
   {
     "korean": "계정",
@@ -7287,10 +5922,7 @@
       "社交媒体"
     ],
     "id": 459,
-    "romanization": "gyejeong",
-    "polite_form": "계정",
-    "plain_form": "계정",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "gyejeong"
   },
   {
     "korean": "아이디",
@@ -7303,10 +5935,7 @@
       "社交媒体"
     ],
     "id": 460,
-    "romanization": "aidi",
-    "polite_form": "아이디",
-    "plain_form": "아이디",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "aidi"
   },
   {
     "korean": "비밀번호",
@@ -7319,10 +5948,7 @@
       "社交媒体"
     ],
     "id": 461,
-    "romanization": "bimilbeonho",
-    "polite_form": "비밀번호",
-    "plain_form": "비밀번호",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "bimilbeonho"
   },
   {
     "korean": "알림",
@@ -7335,10 +5961,7 @@
       "社交媒体"
     ],
     "id": 462,
-    "romanization": "allim",
-    "polite_form": "알림",
-    "plain_form": "알림",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "allim"
   },
   {
     "korean": "설정",
@@ -7351,10 +5974,7 @@
       "社交媒体"
     ],
     "id": 463,
-    "romanization": "seoljeong",
-    "polite_form": "설정",
-    "plain_form": "설정",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "seoljeong"
   },
   {
     "korean": "프로필",
@@ -7367,10 +5987,7 @@
       "社交媒体"
     ],
     "id": 464,
-    "romanization": "peuropil",
-    "polite_form": "프로필",
-    "plain_form": "프로필",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "peuropil"
   },
   {
     "korean": "링크",
@@ -7383,10 +6000,7 @@
       "社交媒体"
     ],
     "id": 465,
-    "romanization": "ringkeu",
-    "polite_form": "링크",
-    "plain_form": "링크",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "ringkeu"
   },
   {
     "korean": "해시태그",
@@ -7399,10 +6013,7 @@
       "社交媒体"
     ],
     "id": 466,
-    "romanization": "haesitaegeu",
-    "polite_form": "해시태그",
-    "plain_form": "해시태그",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "haesitaegeu"
   },
   {
     "korean": "검색",
@@ -7415,10 +6026,7 @@
       "社交媒体"
     ],
     "id": 467,
-    "romanization": "geomsaeg",
-    "polite_form": "검색",
-    "plain_form": "검색",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "geomsaek"
   },
   {
     "korean": "구독",
@@ -7431,10 +6039,7 @@
       "社交媒体"
     ],
     "id": 468,
-    "romanization": "gudog",
-    "polite_form": "구독",
-    "plain_form": "구독",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "gudok"
   },
   {
     "korean": "팔로우",
@@ -7447,10 +6052,7 @@
       "社交媒体"
     ],
     "id": 469,
-    "romanization": "pallou",
-    "polite_form": "팔로우",
-    "plain_form": "팔로우",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "pallou"
   },
   {
     "korean": "언팔",
@@ -7463,10 +6065,7 @@
       "社交媒体"
     ],
     "id": 470,
-    "romanization": "eonpal",
-    "polite_form": "언팔",
-    "plain_form": "언팔",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "eonpal"
   },
   {
     "korean": "좋아요",
@@ -7479,10 +6078,7 @@
       "社交媒体"
     ],
     "id": 471,
-    "romanization": "johayo",
-    "polite_form": "좋아요",
-    "plain_form": "좋아요",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "joayo"
   },
   {
     "korean": "공유",
@@ -7495,10 +6091,7 @@
       "社交媒体"
     ],
     "id": 472,
-    "romanization": "gongyu",
-    "polite_form": "공유",
-    "plain_form": "공유",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "goyu"
   },
   {
     "korean": "저장",
@@ -7511,10 +6104,7 @@
       "社交媒体"
     ],
     "id": 473,
-    "romanization": "jeojang",
-    "polite_form": "저장",
-    "plain_form": "저장",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "jeojang"
   },
   {
     "korean": "게시물",
@@ -7527,10 +6117,7 @@
       "社交媒体"
     ],
     "id": 474,
-    "romanization": "gesimul",
-    "polite_form": "게시물",
-    "plain_form": "게시물",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "gesimul"
   },
   {
     "korean": "피드",
@@ -7543,10 +6130,7 @@
       "社交媒体"
     ],
     "id": 475,
-    "romanization": "pideu",
-    "polite_form": "피드",
-    "plain_form": "피드",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "pideu"
   },
   {
     "korean": "스토리",
@@ -7559,10 +6143,7 @@
       "社交媒体"
     ],
     "id": 476,
-    "romanization": "seutori",
-    "polite_form": "스토리",
-    "plain_form": "스토리",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "seutori"
   },
   {
     "korean": "릴스",
@@ -7575,10 +6156,7 @@
       "社交媒体"
     ],
     "id": 477,
-    "romanization": "rilseu",
-    "polite_form": "릴스",
-    "plain_form": "릴스",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "rilseu"
   },
   {
     "korean": "숏폼",
@@ -7591,10 +6169,7 @@
       "社交媒体"
     ],
     "id": 478,
-    "romanization": "syospom",
-    "polite_form": "숏폼",
-    "plain_form": "숏폼",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "syotpom"
   },
   {
     "korean": "답글",
@@ -7607,10 +6182,7 @@
       "社交媒体"
     ],
     "id": 479,
-    "romanization": "dabgeul",
-    "polite_form": "답글",
-    "plain_form": "답글",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "dapgeul"
   },
   {
     "korean": "쪽지",
@@ -7623,10 +6195,7 @@
       "社交媒体"
     ],
     "id": 480,
-    "romanization": "jjogji",
-    "polite_form": "쪽지",
-    "plain_form": "쪽지",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "jjokji"
   },
   {
     "korean": "디엠",
@@ -7639,10 +6208,7 @@
       "社交媒体"
     ],
     "id": 481,
-    "romanization": "diem",
-    "polite_form": "디엠",
-    "plain_form": "디엠",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "diem"
   },
   {
     "korean": "채팅",
@@ -7655,10 +6221,7 @@
       "社交媒体"
     ],
     "id": 482,
-    "romanization": "chaeting",
-    "polite_form": "채팅",
-    "plain_form": "채팅",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "chaeting"
   },
   {
     "korean": "단체 채팅",
@@ -7671,10 +6234,7 @@
       "社交媒体"
     ],
     "id": 483,
-    "romanization": "danche chaeting",
-    "polite_form": "단체 채팅",
-    "plain_form": "단체 채팅",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "danche chaeting"
   },
   {
     "korean": "오픈채팅",
@@ -7687,10 +6247,7 @@
       "社交媒体"
     ],
     "id": 484,
-    "romanization": "opeunchaeting",
-    "polite_form": "오픈채팅",
-    "plain_form": "오픈채팅",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "opeunchaeting"
   },
   {
     "korean": "읽음",
@@ -7703,10 +6260,7 @@
       "社交媒体"
     ],
     "id": 485,
-    "romanization": "ilgeum",
-    "polite_form": "읽음",
-    "plain_form": "읽음",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "ilgeum"
   },
   {
     "korean": "안 읽음",
@@ -7719,10 +6273,7 @@
       "社交媒体"
     ],
     "id": 486,
-    "romanization": "an ilgeum",
-    "polite_form": "안 읽음",
-    "plain_form": "안 읽음",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "an ilgeum"
   },
   {
     "korean": "온라인",
@@ -7735,10 +6286,7 @@
       "社交媒体"
     ],
     "id": 487,
-    "romanization": "onlain",
-    "polite_form": "온라인",
-    "plain_form": "온라인",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "ollain"
   },
   {
     "korean": "오프라인",
@@ -7751,10 +6299,7 @@
       "社交媒体"
     ],
     "id": 488,
-    "romanization": "opeurain",
-    "polite_form": "오프라인",
-    "plain_form": "오프라인",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "opeurain"
   },
   {
     "korean": "접속",
@@ -7767,10 +6312,7 @@
       "社交媒体"
     ],
     "id": 489,
-    "romanization": "jeobsog",
-    "polite_form": "접속",
-    "plain_form": "접속",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "jeopsok"
   },
   {
     "korean": "인터넷",
@@ -7783,10 +6325,7 @@
       "社交媒体"
     ],
     "id": 490,
-    "romanization": "inteonem",
-    "polite_form": "인터넷",
-    "plain_form": "인터넷",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "inteonet"
   },
   {
     "korean": "와이파이",
@@ -7799,10 +6338,7 @@
       "社交媒体"
     ],
     "id": 491,
-    "romanization": "waipai",
-    "polite_form": "와이파이",
-    "plain_form": "와이파이",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "waipai"
   },
   {
     "korean": "데이터",
@@ -7815,10 +6351,7 @@
       "社交媒体"
     ],
     "id": 492,
-    "romanization": "deiteo",
-    "polite_form": "데이터",
-    "plain_form": "데이터",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "deiteo"
   },
   {
     "korean": "배터리",
@@ -7831,10 +6364,7 @@
       "日常"
     ],
     "id": 493,
-    "romanization": "baeteori",
-    "polite_form": "배터리",
-    "plain_form": "배터리",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "baeteori"
   },
   {
     "korean": "충전",
@@ -7847,10 +6377,7 @@
       "日常"
     ],
     "id": 494,
-    "romanization": "chungjeon",
-    "polite_form": "충전",
-    "plain_form": "충전",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "chungjeon"
   },
   {
     "korean": "충전기",
@@ -7863,10 +6390,7 @@
       "日常"
     ],
     "id": 495,
-    "romanization": "chungjeongi",
-    "polite_form": "충전기",
-    "plain_form": "충전기",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "chungjeongi"
   },
   {
     "korean": "휴대폰",
@@ -7879,10 +6403,7 @@
       "日常"
     ],
     "id": 496,
-    "romanization": "hyudaepon",
-    "polite_form": "휴대폰",
-    "plain_form": "휴대폰",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "hyudaepon"
   },
   {
     "korean": "이어폰",
@@ -7895,10 +6416,7 @@
       "日常"
     ],
     "id": 497,
-    "romanization": "ieopon",
-    "polite_form": "이어폰",
-    "plain_form": "이어폰",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "ieopon"
   },
   {
     "korean": "스크린샷",
@@ -7911,10 +6429,7 @@
       "社交媒体"
     ],
     "id": 498,
-    "romanization": "seukeurilsyas",
-    "polite_form": "스크린샷",
-    "plain_form": "스크린샷",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "seukeurinsyat"
   },
   {
     "korean": "캡처",
@@ -7927,10 +6442,7 @@
       "社交媒体"
     ],
     "id": 499,
-    "romanization": "kaebcheo",
-    "polite_form": "캡처",
-    "plain_form": "캡처",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "kaepcheo"
   },
   {
     "korean": "실시간",
@@ -7943,10 +6455,7 @@
       "社交媒体"
     ],
     "id": 500,
-    "romanization": "silsigan",
-    "polite_form": "실시간",
-    "plain_form": "실시간",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "silsigan"
   },
   {
     "korean": "알고리즘",
@@ -7959,10 +6468,7 @@
       "社交媒体"
     ],
     "id": 501,
-    "romanization": "algorijeum",
-    "polite_form": "알고리즘",
-    "plain_form": "알고리즘",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "algorijeum"
   },
   {
     "korean": "트렌드",
@@ -7975,10 +6481,7 @@
       "社交媒体"
     ],
     "id": 502,
-    "romanization": "teureldeu",
-    "polite_form": "트렌드",
-    "plain_form": "트렌드",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "teurendeu"
   },
   {
     "korean": "밈",
@@ -7991,10 +6494,7 @@
       "饭圈用语"
     ],
     "id": 503,
-    "romanization": "mim",
-    "polite_form": "밈",
-    "plain_form": "밈",
-    "usage": "用于数字生活、饭圈用语场景的名词表达。"
+    "romanization": "mim"
   },
   {
     "korean": "짤",
@@ -8007,10 +6507,7 @@
       "饭圈用语"
     ],
     "id": 504,
-    "romanization": "jjal",
-    "polite_form": "짤",
-    "plain_form": "짤",
-    "usage": "用于数字生活、饭圈用语场景的名词表达。"
+    "romanization": "jjal"
   },
   {
     "korean": "움짤",
@@ -8023,10 +6520,7 @@
       "饭圈用语"
     ],
     "id": 505,
-    "romanization": "umjjal",
-    "polite_form": "움짤",
-    "plain_form": "움짤",
-    "usage": "用于数字生活、饭圈用语场景的名词表达。"
+    "romanization": "umjjal"
   },
   {
     "korean": "짤방",
@@ -8039,10 +6533,7 @@
       "饭圈用语"
     ],
     "id": 506,
-    "romanization": "jjalbang",
-    "polite_form": "짤방",
-    "plain_form": "짤방",
-    "usage": "用于数字生活、饭圈用语场景的名词表达。"
+    "romanization": "jjalbang"
   },
   {
     "korean": "리트윗",
@@ -8055,10 +6546,7 @@
       "社交媒体"
     ],
     "id": 507,
-    "romanization": "riteuwis",
-    "polite_form": "리트윗",
-    "plain_form": "리트윗",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "riteuwit"
   },
   {
     "korean": "인용",
@@ -8071,10 +6559,7 @@
       "社交媒体"
     ],
     "id": 508,
-    "romanization": "inyong",
-    "polite_form": "인용",
-    "plain_form": "인용",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "inyong"
   },
   {
     "korean": "실트",
@@ -8087,10 +6572,7 @@
       "饭圈用语"
     ],
     "id": 509,
-    "romanization": "silteu",
-    "polite_form": "실트",
-    "plain_form": "실트",
-    "usage": "用于数字生活、饭圈用语场景的名词表达。"
+    "romanization": "silteu"
   },
   {
     "korean": "실시간 트렌드",
@@ -8103,10 +6585,7 @@
       "社交媒体"
     ],
     "id": 510,
-    "romanization": "silsigan teureldeu",
-    "polite_form": "실시간 트렌드",
-    "plain_form": "실시간 트렌드",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "silsigan teurendeu"
   },
   {
     "korean": "버블",
@@ -8119,10 +6598,7 @@
       "数字生活"
     ],
     "id": 511,
-    "romanization": "beobeul",
-    "polite_form": "버블",
-    "plain_form": "버블",
-    "usage": "用于追星、数字生活场景的名词表达。"
+    "romanization": "beobeul"
   },
   {
     "korean": "위버스",
@@ -8135,10 +6611,7 @@
       "数字生活"
     ],
     "id": 512,
-    "romanization": "wibeoseu",
-    "polite_form": "위버스",
-    "plain_form": "위버스",
-    "usage": "用于追星、数字生活场景的名词表达。"
+    "romanization": "wibeoseu"
   },
   {
     "korean": "라이브 방송",
@@ -8151,10 +6624,7 @@
       "数字生活"
     ],
     "id": 513,
-    "romanization": "raibeu bangsong",
-    "polite_form": "라이브 방송",
-    "plain_form": "라이브 방송",
-    "usage": "用于追星、数字生活场景的名词表达。"
+    "romanization": "raibeu bangsong"
   },
   {
     "korean": "다시보기",
@@ -8167,10 +6637,7 @@
       "数字生活"
     ],
     "id": 514,
-    "romanization": "dasibogi",
-    "polite_form": "다시보기",
-    "plain_form": "다시보기",
-    "usage": "用于追星、数字生活场景的名词表达。"
+    "romanization": "dasibogi"
   },
   {
     "korean": "자막",
@@ -8183,10 +6650,7 @@
       "数字生活"
     ],
     "id": 515,
-    "romanization": "jamang",
-    "polite_form": "자막",
-    "plain_form": "자막",
-    "usage": "用于追星、数字生活场景的名词表达。"
+    "romanization": "jamak"
   },
   {
     "korean": "번역기",
@@ -8199,10 +6663,7 @@
       "学习"
     ],
     "id": 516,
-    "romanization": "beonyeoggi",
-    "polite_form": "번역기",
-    "plain_form": "번역기",
-    "usage": "用于数字生活、学习场景的名词表达。"
+    "romanization": "beonyeokgi"
   },
   {
     "korean": "자동 번역",
@@ -8215,10 +6676,7 @@
       "学习"
     ],
     "id": 517,
-    "romanization": "jadong beonyeog",
-    "polite_form": "자동 번역",
-    "plain_form": "자동 번역",
-    "usage": "用于数字生活、学习场景的名词表达。"
+    "romanization": "jadong beonyeok"
   },
   {
     "korean": "알림 켜기",
@@ -8231,10 +6689,7 @@
       "社交媒体"
     ],
     "id": 518,
-    "romanization": "allim kyeogi",
-    "polite_form": "알림 켜기",
-    "plain_form": "알림 켜기",
-    "usage": "用于数字生活、社交媒体场景的表达表达。"
+    "romanization": "allim kyeogi"
   },
   {
     "korean": "구독해 주세요",
@@ -8247,10 +6702,7 @@
       "社交媒体"
     ],
     "id": 519,
-    "romanization": "gudoghae juseyo",
-    "polite_form": "구독해 주세요",
-    "plain_form": "구독해 주세요",
-    "usage": "用于数字生活、社交媒体场景的表达表达。"
+    "romanization": "gudokhae juseyo"
   },
   {
     "korean": "좋아요 눌러 주세요",
@@ -8263,10 +6715,7 @@
       "社交媒体"
     ],
     "id": 520,
-    "romanization": "johayo nulleo juseyo",
-    "polite_form": "좋아요 눌러 주세요",
-    "plain_form": "좋아요 눌러 주세요",
-    "usage": "用于数字生活、社交媒体场景的表达表达。"
+    "romanization": "joayo nulleo juseyo"
   },
   {
     "korean": "댓글 남겨 주세요",
@@ -8279,10 +6728,7 @@
       "社交媒体"
     ],
     "id": 521,
-    "romanization": "daesgeul namgyeo juseyo",
-    "polite_form": "댓글 남겨 주세요",
-    "plain_form": "댓글 남겨 주세요",
-    "usage": "用于数字生活、社交媒体场景的表达表达。"
+    "romanization": "daetgeul namgyeo juseyo"
   },
   {
     "korean": "공유해 주세요",
@@ -8295,10 +6741,7 @@
       "社交媒体"
     ],
     "id": 522,
-    "romanization": "gongyuhae juseyo",
-    "polite_form": "공유해 주세요",
-    "plain_form": "공유해 주세요",
-    "usage": "用于数字生活、社交媒体场景的表达表达。"
+    "romanization": "goyuhae juseyo"
   },
   {
     "korean": "업데이트",
@@ -8311,10 +6754,7 @@
       "社交媒体"
     ],
     "id": 523,
-    "romanization": "eobdeiteu",
-    "polite_form": "업데이트",
-    "plain_form": "업데이트",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "eopdeiteu"
   },
   {
     "korean": "오류",
@@ -8327,10 +6767,7 @@
       "日常"
     ],
     "id": 524,
-    "romanization": "oryu",
-    "polite_form": "오류",
-    "plain_form": "오류",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "oryu"
   },
   {
     "korean": "버그",
@@ -8343,10 +6780,7 @@
       "日常"
     ],
     "id": 525,
-    "romanization": "beogeu",
-    "polite_form": "버그",
-    "plain_form": "버그",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "beogeu"
   },
   {
     "korean": "삭제",
@@ -8359,10 +6793,7 @@
       "日常"
     ],
     "id": 526,
-    "romanization": "sagje",
-    "polite_form": "삭제",
-    "plain_form": "삭제",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "sakje"
   },
   {
     "korean": "복구",
@@ -8375,10 +6806,7 @@
       "日常"
     ],
     "id": 527,
-    "romanization": "boggu",
-    "polite_form": "복구",
-    "plain_form": "복구",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "bokgu"
   },
   {
     "korean": "차단",
@@ -8391,10 +6819,7 @@
       "社交媒体"
     ],
     "id": 528,
-    "romanization": "chadan",
-    "polite_form": "차단",
-    "plain_form": "차단",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "chadan"
   },
   {
     "korean": "신고",
@@ -8407,10 +6832,7 @@
       "社交媒体"
     ],
     "id": 529,
-    "romanization": "singo",
-    "polite_form": "신고",
-    "plain_form": "신고",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "singo"
   },
   {
     "korean": "인증",
@@ -8423,10 +6845,7 @@
       "社交媒体"
     ],
     "id": 530,
-    "romanization": "injeung",
-    "polite_form": "인증",
-    "plain_form": "인증",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "injeung"
   },
   {
     "korean": "인증번호",
@@ -8439,10 +6858,7 @@
       "社交媒体"
     ],
     "id": 531,
-    "romanization": "injeungbeonho",
-    "polite_form": "인증번호",
-    "plain_form": "인증번호",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "injeungbeonho"
   },
   {
     "korean": "개인정보",
@@ -8455,10 +6871,7 @@
       "社交媒体"
     ],
     "id": 532,
-    "romanization": "gaeinjeongbo",
-    "polite_form": "개인정보",
-    "plain_form": "개인정보",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "gaeinjeongbo"
   },
   {
     "korean": "공개",
@@ -8471,10 +6884,7 @@
       "社交媒体"
     ],
     "id": 533,
-    "romanization": "gonggae",
-    "polite_form": "공개",
-    "plain_form": "공개",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "gonggae"
   },
   {
     "korean": "비공개",
@@ -8487,10 +6897,7 @@
       "社交媒体"
     ],
     "id": 534,
-    "romanization": "bigonggae",
-    "polite_form": "비공개",
-    "plain_form": "비공개",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "bigonggae"
   },
   {
     "korean": "예약",
@@ -8503,10 +6910,7 @@
       "日常"
     ],
     "id": 535,
-    "romanization": "yeyag",
-    "polite_form": "예약",
-    "plain_form": "예약",
-    "usage": "用于基础、日常场景的名词表达。"
+    "romanization": "yeyak"
   },
   {
     "korean": "캘린더",
@@ -8519,10 +6923,7 @@
       "日常"
     ],
     "id": 536,
-    "romanization": "kaellildeo",
-    "polite_form": "캘린더",
-    "plain_form": "캘린더",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "kaellindeo"
   },
   {
     "korean": "일정",
@@ -8535,10 +6936,7 @@
       "日常"
     ],
     "id": 537,
-    "romanization": "iljeong",
-    "polite_form": "일정",
-    "plain_form": "일정",
-    "usage": "用于基础、日常场景的名词表达。"
+    "romanization": "iljeong"
   },
   {
     "korean": "리마인더",
@@ -8551,10 +6949,7 @@
       "日常"
     ],
     "id": 538,
-    "romanization": "rimaindeo",
-    "polite_form": "리마인더",
-    "plain_form": "리마인더",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "rimaindeo"
   },
   {
     "korean": "메모",
@@ -8567,10 +6962,7 @@
       "日常"
     ],
     "id": 539,
-    "romanization": "memo",
-    "polite_form": "메모",
-    "plain_form": "메모",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "memo"
   },
   {
     "korean": "사진첩",
@@ -8583,10 +6975,7 @@
       "日常"
     ],
     "id": 540,
-    "romanization": "sajincheob",
-    "polite_form": "사진첩",
-    "plain_form": "사진첩",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "sajincheop"
   },
   {
     "korean": "파일",
@@ -8599,10 +6988,7 @@
       "日常"
     ],
     "id": 541,
-    "romanization": "pail",
-    "polite_form": "파일",
-    "plain_form": "파일",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "pail"
   },
   {
     "korean": "폴더",
@@ -8615,10 +7001,7 @@
       "日常"
     ],
     "id": 542,
-    "romanization": "poldeo",
-    "polite_form": "폴더",
-    "plain_form": "폴더",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "poldeo"
   },
   {
     "korean": "클라우드",
@@ -8631,10 +7014,7 @@
       "日常"
     ],
     "id": 543,
-    "romanization": "keullaudeu",
-    "polite_form": "클라우드",
-    "plain_form": "클라우드",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "keullaudeu"
   },
   {
     "korean": "용량",
@@ -8647,10 +7027,7 @@
       "日常"
     ],
     "id": 544,
-    "romanization": "yongryang",
-    "polite_form": "용량",
-    "plain_form": "용량",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "yongryang"
   },
   {
     "korean": "무료",
@@ -8663,10 +7040,7 @@
       "日常"
     ],
     "id": 545,
-    "romanization": "muryo",
-    "polite_form": "무료",
-    "plain_form": "무료",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "muryo"
   },
   {
     "korean": "유료",
@@ -8679,10 +7053,7 @@
       "日常"
     ],
     "id": 546,
-    "romanization": "yuryo",
-    "polite_form": "유료",
-    "plain_form": "유료",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "yuryo"
   },
   {
     "korean": "결제",
@@ -8695,10 +7066,7 @@
       "日常"
     ],
     "id": 547,
-    "romanization": "gyeolje",
-    "polite_form": "결제",
-    "plain_form": "결제",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "gyeolje"
   },
   {
     "korean": "영수증",
@@ -8711,10 +7079,7 @@
       "日常"
     ],
     "id": 548,
-    "romanization": "yeongsujeung",
-    "polite_form": "영수증",
-    "plain_form": "영수증",
-    "usage": "用于基础、日常场景的名词表达。"
+    "romanization": "yeongsujeung"
   },
   {
     "korean": "쿠폰",
@@ -8727,10 +7092,7 @@
       "日常"
     ],
     "id": 549,
-    "romanization": "kupon",
-    "polite_form": "쿠폰",
-    "plain_form": "쿠폰",
-    "usage": "用于基础、日常场景的名词表达。"
+    "romanization": "kupon"
   },
   {
     "korean": "할인",
@@ -8743,10 +7105,7 @@
       "日常"
     ],
     "id": 550,
-    "romanization": "halin",
-    "polite_form": "할인",
-    "plain_form": "할인",
-    "usage": "用于基础、日常场景的名词表达。"
+    "romanization": "harin"
   },
   {
     "korean": "배송비",
@@ -8759,10 +7118,7 @@
       "日常"
     ],
     "id": 551,
-    "romanization": "baesongbi",
-    "polite_form": "배송비",
-    "plain_form": "배송비",
-    "usage": "用于基础、日常场景的名词表达。"
+    "romanization": "baesongbi"
   },
   {
     "korean": "주소",
@@ -8775,10 +7131,7 @@
       "日常"
     ],
     "id": 552,
-    "romanization": "juso",
-    "polite_form": "주소",
-    "plain_form": "주소",
-    "usage": "用于基础、日常场景的名词表达。"
+    "romanization": "juso"
   },
   {
     "korean": "우편번호",
@@ -8791,10 +7144,7 @@
       "日常"
     ],
     "id": 553,
-    "romanization": "upyeonbeonho",
-    "polite_form": "우편번호",
-    "plain_form": "우편번호",
-    "usage": "用于基础、日常场景的名词表达。"
+    "romanization": "upyeonbeonho"
   },
   {
     "korean": "해외",
@@ -8807,10 +7157,7 @@
       "出行"
     ],
     "id": 554,
-    "romanization": "haeoe",
-    "polite_form": "해외",
-    "plain_form": "해외",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "haeoe"
   },
   {
     "korean": "국내",
@@ -8823,10 +7170,7 @@
       "出行"
     ],
     "id": 555,
-    "romanization": "gugnae",
-    "polite_form": "국내",
-    "plain_form": "국내",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "gungnae"
   },
   {
     "korean": "출발",
@@ -8839,10 +7183,7 @@
       "出行"
     ],
     "id": 556,
-    "romanization": "chulbal",
-    "polite_form": "출발",
-    "plain_form": "출발",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "chulbal"
   },
   {
     "korean": "도착",
@@ -8855,10 +7196,7 @@
       "出行"
     ],
     "id": 557,
-    "romanization": "dochag",
-    "polite_form": "도착",
-    "plain_form": "도착",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "dochak"
   },
   {
     "korean": "환승",
@@ -8871,10 +7209,7 @@
       "出行"
     ],
     "id": 558,
-    "romanization": "hwanseung",
-    "polite_form": "환승",
-    "plain_form": "환승",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "hwanseung"
   },
   {
     "korean": "지하철",
@@ -8887,10 +7222,7 @@
       "出行"
     ],
     "id": 559,
-    "romanization": "jihacheol",
-    "polite_form": "지하철",
-    "plain_form": "지하철",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "jihacheol"
   },
   {
     "korean": "버스",
@@ -8903,10 +7235,7 @@
       "出行"
     ],
     "id": 560,
-    "romanization": "beoseu",
-    "polite_form": "버스",
-    "plain_form": "버스",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "beoseu"
   },
   {
     "korean": "택시",
@@ -8919,10 +7248,7 @@
       "出行"
     ],
     "id": 561,
-    "romanization": "taegsi",
-    "polite_form": "택시",
-    "plain_form": "택시",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "taeksi"
   },
   {
     "korean": "길",
@@ -8935,10 +7261,7 @@
       "出行"
     ],
     "id": 562,
-    "romanization": "gil",
-    "polite_form": "길",
-    "plain_form": "길",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "gil"
   },
   {
     "korean": "지도",
@@ -8951,10 +7274,7 @@
       "出行"
     ],
     "id": 563,
-    "romanization": "jido",
-    "polite_form": "지도",
-    "plain_form": "지도",
-    "usage": "用于基础、出行场景的名词表达。"
+    "romanization": "jido"
   },
   {
     "korean": "예약하다",
@@ -8967,10 +7287,7 @@
       "日常"
     ],
     "id": 564,
-    "romanization": "yeyaghada",
-    "polite_form": "예약해요",
-    "plain_form": "예약해",
-    "usage": "用于基础、日常场景的动词表达。"
+    "romanization": "yeyakhada"
   },
   {
     "korean": "출발하다",
@@ -8983,10 +7300,7 @@
       "出行"
     ],
     "id": 565,
-    "romanization": "chulbalhada",
-    "polite_form": "출발해요",
-    "plain_form": "출발해",
-    "usage": "用于基础、出行场景的动词表达。"
+    "romanization": "chulbalhada"
   },
   {
     "korean": "도착하다",
@@ -8999,10 +7313,7 @@
       "出行"
     ],
     "id": 566,
-    "romanization": "dochaghada",
-    "polite_form": "도착해요",
-    "plain_form": "도착해",
-    "usage": "用于基础、出行场景的动词表达。"
+    "romanization": "dochakhada"
   },
   {
     "korean": "찾아요",
@@ -9015,10 +7326,7 @@
       "出行"
     ],
     "id": 567,
-    "romanization": "chajayo",
-    "polite_form": "찾아요",
-    "plain_form": "찾아요",
-    "usage": "用于基础、出行场景的动词表达。"
+    "romanization": "chajayo"
   },
   {
     "korean": "잃어버렸어요",
@@ -9031,10 +7339,7 @@
       "出行"
     ],
     "id": 568,
-    "romanization": "ilheobeoryeosseoyo",
-    "polite_form": "잃어버렸어요",
-    "plain_form": "잃어버렸어요",
-    "usage": "用于基础、出行场景的表达表达。"
+    "romanization": "ilheobeoryeoseoyo"
   },
   {
     "korean": "도착했어요",
@@ -9047,10 +7352,7 @@
       "出行"
     ],
     "id": 569,
-    "romanization": "dochaghaesseoyo",
-    "polite_form": "도착했어요",
-    "plain_form": "도착했어요",
-    "usage": "用于基础、出行场景的表达表达。"
+    "romanization": "dochakhaeseoyo"
   },
   {
     "korean": "늦었어요",
@@ -9063,10 +7365,7 @@
       "出行"
     ],
     "id": 570,
-    "romanization": "neuneosseoyo",
-    "polite_form": "늦었어요",
-    "plain_form": "늦었어요",
-    "usage": "用于基础、出行场景的表达表达。"
+    "romanization": "neujeoseoyo"
   },
   {
     "korean": "길을 잃었어요",
@@ -9079,10 +7378,7 @@
       "出行"
     ],
     "id": 571,
-    "romanization": "gileul ilheosseoyo",
-    "polite_form": "길을 잃었어요",
-    "plain_form": "길을 잃었어요",
-    "usage": "用于基础、出行场景的表达表达。"
+    "romanization": "gireul ilheoseoyo"
   },
   {
     "korean": "도와주실 수 있어요",
@@ -9095,10 +7391,7 @@
       "求助"
     ],
     "id": 572,
-    "romanization": "dowajusil su isseoyo",
-    "polite_form": "도와주실 수 있어요",
-    "plain_form": "도와주실 수 있어요",
-    "usage": "用于基础、求助场景的表达表达。"
+    "romanization": "dowajusil su iseoyo"
   },
   {
     "korean": "오늘도 수고했어요",
@@ -9111,10 +7404,7 @@
       "互动"
     ],
     "id": 573,
-    "romanization": "oneuldo sugohaesseoyo",
-    "polite_form": "오늘도 수고했어요",
-    "plain_form": "오늘도 수고했어요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "oneuldo sugohaeseoyo"
   },
   {
     "korean": "무대 기대할게요",
@@ -9127,10 +7417,7 @@
       "互动"
     ],
     "id": 574,
-    "romanization": "mudae gidaehalgeyo",
-    "polite_form": "무대 기대할게요",
-    "plain_form": "무대 기대할게요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "mudae gidaehalgeyo"
   },
   {
     "korean": "새 앨범 축하해요",
@@ -9143,10 +7430,7 @@
       "互动"
     ],
     "id": 575,
-    "romanization": "sae aelbeom chughahaeyo",
-    "polite_form": "새 앨범 축하해요",
-    "plain_form": "새 앨범 축하해요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "sae aelbeom chukhahaeyo"
   },
   {
     "korean": "컴백 축하해요",
@@ -9159,10 +7443,7 @@
       "互动"
     ],
     "id": 576,
-    "romanization": "keombaeg chughahaeyo",
-    "polite_form": "컴백 축하해요",
-    "plain_form": "컴백 축하해요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "keombaek chukhahaeyo"
   },
   {
     "korean": "노래 추천해 주세요",
@@ -9175,10 +7456,7 @@
       "互动"
     ],
     "id": 577,
-    "romanization": "norae chucheonhae juseyo",
-    "polite_form": "노래 추천해 주세요",
-    "plain_form": "노래 추천해 주세요",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "norae chucheonhae juseyo"
   },
   {
     "korean": "가장 좋아하는 노래",
@@ -9191,10 +7469,7 @@
       "互动"
     ],
     "id": 578,
-    "romanization": "gajang johahaneun norae",
-    "polite_form": "가장 좋아하는 노래",
-    "plain_form": "가장 좋아하는 노래",
-    "usage": "用于追星、互动场景的表达表达。"
+    "romanization": "gajang joahaneun norae"
   },
   {
     "korean": "이번 활동",
@@ -9207,10 +7482,7 @@
       "打歌"
     ],
     "id": 579,
-    "romanization": "ibeon hwaldong",
-    "polite_form": "이번 활동",
-    "plain_form": "이번 활동",
-    "usage": "用于追星、打歌场景的名词表达。"
+    "romanization": "ibeon hwaldong"
   },
   {
     "korean": "활동 기간",
@@ -9223,10 +7495,7 @@
       "打歌"
     ],
     "id": 580,
-    "romanization": "hwaldong gigan",
-    "polite_form": "활동 기간",
-    "plain_form": "활동 기간",
-    "usage": "用于追星、打歌场景的名词表达。"
+    "romanization": "hwaldong gigan"
   },
   {
     "korean": "무대 의상",
@@ -9239,10 +7508,7 @@
       "造型"
     ],
     "id": 581,
-    "romanization": "mudae uisang",
-    "polite_form": "무대 의상",
-    "plain_form": "무대 의상",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "mudae uisang"
   },
   {
     "korean": "헤어스타일",
@@ -9255,10 +7521,7 @@
       "造型"
     ],
     "id": 582,
-    "romanization": "heeoseutail",
-    "polite_form": "헤어스타일",
-    "plain_form": "헤어스타일",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "heeoseutail"
   },
   {
     "korean": "분장",
@@ -9271,10 +7534,7 @@
       "造型"
     ],
     "id": 583,
-    "romanization": "bunjang",
-    "polite_form": "분장",
-    "plain_form": "분장",
-    "usage": "用于追星、造型场景的名词表达。"
+    "romanization": "bunjang"
   },
   {
     "korean": "착장",
@@ -9287,10 +7547,7 @@
       "造型"
     ],
     "id": 584,
-    "romanization": "chagjang",
-    "polite_form": "착장",
-    "plain_form": "착장",
-    "usage": "用于饭圈、造型场景的名词表达。"
+    "romanization": "chakjang"
   },
   {
     "korean": "착장 정보",
@@ -9303,10 +7560,7 @@
       "造型"
     ],
     "id": 585,
-    "romanization": "chagjang jeongbo",
-    "polite_form": "착장 정보",
-    "plain_form": "착장 정보",
-    "usage": "用于饭圈、造型场景的名词表达。"
+    "romanization": "chakjang jeongbo"
   },
   {
     "korean": "셀카 포즈",
@@ -9319,10 +7573,7 @@
       "互动"
     ],
     "id": 586,
-    "romanization": "selka pojeu",
-    "polite_form": "셀카 포즈",
-    "plain_form": "셀카 포즈",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "selka pojeu"
   },
   {
     "korean": "인생네컷",
@@ -9335,10 +7586,7 @@
       "造型"
     ],
     "id": 587,
-    "romanization": "insaengnekeos",
-    "polite_form": "인생네컷",
-    "plain_form": "인생네컷",
-    "usage": "用于数字生活、造型场景的名词表达。"
+    "romanization": "insaengnekeot"
   },
   {
     "korean": "사진 저장",
@@ -9351,10 +7599,7 @@
       "日常"
     ],
     "id": 588,
-    "romanization": "sajin jeojang",
-    "polite_form": "사진 저장",
-    "plain_form": "사진 저장",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "sajin jeojang"
   },
   {
     "korean": "화질",
@@ -9367,10 +7612,7 @@
       "社交媒体"
     ],
     "id": 589,
-    "romanization": "hwajil",
-    "polite_form": "화질",
-    "plain_form": "화질",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "hwajil"
   },
   {
     "korean": "고화질",
@@ -9383,10 +7625,7 @@
       "社交媒体"
     ],
     "id": 590,
-    "romanization": "gohwajil",
-    "polite_form": "고화질",
-    "plain_form": "고화질",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "gohwajil"
   },
   {
     "korean": "저화질",
@@ -9399,10 +7638,7 @@
       "社交媒体"
     ],
     "id": 591,
-    "romanization": "jeohwajil",
-    "polite_form": "저화질",
-    "plain_form": "저화질",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "jeohwajil"
   },
   {
     "korean": "음소거",
@@ -9415,10 +7651,7 @@
       "日常"
     ],
     "id": 592,
-    "romanization": "eumsogeo",
-    "polite_form": "음소거",
-    "plain_form": "음소거",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "eumsogeo"
   },
   {
     "korean": "재생",
@@ -9431,10 +7664,7 @@
       "日常"
     ],
     "id": 593,
-    "romanization": "jaesaeng",
-    "polite_form": "재생",
-    "plain_form": "재생",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "jaesaeng"
   },
   {
     "korean": "일시정지",
@@ -9447,10 +7677,7 @@
       "日常"
     ],
     "id": 594,
-    "romanization": "ilsijeongji",
-    "polite_form": "일시정지",
-    "plain_form": "일시정지",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "ilsijeongji"
   },
   {
     "korean": "반복 재생",
@@ -9463,10 +7690,7 @@
       "日常"
     ],
     "id": 595,
-    "romanization": "banbog jaesaeng",
-    "polite_form": "반복 재생",
-    "plain_form": "반복 재생",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "banbok jaesaeng"
   },
   {
     "korean": "재생목록",
@@ -9479,10 +7703,7 @@
       "日常"
     ],
     "id": 596,
-    "romanization": "jaesaengmongrog",
-    "polite_form": "재생목록",
-    "plain_form": "재생목록",
-    "usage": "用于数字生活、日常场景的名词表达。"
+    "romanization": "jaesaengmokrok"
   },
   {
     "korean": "스트리밍",
@@ -9495,10 +7716,7 @@
       "数字生活"
     ],
     "id": 597,
-    "romanization": "seuteuriming",
-    "polite_form": "스트리밍",
-    "plain_form": "스트리밍",
-    "usage": "用于饭圈、数字生活场景的名词表达。"
+    "romanization": "seuteuriming"
   },
   {
     "korean": "음원",
@@ -9511,10 +7729,7 @@
       "音乐"
     ],
     "id": 598,
-    "romanization": "eumwon",
-    "polite_form": "음원",
-    "plain_form": "음원",
-    "usage": "用于饭圈、音乐场景的名词表达。"
+    "romanization": "eumwon"
   },
   {
     "korean": "음원 차트",
@@ -9527,10 +7742,7 @@
       "音乐"
     ],
     "id": 599,
-    "romanization": "eumwon chateu",
-    "polite_form": "음원 차트",
-    "plain_form": "음원 차트",
-    "usage": "用于饭圈、音乐场景的名词表达。"
+    "romanization": "eumwon chateu"
   },
   {
     "korean": "순위",
@@ -9543,10 +7755,7 @@
       "饭圈用语"
     ],
     "id": 600,
-    "romanization": "sunwi",
-    "polite_form": "순위",
-    "plain_form": "순위",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "sunwi"
   },
   {
     "korean": "투표",
@@ -9559,10 +7768,7 @@
       "饭圈用语"
     ],
     "id": 601,
-    "romanization": "tupyo",
-    "polite_form": "투표",
-    "plain_form": "투표",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "tupyo"
   },
   {
     "korean": "사전 투표",
@@ -9575,10 +7781,7 @@
       "饭圈用语"
     ],
     "id": 602,
-    "romanization": "sajeon tupyo",
-    "polite_form": "사전 투표",
-    "plain_form": "사전 투표",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "sajeon tupyo"
   },
   {
     "korean": "인증샷",
@@ -9591,10 +7794,7 @@
       "饭圈用语"
     ],
     "id": 603,
-    "romanization": "injeungsyas",
-    "polite_form": "인증샷",
-    "plain_form": "인증샷",
-    "usage": "用于饭圈、饭圈用语场景的名词表达。"
+    "romanization": "injeungsyat"
   },
   {
     "korean": "팬레터",
@@ -9607,10 +7807,7 @@
       "互动"
     ],
     "id": 604,
-    "romanization": "paenleteo",
-    "polite_form": "팬레터",
-    "plain_form": "팬레터",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "paelleteo"
   },
   {
     "korean": "응원 메시지",
@@ -9623,10 +7820,7 @@
       "互动"
     ],
     "id": 605,
-    "romanization": "eungwon mesiji",
-    "polite_form": "응원 메시지",
-    "plain_form": "응원 메시지",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "euwon mesiji"
   },
   {
     "korean": "인스타그램",
@@ -9639,10 +7833,7 @@
       "社交媒体"
     ],
     "id": 606,
-    "romanization": "inseutageuraem",
-    "polite_form": "인스타그램",
-    "plain_form": "인스타그램",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "inseutageuraem"
   },
   {
     "korean": "유튜브",
@@ -9655,10 +7846,7 @@
       "社交媒体"
     ],
     "id": 607,
-    "romanization": "yutyubeu",
-    "polite_form": "유튜브",
-    "plain_form": "유튜브",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "yutyubeu"
   },
   {
     "korean": "트위터",
@@ -9671,10 +7859,7 @@
       "社交媒体"
     ],
     "id": 608,
-    "romanization": "teuwiteo",
-    "polite_form": "트위터",
-    "plain_form": "트위터",
-    "usage": "用于数字生活、社交媒体场景的名词表达。"
+    "romanization": "teuwiteo"
   },
   {
     "korean": "예능",
@@ -9687,10 +7872,7 @@
       "综艺"
     ],
     "id": 1213,
-    "romanization": "yeneung",
-    "polite_form": "예능",
-    "plain_form": "예능",
-    "usage": "用于追星、综艺场景的名词表达。"
+    "romanization": "yeneung"
   },
   {
     "korean": "예능감",
@@ -9704,10 +7886,7 @@
       "饭圈用语"
     ],
     "id": 1214,
-    "romanization": "yeneunggam",
-    "polite_form": "예능감",
-    "plain_form": "예능감",
-    "usage": "用于追星、综艺、饭圈用语场景的名词表达。"
+    "romanization": "yeneunggam"
   },
   {
     "korean": "게스트",
@@ -9720,10 +7899,7 @@
       "综艺"
     ],
     "id": 1215,
-    "romanization": "geseuteu",
-    "polite_form": "게스트",
-    "plain_form": "게스트",
-    "usage": "用于追星、综艺场景的名词表达。"
+    "romanization": "geseuteu"
   },
   {
     "korean": "MC",
@@ -9736,10 +7912,7 @@
       "综艺"
     ],
     "id": 1216,
-    "romanization": "MC",
-    "polite_form": "MC",
-    "plain_form": "MC",
-    "usage": "用于追星、综艺场景的名词表达。"
+    "romanization": "MC"
   },
   {
     "korean": "리액션",
@@ -9753,10 +7926,7 @@
       "感受"
     ],
     "id": 1217,
-    "romanization": "riaegsyeon",
-    "polite_form": "리액션",
-    "plain_form": "리액션",
-    "usage": "用于追星、综艺、感受场景的名词表达。"
+    "romanization": "riaeksyeon"
   },
   {
     "korean": "표정 관리",
@@ -9769,10 +7939,7 @@
       "饭圈用语"
     ],
     "id": 1218,
-    "romanization": "pyojeong gwanli",
-    "polite_form": "표정 관리",
-    "plain_form": "표정 관리",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "pyojeong gwalli"
   },
   {
     "korean": "웃음 참기",
@@ -9785,10 +7952,7 @@
       "综艺"
     ],
     "id": 1219,
-    "romanization": "useum chamgi",
-    "polite_form": "웃음 참기",
-    "plain_form": "웃음 참기",
-    "usage": "用于追星、综艺场景的名词表达。"
+    "romanization": "useum chamgi"
   },
   {
     "korean": "리얼리티",
@@ -9801,10 +7965,7 @@
       "综艺"
     ],
     "id": 1220,
-    "romanization": "rieolliti",
-    "polite_form": "리얼리티",
-    "plain_form": "리얼리티",
-    "usage": "用于追星、综艺场景的名词表达。"
+    "romanization": "rieolliti"
   },
   {
     "korean": "브이로그",
@@ -9817,10 +7978,7 @@
       "数字生活"
     ],
     "id": 1221,
-    "romanization": "beuirogeu",
-    "polite_form": "브이로그",
-    "plain_form": "브이로그",
-    "usage": "用于追星、数字生活场景的名词表达。"
+    "romanization": "beuirogeu"
   },
   {
     "korean": "비하인드",
@@ -9833,10 +7991,7 @@
       "饭圈用语"
     ],
     "id": 1222,
-    "romanization": "bihaindeu",
-    "polite_form": "비하인드",
-    "plain_form": "비하인드",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "bihaindeu"
   },
   {
     "korean": "라디오",
@@ -9849,10 +8004,7 @@
       "综艺"
     ],
     "id": 1223,
-    "romanization": "radio",
-    "polite_form": "라디오",
-    "plain_form": "라디오",
-    "usage": "用于追星、综艺场景的名词表达。"
+    "romanization": "radio"
   },
   {
     "korean": "사연",
@@ -9865,10 +8017,7 @@
       "互动"
     ],
     "id": 1224,
-    "romanization": "sayeon",
-    "polite_form": "사연",
-    "plain_form": "사연",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "sayeon"
   },
   {
     "korean": "채택",
@@ -9882,10 +8031,7 @@
       "饭圈用语"
     ],
     "id": 1225,
-    "romanization": "chaetaeg",
-    "polite_form": "채택",
-    "plain_form": "채택",
-    "usage": "用于追星、互动、饭圈用语场景的名词表达。"
+    "romanization": "chaetaek"
   },
   {
     "korean": "선곡",
@@ -9898,10 +8044,7 @@
       "音乐"
     ],
     "id": 1226,
-    "romanization": "seongog",
-    "polite_form": "선곡",
-    "plain_form": "선곡",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "seongok"
   },
   {
     "korean": "포토존",
@@ -9914,10 +8057,7 @@
       "线下活动"
     ],
     "id": 1227,
-    "romanization": "potojon",
-    "polite_form": "포토존",
-    "plain_form": "포토존",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "potojon"
   },
   {
     "korean": "경품",
@@ -9930,10 +8070,7 @@
       "线下活动"
     ],
     "id": 1228,
-    "romanization": "gyeongpum",
-    "polite_form": "경품",
-    "plain_form": "경품",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "gyeongpum"
   },
   {
     "korean": "당첨",
@@ -9947,10 +8084,7 @@
       "饭圈用语"
     ],
     "id": 1229,
-    "romanization": "dangcheom",
-    "polite_form": "당첨",
-    "plain_form": "당첨",
-    "usage": "用于追星、线下活动、饭圈用语场景的名词表达。"
+    "romanization": "dangcheom"
   },
   {
     "korean": "낙첨",
@@ -9964,10 +8098,7 @@
       "饭圈用语"
     ],
     "id": 1230,
-    "romanization": "nangcheom",
-    "polite_form": "낙첨",
-    "plain_form": "낙첨",
-    "usage": "用于追星、线下活动、饭圈用语场景的名词表达。"
+    "romanization": "nakcheom"
   },
   {
     "korean": "추첨",
@@ -9980,10 +8111,7 @@
       "线下活动"
     ],
     "id": 1231,
-    "romanization": "chucheom",
-    "polite_form": "추첨",
-    "plain_form": "추첨",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "chucheom"
   },
   {
     "korean": "포토 부스",
@@ -9996,10 +8124,7 @@
       "线下活动"
     ],
     "id": 1232,
-    "romanization": "poto buseu",
-    "polite_form": "포토 부스",
-    "plain_form": "포토 부스",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "poto buseu"
   },
   {
     "korean": "사인 소품",
@@ -10012,10 +8137,7 @@
       "线下活动"
     ],
     "id": 1233,
-    "romanization": "sain sopum",
-    "polite_form": "사인 소품",
-    "plain_form": "사인 소품",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "sain sopum"
   },
   {
     "korean": "본인 선물",
@@ -10028,10 +8150,7 @@
       "线下活动"
     ],
     "id": 1234,
-    "romanization": "bonin seonmul",
-    "polite_form": "본인 선물",
-    "plain_form": "본인 선물",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "bonin seonmul"
   },
   {
     "korean": "이벤트 존",
@@ -10044,10 +8163,7 @@
       "线下活动"
     ],
     "id": 1235,
-    "romanization": "ibenteu jon",
-    "polite_form": "이벤트 존",
-    "plain_form": "이벤트 존",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "ibenteu jon"
   },
   {
     "korean": "오픈런",
@@ -10061,10 +8177,7 @@
       "饭圈用语"
     ],
     "id": 1236,
-    "romanization": "opeunleol",
-    "polite_form": "오픈런",
-    "plain_form": "오픈런",
-    "usage": "用于追星、线下活动、饭圈用语场景的名词表达。"
+    "romanization": "opeulleon"
   },
   {
     "korean": "응원색",
@@ -10078,10 +8191,7 @@
       "线下活动"
     ],
     "id": 1237,
-    "romanization": "eungwonsaeg",
-    "polite_form": "응원색",
-    "plain_form": "응원색",
-    "usage": "用于追星、应援、线下活动场景的名词表达。"
+    "romanization": "euwonsaek"
   },
   {
     "korean": "공식 응원봉",
@@ -10095,10 +8205,7 @@
       "周边"
     ],
     "id": 1238,
-    "romanization": "gongsig eungwonbong",
-    "polite_form": "공식 응원봉",
-    "plain_form": "공식 응원봉",
-    "usage": "用于追星、应援、周边场景的名词表达。"
+    "romanization": "gongsik euwonbong"
   },
   {
     "korean": "응원가",
@@ -10112,10 +8219,7 @@
       "演唱会"
     ],
     "id": 1239,
-    "romanization": "eungwonga",
-    "polite_form": "응원가",
-    "plain_form": "응원가",
-    "usage": "用于追星、应援、演唱会场景的名词表达。"
+    "romanization": "euwonga"
   },
   {
     "korean": "공식 팬클럽",
@@ -10129,10 +8233,7 @@
       "应援"
     ],
     "id": 1240,
-    "romanization": "gongsig paenkeulleob",
-    "polite_form": "공식 팬클럽",
-    "plain_form": "공식 팬클럽",
-    "usage": "用于追星、粉丝、应援场景的名词表达。"
+    "romanization": "gongsik paenkeulleop"
   },
   {
     "korean": "팬클럽 이름",
@@ -10145,10 +8246,7 @@
       "粉丝"
     ],
     "id": 1241,
-    "romanization": "paenkeulleob ireum",
-    "polite_form": "팬클럽 이름",
-    "plain_form": "팬클럽 이름",
-    "usage": "用于追星、粉丝场景的名词表达。"
+    "romanization": "paenkeulleop ireum"
   },
   {
     "korean": "공식 팬카페",
@@ -10162,10 +8260,7 @@
       "数字生活"
     ],
     "id": 1242,
-    "romanization": "gongsig paenkape",
-    "polite_form": "공식 팬카페",
-    "plain_form": "공식 팬카페",
-    "usage": "用于追星、粉丝、数字生活场景的名词表达。"
+    "romanization": "gongsik paenkape"
   },
   {
     "korean": "팬카페",
@@ -10179,10 +8274,7 @@
       "数字生活"
     ],
     "id": 1243,
-    "romanization": "paenkape",
-    "polite_form": "팬카페",
-    "plain_form": "팬카페",
-    "usage": "用于追星、粉丝、数字生活场景的名词表达。"
+    "romanization": "paenkape"
   },
   {
     "korean": "팬 아트",
@@ -10196,10 +8288,7 @@
       "数字生活"
     ],
     "id": 1244,
-    "romanization": "paen ateu",
-    "polite_form": "팬 아트",
-    "plain_form": "팬 아트",
-    "usage": "用于追星、粉丝、数字生活场景的名词表达。"
+    "romanization": "paen ateu"
   },
   {
     "korean": "팬픽",
@@ -10213,10 +8302,7 @@
       "饭圈用语"
     ],
     "id": 1245,
-    "romanization": "paenpig",
-    "polite_form": "팬픽",
-    "plain_form": "팬픽",
-    "usage": "用于追星、粉丝、饭圈用语场景的名词表达。"
+    "romanization": "paenpik"
   },
   {
     "korean": "조공",
@@ -10230,10 +8316,7 @@
       "饭圈用语"
     ],
     "id": 1246,
-    "romanization": "jogong",
-    "polite_form": "조공",
-    "plain_form": "조공",
-    "usage": "用于追星、应援、饭圈用语场景的名词表达。"
+    "romanization": "jogong"
   },
   {
     "korean": "생일 카페",
@@ -10247,10 +8330,7 @@
       "饭圈用语"
     ],
     "id": 1247,
-    "romanization": "saengil kape",
-    "polite_form": "생일 카페",
-    "plain_form": "생일 카페",
-    "usage": "用于追星、应援、饭圈用语场景的名词表达。"
+    "romanization": "saeil kape"
   },
   {
     "korean": "전광판 광고",
@@ -10264,10 +8344,7 @@
       "饭圈用语"
     ],
     "id": 1248,
-    "romanization": "jeongwangpan gwanggo",
-    "polite_form": "전광판 광고",
-    "plain_form": "전광판 광고",
-    "usage": "用于追星、应援、饭圈用语场景的名词表达。"
+    "romanization": "jeongwangpan gwanggo"
   },
   {
     "korean": "이벤트 진행",
@@ -10280,10 +8357,7 @@
       "应援"
     ],
     "id": 1249,
-    "romanization": "ibenteu jinhaeng",
-    "polite_form": "이벤트 진행",
-    "plain_form": "이벤트 진행",
-    "usage": "用于追星、应援场景的名词表达。"
+    "romanization": "ibenteu jinhaeng"
   },
   {
     "korean": "심쿵",
@@ -10297,10 +8371,7 @@
       "饭圈用语"
     ],
     "id": 1250,
-    "romanization": "simkung",
-    "polite_form": "심쿵",
-    "plain_form": "심쿵",
-    "usage": "用于追星、感受、饭圈用语场景的感叹词表达。"
+    "romanization": "simkung"
   },
   {
     "korean": "뇌절",
@@ -10313,10 +8384,7 @@
       "饭圈用语"
     ],
     "id": 1251,
-    "romanization": "noejeol",
-    "polite_form": "뇌절",
-    "plain_form": "뇌절",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "noejeol"
   },
   {
     "korean": "현타",
@@ -10329,10 +8397,7 @@
       "饭圈用语"
     ],
     "id": 1252,
-    "romanization": "hyeonta",
-    "polite_form": "현타",
-    "plain_form": "현타",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "hyeonta"
   },
   {
     "korean": "오열",
@@ -10346,10 +8411,7 @@
       "饭圈用语"
     ],
     "id": 1253,
-    "romanization": "oyeol",
-    "polite_form": "오열",
-    "plain_form": "오열",
-    "usage": "用于追星、感受、饭圈用语场景的名词表达。"
+    "romanization": "oyeol"
   },
   {
     "korean": "눈물 쏟다",
@@ -10362,10 +8424,7 @@
       "感受"
     ],
     "id": 1254,
-    "romanization": "nunmul ssodda",
-    "polite_form": "눈물 쏟다",
-    "plain_form": "눈물 쏟다",
-    "usage": "用于追星、感受场景的短语表达。"
+    "romanization": "nunmul ssotda"
   },
   {
     "korean": "멍하다",
@@ -10378,10 +8437,7 @@
       "感受"
     ],
     "id": 1255,
-    "romanization": "meonghada",
-    "polite_form": "멍해요",
-    "plain_form": "멍해",
-    "usage": "用于追星、感受场景的形容词表达。"
+    "romanization": "meonghada"
   },
   {
     "korean": "황홀하다",
@@ -10394,10 +8450,7 @@
       "感受"
     ],
     "id": 1256,
-    "romanization": "hwangholhada",
-    "polite_form": "황홀해요",
-    "plain_form": "황홀해",
-    "usage": "用于追星、感受场景的形容词表达。"
+    "romanization": "hwangholhada"
   },
   {
     "korean": "두근두근",
@@ -10410,10 +8463,7 @@
       "感受"
     ],
     "id": 1257,
-    "romanization": "dugeundugeun",
-    "polite_form": "두근두근",
-    "plain_form": "두근두근",
-    "usage": "用于追星、感受场景的副词表达。"
+    "romanization": "dugeundugeun"
   },
   {
     "korean": "흑역사",
@@ -10426,10 +8476,7 @@
       "饭圈用语"
     ],
     "id": 1258,
-    "romanization": "heugyeogsa",
-    "polite_form": "흑역사",
-    "plain_form": "흑역사",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "heugyeoksa"
   },
   {
     "korean": "본진",
@@ -10442,10 +8489,7 @@
       "饭圈用语"
     ],
     "id": 1259,
-    "romanization": "bonjin",
-    "polite_form": "본진",
-    "plain_form": "본진",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "bonjin"
   },
   {
     "korean": "부캐",
@@ -10458,10 +8502,7 @@
       "饭圈用语"
     ],
     "id": 1260,
-    "romanization": "bukae",
-    "polite_form": "부캐",
-    "plain_form": "부캐",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "bukae"
   },
   {
     "korean": "입덕 계기",
@@ -10474,10 +8515,7 @@
       "饭圈用语"
     ],
     "id": 1261,
-    "romanization": "ibdeog gyegi",
-    "polite_form": "입덕 계기",
-    "plain_form": "입덕 계기",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "ipdeok gyegi"
   },
   {
     "korean": "덕력",
@@ -10490,10 +8528,7 @@
       "饭圈用语"
     ],
     "id": 1262,
-    "romanization": "deogryeog",
-    "polite_form": "덕력",
-    "plain_form": "덕력",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "deokryeok"
   },
   {
     "korean": "중증",
@@ -10506,10 +8541,7 @@
       "饭圈用语"
     ],
     "id": 1263,
-    "romanization": "jungjeung",
-    "polite_form": "중증",
-    "plain_form": "중증",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "jungjeung"
   },
   {
     "korean": "입덕 폭발",
@@ -10522,10 +8554,7 @@
       "饭圈用语"
     ],
     "id": 1264,
-    "romanization": "ibdeog pogbal",
-    "polite_form": "입덕 폭발",
-    "plain_form": "입덕 폭발",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "ipdeok pokbal"
   },
   {
     "korean": "손하트",
@@ -10538,10 +8567,7 @@
       "互动"
     ],
     "id": 1265,
-    "romanization": "sonhateu",
-    "polite_form": "손하트",
-    "plain_form": "손하트",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "sonhateu"
   },
   {
     "korean": "볼하트",
@@ -10554,10 +8580,7 @@
       "互动"
     ],
     "id": 1266,
-    "romanization": "bolhateu",
-    "polite_form": "볼하트",
-    "plain_form": "볼하트",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "bolhateu"
   },
   {
     "korean": "윙크",
@@ -10570,10 +8593,7 @@
       "互动"
     ],
     "id": 1267,
-    "romanization": "wingkeu",
-    "polite_form": "윙크",
-    "plain_form": "윙크",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "wingkeu"
   },
   {
     "korean": "손인사",
@@ -10587,10 +8607,7 @@
       "线下活动"
     ],
     "id": 1268,
-    "romanization": "soninsa",
-    "polite_form": "손인사",
-    "plain_form": "손인사",
-    "usage": "用于追星、互动、线下活动场景的名词表达。"
+    "romanization": "soninsa"
   },
   {
     "korean": "고개 끄덕",
@@ -10603,10 +8620,7 @@
       "互动"
     ],
     "id": 1269,
-    "romanization": "gogae kkeudeog",
-    "polite_form": "고개 끄덕",
-    "plain_form": "고개 끄덕",
-    "usage": "用于追星、互动场景的名词表达。"
+    "romanization": "gogae kkeudeok"
   },
   {
     "korean": "눈 맞춤",
@@ -10620,10 +8634,7 @@
       "线下活动"
     ],
     "id": 1270,
-    "romanization": "nun manchum",
-    "polite_form": "눈 맞춤",
-    "plain_form": "눈 맞춤",
-    "usage": "用于追星、互动、线下活动场景的名词表达。"
+    "romanization": "nun matchum"
   },
   {
     "korean": "포인트 댄스",
@@ -10637,10 +8648,7 @@
       "音乐"
     ],
     "id": 1271,
-    "romanization": "pointeu daenseu",
-    "polite_form": "포인트 댄스",
-    "plain_form": "포인트 댄스",
-    "usage": "用于追星、舞台、音乐场景的名词表达。"
+    "romanization": "pointeu daenseu"
   },
   {
     "korean": "칼춤",
@@ -10653,10 +8661,7 @@
       "舞台"
     ],
     "id": 1272,
-    "romanization": "kalchum",
-    "polite_form": "칼춤",
-    "plain_form": "칼춤",
-    "usage": "用于追星、舞台场景的名词表达。"
+    "romanization": "kalchum"
   },
   {
     "korean": "표정 연기",
@@ -10669,10 +8674,7 @@
       "舞台"
     ],
     "id": 1273,
-    "romanization": "pyojeong yeongi",
-    "polite_form": "표정 연기",
-    "plain_form": "표정 연기",
-    "usage": "用于追星、舞台场景的名词表达。"
+    "romanization": "pyojeong yeongi"
   },
   {
     "korean": "몸풀기",
@@ -10685,10 +8687,7 @@
       "舞台"
     ],
     "id": 1274,
-    "romanization": "mompulgi",
-    "polite_form": "몸풀기",
-    "plain_form": "몸풀기",
-    "usage": "用于追星、舞台场景的名词表达。"
+    "romanization": "mompulgi"
   },
   {
     "korean": "완성도",
@@ -10701,10 +8700,7 @@
       "舞台"
     ],
     "id": 1275,
-    "romanization": "wanseongdo",
-    "polite_form": "완성도",
-    "plain_form": "완성도",
-    "usage": "用于追星、舞台场景的名词表达。"
+    "romanization": "wanseongdo"
   },
   {
     "korean": "시선처리",
@@ -10718,10 +8714,7 @@
       "感受"
     ],
     "id": 1276,
-    "romanization": "siseoncheori",
-    "polite_form": "시선처리",
-    "plain_form": "시선처리",
-    "usage": "用于追星、舞台、感受场景的名词表达。"
+    "romanization": "siseoncheori"
   },
   {
     "korean": "에너지",
@@ -10734,10 +8727,7 @@
       "舞台"
     ],
     "id": 1277,
-    "romanization": "eneoji",
-    "polite_form": "에너지",
-    "plain_form": "에너지",
-    "usage": "用于追星、舞台场景的名词表达。"
+    "romanization": "eneoji"
   },
   {
     "korean": "존재감",
@@ -10750,10 +8740,7 @@
       "舞台"
     ],
     "id": 1278,
-    "romanization": "jonjaegam",
-    "polite_form": "존재감",
-    "plain_form": "존재감",
-    "usage": "用于追星、舞台场景的名词表达。"
+    "romanization": "jonjaegam"
   },
   {
     "korean": "분위기 메이커",
@@ -10766,10 +8753,7 @@
       "饭圈用语"
     ],
     "id": 1279,
-    "romanization": "bunwigi meikeo",
-    "polite_form": "분위기 메이커",
-    "plain_form": "분위기 메이커",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "bunwigi meikeo"
   },
   {
     "korean": "막내 온 탑",
@@ -10782,10 +8766,7 @@
       "饭圈用语"
     ],
     "id": 1280,
-    "romanization": "mangnae on tab",
-    "polite_form": "막내 온 탑",
-    "plain_form": "막내 온 탑",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "mangnae on tap"
   },
   {
     "korean": "정규 앨범",
@@ -10798,10 +8779,7 @@
       "音乐"
     ],
     "id": 1281,
-    "romanization": "jeonggyu aelbeom",
-    "polite_form": "정규 앨범",
-    "plain_form": "정규 앨범",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "jeonggyu aelbeom"
   },
   {
     "korean": "미니 앨범",
@@ -10815,10 +8793,7 @@
       "周边"
     ],
     "id": 1282,
-    "romanization": "mini aelbeom",
-    "polite_form": "미니 앨범",
-    "plain_form": "미니 앨범",
-    "usage": "用于追星、音乐、周边场景的名词表达。"
+    "romanization": "mini aelbeom"
   },
   {
     "korean": "싱글",
@@ -10831,10 +8806,7 @@
       "音乐"
     ],
     "id": 1283,
-    "romanization": "singgeul",
-    "polite_form": "싱글",
-    "plain_form": "싱글",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "singgeul"
   },
   {
     "korean": "디지털 싱글",
@@ -10847,10 +8819,7 @@
       "音乐"
     ],
     "id": 1284,
-    "romanization": "dijiteol singgeul",
-    "polite_form": "디지털 싱글",
-    "plain_form": "디지털 싱글",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "dijiteol singgeul"
   },
   {
     "korean": "자작곡",
@@ -10863,10 +8832,7 @@
       "音乐"
     ],
     "id": 1285,
-    "romanization": "jajaggog",
-    "polite_form": "자작곡",
-    "plain_form": "자작곡",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "jajakgok"
   },
   {
     "korean": "작사",
@@ -10879,10 +8845,7 @@
       "音乐"
     ],
     "id": 1286,
-    "romanization": "jagsa",
-    "polite_form": "작사",
-    "plain_form": "작사",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "jaksa"
   },
   {
     "korean": "작곡",
@@ -10895,10 +8858,7 @@
       "音乐"
     ],
     "id": 1287,
-    "romanization": "jaggog",
-    "polite_form": "작곡",
-    "plain_form": "작곡",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "jakgok"
   },
   {
     "korean": "프로듀싱",
@@ -10911,10 +8871,7 @@
       "音乐"
     ],
     "id": 1288,
-    "romanization": "peurodyusing",
-    "polite_form": "프로듀싱",
-    "plain_form": "프로듀싱",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "peurodyusing"
   },
   {
     "korean": "피처링",
@@ -10927,10 +8884,7 @@
       "音乐"
     ],
     "id": 1289,
-    "romanization": "picheoring",
-    "polite_form": "피처링",
-    "plain_form": "피처링",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "picheoring"
   },
   {
     "korean": "OST",
@@ -10943,10 +8897,7 @@
       "音乐"
     ],
     "id": 1290,
-    "romanization": "OST",
-    "polite_form": "OST",
-    "plain_form": "OST",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "OST"
   },
   {
     "korean": "커버곡",
@@ -10959,10 +8910,7 @@
       "音乐"
     ],
     "id": 1291,
-    "romanization": "keobeogog",
-    "polite_form": "커버곡",
-    "plain_form": "커버곡",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "keobeogok"
   },
   {
     "korean": "음원 총공",
@@ -10976,10 +8924,7 @@
       "音乐"
     ],
     "id": 1292,
-    "romanization": "eumwon chonggong",
-    "polite_form": "음원 총공",
-    "plain_form": "음원 총공",
-    "usage": "用于追星、饭圈用语、音乐场景的名词表达。"
+    "romanization": "eumwon chonggong"
   },
   {
     "korean": "총공",
@@ -10992,10 +8937,7 @@
       "饭圈用语"
     ],
     "id": 1293,
-    "romanization": "chonggong",
-    "polite_form": "총공",
-    "plain_form": "총공",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "chonggong"
   },
   {
     "korean": "음원 사재기",
@@ -11009,10 +8951,7 @@
       "音乐"
     ],
     "id": 1294,
-    "romanization": "eumwon sajaegi",
-    "polite_form": "음원 사재기",
-    "plain_form": "음원 사재기",
-    "usage": "用于追星、饭圈用语、音乐场景的名词表达。"
+    "romanization": "eumwon sajaegi"
   },
   {
     "korean": "1위",
@@ -11025,10 +8964,7 @@
       "音乐"
     ],
     "id": 1295,
-    "romanization": "1wi",
-    "polite_form": "1위",
-    "plain_form": "1위",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "1wi"
   },
   {
     "korean": "올킬",
@@ -11042,10 +8978,7 @@
       "音乐"
     ],
     "id": 1296,
-    "romanization": "olkil",
-    "polite_form": "올킬",
-    "plain_form": "올킬",
-    "usage": "用于追星、饭圈用语、音乐场景的名词表达。"
+    "romanization": "olkil"
   },
   {
     "korean": "역주행",
@@ -11059,10 +8992,7 @@
       "饭圈用语"
     ],
     "id": 1297,
-    "romanization": "yeogjuhaeng",
-    "polite_form": "역주행",
-    "plain_form": "역주행",
-    "usage": "用于追星、音乐、饭圈用语场景的名词表达。"
+    "romanization": "yeokjuhaeng"
   },
   {
     "korean": "재생 수",
@@ -11076,10 +9006,7 @@
       "音乐"
     ],
     "id": 1298,
-    "romanization": "jaesaeng su",
-    "polite_form": "재생 수",
-    "plain_form": "재생 수",
-    "usage": "用于追星、数字生活、音乐场景的名词表达。"
+    "romanization": "jaesaeng su"
   },
   {
     "korean": "뮤비 조회수",
@@ -11093,10 +9020,7 @@
       "音乐"
     ],
     "id": 1299,
-    "romanization": "myubi johoesu",
-    "polite_form": "뮤비 조회수",
-    "plain_form": "뮤비 조회수",
-    "usage": "用于追星、数字生活、音乐场景的名词表达。"
+    "romanization": "myubi johoesu"
   },
   {
     "korean": "위버스 게시물",
@@ -11110,10 +9034,7 @@
       "社交媒体"
     ],
     "id": 1300,
-    "romanization": "wibeoseu gesimul",
-    "polite_form": "위버스 게시물",
-    "plain_form": "위버스 게시물",
-    "usage": "用于追星、数字生活、社交媒体场景的名词表达。"
+    "romanization": "wibeoseu gesimul"
   },
   {
     "korean": "버블 구독",
@@ -11127,10 +9048,7 @@
       "社交媒体"
     ],
     "id": 1301,
-    "romanization": "beobeul gudog",
-    "polite_form": "버블 구독",
-    "plain_form": "버블 구독",
-    "usage": "用于追星、数字生活、社交媒体场景的名词表达。"
+    "romanization": "beobeul gudok"
   },
   {
     "korean": "버블 메시지",
@@ -11144,10 +9062,7 @@
       "社交媒体"
     ],
     "id": 1302,
-    "romanization": "beobeul mesiji",
-    "polite_form": "버블 메시지",
-    "plain_form": "버블 메시지",
-    "usage": "用于追星、数字生活、社交媒体场景的名词表达。"
+    "romanization": "beobeul mesiji"
   },
   {
     "korean": "위버스 댓글",
@@ -11161,10 +9076,7 @@
       "社交媒体"
     ],
     "id": 1303,
-    "romanization": "wibeoseu daesgeul",
-    "polite_form": "위버스 댓글",
-    "plain_form": "위버스 댓글",
-    "usage": "用于追星、数字生活、社交媒体场景的名词表达。"
+    "romanization": "wibeoseu daetgeul"
   },
   {
     "korean": "인스타 스토리",
@@ -11178,10 +9090,7 @@
       "社交媒体"
     ],
     "id": 1304,
-    "romanization": "inseuta seutori",
-    "polite_form": "인스타 스토리",
-    "plain_form": "인스타 스토리",
-    "usage": "用于追星、数字生活、社交媒体场景的名词表达。"
+    "romanization": "inseuta seutori"
   },
   {
     "korean": "인스타 라이브",
@@ -11195,10 +9104,7 @@
       "社交媒体"
     ],
     "id": 1305,
-    "romanization": "inseuta raibeu",
-    "polite_form": "인스타 라이브",
-    "plain_form": "인스타 라이브",
-    "usage": "用于追星、数字生活、社交媒体场景的名词表达。"
+    "romanization": "inseuta raibeu"
   },
   {
     "korean": "유튜브 쇼츠",
@@ -11212,10 +9118,7 @@
       "社交媒体"
     ],
     "id": 1306,
-    "romanization": "yutyubeu syocheu",
-    "polite_form": "유튜브 쇼츠",
-    "plain_form": "유튜브 쇼츠",
-    "usage": "用于追星、数字生活、社交媒体场景的名词表达。"
+    "romanization": "yutyubeu syocheu"
   },
   {
     "korean": "틱톡",
@@ -11229,10 +9132,7 @@
       "社交媒体"
     ],
     "id": 1307,
-    "romanization": "tigtog",
-    "polite_form": "틱톡",
-    "plain_form": "틱톡",
-    "usage": "用于追星、数字生活、社交媒体场景的名词表达。"
+    "romanization": "tiktok"
   },
   {
     "korean": "엑스",
@@ -11246,10 +9146,7 @@
       "社交媒体"
     ],
     "id": 1308,
-    "romanization": "egseu",
-    "polite_form": "엑스",
-    "plain_form": "엑스",
-    "usage": "用于追星、数字生活、社交媒体场景的名词表达。"
+    "romanization": "ekseu"
   },
   {
     "korean": "포스팅",
@@ -11263,10 +9160,7 @@
       "社交媒体"
     ],
     "id": 1309,
-    "romanization": "poseuting",
-    "polite_form": "포스팅",
-    "plain_form": "포스팅",
-    "usage": "用于追星、数字生活、社交媒体场景的名词表达。"
+    "romanization": "poseuting"
   },
   {
     "korean": "스압",
@@ -11280,10 +9174,7 @@
       "社交媒体"
     ],
     "id": 1310,
-    "romanization": "seuab",
-    "polite_form": "스압",
-    "plain_form": "스압",
-    "usage": "用于追星、饭圈用语、社交媒体场景的名词表达。"
+    "romanization": "seuap"
   },
   {
     "korean": "캡처본",
@@ -11297,10 +9188,7 @@
       "社交媒体"
     ],
     "id": 1311,
-    "romanization": "kaebcheobon",
-    "polite_form": "캡처본",
-    "plain_form": "캡처본",
-    "usage": "用于追星、数字生活、社交媒体场景的名词表达。"
+    "romanization": "kaepcheobon"
   },
   {
     "korean": "움짤 저장",
@@ -11313,10 +9201,7 @@
       "数字生活"
     ],
     "id": 1312,
-    "romanization": "umjjal jeojang",
-    "polite_form": "움짤 저장",
-    "plain_form": "움짤 저장",
-    "usage": "用于追星、数字生活场景的短语表达。"
+    "romanization": "umjjal jeojang"
   },
   {
     "korean": "짤 제조기",
@@ -11329,10 +9214,7 @@
       "饭圈用语"
     ],
     "id": 1313,
-    "romanization": "jjal jejogi",
-    "polite_form": "짤 제조기",
-    "plain_form": "짤 제조기",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "jjal jejogi"
   },
   {
     "korean": "최애 사진",
@@ -11345,10 +9227,7 @@
       "饭圈用语"
     ],
     "id": 1314,
-    "romanization": "choeae sajin",
-    "polite_form": "최애 사진",
-    "plain_form": "최애 사진",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "choeae sajin"
   },
   {
     "korean": "배경화면",
@@ -11361,10 +9240,7 @@
       "日常"
     ],
     "id": 1315,
-    "romanization": "baegyeonghwamyeon",
-    "polite_form": "배경화면",
-    "plain_form": "배경화면",
-    "usage": "用于追星、日常场景的名词表达。"
+    "romanization": "baegyeonghwamyeon"
   },
   {
     "korean": "잠금화면",
@@ -11377,10 +9253,7 @@
       "日常"
     ],
     "id": 1316,
-    "romanization": "jamgeumhwamyeon",
-    "polite_form": "잠금화면",
-    "plain_form": "잠금화면",
-    "usage": "用于追星、日常场景的名词表达。"
+    "romanization": "jamgeumhwamyeon"
   },
   {
     "korean": "덕질 계정",
@@ -11393,10 +9266,7 @@
       "饭圈用语"
     ],
     "id": 1317,
-    "romanization": "deogjil gyejeong",
-    "polite_form": "덕질 계정",
-    "plain_form": "덕질 계정",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "deokjil gyejeong"
   },
   {
     "korean": "덕계정",
@@ -11409,10 +9279,7 @@
       "饭圈用语"
     ],
     "id": 1318,
-    "romanization": "deoggyejeong",
-    "polite_form": "덕계정",
-    "plain_form": "덕계정",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "deokgyejeong"
   },
   {
     "korean": "본계",
@@ -11425,10 +9292,7 @@
       "饭圈用语"
     ],
     "id": 1319,
-    "romanization": "bongye",
-    "polite_form": "본계",
-    "plain_form": "본계",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "bongye"
   },
   {
     "korean": "디데이",
@@ -11441,10 +9305,7 @@
       "饭圈用语"
     ],
     "id": 1320,
-    "romanization": "didei",
-    "polite_form": "디데이",
-    "plain_form": "디데이",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "didei"
   },
   {
     "korean": "카운트다운",
@@ -11457,10 +9318,7 @@
       "饭圈用语"
     ],
     "id": 1321,
-    "romanization": "kaunteudaun",
-    "polite_form": "카운트다운",
-    "plain_form": "카운트다운",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "kaunteudaun"
   },
   {
     "korean": "최애 생일",
@@ -11473,10 +9331,7 @@
       "应援"
     ],
     "id": 1322,
-    "romanization": "choeae saengil",
-    "polite_form": "최애 생일",
-    "plain_form": "최애 생일",
-    "usage": "用于追星、应援场景的名词表达。"
+    "romanization": "choeae saeil"
   },
   {
     "korean": "셀카 저장",
@@ -11489,10 +9344,7 @@
       "日常"
     ],
     "id": 1323,
-    "romanization": "selka jeojang",
-    "polite_form": "셀카 저장",
-    "plain_form": "셀카 저장",
-    "usage": "用于追星、日常场景的短语表达。"
+    "romanization": "selka jeojang"
   },
   {
     "korean": "무직 타임",
@@ -11505,10 +9357,7 @@
       "饭圈用语"
     ],
     "id": 1324,
-    "romanization": "mujig taim",
-    "polite_form": "무직 타임",
-    "plain_form": "무직 타임",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "mujik taim"
   },
   {
     "korean": "컴백 예고",
@@ -11521,10 +9370,7 @@
       "音乐"
     ],
     "id": 1325,
-    "romanization": "keombaeg yego",
-    "polite_form": "컴백 예고",
-    "plain_form": "컴백 예고",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "keombaek yego"
   },
   {
     "korean": "활동 중",
@@ -11537,10 +9383,7 @@
       "日常"
     ],
     "id": 1326,
-    "romanization": "hwaldong jung",
-    "polite_form": "활동 중",
-    "plain_form": "활동 중",
-    "usage": "用于追星、日常场景的名词表达。"
+    "romanization": "hwaldong jung"
   },
   {
     "korean": "잠수",
@@ -11553,10 +9396,7 @@
       "饭圈用语"
     ],
     "id": 1327,
-    "romanization": "jamsu",
-    "polite_form": "잠수",
-    "plain_form": "잠수",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "jamsu"
   },
   {
     "korean": "컴백 날짜",
@@ -11569,10 +9409,7 @@
       "音乐"
     ],
     "id": 1328,
-    "romanization": "keombaeg naljja",
-    "polite_form": "컴백 날짜",
-    "plain_form": "컴백 날짜",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "keombaek naljja"
   },
   {
     "korean": "월드 투어",
@@ -11586,10 +9423,7 @@
       "线下活动"
     ],
     "id": 1329,
-    "romanization": "woldeu tueo",
-    "polite_form": "월드 투어",
-    "plain_form": "월드 투어",
-    "usage": "用于追星、演唱会、线下活动场景的名词表达。"
+    "romanization": "woldeu tueo"
   },
   {
     "korean": "해외 팬",
@@ -11602,10 +9436,7 @@
       "粉丝"
     ],
     "id": 1330,
-    "romanization": "haeoe paen",
-    "polite_form": "해외 팬",
-    "plain_form": "해외 팬",
-    "usage": "用于追星、粉丝场景的名词表达。"
+    "romanization": "haeoe paen"
   },
   {
     "korean": "원정",
@@ -11619,10 +9450,7 @@
       "出行"
     ],
     "id": 1331,
-    "romanization": "wonjeong",
-    "polite_form": "원정",
-    "plain_form": "원정",
-    "usage": "用于追星、线下活动、出行场景的名词表达。"
+    "romanization": "wonjeong"
   },
   {
     "korean": "원정 팬",
@@ -11636,10 +9464,7 @@
       "出行"
     ],
     "id": 1332,
-    "romanization": "wonjeong paen",
-    "polite_form": "원정 팬",
-    "plain_form": "원정 팬",
-    "usage": "用于追星、粉丝、出行场景的名词表达。"
+    "romanization": "wonjeong paen"
   },
   {
     "korean": "입국장",
@@ -11653,10 +9478,7 @@
       "出行"
     ],
     "id": 1333,
-    "romanization": "ibgugjang",
-    "polite_form": "입국장",
-    "plain_form": "입국장",
-    "usage": "用于追星、线下活动、出行场景的名词表达。"
+    "romanization": "ipgukjang"
   },
   {
     "korean": "출국장",
@@ -11670,10 +9492,7 @@
       "出行"
     ],
     "id": 1334,
-    "romanization": "chulgugjang",
-    "polite_form": "출국장",
-    "plain_form": "출국장",
-    "usage": "用于追星、线下活动、出行场景的名词表达。"
+    "romanization": "chulgukjang"
   },
   {
     "korean": "공항 스케줄",
@@ -11687,10 +9506,7 @@
       "出行"
     ],
     "id": 1335,
-    "romanization": "gonghang seukejul",
-    "polite_form": "공항 스케줄",
-    "plain_form": "공항 스케줄",
-    "usage": "用于追星、线下活动、出行场景的名词表达。"
+    "romanization": "gonghang seukejul"
   },
   {
     "korean": "출퇴근 길",
@@ -11703,10 +9519,7 @@
       "线下活动"
     ],
     "id": 1336,
-    "romanization": "chultoegeun gil",
-    "polite_form": "출퇴근 길",
-    "plain_form": "출퇴근 길",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "chultoegeun gil"
   },
   {
     "korean": "한국 방문",
@@ -11719,10 +9532,7 @@
       "出行"
     ],
     "id": 1337,
-    "romanization": "hangug bangmun",
-    "polite_form": "한국 방문",
-    "plain_form": "한국 방문",
-    "usage": "用于追星、出行场景的名词表达。"
+    "romanization": "hanguk bangmun"
   },
   {
     "korean": "성지",
@@ -11735,10 +9545,7 @@
       "出行"
     ],
     "id": 1338,
-    "romanization": "seongji",
-    "polite_form": "성지",
-    "plain_form": "성지",
-    "usage": "用于追星、出行场景的名词表达。"
+    "romanization": "seongji"
   },
   {
     "korean": "성지 순례",
@@ -11751,10 +9558,7 @@
       "出行"
     ],
     "id": 1339,
-    "romanization": "seongji sunlye",
-    "polite_form": "성지 순례",
-    "plain_form": "성지 순례",
-    "usage": "用于追星、出行场景的名词表达。"
+    "romanization": "seongji sullye"
   },
   {
     "korean": "소속사",
@@ -11767,10 +9571,7 @@
       "线下活动"
     ],
     "id": 1340,
-    "romanization": "sosogsa",
-    "polite_form": "소속사",
-    "plain_form": "소속사",
-    "usage": "用于追星、线下活动场景的名词表达。"
+    "romanization": "sosoksa"
   },
   {
     "korean": "한정판",
@@ -11783,10 +9584,7 @@
       "周边"
     ],
     "id": 1341,
-    "romanization": "hanjeongpan",
-    "polite_form": "한정판",
-    "plain_form": "한정판",
-    "usage": "用于追星、周边场景的名词表达。"
+    "romanization": "hanjeongpan"
   },
   {
     "korean": "오프라인 굿즈",
@@ -11800,10 +9598,7 @@
       "线下活动"
     ],
     "id": 1342,
-    "romanization": "opeurain gusjeu",
-    "polite_form": "오프라인 굿즈",
-    "plain_form": "오프라인 굿즈",
-    "usage": "用于追星、周边、线下活动场景的名词表达。"
+    "romanization": "opeurain gutjeu"
   },
   {
     "korean": "공식 굿즈",
@@ -11816,10 +9611,7 @@
       "周边"
     ],
     "id": 1343,
-    "romanization": "gongsig gusjeu",
-    "polite_form": "공식 굿즈",
-    "plain_form": "공식 굿즈",
-    "usage": "用于追星、周边场景的名词表达。"
+    "romanization": "gongsik gutjeu"
   },
   {
     "korean": "비공식 굿즈",
@@ -11833,10 +9625,7 @@
       "饭圈用语"
     ],
     "id": 1344,
-    "romanization": "bigongsig gusjeu",
-    "polite_form": "비공식 굿즈",
-    "plain_form": "비공식 굿즈",
-    "usage": "用于追星、周边、饭圈用语场景的名词表达。"
+    "romanization": "bigongsik gutjeu"
   },
   {
     "korean": "키링",
@@ -11849,10 +9638,7 @@
       "周边"
     ],
     "id": 1345,
-    "romanization": "kiring",
-    "polite_form": "키링",
-    "plain_form": "키링",
-    "usage": "用于追星、周边场景的名词表达。"
+    "romanization": "kiring"
   },
   {
     "korean": "아크릴 스탠드",
@@ -11865,10 +9651,7 @@
       "周边"
     ],
     "id": 1346,
-    "romanization": "akeuril seutaendeu",
-    "polite_form": "아크릴 스탠드",
-    "plain_form": "아크릴 스탠드",
-    "usage": "用于追星、周边场景的名词表达。"
+    "romanization": "akeuril seutaendeu"
   },
   {
     "korean": "포스터",
@@ -11881,10 +9664,7 @@
       "周边"
     ],
     "id": 1347,
-    "romanization": "poseuteo",
-    "polite_form": "포스터",
-    "plain_form": "포스터",
-    "usage": "用于追星、周边场景的名词表达。"
+    "romanization": "poseuteo"
   },
   {
     "korean": "엽서",
@@ -11897,10 +9677,7 @@
       "周边"
     ],
     "id": 1348,
-    "romanization": "yeobseo",
-    "polite_form": "엽서",
-    "plain_form": "엽서",
-    "usage": "用于追星、周边场景的名词表达。"
+    "romanization": "yeopseo"
   },
   {
     "korean": "스티커",
@@ -11913,10 +9690,7 @@
       "周边"
     ],
     "id": 1349,
-    "romanization": "seutikeo",
-    "polite_form": "스티커",
-    "plain_form": "스티커",
-    "usage": "用于追星、周边场景的名词表达。"
+    "romanization": "seutikeo"
   },
   {
     "korean": "북클릿",
@@ -11930,10 +9704,7 @@
       "音乐"
     ],
     "id": 1350,
-    "romanization": "bugkeullis",
-    "polite_form": "북클릿",
-    "plain_form": "북클릿",
-    "usage": "用于追星、周边、音乐场景的名词表达。"
+    "romanization": "bukkeullit"
   },
   {
     "korean": "랜덤 포카",
@@ -11947,10 +9718,7 @@
       "饭圈用语"
     ],
     "id": 1351,
-    "romanization": "raeldeom poka",
-    "polite_form": "랜덤 포카",
-    "plain_form": "랜덤 포카",
-    "usage": "用于追星、周边、饭圈用语场景的名词表达。"
+    "romanization": "raendeom poka"
   },
   {
     "korean": "포카 수집",
@@ -11964,10 +9732,7 @@
       "饭圈用语"
     ],
     "id": 1352,
-    "romanization": "poka sujib",
-    "polite_form": "포카 수집",
-    "plain_form": "포카 수집",
-    "usage": "用于追星、周边、饭圈用语场景的名词表达。"
+    "romanization": "poka sujip"
   },
   {
     "korean": "앨범 개봉",
@@ -11981,10 +9746,7 @@
       "음악"
     ],
     "id": 1353,
-    "romanization": "aelbeom gaebong",
-    "polite_form": "앨범 개봉",
-    "plain_form": "앨범 개봉",
-    "usage": "用于追星、周边、음악场景的名词表达。"
+    "romanization": "aelbeom gaebong"
   },
   {
     "korean": "언박싱",
@@ -11998,10 +9760,7 @@
       "数字生活"
     ],
     "id": 1354,
-    "romanization": "eonbagsing",
-    "polite_form": "언박싱",
-    "plain_form": "언박싱",
-    "usage": "用于追星、周边、数字生活场景的名词表达。"
+    "romanization": "eonbaksing"
   },
   {
     "korean": "덕질 비용",
@@ -12014,10 +9773,7 @@
       "饭圈用语"
     ],
     "id": 1355,
-    "romanization": "deogjil biyong",
-    "polite_form": "덕질 비용",
-    "plain_form": "덕질 비용",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "deokjil biyong"
   },
   {
     "korean": "최애 지갑",
@@ -12030,10 +9786,7 @@
       "饭圈用语"
     ],
     "id": 1356,
-    "romanization": "choeae jigab",
-    "polite_form": "최애 지갑",
-    "plain_form": "최애 지갑",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "choeae jigap"
   },
   {
     "korean": "알림 설정했어요",
@@ -12046,10 +9799,7 @@
       "数字生活"
     ],
     "id": 1357,
-    "romanization": "allim seoljeonghaesseoyo",
-    "polite_form": "알림 설정했어요",
-    "plain_form": "알림 설정했어요",
-    "usage": "用于追星、数字生活场景的短语表达。"
+    "romanization": "allim seoljeonghaeseoyo"
   },
   {
     "korean": "떴다 떴다",
@@ -12062,10 +9812,7 @@
       "饭圈用语"
     ],
     "id": 1358,
-    "romanization": "tteossda tteossda",
-    "polite_form": "떴다 떴다",
-    "plain_form": "떴다 떴다",
-    "usage": "用于追星、饭圈用语场景的感叹词表达。"
+    "romanization": "tteotda tteotda"
   },
   {
     "korean": "아무튼 귀엽다",
@@ -12079,10 +9826,7 @@
       "感受"
     ],
     "id": 1359,
-    "romanization": "amuteun gwiyeobda",
-    "polite_form": "아무튼 귀엽다",
-    "plain_form": "아무튼 귀엽다",
-    "usage": "用于追星、饭圈用语、感受场景的短语表达。"
+    "romanization": "amuteun gwiyeopda"
   },
   {
     "korean": "어떻게 이래요",
@@ -12095,10 +9839,7 @@
       "感受"
     ],
     "id": 1360,
-    "romanization": "eotteohge iraeyo",
-    "polite_form": "어떻게 이래요",
-    "plain_form": "어떻게 이래요",
-    "usage": "用于追星、感受场景的短语表达。"
+    "romanization": "eotteoge iraeyo"
   },
   {
     "korean": "믿음의 구매",
@@ -12111,10 +9852,7 @@
       "饭圈用语"
     ],
     "id": 1361,
-    "romanization": "mineumui gumae",
-    "polite_form": "믿음의 구매",
-    "plain_form": "믿음의 구매",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "mideumui gumae"
   },
   {
     "korean": "즉구",
@@ -12128,10 +9866,7 @@
       "周边"
     ],
     "id": 1362,
-    "romanization": "jeuggu",
-    "polite_form": "즉구",
-    "plain_form": "즉구",
-    "usage": "用于追星、饭圈用语、周边场景的名词表达。"
+    "romanization": "jeukgu"
   },
   {
     "korean": "1빠",
@@ -12144,10 +9879,7 @@
       "饭圈用语"
     ],
     "id": 1363,
-    "romanization": "1ppa",
-    "polite_form": "1빠",
-    "plain_form": "1빠",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "1ppa"
   },
   {
     "korean": "최애가 최고야",
@@ -12160,10 +9892,7 @@
       "感受"
     ],
     "id": 1364,
-    "romanization": "choeaega choegoya",
-    "polite_form": "최애가 최고야",
-    "plain_form": "최애가 최고야",
-    "usage": "用于追星、感受场景的短语表达。"
+    "romanization": "choeaega choegoya"
   },
   {
     "korean": "실존이에요",
@@ -12177,10 +9906,7 @@
       "感受"
     ],
     "id": 1365,
-    "romanization": "siljonieyo",
-    "polite_form": "실존이에요",
-    "plain_form": "실존이에요",
-    "usage": "用于追星、饭圈用语、感受场景的短语表达。"
+    "romanization": "siljonieyo"
   },
   {
     "korean": "제가 왜 이래요",
@@ -12193,10 +9919,7 @@
       "饭圈用语"
     ],
     "id": 1366,
-    "romanization": "jega wae iraeyo",
-    "polite_form": "제가 왜 이래요",
-    "plain_form": "제가 왜 이래요",
-    "usage": "用于追星、饭圈用语场景的短语表达。"
+    "romanization": "jega wae iraeyo"
   },
   {
     "korean": "눈이 호강이에요",
@@ -12209,10 +9932,7 @@
       "感受"
     ],
     "id": 1367,
-    "romanization": "nuni hogangieyo",
-    "polite_form": "눈이 호강이에요",
-    "plain_form": "눈이 호강이에요",
-    "usage": "用于追星、感受场景的短语表达。"
+    "romanization": "nuni hogaieyo"
   },
   {
     "korean": "치명타",
@@ -12226,10 +9946,7 @@
       "感受"
     ],
     "id": 1368,
-    "romanization": "chimyeongta",
-    "polite_form": "치명타",
-    "plain_form": "치명타",
-    "usage": "用于追星、饭圈用语、感受场景的名词表达。"
+    "romanization": "chimyeongta"
   },
   {
     "korean": "직접 봤어요",
@@ -12243,10 +9960,7 @@
       "感受"
     ],
     "id": 1369,
-    "romanization": "jigjeob bwasseoyo",
-    "polite_form": "직접 봤어요",
-    "plain_form": "직접 봤어요",
-    "usage": "用于追星、线下活动、感受场景的短语表达。"
+    "romanization": "jikjeop bwaseoyo"
   },
   {
     "korean": "연습생",
@@ -12259,10 +9973,7 @@
       "饭圈用语"
     ],
     "id": 1370,
-    "romanization": "yeonseubsaeng",
-    "polite_form": "연습생",
-    "plain_form": "연습생",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "yeonseupsaeng"
   },
   {
     "korean": "데뷔 전",
@@ -12275,10 +9986,7 @@
       "饭圈用语"
     ],
     "id": 1371,
-    "romanization": "debwi jeon",
-    "polite_form": "데뷔 전",
-    "plain_form": "데뷔 전",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "debwi jeon"
   },
   {
     "korean": "성장",
@@ -12291,10 +9999,7 @@
       "感受"
     ],
     "id": 1372,
-    "romanization": "seongjang",
-    "polite_form": "성장",
-    "plain_form": "성장",
-    "usage": "用于追星、感受场景的名词表达。"
+    "romanization": "seongjang"
   },
   {
     "korean": "실력파",
@@ -12307,10 +10012,7 @@
       "饭圈用语"
     ],
     "id": 1373,
-    "romanization": "sillyeogpa",
-    "polite_form": "실력파",
-    "plain_form": "실력파",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "sillyeokpa"
   },
   {
     "korean": "다재다능",
@@ -12323,10 +10025,7 @@
       "饭圈用语"
     ],
     "id": 1374,
-    "romanization": "dajaedaneung",
-    "polite_form": "다재다능",
-    "plain_form": "다재다능",
-    "usage": "用于追星、饭圈用语场景的形容词表达。"
+    "romanization": "dajaedaneung"
   },
   {
     "korean": "솔로",
@@ -12339,10 +10038,7 @@
       "音乐"
     ],
     "id": 1375,
-    "romanization": "sollo",
-    "polite_form": "솔로",
-    "plain_form": "솔로",
-    "usage": "用于追星、音乐场景的名词表达。"
+    "romanization": "sollo"
   },
   {
     "korean": "유닛",
@@ -12356,10 +10052,7 @@
       "饭圈用语"
     ],
     "id": 1376,
-    "romanization": "yunim",
-    "polite_form": "유닛",
-    "plain_form": "유닛",
-    "usage": "用于追星、音乐、饭圈用语场景的名词表达。"
+    "romanization": "yunit"
   },
   {
     "korean": "재계약",
@@ -12372,10 +10065,7 @@
       "饭圈用语"
     ],
     "id": 1377,
-    "romanization": "jaegyeyag",
-    "polite_form": "재계약",
-    "plain_form": "재계약",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "jaegyeyak"
   },
   {
     "korean": "군입대",
@@ -12388,10 +10078,7 @@
       "饭圈用语"
     ],
     "id": 1378,
-    "romanization": "gunibdae",
-    "polite_form": "군입대",
-    "plain_form": "군입대",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "gunipdae"
   },
   {
     "korean": "전역",
@@ -12404,10 +10091,7 @@
       "饭圈用语"
     ],
     "id": 1379,
-    "romanization": "jeonyeog",
-    "polite_form": "전역",
-    "plain_form": "전역",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "jeonyeok"
   },
   {
     "korean": "복귀",
@@ -12420,10 +10104,7 @@
       "饭圈用语"
     ],
     "id": 1380,
-    "romanization": "boggwi",
-    "polite_form": "복귀",
-    "plain_form": "복귀",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "bokgwi"
   },
   {
     "korean": "공식 발표",
@@ -12436,10 +10117,7 @@
       "饭圈用语"
     ],
     "id": 1381,
-    "romanization": "gongsig balpyo",
-    "polite_form": "공식 발표",
-    "plain_form": "공식 발표",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "gongsik balpyo"
   },
   {
     "korean": "입장 음악",
@@ -12453,10 +10131,7 @@
       "舞台"
     ],
     "id": 1382,
-    "romanization": "ibjang eumag",
-    "polite_form": "입장 음악",
-    "plain_form": "입장 음악",
-    "usage": "用于追星、演唱会、舞台场景的名词表达。"
+    "romanization": "ipjang eumak"
   },
   {
     "korean": "무대 세트",
@@ -12470,10 +10145,7 @@
       "演唱会"
     ],
     "id": 1383,
-    "romanization": "mudae seteu",
-    "polite_form": "무대 세트",
-    "plain_form": "무대 세트",
-    "usage": "用于追星、舞台、演唱会场景的名词表达。"
+    "romanization": "mudae seteu"
   },
   {
     "korean": "조명",
@@ -12487,10 +10159,7 @@
       "演唱会"
     ],
     "id": 1384,
-    "romanization": "jomyeong",
-    "polite_form": "조명",
-    "plain_form": "조명",
-    "usage": "用于追星、舞台、演唱会场景的名词表达。"
+    "romanization": "jomyeong"
   },
   {
     "korean": "특수효과",
@@ -12504,10 +10173,7 @@
       "演唱会"
     ],
     "id": 1385,
-    "romanization": "teugsuhyogwa",
-    "polite_form": "특수효과",
-    "plain_form": "특수효과",
-    "usage": "用于追星、舞台、演唱会场景的名词表达。"
+    "romanization": "teuksuhyogwa"
   },
   {
     "korean": "불꽃놀이",
@@ -12520,10 +10186,7 @@
       "演唱会"
     ],
     "id": 1386,
-    "romanization": "bulkkochnoli",
-    "polite_form": "불꽃놀이",
-    "plain_form": "불꽃놀이",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "bulkkonnori"
   },
   {
     "korean": "화면",
@@ -12536,10 +10199,7 @@
       "演唱会"
     ],
     "id": 1387,
-    "romanization": "hwamyeon",
-    "polite_form": "화면",
-    "plain_form": "화면",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "hwamyeon"
   },
   {
     "korean": "리프팅",
@@ -12553,10 +10213,7 @@
       "演唱会"
     ],
     "id": 1388,
-    "romanization": "ripeuting",
-    "polite_form": "리프팅",
-    "plain_form": "리프팅",
-    "usage": "用于追星、舞台、演唱会场景的名词表达。"
+    "romanization": "ripeuting"
   },
   {
     "korean": "무대 앞",
@@ -12570,10 +10227,7 @@
       "线下活动"
     ],
     "id": 1389,
-    "romanization": "mudae ap",
-    "polite_form": "무대 앞",
-    "plain_form": "무대 앞",
-    "usage": "用于追星、演唱会、线下活动场景的名词表达。"
+    "romanization": "mudae ap"
   },
   {
     "korean": "센터",
@@ -12587,10 +10241,7 @@
       "饭圈用语"
     ],
     "id": 1390,
-    "romanization": "senteo",
-    "polite_form": "센터",
-    "plain_form": "센터",
-    "usage": "用于追星、舞台、饭圈用语场景的名词表达。"
+    "romanization": "senteo"
   },
   {
     "korean": "사이드",
@@ -12603,10 +10254,7 @@
       "演唱会"
     ],
     "id": 1391,
-    "romanization": "saideu",
-    "polite_form": "사이드",
-    "plain_form": "사이드",
-    "usage": "用于追星、演唱会场景的名词表达。"
+    "romanization": "saideu"
   },
   {
     "korean": "잘 도착했어요",
@@ -12620,10 +10268,7 @@
       "问候"
     ],
     "id": 1392,
-    "romanization": "jal dochaghaesseoyo",
-    "polite_form": "잘 도착했어요",
-    "plain_form": "잘 도착했어요",
-    "usage": "用于追星、互动、问候场景的短语表达。"
+    "romanization": "jal dochakhaeseoyo"
   },
   {
     "korean": "잘 쉬었어요?",
@@ -12637,10 +10282,7 @@
       "问候"
     ],
     "id": 1393,
-    "romanization": "jal swieosseoyo?",
-    "polite_form": "잘 쉬었어요?",
-    "plain_form": "잘 쉬었어요?",
-    "usage": "用于追星、互动、问候场景的短语表达。"
+    "romanization": "jal swieoseoyo?"
   },
   {
     "korean": "얼마나 기다렸는지",
@@ -12653,10 +10295,7 @@
       "感受"
     ],
     "id": 1394,
-    "romanization": "eolmana gidaryeossneunji",
-    "polite_form": "얼마나 기다렸는지",
-    "plain_form": "얼마나 기다렸는지",
-    "usage": "用于追星、感受场景的短语表达。"
+    "romanization": "eolmana gidaryeonneunji"
   },
   {
     "korean": "이런 모습도 좋아요",
@@ -12669,10 +10308,7 @@
       "感受"
     ],
     "id": 1395,
-    "romanization": "ireol moseubdo johayo",
-    "polite_form": "이런 모습도 좋아요",
-    "plain_form": "이런 모습도 좋아요",
-    "usage": "用于追星、感受场景的短语表达。"
+    "romanization": "ireon moseupdo joayo"
   },
   {
     "korean": "그냥 다 좋아요",
@@ -12685,10 +10321,7 @@
       "感受"
     ],
     "id": 1396,
-    "romanization": "geunyang da johayo",
-    "polite_form": "그냥 다 좋아요",
-    "plain_form": "그냥 다 좋아요",
-    "usage": "用于追星、感受场景的短语表达。"
+    "romanization": "geunyang da joayo"
   },
   {
     "korean": "목숨 바쳐 사랑해요",
@@ -12702,10 +10335,7 @@
       "互动"
     ],
     "id": 1397,
-    "romanization": "mongsum bachyeo saranghaeyo",
-    "polite_form": "목숨 바쳐 사랑해요",
-    "plain_form": "목숨 바쳐 사랑해요",
-    "usage": "用于追星、感受、互动场景的短语表达。"
+    "romanization": "moksum bachyeo saranghaeyo"
   },
   {
     "korean": "팬으로 태어나서 다행이에요",
@@ -12719,10 +10349,7 @@
       "粉丝"
     ],
     "id": 1398,
-    "romanization": "paeneuro taeeonaseo dahaengieyo",
-    "polite_form": "팬으로 태어나서 다행이에요",
-    "plain_form": "팬으로 태어나서 다행이에요",
-    "usage": "用于追星、感受、粉丝场景的短语表达。"
+    "romanization": "paeneuro taeeonaseo dahaeieyo"
   },
   {
     "korean": "콘서트 준비물",
@@ -12736,10 +10363,7 @@
       "线下活动"
     ],
     "id": 1399,
-    "romanization": "konseoteu junbimul",
-    "polite_form": "콘서트 준비물",
-    "plain_form": "콘서트 준비물",
-    "usage": "用于追星、演唱会、线下活动场景的名词表达。"
+    "romanization": "konseoteu junbimul"
   },
   {
     "korean": "야광봉",
@@ -12753,10 +10377,7 @@
       "应援"
     ],
     "id": 1400,
-    "romanization": "yagwangbong",
-    "polite_form": "야광봉",
-    "plain_form": "야광봉",
-    "usage": "用于追星、演唱会、应援场景的名词表达。"
+    "romanization": "yagwangbong"
   },
   {
     "korean": "잘 먹고 있어요?",
@@ -12770,10 +10391,7 @@
       "问候"
     ],
     "id": 1401,
-    "romanization": "jal meonggo isseoyo?",
-    "polite_form": "잘 먹고 있어요?",
-    "plain_form": "잘 먹고 있어요?",
-    "usage": "用于追星、互动、问候场景的短语表达。"
+    "romanization": "jal meokgo iseoyo?"
   },
   {
     "korean": "보고 싶어 죽겠어요",
@@ -12787,10 +10405,7 @@
       "互动"
     ],
     "id": 1402,
-    "romanization": "bogo sipeo juggesseoyo",
-    "polite_form": "보고 싶어 죽겠어요",
-    "plain_form": "보고 싶어 죽겠어요",
-    "usage": "用于追星、感受、互动场景的短语表达。"
+    "romanization": "bogo sipeo jukgeseoyo"
   },
   {
     "korean": "항상 곁에 있을게요",
@@ -12804,10 +10419,7 @@
       "粉丝"
     ],
     "id": 1403,
-    "romanization": "hangsang gyeote isseulgeyo",
-    "polite_form": "항상 곁에 있을게요",
-    "plain_form": "항상 곁에 있을게요",
-    "usage": "用于追星、互动、粉丝场景的短语表达。"
+    "romanization": "hangsang gyeote iseulgeyo"
   },
   {
     "korean": "언제나 응원해요",
@@ -12821,10 +10433,7 @@
       "互动"
     ],
     "id": 1404,
-    "romanization": "eonjena eungwonhaeyo",
-    "polite_form": "언제나 응원해요",
-    "plain_form": "언제나 응원해요",
-    "usage": "用于追星、应援、互动场景的短语表达。"
+    "romanization": "eonjena euwonhaeyo"
   },
   {
     "korean": "행복하게 해줄게요",
@@ -12838,10 +10447,7 @@
       "粉丝"
     ],
     "id": 1405,
-    "romanization": "haengboghage haejulgeyo",
-    "polite_form": "행복하게 해줄게요",
-    "plain_form": "행복하게 해줄게요",
-    "usage": "用于追星、互动、粉丝场景的短语表达。"
+    "romanization": "haengbokhage haejulgeyo"
   },
   {
     "korean": "기다리고 있을게요",
@@ -12855,10 +10461,7 @@
       "粉丝"
     ],
     "id": 1406,
-    "romanization": "gidarigo isseulgeyo",
-    "polite_form": "기다리고 있을게요",
-    "plain_form": "기다리고 있을게요",
-    "usage": "用于追星、互动、粉丝场景的短语表达。"
+    "romanization": "gidarigo iseulgeyo"
   },
   {
     "korean": "앞으로도 잘 부탁해요",
@@ -12871,10 +10474,7 @@
       "互动"
     ],
     "id": 1407,
-    "romanization": "apeurodo jal butaghaeyo",
-    "polite_form": "앞으로도 잘 부탁해요",
-    "plain_form": "앞으로도 잘 부탁해요",
-    "usage": "用于追星、互动场景的短语表达。"
+    "romanization": "apeurodo jal butakhaeyo"
   },
   {
     "korean": "같이 걸어가요",
@@ -12888,10 +10488,7 @@
       "粉丝"
     ],
     "id": 1408,
-    "romanization": "gati geoleogayo",
-    "polite_form": "같이 걸어가요",
-    "plain_form": "같이 걸어가요",
-    "usage": "用于追星、互动、粉丝场景的短语表达。"
+    "romanization": "gati georeogayo"
   },
   {
     "korean": "덕후",
@@ -12904,9 +10501,6 @@
       "饭圈用语"
     ],
     "id": 1409,
-    "romanization": "deoghu",
-    "polite_form": "덕후",
-    "plain_form": "덕후",
-    "usage": "用于追星、饭圈用语场景的名词表达。"
+    "romanization": "deokhu"
   }
 ]

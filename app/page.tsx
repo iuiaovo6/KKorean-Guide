@@ -16,11 +16,17 @@ type StudyWord = {
   translation: string;
   tags: string[];
   romanization: string;
-  polite_form: string;
-  plain_form: string;
-  usage: string;
 };
-type WordPopoverState = { token: string; word: StudyWord | null; left: number; top: number };
+type SpeechLevel = "敬语" | "平语" | null;
+type WordPopoverState = {
+  token: string;
+  word: StudyWord | null;
+  romanization: string;
+  resolvedViaForm: boolean;
+  speechLevel: SpeechLevel;
+  left: number;
+  top: number;
+};
 type MemoryRating = "again" | "hard" | "good" | "easy" | "mastered";
 type StudyQueueItem = { word: StudyWord; repeat: boolean };
 type WordProgress = {
@@ -45,9 +51,9 @@ type ImportWord = {
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const fallbackWords: StudyWord[] = [
-  { id: -1, korean: "설레다", meaning: "心动、激动", type: "动词", example: "오늘 무대가 너무 설레요.", translation: "今天的舞台让我特别心动。", tags: ["追星", "感受"], romanization: "seolleda", polite_form: "설레요", plain_form: "설레", usage: "用于表达心动和期待。" },
-  { id: -2, korean: "기대하다", meaning: "期待", type: "动词", example: "다음 공연도 기대해 주세요.", translation: "也请期待下一场演出。", tags: ["追星", "演唱会"], romanization: "gidaehada", polite_form: "기대해요", plain_form: "기대해", usage: "用于表达期待。" },
-  { id: -3, korean: "소중하다", meaning: "珍贵、宝贵", type: "形容词", example: "여러분은 저에게 정말 소중해요.", translation: "大家对我来说真的很珍贵。", tags: ["追星", "粉丝"], romanization: "sojunghada", polite_form: "소중해요", plain_form: "소중해", usage: "用于表达珍贵的感受。" },
+  { id: -1, korean: "설레다", meaning: "心动、激动", type: "动词", example: "오늘 무대가 너무 설레요.", translation: "今天的舞台让我特别心动。", tags: ["追星", "感受"], romanization: "seolleda" },
+  { id: -2, korean: "기대하다", meaning: "期待", type: "动词", example: "다음 공연도 기대해 주세요.", translation: "也请期待下一场演出。", tags: ["追星", "演唱会"], romanization: "gidaehada" },
+  { id: -3, korean: "소중하다", meaning: "珍贵、宝贵", type: "形容词", example: "여러분은 저에게 정말 소중해요.", translation: "大家对我来说真的很珍贵。", tags: ["追星", "粉丝"], romanization: "sojunghada" },
 ];
 
 const sceneBooks = [
@@ -94,9 +100,11 @@ export default function Home() {
   const [activeSceneTitle, setActiveSceneTitle] = useState<(typeof sceneBooks)[number]["title"]>(sceneBooks[0].title);
   const [streakDays, setStreakDays] = useState(0);
   const [wordPopover, setWordPopover] = useState<WordPopoverState | null>(null);
+  const [formsMap, setFormsMap] = useState<Record<string, number>>({});
 
   const current = studyQueue[wordIndex]?.word ?? studyWords[0] ?? fallbackWords[0];
   const wordMap = useMemo(() => new Map(studyWords.map((word) => [word.korean, word])), [studyWords]);
+  const wordsById = useMemo(() => new Map(studyWords.map((word) => [word.id, word])), [studyWords]);
   const sceneCards = useMemo(() => sceneBooks.map((book) => {
     const words = studyWords.filter((word) => word.tags.some((tag) => (book.tags as readonly string[]).includes(tag)));
     const learned = words.filter((word) => {
@@ -130,6 +138,13 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    fetch("forms.json", { cache: "no-store" })
+      .then((response) => response.ok ? response.json() : {})
+      .then((forms: Record<string, number>) => setFormsMap(forms))
+      .catch(() => setFormsMap({}));
+  }, []);
+
+  useEffect(() => {
     if (!profileDrawerOpen) return;
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") setProfileDrawerOpen(false);
@@ -145,7 +160,7 @@ export default function Home() {
   }, [studyOpen, autoSpeak, step, wordIndex, current.korean]);
 
   useEffect(() => {
-    if (!("speechSynthesis" in window)) return;
+    if (typeof window.speechSynthesis === "undefined") return;
     const loadKoreanVoices = () => {
       const voices = window.speechSynthesis.getVoices().filter((voice) => voice.lang.toLowerCase().startsWith("ko"));
       setKoreanVoices(voices);
@@ -174,9 +189,6 @@ export default function Home() {
           example_zh: string | null;
           tags?: string[];
           romanization?: string;
-          polite_form?: string;
-          plain_form?: string;
-          usage?: string;
         }>;
         const loadedWords: StudyWord[] = raw.map((word) => ({
           id: word.id,
@@ -186,10 +198,7 @@ export default function Home() {
           example: word.example_ko ?? "",
           translation: word.example_zh ?? "",
           tags: word.tags ?? [],
-          romanization: word.romanization ?? romanizeHangul(word.korean),
-          polite_form: word.polite_form ?? word.korean,
-          plain_form: word.plain_form ?? word.korean,
-          usage: word.usage ?? "",
+          romanization: word.romanization ?? romanizeUnknownKorean(word.korean),
         }));
         const visibleWords = loadedWords.length > 0 ? loadedWords : fallbackWords;
         setStudyWords(visibleWords);
@@ -214,6 +223,7 @@ export default function Home() {
       void loadPublicWords();
       return;
     }
+    const currentUser = user;
 
     async function loadLearningData() {
       const [wordsResult, profileResult, progressResult] = await Promise.all([
@@ -225,12 +235,12 @@ export default function Home() {
         supabase
           .from("profiles")
           .select("daily_new_words, spelling_enabled, is_admin")
-          .eq("id", user.id)
+          .eq("id", currentUser.id)
           .single(),
         supabase
           .from("user_word_progress")
           .select("word_id, meaning_level, listening_level, next_review_at, review_count, last_reviewed_at")
-          .eq("user_id", user.id),
+          .eq("user_id", currentUser.id),
       ]);
 
       if (wordsResult.error) {
@@ -246,10 +256,7 @@ export default function Home() {
           example: word.example_ko ?? "",
           translation: word.example_zh ?? "",
           tags: word.tags ?? [],
-          romanization: romanizeHangul(word.korean),
-          polite_form: word.korean,
-          plain_form: word.korean,
-          usage: "",
+          romanization: romanizeUnknownKorean(word.korean),
       }));
 
       if (loadedWords.length > 0) {
@@ -398,7 +405,7 @@ export default function Home() {
   }
 
   function speakKorean(text: string) {
-    if (!("speechSynthesis" in window)) {
+    if (typeof window.speechSynthesis === "undefined") {
       setToast("当前浏览器不支持语音朗读");
       window.setTimeout(() => setToast(""), 2400);
       return;
@@ -433,15 +440,17 @@ export default function Home() {
 
   function openWordPopover(token: string, target: HTMLElement) {
     const exact = wordMap.get(token);
-    const resolved = exact
-      ?? studyWords.find((word) => word.polite_form === token || word.plain_form === token)
-      ?? null;
+    const formEntryId = exact ? undefined : formsMap[token];
+    const resolved = exact ?? (formEntryId === undefined ? null : wordsById.get(formEntryId) ?? null);
     const rect = target.getBoundingClientRect();
     setWordPopover({
       token,
       word: resolved,
-      left: Math.min(Math.max(rect.left, 12), Math.max(12, window.innerWidth - 332)),
-      top: Math.min(rect.bottom + 10, Math.max(12, window.innerHeight - 250)),
+      romanization: resolved?.romanization ?? romanizeUnknownKorean(token),
+      resolvedViaForm: Boolean(!exact && resolved),
+      speechLevel: resolved ? speechLevelForSurface(token) : null,
+      left: Math.min(Math.max(rect.left + window.scrollX, 12), Math.max(12, window.scrollX + window.innerWidth - 332)),
+      top: Math.min(rect.bottom + window.scrollY + 10, Math.max(12, window.scrollY + window.innerHeight - 250)),
     });
   }
 
@@ -612,7 +621,7 @@ export default function Home() {
           <div className="top-actions">
             <button className={`icon-button streak-bubble ${streakDays > 0 ? "is-active" : "is-empty"}`} aria-label={`连续学习 ${streakDays} 天`} onClick={() => setActiveTab("today")}>
               <svg className="streak-heart" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 22.1 10.42 20.7C5.1 15.93 2 12.9 2 8.88 2 5.55 4.58 3 7.82 3c1.82 0 3.5.86 4.18 2.22C12.68 3.86 14.36 3 16.18 3 19.42 3 22 5.55 22 8.88c0 4.02-3.1 7.05-8.42 11.82L12 22.1Z" />
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                 {streakDays === 0 && <polyline points="8.4,7.4 11.2,10.1 9.7,12.4 13.2,15.7" />}
               </svg>
               <span className="streak-value">{streakDays > 0 ? `+${streakDays}` : "0"}</span>
@@ -677,7 +686,7 @@ export default function Home() {
                 <button onClick={() => setActiveTab("scenes")}>全部场景 ↗</button>
               </div>
               <div className="scene-grid">
-                {(search ? filteredBooks : sceneBooks).map((book) => (
+                {(search ? filteredBooks : sceneCards).map((book) => (
                   <button className="scene-card" key={book.title} onClick={() => { setActiveSceneTitle(book.title); setActiveTab("scenes"); }}>
                     <span className={`scene-icon ${book.color}`}>{book.icon}</span>
                     <span className="scene-title"><strong>{book.title}</strong><small>{book.desc}</small></span>
@@ -890,7 +899,7 @@ function StudyCard({
         ))}
       </div>
       {selected === word.meaning && <p className="answer-note correct">✓ 答对了</p>}
-      {selected === word.meaning && word.example ? <div className="mini-example"><strong>{renderTappable(word.example, onWordTap)}</strong><span>{word.translation}</span><button className="sentence-audio mini-sentence-audio" onClick={() => onSpeak(word.example)}>♬ 播放例句</button></div> : selected && selected !== word.meaning && <p className="answer-note">正确含义是：{word.meaning}</p>}
+      {selected === word.meaning && word.example ? <div className="mini-example"><p className="tappable-example">{renderTappable(word.example, onWordTap)}</p><span>{word.translation}</span><button className="sentence-audio mini-sentence-audio" onClick={() => onSpeak(word.example)}>♬ 播放例句</button></div> : selected && selected !== word.meaning && <p className="answer-note">正确含义是：{word.meaning}</p>}
     </div>
   );
   if (step === "reverse") return (
@@ -936,17 +945,25 @@ function renderTappable(text: string, onWordTap: (token: string, target: HTMLEle
 function WordPopover({ state, onClose }: { state: WordPopoverState; onClose: () => void }) {
   const word = state.word;
   const korean = word?.korean ?? state.token;
-  const romanization = word?.romanization ?? romanizeHangul(state.token);
   return <section className="word-popover" role="dialog" aria-label={`${korean} 的释义`} style={{ left: state.left, top: state.top }}>
     <button className="word-popover-close" onClick={onClose} aria-label="关闭释义">×</button>
-    <div className="popover-head"><strong>{korean}</strong><small>{romanization}</small></div>
-    {word && <div className="popover-meaning"><span className="popover-pos">{word.type}</span><b>{word.meaning}</b>{word.polite_form && <span className="speech-chip polite">敬语 {word.polite_form}</span>}{word.plain_form && <span className="speech-chip plain">平语 {word.plain_form}</span>}</div>}
+    <div className="popover-head"><strong>{korean}</strong><small>{state.romanization}</small></div>
+    {word && <div className="popover-meaning"><span className="popover-pos">{word.type}</span><b>{word.meaning}</b>{state.speechLevel && <span className={`speech-chip ${state.speechLevel === "敬语" ? "polite" : "plain"}`}>{state.speechLevel}</span>}</div>}
+    {state.resolvedViaForm && word && <p className="popover-form-note">（这是 {word.korean} 的活用形）</p>}
     {word?.example && <p className="popover-example"><span>{word.example}</span><small>{word.translation}</small></p>}
-    {!word && <p className="popover-unknown">这个变形词暂时没有独立词条，先记住它的读音。</p>}
+    {!word && <p className="popover-unknown">词库中暂无释义 <a href={`https://ko.dict.naver.com/#/search?query=${encodeURIComponent(state.token)}`} target="_blank" rel="noreferrer">在 Naver 词典查 →</a></p>}
   </section>;
 }
 
-function romanizeHangul(text: string) {
+function speechLevelForSurface(surface: string): SpeechLevel {
+  if (/요$|습니다$|습니까$|세요$|십시오$/u.test(surface)) return "敬语";
+  if (/았어$|었어$|했어$|았|었|해$|돼$|아$|어$/u.test(surface)) return "平语";
+  return null;
+}
+
+// Only used at tap time for an unknown token. The 802-word data itself is
+// generated ahead of time by scripts/generate-word-data.mjs, never in render.
+function romanizeUnknownKorean(text: string) {
   const onset = ["g", "kk", "n", "d", "tt", "r", "m", "b", "pp", "s", "ss", "", "j", "jj", "ch", "k", "t", "p", "h"];
   const vowel = ["a", "ae", "ya", "yae", "eo", "e", "yeo", "ye", "o", "wa", "wae", "oe", "yo", "u", "wo", "we", "wi", "yu", "eu", "ui", "i"];
   const coda = ["", "g", "kk", "gs", "n", "nj", "nh", "d", "l", "lg", "lm", "lb", "ls", "lt", "lp", "lh", "m", "b", "bs", "s", "ss", "ng", "j", "ch", "k", "t", "p", "h"];
@@ -1082,7 +1099,7 @@ function WordsPage({ startStudy, words, progress, isAdmin, openImport, onWordTap
       {words.map((item) => {
         const record = progress[item.id];
         const status = progressLabel(record);
-        return <button className="table-row" key={item.id} onClick={() => startStudy([item])}><WordTrigger className="table-word" token={item.korean} onWordTap={onWordTap} /><span>{item.meaning}</span><span><i className={`status-dot ${status.tone}`} />{status.label}</span><span>{reviewDate(record?.next_review_at)}</span></button>;
+        return <div className="table-row" key={item.id} role="button" tabIndex={0} onClick={() => startStudy([item])} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); startStudy([item]); } }}><WordTrigger className="table-word" token={item.korean} onWordTap={onWordTap} /><span>{item.meaning}</span><span><i className={`status-dot ${status.tone}`} />{status.label}</span><span>{reviewDate(record?.next_review_at)}</span></div>;
       })}
     </div>
     {drawer && <div className="drawer-backdrop" role="presentation" onMouseDown={(event) => { if (event.currentTarget === event.target) setDrawer(null); }}>
@@ -1091,7 +1108,7 @@ function WordsPage({ startStudy, words, progress, isAdmin, openImport, onWordTap
         <div className="drawer-list">{drawerItems.length > 0 ? drawerItems.map((item) => {
           const record = progress[item.id];
           const status = progressLabel(record);
-          return <button className="drawer-word" key={item.id} onClick={() => { setDrawer(null); startStudy([item]); }}><span><WordTrigger className="drawer-word-title" token={item.korean} onWordTap={onWordTap} /><small>{item.meaning}</small></span><span className="drawer-status"><i className={`status-dot ${status.tone}`} />{status.label}<b>→</b></span></button>;
+          return <div className="drawer-word" key={item.id} role="button" tabIndex={0} onClick={() => { setDrawer(null); startStudy([item]); }} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); setDrawer(null); startStudy([item]); } }}><span><WordTrigger className="drawer-word-title" token={item.korean} onWordTap={onWordTap} /><small>{item.meaning}</small></span><span className="drawer-status"><i className={`status-dot ${status.tone}`} />{status.label}<b>→</b></span></div>;
         }) : <p className="drawer-empty">这里暂时没有单词。</p>}</div>
       </aside>
     </div>}
