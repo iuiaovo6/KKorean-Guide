@@ -1,7 +1,8 @@
 "use client";
 
 import type { User } from "@supabase/supabase-js";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { buildStudyOptions } from "../lib/study-options";
 import { supabase } from "../lib/supabase";
 
 type Tab = "today" | "words" | "scenes" | "talk" | "import";
@@ -56,6 +57,9 @@ const fallbackWords: StudyWord[] = [
   { id: -3, korean: "소중하다", meaning: "珍贵、宝贵", type: "形容词", example: "여러분은 저에게 정말 소중해요.", translation: "大家对我来说真的很珍贵。", tags: ["追星", "粉丝"], romanization: "sojunghada" },
 ];
 
+const fallbackMeaningDistractors = ["喜欢", "感谢", "回忆", "应援", "舞台", "约定", "照片", "见面"];
+const fallbackKoreanDistractors = ["설레다", "소중하다", "기억하다", "좋아하다", "감사하다", "응원하다", "약속하다", "만나다"];
+
 const sceneBooks = [
   { icon: "◎", title: "线下活动", desc: "预录、签售、演唱会与应援", color: "blue", tags: ["线下活动", "演唱会", "应援", "签售", "购票", "打歌"] },
   { icon: "♡", title: "互动交流", desc: "夸赞、提问、感谢与关心", color: "mint", tags: ["互动", "感受", "粉丝", "问候"] },
@@ -101,6 +105,7 @@ export default function Home() {
   const [streakDays, setStreakDays] = useState(0);
   const [wordPopover, setWordPopover] = useState<WordPopoverState | null>(null);
   const [formsMap, setFormsMap] = useState<Record<string, number>>({});
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   const current = studyQueue[wordIndex]?.word ?? studyWords[0] ?? fallbackWords[0];
   const wordMap = useMemo(() => new Map(studyWords.map((word) => [word.korean, word])), [studyWords]);
@@ -113,10 +118,29 @@ export default function Home() {
     }).length;
     return { ...book, count: words.length, progress: words.length ? Math.round((learned / words.length) * 100) : 0 };
   }), [studyWords, wordProgress]);
-  const filteredBooks = useMemo(
-    () => sceneCards.filter((book) => book.title.includes(search) || book.desc.includes(search)),
-    [search, sceneCards],
-  );
+  const normalizedSearch = search.trim().toLocaleLowerCase();
+  const searchWordResults = useMemo(() => {
+    if (!normalizedSearch) return [];
+    const formWordId = formsMap[search.trim()];
+    const matches = studyWords.filter((word) => [
+      word.korean,
+      word.romanization,
+      word.meaning,
+      word.example,
+      word.translation,
+      word.tags.join(" "),
+    ].some((value) => value.toLocaleLowerCase().includes(normalizedSearch)));
+    if (formWordId !== undefined) {
+      const resolved = wordsById.get(formWordId);
+      if (resolved && !matches.some((word) => word.id === resolved.id)) matches.unshift(resolved);
+    }
+    return matches.slice(0, 8);
+  }, [formsMap, normalizedSearch, search, studyWords, wordsById]);
+  const searchSceneResults = useMemo(() => {
+    if (!normalizedSearch) return [];
+    return sceneCards.filter((book) => [book.title, book.desc, ...book.tags]
+      .some((value) => value.toLocaleLowerCase().includes(normalizedSearch)));
+  }, [normalizedSearch, sceneCards]);
   const reviewItems = useMemo(() => studyWords
     .map((word) => ({ word, record: wordProgress[word.id] }))
     .filter(({ record }) => record && Math.min(record.meaning_level, record.listening_level) < 2)
@@ -135,6 +159,21 @@ export default function Home() {
   useEffect(() => {
     const savedAutoSpeak = window.localStorage.getItem("talk-guide-auto-speak");
     setAutoSpeak(savedAutoSpeak === null ? true : savedAutoSpeak === "true");
+  }, []);
+
+  useEffect(() => {
+    const handleSearchShortcut = (event: KeyboardEvent) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLocaleLowerCase() === "k") {
+        event.preventDefault();
+        searchInputRef.current?.focus();
+      }
+      if (event.key === "Escape") {
+        setSearch("");
+        searchInputRef.current?.blur();
+      }
+    };
+    window.addEventListener("keydown", handleSearchShortcut);
+    return () => window.removeEventListener("keydown", handleSearchShortcut);
   }, []);
 
   useEffect(() => {
@@ -454,6 +493,12 @@ export default function Home() {
     });
   }
 
+  function openSearchWord(word: StudyWord, target: HTMLElement) {
+    const surface = formsMap[search.trim()] === word.id ? search.trim() : word.korean;
+    openWordPopover(surface, target);
+    setSearch("");
+  }
+
   async function copyShortcutUrl() {
     const shortcutUrl = "https://iuiaovo6.github.io/KKorean-Guide/";
     try {
@@ -608,16 +653,39 @@ export default function Home() {
       <section className="main-panel">
         <header className="topbar">
           <button className="mobile-brand" onClick={handleProfileClick} aria-label="打开账号与个人偏好"><img className="brand-mark" src={`${basePath}/korean-guide-icon.png`} alt="Korean Guide" /><strong>Korean Guide</strong></button>
-          <label className="search-box">
-            <span>⌕</span>
-            <input
-              value={search}
-              onChange={(event) => setSearch(event.target.value)}
-              placeholder="搜索韩语单词、场景或表达"
-              aria-label="搜索"
-            />
-            <kbd>⌘ K</kbd>
-          </label>
+          <div className="search-shell">
+            <label className="search-box">
+              <span>⌕</span>
+              <input
+                ref={searchInputRef}
+                value={search}
+                onChange={(event) => setSearch(event.target.value)}
+                placeholder="搜索韩语单词、场景或表达"
+                aria-label="搜索"
+                autoComplete="off"
+              />
+              <kbd>⌘ K</kbd>
+            </label>
+            {normalizedSearch && <section className="search-results" aria-label="搜索结果">
+              <header><strong>搜索结果</strong><span>{searchWordResults.length + searchSceneResults.length} 项</span></header>
+              {searchWordResults.length > 0 && <div className="search-result-group">
+                <small>单词与表达</small>
+                {searchWordResults.map((word) => <button key={word.id} onClick={(event) => openSearchWord(word, event.currentTarget)}>
+                  <span><strong>{word.korean}</strong><small>{word.romanization}</small></span>
+                  <span>{word.meaning}</span>
+                  <b>→</b>
+                </button>)}
+              </div>}
+              {searchSceneResults.length > 0 && <div className="search-result-group">
+                <small>追星场景</small>
+                {searchSceneResults.map((book) => <button key={book.title} onClick={() => { setActiveSceneTitle(book.title); setActiveTab("scenes"); setSearch(""); }}>
+                  <span><strong>{book.title}</strong><small>{book.desc}</small></span>
+                  <b>→</b>
+                </button>)}
+              </div>}
+              {searchWordResults.length === 0 && searchSceneResults.length === 0 && <p className="search-empty">没有找到。可以试试韩语、中文意思或场景名称。</p>}
+            </section>}
+          </div>
           <div className="top-actions">
             <button className={`icon-button streak-bubble ${streakDays > 0 ? "is-active" : "is-empty"}`} aria-label={`连续学习 ${streakDays} 天`} onClick={() => setActiveTab("today")}>
               <svg className="streak-heart" viewBox="0 0 24 24" aria-hidden="true">
@@ -686,7 +754,7 @@ export default function Home() {
                 <button onClick={() => setActiveTab("scenes")}>全部场景 ↗</button>
               </div>
               <div className="scene-grid">
-                {(search ? filteredBooks : sceneCards).map((book) => (
+                {sceneCards.map((book) => (
                   <button className="scene-card" key={book.title} onClick={() => { setActiveSceneTitle(book.title); setActiveTab("scenes"); }}>
                     <span className={`scene-icon ${book.color}`}>{book.icon}</span>
                     <span className="scene-title"><strong>{book.title}</strong><small>{book.desc}</small></span>
@@ -717,7 +785,7 @@ export default function Home() {
         )}
 
         {activeTab === "words" && <WordsPage startStudy={startStudy} words={studyWords} progress={wordProgress} isAdmin={isAdmin} openImport={() => setActiveTab("import")} onWordTap={openWordPopover} />}
-        {activeTab === "scenes" && <ScenesPage books={search ? filteredBooks : sceneCards} words={studyWords} progress={wordProgress} dailyWords={dailyWords} activeSceneTitle={activeSceneTitle} setActiveSceneTitle={setActiveSceneTitle} startStudy={startStudy} onWordTap={openWordPopover} />}
+        {activeTab === "scenes" && <ScenesPage books={sceneCards} words={studyWords} progress={wordProgress} dailyWords={dailyWords} activeSceneTitle={activeSceneTitle} setActiveSceneTitle={setActiveSceneTitle} startStudy={startStudy} onWordTap={openWordPopover} />}
         {activeTab === "talk" && <TalkPage />}
         {activeTab === "import" && (
           <ImportPage
@@ -833,7 +901,7 @@ export default function Home() {
               <div className="study-progress"><i style={{ width: `${((wordIndex + 1) / Math.max(studyQueue.length, 1)) * 100}%` }} /></div>
               <div className="study-header-actions"><button className="mastery-header" onClick={() => void markCurrentMastered()}>完全认识</button><span>{wordIndex + 1} / {studyQueue.length}</span></div>
             </header>
-            <StudyCard step={step} word={current} selected={selected} setSelected={setSelected} typedAnswer={typedAnswer} setTypedAnswer={updateRecallAnswer} recallFeedback={recallFeedback} recallFeedbackTone={recallFeedbackTone} onRecallOptionSelect={chooseRecallOption} onSpeak={speakKorean} onWordTap={openWordPopover} />
+            <StudyCard step={step} word={current} allWords={studyWords} selected={selected} setSelected={setSelected} typedAnswer={typedAnswer} setTypedAnswer={updateRecallAnswer} recallFeedback={recallFeedback} recallFeedbackTone={recallFeedbackTone} onRecallOptionSelect={chooseRecallOption} onSpeak={speakKorean} onWordTap={openWordPopover} />
             <footer className="study-footer">
               {step === "recall" && recallReadyToRate ? (
                 <div className="rating-grid">
@@ -866,6 +934,7 @@ function NavButton({ active, icon, label, badge, onClick }: { active: boolean; i
 function StudyCard({
   step,
   word,
+  allWords,
   selected,
   setSelected,
   typedAnswer,
@@ -878,6 +947,7 @@ function StudyCard({
 }: {
   step: StudyStep;
   word: StudyWord;
+  allWords: StudyWord[];
   selected: string | null;
   setSelected: (value: string) => void;
   typedAnswer: string;
@@ -888,13 +958,28 @@ function StudyCard({
   onSpeak: (text: string) => void;
   onWordTap: (token: string, target: HTMLElement) => void;
 }) {
+  const meaningOptions = buildStudyOptions(
+    word.meaning,
+    [...allWords.map((candidate) => candidate.meaning), ...fallbackMeaningDistractors],
+    `${word.id}-meaning`,
+  );
+  const reverseOptions = buildStudyOptions(
+    word.korean,
+    [...allWords.map((candidate) => candidate.korean), ...fallbackKoreanDistractors],
+    `${word.id}-reverse`,
+  );
+  const recallOptions = buildStudyOptions(
+    word.korean,
+    [...allWords.map((candidate) => candidate.korean), ...fallbackKoreanDistractors],
+    `${word.id}-recall`,
+  );
   if (step === "meaning") return (
     <div className="learning-card">
       <p className="eyebrow">ROUND 1 · 听词选义</p>
       <button className="sound-button" aria-label="播放发音" onClick={() => onSpeak(word.korean)}>♬</button>
       <WordTrigger className="question-word tap-headword" token={word.korean} onWordTap={onWordTap} />
       <div className="answer-grid">
-        {shuffledOptions(["期待", word.meaning, "回忆", "应援"], `${word.id}-meaning`).map((answer) => (
+        {meaningOptions.map((answer) => (
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
         ))}
       </div>
@@ -907,7 +992,7 @@ function StudyCard({
       <p className="eyebrow">ROUND 2 · 汉义选词</p>
       <h2 className="question-word meaning-question">{word.meaning}</h2>
       <div className="answer-grid compact">
-        {shuffledOptions([word.korean, "설레요", "소중하다", "기억하다"], `${word.id}-reverse`).map((answer) => (
+        {reverseOptions.map((answer) => (
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
         ))}
       </div>
@@ -919,7 +1004,7 @@ function StudyCard({
       <p className="eyebrow">ROUND 3 · 听音选词</p>
       <button className="big-audio-button blue-audio-button" aria-label="播放单词发音" onClick={() => onSpeak(word.korean)}>♬<small>再听一次</small></button>
       <div className="answer-grid compact">
-        {shuffledOptions([word.korean, "설레요", "소중하다", "기억하다"], `${word.id}-recall`).map((answer) => (
+        {recallOptions.map((answer) => (
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => onRecallOptionSelect(answer)}>{answer}</button>
         ))}
       </div>
@@ -981,17 +1066,6 @@ function romanizeUnknownKorean(text: string) {
     const initialSound = initial === 5 && (previousFinal === 8 || previousFinal === 4) ? "l" : onset[initial];
     return `${initialSound}${vowel[medial]}${coda[final]}`;
   }).join("").replace(/\s+/g, " ").trim();
-}
-
-function shuffledOptions(options: string[], seed: string) {
-  const unique = Array.from(new Set(options));
-  let value = Array.from(seed).reduce((total, character) => ((total << 5) - total + character.charCodeAt(0)) | 0, 0) >>> 0;
-  for (let index = unique.length - 1; index > 0; index -= 1) {
-    value = (value * 1664525 + 1013904223) >>> 0;
-    const target = value % (index + 1);
-    [unique[index], unique[target]] = [unique[target], unique[index]];
-  }
-  return unique;
 }
 
 function normalizeAnswer(value: string) {
