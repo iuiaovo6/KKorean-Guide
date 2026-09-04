@@ -8,6 +8,7 @@ import { supabase } from "../lib/supabase";
 type Tab = "today" | "words" | "scenes" | "talk" | "import";
 type StudyStep = "meaning" | "reverse" | "recall";
 type FeedbackTone = "correct" | "wrong" | "answer" | null;
+type AccountAction = "signout" | "delete" | null;
 type StudyWord = {
   id: number;
   korean: string;
@@ -18,13 +19,17 @@ type StudyWord = {
   tags: string[];
   romanization: string;
 };
-type SpeechLevel = "敬语" | "平语" | null;
+type SpeechDatum = {
+  base: string;
+  level: "honor" | "plain" | null;
+  reason?: string;
+};
 type WordPopoverState = {
   token: string;
   word: StudyWord | null;
   romanization: string;
   resolvedViaForm: boolean;
-  speechLevel: SpeechLevel;
+  speech: SpeechDatum | null;
   left: number;
   top: number;
 };
@@ -71,6 +76,8 @@ const sceneBooks = [
 export default function Home() {
   const [activeTab, setActiveTab] = useState<Tab>("today");
   const [profileDrawerOpen, setProfileDrawerOpen] = useState(false);
+  const [accountAction, setAccountAction] = useState<AccountAction>(null);
+  const [accountActionLoading, setAccountActionLoading] = useState(false);
   const [installGuideOpen, setInstallGuideOpen] = useState(false);
   const [urlCopied, setUrlCopied] = useState(false);
   const [studyOpen, setStudyOpen] = useState(false);
@@ -105,6 +112,7 @@ export default function Home() {
   const [streakDays, setStreakDays] = useState(0);
   const [wordPopover, setWordPopover] = useState<WordPopoverState | null>(null);
   const [formsMap, setFormsMap] = useState<Record<string, number>>({});
+  const [speechMap, setSpeechMap] = useState<Record<string, SpeechDatum>>({});
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   const current = studyQueue[wordIndex]?.word ?? studyWords[0] ?? fallbackWords[0];
@@ -181,6 +189,10 @@ export default function Home() {
       .then((response) => response.ok ? response.json() : {})
       .then((forms: Record<string, number>) => setFormsMap(forms))
       .catch(() => setFormsMap({}));
+    fetch("speech.json", { cache: "no-store" })
+      .then((response) => response.ok ? response.json() : {})
+      .then((speech: Record<string, SpeechDatum>) => setSpeechMap(speech))
+      .catch(() => setSpeechMap({}));
   }, []);
 
   useEffect(() => {
@@ -191,6 +203,15 @@ export default function Home() {
     window.addEventListener("keydown", closeOnEscape);
     return () => window.removeEventListener("keydown", closeOnEscape);
   }, [profileDrawerOpen]);
+
+  useEffect(() => {
+    if (!accountAction) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && !accountActionLoading) setAccountAction(null);
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [accountAction, accountActionLoading]);
 
   useEffect(() => {
     if (!studyOpen || !autoSpeak) return;
@@ -366,11 +387,29 @@ export default function Home() {
     setProfileDrawerOpen(true);
   }
 
-  async function signOut() {
-    await supabase.auth.signOut();
+  function requestAccountAction(action: Exclude<AccountAction, null>) {
     setProfileDrawerOpen(false);
-    setToast("已经退出登录");
-    window.setTimeout(() => setToast(""), 2200);
+    setAccountAction(action);
+  }
+
+  async function confirmAccountAction() {
+    if (!accountAction || accountActionLoading) return;
+    const completedAction = accountAction;
+    setAccountActionLoading(true);
+
+    // “注销账号”当前只做界面原型：退出当前会话，不调用任何删除账号或删除学习数据的接口。
+    const { error } = await supabase.auth.signOut();
+    setAccountActionLoading(false);
+    if (error) {
+      setToast("操作失败，请稍后再试");
+      window.setTimeout(() => setToast(""), 2400);
+      return;
+    }
+
+    setAccountAction(null);
+    setProfileDrawerOpen(false);
+    setToast(completedAction === "signout" ? "已退出" : "已注销");
+    window.setTimeout(() => setToast(""), 2400);
   }
 
   function startStudy(words?: StudyWord[]) {
@@ -478,16 +517,18 @@ export default function Home() {
   }
 
   function openWordPopover(token: string, target: HTMLElement) {
+    const speech = speechMap[token];
     const exact = wordMap.get(token);
-    const formEntryId = exact ? undefined : formsMap[token];
-    const resolved = exact ?? (formEntryId === undefined ? null : wordsById.get(formEntryId) ?? null);
+    const speechBase = speech?.base && speech.base !== token ? wordMap.get(speech.base) : undefined;
+    const formEntryId = formsMap[token];
+    const resolved = speechBase ?? exact ?? (formEntryId === undefined ? null : wordsById.get(formEntryId) ?? null);
     const rect = target.getBoundingClientRect();
     setWordPopover({
       token,
       word: resolved,
       romanization: resolved?.romanization ?? romanizeUnknownKorean(token),
-      resolvedViaForm: Boolean(!exact && resolved),
-      speechLevel: resolved ? speechLevelForSurface(token) : null,
+      resolvedViaForm: Boolean(resolved && token !== resolved.korean),
+      speech: resolved ? speech ?? null : null,
       left: Math.min(Math.max(rect.left + window.scrollX, 12), Math.max(12, window.scrollX + window.innerWidth - 332)),
       top: Math.min(rect.bottom + window.scrollY + 10, Math.max(12, window.scrollY + window.innerHeight - 250)),
     });
@@ -638,7 +679,6 @@ export default function Home() {
         </nav>
 
         <div className="sidebar-bottom">
-          <button className="nav-button muted"><span>?</span><span>使用帮助</span></button>
           <button className="profile-button" onClick={handleProfileClick}>
             <span className="avatar">{user?.email?.slice(0, 1).toUpperCase() ?? "?"}</span>
             <span className="profile-copy">
@@ -769,14 +809,14 @@ export default function Home() {
               <article className="talk-preview">
                 <div className="talk-visual">
                   <span className="audio-wave">▁▃▆▄▇▅▂▅▇▃▆▂▁</span>
-                  <button aria-label="播放示例">▶</button>
-                  <span>00:30</span>
+                  <button aria-label="打开 Talk 听力" onClick={() => setActiveTab("talk")}>▶</button>
+                  <span>01:13</span>
                 </div>
                 <div className="talk-copy">
-                  <span className="pill">附加练习 · Talk</span>
-                  <h3>先听大意，再拆开每个表达</h3>
-                  <p>示例课程暂不冒充真实爱豆原话。后续加入经校对的 Talk 素材。</p>
-                  <button onClick={() => setActiveTab("talk")}>看看学习流程 →</button>
+                  <span className="pill">访谈口述 · Talk 01</span>
+                  <h3>真心会被传达</h3>
+                  <p>真实音频已接入。依次完成盲听、韩文字幕、韩中对照，再带走最值得记住的一句。</p>
+                  <button onClick={() => setActiveTab("talk")}>开始听 →</button>
                 </div>
               </article>
 
@@ -786,7 +826,7 @@ export default function Home() {
 
         {activeTab === "words" && <WordsPage startStudy={startStudy} words={studyWords} progress={wordProgress} isAdmin={isAdmin} openImport={() => setActiveTab("import")} onWordTap={openWordPopover} />}
         {activeTab === "scenes" && <ScenesPage books={sceneCards} words={studyWords} progress={wordProgress} dailyWords={dailyWords} activeSceneTitle={activeSceneTitle} setActiveSceneTitle={setActiveSceneTitle} startStudy={startStudy} onWordTap={openWordPopover} />}
-        {activeTab === "talk" && <TalkPage />}
+        {activeTab === "talk" && <TalkPage words={studyWords} formsMap={formsMap} />}
         {activeTab === "import" && (
           <ImportPage
             allowed={Boolean(user && isAdmin)}
@@ -816,7 +856,7 @@ export default function Home() {
 
           <section className="drawer-section account-panel">
             <p className="drawer-section-label">账号</p>
-            {user ? <div className="signed-account"><span className="drawer-avatar">{user.email?.slice(0, 1).toUpperCase()}</span><span><strong>{user.email}</strong><small>学习进度已连接到这个账号</small></span><button onClick={() => void signOut()}>退出</button></div> : <div className="guest-account"><div><strong>登录后保存学习进度</strong><p>在不同设备继续复习，不会丢掉熟练度记录。</p></div><button className="primary-button" onClick={() => { setProfileDrawerOpen(false); setAuthMode("login"); setAuthOpen(true); }}>登录 / 注册 <span>→</span></button></div>}
+            {user ? <div className="signed-account"><span className="drawer-avatar">{user.email?.slice(0, 1).toUpperCase()}</span><span><strong>{user.email}</strong><small>学习进度已连接到这个账号</small></span><button onClick={() => requestAccountAction("signout")}>退出</button></div> : <div className="guest-account"><div><strong>登录后保存学习进度</strong><p>在不同设备继续复习，不会丢掉熟练度记录。</p></div><button className="primary-button" onClick={() => { setProfileDrawerOpen(false); setAuthMode("login"); setAuthOpen(true); }}>登录 / 注册 <span>→</span></button></div>}
           </section>
 
           <section className="drawer-section drawer-preferences">
@@ -827,7 +867,21 @@ export default function Home() {
           </section>
 
           <button className="install-entry" onClick={() => { setProfileDrawerOpen(false); setInstallGuideOpen(true); }}><span className="install-entry-icon">⌂</span><span><strong>放到手机桌面</strong><small>查看 iPhone、快捷指令和安卓教程</small></span><b>→</b></button>
+          {user && <button className="delete-account-entry" onClick={() => requestAccountAction("delete")}><span><strong>注销账号</strong><small>注销后，账号和学习数据将无法恢复</small></span><b>→</b></button>}
         </aside>
+      </div>}
+
+      {accountAction && <div className="account-confirm-overlay" role="presentation" onMouseDown={(event) => { if (event.currentTarget === event.target && !accountActionLoading) setAccountAction(null); }}>
+        <section className={`account-confirm ${accountAction === "delete" ? "is-danger" : ""}`} role="dialog" aria-modal="true" aria-labelledby="account-confirm-title">
+          <div className="account-confirm-icon" aria-hidden="true">{accountAction === "signout" ? "↪" : "×"}</div>
+          <h2 id="account-confirm-title">{accountAction === "signout" ? "退出" : "注销账号"}</h2>
+          <p>{accountAction === "signout" ? "确定要退出登录吗？" : "确定要注销这个账号吗？"}</p>
+          {accountAction === "delete" && <p className="account-data-warning">注销后，账号与全部学习记录都会消失，且无法恢复。</p>}
+          <div className="account-confirm-actions">
+            <button className="account-cancel" onClick={() => setAccountAction(null)} disabled={accountActionLoading}>取消</button>
+            <button className="account-confirm-button" onClick={() => void confirmAccountAction()} disabled={accountActionLoading}>{accountActionLoading ? "处理中…" : accountAction === "signout" ? "退出" : "确认注销"}</button>
+          </div>
+        </section>
       </div>}
 
       {installGuideOpen && <div className="install-overlay" role="presentation" onMouseDown={(event) => { if (event.currentTarget === event.target) setInstallGuideOpen(false); }}>
@@ -1033,17 +1087,26 @@ function WordPopover({ state, onClose }: { state: WordPopoverState; onClose: () 
   return <section className="word-popover" role="dialog" aria-label={`${korean} 的释义`} style={{ left: state.left, top: state.top }}>
     <button className="word-popover-close" onClick={onClose} aria-label="关闭释义">×</button>
     <div className="popover-head"><strong>{korean}</strong><small>{state.romanization}</small></div>
-    {word && <div className="popover-meaning"><span className="popover-pos">{word.type}</span><b>{word.meaning}</b>{state.speechLevel && <span className={`speech-chip ${state.speechLevel === "敬语" ? "polite" : "plain"}`}>{state.speechLevel}</span>}</div>}
+    {word && <div className="popover-meaning"><span className="popover-pos">{word.type}</span><b>{word.meaning}</b>{state.speech?.level && state.speech.reason && <SpeechChip key={state.token} speech={state.speech} />}</div>}
     {state.resolvedViaForm && word && <p className="popover-form-note">（这是 {word.korean} 的活用形）</p>}
     {word?.example && <p className="popover-example"><span>{word.example}</span><small>{word.translation}</small></p>}
     {!word && <p className="popover-unknown">词库中暂无释义 <a href={`https://ko.dict.naver.com/#/search?query=${encodeURIComponent(state.token)}`} target="_blank" rel="noreferrer">在 Naver 词典查 →</a></p>}
   </section>;
 }
 
-function speechLevelForSurface(surface: string): SpeechLevel {
-  if (/요$|습니다$|습니까$|세요$|십시오$/u.test(surface)) return "敬语";
-  if (/았어$|었어$|했어$|았|었|해$|돼$|아$|어$/u.test(surface)) return "平语";
-  return null;
+function SpeechChip({ speech }: { speech: SpeechDatum }) {
+  const [pinned, setPinned] = useState(false);
+  const label = speech.level === "honor" ? "敬语" : "平语";
+  return <span className={`speech-chip-wrap ${pinned ? "is-pinned" : ""}`}>
+    <button
+      type="button"
+      className={`speech-chip ${speech.level === "honor" ? "polite" : "plain"}`}
+      aria-expanded={pinned}
+      aria-label={`${label}，查看判定原因`}
+      onClick={() => setPinned((value) => !value)}
+    >{label}</button>
+    <span className="speech-reason-bubble" role="tooltip">{speech.reason}</span>
+  </span>;
 }
 
 // Only used at tap time for an unknown token. The 802-word data itself is
@@ -1325,9 +1388,276 @@ function ScenesPage({ books, words, progress, dailyWords, activeSceneTitle, setA
   </div>;
 }
 
-function TalkPage() {
-  return <div className="content inner-page">
-    <div className="page-title"><div><p className="eyebrow">LISTEN IN CONTEXT · BETA</p><h1>Talk 听力</h1><p>这是辅助练习区。核心仍是单词学习，Talk 帮你把学过的词放回真实语流。</p></div></div>
-    <article className="empty-talk"><div className="empty-wave">▁▃▆▄▇▅▂▅▇▃▆▂▁</div><span className="pill blue-pill">准备中</span><h2>第一批真实 Talk 还没有上线</h2><p>我们不会编造“爱豆说过的话”。有来源并完成转写校对后，课程会按首听大意、字幕解析、隐藏字幕重听的流程发布。</p><div className="talk-steps"><span>01 首听大意</span><span>02 字幕解析</span><span>03 重点单词</span><span>04 隐藏字幕重听</span></div></article>
+type TalkStage = 0 | 1 | 2 | 3;
+type TalkLine = {
+  t: number;
+  end: number;
+  ko: string;
+  zh: string;
+  note: string;
+};
+type TalkGrammar = {
+  form: string;
+  zh: string;
+  ex: string;
+  note: string;
+  line: number;
+};
+type TalkWord = {
+  ko: string;
+  rr: string;
+  pos: string;
+  zh: string;
+  line: number;
+  tier: "core" | "recog";
+};
+type TalkSource = {
+  id: string;
+  title_ko: string;
+  title_zh: string;
+  speaker: string;
+  duration: number;
+  level: string;
+  topic: string;
+  speech_style: string;
+  lines: TalkLine[];
+  words: TalkWord[];
+  grammar: TalkGrammar[];
+};
+type TalkExampleWord = { korean: string; meaning_zh: string; example_ko: string; example_zh: string };
+type TalkUsageState = { token: string; left: number; top: number };
+
+const talkStages = ["盲听全貌", "捕捉韩文", "对照听懂", "带走一句"] as const;
+const talkSpeeds = [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5];
+const talkSenseNotes: Record<number, string> = {
+  1: "「굉장히」后停顿，用「어떻게 보면」重新组织说法",
+  2: "短句承接上一句，-고 处不要当成结束",
+  6: "「아, 그럼」引入内心独白，中间有明显停顿",
+  13: "三个 -히 副词逐个重读，语速明显放慢",
+  15: "句尾升调停在 때문에，保留真实口述的未完成感",
+};
+const talkGrammarSelection = ["-(으)ㄹ 때가 있다", "-기 어렵다", "-다고 생각하다"];
+const talkTakeawayLines = [3, 8, 11, 12, 14];
+
+function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<string, number> }) {
+  const [source, setSource] = useState<TalkSource | null>(null);
+  const [exampleWords, setExampleWords] = useState<TalkExampleWord[]>([]);
+  const [loadError, setLoadError] = useState("");
+  const [stage, setStage] = useState<TalkStage>(0);
+  const [currentLine, setCurrentLine] = useState(0);
+  const [audioTime, setAudioTime] = useState(0);
+  const [playing, setPlaying] = useState(false);
+  const [subtitlesHidden, setSubtitlesHidden] = useState(false);
+  const [speedIndex, setSpeedIndex] = useState(7);
+  const [openGrammarLine, setOpenGrammarLine] = useState<number | null>(null);
+  const [usageCard, setUsageCard] = useState<TalkUsageState | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const segmentEndRef = useRef<number | null>(null);
+  const lineRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const speed = talkSpeeds[speedIndex];
+  const talkWordMap = useMemo(() => new Map(words.map((word) => [word.korean, word])), [words]);
+  const wordsByTalkId = useMemo(() => new Map(words.map((word) => [word.id, word])), [words]);
+  const selectedGrammar = useMemo(() => new Map((source?.grammar ?? [])
+    .filter((item) => talkGrammarSelection.includes(item.form))
+    .map((item) => [item.line, item])), [source]);
+
+  function stopTalk() {
+    audioRef.current?.pause();
+    segmentEndRef.current = null;
+    setPlaying(false);
+  }
+
+  async function toggleTalk() {
+    const audio = audioRef.current;
+    if (!audio || !source) return;
+    if (!audio.paused) {
+      stopTalk();
+      return;
+    }
+    const line = source.lines[currentLine];
+    if (audio.ended || audio.currentTime < line.t || audio.currentTime > line.end + 0.8) audio.currentTime = line.t;
+    segmentEndRef.current = null;
+    audio.playbackRate = speed;
+    try {
+      await audio.play();
+    } catch {
+      setPlaying(false);
+    }
+  }
+
+  async function playTakeaway(line: TalkLine) {
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.pause();
+    audio.currentTime = line.t;
+    audio.playbackRate = speed;
+    segmentEndRef.current = line.end;
+    try {
+      await audio.play();
+    } catch {
+      segmentEndRef.current = null;
+      setPlaying(false);
+    }
+  }
+
+  function selectStage(nextStage: TalkStage) {
+    stopTalk();
+    setStage(nextStage);
+    setCurrentLine(0);
+    setSubtitlesHidden(false);
+    setOpenGrammarLine(null);
+    setUsageCard(null);
+  }
+
+  function selectLine(index: number) {
+    stopTalk();
+    setCurrentLine(index);
+    if (audioRef.current && source) audioRef.current.currentTime = source.lines[index].t;
+  }
+
+  function openUsageCard(token: string, target: HTMLElement) {
+    const rect = target.getBoundingClientRect();
+    setUsageCard({
+      token,
+      left: Math.min(Math.max(rect.left, 12), Math.max(12, window.innerWidth - 312)),
+      top: Math.min(rect.bottom + 9, Math.max(12, window.innerHeight - 242)),
+    });
+  }
+
+  useEffect(() => {
+    Promise.all([
+      fetch(`${basePath}/talk/takki.json`, { cache: "no-store" }).then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json() as Promise<TalkSource>;
+      }),
+      fetch(`${basePath}/talk/takki-words.json`, { cache: "no-store" }).then((response) => response.ok ? response.json() : { words: [] }),
+    ]).then(([talk, vocabulary]: [TalkSource, { words: TalkExampleWord[] }]) => {
+      setSource(talk);
+      setExampleWords(vocabulary.words ?? []);
+    }).catch(() => setLoadError("素材加载失败，请刷新页面后重试。"));
+  }, []);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    return () => audio?.pause();
+  }, [source]);
+
+  useEffect(() => {
+    if (stage === 1 || stage === 2) lineRefs.current[currentLine]?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [currentLine, stage]);
+
+  if (loadError) return <div className="content inner-page talk-page"><div className="talk-load-state">{loadError}</div></div>;
+  if (!source) return <div className="content inner-page talk-page"><div className="talk-load-state">正在准备听力素材…</div></div>;
+
+  const cleanSpeaker = source.speaker.startsWith("未确认") ? "Takki · 待确认" : source.speaker;
+  const durationText = formatTalkTime(source.duration);
+  const usageEntry = usageCard ? findTalkWord(usageCard.token, source.words) : null;
+  const vocabEntry = usageCard ? talkWordMap.get(usageCard.token) ?? wordsByTalkId.get(formsMap[usageCard.token]) : null;
+  const exampleEntry = usageEntry ? exampleWords.find((word) => word.korean === usageEntry.ko) : undefined;
+  const progress = Math.min(100, (audioTime / source.duration) * 100);
+
+  return <div className="content inner-page talk-page">
+    <div className="page-title"><div><p className="eyebrow">LISTEN IN CONTEXT</p><h1>Talk 听力</h1></div></div>
+
+    <section className="talk-library" aria-label="选择听力素材">
+      <button className="talk-lesson-card sky active">
+        <span className="talk-lesson-labels"><b>{cleanSpeaker}</b><i>访谈口述</i><small>{durationText}</small></span>
+        <strong>{source.title_zh} <small>{source.title_ko}</small></strong>
+        <span>{source.topic} →</span>
+      </button>
+    </section>
+
+    <article className="talk-workspace">
+      <audio ref={audioRef} src={`${basePath}/talk/takki.m4a`} preload="metadata" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)} onTimeUpdate={(event) => {
+        const audio = event.currentTarget;
+        setAudioTime(audio.currentTime);
+        if (segmentEndRef.current !== null && audio.currentTime >= segmentEndRef.current) {
+          audio.pause();
+          segmentEndRef.current = null;
+        }
+        const activeIndex = source.lines.findLastIndex((line) => audio.currentTime >= line.t);
+        if (activeIndex >= 0) setCurrentLine(Math.min(activeIndex, source.lines.length - 1));
+      }} />
+      <header className="talk-workspace-head">
+        <div className="talk-context sky"><span>{cleanSpeaker}</span><span>访谈 · {source.level}</span><small>{durationText}</small></div>
+        <label className="talk-speed"><span>倍速 <strong>{speed.toFixed(1)}×</strong></span><input type="range" min="0" max={talkSpeeds.length - 1} step="1" value={speedIndex} onChange={(event) => { const next = Number(event.target.value); setSpeedIndex(next); if (audioRef.current) audioRef.current.playbackRate = talkSpeeds[next]; }} aria-label={`播放速度 ${speed} 倍`} /></label>
+      </header>
+
+      <nav className="talk-stage-tabs" aria-label="听力练习步骤">
+        {talkStages.map((label, index) => <button key={label} className={stage === index ? "active" : ""} onClick={() => selectStage(index as TalkStage)}><small>0{index + 1}</small><span>{label}</span></button>)}
+      </nav>
+
+      <section className="talk-stage-body">
+        <div className="talk-stage-intro">
+          <div><p className="eyebrow">STEP 0{stage + 1}</p><h2>{talkStages[stage]}</h2></div>
+          {(stage === 1 || stage === 2) && <button className={`subtitle-toggle ${subtitlesHidden ? "is-hidden" : ""}`} aria-pressed={subtitlesHidden} onClick={() => { setSubtitlesHidden((value) => !value); setUsageCard(null); }}>{subtitlesHidden ? "显示字幕" : "隐藏字幕"}</button>}
+        </div>
+
+        {stage < 3 && <div className={`talk-listening-surface ${stage === 0 || subtitlesHidden ? "number-only" : ""}`}>
+          {stage === 0 ? <div className="talk-line-number"><span>第 {currentLine + 1} 句</span><div className={`talk-wave-bars ${playing ? "is-playing" : ""}`} aria-hidden="true">{Array.from({ length: 11 }, (_, index) => <i key={index} />)}</div></div> : subtitlesHidden ? <div className="talk-line-number"><span>第 {currentLine + 1} 句</span></div> : <div className="talk-lyrics" aria-live="polite">
+            {source.lines.map((line, index) => {
+              const isFutureHidden = stage === 1 && index > currentLine;
+              const grammar = selectedGrammar.get(index);
+              return <div ref={(node) => { lineRefs.current[index] = node; }} key={`${source.id}-${index}`} role="button" tabIndex={0} className={`talk-lyric-line ${index === currentLine ? "current" : index < currentLine ? "past" : "future"} ${isFutureHidden ? "spoiler-blank" : ""}`} onClick={() => selectLine(index)} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectLine(index); } }} aria-label={isFutureHidden ? `定位到第 ${index + 1} 句` : line.ko}>
+                <span className="talk-line-copy">
+                  <strong>{isFutureHidden ? "" : stage === 2 ? renderTalkTappable(line.ko, openUsageCard) : line.ko}</strong>
+                  {stage === 2 && !isFutureHidden && <small>{line.zh}</small>}
+                  {stage === 1 && !isFutureHidden && talkSenseNotes[index] && <em>{talkSenseNotes[index]}</em>}
+                </span>
+                {stage === 2 && grammar && <span className="grammar-anchor"><button className="grammar-button" aria-expanded={openGrammarLine === index} aria-label={`查看语法 ${grammar.form}`} onClick={(event) => { event.stopPropagation(); setOpenGrammarLine((value) => value === index ? null : index); }}>!</button>{openGrammarLine === index && <span className="grammar-explanation"><b>{grammar.form} · {grammar.zh}</b>{grammar.note}</span>}</span>}
+              </div>;
+            })}
+          </div>}
+          <div className="talk-audio-timeline"><i style={{ width: `${progress}%` }} /><span>{formatTalkTime(audioTime)}</span><span>{durationText}</span></div>
+          <button className="talk-main-play" onClick={() => void toggleTalk()} aria-label={playing ? "暂停" : `从第 ${currentLine + 1} 句开始播放`}><span>{playing ? "Ⅱ" : "▶"}</span>{playing ? "暂停" : "从这里播放"}</button>
+        </div>}
+
+        {stage === 3 && <div className="takeaway-list">
+          {talkTakeawayLines.map((lineIndex) => {
+            const line = source.lines[lineIndex];
+            return <button key={lineIndex} onClick={() => void playTakeaway(line)}><span className="takeaway-play">▶</span><span><strong>{line.ko}</strong><small>{line.zh}</small><em>{talkSenseNotes[lineIndex] ?? "点击只播放这一句"}</em></span></button>;
+          })}
+        </div>}
+      </section>
+
+      <footer className="talk-stage-footer">
+        <button onClick={() => selectStage(Math.max(0, stage - 1) as TalkStage)} disabled={stage === 0}>← 上一步</button>
+        <span>{talkStages[stage]}</span>
+        <button onClick={() => selectStage(Math.min(3, stage + 1) as TalkStage)} disabled={stage === 3}>下一步 →</button>
+      </footer>
+    </article>
+
+    {usageCard && <section className="talk-usage-card" role="dialog" aria-label={`${usageCard.token} 的用法`} style={{ left: usageCard.left, top: usageCard.top }}>
+      <button className="talk-usage-close" onClick={() => setUsageCard(null)} aria-label="关闭用法卡">×</button>
+      <h3>{usageCard.token}</h3>
+      <dl>
+        <div><dt>意思</dt><dd>{usageEntry?.zh ?? vocabEntry?.meaning ?? "结合当前整句理解"}</dd></div>
+        <div><dt>场合</dt><dd>偶像访谈、谈音乐与自己的想法时</dd></div>
+        <div><dt>语气</dt><dd>{usageEntry?.tier === "core" ? "这段里的核心口语表达" : "理解即可，先感受上下文"}</dd></div>
+        <div><dt>也常说</dt><dd>{exampleEntry?.example_ko ?? vocabEntry?.example ?? "暂时没有收录近似说法"}</dd></div>
+      </dl>
+    </section>}
   </div>;
+}
+
+function findTalkWord(token: string, words: TalkWord[]) {
+  const exact = words.find((word) => word.ko.split(/\s*\/\s*/u).includes(token));
+  if (exact) return exact;
+  return words.find((word) => {
+    const dictionaryStem = word.ko.endsWith("다") ? word.ko.slice(0, -1) : word.ko;
+    return dictionaryStem.length >= 2 && token.startsWith(dictionaryStem);
+  });
+}
+
+function formatTalkTime(seconds: number) {
+  const safeSeconds = Number.isFinite(seconds) ? Math.max(0, seconds) : 0;
+  const minutes = Math.floor(safeSeconds / 60);
+  const remainder = Math.floor(safeSeconds % 60);
+  return `${String(minutes).padStart(2, "0")}:${String(remainder).padStart(2, "0")}`;
+}
+
+function renderTalkTappable(text: string, onTap: (token: string, target: HTMLElement) => void) {
+  return text.split(/(\p{sc=Hangul}+)/gu).map((part, index) => /^\p{sc=Hangul}+$/u.test(part)
+    ? <span className="talk-tap-word" role="button" tabIndex={0} key={`${part}-${index}`} onClick={(event) => { event.stopPropagation(); onTap(part, event.currentTarget); }} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); event.stopPropagation(); onTap(part, event.currentTarget); } }}>{part}</span>
+    : part);
 }

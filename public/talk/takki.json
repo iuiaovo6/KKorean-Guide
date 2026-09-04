@@ -1,0 +1,351 @@
+{
+  "id": "takki-01",
+  "title_ko": "진심은 통한다",
+  "title_zh": "真心会被传达",
+  "title_en": "Sincerity Always Gets Through",
+  "speaker": "未确认（文件名 takki）",
+  "audio": "../1/takki.m4a",
+  "duration": 73.4,
+  "level": "B1",
+  "topic": "偶像 / 舞台 / 自我怀疑",
+  "speech_style": "访谈口述，해요체 + 요结尾，多停顿、重复与自我修正",
+
+  "gist": {
+    "zh": "说话人是表演型艺人，偶像是 MJ / 贾斯汀·汀布莱克 / 亚瑟小子。他担心：随着世代更替，自己热爱的音乐可能变成非主流、不再被大众喜爱，甚至因此开始怀疑自己。但他给出的结论是——只能相信着走下去，因为真心一定会被传达，而真心是最强大的力量。",
+    "en": "The speaker is a performance-oriented artist whose idols are Michael Jackson, Justin Timberlake and Usher. He worries that as generations shift, the music he loves may become non-mainstream and stop being loved by the wider public — and that this can make him doubt himself. His conclusion: you just have to believe and keep going, because sincerity always gets through, and nothing is more powerful than sincerity."
+  },
+
+  "guide": [
+    {
+      "q_ko": "이 사람의 음악적 뿌리(베이스)는 무엇이라고 해요?",
+      "q_zh": "他说自己音乐的「根基 / 底色」是什么？",
+      "q_en": "What does he say is the foundation of his music?",
+      "a_zh": "퍼포먼스형 아티스트（表演型艺人）——受 MJ、贾斯汀·汀布莱克、亚瑟小子影响。"
+    },
+    {
+      "q_ko": "어떤 걱정 때문에 스스로를 믿기 어려워져요?",
+      "q_zh": "是因为什么样的担忧，让他变得难以相信自己？",
+      "q_en": "What worry makes it hard for him to believe in himself?",
+      "a_zh": "担心随着世代潮流的更替，自己热爱的音乐变成非主流、不再被很多人喜爱。"
+    },
+    {
+      "q_ko": "결국 그는 어떤 결론을 내려요?",
+      "q_zh": "最后他给出了什么结论？",
+      "q_en": "What conclusion does he land on?",
+      "a_zh": "只能相信着走下去；把想做的事持续、恳切、努力地做下去，真心会被传达，真心是最强大的力量。"
+    }
+  ],
+
+  "lines": [
+    {
+      "t": 1.50, "end": 3.84,
+      "ko": "되게 여러 생각이 많이 들 때가 있어요.",
+      "zh": "真的会有很多想法涌上来的时候。",
+      "en": "There are times when a lot of different thoughts just flood in.",
+      "note": "开场定调句。들다 直义「进入」，생각이 들다＝念头「进入」脑海，不是「我主动想」。"
+    },
+    {
+      "t": 5.06, "end": 11.46,
+      "ko": "저는 굉장히, 어떻게 보면, 제가 음악을 꿈꾸고 하게 되는 베이스가",
+      "zh": "我呢，非常——怎么说呢——我之所以会开始做音乐、对音乐产生憧憬，它的根基是",
+      "en": "For me — how should I put it — the foundation of what made me dream about music is",
+      "note": "句子被说话人自己切断，谓语（베이스가 ~예요）直到下一行才出现。听的时候要跨行等谓语。어떻게 보면 是口语缓冲语。"
+    },
+    {
+      "t": 12.96, "end": 14.26,
+      "ko": "퍼포먼스형 아티스트고,",
+      "zh": "「表演型艺人」，",
+      "en": "that I'm a performance-oriented artist,",
+      "note": "补全上一行：베이스가 퍼포먼스형 아티스트(예요)。-고 这里不是「然后」，而是话没说完、继续补充说明。"
+    },
+    {
+      "t": 16.66, "end": 17.90,
+      "ko": "여러분 알겠죠?",
+      "zh": "大家懂的吧？",
+      "en": "You know what I mean, right?",
+      "note": "插入语，向听众求共鸣。-죠 是 -지요 的口语缩略，不是真的在提问。"
+    },
+    {
+      "t": 18.02, "end": 21.36,
+      "ko": "마이클 잭슨, 저스틴 팀버레이크, 어셔 이런 분들을 좋아하니까,",
+      "zh": "因为我喜欢迈克尔·杰克逊、贾斯汀·汀布莱克、亚瑟小子这样的人，",
+      "en": "since I love people like Michael Jackson, Justin Timberlake and Usher,",
+      "note": "이런 분들＝이런 사람들 的敬语说法。-니까 表原因，但句子仍然没说完，理由先行、结论后挂。"
+    },
+    {
+      "t": 21.36, "end": 27.56,
+      "ko": "어떻게 보면 세대의 흐름에 따라 내가 사랑하는 것도 비주류가 될 수도 있고,",
+      "zh": "但从某种角度看，随着世代潮流的更迭，我所热爱的东西也可能变成非主流，",
+      "en": "in a sense, as generations shift, the things I love could also become non-mainstream,",
+      "note": "전환点。내가 사랑하는 것＝-는 것 把动词句整块名词化，作主语。될 수도 있고 的 -고 又是话未完的铺垫。"
+    },
+    {
+      "t": 29.88, "end": 33.34,
+      "ko": "그렇게 되면 저도 머릿속으로 \"아, 그럼 내가 사랑하는 음악은\"",
+      "zh": "那样的话，我脑子里也会浮现——「啊，那我所热爱的音乐」",
+      "en": "and when that happens, the thought runs through my head: \"then the music I love...\"",
+      "note": "머릿속으로＝「在脑子里」。引号内是内心独白，音频里有一段明显停顿再接下一行。"
+    },
+    {
+      "t": 35.34, "end": 40.98,
+      "ko": "지금으로서는 많은 사람들에게 사랑을 받기 어려울 수도 있지 않을까?",
+      "zh": "「是不是已经很难被很多人喜爱了呢？」",
+      "en": "\"might it be hard for it to be loved by many people, at least for now?\"",
+      "note": "全篇最长最难的一句：-기 어렵다（难以）+ -ㄹ 수도 있다（也有可能）+ -지 않을까（自问推测）三层叠加。사랑을 받다 是被动语义的「被爱」。"
+    },
+    {
+      "t": 41.84, "end": 43.30,
+      "ko": "그런 생각이 들 때도 있어요.",
+      "zh": "这种想法也会冒出来。",
+      "en": "I do have thoughts like that sometimes.",
+      "note": "回应第 1 句的 생각이 들다，形成首尾呼应。开头是 -때가 있어요，这里是 -때도 있어요（也）。"
+    },
+    {
+      "t": 44.56, "end": 46.74,
+      "ko": "그러면 저도 저 스스로 믿기 어려워지는 거죠.",
+      "zh": "那样一来，我也变得难以相信自己了。",
+      "en": "And then it becomes hard for me to believe in myself.",
+      "note": "-아/어지다＝状态变化「变得…」；-기 어렵다＋-지다＝「变得难以…」。거죠＝것이죠，口语收尾。"
+    },
+    {
+      "t": 48.60, "end": 50.54,
+      "ko": "\"내가 하는 생각이 맞을까?\"",
+      "zh": "「我的想法是对的吗？」",
+      "en": "\"Is what I'm thinking even right?\"",
+      "note": "-(으)ㄹ까 用于自问（不期待回答），比 -ㄹ까요 更内心化。내가 하는＝내가 하(다)＋-는 定语形。"
+    },
+    {
+      "t": 53.12, "end": 58.30,
+      "ko": "근데 그냥 믿고 가는 겁니다.",
+      "zh": "但也就是相信着走下去罢了。",
+      "en": "But still — you just have to believe and keep going.",
+      "note": "转折落点。그냥＝「就这么、别无他法」。-는 겁니다 是 것입니다 的口语，带一点「这就是答案」的断定语气。"
+    },
+    {
+      "t": 59.26, "end": 60.66,
+      "ko": "하고 싶은 걸 해요.",
+      "zh": "做自己想做的事。",
+      "en": "Do what you want to do.",
+      "note": "하고 싶은 것 口语缩成 하고 싶은 걸（-을 → -ㄹ）。하고 싶다 直义「想做」，这里指想做的事。"
+    },
+    {
+      "t": 61.42, "end": 64.22,
+      "ko": "하고 싶은 걸 꾸준히 간절히 열심히 하면",
+      "zh": "只要把想做的事持续地、恳切地、努力地做下去，",
+      "en": "If you keep doing what you want — steadily, earnestly, with all your effort —",
+      "note": "三个 -히 副词叠用，是这段的节奏高点，音频里语速明显放缓、一字一顿。-(으)면 又是条件先行，结论在下一行。"
+    },
+    {
+      "t": 65.98, "end": 67.84,
+      "ko": "진심은 통한다고 생각하기 때문에,",
+      "zh": "因为我相信真心是会被传达的，",
+      "en": "because I believe sincerity always gets through,",
+      "note": "진심은 통한다 是这段的核心句。통하다＝「相通、被传达到」。-다고 생각하다＋-때문에。"
+    },
+    {
+      "t": 69.70, "end": 72.66,
+      "ko": "진심만큼 큰 힘이 없다고 생각하기 때문에.",
+      "zh": "因为我相信，没有比真心更强大的力量。",
+      "en": "and because I believe nothing is more powerful than sincerity.",
+      "note": "全篇收尾句。-만큼＝「像…那样（程度）」，진심만큼 큰 힘＝「像真心那样大的力量」。注意结尾是升调收在 때문에，话其实还没完——这是真实口述的特征。"
+    }
+  ],
+
+  "words": [
+    { "ko": "되게", "rr": "doege", "pos": "副词", "zh": "很、非常（口语）", "en": "very, really (colloquial)", "line": 0, "tier": "core" },
+    { "ko": "여러", "rr": "yeoreo", "pos": "冠词", "zh": "多个的、种种", "en": "several, various", "line": 0, "tier": "core" },
+    { "ko": "생각", "rr": "saenggak", "pos": "名词", "zh": "想法、念头", "en": "thought, idea", "line": 0, "tier": "core" },
+    { "ko": "생각이 들다", "rr": "saenggagi deulda", "pos": "词组", "zh": "产生想法、念头浮现", "en": "a thought comes to mind", "line": 0, "tier": "core" },
+    { "ko": "많이", "rr": "mani", "pos": "副词", "zh": "很多", "en": "a lot, much", "line": 0, "tier": "core" },
+    { "ko": "저는 / 제가", "rr": "jeoneun / jega", "pos": "代词", "zh": "我（谦称；主题形／主语形）", "en": "I (humble; topic / subject form)", "line": 1, "tier": "core" },
+    { "ko": "굉장히", "rr": "goengjanghi", "pos": "副词", "zh": "非常、极其", "en": "extremely, very", "line": 1, "tier": "recog" },
+    { "ko": "어떻게 보면", "rr": "eotteoke bomyeon", "pos": "副词短语", "zh": "从某种角度看、怎么说呢", "en": "in a sense, how should I put it", "line": 1, "tier": "core" },
+    { "ko": "음악", "rr": "eumak", "pos": "名词", "zh": "音乐", "en": "music", "line": 1, "tier": "core" },
+    { "ko": "꿈꾸다", "rr": "kkumkkuda", "pos": "动词", "zh": "做梦、憧憬", "en": "to dream (of)", "line": 1, "tier": "core" },
+    { "ko": "베이스", "rr": "beiseu", "pos": "名词", "zh": "根基、基础", "en": "base, foundation", "line": 1, "tier": "core" },
+    { "ko": "퍼포먼스형", "rr": "peopomeonseuhyeong", "pos": "名词", "zh": "表演型", "en": "performance-type", "line": 2, "tier": "core" },
+    { "ko": "아티스트", "rr": "atiseuteu", "pos": "名词", "zh": "艺人", "en": "artist", "line": 2, "tier": "core" },
+    { "ko": "여러분", "rr": "yeoreobun", "pos": "代词", "zh": "大家、各位", "en": "everyone, ladies and gentlemen", "line": 3, "tier": "core" },
+    { "ko": "알겠죠", "rr": "algessjyo", "pos": "动词活用形", "zh": "你懂的吧（알다 + -겠- + -지요）", "en": "you know, right?", "line": 3, "tier": "core" },
+    { "ko": "이런", "rr": "ireon", "pos": "冠词", "zh": "这样的", "en": "such, this kind of", "line": 4, "tier": "core" },
+    { "ko": "분들", "rr": "bundeul", "pos": "名词", "zh": "各位（人的敬称＋复数）", "en": "people (honorific plural)", "line": 4, "tier": "core" },
+    { "ko": "좋아하다", "rr": "joahada", "pos": "动词", "zh": "喜欢", "en": "to like", "line": 4, "tier": "core" },
+    { "ko": "근데", "rr": "geunde", "pos": "连接词", "zh": "不过、但是（口语）", "en": "but (colloquial, < 그런데)", "line": 11, "tier": "core" },
+    { "ko": "세대", "rr": "sedae", "pos": "名词", "zh": "世代、一代人", "en": "generation", "line": 5, "tier": "core" },
+    { "ko": "흐름", "rr": "heureum", "pos": "名词", "zh": "流动、潮流", "en": "flow, current", "line": 5, "tier": "core" },
+    { "ko": "사랑하다", "rr": "saranghada", "pos": "动词", "zh": "爱、热爱", "en": "to love", "line": 5, "tier": "core" },
+    { "ko": "비주류", "rr": "bijuryu", "pos": "名词", "zh": "非主流", "en": "non-mainstream", "line": 5, "tier": "core" },
+    { "ko": "그렇게", "rr": "geureoke", "pos": "副词", "zh": "那样地", "en": "that way, so", "line": 6, "tier": "core" },
+    { "ko": "되다", "rr": "doeda", "pos": "动词", "zh": "成为、变成", "en": "to become", "line": 5, "tier": "core" },
+    { "ko": "머릿속", "rr": "meoritsok", "pos": "名词", "zh": "脑中、脑海里", "en": "inside one's head", "line": 6, "tier": "core" },
+    { "ko": "그럼", "rr": "geureom", "pos": "连接词", "zh": "那么（口语）", "en": "then (colloquial, < 그러면)", "line": 6, "tier": "core" },
+    { "ko": "지금으로서는", "rr": "jigeumeuroseoneun", "pos": "副词短语", "zh": "就现在而言", "en": "for now, as of now", "line": 7, "tier": "core" },
+    { "ko": "사람들", "rr": "saramdeul", "pos": "名词", "zh": "人们", "en": "people", "line": 7, "tier": "core" },
+    { "ko": "사랑을 받다", "rr": "sarangeul batda", "pos": "词组", "zh": "被爱、受到喜爱", "en": "to be loved", "line": 7, "tier": "core" },
+    { "ko": "어렵다", "rr": "eoryeopda", "pos": "形容词", "zh": "困难的", "en": "difficult, hard", "line": 7, "tier": "core" },
+    { "ko": "그러면", "rr": "geureomyeon", "pos": "连接词", "zh": "那么、那样的话", "en": "then, in that case", "line": 9, "tier": "core" },
+    { "ko": "스스로", "rr": "seuseuro", "pos": "副词", "zh": "自己、亲自", "en": "oneself", "line": 9, "tier": "core" },
+    { "ko": "믿다", "rr": "mitda", "pos": "动词", "zh": "相信、信赖", "en": "to believe, to trust", "line": 9, "tier": "core" },
+    { "ko": "맞다", "rr": "matda", "pos": "形容词", "zh": "正确、对的", "en": "to be right, correct", "line": 10, "tier": "core" },
+    { "ko": "그냥", "rr": "geunyang", "pos": "副词", "zh": "就这么、只是", "en": "just, simply", "line": 11, "tier": "core" },
+    { "ko": "믿고 가다", "rr": "mitgo gada", "pos": "词组", "zh": "相信着走下去（继续坚持）", "en": "to believe and keep going", "line": 11, "tier": "core" },
+    { "ko": "꾸준히", "rr": "kkujunhi", "pos": "副词", "zh": "持续地、踏踏实实地", "en": "steadily, consistently", "line": 13, "tier": "core" },
+    { "ko": "간절히", "rr": "ganjeolhi", "pos": "副词", "zh": "恳切地、迫切地", "en": "earnestly, desperately", "line": 13, "tier": "core" },
+    { "ko": "열심히", "rr": "yeolsimhi", "pos": "副词", "zh": "努力地、认真地", "en": "hard, diligently", "line": 13, "tier": "core" },
+    { "ko": "진심", "rr": "jinsim", "pos": "名词", "zh": "真心、诚意", "en": "sincerity, true heart", "line": 14, "tier": "core" },
+    { "ko": "통하다", "rr": "tonghada", "pos": "动词", "zh": "相通、被传达", "en": "to get through, be conveyed", "line": 14, "tier": "core" },
+    { "ko": "힘", "rr": "him", "pos": "名词", "zh": "力量、力气", "en": "strength, power", "line": 15, "tier": "core" },
+    { "ko": "없다", "rr": "eopda", "pos": "形容词", "zh": "没有、不存在", "en": "to not exist, to lack", "line": 15, "tier": "core" },
+    { "ko": "그런", "rr": "geureon", "pos": "冠词", "zh": "那样的", "en": "such, that kind of", "line": 8, "tier": "recog" },
+    { "ko": "가다", "rr": "gada", "pos": "动词", "zh": "去、走下去", "en": "to go", "line": 11, "tier": "recog" },
+    { "ko": "하다", "rr": "hada", "pos": "动词", "zh": "做", "en": "to do", "line": 12, "tier": "recog" },
+    { "ko": "크다", "rr": "keuda", "pos": "形容词", "zh": "大；（程度）深", "en": "big, great", "line": 15, "tier": "recog" }
+  ],
+
+  "grammar": [
+    {
+      "form": "-(으)ㄹ 때가 있다",
+      "zh": "有时候会……",
+      "en": "there are times when …; sometimes …",
+      "ex": "여러 생각이 많이 들 때가 있어요.",
+      "ex_zh": "真的会有很多想法涌上来的时候。",
+      "note": "表示某事「偶尔会发生」，不是持续状态。比 가끔 ~해요 更口语、更自然。",
+      "line": 0
+    },
+    {
+      "form": "-게 되다",
+      "zh": "变得……、最终成为……",
+      "en": "to come to …, to end up …",
+      "ex": "제가 음악을 꿈꾸고 하게 되는 베이스가",
+      "ex_zh": "让我会开始憧憬音乐的（那个）根基",
+      "note": "强调「不是一开始就如此，而是经历了某个过程之后变成这样」。本课出现两次：하게 되는 / 믿기 어려워지는。",
+      "line": 1
+    },
+    {
+      "form": "-고（连接语尾）",
+      "zh": "（话未说完，继续补充说明）",
+      "en": "(connective) … and …; trailing off",
+      "ex": "퍼포먼스형 아티스트고, / 비주류가 될 수도 있고,",
+      "ex_zh": "是表演型艺人，（而且……）／可能变成非主流，（而且……）",
+      "note": "这里 -고 不是时间先后，而是「先说一半、挂住、等后半句」。口述访谈里极常见，听的时候要一直等谓语。",
+      "line": 2
+    },
+    {
+      "form": "-(으)니까",
+      "zh": "因为……（说话人主观理由）",
+      "en": "because, since (speaker's own reason)",
+      "ex": "마이클 잭슨, 저스틴 팀버레이크, 어셔 이런 분들을 좋아하니까,",
+      "ex_zh": "因为我喜欢 MJ、贾斯汀·汀布莱克、亚瑟小子这样的人，",
+      "note": "与 -아/어서 都表原因，但 -니까 更主观、多用于说明理由／提出建议，且后面可接命令句和共动句。",
+      "line": 4
+    },
+    {
+      "form": "-에 따라(서)",
+      "zh": "随着……、根据……",
+      "en": "according to …, as …",
+      "ex": "세대의 흐름에 따라",
+      "ex_zh": "随着世代的潮流",
+      "note": "名词 + 에 따라(서)。表示「A 变化则 B 随之变化」。",
+      "line": 5
+    },
+    {
+      "form": "-는 것",
+      "zh": "把动词句整块变成名词（名词语形化）",
+      "en": "nominalizer: the act of …; the thing that …",
+      "ex": "내가 사랑하는 것도 비주류가 될 수도 있고",
+      "ex_zh": "我所热爱的东西也有可能变成非主流",
+      "note": "내가 사랑하다（我爱）→ 내가 사랑하는 것（我爱的那个东西）。现在时定语形 -는 + 것。",
+      "line": 5
+    },
+    {
+      "form": "-(으)ㄹ 수도 있다",
+      "zh": "也有可能……",
+      "en": "it may also …; it's possible that …",
+      "ex": "비주류가 될 수도 있고",
+      "ex_zh": "也有可能变成非主流",
+      "note": "-(으)ㄹ 수 있다（能够）+ 도（也）＝「存在这种可能性」。注意不是「能力」，是「可能性」。",
+      "line": 5
+    },
+    {
+      "form": "-기 어렵다",
+      "zh": "难以……",
+      "en": "it is hard to …",
+      "ex": "많은 사람들에게 사랑을 받기 어려울 수도 있지 않을까?",
+      "ex_zh": "是不是也有可能很难被很多人喜爱呢？",
+      "note": "动词词干 + -기 变成名词，再 + 어렵다。-기 쉽다（容易…）同理。",
+      "line": 7
+    },
+    {
+      "form": "-(으)ㄹ까? / -지 않을까?",
+      "zh": "会……吗？（自问／推测）",
+      "en": "I wonder if …; don't you think …?",
+      "ex": "어려울 수도 있지 않을까? / 내가 하는 생각이 맞을까?",
+      "ex_zh": "是不是也有可能很难呢？／我的想法是对的吗？",
+      "note": "对自己发问，不期待回答。-지 않을까 是「难道不是…吗」，语气更软、更不确定。",
+      "line": 7
+    },
+    {
+      "form": "-아/어지다",
+      "zh": "变得……（状态变化）",
+      "en": "to become …",
+      "ex": "저 스스로 믿기 어려워지는 거죠.",
+      "ex_zh": "我也变得难以相信自己了。",
+      "note": "形容词/动词 + -아/어지다 → 「逐渐变成某种状态」。어렵다 → 어려워지다（变难）。这里与 -기 叠加：믿기 + 어렵다 + -어지다。",
+      "line": 9
+    },
+    {
+      "form": "-는 것입니다 / -는 겁니다",
+      "zh": "（就是）……这么一回事",
+      "en": "it is that …; the thing is …",
+      "ex": "그냥 믿고 가는 겁니다.",
+      "ex_zh": "就是相信着走下去。",
+      "note": "把整句名词化后再判断，带「结论就是如此」的断定语气。口语里 것입니다 → 겁니다。",
+      "line": 11
+    },
+    {
+      "form": "-고 싶다",
+      "zh": "想做……",
+      "en": "want to …",
+      "ex": "하고 싶은 걸 해요.",
+      "ex_zh": "做自己想做的事。",
+      "note": "动词 + -고 싶다。하고 싶은 것 → 口语缩略为 하고 싶은 걸。",
+      "line": 12
+    },
+    {
+      "form": "-(으)면",
+      "zh": "如果……的话",
+      "en": "if …",
+      "ex": "꾸준히 간절히 열심히 하면",
+      "ex_zh": "只要持续地、恳切地、努力地做下去",
+      "note": "条件句。本课大量使用「条件先行、结论后挂」的结构（-(으)면 …, -니까 …, -기 때문에 …）。",
+      "line": 13
+    },
+    {
+      "form": "-다고 생각하다",
+      "zh": "认为……、觉得……",
+      "en": "to think that …",
+      "ex": "진심은 통한다고 생각하기 때문에",
+      "ex_zh": "因为我相信真心是会被传达的",
+      "note": "间接引语：动词/形容词 + -다고（现在时）。하다 → 한다고。注意 -기 때문에 又把它名词化了一次。",
+      "line": 14
+    },
+    {
+      "form": "-기 때문에",
+      "zh": "因为……",
+      "en": "because …",
+      "ex": "진심만큼 큰 힘이 없다고 생각하기 때문에.",
+      "ex_zh": "因为我相信，没有比真心更强大的力量。",
+      "note": "比 -아/어서 更正式、因果更明确。注意本句收尾在 때문에 上，话其实没说完——真实口述的常见现象。",
+      "line": 15
+    },
+    {
+      "form": "-만큼",
+      "zh": "像……那样（程度）",
+      "en": "as much as …; to the extent of …",
+      "ex": "진심만큼 큰 힘이 없다고",
+      "ex_zh": "没有像真心那样大的力量",
+      "note": "名词 + 만큼 表比较基准。韩语用「没有像X一样大的Y」来表达最高级「X 是最Y的」。",
+      "line": 15
+    }
+  ]
+}

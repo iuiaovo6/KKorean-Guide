@@ -2,7 +2,11 @@ import { readFile, writeFile } from "node:fs/promises";
 
 const wordsPath = new URL("../public/words.json", import.meta.url);
 const formsPath = new URL("../public/forms.json", import.meta.url);
+const speechPath = new URL("../public/speech.json", import.meta.url);
 const checkOnly = process.argv.includes("--check");
+
+const HONORIFIC_WORDS = ["저", "당신", "드시다", "계시다", "주무시다", "성함", "연세", "진지", "말씀"];
+const PARTICLES = ["에게서", "으로", "에서", "에게", "은", "는", "이", "가", "을", "를", "와", "과", "도", "만", "에", "로", "의"];
 
 // 국립국어원 Revised Romanization tables. This is a rule-based transliterator,
 // not an AI or a pinyin-style approximation.
@@ -113,17 +117,17 @@ function formsForDictionary(word) {
   const stem = word.slice(0, -1);
   if (word.endsWith("하다")) {
     const prefix = word.slice(0, -2);
-    return [`${prefix}해요`, `${prefix}해`, `${prefix}했어요`, `${prefix}했어`, `${prefix}하고`];
+    return [`${prefix}해요`, `${prefix}해`, `${prefix}했어요`, `${prefix}했어`, `${prefix}하고`, `${prefix}하면`, `${prefix}해서`];
   }
   if (word.endsWith("되다")) {
     const prefix = word.slice(0, -2);
-    return [`${prefix}돼요`, `${prefix}돼`, `${prefix}됐어요`, `${prefix}됐어`, `${prefix}되고`];
+    return [`${prefix}돼요`, `${prefix}돼`, `${prefix}됐어요`, `${prefix}됐어`, `${prefix}되고`, `${prefix}되면`, `${prefix}돼서`];
   }
-  if (word === "있다") return ["있어요", "있어", "있었어요", "있었어", "있고"];
-  if (word === "없다") return ["없어요", "없어", "없었어요", "없었어", "없고"];
+  if (word === "있다") return ["있어요", "있어", "있었어요", "있었어", "있고", "있으면", "있어서"];
+  if (word === "없다") return ["없어요", "없어", "없었어요", "없었어", "없고", "없으면", "없어서"];
   const present = makePresent(stem);
   const past = makePast(stem);
-  return [`${present}요`, present, `${past}어요`, `${past}어`, `${stem}고`];
+  return [`${present}요`, present, `${past}어요`, `${past}어`, `${stem}고`, `${stem}면`, `${present}서`];
 }
 
 function surfaceTokens(text) {
@@ -141,12 +145,11 @@ function buildForms(words) {
 
   // Keep the practical index corpus-driven: every sentence surface is checked
   // against the generated forms and against conservative noun-particle stripping.
-  const particles = ["에게서", "으로", "에서", "에게", "은", "는", "이", "가", "을", "를", "와", "과", "도", "만", "에", "로", "의"];
   for (const word of words) {
     for (const token of surfaceTokens(word.example_ko ?? "")) {
       const generatedId = generated.get(token);
       if (generatedId !== undefined) forms.set(token, generatedId);
-      for (const particle of particles) {
+      for (const particle of PARTICLES) {
         if (!token.endsWith(particle) || token.length <= particle.length) continue;
         const baseId = exact.get(token.slice(0, -particle.length));
         if (baseId !== undefined) forms.set(token, baseId);
@@ -157,6 +160,55 @@ function buildForms(words) {
   // Include common forms even when this particular corpus has not used one yet.
   for (const [form, id] of generated) forms.set(form, id);
   return Object.fromEntries([...forms.entries()].sort(([left], [right]) => left.localeCompare(right, "ko")));
+}
+
+function honorificLexiconBase(surface) {
+  return HONORIFIC_WORDS.find((word) => surface === word || PARTICLES.some((particle) => surface === `${word}${particle}`)) ?? null;
+}
+
+function classifySpeech(surface, base) {
+  const lexicalHonorific = honorificLexiconBase(surface);
+  if (lexicalHonorific) {
+    return { base, level: "honor", reason: "该词是敬语专用词（词汇敬语）" };
+  }
+  if (surface === base || /(고|면|서)$/u.test(surface)) return { base, level: null };
+  if (surface.includes("세요") || surface.includes("으시") || /시(?:어요|었|겠|면|고|죠|지|다|십시오|습니다|습니까|$)/u.test(surface)) {
+    return { base, level: "honor", reason: "动词含敬语助词 -시-" };
+  }
+  if (/(습니다|습니까)$/u.test(surface)) {
+    return { base, level: "honor", reason: "结尾是 -습니다/-습니까（합쇼체 正式敬语体）" };
+  }
+  if (/요$/u.test(surface)) {
+    return { base, level: "honor", reason: "结尾是 -요（해요체 敬语体）" };
+  }
+  if (/[어아]$/u.test(surface)) {
+    return { base, level: "plain", reason: "结尾是 -어/-아 且无 -요（해체 平语/반말 形式）" };
+  }
+  return { base, level: "plain", reason: "无敬语标记，为平语（반말）形式" };
+}
+
+function buildSpeech(words, forms) {
+  const wordsById = new Map(words.map((word) => [word.id, word]));
+  const exact = new Map(words.map((word) => [word.korean, word]));
+  const speech = new Map();
+
+  for (const word of words) speech.set(word.korean, classifySpeech(word.korean, word.korean));
+  for (const [surface, id] of Object.entries(forms)) {
+    const baseWord = wordsById.get(id);
+    if (baseWord) speech.set(surface, classifySpeech(surface, baseWord.korean));
+  }
+
+  for (const honorific of HONORIFIC_WORDS) {
+    const baseWord = exact.get(honorific);
+    if (!baseWord) continue;
+    speech.set(honorific, classifySpeech(honorific, honorific));
+    for (const particle of PARTICLES) {
+      const surface = `${honorific}${particle}`;
+      speech.set(surface, classifySpeech(surface, honorific));
+    }
+  }
+
+  return Object.fromEntries([...speech.entries()].sort(([left], [right]) => left.localeCompare(right, "ko")));
 }
 
 async function writeStable(path, value) {
@@ -175,11 +227,31 @@ const words = source.map(({ polite_form, plain_form, usage, romanization: _previ
   romanization: romanize(word.korean),
 }));
 const forms = buildForms(words);
+const speech = buildSpeech(words, forms);
 
 if (words.length !== 802 || words.some((word) => !word.romanization)) {
   throw new Error("Romanization validation failed: every one of the 802 entries must be non-empty.");
 }
 if (forms["기대해"] !== 2) throw new Error("Corpus form validation failed: 기대해 must resolve to 기대하다 (id 2).");
+if (words.some((word) => !speech[word.korean] || speech[word.korean].base.length === 0)) {
+  throw new Error("Speech validation failed: every vocabulary entry must have generated speech metadata.");
+}
+if (speech["설레요"]?.base !== "설레다" || speech["설레요"]?.level !== "honor") {
+  throw new Error("Speech validation failed: 설레요 must resolve to the honorific form of 설레다.");
+}
+if (speech["설레"]?.base !== "설레다" || speech["설레"]?.level !== "plain") {
+  throw new Error("Speech validation failed: 설레 must resolve to the plain form of 설레다.");
+}
+if (speech["저"]?.level !== "honor" || speech["저도"]?.base !== "저") {
+  throw new Error("Speech validation failed: lexical honorifics and their particle variants must be classified.");
+}
+if (speech["설레다"]?.level !== null || speech["설레고"]?.level !== null) {
+  throw new Error("Speech validation failed: dictionary and connective forms must not show a speech-level label.");
+}
 
-const [wordsChanged, formsChanged] = await Promise.all([writeStable(wordsPath, words), writeStable(formsPath, forms)]);
-console.log(`Validated ${words.length} romanized entries and ${Object.keys(forms).length} practical forms (${wordsChanged || formsChanged ? "updated" : "unchanged"}).`);
+const [wordsChanged, formsChanged, speechChanged] = await Promise.all([
+  writeStable(wordsPath, words),
+  writeStable(formsPath, forms),
+  writeStable(speechPath, speech),
+]);
+console.log(`Validated ${words.length} words, ${Object.keys(forms).length} forms, and ${Object.keys(speech).length} speech records (${wordsChanged || formsChanged || speechChanged ? "updated" : "unchanged"}).`);

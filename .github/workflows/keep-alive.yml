@@ -1,0 +1,36 @@
+name: Keep Supabase awake
+
+# 目的：Supabase 免费项目超过 7 天无数据库查询会被自动暂停（暂停后登录全部失败）。
+# 这个定时任务每 5 天发一次轻量查询，让项目“保持活跃”，从而不被暂停。
+# 注意：它只能“预防”暂停，不能“唤醒”已经被暂停的项目（暂停需去后台手动 Resume）。
+on:
+  schedule:
+    # UTC 03:10，每 5 天一次（落在 7 天窗口内）
+    - cron: "10 3 */5 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lightweight query to register DB activity
+        env:
+          SUPABASE_URL: ${{ vars.NEXT_PUBLIC_SUPABASE_URL }}
+          # service_role 绕过 RLS，保证查询真实落到数据库（计入活跃度）
+          SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          set -u
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SERVICE_ROLE" ]; then
+            echo "缺少 SUPABASE_URL 或 SUPABASE_SERVICE_ROLE_KEY，跳过"
+            exit 0
+          fi
+          echo "pinging $SUPABASE_URL"
+          curl -fsS --max-time 30 \
+            "$SUPABASE_URL/rest/v1/user_word_progress?select=id&limit=1" \
+            -H "apikey: $SERVICE_ROLE" \
+            -H "Authorization: Bearer $SERVICE_ROLE" \
+            && echo "OK: 查询成功，活跃度已刷新" \
+            || echo "warning: ping 返回非零（项目可能已被暂停，需去后台手动 Resume）"

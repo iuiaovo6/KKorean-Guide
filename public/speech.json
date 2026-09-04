@@ -1,0 +1,5691 @@
+{
+  "1빠": {
+    "base": "1빠",
+    "level": null
+  },
+  "1위": {
+    "base": "1위",
+    "level": null
+  },
+  "가능": {
+    "base": "가능",
+    "level": null
+  },
+  "가요": {
+    "base": "가요",
+    "level": null
+  },
+  "가을": {
+    "base": "가을",
+    "level": null
+  },
+  "가을에": {
+    "base": "가을",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "가장 좋아하는 노래": {
+    "base": "가장 좋아하는 노래",
+    "level": null
+  },
+  "가족": {
+    "base": "가족",
+    "level": null
+  },
+  "가족에": {
+    "base": "가족",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "감동이에요": {
+    "base": "감동이에요",
+    "level": null
+  },
+  "감사합니다": {
+    "base": "감사합니다",
+    "level": null
+  },
+  "감사해요 정말": {
+    "base": "감사해요 정말",
+    "level": null
+  },
+  "같아요": {
+    "base": "같아요",
+    "level": null
+  },
+  "같이": {
+    "base": "같이",
+    "level": null
+  },
+  "같이 걸어가요": {
+    "base": "같이 걸어가요",
+    "level": null
+  },
+  "개봉": {
+    "base": "개봉",
+    "level": null
+  },
+  "개봉에": {
+    "base": "개봉",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "개인 사진": {
+    "base": "개인 사진",
+    "level": null
+  },
+  "개인정보": {
+    "base": "개인정보",
+    "level": null
+  },
+  "개인정보를": {
+    "base": "개인정보",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "거기": {
+    "base": "거기",
+    "level": null
+  },
+  "거기에": {
+    "base": "거기",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "걱정": {
+    "base": "걱정",
+    "level": null
+  },
+  "걱정에": {
+    "base": "걱정",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "걱정하지 마세요": {
+    "base": "걱정하지 마세요",
+    "level": null
+  },
+  "건강하세요": {
+    "base": "건강하세요",
+    "level": null
+  },
+  "검색": {
+    "base": "검색",
+    "level": null
+  },
+  "검정": {
+    "base": "검정",
+    "level": null
+  },
+  "검정이": {
+    "base": "검정",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "게스트": {
+    "base": "게스트",
+    "level": null
+  },
+  "게스트로": {
+    "base": "게스트",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "게시물": {
+    "base": "게시물",
+    "level": null
+  },
+  "게시물에": {
+    "base": "게시물",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "게시물을": {
+    "base": "게시물",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "겨울": {
+    "base": "겨울",
+    "level": null
+  },
+  "겨울에": {
+    "base": "겨울",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "결제": {
+    "base": "결제",
+    "level": null
+  },
+  "결제를": {
+    "base": "결제",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "경품": {
+    "base": "경품",
+    "level": null
+  },
+  "경품에": {
+    "base": "경품",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "계정": {
+    "base": "계정",
+    "level": null
+  },
+  "계정에": {
+    "base": "계정",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "계정을": {
+    "base": "계정",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "고개 끄덕": {
+    "base": "고개 끄덕",
+    "level": null
+  },
+  "고마워요": {
+    "base": "고마워요",
+    "level": null
+  },
+  "고생했어요": {
+    "base": "고생했어요",
+    "level": null
+  },
+  "고음": {
+    "base": "고음",
+    "level": null
+  },
+  "고음에": {
+    "base": "고음",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "고화질": {
+    "base": "고화질",
+    "level": null
+  },
+  "고화질을": {
+    "base": "고화질",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "공개": {
+    "base": "공개",
+    "level": null
+  },
+  "공개를": {
+    "base": "공개",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "공개방송": {
+    "base": "공개방송",
+    "level": null
+  },
+  "공개방송에": {
+    "base": "공개방송",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "공구": {
+    "base": "공구",
+    "level": null
+  },
+  "공구에": {
+    "base": "공구",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "공동구매": {
+    "base": "공동구매",
+    "level": null
+  },
+  "공동구매에": {
+    "base": "공동구매",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "공방": {
+    "base": "공방",
+    "level": null
+  },
+  "공방에": {
+    "base": "공방",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "공부": {
+    "base": "공부",
+    "level": null
+  },
+  "공부에": {
+    "base": "공부",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "공식": {
+    "base": "공식",
+    "level": null
+  },
+  "공식 굿즈": {
+    "base": "공식 굿즈",
+    "level": null
+  },
+  "공식 발표": {
+    "base": "공식 발표",
+    "level": null
+  },
+  "공식 응원봉": {
+    "base": "공식 응원봉",
+    "level": null
+  },
+  "공식 팬카페": {
+    "base": "공식 팬카페",
+    "level": null
+  },
+  "공식 팬클럽": {
+    "base": "공식 팬클럽",
+    "level": null
+  },
+  "공식에": {
+    "base": "공식",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "공연": {
+    "base": "공연",
+    "level": null
+  },
+  "공연도": {
+    "base": "공연",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "공연이": {
+    "base": "공연",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "공유": {
+    "base": "공유",
+    "level": null
+  },
+  "공유해 주세요": {
+    "base": "공유해 주세요",
+    "level": null
+  },
+  "공항": {
+    "base": "공항",
+    "level": null
+  },
+  "공항 스케줄": {
+    "base": "공항 스케줄",
+    "level": null
+  },
+  "공항에": {
+    "base": "공항",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "괜찮아요": {
+    "base": "괜찮아요",
+    "level": null
+  },
+  "교환": {
+    "base": "교환",
+    "level": null
+  },
+  "교환에": {
+    "base": "교환",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "구독": {
+    "base": "구독",
+    "level": null
+  },
+  "구독을": {
+    "base": "구독",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "구독해 주세요": {
+    "base": "구독해 주세요",
+    "level": null
+  },
+  "구매": {
+    "base": "구매",
+    "level": null
+  },
+  "구매에": {
+    "base": "구매",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "구역": {
+    "base": "구역",
+    "level": null
+  },
+  "구역이": {
+    "base": "구역",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "국내": {
+    "base": "국내",
+    "level": null
+  },
+  "국내에": {
+    "base": "국내",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "군입대": {
+    "base": "군입대",
+    "level": null
+  },
+  "굿즈": {
+    "base": "굿즈",
+    "level": null
+  },
+  "굿즈를": {
+    "base": "굿즈",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "굿즈만": {
+    "base": "굿즈",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "귀걸이": {
+    "base": "귀걸이",
+    "level": null
+  },
+  "귀걸이가": {
+    "base": "귀걸이",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "귀여워 죽겠어요": {
+    "base": "귀여워 죽겠어요",
+    "level": null
+  },
+  "귀여워요": {
+    "base": "귀여워요",
+    "level": null
+  },
+  "그것": {
+    "base": "그것",
+    "level": null
+  },
+  "그것도": {
+    "base": "그것",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "그냥 다 좋아요": {
+    "base": "그냥 다 좋아요",
+    "level": null
+  },
+  "그래서": {
+    "base": "그래서",
+    "level": null
+  },
+  "그리고": {
+    "base": "그리고",
+    "level": null
+  },
+  "금발": {
+    "base": "금발",
+    "level": null
+  },
+  "금발이": {
+    "base": "금발",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "금지": {
+    "base": "금지",
+    "level": null
+  },
+  "기다려요": {
+    "base": "기다려요",
+    "level": null
+  },
+  "기다리고 있을게요": {
+    "base": "기다리고 있을게요",
+    "level": null
+  },
+  "기대하고": {
+    "base": "기대하다",
+    "level": null
+  },
+  "기대하다": {
+    "base": "기대하다",
+    "level": null
+  },
+  "기대하면": {
+    "base": "기대하다",
+    "level": null
+  },
+  "기대해": {
+    "base": "기대하다",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "기대해 주세요": {
+    "base": "기대해 주세요",
+    "level": null
+  },
+  "기대해서": {
+    "base": "기대하다",
+    "level": null
+  },
+  "기대해요": {
+    "base": "기대하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "기대했어": {
+    "base": "기대하다",
+    "level": "plain",
+    "reason": "结尾是 -어/-아 且无 -요（해체 平语/반말 形式）"
+  },
+  "기대했어요": {
+    "base": "기대하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "기분": {
+    "base": "기분",
+    "level": null
+  },
+  "기분에": {
+    "base": "기분",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "기억해 주세요": {
+    "base": "기억해 주세요",
+    "level": null
+  },
+  "길": {
+    "base": "길",
+    "level": null
+  },
+  "길에": {
+    "base": "길",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "길을": {
+    "base": "길",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "길을 잃었어요": {
+    "base": "길을 잃었어요",
+    "level": null
+  },
+  "꿈": {
+    "base": "꿈",
+    "level": null
+  },
+  "꿈에": {
+    "base": "꿈",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "끝났어요": {
+    "base": "끝났어요",
+    "level": null
+  },
+  "나": {
+    "base": "나",
+    "level": null
+  },
+  "나는": {
+    "base": "나",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "나중에": {
+    "base": "나중에",
+    "level": null
+  },
+  "낙첨": {
+    "base": "낙첨",
+    "level": null
+  },
+  "날": {
+    "base": "날",
+    "level": null
+  },
+  "날씨": {
+    "base": "날씨",
+    "level": null
+  },
+  "날씨에": {
+    "base": "날씨",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "날에": {
+    "base": "날",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "내일": {
+    "base": "내일",
+    "level": null
+  },
+  "내일에": {
+    "base": "내일",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "너": {
+    "base": "너",
+    "level": null
+  },
+  "너무": {
+    "base": "너무",
+    "level": null
+  },
+  "네": {
+    "base": "네",
+    "level": null
+  },
+  "네일": {
+    "base": "네일",
+    "level": null
+  },
+  "네일이": {
+    "base": "네일",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "넷": {
+    "base": "넷",
+    "level": null
+  },
+  "노란색": {
+    "base": "노란색",
+    "level": null
+  },
+  "노란색이": {
+    "base": "노란색",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "노래": {
+    "base": "노래",
+    "level": null
+  },
+  "노래 너무 좋아요": {
+    "base": "노래 너무 좋아요",
+    "level": null
+  },
+  "노래 추천해 주세요": {
+    "base": "노래 추천해 주세요",
+    "level": null
+  },
+  "노래가": {
+    "base": "노래",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "노래에": {
+    "base": "노래",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "녹음": {
+    "base": "녹음",
+    "level": null
+  },
+  "녹음에": {
+    "base": "녹음",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "녹화": {
+    "base": "녹화",
+    "level": null
+  },
+  "녹화가": {
+    "base": "녹화",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "녹화에": {
+    "base": "녹화",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "뇌절": {
+    "base": "뇌절",
+    "level": null
+  },
+  "누구": {
+    "base": "누구",
+    "level": null
+  },
+  "눈": {
+    "base": "눈",
+    "level": null
+  },
+  "눈 마주쳐 주세요": {
+    "base": "눈 마주쳐 주세요",
+    "level": null
+  },
+  "눈 맞춤": {
+    "base": "눈 맞춤",
+    "level": null
+  },
+  "눈물 쏟다": {
+    "base": "눈물 쏟다",
+    "level": null
+  },
+  "눈빛": {
+    "base": "눈빛",
+    "level": null
+  },
+  "눈에": {
+    "base": "눈",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "눈이": {
+    "base": "눈",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "눈이 호강이에요": {
+    "base": "눈이 호강이에요",
+    "level": null
+  },
+  "느려요": {
+    "base": "느려요",
+    "level": null
+  },
+  "늦었어요": {
+    "base": "늦었어요",
+    "level": null
+  },
+  "다섯": {
+    "base": "다섯",
+    "level": null
+  },
+  "다시": {
+    "base": "다시",
+    "level": null
+  },
+  "다시 말해 주세요": {
+    "base": "다시 말해 주세요",
+    "level": null
+  },
+  "다시보기": {
+    "base": "다시보기",
+    "level": null
+  },
+  "다시보기를": {
+    "base": "다시보기",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "다운로드": {
+    "base": "다운로드",
+    "level": null
+  },
+  "다음에 또 만나요": {
+    "base": "다음에 또 만나요",
+    "level": null
+  },
+  "다재다능": {
+    "base": "다재다능",
+    "level": null
+  },
+  "단발": {
+    "base": "단발",
+    "level": null
+  },
+  "단발이": {
+    "base": "단발",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "단어": {
+    "base": "단어",
+    "level": null
+  },
+  "단어에": {
+    "base": "단어",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "단체 사진": {
+    "base": "단체 사진",
+    "level": null
+  },
+  "단체 채팅": {
+    "base": "단체 채팅",
+    "level": null
+  },
+  "답": {
+    "base": "답",
+    "level": null
+  },
+  "답글": {
+    "base": "답글",
+    "level": null
+  },
+  "답글을": {
+    "base": "답글",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "답에": {
+    "base": "답",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "당첨": {
+    "base": "당첨",
+    "level": null
+  },
+  "대기": {
+    "base": "대기",
+    "level": null
+  },
+  "대기실": {
+    "base": "대기실",
+    "level": null
+  },
+  "대기실이": {
+    "base": "대기실",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "대리": {
+    "base": "대리",
+    "level": null
+  },
+  "대리에": {
+    "base": "대리",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "대박": {
+    "base": "대박",
+    "level": null
+  },
+  "댓글": {
+    "base": "댓글",
+    "level": null
+  },
+  "댓글 남겨 주세요": {
+    "base": "댓글 남겨 주세요",
+    "level": null
+  },
+  "댓글을": {
+    "base": "댓글",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "더워요": {
+    "base": "더워요",
+    "level": null
+  },
+  "덕계정": {
+    "base": "덕계정",
+    "level": null
+  },
+  "덕력": {
+    "base": "덕력",
+    "level": null
+  },
+  "덕메": {
+    "base": "덕메",
+    "level": null
+  },
+  "덕메에": {
+    "base": "덕메",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "덕질": {
+    "base": "덕질",
+    "level": null
+  },
+  "덕질 계정": {
+    "base": "덕질 계정",
+    "level": null
+  },
+  "덕질 비용": {
+    "base": "덕질 비용",
+    "level": null
+  },
+  "덕질에": {
+    "base": "덕질",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "덕친": {
+    "base": "덕친",
+    "level": null
+  },
+  "덕친에": {
+    "base": "덕친",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "덕후": {
+    "base": "덕후",
+    "level": null
+  },
+  "데뷔": {
+    "base": "데뷔",
+    "level": null
+  },
+  "데뷔 전": {
+    "base": "데뷔 전",
+    "level": null
+  },
+  "데뷔에": {
+    "base": "데뷔",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "데이터": {
+    "base": "데이터",
+    "level": null
+  },
+  "데이터를": {
+    "base": "데이터",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "도와주세요": {
+    "base": "도와주세요",
+    "level": null
+  },
+  "도와주실 수 있어요": {
+    "base": "도와주실 수 있어요",
+    "level": null
+  },
+  "도착": {
+    "base": "도착",
+    "level": null
+  },
+  "도착에": {
+    "base": "도착",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "도착하고": {
+    "base": "도착하다",
+    "level": null
+  },
+  "도착하다": {
+    "base": "도착하다",
+    "level": null
+  },
+  "도착하면": {
+    "base": "도착하다",
+    "level": null
+  },
+  "도착해": {
+    "base": "도착하다",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "도착해서": {
+    "base": "도착하다",
+    "level": null
+  },
+  "도착해요": {
+    "base": "도착하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "도착했어": {
+    "base": "도착하다",
+    "level": "plain",
+    "reason": "结尾是 -어/-아 且无 -요（해체 平语/반말 形式）"
+  },
+  "도착했어요": {
+    "base": "도착하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "돈": {
+    "base": "돈",
+    "level": null
+  },
+  "돈에": {
+    "base": "돈",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "두근두근": {
+    "base": "두근두근",
+    "level": null
+  },
+  "둘": {
+    "base": "둘",
+    "level": null
+  },
+  "둘이": {
+    "base": "둘",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "뒤": {
+    "base": "뒤",
+    "level": null
+  },
+  "뒤에": {
+    "base": "뒤",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "들어요": {
+    "base": "들어요",
+    "level": null
+  },
+  "디데이": {
+    "base": "디데이",
+    "level": null
+  },
+  "디엠": {
+    "base": "디엠",
+    "level": null
+  },
+  "디엠으로": {
+    "base": "디엠",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "디지털 싱글": {
+    "base": "디지털 싱글",
+    "level": null
+  },
+  "떡밥": {
+    "base": "떡밥",
+    "level": null
+  },
+  "떡밥 회수": {
+    "base": "떡밥 회수",
+    "level": null
+  },
+  "떡밥이": {
+    "base": "떡밥",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "떨려요": {
+    "base": "떨려요",
+    "level": null
+  },
+  "떴다 떴다": {
+    "base": "떴다 떴다",
+    "level": null
+  },
+  "떼창": {
+    "base": "떼창",
+    "level": null
+  },
+  "떼창이": {
+    "base": "떼창",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "또": {
+    "base": "또",
+    "level": null
+  },
+  "또 봐요": {
+    "base": "또 봐요",
+    "level": null
+  },
+  "뜻": {
+    "base": "뜻",
+    "level": null
+  },
+  "뜻에": {
+    "base": "뜻",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "라디오": {
+    "base": "라디오",
+    "level": null
+  },
+  "라이브": {
+    "base": "라이브",
+    "level": null
+  },
+  "라이브 방송": {
+    "base": "라이브 방송",
+    "level": null
+  },
+  "라이브 실력": {
+    "base": "라이브 실력",
+    "level": null
+  },
+  "라이브에": {
+    "base": "라이브",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "랜덤 포카": {
+    "base": "랜덤 포카",
+    "level": null
+  },
+  "레전드": {
+    "base": "레전드",
+    "level": null
+  },
+  "레전드에": {
+    "base": "레전드",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "로그아웃": {
+    "base": "로그아웃",
+    "level": null
+  },
+  "로그인": {
+    "base": "로그인",
+    "level": null
+  },
+  "리마인더": {
+    "base": "리마인더",
+    "level": null
+  },
+  "리마인더를": {
+    "base": "리마인더",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "리액션": {
+    "base": "리액션",
+    "level": null
+  },
+  "리액션이": {
+    "base": "리액션",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "리얼리티": {
+    "base": "리얼리티",
+    "level": null
+  },
+  "리트윗": {
+    "base": "리트윗",
+    "level": null
+  },
+  "리트윗을": {
+    "base": "리트윗",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "리프팅": {
+    "base": "리프팅",
+    "level": null
+  },
+  "릴스": {
+    "base": "릴스",
+    "level": null
+  },
+  "릴스를": {
+    "base": "릴스",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "링크": {
+    "base": "링크",
+    "level": null
+  },
+  "링크를": {
+    "base": "링크",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "마셔요": {
+    "base": "마셔요",
+    "level": null
+  },
+  "마스터": {
+    "base": "마스터",
+    "level": null
+  },
+  "마스터에": {
+    "base": "마스터",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "마음": {
+    "base": "마음",
+    "level": null
+  },
+  "마음에": {
+    "base": "마음",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "마이크": {
+    "base": "마이크",
+    "level": null
+  },
+  "마이크가": {
+    "base": "마이크",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "막내 온 탑": {
+    "base": "막내 온 탑",
+    "level": null
+  },
+  "막방": {
+    "base": "막방",
+    "level": null
+  },
+  "막방에": {
+    "base": "막방",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "만나요": {
+    "base": "만나요",
+    "level": null
+  },
+  "많아요": {
+    "base": "많아요",
+    "level": null
+  },
+  "말해요": {
+    "base": "말해요",
+    "level": null
+  },
+  "맛있어요": {
+    "base": "맛있어요",
+    "level": null
+  },
+  "맞아요": {
+    "base": "맞아요",
+    "level": null
+  },
+  "먹어요": {
+    "base": "먹어요",
+    "level": null
+  },
+  "멋있어요": {
+    "base": "멋있어요",
+    "level": null
+  },
+  "멍하고": {
+    "base": "멍하다",
+    "level": null
+  },
+  "멍하다": {
+    "base": "멍하다",
+    "level": null
+  },
+  "멍하면": {
+    "base": "멍하다",
+    "level": null
+  },
+  "멍해": {
+    "base": "멍하다",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "멍해서": {
+    "base": "멍하다",
+    "level": null
+  },
+  "멍해요": {
+    "base": "멍하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "멍했어": {
+    "base": "멍하다",
+    "level": "plain",
+    "reason": "结尾是 -어/-아 且无 -요（해체 平语/반말 形式）"
+  },
+  "멍했어요": {
+    "base": "멍하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "메모": {
+    "base": "메모",
+    "level": null
+  },
+  "메모를": {
+    "base": "메모",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "메시지": {
+    "base": "메시지",
+    "level": null
+  },
+  "메시지를": {
+    "base": "메시지",
+    "level": "honor",
+    "reason": "动词含敬语助词 -시-"
+  },
+  "메시지에": {
+    "base": "메시지",
+    "level": "honor",
+    "reason": "动词含敬语助词 -시-"
+  },
+  "메이크업": {
+    "base": "메이크업",
+    "level": null
+  },
+  "메이크업이": {
+    "base": "메이크업",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "멘트": {
+    "base": "멘트",
+    "level": null
+  },
+  "멘트가": {
+    "base": "멘트",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "멤버": {
+    "base": "멤버",
+    "level": null
+  },
+  "멤버에": {
+    "base": "멤버",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "멤버의": {
+    "base": "멤버",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "모자": {
+    "base": "모자",
+    "level": null
+  },
+  "모자가": {
+    "base": "모자",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "목걸이": {
+    "base": "목걸이",
+    "level": null
+  },
+  "목걸이가": {
+    "base": "목걸이",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "목소리": {
+    "base": "목소리",
+    "level": null
+  },
+  "목숨 바쳐 사랑해요": {
+    "base": "목숨 바쳐 사랑해요",
+    "level": null
+  },
+  "몰라요": {
+    "base": "몰라요",
+    "level": null
+  },
+  "몸풀기": {
+    "base": "몸풀기",
+    "level": null
+  },
+  "못 들었어요": {
+    "base": "못 들었어요",
+    "level": null
+  },
+  "무대": {
+    "base": "무대",
+    "level": null
+  },
+  "무대 기대할게요": {
+    "base": "무대 기대할게요",
+    "level": null
+  },
+  "무대 세트": {
+    "base": "무대 세트",
+    "level": null
+  },
+  "무대 앞": {
+    "base": "무대 앞",
+    "level": null
+  },
+  "무대 의상": {
+    "base": "무대 의상",
+    "level": null
+  },
+  "무대 최고예요": {
+    "base": "무대 최고예요",
+    "level": null
+  },
+  "무대가": {
+    "base": "무대",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "무대도": {
+    "base": "무대",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "무대인사": {
+    "base": "무대인사",
+    "level": null
+  },
+  "무대인사가": {
+    "base": "무대인사",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "무료": {
+    "base": "무료",
+    "level": null
+  },
+  "무료를": {
+    "base": "무료",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "무직 타임": {
+    "base": "무직 타임",
+    "level": null
+  },
+  "문장": {
+    "base": "문장",
+    "level": null
+  },
+  "문장에": {
+    "base": "문장",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "물": {
+    "base": "물",
+    "level": null
+  },
+  "물에": {
+    "base": "물",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "뭐": {
+    "base": "뭐",
+    "level": null
+  },
+  "뮤비 조회수": {
+    "base": "뮤비 조회수",
+    "level": null
+  },
+  "뮤직비디오": {
+    "base": "뮤직비디오",
+    "level": null
+  },
+  "뮤직비디오를": {
+    "base": "뮤직비디오",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "미공포": {
+    "base": "미공포",
+    "level": null
+  },
+  "미공포에": {
+    "base": "미공포",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "미니 앨범": {
+    "base": "미니 앨범",
+    "level": null
+  },
+  "미소": {
+    "base": "미소",
+    "level": null
+  },
+  "미안해요": {
+    "base": "미안해요",
+    "level": null
+  },
+  "믿음의 구매": {
+    "base": "믿음의 구매",
+    "level": null
+  },
+  "밈": {
+    "base": "밈",
+    "level": null
+  },
+  "밈을": {
+    "base": "밈",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "바빠요": {
+    "base": "바빠요",
+    "level": null
+  },
+  "반가워요": {
+    "base": "반가워요",
+    "level": null
+  },
+  "반복 재생": {
+    "base": "반복 재생",
+    "level": null
+  },
+  "반지": {
+    "base": "반지",
+    "level": null
+  },
+  "반지가": {
+    "base": "반지",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "발음": {
+    "base": "발음",
+    "level": null
+  },
+  "발음에": {
+    "base": "발음",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "밤": {
+    "base": "밤",
+    "level": null
+  },
+  "밤에": {
+    "base": "밤",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "밥": {
+    "base": "밥",
+    "level": null
+  },
+  "밥 잘 챙겨 드세요": {
+    "base": "밥 잘 챙겨 드세요",
+    "level": null
+  },
+  "밥에": {
+    "base": "밥",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "방청": {
+    "base": "방청",
+    "level": null
+  },
+  "방청이": {
+    "base": "방청",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "배경화면": {
+    "base": "배경화면",
+    "level": null
+  },
+  "배고파요": {
+    "base": "배고파요",
+    "level": null
+  },
+  "배너": {
+    "base": "배너",
+    "level": null
+  },
+  "배너가": {
+    "base": "배너",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "배송": {
+    "base": "배송",
+    "level": null
+  },
+  "배송비": {
+    "base": "배송비",
+    "level": null
+  },
+  "배송비에": {
+    "base": "배송비",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "배송에": {
+    "base": "배송",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "배워요": {
+    "base": "배워요",
+    "level": null
+  },
+  "배터리": {
+    "base": "배터리",
+    "level": null
+  },
+  "배터리를": {
+    "base": "배터리",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "버그": {
+    "base": "버그",
+    "level": null
+  },
+  "버그를": {
+    "base": "버그",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "버블": {
+    "base": "버블",
+    "level": null
+  },
+  "버블 구독": {
+    "base": "버블 구독",
+    "level": null
+  },
+  "버블 메시지": {
+    "base": "버블 메시지",
+    "level": null
+  },
+  "버블이": {
+    "base": "버블",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "버스": {
+    "base": "버스",
+    "level": null
+  },
+  "버스에": {
+    "base": "버스",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "번역기": {
+    "base": "번역기",
+    "level": null
+  },
+  "번역기를": {
+    "base": "번역기",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "번역해 주세요": {
+    "base": "번역해 주세요",
+    "level": null
+  },
+  "번호": {
+    "base": "번호",
+    "level": null
+  },
+  "번호에": {
+    "base": "번호",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "번호표": {
+    "base": "번호표",
+    "level": null
+  },
+  "번호표가": {
+    "base": "번호표",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "보고 싶어": {
+    "base": "보고 싶어",
+    "level": null
+  },
+  "보고 싶어 죽겠어요": {
+    "base": "보고 싶어 죽겠어요",
+    "level": null
+  },
+  "보고 싶었어요": {
+    "base": "보고 싶었어요",
+    "level": null
+  },
+  "보라색": {
+    "base": "보라색",
+    "level": null
+  },
+  "보라색이": {
+    "base": "보라색",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "보정": {
+    "base": "보정",
+    "level": null
+  },
+  "보정이": {
+    "base": "보정",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "보정하고": {
+    "base": "보정하다",
+    "level": null
+  },
+  "보정하다": {
+    "base": "보정하다",
+    "level": null
+  },
+  "보정하면": {
+    "base": "보정하다",
+    "level": null
+  },
+  "보정해": {
+    "base": "보정하다",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "보정해서": {
+    "base": "보정하다",
+    "level": null
+  },
+  "보정해요": {
+    "base": "보정하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "보정했어": {
+    "base": "보정하다",
+    "level": "plain",
+    "reason": "结尾是 -어/-아 且无 -요（해체 平语/반말 形式）"
+  },
+  "보정했어요": {
+    "base": "보정하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "복구": {
+    "base": "복구",
+    "level": null
+  },
+  "복구를": {
+    "base": "복구",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "복귀": {
+    "base": "복귀",
+    "level": null
+  },
+  "본계": {
+    "base": "본계",
+    "level": null
+  },
+  "본인 선물": {
+    "base": "본인 선물",
+    "level": null
+  },
+  "본인 확인": {
+    "base": "본인 확인",
+    "level": null
+  },
+  "본진": {
+    "base": "본진",
+    "level": null
+  },
+  "볼하트": {
+    "base": "볼하트",
+    "level": null
+  },
+  "볼하트가": {
+    "base": "볼하트",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "봄": {
+    "base": "봄",
+    "level": null
+  },
+  "봄에": {
+    "base": "봄",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "봐요": {
+    "base": "봐요",
+    "level": null
+  },
+  "부츠": {
+    "base": "부츠",
+    "level": null
+  },
+  "부츠가": {
+    "base": "부츠",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "부캐": {
+    "base": "부캐",
+    "level": null
+  },
+  "부캐로": {
+    "base": "부캐",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "북클릿": {
+    "base": "북클릿",
+    "level": null
+  },
+  "분위기": {
+    "base": "분위기",
+    "level": null
+  },
+  "분위기 메이커": {
+    "base": "분위기 메이커",
+    "level": null
+  },
+  "분장": {
+    "base": "분장",
+    "level": null
+  },
+  "분장이": {
+    "base": "분장",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "분철": {
+    "base": "분철",
+    "level": null
+  },
+  "분철에": {
+    "base": "분철",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "분홍색": {
+    "base": "분홍색",
+    "level": null
+  },
+  "분홍색이": {
+    "base": "분홍색",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "불가능": {
+    "base": "불가능",
+    "level": null
+  },
+  "불꽃놀이": {
+    "base": "불꽃놀이",
+    "level": null
+  },
+  "브이로그": {
+    "base": "브이로그",
+    "level": null
+  },
+  "비": {
+    "base": "비",
+    "level": null
+  },
+  "비가": {
+    "base": "비",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "비공개": {
+    "base": "비공개",
+    "level": null
+  },
+  "비공개를": {
+    "base": "비공개",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "비공식": {
+    "base": "비공식",
+    "level": null
+  },
+  "비공식 굿즈": {
+    "base": "비공식 굿즈",
+    "level": null
+  },
+  "비공식에": {
+    "base": "비공식",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "비밀": {
+    "base": "비밀",
+    "level": null
+  },
+  "비밀번호": {
+    "base": "비밀번호",
+    "level": null
+  },
+  "비밀번호를": {
+    "base": "비밀번호",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "비에": {
+    "base": "비",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "비주얼": {
+    "base": "비주얼",
+    "level": null
+  },
+  "비주얼에": {
+    "base": "비주얼",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "비하인드": {
+    "base": "비하인드",
+    "level": null
+  },
+  "빛나요": {
+    "base": "빛나요",
+    "level": null
+  },
+  "빨간색": {
+    "base": "빨간색",
+    "level": null
+  },
+  "빨간색이": {
+    "base": "빨간색",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "빨라요": {
+    "base": "빨라요",
+    "level": null
+  },
+  "빨리": {
+    "base": "빨리",
+    "level": null
+  },
+  "사람": {
+    "base": "사람",
+    "level": null
+  },
+  "사람에": {
+    "base": "사람",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "사랑한다고 해 주세요": {
+    "base": "사랑한다고 해 주세요",
+    "level": null
+  },
+  "사랑해": {
+    "base": "사랑해",
+    "level": null
+  },
+  "사랑해요": {
+    "base": "사랑해요",
+    "level": null
+  },
+  "사연": {
+    "base": "사연",
+    "level": null
+  },
+  "사연을": {
+    "base": "사연",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "사연이": {
+    "base": "사연",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "사이드": {
+    "base": "사이드",
+    "level": null
+  },
+  "사인": {
+    "base": "사인",
+    "level": null
+  },
+  "사인 부탁드려요": {
+    "base": "사인 부탁드려요",
+    "level": null
+  },
+  "사인 소품": {
+    "base": "사인 소품",
+    "level": null
+  },
+  "사인이": {
+    "base": "사인",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "사인회": {
+    "base": "사인회",
+    "level": null
+  },
+  "사인회가": {
+    "base": "사인회",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "사전 녹화": {
+    "base": "사전 녹화",
+    "level": null
+  },
+  "사전 투표": {
+    "base": "사전 투표",
+    "level": null
+  },
+  "사진": {
+    "base": "사진",
+    "level": null
+  },
+  "사진 저장": {
+    "base": "사진 저장",
+    "level": null
+  },
+  "사진 찍어도 돼요": {
+    "base": "사진 찍어도 돼요",
+    "level": null
+  },
+  "사진에": {
+    "base": "사진",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "사진을": {
+    "base": "사진",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "사진이": {
+    "base": "사진",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "사진첩": {
+    "base": "사진첩",
+    "level": null
+  },
+  "사진첩을": {
+    "base": "사진첩",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "삭제": {
+    "base": "삭제",
+    "level": null
+  },
+  "삭제를": {
+    "base": "삭제",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "새 앨범 축하해요": {
+    "base": "새 앨범 축하해요",
+    "level": null
+  },
+  "새로워요": {
+    "base": "새로워요",
+    "level": null
+  },
+  "색깔": {
+    "base": "색깔",
+    "level": null
+  },
+  "색깔이": {
+    "base": "색깔",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "생각": {
+    "base": "생각",
+    "level": null
+  },
+  "생각에": {
+    "base": "생각",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "생일": {
+    "base": "생일",
+    "level": null
+  },
+  "생일 축하해요": {
+    "base": "생일 축하해요",
+    "level": null
+  },
+  "생일 카페": {
+    "base": "생일 카페",
+    "level": null
+  },
+  "생일에": {
+    "base": "생일",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "서사": {
+    "base": "서사",
+    "level": null
+  },
+  "서사에": {
+    "base": "서사",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "선곡": {
+    "base": "선곡",
+    "level": null
+  },
+  "선곡이": {
+    "base": "선곡",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "선물": {
+    "base": "선물",
+    "level": null
+  },
+  "선물에": {
+    "base": "선물",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "선물을": {
+    "base": "선물",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "설레": {
+    "base": "설레다",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "설레고": {
+    "base": "설레다",
+    "level": null
+  },
+  "설레다": {
+    "base": "설레다",
+    "level": null
+  },
+  "설레면": {
+    "base": "설레다",
+    "level": null
+  },
+  "설레서": {
+    "base": "설레다",
+    "level": null
+  },
+  "설레요": {
+    "base": "설레다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "설렜어": {
+    "base": "설레다",
+    "level": "plain",
+    "reason": "结尾是 -어/-아 且无 -요（해체 平语/반말 形式）"
+  },
+  "설렜어요": {
+    "base": "설레다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "설정": {
+    "base": "설정",
+    "level": null
+  },
+  "설정을": {
+    "base": "설정",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "성장": {
+    "base": "성장",
+    "level": null
+  },
+  "성지": {
+    "base": "성지",
+    "level": null
+  },
+  "성지 순례": {
+    "base": "성지 순례",
+    "level": null
+  },
+  "센터": {
+    "base": "센터",
+    "level": null
+  },
+  "센터에": {
+    "base": "센터",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "셀카": {
+    "base": "셀카",
+    "level": null
+  },
+  "셀카 저장": {
+    "base": "셀카 저장",
+    "level": null
+  },
+  "셀카 포즈": {
+    "base": "셀카 포즈",
+    "level": null
+  },
+  "셀카를": {
+    "base": "셀카",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "셋": {
+    "base": "셋",
+    "level": null
+  },
+  "셋리스트": {
+    "base": "셋리스트",
+    "level": null
+  },
+  "셋리스트가": {
+    "base": "셋리스트",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "셔츠": {
+    "base": "셔츠",
+    "level": null
+  },
+  "셔츠가": {
+    "base": "셔츠",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "소속사": {
+    "base": "소속사",
+    "level": null
+  },
+  "소원": {
+    "base": "소원",
+    "level": null
+  },
+  "소원 들어 주세요": {
+    "base": "소원 들어 주세요",
+    "level": null
+  },
+  "소중하고": {
+    "base": "소중하다",
+    "level": null
+  },
+  "소중하다": {
+    "base": "소중하다",
+    "level": null
+  },
+  "소중하면": {
+    "base": "소중하다",
+    "level": null
+  },
+  "소중해": {
+    "base": "소중하다",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "소중해서": {
+    "base": "소중하다",
+    "level": null
+  },
+  "소중해요": {
+    "base": "소중하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "소중했어": {
+    "base": "소중하다",
+    "level": "plain",
+    "reason": "结尾是 -어/-아 且无 -요（해체 平语/반말 形式）"
+  },
+  "소중했어요": {
+    "base": "소중하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "손": {
+    "base": "손",
+    "level": null
+  },
+  "손 흔들어 주세요": {
+    "base": "손 흔들어 주세요",
+    "level": null
+  },
+  "손목띠": {
+    "base": "손목띠",
+    "level": null
+  },
+  "손목띠가": {
+    "base": "손목띠",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "손에": {
+    "base": "손",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "손인사": {
+    "base": "손인사",
+    "level": null
+  },
+  "손하트": {
+    "base": "손하트",
+    "level": null
+  },
+  "솔로": {
+    "base": "솔로",
+    "level": null
+  },
+  "숏폼": {
+    "base": "숏폼",
+    "level": null
+  },
+  "숏폼을": {
+    "base": "숏폼",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "수고했어요": {
+    "base": "수고했어요",
+    "level": null
+  },
+  "수록곡": {
+    "base": "수록곡",
+    "level": null
+  },
+  "수록곡에": {
+    "base": "수록곡",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "숙소": {
+    "base": "숙소",
+    "level": null
+  },
+  "숙소에": {
+    "base": "숙소",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "순서": {
+    "base": "순서",
+    "level": null
+  },
+  "순서가": {
+    "base": "순서",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "순위": {
+    "base": "순위",
+    "level": null
+  },
+  "순위에": {
+    "base": "순위",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "스압": {
+    "base": "스압",
+    "level": null
+  },
+  "스크린샷": {
+    "base": "스크린샷",
+    "level": null
+  },
+  "스크린샷을": {
+    "base": "스크린샷",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "스타일링": {
+    "base": "스타일링",
+    "level": null
+  },
+  "스타일링이": {
+    "base": "스타일링",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "스탠딩": {
+    "base": "스탠딩",
+    "level": null
+  },
+  "스탠딩이": {
+    "base": "스탠딩",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "스토리": {
+    "base": "스토리",
+    "level": null
+  },
+  "스토리를": {
+    "base": "스토리",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "스트리밍": {
+    "base": "스트리밍",
+    "level": null
+  },
+  "스티커": {
+    "base": "스티커",
+    "level": null
+  },
+  "스포": {
+    "base": "스포",
+    "level": null
+  },
+  "스포에": {
+    "base": "스포",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "스포일러": {
+    "base": "스포일러",
+    "level": null
+  },
+  "스포일러에": {
+    "base": "스포일러",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "스피커": {
+    "base": "스피커",
+    "level": null
+  },
+  "스피커가": {
+    "base": "스피커",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "슬로건": {
+    "base": "슬로건",
+    "level": null
+  },
+  "슬로건이": {
+    "base": "슬로건",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "슬퍼요": {
+    "base": "슬퍼요",
+    "level": null
+  },
+  "시간": {
+    "base": "시간",
+    "level": null
+  },
+  "시간에": {
+    "base": "시간",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "시선처리": {
+    "base": "시선처리",
+    "level": null
+  },
+  "시선처리가": {
+    "base": "시선처리",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "시작해요": {
+    "base": "시작해요",
+    "level": null
+  },
+  "식당": {
+    "base": "식당",
+    "level": null
+  },
+  "식당에": {
+    "base": "식당",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "신고": {
+    "base": "신고",
+    "level": null
+  },
+  "신고를": {
+    "base": "신고",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "신곡": {
+    "base": "신곡",
+    "level": null
+  },
+  "신곡에": {
+    "base": "신곡",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "신곡을": {
+    "base": "신곡",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "신발": {
+    "base": "신발",
+    "level": null
+  },
+  "신발이": {
+    "base": "신발",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "신분증": {
+    "base": "신분증",
+    "level": null
+  },
+  "신분증을": {
+    "base": "신분증",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "실력파": {
+    "base": "실력파",
+    "level": null
+  },
+  "실시간": {
+    "base": "실시간",
+    "level": null
+  },
+  "실시간 트렌드": {
+    "base": "실시간 트렌드",
+    "level": null
+  },
+  "실시간을": {
+    "base": "실시간",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "실존이에요": {
+    "base": "실존이에요",
+    "level": null
+  },
+  "실트": {
+    "base": "실트",
+    "level": null
+  },
+  "실트를": {
+    "base": "실트",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "심쿵": {
+    "base": "심쿵",
+    "level": null
+  },
+  "싱글": {
+    "base": "싱글",
+    "level": null
+  },
+  "싱글로": {
+    "base": "싱글",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "써요": {
+    "base": "써요",
+    "level": null
+  },
+  "아니요": {
+    "base": "아니요",
+    "level": null
+  },
+  "아래": {
+    "base": "아래",
+    "level": null
+  },
+  "아래에": {
+    "base": "아래",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "아무튼 귀엽다": {
+    "base": "아무튼 귀엽다",
+    "level": null
+  },
+  "아이돌": {
+    "base": "아이돌",
+    "level": null
+  },
+  "아이돌에": {
+    "base": "아이돌",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "아이디": {
+    "base": "아이디",
+    "level": null
+  },
+  "아이디를": {
+    "base": "아이디",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "아주": {
+    "base": "아주",
+    "level": null
+  },
+  "아직": {
+    "base": "아직",
+    "level": null
+  },
+  "아침": {
+    "base": "아침",
+    "level": null
+  },
+  "아침에": {
+    "base": "아침",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "아크릴 스탠드": {
+    "base": "아크릴 스탠드",
+    "level": null
+  },
+  "아파요": {
+    "base": "아파요",
+    "level": null
+  },
+  "안 읽음": {
+    "base": "안 읽음",
+    "level": null
+  },
+  "안경": {
+    "base": "안경",
+    "level": null
+  },
+  "안경이": {
+    "base": "안경",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "안녕": {
+    "base": "안녕",
+    "level": null
+  },
+  "안녕하세요": {
+    "base": "안녕하세요",
+    "level": null
+  },
+  "안무": {
+    "base": "안무",
+    "level": null
+  },
+  "안무 연습": {
+    "base": "안무 연습",
+    "level": null
+  },
+  "안무에": {
+    "base": "안무",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "알고리즘": {
+    "base": "알고리즘",
+    "level": null
+  },
+  "알고리즘을": {
+    "base": "알고리즘",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "알림": {
+    "base": "알림",
+    "level": null
+  },
+  "알림 설정했어요": {
+    "base": "알림 설정했어요",
+    "level": null
+  },
+  "알림 켜기": {
+    "base": "알림 켜기",
+    "level": null
+  },
+  "알림을": {
+    "base": "알림",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "알아들었어요": {
+    "base": "알아들었어요",
+    "level": null
+  },
+  "알아요": {
+    "base": "알아요",
+    "level": null
+  },
+  "앞": {
+    "base": "앞",
+    "level": null
+  },
+  "앞머리": {
+    "base": "앞머리",
+    "level": null
+  },
+  "앞머리가": {
+    "base": "앞머리",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "앞에": {
+    "base": "앞",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "앞에서": {
+    "base": "앞",
+    "level": null
+  },
+  "앞으로도 잘 부탁해요": {
+    "base": "앞으로도 잘 부탁해요",
+    "level": null
+  },
+  "애교 해 주세요": {
+    "base": "애교 해 주세요",
+    "level": null
+  },
+  "액세서리": {
+    "base": "액세서리",
+    "level": null
+  },
+  "액세서리가": {
+    "base": "액세서리",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "앨범": {
+    "base": "앨범",
+    "level": null
+  },
+  "앨범 개봉": {
+    "base": "앨범 개봉",
+    "level": null
+  },
+  "앨범에": {
+    "base": "앨범",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "앨범이": {
+    "base": "앨범",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "앵콜": {
+    "base": "앵콜",
+    "level": null
+  },
+  "앵콜이": {
+    "base": "앵콜",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "야광봉": {
+    "base": "야광봉",
+    "level": null
+  },
+  "약속": {
+    "base": "약속",
+    "level": null
+  },
+  "약속해요": {
+    "base": "약속해요",
+    "level": null
+  },
+  "양도": {
+    "base": "양도",
+    "level": null
+  },
+  "양도에": {
+    "base": "양도",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "양수": {
+    "base": "양수",
+    "level": null
+  },
+  "양수에": {
+    "base": "양수",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "어디": {
+    "base": "어디",
+    "level": null
+  },
+  "어디에서": {
+    "base": "어디",
+    "level": null
+  },
+  "어떻게": {
+    "base": "어떻게",
+    "level": null
+  },
+  "어떻게 이래요": {
+    "base": "어떻게 이래요",
+    "level": null
+  },
+  "어제": {
+    "base": "어제",
+    "level": null
+  },
+  "어제에": {
+    "base": "어제",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "언박싱": {
+    "base": "언박싱",
+    "level": null
+  },
+  "언제": {
+    "base": "언제",
+    "level": null
+  },
+  "언제나 응원해요": {
+    "base": "언제나 응원해요",
+    "level": null
+  },
+  "언팔": {
+    "base": "언팔",
+    "level": null
+  },
+  "언팔을": {
+    "base": "언팔",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "얼굴": {
+    "base": "얼굴",
+    "level": null
+  },
+  "얼굴에": {
+    "base": "얼굴",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "얼굴천재": {
+    "base": "얼굴천재",
+    "level": null
+  },
+  "얼굴천재에": {
+    "base": "얼굴천재",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "얼마": {
+    "base": "얼마",
+    "level": null
+  },
+  "얼마나 기다렸는지": {
+    "base": "얼마나 기다렸는지",
+    "level": null
+  },
+  "얼마에": {
+    "base": "얼마",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "업데이트": {
+    "base": "업데이트",
+    "level": null
+  },
+  "업데이트를": {
+    "base": "업데이트",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "업로드": {
+    "base": "업로드",
+    "level": null
+  },
+  "없어요": {
+    "base": "없어요",
+    "level": null
+  },
+  "에너지": {
+    "base": "에너지",
+    "level": null
+  },
+  "에너지가": {
+    "base": "에너지",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "엑스": {
+    "base": "엑스",
+    "level": null
+  },
+  "엑스에서": {
+    "base": "엑스",
+    "level": null
+  },
+  "엔딩": {
+    "base": "엔딩",
+    "level": null
+  },
+  "엔딩이": {
+    "base": "엔딩",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "여권": {
+    "base": "여권",
+    "level": null
+  },
+  "여권에": {
+    "base": "여권",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "여기": {
+    "base": "여기",
+    "level": null
+  },
+  "여기에": {
+    "base": "여기",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "여기에 해 주세요": {
+    "base": "여기에 해 주세요",
+    "level": null
+  },
+  "여기요": {
+    "base": "여기요",
+    "level": null
+  },
+  "여름": {
+    "base": "여름",
+    "level": null
+  },
+  "여름에": {
+    "base": "여름",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "여행": {
+    "base": "여행",
+    "level": null
+  },
+  "여행에": {
+    "base": "여행",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "역": {
+    "base": "역",
+    "level": null
+  },
+  "역에": {
+    "base": "역",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "역주행": {
+    "base": "역주행",
+    "level": null
+  },
+  "연습": {
+    "base": "연습",
+    "level": null
+  },
+  "연습생": {
+    "base": "연습생",
+    "level": null
+  },
+  "연습실": {
+    "base": "연습실",
+    "level": null
+  },
+  "연습실에": {
+    "base": "연습실",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "연습에": {
+    "base": "연습",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "연습해요": {
+    "base": "연습해요",
+    "level": null
+  },
+  "염색": {
+    "base": "염색",
+    "level": null
+  },
+  "염색이": {
+    "base": "염색",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "엽서": {
+    "base": "엽서",
+    "level": null
+  },
+  "영상": {
+    "base": "영상",
+    "level": null
+  },
+  "영상 찍어도 돼요": {
+    "base": "영상 찍어도 돼요",
+    "level": null
+  },
+  "영상에": {
+    "base": "영상",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "영상을": {
+    "base": "영상",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "영상이": {
+    "base": "영상",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "영상통화": {
+    "base": "영상통화",
+    "level": null
+  },
+  "영상통화에": {
+    "base": "영상통화",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "영수증": {
+    "base": "영수증",
+    "level": null
+  },
+  "영수증에": {
+    "base": "영수증",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "영어": {
+    "base": "영어",
+    "level": null
+  },
+  "영어에": {
+    "base": "영어",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "영통팬싸": {
+    "base": "영통팬싸",
+    "level": null
+  },
+  "영통팬싸에": {
+    "base": "영통팬싸",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "예능": {
+    "base": "예능",
+    "level": null
+  },
+  "예능감": {
+    "base": "예능감",
+    "level": null
+  },
+  "예능감이": {
+    "base": "예능감",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "예매": {
+    "base": "예매",
+    "level": null
+  },
+  "예매에": {
+    "base": "예매",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "예뻐요": {
+    "base": "예뻐요",
+    "level": null
+  },
+  "예약": {
+    "base": "예약",
+    "level": null
+  },
+  "예약에": {
+    "base": "예약",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "예약하고": {
+    "base": "예약하다",
+    "level": null
+  },
+  "예약하다": {
+    "base": "예약하다",
+    "level": null
+  },
+  "예약하면": {
+    "base": "예약하다",
+    "level": null
+  },
+  "예약해": {
+    "base": "예약하다",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "예약해서": {
+    "base": "예약하다",
+    "level": null
+  },
+  "예약해요": {
+    "base": "예약하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "예약했어": {
+    "base": "예약하다",
+    "level": "plain",
+    "reason": "结尾是 -어/-아 且无 -요（해체 平语/반말 形式）"
+  },
+  "예약했어요": {
+    "base": "예약하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "오늘": {
+    "base": "오늘",
+    "level": null
+  },
+  "오늘 기분 어때요": {
+    "base": "오늘 기분 어때요",
+    "level": null
+  },
+  "오늘 너무 멋있어요": {
+    "base": "오늘 너무 멋있어요",
+    "level": null
+  },
+  "오늘 너무 예뻐요": {
+    "base": "오늘 너무 예뻐요",
+    "level": null
+  },
+  "오늘도": {
+    "base": "오늘",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "오늘도 수고했어요": {
+    "base": "오늘도 수고했어요",
+    "level": null
+  },
+  "오늘에": {
+    "base": "오늘",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "오래됐어요": {
+    "base": "오래됐어요",
+    "level": null
+  },
+  "오랜만이에요": {
+    "base": "오랜만이에요",
+    "level": null
+  },
+  "오류": {
+    "base": "오류",
+    "level": null
+  },
+  "오류를": {
+    "base": "오류",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "오른손": {
+    "base": "오른손",
+    "level": null
+  },
+  "오른손에": {
+    "base": "오른손",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "오른쪽": {
+    "base": "오른쪽",
+    "level": null
+  },
+  "오른쪽에": {
+    "base": "오른쪽",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "오열": {
+    "base": "오열",
+    "level": null
+  },
+  "오프닝": {
+    "base": "오프닝",
+    "level": null
+  },
+  "오프닝이": {
+    "base": "오프닝",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "오프라인": {
+    "base": "오프라인",
+    "level": null
+  },
+  "오프라인 굿즈": {
+    "base": "오프라인 굿즈",
+    "level": null
+  },
+  "오프라인을": {
+    "base": "오프라인",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "오픈런": {
+    "base": "오픈런",
+    "level": null
+  },
+  "오픈채팅": {
+    "base": "오픈채팅",
+    "level": null
+  },
+  "오픈채팅을": {
+    "base": "오픈채팅",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "온라인": {
+    "base": "온라인",
+    "level": null
+  },
+  "온라인을": {
+    "base": "온라인",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "올킬": {
+    "base": "올킬",
+    "level": null
+  },
+  "와요": {
+    "base": "와요",
+    "level": null
+  },
+  "와이파이": {
+    "base": "와이파이",
+    "level": null
+  },
+  "와이파이를": {
+    "base": "와이파이",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "완벽해요": {
+    "base": "완벽해요",
+    "level": null
+  },
+  "완성도": {
+    "base": "완성도",
+    "level": null
+  },
+  "완성도가": {
+    "base": "완성도",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "왜": {
+    "base": "왜",
+    "level": null
+  },
+  "왼손": {
+    "base": "왼손",
+    "level": null
+  },
+  "왼손에": {
+    "base": "왼손",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "왼쪽": {
+    "base": "왼쪽",
+    "level": null
+  },
+  "왼쪽에": {
+    "base": "왼쪽",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "요즘 뭐 해요": {
+    "base": "요즘 뭐 해요",
+    "level": null
+  },
+  "요즘 어떻게 지내요": {
+    "base": "요즘 어떻게 지내요",
+    "level": null
+  },
+  "용기": {
+    "base": "용기",
+    "level": null
+  },
+  "용량": {
+    "base": "용량",
+    "level": null
+  },
+  "용량을": {
+    "base": "용량",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "우리": {
+    "base": "우리",
+    "level": null
+  },
+  "우리가": {
+    "base": "우리",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "우리는": {
+    "base": "우리",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "우편번호": {
+    "base": "우편번호",
+    "level": null
+  },
+  "우편번호에": {
+    "base": "우편번호",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "울어요": {
+    "base": "울어요",
+    "level": null
+  },
+  "움짤": {
+    "base": "움짤",
+    "level": null
+  },
+  "움짤 저장": {
+    "base": "움짤 저장",
+    "level": null
+  },
+  "움짤을": {
+    "base": "움짤",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "웃어요": {
+    "base": "웃어요",
+    "level": null
+  },
+  "웃음": {
+    "base": "웃음",
+    "level": null
+  },
+  "웃음 참기": {
+    "base": "웃음 참기",
+    "level": null
+  },
+  "원정": {
+    "base": "원정",
+    "level": null
+  },
+  "원정 팬": {
+    "base": "원정 팬",
+    "level": null
+  },
+  "원피스": {
+    "base": "원피스",
+    "level": null
+  },
+  "원피스가": {
+    "base": "원피스",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "원해요": {
+    "base": "원해요",
+    "level": null
+  },
+  "월드 투어": {
+    "base": "월드 투어",
+    "level": null
+  },
+  "위": {
+    "base": "위",
+    "level": null
+  },
+  "위버스": {
+    "base": "위버스",
+    "level": null
+  },
+  "위버스 게시물": {
+    "base": "위버스 게시물",
+    "level": null
+  },
+  "위버스 댓글": {
+    "base": "위버스 댓글",
+    "level": null
+  },
+  "위버스에": {
+    "base": "위버스",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "위에": {
+    "base": "위",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "윙크": {
+    "base": "윙크",
+    "level": null
+  },
+  "유닛": {
+    "base": "유닛",
+    "level": null
+  },
+  "유료": {
+    "base": "유료",
+    "level": null
+  },
+  "유료를": {
+    "base": "유료",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "유튜브": {
+    "base": "유튜브",
+    "level": null
+  },
+  "유튜브 쇼츠": {
+    "base": "유튜브 쇼츠",
+    "level": null
+  },
+  "유튜브를": {
+    "base": "유튜브",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "음방": {
+    "base": "음방",
+    "level": null
+  },
+  "음방에": {
+    "base": "음방",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "음소거": {
+    "base": "음소거",
+    "level": null
+  },
+  "음소거를": {
+    "base": "음소거",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "음악": {
+    "base": "음악",
+    "level": null
+  },
+  "음악 방송": {
+    "base": "음악 방송",
+    "level": null
+  },
+  "음악에": {
+    "base": "음악",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "음악이": {
+    "base": "음악",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "음원": {
+    "base": "음원",
+    "level": null
+  },
+  "음원 사재기": {
+    "base": "음원 사재기",
+    "level": null
+  },
+  "음원 차트": {
+    "base": "음원 차트",
+    "level": null
+  },
+  "음원 총공": {
+    "base": "음원 총공",
+    "level": null
+  },
+  "음원에": {
+    "base": "음원",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "응원": {
+    "base": "응원",
+    "level": null
+  },
+  "응원 메시지": {
+    "base": "응원 메시지",
+    "level": null
+  },
+  "응원가": {
+    "base": "응원가",
+    "level": null
+  },
+  "응원가를": {
+    "base": "응원가",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "응원법": {
+    "base": "응원법",
+    "level": null
+  },
+  "응원법이": {
+    "base": "응원법",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "응원봉": {
+    "base": "응원봉",
+    "level": null
+  },
+  "응원봉을": {
+    "base": "응원봉",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "응원색": {
+    "base": "응원색",
+    "level": null
+  },
+  "응원색은": {
+    "base": "응원색",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "응원에": {
+    "base": "응원",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "의상": {
+    "base": "의상",
+    "level": null
+  },
+  "의상이": {
+    "base": "의상",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "이것": {
+    "base": "이것",
+    "level": null
+  },
+  "이것은": {
+    "base": "이것",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "이런 모습도 좋아요": {
+    "base": "이런 모습도 좋아요",
+    "level": null
+  },
+  "이름": {
+    "base": "이름",
+    "level": null
+  },
+  "이름 써 주세요": {
+    "base": "이름 써 주세요",
+    "level": null
+  },
+  "이름에": {
+    "base": "이름",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "이름은": {
+    "base": "이름",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "이름을": {
+    "base": "이름",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "이름이": {
+    "base": "이름",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "이미": {
+    "base": "이미",
+    "level": null
+  },
+  "이번 활동": {
+    "base": "이번 활동",
+    "level": null
+  },
+  "이벤트 존": {
+    "base": "이벤트 존",
+    "level": null
+  },
+  "이벤트 진행": {
+    "base": "이벤트 진행",
+    "level": null
+  },
+  "이어폰": {
+    "base": "이어폰",
+    "level": null
+  },
+  "이어폰을": {
+    "base": "이어폰",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "이해 못 해요": {
+    "base": "이해 못 해요",
+    "level": null
+  },
+  "이해해요": {
+    "base": "이해해요",
+    "level": null
+  },
+  "인생네컷": {
+    "base": "인생네컷",
+    "level": null
+  },
+  "인생네컷이": {
+    "base": "인생네컷",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "인스타 라이브": {
+    "base": "인스타 라이브",
+    "level": null
+  },
+  "인스타 스토리": {
+    "base": "인스타 스토리",
+    "level": null
+  },
+  "인스타그램": {
+    "base": "인스타그램",
+    "level": null
+  },
+  "인스타그램을": {
+    "base": "인스타그램",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "인용": {
+    "base": "인용",
+    "level": null
+  },
+  "인용을": {
+    "base": "인용",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "인증": {
+    "base": "인증",
+    "level": null
+  },
+  "인증번호": {
+    "base": "인증번호",
+    "level": null
+  },
+  "인증번호를": {
+    "base": "인증번호",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "인증샷": {
+    "base": "인증샷",
+    "level": null
+  },
+  "인증샷을": {
+    "base": "인증샷",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "인증을": {
+    "base": "인증",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "인터넷": {
+    "base": "인터넷",
+    "level": null
+  },
+  "인터넷을": {
+    "base": "인터넷",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "일시정지": {
+    "base": "일시정지",
+    "level": null
+  },
+  "일시정지를": {
+    "base": "일시정지",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "일정": {
+    "base": "일정",
+    "level": null
+  },
+  "일정에": {
+    "base": "일정",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "읽어요": {
+    "base": "읽어요",
+    "level": null
+  },
+  "읽음": {
+    "base": "읽음",
+    "level": null
+  },
+  "읽음을": {
+    "base": "읽음",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "잃어버렸어요": {
+    "base": "잃어버렸어요",
+    "level": null
+  },
+  "입구": {
+    "base": "입구",
+    "level": null
+  },
+  "입구에": {
+    "base": "입구",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "입국장": {
+    "base": "입국장",
+    "level": null
+  },
+  "입국장에서": {
+    "base": "입국장",
+    "level": null
+  },
+  "입덕": {
+    "base": "입덕",
+    "level": null
+  },
+  "입덕 계기": {
+    "base": "입덕 계기",
+    "level": null
+  },
+  "입덕 직캠": {
+    "base": "입덕 직캠",
+    "level": null
+  },
+  "입덕 폭발": {
+    "base": "입덕 폭발",
+    "level": null
+  },
+  "입덕에": {
+    "base": "입덕",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "입장": {
+    "base": "입장",
+    "level": null
+  },
+  "입장 음악": {
+    "base": "입장 음악",
+    "level": null
+  },
+  "입장이": {
+    "base": "입장",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "있어요": {
+    "base": "있어요",
+    "level": null
+  },
+  "자동 번역": {
+    "base": "자동 번역",
+    "level": null
+  },
+  "자랑스러워요": {
+    "base": "자랑스러워요",
+    "level": null
+  },
+  "자리": {
+    "base": "자리",
+    "level": null
+  },
+  "자리에": {
+    "base": "자리",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "자막": {
+    "base": "자막",
+    "level": null
+  },
+  "자막을": {
+    "base": "자막",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "자작곡": {
+    "base": "자작곡",
+    "level": null
+  },
+  "자켓": {
+    "base": "자켓",
+    "level": null
+  },
+  "자켓이": {
+    "base": "자켓",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "작곡": {
+    "base": "작곡",
+    "level": null
+  },
+  "작사": {
+    "base": "작사",
+    "level": null
+  },
+  "작아요": {
+    "base": "작아요",
+    "level": null
+  },
+  "잘 가요": {
+    "base": "잘 가요",
+    "level": null
+  },
+  "잘 도착했어요": {
+    "base": "잘 도착했어요",
+    "level": null
+  },
+  "잘 들었어요": {
+    "base": "잘 들었어요",
+    "level": null
+  },
+  "잘 먹고 있어요?": {
+    "base": "잘 먹고 있어요?",
+    "level": null
+  },
+  "잘 쉬었어요?": {
+    "base": "잘 쉬었어요?",
+    "level": null
+  },
+  "잘 자요": {
+    "base": "잘 자요",
+    "level": null
+  },
+  "잘생겼어요": {
+    "base": "잘생겼어요",
+    "level": null
+  },
+  "잠금화면": {
+    "base": "잠금화면",
+    "level": null
+  },
+  "잠금화면도": {
+    "base": "잠금화면",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "잠깐": {
+    "base": "잠깐",
+    "level": null
+  },
+  "잠수": {
+    "base": "잠수",
+    "level": null
+  },
+  "잠시만요": {
+    "base": "잠시만요",
+    "level": null
+  },
+  "장발": {
+    "base": "장발",
+    "level": null
+  },
+  "장발이": {
+    "base": "장발",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "재계약": {
+    "base": "재계약",
+    "level": null
+  },
+  "재고": {
+    "base": "재고",
+    "level": null
+  },
+  "재고에": {
+    "base": "재고",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "재미있어요": {
+    "base": "재미있어요",
+    "level": null
+  },
+  "재생": {
+    "base": "재생",
+    "level": null
+  },
+  "재생 수": {
+    "base": "재생 수",
+    "level": null
+  },
+  "재생목록": {
+    "base": "재생목록",
+    "level": null
+  },
+  "재생목록을": {
+    "base": "재생목록",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "재생을": {
+    "base": "재생",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "저": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저가": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저과": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저기요": {
+    "base": "저기요",
+    "level": null
+  },
+  "저는": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저도": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저로": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저를": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저만": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저에": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저에게": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저에게서": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저에서": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저와": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저으로": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저은": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저을": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저음": {
+    "base": "저음",
+    "level": null
+  },
+  "저음에": {
+    "base": "저음",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "저의": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저이": {
+    "base": "저",
+    "level": "honor",
+    "reason": "该词是敬语专用词（词汇敬语）"
+  },
+  "저장": {
+    "base": "저장",
+    "level": null
+  },
+  "저장을": {
+    "base": "저장",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "저화질": {
+    "base": "저화질",
+    "level": null
+  },
+  "저화질을": {
+    "base": "저화질",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "적어요": {
+    "base": "적어요",
+    "level": null
+  },
+  "전광판 광고": {
+    "base": "전광판 광고",
+    "level": null
+  },
+  "전역": {
+    "base": "전역",
+    "level": null
+  },
+  "접속": {
+    "base": "접속",
+    "level": null
+  },
+  "접속을": {
+    "base": "접속",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "정규 앨범": {
+    "base": "정규 앨범",
+    "level": null
+  },
+  "정말": {
+    "base": "정말",
+    "level": null
+  },
+  "제 이름은": {
+    "base": "제 이름은",
+    "level": null
+  },
+  "제가 왜 이래요": {
+    "base": "제가 왜 이래요",
+    "level": null
+  },
+  "제일 좋아하는": {
+    "base": "제일 좋아하는",
+    "level": null
+  },
+  "조공": {
+    "base": "조공",
+    "level": null
+  },
+  "조금": {
+    "base": "조금",
+    "level": null
+  },
+  "조명": {
+    "base": "조명",
+    "level": null
+  },
+  "조명이": {
+    "base": "조명",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "조심히 가세요": {
+    "base": "조심히 가세요",
+    "level": null
+  },
+  "존재감": {
+    "base": "존재감",
+    "level": null
+  },
+  "존재감이": {
+    "base": "존재감",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "좋아요": {
+    "base": "좋아요",
+    "level": null
+  },
+  "좋아요 눌러 주세요": {
+    "base": "좋아요 눌러 주세요",
+    "level": null
+  },
+  "좋아요를": {
+    "base": "좋아요",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "좋아해요": {
+    "base": "좋아해요",
+    "level": null
+  },
+  "좋은 아침이에요": {
+    "base": "좋은 아침이에요",
+    "level": null
+  },
+  "좌석": {
+    "base": "좌석",
+    "level": null
+  },
+  "좌석이": {
+    "base": "좌석",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "죄송합니다": {
+    "base": "죄송합니다",
+    "level": null
+  },
+  "주세요": {
+    "base": "주세요",
+    "level": null
+  },
+  "주소": {
+    "base": "주소",
+    "level": null
+  },
+  "주소에": {
+    "base": "주소",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "줄": {
+    "base": "줄",
+    "level": null
+  },
+  "줄 서기": {
+    "base": "줄 서기",
+    "level": null
+  },
+  "줄에": {
+    "base": "줄",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "중국어": {
+    "base": "중국어",
+    "level": null
+  },
+  "중국어에": {
+    "base": "중국어",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "중증": {
+    "base": "중증",
+    "level": null
+  },
+  "즉구": {
+    "base": "즉구",
+    "level": null
+  },
+  "증명사진": {
+    "base": "증명사진",
+    "level": null
+  },
+  "증명사진이": {
+    "base": "증명사진",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "지금": {
+    "base": "지금",
+    "level": null
+  },
+  "지금은": {
+    "base": "지금",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "지도": {
+    "base": "지도",
+    "level": null
+  },
+  "지도에": {
+    "base": "지도",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "지정석": {
+    "base": "지정석",
+    "level": null
+  },
+  "지정석이": {
+    "base": "지정석",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "지하철": {
+    "base": "지하철",
+    "level": null
+  },
+  "지하철에": {
+    "base": "지하철",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "직접 봤어요": {
+    "base": "직접 봤어요",
+    "level": null
+  },
+  "직캠": {
+    "base": "직캠",
+    "level": null
+  },
+  "직캠을": {
+    "base": "직캠",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "진심이에요": {
+    "base": "진심이에요",
+    "level": null
+  },
+  "진짜요": {
+    "base": "진짜요",
+    "level": null
+  },
+  "질문": {
+    "base": "질문",
+    "level": null
+  },
+  "질문에": {
+    "base": "질문",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "집": {
+    "base": "집",
+    "level": null
+  },
+  "집에": {
+    "base": "집",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "짤": {
+    "base": "짤",
+    "level": null
+  },
+  "짤 제조기": {
+    "base": "짤 제조기",
+    "level": null
+  },
+  "짤방": {
+    "base": "짤방",
+    "level": null
+  },
+  "짤방을": {
+    "base": "짤방",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "짤을": {
+    "base": "짤",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "쪽지": {
+    "base": "쪽지",
+    "level": null
+  },
+  "쪽지를": {
+    "base": "쪽지",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "차단": {
+    "base": "차단",
+    "level": null
+  },
+  "차단을": {
+    "base": "차단",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "차례": {
+    "base": "차례",
+    "level": null
+  },
+  "차례가": {
+    "base": "차례",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "차애": {
+    "base": "차애",
+    "level": null
+  },
+  "차애에": {
+    "base": "차애",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "착장": {
+    "base": "착장",
+    "level": null
+  },
+  "착장 정보": {
+    "base": "착장 정보",
+    "level": null
+  },
+  "착장에": {
+    "base": "착장",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "찾아요": {
+    "base": "찾아요",
+    "level": null
+  },
+  "채택": {
+    "base": "채택",
+    "level": null
+  },
+  "채팅": {
+    "base": "채팅",
+    "level": null
+  },
+  "채팅을": {
+    "base": "채팅",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "처음 왔어요": {
+    "base": "처음 왔어요",
+    "level": null
+  },
+  "천천히": {
+    "base": "천천히",
+    "level": null
+  },
+  "천천히 말해 주세요": {
+    "base": "천천히 말해 주세요",
+    "level": null
+  },
+  "청바지": {
+    "base": "청바지",
+    "level": null
+  },
+  "청바지가": {
+    "base": "청바지",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "초록색": {
+    "base": "초록색",
+    "level": null
+  },
+  "초록색이": {
+    "base": "초록색",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "총공": {
+    "base": "총공",
+    "level": null
+  },
+  "촬영": {
+    "base": "촬영",
+    "level": null
+  },
+  "촬영은": {
+    "base": "촬영",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "촬영이": {
+    "base": "촬영",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "최고": {
+    "base": "최고",
+    "level": null
+  },
+  "최고에": {
+    "base": "최고",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "최애": {
+    "base": "최애",
+    "level": null
+  },
+  "최애 사진": {
+    "base": "최애 사진",
+    "level": null
+  },
+  "최애 생일": {
+    "base": "최애 생일",
+    "level": null
+  },
+  "최애 지갑": {
+    "base": "최애 지갑",
+    "level": null
+  },
+  "최애가": {
+    "base": "최애",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "최애가 최고야": {
+    "base": "최애가 최고야",
+    "level": null
+  },
+  "최애에": {
+    "base": "최애",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "추억": {
+    "base": "추억",
+    "level": null
+  },
+  "추억에": {
+    "base": "추억",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "추워요": {
+    "base": "추워요",
+    "level": null
+  },
+  "추천해 주세요": {
+    "base": "추천해 주세요",
+    "level": null
+  },
+  "추첨": {
+    "base": "추첨",
+    "level": null
+  },
+  "추첨으로": {
+    "base": "추첨",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "축하해요": {
+    "base": "축하해요",
+    "level": null
+  },
+  "출구": {
+    "base": "출구",
+    "level": null
+  },
+  "출구에": {
+    "base": "출구",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "출국장": {
+    "base": "출국장",
+    "level": null
+  },
+  "출근길": {
+    "base": "출근길",
+    "level": null
+  },
+  "출근길이": {
+    "base": "출근길",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "출발": {
+    "base": "출발",
+    "level": null
+  },
+  "출발에": {
+    "base": "출발",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "출발하고": {
+    "base": "출발하다",
+    "level": null
+  },
+  "출발하다": {
+    "base": "출발하다",
+    "level": null
+  },
+  "출발하면": {
+    "base": "출발하다",
+    "level": null
+  },
+  "출발해": {
+    "base": "출발하다",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "출발해서": {
+    "base": "출발하다",
+    "level": null
+  },
+  "출발해요": {
+    "base": "출발하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "출발했어": {
+    "base": "출발하다",
+    "level": "plain",
+    "reason": "结尾是 -어/-아 且无 -요（해체 平语/반말 形式）"
+  },
+  "출발했어요": {
+    "base": "출발하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "출퇴근 길": {
+    "base": "출퇴근 길",
+    "level": null
+  },
+  "춤": {
+    "base": "춤",
+    "level": null
+  },
+  "춤선": {
+    "base": "춤선",
+    "level": null
+  },
+  "춤선에": {
+    "base": "춤선",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "춤에": {
+    "base": "춤",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "충전": {
+    "base": "충전",
+    "level": null
+  },
+  "충전기": {
+    "base": "충전기",
+    "level": null
+  },
+  "충전기를": {
+    "base": "충전기",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "충전을": {
+    "base": "충전",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "취소표": {
+    "base": "취소표",
+    "level": null
+  },
+  "취소표에": {
+    "base": "취소표",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "치마": {
+    "base": "치마",
+    "level": null
+  },
+  "치마가": {
+    "base": "치마",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "치명타": {
+    "base": "치명타",
+    "level": null
+  },
+  "친구": {
+    "base": "친구",
+    "level": null
+  },
+  "친구에": {
+    "base": "친구",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "친구에게": {
+    "base": "친구",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "카드": {
+    "base": "카드",
+    "level": null
+  },
+  "카드에": {
+    "base": "카드",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "카메라": {
+    "base": "카메라",
+    "level": null
+  },
+  "카메라가": {
+    "base": "카메라",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "카운트다운": {
+    "base": "카운트다운",
+    "level": null
+  },
+  "카페": {
+    "base": "카페",
+    "level": null
+  },
+  "카페에": {
+    "base": "카페",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "칼군무": {
+    "base": "칼군무",
+    "level": null
+  },
+  "칼군무에": {
+    "base": "칼군무",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "칼춤": {
+    "base": "칼춤",
+    "level": null
+  },
+  "칼춤이": {
+    "base": "칼춤",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "캘린더": {
+    "base": "캘린더",
+    "level": null
+  },
+  "캘린더를": {
+    "base": "캘린더",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "캡처": {
+    "base": "캡처",
+    "level": null
+  },
+  "캡처를": {
+    "base": "캡처",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "캡처본": {
+    "base": "캡처본",
+    "level": null
+  },
+  "커버곡": {
+    "base": "커버곡",
+    "level": null
+  },
+  "커요": {
+    "base": "커요",
+    "level": null
+  },
+  "커피": {
+    "base": "커피",
+    "level": null
+  },
+  "커피에": {
+    "base": "커피",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "컨셉 포토": {
+    "base": "컨셉 포토",
+    "level": null
+  },
+  "컴백": {
+    "base": "컴백",
+    "level": null
+  },
+  "컴백 날짜": {
+    "base": "컴백 날짜",
+    "level": null
+  },
+  "컴백 예고": {
+    "base": "컴백 예고",
+    "level": null
+  },
+  "컴백 축하해요": {
+    "base": "컴백 축하해요",
+    "level": null
+  },
+  "컴백이": {
+    "base": "컴백",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "케미": {
+    "base": "케미",
+    "level": null
+  },
+  "케미 맛집": {
+    "base": "케미 맛집",
+    "level": null
+  },
+  "케미가": {
+    "base": "케미",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "콘서트": {
+    "base": "콘서트",
+    "level": null
+  },
+  "콘서트 준비물": {
+    "base": "콘서트 준비물",
+    "level": null
+  },
+  "콘서트가": {
+    "base": "콘서트",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "콘셉트": {
+    "base": "콘셉트",
+    "level": null
+  },
+  "콘셉트에": {
+    "base": "콘셉트",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "쿠폰": {
+    "base": "쿠폰",
+    "level": null
+  },
+  "쿠폰에": {
+    "base": "쿠폰",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "클라우드": {
+    "base": "클라우드",
+    "level": null
+  },
+  "클라우드를": {
+    "base": "클라우드",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "키링": {
+    "base": "키링",
+    "level": null
+  },
+  "킬링파트": {
+    "base": "킬링파트",
+    "level": null
+  },
+  "킬링파트에": {
+    "base": "킬링파트",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "타이틀곡": {
+    "base": "타이틀곡",
+    "level": null
+  },
+  "타이틀곡에": {
+    "base": "타이틀곡",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "탈덕": {
+    "base": "탈덕",
+    "level": null
+  },
+  "탈덕에": {
+    "base": "탈덕",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "택시": {
+    "base": "택시",
+    "level": null
+  },
+  "택시에": {
+    "base": "택시",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "토크": {
+    "base": "토크",
+    "level": null
+  },
+  "토크가": {
+    "base": "토크",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "통화": {
+    "base": "통화",
+    "level": null
+  },
+  "통화를": {
+    "base": "통화",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "퇴근길": {
+    "base": "퇴근길",
+    "level": null
+  },
+  "퇴근길이": {
+    "base": "퇴근길",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "퇴장": {
+    "base": "퇴장",
+    "level": null
+  },
+  "퇴장이": {
+    "base": "퇴장",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "투표": {
+    "base": "투표",
+    "level": null
+  },
+  "투표를": {
+    "base": "투표",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "투표에": {
+    "base": "투표",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "트렌드": {
+    "base": "트렌드",
+    "level": null
+  },
+  "트렌드를": {
+    "base": "트렌드",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "트위터": {
+    "base": "트위터",
+    "level": null
+  },
+  "트위터를": {
+    "base": "트위터",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "특수효과": {
+    "base": "특수효과",
+    "level": null
+  },
+  "특수효과가": {
+    "base": "특수효과",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "특전": {
+    "base": "특전",
+    "level": null
+  },
+  "특전에": {
+    "base": "특전",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "티셔츠": {
+    "base": "티셔츠",
+    "level": null
+  },
+  "티셔츠가": {
+    "base": "티셔츠",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "티저": {
+    "base": "티저",
+    "level": null
+  },
+  "티저가": {
+    "base": "티저",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "티켓": {
+    "base": "티켓",
+    "level": null
+  },
+  "티켓이": {
+    "base": "티켓",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "틱톡": {
+    "base": "틱톡",
+    "level": null
+  },
+  "틱톡에": {
+    "base": "틱톡",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "파란색": {
+    "base": "파란색",
+    "level": null
+  },
+  "파란색이": {
+    "base": "파란색",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "파마": {
+    "base": "파마",
+    "level": null
+  },
+  "파마가": {
+    "base": "파마",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "파일": {
+    "base": "파일",
+    "level": null
+  },
+  "파일을": {
+    "base": "파일",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "파트": {
+    "base": "파트",
+    "level": null
+  },
+  "파트에": {
+    "base": "파트",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "판매": {
+    "base": "판매",
+    "level": null
+  },
+  "판매에": {
+    "base": "판매",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "팔로우": {
+    "base": "팔로우",
+    "level": null
+  },
+  "팔찌": {
+    "base": "팔찌",
+    "level": null
+  },
+  "팔찌가": {
+    "base": "팔찌",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "팬": {
+    "base": "팬",
+    "level": null
+  },
+  "팬 아트": {
+    "base": "팬 아트",
+    "level": null
+  },
+  "팬덤": {
+    "base": "팬덤",
+    "level": null
+  },
+  "팬덤에": {
+    "base": "팬덤",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "팬도": {
+    "base": "팬",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "팬레터": {
+    "base": "팬레터",
+    "level": null
+  },
+  "팬미팅": {
+    "base": "팬미팅",
+    "level": null
+  },
+  "팬미팅에서": {
+    "base": "팬미팅",
+    "level": null
+  },
+  "팬싸": {
+    "base": "팬싸",
+    "level": null
+  },
+  "팬싸에": {
+    "base": "팬싸",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "팬에": {
+    "base": "팬",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "팬으로": {
+    "base": "팬",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "팬으로 태어나서 다행이에요": {
+    "base": "팬으로 태어나서 다행이에요",
+    "level": null
+  },
+  "팬의": {
+    "base": "팬",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "팬카페": {
+    "base": "팬카페",
+    "level": null
+  },
+  "팬카페에서": {
+    "base": "팬카페",
+    "level": null
+  },
+  "팬캠": {
+    "base": "팬캠",
+    "level": null
+  },
+  "팬캠을": {
+    "base": "팬캠",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "팬클럽 이름": {
+    "base": "팬클럽 이름",
+    "level": null
+  },
+  "팬픽": {
+    "base": "팬픽",
+    "level": null
+  },
+  "편지": {
+    "base": "편지",
+    "level": null
+  },
+  "편지에": {
+    "base": "편지",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "포스터": {
+    "base": "포스터",
+    "level": null
+  },
+  "포스팅": {
+    "base": "포스팅",
+    "level": null
+  },
+  "포인트 댄스": {
+    "base": "포인트 댄스",
+    "level": null
+  },
+  "포장": {
+    "base": "포장",
+    "level": null
+  },
+  "포장에": {
+    "base": "포장",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "포즈 해 주세요": {
+    "base": "포즈 해 주세요",
+    "level": null
+  },
+  "포카": {
+    "base": "포카",
+    "level": null
+  },
+  "포카 교환": {
+    "base": "포카 교환",
+    "level": null
+  },
+  "포카 수집": {
+    "base": "포카 수집",
+    "level": null
+  },
+  "포카를": {
+    "base": "포카",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "포토 부스": {
+    "base": "포토 부스",
+    "level": null
+  },
+  "포토존": {
+    "base": "포토존",
+    "level": null
+  },
+  "포토존에서": {
+    "base": "포토존",
+    "level": null
+  },
+  "포토카드": {
+    "base": "포토카드",
+    "level": null
+  },
+  "포토카드에": {
+    "base": "포토카드",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "포토타임": {
+    "base": "포토타임",
+    "level": null
+  },
+  "포토타임이": {
+    "base": "포토타임",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "폴더": {
+    "base": "폴더",
+    "level": null
+  },
+  "폴더를": {
+    "base": "폴더",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "표": {
+    "base": "표",
+    "level": null
+  },
+  "표에": {
+    "base": "표",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "표정": {
+    "base": "표정",
+    "level": null
+  },
+  "표정 관리": {
+    "base": "표정 관리",
+    "level": null
+  },
+  "표정 연기": {
+    "base": "표정 연기",
+    "level": null
+  },
+  "푹 쉬세요": {
+    "base": "푹 쉬세요",
+    "level": null
+  },
+  "품절": {
+    "base": "품절",
+    "level": null
+  },
+  "품절에": {
+    "base": "품절",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "프로듀싱": {
+    "base": "프로듀싱",
+    "level": null
+  },
+  "프로듀싱에": {
+    "base": "프로듀싱",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "프로필": {
+    "base": "프로필",
+    "level": null
+  },
+  "프로필을": {
+    "base": "프로필",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "플래시": {
+    "base": "플래시",
+    "level": null
+  },
+  "플래시가": {
+    "base": "플래시",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "피곤해요": {
+    "base": "피곤해요",
+    "level": null
+  },
+  "피드": {
+    "base": "피드",
+    "level": null
+  },
+  "피드를": {
+    "base": "피드",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "피어싱": {
+    "base": "피어싱",
+    "level": null
+  },
+  "피어싱이": {
+    "base": "피어싱",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "피처링": {
+    "base": "피처링",
+    "level": null
+  },
+  "피처링으로": {
+    "base": "피처링",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "피켓": {
+    "base": "피켓",
+    "level": null
+  },
+  "피켓이": {
+    "base": "피켓",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "필요해요": {
+    "base": "필요해요",
+    "level": null
+  },
+  "필터": {
+    "base": "필터",
+    "level": null
+  },
+  "필터가": {
+    "base": "필터",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "하나": {
+    "base": "하나",
+    "level": null
+  },
+  "하나를": {
+    "base": "하나",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "하나만": {
+    "base": "하나",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "하얀색": {
+    "base": "하얀색",
+    "level": null
+  },
+  "하얀색이": {
+    "base": "하얀색",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "하이터치": {
+    "base": "하이터치",
+    "level": null
+  },
+  "하이터치가": {
+    "base": "하이터치",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "하지만": {
+    "base": "하지만",
+    "level": null
+  },
+  "하트 해 주세요": {
+    "base": "하트 해 주세요",
+    "level": null
+  },
+  "학교": {
+    "base": "학교",
+    "level": null
+  },
+  "학교에": {
+    "base": "학교",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "한국 방문": {
+    "base": "한국 방문",
+    "level": null
+  },
+  "한국어": {
+    "base": "한국어",
+    "level": null
+  },
+  "한국어를": {
+    "base": "한국어",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "한국어를 잘 못해요": {
+    "base": "한국어를 잘 못해요",
+    "level": null
+  },
+  "한국어에": {
+    "base": "한국어",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "한국에 또 올게요": {
+    "base": "한국에 또 올게요",
+    "level": null
+  },
+  "한마디 해 주세요": {
+    "base": "한마디 해 주세요",
+    "level": null
+  },
+  "한정판": {
+    "base": "한정판",
+    "level": null
+  },
+  "할인": {
+    "base": "할인",
+    "level": null
+  },
+  "할인에": {
+    "base": "할인",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "항상": {
+    "base": "항상",
+    "level": null
+  },
+  "항상 곁에 있을게요": {
+    "base": "항상 곁에 있을게요",
+    "level": null
+  },
+  "항상 응원할게요": {
+    "base": "항상 응원할게요",
+    "level": null
+  },
+  "해시태그": {
+    "base": "해시태그",
+    "level": null
+  },
+  "해시태그를": {
+    "base": "해시태그",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "해외": {
+    "base": "해외",
+    "level": null
+  },
+  "해외 팬": {
+    "base": "해외 팬",
+    "level": null
+  },
+  "해외에": {
+    "base": "해외",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "해요": {
+    "base": "해요",
+    "level": null
+  },
+  "행복하게 해줄게요": {
+    "base": "행복하게 해줄게요",
+    "level": null
+  },
+  "행복해요": {
+    "base": "행복해요",
+    "level": null
+  },
+  "행운": {
+    "base": "행운",
+    "level": null
+  },
+  "헐": {
+    "base": "헐",
+    "level": null
+  },
+  "헤어": {
+    "base": "헤어",
+    "level": null
+  },
+  "헤어가": {
+    "base": "헤어",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "헤어스타일": {
+    "base": "헤어스타일",
+    "level": null
+  },
+  "헤어스타일이": {
+    "base": "헤어스타일",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "현수막": {
+    "base": "현수막",
+    "level": null
+  },
+  "현수막이": {
+    "base": "현수막",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "현장 수령": {
+    "base": "현장 수령",
+    "level": null
+  },
+  "현타": {
+    "base": "현타",
+    "level": null
+  },
+  "홈마": {
+    "base": "홈마",
+    "level": null
+  },
+  "홈마스터": {
+    "base": "홈마스터",
+    "level": null
+  },
+  "홈마스터에": {
+    "base": "홈마스터",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "홈마에": {
+    "base": "홈마",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "화면": {
+    "base": "화면",
+    "level": null
+  },
+  "화면으로": {
+    "base": "화면",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "화보": {
+    "base": "화보",
+    "level": null
+  },
+  "화보가": {
+    "base": "화보",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "화이팅": {
+    "base": "화이팅",
+    "level": null
+  },
+  "화장실": {
+    "base": "화장실",
+    "level": null
+  },
+  "화장실에": {
+    "base": "화장실",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "화질": {
+    "base": "화질",
+    "level": null
+  },
+  "화질을": {
+    "base": "화질",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "환승": {
+    "base": "환승",
+    "level": null
+  },
+  "환승에": {
+    "base": "환승",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "활동 기간": {
+    "base": "활동 기간",
+    "level": null
+  },
+  "활동 중": {
+    "base": "활동 중",
+    "level": null
+  },
+  "황홀하고": {
+    "base": "황홀하다",
+    "level": null
+  },
+  "황홀하다": {
+    "base": "황홀하다",
+    "level": null
+  },
+  "황홀하면": {
+    "base": "황홀하다",
+    "level": null
+  },
+  "황홀해": {
+    "base": "황홀하다",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "황홀해서": {
+    "base": "황홀하다",
+    "level": null
+  },
+  "황홀해요": {
+    "base": "황홀하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "황홀했어": {
+    "base": "황홀하다",
+    "level": "plain",
+    "reason": "结尾是 -어/-아 且无 -요（해체 平语/반말 形式）"
+  },
+  "황홀했어요": {
+    "base": "황홀하다",
+    "level": "honor",
+    "reason": "结尾是 -요（해요체 敬语体）"
+  },
+  "회사": {
+    "base": "회사",
+    "level": null
+  },
+  "회사에": {
+    "base": "회사",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "휴대폰": {
+    "base": "휴대폰",
+    "level": null
+  },
+  "휴대폰에서": {
+    "base": "휴대폰",
+    "level": null
+  },
+  "휴대폰을": {
+    "base": "휴대폰",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "휴덕": {
+    "base": "휴덕",
+    "level": null
+  },
+  "휴덕에": {
+    "base": "휴덕",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "흑발": {
+    "base": "흑발",
+    "level": null
+  },
+  "흑발이": {
+    "base": "흑발",
+    "level": "plain",
+    "reason": "无敬语标记，为平语（반말）形式"
+  },
+  "흑역사": {
+    "base": "흑역사",
+    "level": null
+  },
+  "힘": {
+    "base": "힘",
+    "level": null
+  },
+  "힘내세요": {
+    "base": "힘내세요",
+    "level": null
+  },
+  "힘들어요": {
+    "base": "힘들어요",
+    "level": null
+  },
+  "MC": {
+    "base": "MC",
+    "level": null
+  },
+  "OST": {
+    "base": "OST",
+    "level": null
+  }
+}
