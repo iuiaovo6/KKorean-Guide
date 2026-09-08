@@ -1,0 +1,74 @@
+[
+  {
+    "id": "hwang-intak-live",
+    "json": "hwang-intak-live.json",
+    "audio": "hwang-intak-live.m4a",
+    "who": "黄寅拓",
+    "where": "live",
+    "duration": 73.365,
+    "theme": "sky"
+  },
+  {
+    "id": "kim-minji-broadcast",
+    "json": "kim-minji-broadcast.json",
+    "audio": "kim-minji-broadcast.m4a",
+    "who": "金玟池",
+    "where": "放送",
+    "duration": 26.347,
+    "theme": "pink"
+  },
+  {
+    "id": "kim-doyoung-broadcast",
+    "json": "kim-doyoung-broadcast.json",
+    "audio": "kim-doyoung-broadcast.m4a",
+    "who": "金道英",
+    "where": "放送",
+    "duration": 73.9,
+    "theme": "mint"
+  },
+  {
+    "id": "huh-yunjin-concert",
+    "json": "huh-yunjin-concert.json",
+    "audio": "huh-yunjin-concert.m4a",
+    "who": "许允真",
+    "where": "演唱会",
+    "duration": 33.536,
+    "theme": "lilac"
+  },
+  {
+    "id": "lee-haechan-concert",
+    "json": "lee-haechan-concert.json",
+    "audio": "lee-haechan-concert.m4a",
+    "who": "李楷灿",
+    "where": "演唱会",
+    "duration": 69.611,
+    "theme": "peach"
+  },
+  {
+    "id": "choi-taeyang-live",
+    "json": "choi-taeyang-live.json",
+    "audio": "choi-taeyang-live.m4a",
+    "who": "崔太洋",
+    "where": "live",
+    "duration": 33.536,
+    "theme": "yellow"
+  },
+  {
+    "id": "lee-youngji-broadcast",
+    "json": "lee-youngji-broadcast.json",
+    "audio": "lee-youngji-broadcast.m4a",
+    "who": "李泳知",
+    "where": "放送",
+    "duration": 35.538,
+    "theme": "coral"
+  },
+  {
+    "id": "an-yujin-live",
+    "json": "an-yujin-live.json",
+    "audio": "an-yujin-live.m4a",
+    "who": "安宥真",
+    "where": "live",
+    "duration": 33.408,
+    "theme": "blue"
+  }
+]

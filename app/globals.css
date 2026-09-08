@@ -427,23 +427,32 @@ button { color: inherit; }
 .talk-steps span { border: 1px solid var(--line); padding: 10px 13px; border-radius: 8px; font-size: 9px; color: #666b73; }
 .talk-page { position: relative; }
 .talk-load-state { min-height: 420px; display: grid; place-items: center; color: var(--muted); font-size: 12px; }
-.talk-library { margin: 24px 0 18px; }
-.talk-lesson-card { width: min(560px, 100%); min-height: 138px; border: 1px solid #abd5f1; border-radius: 18px; padding: 18px 20px; display: grid; align-content: space-between; gap: 13px; background: linear-gradient(135deg, #f8fcff, #e8f5ff); text-align: left; cursor: pointer; box-shadow: 0 10px 30px rgba(79,137,180,.09); transition: transform .2s ease, box-shadow .2s ease; }
+.talk-library { margin: 24px 0 18px; display: grid; grid-template-columns: repeat(auto-fit, minmax(245px, 1fr)); gap: 11px; }
+.talk-lesson-card { --talk-card: #e8f5ff; --talk-border: #abd5f1; --talk-speaker: #cce9fb; --talk-speaker-ink: #245f86; --talk-scene: #efe6fb; --talk-scene-ink: #70558d; width: 100%; min-height: 132px; border: 1px solid var(--talk-border); border-radius: 18px; padding: 16px 17px; display: grid; align-content: space-between; gap: 12px; background: linear-gradient(135deg, #fff, var(--talk-card)); text-align: left; cursor: pointer; box-shadow: 0 8px 24px rgba(79,137,180,.07); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.talk-lesson-card.pink, .talk-context.pink { --talk-card: #fff0f5; --talk-border: #edbfd0; --talk-speaker: #f7d4df; --talk-speaker-ink: #8e4560; --talk-scene: #e8ecff; --talk-scene-ink: #596795; }
+.talk-lesson-card.mint, .talk-context.mint { --talk-card: #edf9f5; --talk-border: #adddcc; --talk-speaker: #caeee2; --talk-speaker-ink: #35745f; --talk-scene: #fff0d9; --talk-scene-ink: #8c6535; }
+.talk-lesson-card.lilac, .talk-context.lilac { --talk-card: #f5f0ff; --talk-border: #d4c3f0; --talk-speaker: #e5d8f8; --talk-speaker-ink: #685083; --talk-scene: #e2f2ff; --talk-scene-ink: #47718e; }
+.talk-lesson-card.peach, .talk-context.peach { --talk-card: #fff3eb; --talk-border: #efc9ae; --talk-speaker: #f8ddca; --talk-speaker-ink: #8d5536; --talk-scene: #edf1ff; --talk-scene-ink: #56658f; }
+.talk-lesson-card.yellow, .talk-context.yellow { --talk-card: #fff9e8; --talk-border: #e8d48e; --talk-speaker: #f5e7ad; --talk-speaker-ink: #765f20; --talk-scene: #e6f3ff; --talk-scene-ink: #466f91; }
+.talk-lesson-card.coral, .talk-context.coral { --talk-card: #fff0ef; --talk-border: #edc0bb; --talk-speaker: #f6d2ce; --talk-speaker-ink: #8e4b45; --talk-scene: #ecedff; --talk-scene-ink: #5c6090; }
+.talk-lesson-card.blue, .talk-context.blue { --talk-card: #ebf3ff; --talk-border: #b5cceb; --talk-speaker: #d1e2f8; --talk-speaker-ink: #3f668e; --talk-scene: #f3eafa; --talk-scene-ink: #785b89; }
+.talk-lesson-card.active { box-shadow: 0 12px 30px rgba(79,137,180,.13); }
 .talk-lesson-card:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgba(79,137,180,.14); }
 .talk-lesson-card > strong { display: flex; flex-wrap: wrap; align-items: baseline; gap: 9px; font-size: 19px; }
 .talk-lesson-card > strong small { color: #4f7793; font-size: 12px; font-weight: 600; }
 .talk-lesson-card > span:last-child { color: #4f87ad; font-size: 10px; }
 .talk-lesson-labels { display: flex; flex-wrap: wrap; gap: 7px; }
 .talk-lesson-labels b, .talk-lesson-labels i, .talk-lesson-labels small, .talk-context > * { min-height: 29px; padding: 0 10px; border-radius: 9px; display: inline-flex; align-items: center; font-size: 9px; font-style: normal; font-weight: 700; }
-.talk-lesson-labels b { background: #cce9fb; color: #245f86; }
-.talk-lesson-labels i { background: #efe6fb; color: #70558d; }
+.talk-lesson-labels b { background: var(--talk-speaker); color: var(--talk-speaker-ink); }
+.talk-lesson-labels i { background: var(--talk-scene); color: var(--talk-scene-ink); }
 .talk-lesson-labels small { background: #fff; color: #68727c; border: 1px solid #dae3ea; }
 .talk-workspace { overflow: hidden; background: white; border: 1px solid var(--line); border-radius: 20px; box-shadow: 0 16px 48px rgba(27,47,63,.08); }
 .talk-workspace > audio { display: none; }
 .talk-workspace-head { min-height: 76px; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; gap: 24px; border-bottom: 1px solid var(--line); }
 .talk-context { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
-.talk-context > span:first-child { background: #cce9fb; color: #245f86; }
-.talk-context > span:nth-child(2) { background: #efe6fb; color: #70558d; }
+.talk-context { --talk-speaker: #cce9fb; --talk-speaker-ink: #245f86; --talk-scene: #efe6fb; --talk-scene-ink: #70558d; }
+.talk-context > span:first-child { background: var(--talk-speaker); color: var(--talk-speaker-ink); }
+.talk-context > span:nth-child(2) { background: var(--talk-scene); color: var(--talk-scene-ink); }
 .talk-context > small { background: #eff5f8; color: #63727e; }
 .talk-speed { width: min(230px, 40%); display: grid; grid-template-columns: auto minmax(110px, 1fr); align-items: center; gap: 12px; color: #7a828b; font-size: 9px; white-space: nowrap; }
 .talk-speed strong { color: var(--ink); font-size: 11px; }
@@ -513,7 +522,6 @@ button { color: inherit; }
 .takeaway-list > button > span:last-child { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; align-items: baseline; }
 .takeaway-list strong { font-size: 14px; }
 .takeaway-list small { color: #5d6973; font-size: 10px; }
-.takeaway-list em { grid-column: 1 / -1; color: #9a7280; font-size: 8px; font-style: normal; }
 .talk-stage-footer { min-height: 62px; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); }
 .talk-stage-footer button { border: 0; background: transparent; color: #397cad; font-size: 10px; cursor: pointer; }
 .talk-stage-footer button:disabled { color: #c2c6cb; cursor: default; }

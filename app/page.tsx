@@ -1394,54 +1394,46 @@ type TalkLine = {
   end: number;
   ko: string;
   zh: string;
-  note: string;
+  note?: string;
 };
-type TalkGrammar = {
-  form: string;
-  zh: string;
-  ex: string;
-  note: string;
-  line: number;
-};
-type TalkWord = {
+type TalkPhrase = {
   ko: string;
-  rr: string;
-  pos: string;
   zh: string;
   line: number;
-  tier: "core" | "recog";
+};
+type TalkUsage = {
+  mean: string;
+  when: string;
+  tone: string;
+  also: string;
 };
 type TalkSource = {
-  id: string;
+  audio: string;
   title_ko: string;
   title_zh: string;
-  speaker: string;
-  duration: number;
-  level: string;
-  topic: string;
-  speech_style: string;
+  context: { who: string; where: string };
   lines: TalkLine[];
-  words: TalkWord[];
-  grammar: TalkGrammar[];
+  phrases: TalkPhrase[];
+  usage: Record<string, TalkUsage>;
 };
-type TalkExampleWord = { korean: string; meaning_zh: string; example_ko: string; example_zh: string };
+type TalkTheme = "sky" | "pink" | "mint" | "lilac" | "peach" | "yellow" | "coral" | "blue";
+type TalkManifestItem = {
+  id: string;
+  json: string;
+  audio: string;
+  who: string;
+  where: string;
+  duration: number;
+  theme: TalkTheme;
+};
+type TalkLesson = { meta: TalkManifestItem; source: TalkSource };
 type TalkUsageState = { token: string; left: number; top: number };
 
 const talkStages = ["盲听全貌", "捕捉韩文", "对照听懂", "带走一句"] as const;
 const talkSpeeds = [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5];
-const talkSenseNotes: Record<number, string> = {
-  1: "「굉장히」后停顿，用「어떻게 보면」重新组织说法",
-  2: "短句承接上一句，-고 处不要当成结束",
-  6: "「아, 그럼」引入内心独白，中间有明显停顿",
-  13: "三个 -히 副词逐个重读，语速明显放慢",
-  15: "句尾升调停在 때문에，保留真实口述的未完成感",
-};
-const talkGrammarSelection = ["-(으)ㄹ 때가 있다", "-기 어렵다", "-다고 생각하다"];
-const talkTakeawayLines = [3, 8, 11, 12, 14];
-
 function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<string, number> }) {
-  const [source, setSource] = useState<TalkSource | null>(null);
-  const [exampleWords, setExampleWords] = useState<TalkExampleWord[]>([]);
+  const [lessons, setLessons] = useState<TalkLesson[]>([]);
+  const [lessonIndex, setLessonIndex] = useState(0);
   const [loadError, setLoadError] = useState("");
   const [stage, setStage] = useState<TalkStage>(0);
   const [currentLine, setCurrentLine] = useState(0);
@@ -1454,12 +1446,16 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const segmentEndRef = useRef<number | null>(null);
   const lineRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const activeLesson = lessons[lessonIndex] ?? null;
+  const source = activeLesson?.source ?? null;
   const speed = talkSpeeds[speedIndex];
   const talkWordMap = useMemo(() => new Map(words.map((word) => [word.korean, word])), [words]);
   const wordsByTalkId = useMemo(() => new Map(words.map((word) => [word.id, word])), [words]);
-  const selectedGrammar = useMemo(() => new Map((source?.grammar ?? [])
-    .filter((item) => talkGrammarSelection.includes(item.form))
-    .map((item) => [item.line, item])), [source]);
+  const selectedNotes = useMemo(() => new Map((source?.lines ?? [])
+    .map((line, index) => ({ index, note: line.note }))
+    .filter((item): item is { index: number; note: string } => Boolean(item.note))
+    .slice(0, 3)
+    .map((item) => [item.index, item.note])), [source]);
 
   function stopTalk() {
     audioRef.current?.pause();
@@ -1474,7 +1470,8 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
       stopTalk();
       return;
     }
-    const line = source.lines[currentLine];
+    const line = source.lines[Math.min(currentLine, source.lines.length - 1)];
+    if (!line) return;
     if (audio.ended || audio.currentTime < line.t || audio.currentTime > line.end + 0.8) audio.currentTime = line.t;
     segmentEndRef.current = null;
     audio.playbackRate = speed;
@@ -1509,6 +1506,17 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
     setUsageCard(null);
   }
 
+  function selectLesson(index: number) {
+    stopTalk();
+    setLessonIndex(index);
+    setStage(0);
+    setCurrentLine(0);
+    setAudioTime(0);
+    setSubtitlesHidden(false);
+    setOpenGrammarLine(null);
+    setUsageCard(null);
+  }
+
   function selectLine(index: number) {
     stopTalk();
     setCurrentLine(index);
@@ -1525,16 +1533,18 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
   }
 
   useEffect(() => {
-    Promise.all([
-      fetch(`${basePath}/talk/takki.json`, { cache: "no-store" }).then((response) => {
+    fetch(`${basePath}/talk/index.json`, { cache: "no-store" })
+      .then((response) => {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        return response.json() as Promise<TalkSource>;
-      }),
-      fetch(`${basePath}/talk/takki-words.json`, { cache: "no-store" }).then((response) => response.ok ? response.json() : { words: [] }),
-    ]).then(([talk, vocabulary]: [TalkSource, { words: TalkExampleWord[] }]) => {
-      setSource(talk);
-      setExampleWords(vocabulary.words ?? []);
-    }).catch(() => setLoadError("素材加载失败，请刷新页面后重试。"));
+        return response.json() as Promise<TalkManifestItem[]>;
+      })
+      .then((manifest) => Promise.all(manifest.map(async (meta) => {
+        const response = await fetch(`${basePath}/talk/${meta.json}`, { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return { meta, source: await response.json() as TalkSource };
+      })))
+      .then(setLessons)
+      .catch(() => setLoadError("素材加载失败，请刷新页面后重试。"));
   }, []);
 
   useEffect(() => {
@@ -1549,26 +1559,24 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
   if (loadError) return <div className="content inner-page talk-page"><div className="talk-load-state">{loadError}</div></div>;
   if (!source) return <div className="content inner-page talk-page"><div className="talk-load-state">正在准备听力素材…</div></div>;
 
-  const cleanSpeaker = source.speaker.startsWith("未确认") ? "Takki · 待确认" : source.speaker;
-  const durationText = formatTalkTime(source.duration);
-  const usageEntry = usageCard ? findTalkWord(usageCard.token, source.words) : null;
+  const durationText = formatTalkTime(activeLesson!.meta.duration);
+  const usageEntry = usageCard ? findTalkUsage(usageCard.token, source.usage) : null;
   const vocabEntry = usageCard ? talkWordMap.get(usageCard.token) ?? wordsByTalkId.get(formsMap[usageCard.token]) : null;
-  const exampleEntry = usageEntry ? exampleWords.find((word) => word.korean === usageEntry.ko) : undefined;
-  const progress = Math.min(100, (audioTime / source.duration) * 100);
+  const progress = Math.min(100, (audioTime / activeLesson!.meta.duration) * 100);
 
   return <div className="content inner-page talk-page">
     <div className="page-title"><div><p className="eyebrow">LISTEN IN CONTEXT</p><h1>Talk 听力</h1></div></div>
 
     <section className="talk-library" aria-label="选择听力素材">
-      <button className="talk-lesson-card sky active">
-        <span className="talk-lesson-labels"><b>{cleanSpeaker}</b><i>访谈口述</i><small>{durationText}</small></span>
-        <strong>{source.title_zh} <small>{source.title_ko}</small></strong>
-        <span>{source.topic} →</span>
-      </button>
+      {lessons.map((lesson, index) => <button key={lesson.meta.id} className={`talk-lesson-card ${lesson.meta.theme} ${index === lessonIndex ? "active" : ""}`} onClick={() => selectLesson(index)}>
+        <span className="talk-lesson-labels"><b>{lesson.meta.who}</b><i>{lesson.meta.where}</i><small>{formatTalkTime(lesson.meta.duration)}</small></span>
+        <strong>{lesson.source.title_zh} <small>{lesson.source.title_ko}</small></strong>
+        <span>{index === lessonIndex ? "正在学习" : "开始练习 →"}</span>
+      </button>)}
     </section>
 
     <article className="talk-workspace">
-      <audio ref={audioRef} src={`${basePath}/talk/takki.m4a`} preload="metadata" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)} onTimeUpdate={(event) => {
+      <audio key={activeLesson!.meta.id} ref={audioRef} src={`${basePath}/talk/${activeLesson!.meta.audio}`} preload="metadata" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)} onTimeUpdate={(event) => {
         const audio = event.currentTarget;
         setAudioTime(audio.currentTime);
         if (segmentEndRef.current !== null && audio.currentTime >= segmentEndRef.current) {
@@ -1579,7 +1587,7 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
         if (activeIndex >= 0) setCurrentLine(Math.min(activeIndex, source.lines.length - 1));
       }} />
       <header className="talk-workspace-head">
-        <div className="talk-context sky"><span>{cleanSpeaker}</span><span>访谈 · {source.level}</span><small>{durationText}</small></div>
+        <div className={`talk-context ${activeLesson!.meta.theme}`}><span>{source.context.who}</span><span>{source.context.where}</span><small>{durationText}</small></div>
         <label className="talk-speed"><span>倍速 <strong>{speed.toFixed(1)}×</strong></span><input type="range" min="0" max={talkSpeeds.length - 1} step="1" value={speedIndex} onChange={(event) => { const next = Number(event.target.value); setSpeedIndex(next); if (audioRef.current) audioRef.current.playbackRate = talkSpeeds[next]; }} aria-label={`播放速度 ${speed} 倍`} /></label>
       </header>
 
@@ -1597,14 +1605,14 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
           {stage === 0 ? <div className="talk-line-number"><span>第 {currentLine + 1} 句</span><div className={`talk-wave-bars ${playing ? "is-playing" : ""}`} aria-hidden="true">{Array.from({ length: 11 }, (_, index) => <i key={index} />)}</div></div> : subtitlesHidden ? <div className="talk-line-number"><span>第 {currentLine + 1} 句</span></div> : <div className="talk-lyrics" aria-live="polite">
             {source.lines.map((line, index) => {
               const isFutureHidden = stage === 1 && index > currentLine;
-              const grammar = selectedGrammar.get(index);
-              return <div ref={(node) => { lineRefs.current[index] = node; }} key={`${source.id}-${index}`} role="button" tabIndex={0} className={`talk-lyric-line ${index === currentLine ? "current" : index < currentLine ? "past" : "future"} ${isFutureHidden ? "spoiler-blank" : ""}`} onClick={() => selectLine(index)} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectLine(index); } }} aria-label={isFutureHidden ? `定位到第 ${index + 1} 句` : line.ko}>
+              const note = selectedNotes.get(index);
+              return <div ref={(node) => { lineRefs.current[index] = node; }} key={`${activeLesson!.meta.id}-${index}`} role="button" tabIndex={0} className={`talk-lyric-line ${index === currentLine ? "current" : index < currentLine ? "past" : "future"} ${isFutureHidden ? "spoiler-blank" : ""}`} onClick={() => selectLine(index)} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectLine(index); } }} aria-label={isFutureHidden ? `定位到第 ${index + 1} 句` : line.ko}>
                 <span className="talk-line-copy">
                   <strong>{isFutureHidden ? "" : stage === 2 ? renderTalkTappable(line.ko, openUsageCard) : line.ko}</strong>
                   {stage === 2 && !isFutureHidden && <small>{line.zh}</small>}
-                  {stage === 1 && !isFutureHidden && talkSenseNotes[index] && <em>{talkSenseNotes[index]}</em>}
+                  {stage === 1 && !isFutureHidden && line.note && <em>{compactTalkNote(line.note)}</em>}
                 </span>
-                {stage === 2 && grammar && <span className="grammar-anchor"><button className="grammar-button" aria-expanded={openGrammarLine === index} aria-label={`查看语法 ${grammar.form}`} onClick={(event) => { event.stopPropagation(); setOpenGrammarLine((value) => value === index ? null : index); }}>!</button>{openGrammarLine === index && <span className="grammar-explanation"><b>{grammar.form} · {grammar.zh}</b>{grammar.note}</span>}</span>}
+                {stage === 2 && note && <span className="grammar-anchor"><button className="grammar-button" aria-expanded={openGrammarLine === index} aria-label="查看这一句的语法或语感" onClick={(event) => { event.stopPropagation(); setOpenGrammarLine((value) => value === index ? null : index); }}>!</button>{openGrammarLine === index && <span className="grammar-explanation"><b>这一句怎么听</b>{note}</span>}</span>}
               </div>;
             })}
           </div>}
@@ -1613,9 +1621,10 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
         </div>}
 
         {stage === 3 && <div className="takeaway-list">
-          {talkTakeawayLines.map((lineIndex) => {
-            const line = source.lines[lineIndex];
-            return <button key={lineIndex} onClick={() => void playTakeaway(line)}><span className="takeaway-play">▶</span><span><strong>{line.ko}</strong><small>{line.zh}</small><em>{talkSenseNotes[lineIndex] ?? "点击只播放这一句"}</em></span></button>;
+          {source.phrases.slice(0, 5).map((phrase, index) => {
+            const line = resolveTalkPhrase(source.lines, phrase);
+            if (!line) return null;
+            return <button key={`${phrase.ko}-${index}`} onClick={() => void playTakeaway(line)}><span className="takeaway-play">▶</span><span><strong>{phrase.ko}</strong><small>{phrase.zh}</small></span></button>;
           })}
         </div>}
       </section>
@@ -1631,22 +1640,36 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
       <button className="talk-usage-close" onClick={() => setUsageCard(null)} aria-label="关闭用法卡">×</button>
       <h3>{usageCard.token}</h3>
       <dl>
-        <div><dt>意思</dt><dd>{usageEntry?.zh ?? vocabEntry?.meaning ?? "结合当前整句理解"}</dd></div>
-        <div><dt>场合</dt><dd>偶像访谈、谈音乐与自己的想法时</dd></div>
-        <div><dt>语气</dt><dd>{usageEntry?.tier === "core" ? "这段里的核心口语表达" : "理解即可，先感受上下文"}</dd></div>
-        <div><dt>也常说</dt><dd>{exampleEntry?.example_ko ?? vocabEntry?.example ?? "暂时没有收录近似说法"}</dd></div>
+        <div><dt>意思</dt><dd>{usageEntry?.mean ?? vocabEntry?.meaning ?? "结合当前整句理解"}</dd></div>
+        <div><dt>场合</dt><dd>{usageEntry?.when ?? `${source.context.where}中的自然表达`}</dd></div>
+        <div><dt>语气</dt><dd>{usageEntry?.tone ?? "结合说话人的停顿和上下文理解"}</dd></div>
+        <div><dt>也常说</dt><dd>{usageEntry?.also ?? vocabEntry?.example ?? "暂时没有收录近似说法"}</dd></div>
       </dl>
     </section>}
   </div>;
 }
 
-function findTalkWord(token: string, words: TalkWord[]) {
-  const exact = words.find((word) => word.ko.split(/\s*\/\s*/u).includes(token));
-  if (exact) return exact;
-  return words.find((word) => {
-    const dictionaryStem = word.ko.endsWith("다") ? word.ko.slice(0, -1) : word.ko;
-    return dictionaryStem.length >= 2 && token.startsWith(dictionaryStem);
+function findTalkUsage(token: string, usage: Record<string, TalkUsage>) {
+  const direct = usage[token];
+  if (direct) return direct;
+  const match = Object.entries(usage).find(([phrase]) => phrase.includes(token) || token.includes(phrase));
+  return match?.[1] ?? null;
+}
+
+function resolveTalkPhrase(lines: TalkLine[], phrase: TalkPhrase) {
+  const normalize = (text: string) => text.replace(/[^\p{sc=Hangul}\p{N}]/gu, "");
+  const phraseText = normalize(phrase.ko);
+  const contentMatch = lines.find((line) => {
+    const lineText = normalize(line.ko);
+    return lineText.includes(phraseText) || phraseText.includes(lineText);
   });
+  if (contentMatch) return contentMatch;
+  return lines[phrase.line] ?? lines[phrase.line - 1] ?? null;
+}
+
+function compactTalkNote(note: string) {
+  const firstThought = note.split(/[；。]/u)[0].trim();
+  return firstThought.length > 34 ? `${firstThought.slice(0, 34)}…` : firstThought;
 }
 
 function formatTalkTime(seconds: number) {

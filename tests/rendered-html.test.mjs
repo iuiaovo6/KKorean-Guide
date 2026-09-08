@@ -64,24 +64,41 @@ test("account actions require confirmation and obsolete help UI is removed", asy
   assert.doesNotMatch(pageSource, /deleteUser|auth\.admin/);
 });
 
-test("Talk listening uses the provided audio and aligned bilingual transcript", async () => {
-  const source = JSON.parse(await readFile(new URL("../public/talk/takki.json", import.meta.url), "utf8"));
-  const transcript = JSON.parse(await readFile(new URL("../public/talk/takki-transcript.json", import.meta.url), "utf8"));
-  const vocabulary = JSON.parse(await readFile(new URL("../public/talk/takki-words.json", import.meta.url), "utf8"));
-  const audio = await stat(new URL("../public/talk/takki.m4a", import.meta.url));
-  assert.equal(source.id, "takki-01");
-  assert.equal(source.lines.length, 16);
-  assert.ok(source.lines.every((line) => line.t < line.end && line.ko && line.zh));
-  assert.equal(transcript.segments.length, 18);
-  assert.ok(vocabulary.words.length >= 40);
-  assert.ok(audio.size > 2_000_000);
+test("Talk listening loads every person-and-scene lesson with aligned audio", async () => {
+  const manifest = JSON.parse(await readFile(new URL("../public/talk/index.json", import.meta.url), "utf8"));
+  assert.equal(manifest.length, 8);
+  assert.equal(new Set(manifest.map((item) => `${item.who} ${item.where}`)).size, 8);
+
+  const normalize = (text) => text.replace(/[^\p{sc=Hangul}\p{N}]/gu, "");
+  for (const item of manifest) {
+    const source = JSON.parse(await readFile(new URL(`../public/talk/${item.json}`, import.meta.url), "utf8"));
+    const audio = await stat(new URL(`../public/talk/${item.audio}`, import.meta.url));
+    assert.equal(source.context.who, item.who);
+    assert.equal(source.context.where, item.where);
+    assert.ok(source.title_ko && source.title_zh);
+    assert.ok(source.lines.length > 0);
+    assert.ok(source.lines.every((line) => line.t < line.end && line.ko && line.zh));
+    assert.ok(source.phrases.length >= 3 && source.phrases.length <= 5);
+    assert.ok(Object.keys(source.usage).length > 0);
+    assert.ok(audio.size > 500_000);
+    assert.ok(source.lines.at(-1).end <= item.duration + 5);
+    for (const phrase of source.phrases) {
+      const phraseText = normalize(phrase.ko);
+      const matchingLine = source.lines.find((line) => {
+        const lineText = normalize(line.ko);
+        return lineText.includes(phraseText) || phraseText.includes(lineText);
+      });
+      assert.ok(matchingLine || source.lines[phrase.line] || source.lines[phrase.line - 1], `${item.id}: ${phrase.ko}`);
+    }
+  }
 
   const pageSource = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
   assert.match(pageSource, /const talkSpeeds = \[0\.3, 0\.4,[^\]]*1\.5\]/);
   assert.match(pageSource, /"盲听全貌", "捕捉韩文", "对照听懂", "带走一句"/);
-  assert.match(pageSource, /talkGrammarSelection = \[[^\]]+\]/);
-  assert.match(pageSource, /\/talk\/takki\.m4a/);
+  assert.match(pageSource, /talk\/index\.json/);
+  assert.match(pageSource, /resolveTalkPhrase\(source\.lines, phrase\)/);
   assert.match(pageSource, /talk-wave-bars/);
+  assert.doesNotMatch(pageSource, /\/talk\/takki\.m4a/);
   assert.doesNotMatch(pageSource, /先跟住真实语流，再在需要的时候打开字幕/);
   assert.doesNotMatch(pageSource, /留下这篇最值得反复听的 5 个说法/);
 });
