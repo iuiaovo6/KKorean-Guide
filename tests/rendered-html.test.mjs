@@ -3,6 +3,7 @@ import { spawnSync } from "node:child_process";
 import { readFile, stat } from "node:fs/promises";
 import test from "node:test";
 import { buildStudyOptions } from "../lib/study-options.ts";
+import { isLegacyExample, refreshLegacyExamples } from "../lib/example-updates.ts";
 
 const root = new URL("../", import.meta.url);
 
@@ -66,8 +67,8 @@ test("account actions require confirmation and obsolete help UI is removed", asy
 
 test("Talk listening loads every person-and-scene lesson with aligned audio", async () => {
   const manifest = JSON.parse(await readFile(new URL("../public/talk/index.json", import.meta.url), "utf8"));
-  assert.equal(manifest.length, 8);
-  assert.equal(new Set(manifest.map((item) => `${item.who} ${item.where}`)).size, 8);
+  assert.equal(manifest.length, 9);
+  assert.equal(new Set(manifest.map((item) => `${item.who} ${item.where}`)).size, 9);
 
   const normalize = (text) => text.replace(/[^\p{sc=Hangul}\p{N}]/gu, "");
   for (const item of manifest) {
@@ -83,6 +84,7 @@ test("Talk listening loads every person-and-scene lesson with aligned audio", as
     assert.ok(audio.size > 500_000);
     assert.ok(source.lines.at(-1).end <= item.duration + 5);
     for (const phrase of source.phrases) {
+      assert.ok(phrase.rom?.trim(), `${item.id}: missing romanization`);
       const phraseText = normalize(phrase.ko);
       const matchingLine = source.lines.find((line) => {
         const lineText = normalize(line.ko);
@@ -101,4 +103,17 @@ test("Talk listening loads every person-and-scene lesson with aligned audio", as
   assert.doesNotMatch(pageSource, /\/talk\/takki\.m4a/);
   assert.doesNotMatch(pageSource, /先跟住真实语流，再在需要的时候打开字幕/);
   assert.doesNotMatch(pageSource, /留下这篇最值得反复听的 5 个说法/);
+});
+
+test("daily examples replace all legacy templates and preserve custom or homonym examples", async () => {
+  const words = JSON.parse(await readFile(new URL("../public/words.json", import.meta.url), "utf8"));
+  assert.equal(words.filter((word) => isLegacyExample(word.example_ko)).length, 0);
+  const eyes = { korean: "눈", meaning_zh: "眼睛", example_ko: "오늘 눈에 대해 이야기해요.", example_zh: "今天聊眼睛。" };
+  const snow = { ...eyes, meaning_zh: "雪" };
+  const custom = { ...eyes, example_ko: "눈이 정말 예쁘네요." };
+  const refreshed = refreshLegacyExamples([eyes, snow, custom], words);
+  assert.match(refreshed[0].example_ko, /마주쳐/);
+  assert.match(refreshed[1].example_ko, /밤새/);
+  assert.equal(refreshed[2].example_ko, custom.example_ko);
+  assert.deepEqual(refreshLegacyExamples([eyes], []), [eyes]);
 });

@@ -1,107 +1,99 @@
 {
   "audio": "李楷灿 演唱会.m4a",
-  "title_ko": "우리의 시간은 값어치를 매길 수 없어요",
-  "title_zh": "我们的时光无可估量",
+  "title_ko": "10년 있어줘서 고마워",
+  "title_zh": "感谢十年存在",
   "context": {
     "who": "李楷灿",
     "where": "演唱会"
   },
   "lines": [
     {
-      "t": 0.0,
-      "end": 2.88,
+      "t": 0,
+      "end": 3.22,
       "ko": "저희가 이제 10주년을 눈앞에 두고 있잖아요.",
       "zh": "我们如今已站在十周年的眼前了。",
       "en": "We're now standing right before our 10th anniversary."
     },
     {
-      "t": 3.76,
-      "end": 9.66,
-      "ko": "물론 비교적 최근에 저희를 좋아하기 시작하신 분들도 분명 계시겠지만",
+      "t": 4.36,
+      "end": 9.98,
+      "ko": "근데 물론 비교적 최근에 저희를 좋아하기 시작하신 분들도 분명 계시겠지만",
       "zh": "当然，相对近期才开始喜欢我们的朋友肯定也有，但是——",
       "en": "Of course, surely there are also those who started liking us relatively recently—",
       "note": "现场感言的铺垫加让步，句尾 '계시겠지만' 拖长，是语感不是语法（见文标）",
       "gram": "계시겠지만 = 계시-(敬语'有') + -겠-(推测) + -지만(转折) → '肯定有，但…'"
     },
     {
-      "t": 10.53,
-      "end": 13.72,
+      "t": 10.96,
+      "end": 14.04,
       "ko": "그래도 10년이라는 시간이 흘러가는데",
       "zh": "可十年时光就这么流走了，",
       "en": "Still, ten years of time have just flowed by,"
     },
     {
-      "t": 13.72,
-      "end": 21.96,
+      "t": 15.58,
+      "end": 22.3,
       "ko": "그 시간 동안 저희가 그리고 여러분들이 서로 나눴던 그 시간들은",
       "zh": "那段时间里，我们和你们彼此分享过的那些时光，",
       "en": "those moments we and you shared during that time,"
     },
     {
-      "t": 21.96,
-      "end": 27.64,
+      "t": 23.42,
+      "end": 28,
       "ko": "그 누구도 값어치를 매길 수 없는 시간이라고 생각해요.",
       "zh": "是任何人都无法估量其价值的时光，我是这么认为的。",
       "en": "are moments whose worth no one could ever put a price on, I think."
     },
     {
-      "t": 28.76,
-      "end": 33.84,
-      "ko": "뭔가 20년 뒤 30년 뒤에 정말 저희가 함께하고 있을지는 아직 모르겠지만",
+      "t": 28,
+      "end": 34.18,
+      "ko": "뭔가 20년 뒤 30년 뒤에 정말 저희가 함께 하고 있을지는 아직 모르겠지만",
       "zh": "虽说我还不知道，20年后30年后我们是否真的还会在一起，",
       "en": "Though I don't yet know if we'll really still be together 20 or 30 years from now,"
     },
     {
-      "t": 35.3,
-      "end": 41.58,
+      "t": 35.66,
+      "end": 41.98,
       "ko": "분명히 그 10년간의 시간들이 여러분들에게 큰 원동력이 될 거라고 저는 생각하거든요.",
       "zh": "但我确信，那十年的时光会成为你们巨大的原动力。",
       "en": "I'm certain that those ten years will become a huge driving force for you all."
     },
     {
-      "t": 41.78,
-      "end": 43.24,
-      "ko": "여러분 맞죠? 네!",
-      "zh": "大家说对吧？——对！",
-      "en": "Right, everyone? — Yes!",
-      "note": "现场向粉丝确认后自己应声，语气上扬"
+      "t": 42.1,
+      "end": 42.8,
+      "ko": "여러분 맞죠?",
+      "zh": "大家说对吧？",
+      "en": "Right, everyone?",
+      "note": "现场向粉丝确认，语气上扬"
     },
     {
-      "t": 44.2,
-      "end": 51.94,
-      "ko": "그렇기 때문에 여러분들이 봐왔던, 눈에 담았던, 핸드폰으로 담았던, 뒤로 들었던 저희 NCT DREAM의 여러분이 되시길 바랍니다.",
-      "zh": "所以，希望你们成为我们 NCT DREAM 的各位——你们所看见的、收入眼中的、用手机记录的、在身后聆听的。",
-      "en": "So I hope you become our NCT DREAM's fans—the ones who watched, who captured with your eyes, who recorded on your phones, who listened from behind.",
-      "gram": "되시길 바랍니다 = 되-(成为) + -시-(敬语) + -길 바라다(希望) → '希望您成为…'"
+      "t": 44.36,
+      "end": 55.22,
+      "ko": "그렇기 때문에 여러분들이 봐왔던 눈에 담았던 핸드폰으로 담았던 귀로 들었던 저희 NCT DREAM을 오래오래 기억해 주셨으면 좋겠고",
+      "zh": "所以，希望你们长久地记得我们 NCT DREAM——你们所看见的、收入眼中的、用手机记录的、用耳朵聆听的。",
+      "en": "So I hope you remember our NCT DREAM for a long, long time—the ones you watched, captured with your eyes, recorded on your phones, heard with your ears."
     },
     {
-      "t": 51.96,
-      "end": 54.88,
-      "ko": "NCT DREAM을 오래오래 기억해주셨으면 좋겠고",
-      "zh": "希望你们长久地记得 NCT DREAM，",
-      "en": "and I hope you remember NCT DREAM for a long, long time,"
+      "t": 55.22,
+      "end": 61.22,
+      "ko": "그리고 또 다음에 돌아올 저희 DREAM이들 많이 기대해 주시면서 기다려 주셨으면 좋겠습니다.",
+      "zh": "还有，也请满怀期待地等待我们 DREAM 成员下一次的回归。",
+      "en": "and please wait, looking forward to our DREAM members' next return."
     },
     {
-      "t": 54.88,
-      "end": 61.2,
-      "ko": "그리고 또 다음에 돌아올 저희 DREAM이들 많이 기대해주시면서 기다려주셨으면 좋겠습니다. 알겠죠?",
-      "zh": "还有，也请满怀期待地等待我们 DREAM 成员下一次的回归。懂的吧？",
-      "en": "and please wait, looking forward to our DREAM members' next return. You know?",
+      "t": 61.34,
+      "end": 61.54,
+      "ko": "알겠죠?",
+      "zh": "懂的吧？",
+      "en": "You know?",
       "gram": "알겠죠? = 알다(知道) + -겠-(推测) + -죠?(确认反问) → '懂的吧？' 现场互动惯用"
     },
     {
-      "t": 61.5,
-      "end": 61.9,
-      "ko": "네!",
-      "zh": "对！",
-      "en": "Yes!"
-    },
-    {
-      "t": 65.16,
-      "end": 67.9,
-      "ko": "여러분 너무너무 감사하고 사랑합니다.",
-      "zh": "大家，真的非常感谢，爱你们。",
-      "en": "Everyone, thank you so, so much, and I love you."
+      "t": 64.8,
+      "end": 68.24,
+      "ko": "아 여러분 너무너무 감사하고 사랑합니다.",
+      "zh": "啊，大家，真的非常感谢，爱你们。",
+      "en": "Ah, everyone, thank you so, so much, and I love you."
     }
   ],
   "usage": {
@@ -109,53 +101,56 @@
       "mean": "站在十周年眼前／临近十周年",
       "when": "说某个重要节点、纪念日临近时",
       "tone": "正式感言、带点感慨",
-      "also": "~을 앞두고 있다（面临／临近~）"
+      "also": "~을 앞두고 있다（面临／临近~）",
+      "rom": "10junyeoneul nunape dugo itda"
     },
     "값어치를 매길 수 없다": {
       "mean": "无法估量其价值",
       "when": "形容某段经历、某个人无比珍贵时",
       "tone": "郑重、动情",
-      "also": "값을 매길 수 없다"
+      "also": "값을 매길 수 없다",
+      "rom": "gapeochireul maegil su eopda"
     },
     "원동력이 되다": {
       "mean": "成为（巨大的）原动力",
       "when": "说某事物推动自己前行时",
       "tone": "积极、励志",
-      "also": "동력이 되다（成为动力）"
+      "also": "동력이 되다（成为动力）",
+      "rom": "wondongryeoki doeda"
     },
     "오래오래 기억해주셨으면 좋겠다": {
       "mean": "希望（你）长久地记得",
       "when": "告别、致谢、约定时",
       "tone": "温情、不舍",
-      "also": "오래 기억해주세요（请长久记得）"
+      "also": "오래 기억해주세요（请长久记得）",
+      "rom": "oraeorae gieokhaejusyeoteumyeon jotgetda"
     },
     "맞죠? / 알겠죠?": {
       "mean": "对吧？／懂的吧？",
       "when": "现场或对话中向对方确认、拉近距离时",
       "tone": "亲切、互动",
-      "also": "그렇죠?（是吧？）"
+      "also": "그렇죠?（是吧？）",
+      "rom": "matjyo? / algetjyo?"
     }
   },
   "phrases": [
     {
+      "ko": "10주년을 눈앞에 두고",
+      "zh": "站在十周年眼前",
+      "line": 0,
+      "rom": "10junyeoneul nunape dugo"
+    },
+    {
       "ko": "값어치를 매길 수 없는 시간",
       "zh": "无法估量价值的时光",
-      "line": 5
+      "line": 4,
+      "rom": "gapeochireul maegil su eopneun sigan"
     },
     {
-      "ko": "큰 원동력이 될 거라고 생각해요",
-      "zh": "会成为巨大的原动力",
-      "line": 7
-    },
-    {
-      "ko": "NCT DREAM을 오래오래 기억해주셨으면 좋겠고",
-      "zh": "希望你们长久地记得 NCT DREAM",
-      "line": 10
-    },
-    {
-      "ko": "여러분 너무너무 감사하고 사랑합니다",
-      "zh": "大家真的非常感谢，爱你们",
-      "line": 13
+      "ko": "오래오래 기억해 주셨으면",
+      "zh": "请长久记得",
+      "line": 8,
+      "rom": "oraeorae gieokhae jusyeoteumyeon"
     }
   ]
 }

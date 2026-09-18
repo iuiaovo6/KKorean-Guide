@@ -1,0 +1,124 @@
+{
+  "audio": "金主恩 live.m4a",
+  "title_ko": "이런 엄마 어디 있어",
+  "title_zh": "这样的妈妈哪里找",
+  "context": {
+    "who": "金主恩",
+    "where": "live"
+  },
+  "lines": [
+    {
+      "t": 0,
+      "end": 7.78,
+      "ko": "어릴 때는 왜 부모님들이 염색이나 피어싱 이런 거 잘 안 해주시잖아요.",
+      "zh": "小时候嘛，父母一般不太让我们染头发、打耳洞这些。",
+      "en": "When you're young, parents usually don't let you dye your hair or get piercings, right?",
+      "note": "~잖아요：提示「你也知道吧」的共识，带撒娇/寻求认同的语气，直播闲聊开头很常用。"
+    },
+    {
+      "t": 8.04,
+      "end": 13.44,
+      "ko": "저희 엄마는 하고 싶은 거 다 하라고 하셔가지고",
+      "zh": "我妈呢，是跟我说想做什么就都去做，",
+      "en": "My mom told me to just do whatever I wanted,",
+      "note": "하셔가지고 = 하셔서 的口语说法，句尾挂 ~가지고 把原因连到下一句，直播里很常见。本行谓语在下一行收尾。"
+    },
+    {
+      "t": 13.44,
+      "end": 16.22,
+      "ko": "엄마 나 피어싱 하고 싶어 염색하고 싶어 하면",
+      "zh": "我就说「妈，我想打耳洞、想染头发」，",
+      "en": "so I'd say, 'Mom, I want a piercing, I want to dye my hair,'",
+      "note": "~(이)면 引出的假设从句「如果说…的话」，妈妈的回答在下一行。"
+    },
+    {
+      "t": 16.22,
+      "end": 21.82,
+      "ko": "어? 해? 어릴 때 다 해봐야지 하면서 다 하게 해주셨어요.",
+      "zh": "她就说「啊？做？小时候就该都试一遍嘛」，然后就都让我做了。",
+      "en": "and she'd go, 'Huh? Do it? You should try it all while you're young,' and she let me.",
+      "note": "~(아/어)야지：表示「就该这么做」，妈妈的开明就藏在这个语气里。"
+    },
+    {
+      "t": 24.22,
+      "end": 28.08,
+      "ko": "그래서 어릴 때부터 피어싱도 하고",
+      "zh": "所以我从小就打耳洞，",
+      "en": "So I've had piercings ever since I was little,",
+      "note": "~부터：从…起（어릴 때부터 = 从小就）。"
+    },
+    {
+      "t": 28.08,
+      "end": 32.98,
+      "ko": "옛날 영상이 춤춘 영상 밖에 없지만",
+      "zh": "虽然以前的视频只剩跳舞的那些，",
+      "en": "though the old clips are only ones of me dancing,",
+      "note": "밖에 ~ 없지만：只有…，不过…。"
+    },
+    {
+      "t": 32.98,
+      "end": 39.22,
+      "ko": "영상들 보면은 금발도 하고 핑크머리도 하고 그랬습니다.",
+      "zh": "但看那些视频的话，我染过金发，也染过粉色的头发。",
+      "en": "but if you look at them, I went blonde, and I went pink too.",
+      "note": "~도 하고 ~도 하고：并列列举「也…也…」，口语里很自然。"
+    }
+  ],
+  "usage": {
+    "잘 안 해주시잖아요": {
+      "mean": "（父母）一般不太会让我做…吧",
+      "when": "聊「爸妈管得严不严」时，先抛一个大家都经历过的共识开场",
+      "tone": "闲聊、带点撒娇和「你也懂吧」的语气",
+      "also": "어릴 때는 부모님들이 잘 안 시켜주잖아요 / 원래 부모님들은 반대하시잖아요",
+      "rom": "jal an haejusijanayo"
+    },
+    "하고 싶은 거 다 하라고": {
+      "mean": "（我妈）说想做什么就都去做",
+      "when": "夸家人开明，或解释自己为什么敢这么折腾",
+      "tone": "轻松、有点得意",
+      "also": "뭐든지 해보라고 하셨어요 / 하고 싶은 건 다 하라고 했어요",
+      "rom": "hago sipeun geo da harago"
+    },
+    "어릴 때 다 해봐야지": {
+      "mean": "小时候就该都试一试",
+      "when": "想支持别人（或引用长辈的话）去做某件看起来出格的事",
+      "tone": "随和、开明、不扫兴",
+      "also": "젊을 때 다 해봐야지 / 지금 아니면 언제 해보겠어",
+      "rom": "eoril ttae da haebwayaji"
+    },
+    "다 하게 해주셨어요": {
+      "mean": "就都让我做了",
+      "when": "讲家人怎么言行一致地支持自己",
+      "tone": "温暖、带感激",
+      "also": "하고 싶은 거 다 하게 해주셨어요 / 다 시켜주셨어요",
+      "rom": "da hage haejusyeoteoyo"
+    },
+    "금발도 하고 핑크머리도 하고": {
+      "mean": "也染金发、也染粉发",
+      "when": "举例说自己以前多敢折腾造型",
+      "tone": "回忆、轻松、有点好笑",
+      "also": "금발도 해보고 핑크머리도 해봤어요",
+      "rom": "geumbaldo hago pingkeumeorido hago"
+    }
+  },
+  "phrases": [
+    {
+      "ko": "어릴 때는",
+      "zh": "小时候嘛",
+      "line": 0,
+      "rom": "eoril ttaeneun"
+    },
+    {
+      "ko": "하고 싶은 거",
+      "zh": "想做的事",
+      "line": 1,
+      "rom": "hago sipeun geo"
+    },
+    {
+      "ko": "다 해봐야지",
+      "zh": "都该试试",
+      "line": 3,
+      "rom": "da haebwayaji"
+    }
+  ]
+}

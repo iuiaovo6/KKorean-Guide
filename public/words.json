@@ -3,8 +3,8 @@
     "korean": "설레다",
     "meaning_zh": "心动、激动",
     "part_of_speech": "动词",
-    "example_ko": "오늘 무대가 너무 설레요.",
-    "example_zh": "今天的舞台让我特别心动。",
+    "example_ko": "내일 직접 만날 생각에 벌써 설레요.",
+    "example_zh": "想到明天能亲自见到你，已经开始心动了。",
     "tags": [
       "表达感受"
     ],
@@ -403,8 +403,8 @@
     "korean": "있어요",
     "meaning_zh": "有/在",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 있어요.",
-    "example_zh": "今天也有/在。",
+    "example_ko": "창가 쪽에 빈자리 있어요?",
+    "example_zh": "窗边有空位吗？",
     "tags": [
       "基础",
       "对话"
@@ -416,8 +416,8 @@
     "korean": "없어요",
     "meaning_zh": "没有",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 없어요.",
-    "example_zh": "今天真的没有。",
+    "example_ko": "지금 현금이 없어요. 카드도 돼요?",
+    "example_zh": "我现在没有现金，可以刷卡吗？",
     "tags": [
       "基础",
       "对话"
@@ -429,8 +429,8 @@
     "korean": "가요",
     "meaning_zh": "去",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 가요.",
-    "example_zh": "今天也去。",
+    "example_ko": "저는 먼저 가요. 내일 봐요!",
+    "example_zh": "我先走啦，明天见！",
     "tags": [
       "基础",
       "出行"
@@ -442,8 +442,8 @@
     "korean": "와요",
     "meaning_zh": "来",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 와요.",
-    "example_zh": "今天也来。",
+    "example_ko": "친구가 주말에 서울로 와요.",
+    "example_zh": "朋友周末来首尔。",
     "tags": [
       "基础",
       "对话"
@@ -455,8 +455,8 @@
     "korean": "먹어요",
     "meaning_zh": "吃",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 먹어요.",
-    "example_zh": "今天也吃。",
+    "example_ko": "아침은 보통 집에서 먹어요.",
+    "example_zh": "我早饭一般在家吃。",
     "tags": [
       "基础",
       "日常"
@@ -468,8 +468,8 @@
     "korean": "마셔요",
     "meaning_zh": "喝",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 마셔요.",
-    "example_zh": "今天也喝。",
+    "example_ko": "저는 커피 대신 차를 마셔요.",
+    "example_zh": "我喝茶，不喝咖啡。",
     "tags": [
       "基础",
       "日常"
@@ -481,8 +481,8 @@
     "korean": "봐요",
     "meaning_zh": "看/见",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 봐요.",
-    "example_zh": "今天也看/见。",
+    "example_ko": "시간 있으면 이 영상 한번 봐요.",
+    "example_zh": "有时间的话看看这个视频。",
     "tags": [
       "基础",
       "日常"
@@ -494,8 +494,8 @@
     "korean": "들어요",
     "meaning_zh": "听",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 들어요.",
-    "example_zh": "今天也听。",
+    "example_ko": "출근할 때 팟캐스트를 들어요.",
+    "example_zh": "上班路上我听播客。",
     "tags": [
       "基础",
       "日常"
@@ -507,8 +507,8 @@
     "korean": "말해요",
     "meaning_zh": "说",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 말해요.",
-    "example_zh": "今天也说。",
+    "example_ko": "모르는 게 있으면 편하게 말해요.",
+    "example_zh": "有不懂的就放心说。",
     "tags": [
       "基础",
       "对话"
@@ -520,8 +520,8 @@
     "korean": "해요",
     "meaning_zh": "做",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 해요.",
-    "example_zh": "今天也做。",
+    "example_ko": "주말에는 보통 뭐 해요?",
+    "example_zh": "你周末一般做什么？",
     "tags": [
       "基础",
       "日常"
@@ -533,8 +533,8 @@
     "korean": "좋아해요",
     "meaning_zh": "喜欢",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 좋아해요.",
-    "example_zh": "今天也喜欢。",
+    "example_ko": "저는 비 오는 날을 좋아해요.",
+    "example_zh": "我喜欢下雨天。",
     "tags": [
       "基础",
       "感受"
@@ -546,8 +546,8 @@
     "korean": "사랑해요",
     "meaning_zh": "爱你",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 사랑해요.",
-    "example_zh": "今天也爱你。",
+    "example_ko": "멀리 있어도 늘 사랑해요.",
+    "example_zh": "即使相隔很远，也一直爱着你。",
     "tags": [
       "基础",
       "感受"
@@ -559,8 +559,8 @@
     "korean": "알아요",
     "meaning_zh": "知道",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 알아요.",
-    "example_zh": "今天也知道。",
+    "example_ko": "이 근처에 맛있는 식당 알아요?",
+    "example_zh": "你知道这附近有什么好吃的餐厅吗？",
     "tags": [
       "基础",
       "对话"
@@ -572,8 +572,8 @@
     "korean": "몰라요",
     "meaning_zh": "不知道",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 몰라요.",
-    "example_zh": "今天也不知道。",
+    "example_ko": "저도 처음 와서 길을 잘 몰라요.",
+    "example_zh": "我也是第一次来，不太认路。",
     "tags": [
       "基础",
       "对话"
@@ -585,8 +585,8 @@
     "korean": "원해요",
     "meaning_zh": "想要",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 원해요.",
-    "example_zh": "今天也想要。",
+    "example_ko": "선물로 어떤 걸 원해요?",
+    "example_zh": "你想要什么样的礼物？",
     "tags": [
       "基础",
       "点单"
@@ -598,8 +598,8 @@
     "korean": "필요해요",
     "meaning_zh": "需要",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 필요해요.",
-    "example_zh": "今天真的需要。",
+    "example_ko": "봉투가 필요해요, 하나 주세요.",
+    "example_zh": "我需要袋子，请给我一个。",
     "tags": [
       "基础",
       "日常"
@@ -611,8 +611,8 @@
     "korean": "기다려요",
     "meaning_zh": "等",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 기다려요.",
-    "example_zh": "今天也等。",
+    "example_ko": "저는 입구에서 기다려요. 천천히 와요.",
+    "example_zh": "我在入口等你，慢慢来。",
     "tags": [
       "基础",
       "线下"
@@ -624,8 +624,8 @@
     "korean": "만나요",
     "meaning_zh": "见面",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 만나요.",
-    "example_zh": "今天也见面。",
+    "example_ko": "공연 끝나고 역 앞에서 만나요.",
+    "example_zh": "演出结束后在车站前见。",
     "tags": [
       "基础",
       "线下"
@@ -637,8 +637,8 @@
     "korean": "사진",
     "meaning_zh": "照片",
     "part_of_speech": "名词",
-    "example_ko": "오늘 사진에 대해 이야기해요.",
-    "example_zh": "今天聊照片。",
+    "example_ko": "우리 같이 사진 한 장 찍을까요?",
+    "example_zh": "我们一起拍张照片吗？",
     "tags": [
       "基础",
       "线下"
@@ -650,8 +650,8 @@
     "korean": "영상",
     "meaning_zh": "视频",
     "part_of_speech": "名词",
-    "example_ko": "오늘 영상에 대해 이야기해요.",
-    "example_zh": "今天聊视频。",
+    "example_ko": "어제 찍은 영상 보내 줄 수 있어요?",
+    "example_zh": "能把昨天拍的视频发给我吗？",
     "tags": [
       "基础",
       "追星"
@@ -663,8 +663,8 @@
     "korean": "음악",
     "meaning_zh": "音乐",
     "part_of_speech": "名词",
-    "example_ko": "오늘 음악에 대해 이야기해요.",
-    "example_zh": "今天聊音乐。",
+    "example_ko": "음악을 들으면 마음이 좀 편해져요.",
+    "example_zh": "听音乐会让我心情放松一些。",
     "tags": [
       "基础",
       "追星"
@@ -676,8 +676,8 @@
     "korean": "노래",
     "meaning_zh": "歌曲",
     "part_of_speech": "名词",
-    "example_ko": "오늘 노래에 대해 이야기해요.",
-    "example_zh": "今天聊歌曲。",
+    "example_ko": "이 노래 제목이 뭐예요?",
+    "example_zh": "这首歌叫什么名字？",
     "tags": [
       "基础",
       "追星"
@@ -689,8 +689,8 @@
     "korean": "춤",
     "meaning_zh": "舞蹈",
     "part_of_speech": "名词",
-    "example_ko": "오늘 춤에 대해 이야기해요.",
-    "example_zh": "今天聊舞蹈。",
+    "example_ko": "춤을 잘 못 춰도 같이 해 봐요.",
+    "example_zh": "就算跳得不好，也一起试试吧。",
     "tags": [
       "基础",
       "追星"
@@ -702,8 +702,8 @@
     "korean": "무대",
     "meaning_zh": "舞台",
     "part_of_speech": "名词",
-    "example_ko": "오늘 무대가 있어요.",
-    "example_zh": "今天有舞台。",
+    "example_ko": "무대가 가까워서 표정까지 보여요.",
+    "example_zh": "离舞台很近，连表情都看得见。",
     "tags": [
       "追星",
       "演唱会"
@@ -715,8 +715,8 @@
     "korean": "공연",
     "meaning_zh": "演出",
     "part_of_speech": "名词",
-    "example_ko": "오늘 공연이 있어요.",
-    "example_zh": "今天有演出。",
+    "example_ko": "공연은 몇 시에 끝나요?",
+    "example_zh": "演出几点结束？",
     "tags": [
       "追星",
       "演唱会"
@@ -728,8 +728,8 @@
     "korean": "콘서트",
     "meaning_zh": "演唱会",
     "part_of_speech": "名词",
-    "example_ko": "오늘 콘서트가 있어요.",
-    "example_zh": "今天有演唱会。",
+    "example_ko": "이번 콘서트는 친구랑 가기로 했어요.",
+    "example_zh": "这次演唱会约好和朋友一起去。",
     "tags": [
       "追星",
       "演唱会"
@@ -741,8 +741,8 @@
     "korean": "팬",
     "meaning_zh": "粉丝",
     "part_of_speech": "名词",
-    "example_ko": "오늘 팬에 대해 이야기해요.",
-    "example_zh": "今天聊粉丝。",
+    "example_ko": "팬이 된 지 벌써 일 년이 됐어요.",
+    "example_zh": "成为粉丝已经一年了。",
     "tags": [
       "追星",
       "粉丝"
@@ -754,8 +754,8 @@
     "korean": "아이돌",
     "meaning_zh": "偶像",
     "part_of_speech": "名词",
-    "example_ko": "오늘 아이돌에 대해 이야기해요.",
-    "example_zh": "今天聊偶像。",
+    "example_ko": "좋아하는 아이돌이 있어요?",
+    "example_zh": "你有喜欢的偶像吗？",
     "tags": [
       "追星",
       "粉丝"
@@ -767,8 +767,8 @@
     "korean": "멤버",
     "meaning_zh": "成员",
     "part_of_speech": "名词",
-    "example_ko": "오늘 멤버에 대해 이야기해요.",
-    "example_zh": "今天聊成员。",
+    "example_ko": "멤버 이름을 이제 다 외웠어요.",
+    "example_zh": "我现在记住所有成员的名字了。",
     "tags": [
       "追星",
       "粉丝"
@@ -780,8 +780,8 @@
     "korean": "응원",
     "meaning_zh": "应援/支持",
     "part_of_speech": "名词",
-    "example_ko": "오늘 응원에 대해 이야기해요.",
-    "example_zh": "今天聊应援/支持。",
+    "example_ko": "보내 주신 응원 덕분에 힘이 났어요.",
+    "example_zh": "多亏大家的支持，我有了力量。",
     "tags": [
       "追星",
       "粉丝"
@@ -793,8 +793,8 @@
     "korean": "앨범",
     "meaning_zh": "专辑",
     "part_of_speech": "名词",
-    "example_ko": "오늘 앨범에 대해 이야기해요.",
-    "example_zh": "今天聊专辑。",
+    "example_ko": "앨범은 어떤 버전으로 샀어요?",
+    "example_zh": "你买了哪个版本的专辑？",
     "tags": [
       "追星",
       "粉丝"
@@ -806,8 +806,8 @@
     "korean": "포토카드",
     "meaning_zh": "小卡",
     "part_of_speech": "名词",
-    "example_ko": "오늘 포토카드에 대해 이야기해요.",
-    "example_zh": "今天聊小卡。",
+    "example_ko": "포토카드가 구겨지지 않게 넣어 주세요.",
+    "example_zh": "请把小卡放好，别弄皱了。",
     "tags": [
       "追星",
       "周边"
@@ -819,8 +819,8 @@
     "korean": "사인",
     "meaning_zh": "签名",
     "part_of_speech": "名词",
-    "example_ko": "오늘 사인이 있어요.",
-    "example_zh": "今天有签名。",
+    "example_ko": "여기에 사인해 주실 수 있어요?",
+    "example_zh": "可以在这里签名吗？",
     "tags": [
       "追星",
       "签售"
@@ -832,8 +832,8 @@
     "korean": "이름",
     "meaning_zh": "名字",
     "part_of_speech": "名词",
-    "example_ko": "오늘 이름에 대해 이야기해요.",
-    "example_zh": "今天聊名字。",
+    "example_ko": "제 이름은 이렇게 써요.",
+    "example_zh": "我的名字是这样写的。",
     "tags": [
       "基础",
       "自我介绍"
@@ -845,8 +845,8 @@
     "korean": "친구",
     "meaning_zh": "朋友",
     "part_of_speech": "名词",
-    "example_ko": "오늘 친구에 대해 이야기해요.",
-    "example_zh": "今天聊朋友。",
+    "example_ko": "친구가 먼저 자리를 잡아 놨어요.",
+    "example_zh": "朋友已经先占好位置了。",
     "tags": [
       "基础",
       "日常"
@@ -858,8 +858,8 @@
     "korean": "가족",
     "meaning_zh": "家人",
     "part_of_speech": "名词",
-    "example_ko": "오늘 가족에 대해 이야기해요.",
-    "example_zh": "今天聊家人。",
+    "example_ko": "주말에는 가족과 시간을 보내요.",
+    "example_zh": "周末我和家人一起度过。",
     "tags": [
       "基础",
       "日常"
@@ -871,8 +871,8 @@
     "korean": "사람",
     "meaning_zh": "人",
     "part_of_speech": "名词",
-    "example_ko": "오늘 사람에 대해 이야기해요.",
-    "example_zh": "今天聊人。",
+    "example_ko": "사람이 많으니까 여기서 떨어지지 마요.",
+    "example_zh": "人很多，别在这里走散了。",
     "tags": [
       "基础",
       "日常"
@@ -884,8 +884,8 @@
     "korean": "오늘",
     "meaning_zh": "今天",
     "part_of_speech": "名词",
-    "example_ko": "오늘 오늘에 대해 이야기해요.",
-    "example_zh": "今天聊今天。",
+    "example_ko": "오늘은 일찍 집에 가고 싶어요.",
+    "example_zh": "今天想早点回家。",
     "tags": [
       "基础",
       "时间"
@@ -897,8 +897,8 @@
     "korean": "내일",
     "meaning_zh": "明天",
     "part_of_speech": "名词",
-    "example_ko": "오늘 내일에 대해 이야기해요.",
-    "example_zh": "今天聊明天。",
+    "example_ko": "내일 비가 오면 실내에서 만나요.",
+    "example_zh": "如果明天下雨，我们就在室内见。",
     "tags": [
       "基础",
       "时间"
@@ -910,8 +910,8 @@
     "korean": "어제",
     "meaning_zh": "昨天",
     "part_of_speech": "名词",
-    "example_ko": "오늘 어제에 대해 이야기해요.",
-    "example_zh": "今天聊昨天。",
+    "example_ko": "어제 너무 늦게 자서 졸려요.",
+    "example_zh": "昨天睡得太晚，现在很困。",
     "tags": [
       "基础",
       "时间"
@@ -923,8 +923,8 @@
     "korean": "지금",
     "meaning_zh": "现在",
     "part_of_speech": "副词",
-    "example_ko": "오늘 지금 연습해요.",
-    "example_zh": "今天现在练习。",
+    "example_ko": "지금 통화할 수 있어요?",
+    "example_zh": "现在方便通话吗？",
     "tags": [
       "基础",
       "时间"
@@ -936,8 +936,8 @@
     "korean": "나중에",
     "meaning_zh": "之后",
     "part_of_speech": "副词",
-    "example_ko": "오늘 나중에 연습해요.",
-    "example_zh": "今天之后练习。",
+    "example_ko": "바쁘면 나중에 답장해도 돼요.",
+    "example_zh": "忙的话，之后再回复也可以。",
     "tags": [
       "基础",
       "时间"
@@ -949,8 +949,8 @@
     "korean": "아침",
     "meaning_zh": "早上",
     "part_of_speech": "名词",
-    "example_ko": "오늘 아침에 대해 이야기해요.",
-    "example_zh": "今天聊早上。",
+    "example_ko": "아침에 일어나자마자 물을 마셔요.",
+    "example_zh": "早上一起床我就喝水。",
     "tags": [
       "基础",
       "时间"
@@ -962,8 +962,8 @@
     "korean": "밤",
     "meaning_zh": "夜晚",
     "part_of_speech": "名词",
-    "example_ko": "오늘 밤에 대해 이야기해요.",
-    "example_zh": "今天聊夜晚。",
+    "example_ko": "밤에는 이 골목이 꽤 조용해요.",
+    "example_zh": "晚上这条巷子挺安静的。",
     "tags": [
       "基础",
       "时间"
@@ -975,8 +975,8 @@
     "korean": "시간",
     "meaning_zh": "时间",
     "part_of_speech": "名词",
-    "example_ko": "오늘 시간에 대해 이야기해요.",
-    "example_zh": "今天聊时间。",
+    "example_ko": "출발까지 시간이 얼마나 남았어요?",
+    "example_zh": "离出发还剩多少时间？",
     "tags": [
       "基础",
       "时间"
@@ -988,8 +988,8 @@
     "korean": "날",
     "meaning_zh": "天/日子",
     "part_of_speech": "名词",
-    "example_ko": "오늘 날에 대해 이야기해요.",
-    "example_zh": "今天聊天/日子。",
+    "example_ko": "쉬는 날에는 늦잠을 자요.",
+    "example_zh": "休息日我会睡懒觉。",
     "tags": [
       "基础",
       "时间"
@@ -1001,8 +1001,8 @@
     "korean": "집",
     "meaning_zh": "家",
     "part_of_speech": "名词",
-    "example_ko": "오늘 집에 대해 이야기해요.",
-    "example_zh": "今天聊家。",
+    "example_ko": "집에 도착하면 연락할게요.",
+    "example_zh": "我到家后联系你。",
     "tags": [
       "基础",
       "地点"
@@ -1014,8 +1014,8 @@
     "korean": "학교",
     "meaning_zh": "学校",
     "part_of_speech": "名词",
-    "example_ko": "오늘 학교에 대해 이야기해요.",
-    "example_zh": "今天聊学校。",
+    "example_ko": "학교 끝나고 카페에서 만날래요?",
+    "example_zh": "放学后要在咖啡馆见面吗？",
     "tags": [
       "基础",
       "地点"
@@ -1027,8 +1027,8 @@
     "korean": "회사",
     "meaning_zh": "公司",
     "part_of_speech": "名词",
-    "example_ko": "오늘 회사에 대해 이야기해요.",
-    "example_zh": "今天聊公司。",
+    "example_ko": "회사 근처에서 점심을 먹었어요.",
+    "example_zh": "我在公司附近吃了午饭。",
     "tags": [
       "基础",
       "地点"
@@ -1040,8 +1040,8 @@
     "korean": "화장실",
     "meaning_zh": "洗手间",
     "part_of_speech": "名词",
-    "example_ko": "오늘 화장실에 대해 이야기해요.",
-    "example_zh": "今天聊洗手间。",
+    "example_ko": "화장실은 어느 쪽이에요?",
+    "example_zh": "洗手间在哪边？",
     "tags": [
       "基础",
       "出行"
@@ -1053,8 +1053,8 @@
     "korean": "역",
     "meaning_zh": "车站",
     "part_of_speech": "名词",
-    "example_ko": "오늘 역에 대해 이야기해요.",
-    "example_zh": "今天聊车站。",
+    "example_ko": "이 역에서 내려야 해요.",
+    "example_zh": "要在这一站下车。",
     "tags": [
       "基础",
       "出行"
@@ -1066,8 +1066,8 @@
     "korean": "공항",
     "meaning_zh": "机场",
     "part_of_speech": "名词",
-    "example_ko": "오늘 공항에 대해 이야기해요.",
-    "example_zh": "今天聊机场。",
+    "example_ko": "공항까지 택시로 얼마나 걸려요?",
+    "example_zh": "打车去机场要多久？",
     "tags": [
       "基础",
       "出行"
@@ -1079,8 +1079,8 @@
     "korean": "카페",
     "meaning_zh": "咖啡馆",
     "part_of_speech": "名词",
-    "example_ko": "오늘 카페에 대해 이야기해요.",
-    "example_zh": "今天聊咖啡馆。",
+    "example_ko": "저 카페는 밤 열 시까지 열어요.",
+    "example_zh": "那家咖啡馆营业到晚上十点。",
     "tags": [
       "基础",
       "日常"
@@ -1092,8 +1092,8 @@
     "korean": "식당",
     "meaning_zh": "餐厅",
     "part_of_speech": "名词",
-    "example_ko": "오늘 식당에 대해 이야기해요.",
-    "example_zh": "今天聊餐厅。",
+    "example_ko": "이 식당은 혼자 와도 괜찮아요.",
+    "example_zh": "这家餐厅一个人来也没问题。",
     "tags": [
       "基础",
       "点单"
@@ -1105,8 +1105,8 @@
     "korean": "물",
     "meaning_zh": "水",
     "part_of_speech": "名词",
-    "example_ko": "오늘 물에 대해 이야기해요.",
-    "example_zh": "今天聊水。",
+    "example_ko": "물 좀 더 주실 수 있어요?",
+    "example_zh": "可以再给我一点水吗？",
     "tags": [
       "基础",
       "点单"
@@ -1118,8 +1118,8 @@
     "korean": "커피",
     "meaning_zh": "咖啡",
     "part_of_speech": "名词",
-    "example_ko": "오늘 커피에 대해 이야기해요.",
-    "example_zh": "今天聊咖啡。",
+    "example_ko": "커피는 얼음 적게 넣어 주세요.",
+    "example_zh": "咖啡请少放点冰。",
     "tags": [
       "基础",
       "点单"
@@ -1131,8 +1131,8 @@
     "korean": "밥",
     "meaning_zh": "饭",
     "part_of_speech": "名词",
-    "example_ko": "오늘 밥에 대해 이야기해요.",
-    "example_zh": "今天聊饭。",
+    "example_ko": "밥 먹었어요? 안 먹었으면 같이 먹어요.",
+    "example_zh": "吃饭了吗？没吃的话一起吃吧。",
     "tags": [
       "基础",
       "点单"
@@ -1144,8 +1144,8 @@
     "korean": "맛있어요",
     "meaning_zh": "好吃",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 맛있어요.",
-    "example_zh": "今天真的好吃。",
+    "example_ko": "여기 김치볶음밥이 정말 맛있어요.",
+    "example_zh": "这家的泡菜炒饭真的很好吃。",
     "tags": [
       "基础",
       "点单"
@@ -1157,8 +1157,8 @@
     "korean": "배고파요",
     "meaning_zh": "饿",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 배고파요.",
-    "example_zh": "今天真的饿。",
+    "example_ko": "점심을 못 먹어서 배고파요.",
+    "example_zh": "没吃午饭，好饿。",
     "tags": [
       "基础",
       "日常"
@@ -1170,8 +1170,8 @@
     "korean": "예뻐요",
     "meaning_zh": "漂亮",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 예뻐요.",
-    "example_zh": "今天真的漂亮。",
+    "example_ko": "웃을 때 눈이 참 예뻐요.",
+    "example_zh": "你笑起来的时候眼睛真好看。",
     "tags": [
       "基础",
       "感受"
@@ -1183,8 +1183,8 @@
     "korean": "귀여워요",
     "meaning_zh": "可爱",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 귀여워요.",
-    "example_zh": "今天真的可爱。",
+    "example_ko": "강아지가 자는 모습이 너무 귀여워요.",
+    "example_zh": "小狗睡觉的样子太可爱了。",
     "tags": [
       "基础",
       "追星"
@@ -1196,8 +1196,8 @@
     "korean": "멋있어요",
     "meaning_zh": "帅/很酷",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 멋있어요.",
-    "example_zh": "今天真的帅/很酷。",
+    "example_ko": "끝까지 포기하지 않는 모습이 멋있어요.",
+    "example_zh": "坚持到底不放弃的样子很帅。",
     "tags": [
       "基础",
       "追星"
@@ -1222,8 +1222,8 @@
     "korean": "재미있어요",
     "meaning_zh": "有趣",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 재미있어요.",
-    "example_zh": "今天真的有趣。",
+    "example_ko": "이 드라마는 두 번 봐도 재미있어요.",
+    "example_zh": "这部剧看两遍还是很有意思。",
     "tags": [
       "基础",
       "感受"
@@ -1235,8 +1235,8 @@
     "korean": "행복해요",
     "meaning_zh": "幸福/开心",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 행복해요.",
-    "example_zh": "今天真的幸福/开心。",
+    "example_ko": "이렇게 같이 밥 먹으니까 행복해요.",
+    "example_zh": "能这样一起吃饭，我很幸福。",
     "tags": [
       "基础",
       "感受"
@@ -1248,8 +1248,8 @@
     "korean": "슬퍼요",
     "meaning_zh": "难过",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 슬퍼요.",
-    "example_zh": "今天真的难过。",
+    "example_ko": "벌써 헤어져야 한다니 슬퍼요.",
+    "example_zh": "这么快就要分别了，好难过。",
     "tags": [
       "基础",
       "感受"
@@ -1261,8 +1261,8 @@
     "korean": "피곤해요",
     "meaning_zh": "累",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 피곤해요.",
-    "example_zh": "今天真的累。",
+    "example_ko": "오래 걸어서 조금 피곤해요.",
+    "example_zh": "走了很久，有点累。",
     "tags": [
       "基础",
       "日常"
@@ -1274,8 +1274,8 @@
     "korean": "바빠요",
     "meaning_zh": "忙",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 바빠요.",
-    "example_zh": "今天真的忙。",
+    "example_ko": "이번 주는 시험 때문에 바빠요.",
+    "example_zh": "这周因为考试很忙。",
     "tags": [
       "基础",
       "日常"
@@ -1287,8 +1287,8 @@
     "korean": "아파요",
     "meaning_zh": "疼/不舒服",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 아파요.",
-    "example_zh": "今天真的疼/不舒服。",
+    "example_ko": "목이 아파요. 따뜻한 물 있어요?",
+    "example_zh": "我嗓子疼，有温水吗？",
     "tags": [
       "基础",
       "日常"
@@ -1300,8 +1300,8 @@
     "korean": "추워요",
     "meaning_zh": "冷",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 추워요.",
-    "example_zh": "今天真的冷。",
+    "example_ko": "밖은 생각보다 추워요. 겉옷 챙겨요.",
+    "example_zh": "外面比想象中冷，带件外套吧。",
     "tags": [
       "基础",
       "天气"
@@ -1313,8 +1313,8 @@
     "korean": "더워요",
     "meaning_zh": "热",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 더워요.",
-    "example_zh": "今天真的热。",
+    "example_ko": "사람이 많아서 안이 좀 더워요.",
+    "example_zh": "人很多，里面有点热。",
     "tags": [
       "基础",
       "天气"
@@ -1326,8 +1326,8 @@
     "korean": "커요",
     "meaning_zh": "大",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 커요.",
-    "example_zh": "今天真的大。",
+    "example_ko": "이 신발은 저한테 조금 커요.",
+    "example_zh": "这双鞋对我来说有点大。",
     "tags": [
       "基础",
       "描述"
@@ -1339,8 +1339,8 @@
     "korean": "작아요",
     "meaning_zh": "小",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 작아요.",
-    "example_zh": "今天真的小。",
+    "example_ko": "가방이 작아요. 앨범이 안 들어가요.",
+    "example_zh": "包太小，专辑放不进去。",
     "tags": [
       "基础",
       "描述"
@@ -1352,8 +1352,8 @@
     "korean": "많아요",
     "meaning_zh": "多",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 많아요.",
-    "example_zh": "今天真的多。",
+    "example_ko": "주말에는 여기에 사람이 많아요.",
+    "example_zh": "周末这里人很多。",
     "tags": [
       "基础",
       "描述"
@@ -1365,8 +1365,8 @@
     "korean": "적어요",
     "meaning_zh": "少",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 적어요.",
-    "example_zh": "今天真的少。",
+    "example_ko": "생각보다 양이 적어요. 하나 더 시킬까요?",
+    "example_zh": "分量比想象中少，要再点一份吗？",
     "tags": [
       "基础",
       "描述"
@@ -1378,8 +1378,8 @@
     "korean": "빨라요",
     "meaning_zh": "快",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 빨라요.",
-    "example_zh": "今天真的快。",
+    "example_ko": "여기서는 택시보다 지하철이 빨라요.",
+    "example_zh": "在这里坐地铁比打车快。",
     "tags": [
       "基础",
       "描述"
@@ -1391,8 +1391,8 @@
     "korean": "느려요",
     "meaning_zh": "慢",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 느려요.",
-    "example_zh": "今天真的慢。",
+    "example_ko": "인터넷이 느려요. 사진이 안 떠요.",
+    "example_zh": "网络很慢，照片加载不出来。",
     "tags": [
       "基础",
       "描述"
@@ -1404,8 +1404,8 @@
     "korean": "새로워요",
     "meaning_zh": "新",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 새로워요.",
-    "example_zh": "今天真的新。",
+    "example_ko": "편곡이 달라서 익숙한 노래도 새로워요.",
+    "example_zh": "编曲变了，熟悉的歌也有新鲜感。",
     "tags": [
       "基础",
       "描述"
@@ -1417,8 +1417,8 @@
     "korean": "오래됐어요",
     "meaning_zh": "旧/很久了",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 오래됐어요.",
-    "example_zh": "今天真的旧/很久了。",
+    "example_ko": "이 카메라는 산 지 꽤 오래됐어요.",
+    "example_zh": "这台相机买来挺久了。",
     "tags": [
       "基础",
       "描述"
@@ -1430,8 +1430,8 @@
     "korean": "정말",
     "meaning_zh": "真的/非常",
     "part_of_speech": "副词",
-    "example_ko": "오늘 정말 연습해요.",
-    "example_zh": "今天真的/非常练习。",
+    "example_ko": "정말 혼자 다 준비한 거예요?",
+    "example_zh": "真的是你一个人准备的吗？",
     "tags": [
       "基础",
       "对话"
@@ -1443,8 +1443,8 @@
     "korean": "너무",
     "meaning_zh": "太/非常",
     "part_of_speech": "副词",
-    "example_ko": "오늘 너무 연습해요.",
-    "example_zh": "今天太/非常练习。",
+    "example_ko": "너무 무리하지 말고 쉬어 가요.",
+    "example_zh": "别太勉强，歇一歇再继续。",
     "tags": [
       "基础",
       "对话"
@@ -1456,8 +1456,8 @@
     "korean": "아주",
     "meaning_zh": "很/非常",
     "part_of_speech": "副词",
-    "example_ko": "오늘 아주 연습해요.",
-    "example_zh": "今天很/非常练习。",
+    "example_ko": "설명을 아주 쉽게 해 주셨어요.",
+    "example_zh": "对方把说明讲得非常易懂。",
     "tags": [
       "基础",
       "对话"
@@ -1469,8 +1469,8 @@
     "korean": "조금",
     "meaning_zh": "一点",
     "part_of_speech": "副词",
-    "example_ko": "오늘 조금 연습해요.",
-    "example_zh": "今天一点练习。",
+    "example_ko": "소리를 조금만 줄여 주세요.",
+    "example_zh": "请把音量调小一点。",
     "tags": [
       "基础",
       "对话"
@@ -1482,8 +1482,8 @@
     "korean": "같이",
     "meaning_zh": "一起",
     "part_of_speech": "副词",
-    "example_ko": "오늘 같이 연습해요.",
-    "example_zh": "今天一起练习。",
+    "example_ko": "혼자 가기 아쉬운데 같이 갈래요?",
+    "example_zh": "一个人去有点可惜，要一起去吗？",
     "tags": [
       "基础",
       "对话"
@@ -1495,8 +1495,8 @@
     "korean": "다시",
     "meaning_zh": "再次",
     "part_of_speech": "副词",
-    "example_ko": "오늘 다시 연습해요.",
-    "example_zh": "今天再次练习。",
+    "example_ko": "잘 못 들었어요. 다시 말해 주세요.",
+    "example_zh": "我没听清，请再说一次。",
     "tags": [
       "基础",
       "对话"
@@ -1508,8 +1508,8 @@
     "korean": "항상",
     "meaning_zh": "总是",
     "part_of_speech": "副词",
-    "example_ko": "오늘 항상 연습해요.",
-    "example_zh": "今天总是练习。",
+    "example_ko": "항상 같은 자리에서 기다리고 있네요.",
+    "example_zh": "你总是在同一个地方等着呢。",
     "tags": [
       "基础",
       "对话"
@@ -1521,8 +1521,8 @@
     "korean": "아직",
     "meaning_zh": "还/尚未",
     "part_of_speech": "副词",
-    "example_ko": "오늘 아직 연습해요.",
-    "example_zh": "今天还/尚未练习。",
+    "example_ko": "아직 안 먹었어요. 같이 먹을까요?",
+    "example_zh": "我还没吃，要一起吃吗？",
     "tags": [
       "基础",
       "对话"
@@ -1534,8 +1534,8 @@
     "korean": "이미",
     "meaning_zh": "已经",
     "part_of_speech": "副词",
-    "example_ko": "오늘 이미 연습해요.",
-    "example_zh": "今天已经练习。",
+    "example_ko": "티켓은 이미 예매했어요.",
+    "example_zh": "票已经订好了。",
     "tags": [
       "基础",
       "对话"
@@ -1586,8 +1586,8 @@
     "korean": "또",
     "meaning_zh": "又/还",
     "part_of_speech": "副词",
-    "example_ko": "오늘 또 연습해요.",
-    "example_zh": "今天又/还练习。",
+    "example_ko": "이 노래 또 듣고 싶어요.",
+    "example_zh": "还想再听一次这首歌。",
     "tags": [
       "基础",
       "对话"
@@ -1599,8 +1599,8 @@
     "korean": "여기",
     "meaning_zh": "这里",
     "part_of_speech": "名词",
-    "example_ko": "오늘 여기에 대해 이야기해요.",
-    "example_zh": "今天聊这里。",
+    "example_ko": "여기 앉아도 돼요?",
+    "example_zh": "我可以坐这里吗？",
     "tags": [
       "基础",
       "地点"
@@ -1612,8 +1612,8 @@
     "korean": "거기",
     "meaning_zh": "那里",
     "part_of_speech": "名词",
-    "example_ko": "오늘 거기에 대해 이야기해요.",
-    "example_zh": "今天聊那里。",
+    "example_ko": "거기 도착하면 전화해 주세요.",
+    "example_zh": "到了那里请给我打电话。",
     "tags": [
       "基础",
       "地点"
@@ -1625,8 +1625,8 @@
     "korean": "왼쪽",
     "meaning_zh": "左边",
     "part_of_speech": "名词",
-    "example_ko": "오늘 왼쪽에 대해 이야기해요.",
-    "example_zh": "今天聊左边。",
+    "example_ko": "왼쪽 문으로 들어가세요.",
+    "example_zh": "请从左边的门进去。",
     "tags": [
       "基础",
       "出行"
@@ -1638,8 +1638,8 @@
     "korean": "오른쪽",
     "meaning_zh": "右边",
     "part_of_speech": "名词",
-    "example_ko": "오늘 오른쪽에 대해 이야기해요.",
-    "example_zh": "今天聊右边。",
+    "example_ko": "오른쪽으로 가면 편의점이 있어요.",
+    "example_zh": "往右走有便利店。",
     "tags": [
       "基础",
       "出行"
@@ -1651,8 +1651,8 @@
     "korean": "앞",
     "meaning_zh": "前面",
     "part_of_speech": "名词",
-    "example_ko": "오늘 앞에 대해 이야기해요.",
-    "example_zh": "今天聊前面。",
+    "example_ko": "편의점 앞에서 기다릴게요.",
+    "example_zh": "我在便利店前面等你。",
     "tags": [
       "基础",
       "地点"
@@ -1664,8 +1664,8 @@
     "korean": "뒤",
     "meaning_zh": "后面",
     "part_of_speech": "名词",
-    "example_ko": "오늘 뒤에 대해 이야기해요.",
-    "example_zh": "今天聊后面。",
+    "example_ko": "제 뒤에 줄 서시면 돼요.",
+    "example_zh": "排在我后面就可以。",
     "tags": [
       "基础",
       "地点"
@@ -1677,8 +1677,8 @@
     "korean": "위",
     "meaning_zh": "上面",
     "part_of_speech": "名词",
-    "example_ko": "오늘 위에 대해 이야기해요.",
-    "example_zh": "今天聊上面。",
+    "example_ko": "티켓은 책상 위에 있어요.",
+    "example_zh": "票在桌子上。",
     "tags": [
       "基础",
       "地点"
@@ -1690,8 +1690,8 @@
     "korean": "아래",
     "meaning_zh": "下面",
     "part_of_speech": "名词",
-    "example_ko": "오늘 아래에 대해 이야기해요.",
-    "example_zh": "今天聊下面。",
+    "example_ko": "의자 아래에 가방을 놓았어요.",
+    "example_zh": "我把包放在椅子下面了。",
     "tags": [
       "基础",
       "地点"
@@ -1768,8 +1768,8 @@
     "korean": "얼마",
     "meaning_zh": "多少/多少钱",
     "part_of_speech": "疑问词",
-    "example_ko": "오늘 얼마에 대해 이야기해요.",
-    "example_zh": "今天聊多少/多少钱。",
+    "example_ko": "이거 두 개에 얼마예요?",
+    "example_zh": "这个两个多少钱？",
     "tags": [
       "基础",
       "点单"
@@ -1781,8 +1781,8 @@
     "korean": "돈",
     "meaning_zh": "钱",
     "part_of_speech": "名词",
-    "example_ko": "오늘 돈에 대해 이야기해요.",
-    "example_zh": "今天聊钱。",
+    "example_ko": "여행 갈 돈을 조금씩 모으고 있어요.",
+    "example_zh": "我正在一点点攒旅行的钱。",
     "tags": [
       "基础",
       "点单"
@@ -1794,8 +1794,8 @@
     "korean": "카드",
     "meaning_zh": "卡",
     "part_of_speech": "名词",
-    "example_ko": "오늘 카드에 대해 이야기해요.",
-    "example_zh": "今天聊卡。",
+    "example_ko": "카드로 결제해도 돼요?",
+    "example_zh": "可以刷卡付款吗？",
     "tags": [
       "基础",
       "点单"
@@ -1807,8 +1807,8 @@
     "korean": "표",
     "meaning_zh": "票",
     "part_of_speech": "名词",
-    "example_ko": "오늘 표에 대해 이야기해요.",
-    "example_zh": "今天聊票。",
+    "example_ko": "표를 잃어버렸는데 다시 받을 수 있어요?",
+    "example_zh": "我把票弄丢了，可以补领吗？",
     "tags": [
       "基础",
       "线下"
@@ -1820,8 +1820,8 @@
     "korean": "줄",
     "meaning_zh": "队伍",
     "part_of_speech": "名词",
-    "example_ko": "오늘 줄에 대해 이야기해요.",
-    "example_zh": "今天聊队伍。",
+    "example_ko": "이 줄이 입장하는 줄 맞아요?",
+    "example_zh": "这条队是入场的队吗？",
     "tags": [
       "基础",
       "线下"
@@ -1833,8 +1833,8 @@
     "korean": "번호",
     "meaning_zh": "号码",
     "part_of_speech": "名词",
-    "example_ko": "오늘 번호에 대해 이야기해요.",
-    "example_zh": "今天聊号码。",
+    "example_ko": "제 번호가 아직 안 불렸어요.",
+    "example_zh": "还没有叫到我的号码。",
     "tags": [
       "基础",
       "线下"
@@ -1846,8 +1846,8 @@
     "korean": "자리",
     "meaning_zh": "位置/座位",
     "part_of_speech": "名词",
-    "example_ko": "오늘 자리에 대해 이야기해요.",
-    "example_zh": "今天聊位置/座位。",
+    "example_ko": "여기 누구 자리예요?",
+    "example_zh": "这里是谁的座位？",
     "tags": [
       "基础",
       "线下"
@@ -1859,8 +1859,8 @@
     "korean": "입구",
     "meaning_zh": "入口",
     "part_of_speech": "名词",
-    "example_ko": "오늘 입구에 대해 이야기해요.",
-    "example_zh": "今天聊入口。",
+    "example_ko": "입구에서 티켓을 보여 주세요.",
+    "example_zh": "请在入口出示票。",
     "tags": [
       "基础",
       "线下"
@@ -1872,8 +1872,8 @@
     "korean": "출구",
     "meaning_zh": "出口",
     "part_of_speech": "名词",
-    "example_ko": "오늘 출구에 대해 이야기해요.",
-    "example_zh": "今天聊出口。",
+    "example_ko": "출구가 여러 개라서 헷갈려요.",
+    "example_zh": "出口有好几个，我有点分不清。",
     "tags": [
       "基础",
       "出行"
@@ -1885,8 +1885,8 @@
     "korean": "왼손",
     "meaning_zh": "左手",
     "part_of_speech": "名词",
-    "example_ko": "오늘 왼손에 대해 이야기해요.",
-    "example_zh": "今天聊左手。",
+    "example_ko": "왼손에 들고 있는 게 뭐예요?",
+    "example_zh": "你左手拿的是什么？",
     "tags": [
       "基础",
       "身体"
@@ -1898,8 +1898,8 @@
     "korean": "오른손",
     "meaning_zh": "右手",
     "part_of_speech": "名词",
-    "example_ko": "오늘 오른손에 대해 이야기해요.",
-    "example_zh": "今天聊右手。",
+    "example_ko": "오른손으로 작은 하트를 만들었어요.",
+    "example_zh": "我用右手比了个小心心。",
     "tags": [
       "基础",
       "身体"
@@ -1911,8 +1911,8 @@
     "korean": "얼굴",
     "meaning_zh": "脸",
     "part_of_speech": "名词",
-    "example_ko": "오늘 얼굴에 대해 이야기해요.",
-    "example_zh": "今天聊脸。",
+    "example_ko": "가까이서 보니까 얼굴이 더 잘 보여요.",
+    "example_zh": "凑近看，脸就更清楚了。",
     "tags": [
       "基础",
       "身体"
@@ -1924,8 +1924,8 @@
     "korean": "눈",
     "meaning_zh": "眼睛",
     "part_of_speech": "名词",
-    "example_ko": "오늘 눈에 대해 이야기해요.",
-    "example_zh": "今天聊眼睛。",
+    "example_ko": "눈이 마주쳐서 깜짝 놀랐어요.",
+    "example_zh": "突然对上眼神，吓了我一跳。",
     "tags": [
       "基础",
       "身体"
@@ -1937,8 +1937,8 @@
     "korean": "손",
     "meaning_zh": "手",
     "part_of_speech": "名词",
-    "example_ko": "오늘 손에 대해 이야기해요.",
-    "example_zh": "今天聊手。",
+    "example_ko": "손이 차가워요. 장갑 빌려줄까요?",
+    "example_zh": "你的手好凉，要借你手套吗？",
     "tags": [
       "基础",
       "身体"
@@ -1950,8 +1950,8 @@
     "korean": "마음",
     "meaning_zh": "心/心意",
     "part_of_speech": "名词",
-    "example_ko": "오늘 마음에 대해 이야기해요.",
-    "example_zh": "今天聊心/心意。",
+    "example_ko": "마음에 드는 색으로 골라요.",
+    "example_zh": "选你喜欢的颜色吧。",
     "tags": [
       "基础",
       "感受"
@@ -1963,8 +1963,8 @@
     "korean": "기분",
     "meaning_zh": "心情",
     "part_of_speech": "名词",
-    "example_ko": "오늘 기분에 대해 이야기해요.",
-    "example_zh": "今天聊心情。",
+    "example_ko": "산책하고 나니 기분이 좋아졌어요.",
+    "example_zh": "散完步心情变好了。",
     "tags": [
       "基础",
       "感受"
@@ -1976,8 +1976,8 @@
     "korean": "생각",
     "meaning_zh": "想法",
     "part_of_speech": "名词",
-    "example_ko": "오늘 생각에 대해 이야기해요.",
-    "example_zh": "今天聊想法。",
+    "example_ko": "저도 같은 생각이에요.",
+    "example_zh": "我也是这么想的。",
     "tags": [
       "基础",
       "对话"
@@ -1989,8 +1989,8 @@
     "korean": "꿈",
     "meaning_zh": "梦想",
     "part_of_speech": "名词",
-    "example_ko": "오늘 꿈에 대해 이야기해요.",
-    "example_zh": "今天聊梦想。",
+    "example_ko": "언젠가 한국에서 살아 보는 게 꿈이에요.",
+    "example_zh": "我的梦想是有一天能在韩国生活。",
     "tags": [
       "基础",
       "感受"
@@ -2002,8 +2002,8 @@
     "korean": "추억",
     "meaning_zh": "回忆",
     "part_of_speech": "名词",
-    "example_ko": "오늘 추억에 대해 이야기해요.",
-    "example_zh": "今天聊回忆。",
+    "example_ko": "이 사진을 보니 그때 추억이 떠올라요.",
+    "example_zh": "看这张照片就想起了当时的回忆。",
     "tags": [
       "追星",
       "感受"
@@ -2015,8 +2015,8 @@
     "korean": "선물",
     "meaning_zh": "礼物",
     "part_of_speech": "名词",
-    "example_ko": "오늘 선물에 대해 이야기해요.",
-    "example_zh": "今天聊礼物。",
+    "example_ko": "작은 선물을 준비했어요. 받아 주세요.",
+    "example_zh": "我准备了一个小礼物，请收下。",
     "tags": [
       "基础",
       "线下"
@@ -2028,8 +2028,8 @@
     "korean": "편지",
     "meaning_zh": "信",
     "part_of_speech": "名词",
-    "example_ko": "오늘 편지에 대해 이야기해요.",
-    "example_zh": "今天聊信。",
+    "example_ko": "편지를 쓰다가 지우기를 반복했어요.",
+    "example_zh": "写信时我写了又擦，反反复复。",
     "tags": [
       "基础",
       "粉丝"
@@ -2041,8 +2041,8 @@
     "korean": "메시지",
     "meaning_zh": "消息",
     "part_of_speech": "名词",
-    "example_ko": "오늘 메시지에 대해 이야기해요.",
-    "example_zh": "今天聊消息。",
+    "example_ko": "메시지를 이제 봤어요. 답장이 늦었죠?",
+    "example_zh": "我现在才看到消息，回复晚了吧？",
     "tags": [
       "基础",
       "泡泡"
@@ -2067,8 +2067,8 @@
     "korean": "라이브",
     "meaning_zh": "直播",
     "part_of_speech": "名词",
-    "example_ko": "오늘 라이브에 대해 이야기해요.",
-    "example_zh": "今天聊直播。",
+    "example_ko": "라이브가 끝나면 바로 잘 거예요.",
+    "example_zh": "直播结束后我就马上睡觉。",
     "tags": [
       "追星",
       "泡泡"
@@ -2080,8 +2080,8 @@
     "korean": "연습",
     "meaning_zh": "练习",
     "part_of_speech": "名词",
-    "example_ko": "오늘 연습에 대해 이야기해요.",
-    "example_zh": "今天聊练习。",
+    "example_ko": "연습 끝나고 뭐 먹으러 갈까요?",
+    "example_zh": "练习结束后去吃点什么呢？",
     "tags": [
       "追星",
       "日常"
@@ -2093,8 +2093,8 @@
     "korean": "녹음",
     "meaning_zh": "录音",
     "part_of_speech": "名词",
-    "example_ko": "오늘 녹음에 대해 이야기해요.",
-    "example_zh": "今天聊录音。",
+    "example_ko": "녹음할 때는 조용히 해 주세요.",
+    "example_zh": "录音时请保持安静。",
     "tags": [
       "追星",
       "音乐"
@@ -2106,8 +2106,8 @@
     "korean": "여행",
     "meaning_zh": "旅行",
     "part_of_speech": "名词",
-    "example_ko": "오늘 여행에 대해 이야기해요.",
-    "example_zh": "今天聊旅行。",
+    "example_ko": "이번 여행은 계획 없이 가 보려고요.",
+    "example_zh": "这次旅行我打算不做计划，随意逛逛。",
     "tags": [
       "基础",
       "日常"
@@ -2119,8 +2119,8 @@
     "korean": "숙소",
     "meaning_zh": "住处",
     "part_of_speech": "名词",
-    "example_ko": "오늘 숙소에 대해 이야기해요.",
-    "example_zh": "今天聊住处。",
+    "example_ko": "숙소에 짐을 두고 나왔어요.",
+    "example_zh": "我把行李放在住处后出来了。",
     "tags": [
       "基础",
       "出行"
@@ -2132,8 +2132,8 @@
     "korean": "날씨",
     "meaning_zh": "天气",
     "part_of_speech": "名词",
-    "example_ko": "오늘 날씨에 대해 이야기해요.",
-    "example_zh": "今天聊天气。",
+    "example_ko": "날씨가 좋으면 걸어서 갈까요?",
+    "example_zh": "天气好的话，我们走过去吗？",
     "tags": [
       "基础",
       "天气"
@@ -2145,8 +2145,8 @@
     "korean": "비",
     "meaning_zh": "雨",
     "part_of_speech": "名词",
-    "example_ko": "오늘 비에 대해 이야기해요.",
-    "example_zh": "今天聊雨。",
+    "example_ko": "비가 갑자기 와서 우산을 샀어요.",
+    "example_zh": "突然下雨了，我买了把伞。",
     "tags": [
       "基础",
       "天气"
@@ -2158,8 +2158,8 @@
     "korean": "눈",
     "meaning_zh": "雪",
     "part_of_speech": "名词",
-    "example_ko": "오늘 눈에 대해 이야기해요.",
-    "example_zh": "今天聊雪。",
+    "example_ko": "밤새 눈이 내려서 길이 하얘요.",
+    "example_zh": "雪下了一整夜，路都白了。",
     "tags": [
       "基础",
       "天气"
@@ -2171,8 +2171,8 @@
     "korean": "봄",
     "meaning_zh": "春天",
     "part_of_speech": "名词",
-    "example_ko": "오늘 봄에 대해 이야기해요.",
-    "example_zh": "今天聊春天。",
+    "example_ko": "봄에는 여기서 벚꽃을 볼 수 있어요.",
+    "example_zh": "春天可以在这里看樱花。",
     "tags": [
       "基础",
       "时间"
@@ -2184,8 +2184,8 @@
     "korean": "여름",
     "meaning_zh": "夏天",
     "part_of_speech": "名词",
-    "example_ko": "오늘 여름에 대해 이야기해요.",
-    "example_zh": "今天聊夏天。",
+    "example_ko": "여름에는 시원한 냉면이 생각나요.",
+    "example_zh": "到了夏天就想吃清凉的冷面。",
     "tags": [
       "基础",
       "时间"
@@ -2197,8 +2197,8 @@
     "korean": "가을",
     "meaning_zh": "秋天",
     "part_of_speech": "名词",
-    "example_ko": "오늘 가을에 대해 이야기해요.",
-    "example_zh": "今天聊秋天。",
+    "example_ko": "가을에 다시 오면 단풍을 보고 싶어요.",
+    "example_zh": "秋天再来的话，我想看红叶。",
     "tags": [
       "基础",
       "时间"
@@ -2210,8 +2210,8 @@
     "korean": "겨울",
     "meaning_zh": "冬天",
     "part_of_speech": "名词",
-    "example_ko": "오늘 겨울에 대해 이야기해요.",
-    "example_zh": "今天聊冬天。",
+    "example_ko": "한국의 겨울은 처음이라 좀 걱정돼요.",
+    "example_zh": "第一次在韩国过冬，有点担心。",
     "tags": [
       "基础",
       "时间"
@@ -2223,8 +2223,8 @@
     "korean": "빨리",
     "meaning_zh": "快点",
     "part_of_speech": "副词",
-    "example_ko": "오늘 빨리 연습해요.",
-    "example_zh": "今天快点练习。",
+    "example_ko": "늦었어요. 조금만 빨리 걸어요.",
+    "example_zh": "我们迟了，走快一点吧。",
     "tags": [
       "基础",
       "对话"
@@ -2236,8 +2236,8 @@
     "korean": "천천히",
     "meaning_zh": "慢慢地",
     "part_of_speech": "副词",
-    "example_ko": "오늘 천천히 연습해요.",
-    "example_zh": "今天慢慢地练习。",
+    "example_ko": "괜찮아요. 천천히 생각해 보세요.",
+    "example_zh": "没关系，你慢慢想。",
     "tags": [
       "基础",
       "对话"
@@ -2249,8 +2249,8 @@
     "korean": "잠깐",
     "meaning_zh": "一下/稍等",
     "part_of_speech": "副词",
-    "example_ko": "오늘 잠깐 연습해요.",
-    "example_zh": "今天一下/稍等练习。",
+    "example_ko": "잠깐만요, 신발 끈이 풀렸어요.",
+    "example_zh": "等一下，我鞋带开了。",
     "tags": [
       "基础",
       "对话"
@@ -2405,8 +2405,8 @@
     "korean": "생일",
     "meaning_zh": "生日",
     "part_of_speech": "名词",
-    "example_ko": "오늘 생일에 대해 이야기해요.",
-    "example_zh": "今天聊生日。",
+    "example_ko": "생일에 받고 싶은 선물이 있어요?",
+    "example_zh": "生日有什么想收到的礼物吗？",
     "tags": [
       "基础",
       "祝福"
@@ -2483,8 +2483,8 @@
     "korean": "이해해요",
     "meaning_zh": "理解",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 이해해요.",
-    "example_zh": "今天也理解。",
+    "example_ko": "무슨 말인지 이해해요. 저도 그랬거든요.",
+    "example_zh": "我明白你的意思，我也有过那种经历。",
     "tags": [
       "基础",
       "对话"
@@ -2509,8 +2509,8 @@
     "korean": "한국어",
     "meaning_zh": "韩语",
     "part_of_speech": "名词",
-    "example_ko": "오늘 한국어에 대해 이야기해요.",
-    "example_zh": "今天聊韩语。",
+    "example_ko": "한국어로 주문해 보고 싶어요.",
+    "example_zh": "我想试着用韩语点餐。",
     "tags": [
       "基础",
       "学习"
@@ -2522,8 +2522,8 @@
     "korean": "중국어",
     "meaning_zh": "中文",
     "part_of_speech": "名词",
-    "example_ko": "오늘 중국어에 대해 이야기해요.",
-    "example_zh": "今天聊中文。",
+    "example_ko": "중국어로 설명해 드릴까요?",
+    "example_zh": "要我用中文给你解释吗？",
     "tags": [
       "基础",
       "学习"
@@ -2535,8 +2535,8 @@
     "korean": "영어",
     "meaning_zh": "英语",
     "part_of_speech": "名词",
-    "example_ko": "오늘 영어에 대해 이야기해요.",
-    "example_zh": "今天聊英语。",
+    "example_ko": "영어 메뉴도 있어요?",
+    "example_zh": "也有英文菜单吗？",
     "tags": [
       "基础",
       "学习"
@@ -2548,8 +2548,8 @@
     "korean": "공부",
     "meaning_zh": "学习",
     "part_of_speech": "名词",
-    "example_ko": "오늘 공부에 대해 이야기해요.",
-    "example_zh": "今天聊学习。",
+    "example_ko": "공부하다가 졸려서 잠깐 쉬었어요.",
+    "example_zh": "学习时犯困了，我休息了一下。",
     "tags": [
       "基础",
       "学习"
@@ -2561,8 +2561,8 @@
     "korean": "배워요",
     "meaning_zh": "学习/学会",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 배워요.",
-    "example_zh": "今天也学习/学会。",
+    "example_ko": "요즘 친구한테 한국어를 배워요.",
+    "example_zh": "我最近在跟朋友学韩语。",
     "tags": [
       "基础",
       "学习"
@@ -2574,8 +2574,8 @@
     "korean": "연습해요",
     "meaning_zh": "练习",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 연습해요.",
-    "example_zh": "今天也练习。",
+    "example_ko": "긴장하지 않으려고 거울 앞에서 연습해요.",
+    "example_zh": "为了不紧张，我对着镜子练习。",
     "tags": [
       "基础",
       "学习"
@@ -2587,8 +2587,8 @@
     "korean": "읽어요",
     "meaning_zh": "读",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 읽어요.",
-    "example_zh": "今天也读。",
+    "example_ko": "자기 전에 책을 조금 읽어요.",
+    "example_zh": "我睡前会读一会儿书。",
     "tags": [
       "基础",
       "学习"
@@ -2600,8 +2600,8 @@
     "korean": "써요",
     "meaning_zh": "写",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 써요.",
-    "example_zh": "今天也写。",
+    "example_ko": "모르는 단어는 공책에 써요.",
+    "example_zh": "遇到不认识的单词，我就记在本子上。",
     "tags": [
       "基础",
       "学习"
@@ -2613,8 +2613,8 @@
     "korean": "질문",
     "meaning_zh": "问题",
     "part_of_speech": "名词",
-    "example_ko": "오늘 질문에 대해 이야기해요.",
-    "example_zh": "今天聊问题。",
+    "example_ko": "질문 하나만 해도 될까요?",
+    "example_zh": "可以问一个问题吗？",
     "tags": [
       "基础",
       "学习"
@@ -2626,8 +2626,8 @@
     "korean": "답",
     "meaning_zh": "回答",
     "part_of_speech": "名词",
-    "example_ko": "오늘 답에 대해 이야기해요.",
-    "example_zh": "今天聊回答。",
+    "example_ko": "아직 답을 못 찾았어요.",
+    "example_zh": "我还没找到答案。",
     "tags": [
       "基础",
       "学习"
@@ -2639,8 +2639,8 @@
     "korean": "발음",
     "meaning_zh": "发音",
     "part_of_speech": "名词",
-    "example_ko": "오늘 발음에 대해 이야기해요.",
-    "example_zh": "今天聊发音。",
+    "example_ko": "이 단어 발음을 한번 들려주세요.",
+    "example_zh": "请读一下这个单词的发音。",
     "tags": [
       "基础",
       "学习"
@@ -2652,8 +2652,8 @@
     "korean": "뜻",
     "meaning_zh": "意思",
     "part_of_speech": "名词",
-    "example_ko": "오늘 뜻에 대해 이야기해요.",
-    "example_zh": "今天聊意思。",
+    "example_ko": "이 표현은 무슨 뜻이에요?",
+    "example_zh": "这个表达是什么意思？",
     "tags": [
       "基础",
       "学习"
@@ -2665,8 +2665,8 @@
     "korean": "단어",
     "meaning_zh": "单词",
     "part_of_speech": "名词",
-    "example_ko": "오늘 단어에 대해 이야기해요.",
-    "example_zh": "今天聊单词。",
+    "example_ko": "방금 배운 단어를 벌써 잊어버렸어요.",
+    "example_zh": "刚学的单词已经忘了。",
     "tags": [
       "基础",
       "学习"
@@ -2678,8 +2678,8 @@
     "korean": "문장",
     "meaning_zh": "句子",
     "part_of_speech": "名词",
-    "example_ko": "오늘 문장에 대해 이야기해요.",
-    "example_zh": "今天聊句子。",
+    "example_ko": "이 문장은 어디서 끊어 읽어요?",
+    "example_zh": "这个句子在哪里断句？",
     "tags": [
       "基础",
       "学习"
@@ -2717,8 +2717,8 @@
     "korean": "음악 방송",
     "meaning_zh": "音乐节目",
     "part_of_speech": "名词",
-    "example_ko": "오늘 음악 방송에 대해 이야기해요.",
-    "example_zh": "今天聊音乐节目。",
+    "example_ko": "음악 방송을 보려고 일찍 일어났어요.",
+    "example_zh": "为了看音乐节目，我起了个大早。",
     "tags": [
       "追星",
       "打歌"
@@ -2743,8 +2743,8 @@
     "korean": "출근길",
     "meaning_zh": "上班路活动",
     "part_of_speech": "名词",
-    "example_ko": "오늘 출근길이 있어요.",
-    "example_zh": "今天有上班路活动。",
+    "example_ko": "출근길에 커피를 한 잔 샀어요.",
+    "example_zh": "上班路上我买了一杯咖啡。",
     "tags": [
       "追星",
       "线下活动"
@@ -2756,8 +2756,8 @@
     "korean": "퇴근길",
     "meaning_zh": "下班路活动",
     "part_of_speech": "名词",
-    "example_ko": "오늘 퇴근길이 있어요.",
-    "example_zh": "今天有下班路活动。",
+    "example_ko": "퇴근길에 좋아하는 노래를 들어요.",
+    "example_zh": "下班路上我听喜欢的歌。",
     "tags": [
       "追星",
       "线下活动"
@@ -2769,8 +2769,8 @@
     "korean": "공개방송",
     "meaning_zh": "公开放送",
     "part_of_speech": "名词",
-    "example_ko": "오늘 공개방송에 대해 이야기해요.",
-    "example_zh": "今天聊公开放送。",
+    "example_ko": "공개방송 신청은 어디서 해요?",
+    "example_zh": "公开放送在哪里报名？",
     "tags": [
       "追星",
       "打歌"
@@ -2782,8 +2782,8 @@
     "korean": "방청",
     "meaning_zh": "录制观众席",
     "part_of_speech": "名词",
-    "example_ko": "오늘 방청이 있어요.",
-    "example_zh": "今天有录制观众席。",
+    "example_ko": "방청 신청했는데 당첨됐어요!",
+    "example_zh": "我申请了节目观众名额，抽中了！",
     "tags": [
       "追星",
       "线下活动"
@@ -2795,8 +2795,8 @@
     "korean": "입장",
     "meaning_zh": "入场",
     "part_of_speech": "名词",
-    "example_ko": "오늘 입장이 있어요.",
-    "example_zh": "今天有入场。",
+    "example_ko": "입장 전에 가방 검사를 받아요.",
+    "example_zh": "入场前要接受包袋检查。",
     "tags": [
       "追星",
       "线下活动"
@@ -2808,8 +2808,8 @@
     "korean": "퇴장",
     "meaning_zh": "退场",
     "part_of_speech": "名词",
-    "example_ko": "오늘 퇴장이 있어요.",
-    "example_zh": "今天有退场。",
+    "example_ko": "공연이 끝나면 차례대로 퇴장해 주세요.",
+    "example_zh": "演出结束后请依次退场。",
     "tags": [
       "追星",
       "线下活动"
@@ -2834,8 +2834,8 @@
     "korean": "대기실",
     "meaning_zh": "等候室",
     "part_of_speech": "名词",
-    "example_ko": "오늘 대기실이 있어요.",
-    "example_zh": "今天有等候室。",
+    "example_ko": "대기실 앞에서는 조용히 해 주세요.",
+    "example_zh": "在等候室前请保持安静。",
     "tags": [
       "追星",
       "线下活动"
@@ -2873,8 +2873,8 @@
     "korean": "여권",
     "meaning_zh": "护照",
     "part_of_speech": "名词",
-    "example_ko": "오늘 여권에 대해 이야기해요.",
-    "example_zh": "今天聊护照。",
+    "example_ko": "여권은 원본을 가져가야 하나요?",
+    "example_zh": "护照需要带原件吗？",
     "tags": [
       "追星",
       "出行"
@@ -2886,8 +2886,8 @@
     "korean": "티켓",
     "meaning_zh": "票券",
     "part_of_speech": "名词",
-    "example_ko": "오늘 티켓이 있어요.",
-    "example_zh": "今天有票券。",
+    "example_ko": "티켓을 휴대폰으로 보여 줘도 돼요?",
+    "example_zh": "可以用手机出示票吗？",
     "tags": [
       "追星",
       "线下活动"
@@ -2899,8 +2899,8 @@
     "korean": "예매",
     "meaning_zh": "预售/订票",
     "part_of_speech": "名词",
-    "example_ko": "오늘 예매에 대해 이야기해요.",
-    "example_zh": "今天聊预售/订票。",
+    "example_ko": "예매가 시작되자마자 접속했어요.",
+    "example_zh": "一开票我就登录进去了。",
     "tags": [
       "追星",
       "购票"
@@ -2912,8 +2912,8 @@
     "korean": "취소표",
     "meaning_zh": "退票",
     "part_of_speech": "名词",
-    "example_ko": "오늘 취소표에 대해 이야기해요.",
-    "example_zh": "今天聊退票。",
+    "example_ko": "취소표가 나올까 봐 계속 확인 중이에요.",
+    "example_zh": "我一直在查看，看看会不会有退票放出。",
     "tags": [
       "追星",
       "购票"
@@ -2925,8 +2925,8 @@
     "korean": "현장 수령",
     "meaning_zh": "现场取票",
     "part_of_speech": "名词",
-    "example_ko": "오늘 현장 수령이 있어요.",
-    "example_zh": "今天有现场取票。",
+    "example_ko": "현장 수령은 몇 시부터 가능해요?",
+    "example_zh": "几点开始可以现场取票？",
     "tags": [
       "追星",
       "线下活动"
@@ -2938,8 +2938,8 @@
     "korean": "좌석",
     "meaning_zh": "座位",
     "part_of_speech": "名词",
-    "example_ko": "오늘 좌석이 있어요.",
-    "example_zh": "今天有座位。",
+    "example_ko": "제 좌석이 어디인지 알려 주세요.",
+    "example_zh": "请告诉我座位在哪里。",
     "tags": [
       "追星",
       "演唱会"
@@ -2951,8 +2951,8 @@
     "korean": "스탠딩",
     "meaning_zh": "站席",
     "part_of_speech": "名词",
-    "example_ko": "오늘 스탠딩이 있어요.",
-    "example_zh": "今天有站席。",
+    "example_ko": "스탠딩이라서 편한 신발을 신었어요.",
+    "example_zh": "因为是站席，我穿了双舒服的鞋。",
     "tags": [
       "追星",
       "演唱会"
@@ -2964,8 +2964,8 @@
     "korean": "지정석",
     "meaning_zh": "对号座位",
     "part_of_speech": "名词",
-    "example_ko": "오늘 지정석이 있어요.",
-    "example_zh": "今天有对号座位。",
+    "example_ko": "이번에는 지정석으로 예매했어요.",
+    "example_zh": "这次我订的是对号座位。",
     "tags": [
       "追星",
       "演唱会"
@@ -2977,8 +2977,8 @@
     "korean": "구역",
     "meaning_zh": "区域",
     "part_of_speech": "名词",
-    "example_ko": "오늘 구역이 있어요.",
-    "example_zh": "今天有区域。",
+    "example_ko": "저는 B 구역인데 어디로 가야 해요?",
+    "example_zh": "我在B区，该往哪里走？",
     "tags": [
       "追星",
       "演唱会"
@@ -2990,8 +2990,8 @@
     "korean": "번호표",
     "meaning_zh": "号码牌",
     "part_of_speech": "名词",
-    "example_ko": "오늘 번호표가 있어요.",
-    "example_zh": "今天有号码牌。",
+    "example_ko": "번호표를 받고 여기서 기다리세요.",
+    "example_zh": "拿到号码牌后请在这里等。",
     "tags": [
       "追星",
       "线下活动"
@@ -3003,8 +3003,8 @@
     "korean": "손목띠",
     "meaning_zh": "手环",
     "part_of_speech": "名词",
-    "example_ko": "오늘 손목띠가 있어요.",
-    "example_zh": "今天有手环。",
+    "example_ko": "손목띠는 공연이 끝날 때까지 빼지 마세요.",
+    "example_zh": "演出结束前请不要摘下手环。",
     "tags": [
       "追星",
       "线下活动"
@@ -3029,8 +3029,8 @@
     "korean": "슬로건",
     "meaning_zh": "手幅",
     "part_of_speech": "名词",
-    "example_ko": "오늘 슬로건이 있어요.",
-    "example_zh": "今天有手幅。",
+    "example_ko": "슬로건은 뒤에 있는 사람이 보이게 낮춰 주세요.",
+    "example_zh": "请把手幅放低一点，让后面的人也能看到。",
     "tags": [
       "追星",
       "应援"
@@ -3042,8 +3042,8 @@
     "korean": "배너",
     "meaning_zh": "横幅",
     "part_of_speech": "名词",
-    "example_ko": "오늘 배너가 있어요.",
-    "example_zh": "今天有横幅。",
+    "example_ko": "입구 옆 배너 앞에서 사진 찍을까요?",
+    "example_zh": "在入口旁的横幅前拍照吗？",
     "tags": [
       "追星",
       "应援"
@@ -3055,8 +3055,8 @@
     "korean": "피켓",
     "meaning_zh": "手举牌",
     "part_of_speech": "名词",
-    "example_ko": "오늘 피켓이 있어요.",
-    "example_zh": "今天有手举牌。",
+    "example_ko": "피켓에 뭐라고 썼어요?",
+    "example_zh": "你在手举牌上写了什么？",
     "tags": [
       "追星",
       "应援"
@@ -3068,8 +3068,8 @@
     "korean": "현수막",
     "meaning_zh": "横幅布条",
     "part_of_speech": "名词",
-    "example_ko": "오늘 현수막이 있어요.",
-    "example_zh": "今天有横幅布条。",
+    "example_ko": "멀리서도 현수막 글씨가 보여요.",
+    "example_zh": "从远处也能看到横幅上的字。",
     "tags": [
       "追星",
       "应援"
@@ -3081,8 +3081,8 @@
     "korean": "응원법",
     "meaning_zh": "应援法",
     "part_of_speech": "名词",
-    "example_ko": "오늘 응원법이 있어요.",
-    "example_zh": "今天有应援法。",
+    "example_ko": "응원법을 외우려고 영상을 여러 번 봤어요.",
+    "example_zh": "为了记住应援口号，我把视频看了好几遍。",
     "tags": [
       "追星",
       "应援"
@@ -3094,8 +3094,8 @@
     "korean": "떼창",
     "meaning_zh": "大合唱",
     "part_of_speech": "名词",
-    "example_ko": "오늘 떼창이 있어요.",
-    "example_zh": "今天有大合唱。",
+    "example_ko": "마지막 곡은 팬들 떼창이 정말 컸어요.",
+    "example_zh": "最后一首歌粉丝们的大合唱特别响亮。",
     "tags": [
       "追星",
       "演唱会"
@@ -3107,8 +3107,8 @@
     "korean": "앵콜",
     "meaning_zh": "安可",
     "part_of_speech": "名词",
-    "example_ko": "오늘 앵콜이 있어요.",
-    "example_zh": "今天有安可。",
+    "example_ko": "앵콜 때 어떤 노래를 부를까요?",
+    "example_zh": "安可时会唱什么歌呢？",
     "tags": [
       "追星",
       "演唱会"
@@ -3120,8 +3120,8 @@
     "korean": "멘트",
     "meaning_zh": "讲话/感言",
     "part_of_speech": "名词",
-    "example_ko": "오늘 멘트가 있어요.",
-    "example_zh": "今天有讲话/感言。",
+    "example_ko": "마지막 멘트를 듣다가 눈물이 났어요.",
+    "example_zh": "听最后的感言时，我掉眼泪了。",
     "tags": [
       "追星",
       "演唱会"
@@ -3133,8 +3133,8 @@
     "korean": "토크",
     "meaning_zh": "聊天环节",
     "part_of_speech": "名词",
-    "example_ko": "오늘 토크가 있어요.",
-    "example_zh": "今天有聊天环节。",
+    "example_ko": "토크 시간이 생각보다 길어서 좋았어요.",
+    "example_zh": "聊天环节比想象中长，我很开心。",
     "tags": [
       "追星",
       "演唱会"
@@ -3146,8 +3146,8 @@
     "korean": "셋리스트",
     "meaning_zh": "歌单/曲目表",
     "part_of_speech": "名词",
-    "example_ko": "오늘 셋리스트가 있어요.",
-    "example_zh": "今天有歌单/曲目表。",
+    "example_ko": "셋리스트는 아직 보고 싶지 않아요.",
+    "example_zh": "我还不想提前看歌单。",
     "tags": [
       "追星",
       "演唱会"
@@ -3159,8 +3159,8 @@
     "korean": "오프닝",
     "meaning_zh": "开场",
     "part_of_speech": "名词",
-    "example_ko": "오늘 오프닝이 있어요.",
-    "example_zh": "今天有开场。",
+    "example_ko": "오프닝부터 너무 신나서 소리를 질렀어요.",
+    "example_zh": "从开场就兴奋得喊了出来。",
     "tags": [
       "追星",
       "演唱会"
@@ -3172,8 +3172,8 @@
     "korean": "엔딩",
     "meaning_zh": "结尾",
     "part_of_speech": "名词",
-    "example_ko": "오늘 엔딩이 있어요.",
-    "example_zh": "今天有结尾。",
+    "example_ko": "엔딩 장면이 계속 생각나요.",
+    "example_zh": "我总是想起结尾那一幕。",
     "tags": [
       "追星",
       "演唱会"
@@ -3185,8 +3185,8 @@
     "korean": "무대인사",
     "meaning_zh": "舞台问候",
     "part_of_speech": "名词",
-    "example_ko": "오늘 무대인사가 있어요.",
-    "example_zh": "今天有舞台问候。",
+    "example_ko": "영화 끝나고 무대인사가 있대요.",
+    "example_zh": "听说电影结束后有舞台见面会。",
     "tags": [
       "追星",
       "线下活动"
@@ -3198,8 +3198,8 @@
     "korean": "하이터치",
     "meaning_zh": "击掌活动",
     "part_of_speech": "名词",
-    "example_ko": "오늘 하이터치가 있어요.",
-    "example_zh": "今天有击掌活动。",
+    "example_ko": "하이터치는 너무 짧아서 인사도 못 했어요.",
+    "example_zh": "击掌的时间太短，连招呼都没来得及打。",
     "tags": [
       "追星",
       "线下活动"
@@ -3211,8 +3211,8 @@
     "korean": "포토타임",
     "meaning_zh": "拍照时间",
     "part_of_speech": "名词",
-    "example_ko": "오늘 포토타임이 있어요.",
-    "example_zh": "今天有拍照时间。",
+    "example_ko": "포토타임에는 플래시 없이 찍어 주세요.",
+    "example_zh": "拍照环节请不要开闪光灯。",
     "tags": [
       "追星",
       "线下活动"
@@ -3224,8 +3224,8 @@
     "korean": "단체 사진",
     "meaning_zh": "合照",
     "part_of_speech": "名词",
-    "example_ko": "오늘 단체 사진이 있어요.",
-    "example_zh": "今天有合照。",
+    "example_ko": "단체 사진 찍을 때 조금만 붙어 주세요.",
+    "example_zh": "拍合照时请再靠近一点。",
     "tags": [
       "追星",
       "线下活动"
@@ -3237,8 +3237,8 @@
     "korean": "개인 사진",
     "meaning_zh": "单人照",
     "part_of_speech": "名词",
-    "example_ko": "오늘 개인 사진이 있어요.",
-    "example_zh": "今天有单人照。",
+    "example_ko": "개인 사진도 한 장씩 찍어 줄게요.",
+    "example_zh": "我也给你们各拍一张单人照。",
     "tags": [
       "追星",
       "线下活动"
@@ -3250,8 +3250,8 @@
     "korean": "셀카",
     "meaning_zh": "自拍",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 셀카를 확인해 주세요.",
-    "example_zh": "请在手机上确认自拍。",
+    "example_ko": "셀카가 흔들렸어요. 한 번만 더 찍어요.",
+    "example_zh": "自拍拍糊了，再拍一张吧。",
     "tags": [
       "追星",
       "数字生活"
@@ -3263,8 +3263,8 @@
     "korean": "영상통화",
     "meaning_zh": "视频通话",
     "part_of_speech": "名词",
-    "example_ko": "오늘 영상통화에 대해 이야기해요.",
-    "example_zh": "今天聊视频通话。",
+    "example_ko": "영상통화 전에 카메라 각도를 맞췄어요.",
+    "example_zh": "视频通话前，我调整了摄像头角度。",
     "tags": [
       "追星",
       "线上互动"
@@ -3276,8 +3276,8 @@
     "korean": "통화",
     "meaning_zh": "通话",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 통화를 확인해 주세요.",
-    "example_zh": "请在手机上确认通话。",
+    "example_ko": "지금 통화 중이라 잠시 후에 연락할게요.",
+    "example_zh": "我正在通话，等一下联系你。",
     "tags": [
       "基础",
       "数字生活"
@@ -3289,8 +3289,8 @@
     "korean": "마이크",
     "meaning_zh": "麦克风",
     "part_of_speech": "名词",
-    "example_ko": "오늘 마이크가 있어요.",
-    "example_zh": "今天有麦克风。",
+    "example_ko": "마이크가 꺼져 있어서 소리가 안 났어요.",
+    "example_zh": "麦克风关着，所以没有声音。",
     "tags": [
       "追星",
       "演唱会"
@@ -3302,8 +3302,8 @@
     "korean": "스피커",
     "meaning_zh": "音响",
     "part_of_speech": "名词",
-    "example_ko": "오늘 스피커가 있어요.",
-    "example_zh": "今天有音响。",
+    "example_ko": "스피커 가까이에 있으니 소리가 너무 커요.",
+    "example_zh": "靠近音响，声音太大了。",
     "tags": [
       "追星",
       "演唱会"
@@ -3315,8 +3315,8 @@
     "korean": "카메라",
     "meaning_zh": "相机",
     "part_of_speech": "名词",
-    "example_ko": "오늘 카메라가 있어요.",
-    "example_zh": "今天有相机。",
+    "example_ko": "카메라는 가방에 넣어 주세요.",
+    "example_zh": "请把相机放进包里。",
     "tags": [
       "追星",
       "线下活动"
@@ -3328,8 +3328,8 @@
     "korean": "촬영",
     "meaning_zh": "拍摄",
     "part_of_speech": "名词",
-    "example_ko": "오늘 촬영이 있어요.",
-    "example_zh": "今天有拍摄。",
+    "example_ko": "여기는 촬영이 가능한 곳인가요?",
+    "example_zh": "这里允许拍摄吗？",
     "tags": [
       "追星",
       "线下活动"
@@ -3341,8 +3341,8 @@
     "korean": "녹화",
     "meaning_zh": "录像",
     "part_of_speech": "名词",
-    "example_ko": "오늘 녹화가 있어요.",
-    "example_zh": "今天有录像。",
+    "example_ko": "녹화 버튼 누르는 걸 깜빡했어요.",
+    "example_zh": "我忘记按录像按钮了。",
     "tags": [
       "追星",
       "线下活动"
@@ -3354,8 +3354,8 @@
     "korean": "플래시",
     "meaning_zh": "闪光灯",
     "part_of_speech": "名词",
-    "example_ko": "오늘 플래시가 있어요.",
-    "example_zh": "今天有闪光灯。",
+    "example_ko": "플래시를 끄고 다시 찍었어요.",
+    "example_zh": "我关掉闪光灯又拍了一次。",
     "tags": [
       "追星",
       "线下活动"
@@ -3419,8 +3419,8 @@
     "korean": "순서",
     "meaning_zh": "顺序",
     "part_of_speech": "名词",
-    "example_ko": "오늘 순서가 있어요.",
-    "example_zh": "今天有顺序。",
+    "example_ko": "입장 순서는 어디서 확인해요?",
+    "example_zh": "在哪里查看入场顺序？",
     "tags": [
       "追星",
       "线下活动"
@@ -3432,8 +3432,8 @@
     "korean": "차례",
     "meaning_zh": "轮到的次序",
     "part_of_speech": "名词",
-    "example_ko": "오늘 차례가 있어요.",
-    "example_zh": "今天有轮到的次序。",
+    "example_ko": "이제 제 차례인가요?",
+    "example_zh": "现在轮到我了吗？",
     "tags": [
       "追星",
       "线下活动"
@@ -4043,8 +4043,8 @@
     "korean": "약속",
     "meaning_zh": "约定",
     "part_of_speech": "名词",
-    "example_ko": "오늘 약속라는 말을 들었어요.",
-    "example_zh": "今天听到了“约定”这句话。",
+    "example_ko": "내일 약속 잊지 않았죠?",
+    "example_zh": "没忘记明天的约定吧？",
     "tags": [
       "追星",
       "互动"
@@ -4056,8 +4056,8 @@
     "korean": "비밀",
     "meaning_zh": "秘密",
     "part_of_speech": "名词",
-    "example_ko": "오늘 비밀라는 말을 들었어요.",
-    "example_zh": "今天听到了“秘密”这句话。",
+    "example_ko": "아직 비밀이에요. 다음 주에 알려 줄게요.",
+    "example_zh": "暂时是秘密，下周告诉你。",
     "tags": [
       "追星",
       "互动"
@@ -4069,8 +4069,8 @@
     "korean": "소원",
     "meaning_zh": "愿望",
     "part_of_speech": "名词",
-    "example_ko": "오늘 소원라는 말을 들었어요.",
-    "example_zh": "今天听到了“愿望”这句话。",
+    "example_ko": "생일 케이크 앞에서 소원을 빌었어요.",
+    "example_zh": "我在生日蛋糕前许了愿。",
     "tags": [
       "追星",
       "互动"
@@ -4095,8 +4095,8 @@
     "korean": "행운",
     "meaning_zh": "幸运",
     "part_of_speech": "名词",
-    "example_ko": "오늘 행운라는 말을 들었어요.",
-    "example_zh": "今天听到了“幸运”这句话。",
+    "example_ko": "이 반지가 행운을 가져다줄 것 같아요.",
+    "example_zh": "感觉这枚戒指会带来好运。",
     "tags": [
       "追星",
       "互动"
@@ -4108,8 +4108,8 @@
     "korean": "용기",
     "meaning_zh": "勇气",
     "part_of_speech": "名词",
-    "example_ko": "오늘 용기라는 말을 들었어요.",
-    "example_zh": "今天听到了“勇气”这句话。",
+    "example_ko": "용기를 내서 먼저 말을 걸었어요.",
+    "example_zh": "我鼓起勇气先搭了话。",
     "tags": [
       "追星",
       "互动"
@@ -4121,8 +4121,8 @@
     "korean": "힘",
     "meaning_zh": "力量",
     "part_of_speech": "名词",
-    "example_ko": "오늘 힘라는 말을 들었어요.",
-    "example_zh": "今天听到了“力量”这句话。",
+    "example_ko": "그 한마디가 저한테 큰 힘이 됐어요.",
+    "example_zh": "那一句话给了我很大的力量。",
     "tags": [
       "追星",
       "互动"
@@ -4147,8 +4147,8 @@
     "korean": "힘들어요",
     "meaning_zh": "很累/辛苦",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 힘들어요.",
-    "example_zh": "今天真的很累/辛苦。",
+    "example_ko": "계단이 많아서 올라가기 힘들어요.",
+    "example_zh": "楼梯很多，爬起来很吃力。",
     "tags": [
       "基础",
       "感受"
@@ -4160,8 +4160,8 @@
     "korean": "걱정",
     "meaning_zh": "担心",
     "part_of_speech": "名词",
-    "example_ko": "오늘 걱정에 대해 이야기해요.",
-    "example_zh": "今天聊担心。",
+    "example_ko": "걱정 때문에 잠이 잘 안 와요.",
+    "example_zh": "因为担心，我不太睡得着。",
     "tags": [
       "基础",
       "感受"
@@ -4186,8 +4186,8 @@
     "korean": "웃어요",
     "meaning_zh": "笑",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 웃어요.",
-    "example_zh": "今天也笑。",
+    "example_ko": "그 친구랑 있으면 자꾸 웃어요.",
+    "example_zh": "和那个朋友在一起就会忍不住笑。",
     "tags": [
       "基础",
       "感受"
@@ -4199,8 +4199,8 @@
     "korean": "울어요",
     "meaning_zh": "哭",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 울어요.",
-    "example_zh": "今天也哭。",
+    "example_ko": "저는 슬픈 영화를 보면 꼭 울어요.",
+    "example_zh": "我看悲伤的电影一定会哭。",
     "tags": [
       "基础",
       "感受"
@@ -4212,8 +4212,8 @@
     "korean": "웃음",
     "meaning_zh": "笑容",
     "part_of_speech": "名词",
-    "example_ko": "오늘 웃음라는 말을 들었어요.",
-    "example_zh": "今天听到了“笑容”这句话。",
+    "example_ko": "웃음을 참으려고 입을 가렸어요.",
+    "example_zh": "为了忍住笑，我捂住了嘴。",
     "tags": [
       "追星",
       "互动"
@@ -4225,8 +4225,8 @@
     "korean": "미소",
     "meaning_zh": "微笑",
     "part_of_speech": "名词",
-    "example_ko": "오늘 미소라는 말을 들었어요.",
-    "example_zh": "今天听到了“微笑”这句话。",
+    "example_ko": "그 미소를 보니 긴장이 풀렸어요.",
+    "example_zh": "看到那个微笑，我就放松了。",
     "tags": [
       "追星",
       "互动"
@@ -4238,8 +4238,8 @@
     "korean": "목소리",
     "meaning_zh": "声音",
     "part_of_speech": "名词",
-    "example_ko": "오늘 목소리라는 말을 들었어요.",
-    "example_zh": "今天听到了“声音”这句话。",
+    "example_ko": "목소리가 작아서 잘 안 들려요.",
+    "example_zh": "声音太小，听不清。",
     "tags": [
       "追星",
       "互动"
@@ -4251,8 +4251,8 @@
     "korean": "눈빛",
     "meaning_zh": "眼神",
     "part_of_speech": "名词",
-    "example_ko": "오늘 눈빛라는 말을 들었어요.",
-    "example_zh": "今天听到了“眼神”这句话。",
+    "example_ko": "노래가 시작되자 눈빛이 달라졌어요.",
+    "example_zh": "歌曲一开始，眼神就变了。",
     "tags": [
       "追星",
       "互动"
@@ -4264,8 +4264,8 @@
     "korean": "표정",
     "meaning_zh": "表情",
     "part_of_speech": "名词",
-    "example_ko": "오늘 표정라는 말을 들었어요.",
-    "example_zh": "今天听到了“表情”这句话。",
+    "example_ko": "제 표정이 그렇게 웃겼어요?",
+    "example_zh": "我的表情有那么好笑吗？",
     "tags": [
       "追星",
       "互动"
@@ -4277,8 +4277,8 @@
     "korean": "분위기",
     "meaning_zh": "氛围",
     "part_of_speech": "名词",
-    "example_ko": "오늘 분위기라는 말을 들었어요.",
-    "example_zh": "今天听到了“氛围”这句话。",
+    "example_ko": "조명이 바뀌니까 분위기도 달라지네요.",
+    "example_zh": "灯光一变，气氛也不一样了。",
     "tags": [
       "追星",
       "互动"
@@ -4290,8 +4290,8 @@
     "korean": "설레요",
     "meaning_zh": "心动",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 설레요.",
-    "example_zh": "今天真的心动。",
+    "example_ko": "처음 혼자 여행을 가니까 설레요.",
+    "example_zh": "第一次独自旅行，好期待。",
     "tags": [
       "追星",
       "感受"
@@ -4303,8 +4303,8 @@
     "korean": "떨려요",
     "meaning_zh": "紧张/发抖",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 떨려요.",
-    "example_zh": "今天真的紧张/发抖。",
+    "example_ko": "곧 제 차례라서 손이 떨려요.",
+    "example_zh": "马上轮到我了，手都在抖。",
     "tags": [
       "追星",
       "感受"
@@ -4329,8 +4329,8 @@
     "korean": "자랑스러워요",
     "meaning_zh": "很骄傲",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 자랑스러워요.",
-    "example_zh": "今天真的很骄傲。",
+    "example_ko": "끝까지 해낸 네가 정말 자랑스러워요.",
+    "example_zh": "你坚持做到了最后，我真的为你骄傲。",
     "tags": [
       "追星",
       "感受"
@@ -4355,8 +4355,8 @@
     "korean": "잘생겼어요",
     "meaning_zh": "长得帅",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 잘생겼어요.",
-    "example_zh": "今天真的长得帅。",
+    "example_ko": "실제로 보니까 더 잘생겼어요.",
+    "example_zh": "见到本人，感觉比照片更帅。",
     "tags": [
       "追星",
       "感受"
@@ -4368,8 +4368,8 @@
     "korean": "빛나요",
     "meaning_zh": "闪闪发光",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 빛나요.",
-    "example_zh": "今天也闪闪发光。",
+    "example_ko": "조명 아래서 귀걸이가 반짝 빛나요.",
+    "example_zh": "耳环在灯光下闪闪发亮。",
     "tags": [
       "追星",
       "感受"
@@ -4381,8 +4381,8 @@
     "korean": "완벽해요",
     "meaning_zh": "完美",
     "part_of_speech": "形容词",
-    "example_ko": "오늘 정말 완벽해요.",
-    "example_zh": "今天真的完美。",
+    "example_ko": "이 조합은 정말 완벽해요.",
+    "example_zh": "这个组合真的很完美。",
     "tags": [
       "追星",
       "感受"
@@ -4394,8 +4394,8 @@
     "korean": "레전드",
     "meaning_zh": "传奇级/神级",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 레전드에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论传奇级/神级。",
+    "example_ko": "어제 무대는 진짜 레전드였어요.",
+    "example_zh": "昨天的舞台真是神级的。",
     "tags": [
       "饭圈",
       "口语"
@@ -4407,8 +4407,8 @@
     "korean": "최고",
     "meaning_zh": "最棒",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 최고에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论最棒。",
+    "example_ko": "역시 집에서 먹는 밥이 최고예요.",
+    "example_zh": "果然还是家里的饭最好吃。",
     "tags": [
       "饭圈",
       "口语"
@@ -4420,8 +4420,8 @@
     "korean": "최애",
     "meaning_zh": "本命",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 최애에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论本命。",
+    "example_ko": "제 최애는 노래할 때 제일 행복해 보여요.",
+    "example_zh": "我的本命唱歌时看起来最幸福。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4433,8 +4433,8 @@
     "korean": "차애",
     "meaning_zh": "第二喜欢",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 차애에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论第二喜欢。",
+    "example_ko": "요즘 차애 영상도 자꾸 찾아보게 돼요.",
+    "example_zh": "最近也总忍不住搜第二喜欢的成员的视频。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4446,8 +4446,8 @@
     "korean": "입덕",
     "meaning_zh": "入坑",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 입덕에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论入坑。",
+    "example_ko": "이 무대 보고 입덕했어요.",
+    "example_zh": "我看了这个舞台后入坑了。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4459,8 +4459,8 @@
     "korean": "덕질",
     "meaning_zh": "追星活动",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 덕질에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论追星活动。",
+    "example_ko": "덕질 덕분에 좋은 친구들을 만났어요.",
+    "example_zh": "因为追星，我认识了很好的朋友。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4472,8 +4472,8 @@
     "korean": "탈덕",
     "meaning_zh": "脱粉",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 탈덕에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论脱粉。",
+    "example_ko": "탈덕한 줄 알았는데 신곡 듣고 다시 빠졌어요.",
+    "example_zh": "以为已经脱粉了，听到新歌又迷上了。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4485,8 +4485,8 @@
     "korean": "휴덕",
     "meaning_zh": "暂时休追星",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 휴덕에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论暂时休追星。",
+    "example_ko": "시험 끝날 때까지 잠깐 휴덕하려고요.",
+    "example_zh": "我想暂时休息一下，考完试再追星。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4498,8 +4498,8 @@
     "korean": "덕메",
     "meaning_zh": "追星朋友",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 덕메에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论追星朋友。",
+    "example_ko": "덕메랑 공연 전에 밥 먹기로 했어요.",
+    "example_zh": "和追星搭子约好在演出前吃饭。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4511,8 +4511,8 @@
     "korean": "덕친",
     "meaning_zh": "追星好友",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 덕친에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论追星好友。",
+    "example_ko": "덕친이 생일 선물로 포카를 줬어요.",
+    "example_zh": "追星好友送了我小卡当生日礼物。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4524,8 +4524,8 @@
     "korean": "팬덤",
     "meaning_zh": "粉丝圈",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 팬덤에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论粉丝圈。",
+    "example_ko": "우리 팬덤 이름은 어떻게 정해졌어요?",
+    "example_zh": "我们粉丝圈的名字是怎么定下来的？",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4537,8 +4537,8 @@
     "korean": "팬싸",
     "meaning_zh": "签售会（缩写）",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 팬싸에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论签售会（缩写）。",
+    "example_ko": "팬싸에서 할 말을 메모해 뒀어요.",
+    "example_zh": "我把签售时想说的话提前记下来了。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4550,8 +4550,8 @@
     "korean": "영통팬싸",
     "meaning_zh": "视频签售",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 영통팬싸에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论视频签售。",
+    "example_ko": "영통팬싸 시작 전에 와이파이를 확인했어요.",
+    "example_zh": "视频签售开始前，我检查了Wi-Fi。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4563,8 +4563,8 @@
     "korean": "공방",
     "meaning_zh": "公开放送（缩写）",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 공방에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论公开放送（缩写）。",
+    "example_ko": "공방 가려면 새벽에 일어나야 해요.",
+    "example_zh": "去公开放送的话，得凌晨起床。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4576,8 +4576,8 @@
     "korean": "막방",
     "meaning_zh": "最后一次打歌舞台",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 막방에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论最后一次打歌舞台。",
+    "example_ko": "막방이라니 벌써 아쉬워요.",
+    "example_zh": "居然已经是最后一次打歌了，好舍不得。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4589,8 +4589,8 @@
     "korean": "음방",
     "meaning_zh": "音乐节目（缩写）",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 음방에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论音乐节目（缩写）。",
+    "example_ko": "이번 주 음방 무대 중에 뭐가 제일 좋았어요?",
+    "example_zh": "这周的打歌舞台里，你最喜欢哪个？",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4615,8 +4615,8 @@
     "korean": "입덕 직캠",
     "meaning_zh": "入坑直拍",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 입덕 직캠을 확인해 주세요.",
-    "example_zh": "请在手机上确认入坑直拍。",
+    "example_ko": "입덕 직캠을 보다가 밤을 새웠어요.",
+    "example_zh": "看入坑直拍看了一整夜。",
     "tags": [
       "饭圈",
       "数字生活"
@@ -4628,8 +4628,8 @@
     "korean": "팬캠",
     "meaning_zh": "粉丝直拍",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 팬캠을 확인해 주세요.",
-    "example_zh": "请在手机上确认粉丝直拍。",
+    "example_ko": "팬캠에는 방송에 안 나온 장면도 있어요.",
+    "example_zh": "粉丝直拍里也有节目没播出的画面。",
     "tags": [
       "饭圈",
       "数字生活"
@@ -4641,8 +4641,8 @@
     "korean": "홈마",
     "meaning_zh": "站姐",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 홈마에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论站姐。",
+    "example_ko": "홈마가 올린 사진은 출처를 남겨 주세요.",
+    "example_zh": "转发站姐发布的照片时请注明出处。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4654,8 +4654,8 @@
     "korean": "홈마스터",
     "meaning_zh": "站姐/站长",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 홈마스터에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论站姐/站长。",
+    "example_ko": "홈마스터에게 사진 사용 허락을 받았어요.",
+    "example_zh": "我得到了站长使用照片的许可。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4667,8 +4667,8 @@
     "korean": "마스터",
     "meaning_zh": "站长",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 마스터에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论站长。",
+    "example_ko": "마스터님, 사진 올려 주셔서 감사해요.",
+    "example_zh": "站长，谢谢你发照片。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4693,8 +4693,8 @@
     "korean": "포카 교환",
     "meaning_zh": "小卡交换",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 포카 교환에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论小卡交换。",
+    "example_ko": "포카 교환하실 분 계세요?",
+    "example_zh": "有人想换小卡吗？",
     "tags": [
       "饭圈",
       "周边"
@@ -4706,8 +4706,8 @@
     "korean": "양도",
     "meaning_zh": "转让",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 양도에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论转让。",
+    "example_ko": "사정이 생겨서 티켓 양도를 알아보고 있어요.",
+    "example_zh": "临时有事，我在了解转让门票的事。",
     "tags": [
       "饭圈",
       "购票"
@@ -4719,8 +4719,8 @@
     "korean": "양수",
     "meaning_zh": "收票/接手",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 양수에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论收票/接手。",
+    "example_ko": "티켓 양수 전에 예매 내역을 확인했어요.",
+    "example_zh": "收票前我核对了订票记录。",
     "tags": [
       "饭圈",
       "购票"
@@ -4732,8 +4732,8 @@
     "korean": "대리",
     "meaning_zh": "代办/代拍",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 대리에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论代办/代拍。",
+    "example_ko": "대리 구매를 부탁해도 될까요?",
+    "example_zh": "可以拜托你帮忙代买吗？",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4758,8 +4758,8 @@
     "korean": "특전",
     "meaning_zh": "特典",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 특전에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论特典。",
+    "example_ko": "이 버전에는 어떤 특전이 들어 있어요?",
+    "example_zh": "这个版本里有哪些特典？",
     "tags": [
       "饭圈",
       "周边"
@@ -4771,8 +4771,8 @@
     "korean": "미공포",
     "meaning_zh": "未公开小卡",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 미공포에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论未公开小卡。",
+    "example_ko": "이번 미공포는 표정이 너무 귀여워요.",
+    "example_zh": "这次未公开小卡的表情太可爱了。",
     "tags": [
       "饭圈",
       "周边"
@@ -4784,8 +4784,8 @@
     "korean": "공구",
     "meaning_zh": "团购（缩写）",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 공구에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论团购（缩写）。",
+    "example_ko": "공구 마감이 오늘 밤까지래요.",
+    "example_zh": "听说团购今晚截止。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4797,8 +4797,8 @@
     "korean": "공동구매",
     "meaning_zh": "共同购买",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 공동구매에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论共同购买。",
+    "example_ko": "공동구매하면 배송비를 나눌 수 있어요.",
+    "example_zh": "团购的话可以分摊运费。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4810,8 +4810,8 @@
     "korean": "분철",
     "meaning_zh": "拆分团购",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 분철에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论拆分团购。",
+    "example_ko": "분철에 참여해서 원하는 멤버 것만 받았어요.",
+    "example_zh": "我参加了拆分团购，只收了想要的成员的东西。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4823,8 +4823,8 @@
     "korean": "배송",
     "meaning_zh": "配送",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 배송에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论配送。",
+    "example_ko": "배송은 언제 시작되나요?",
+    "example_zh": "什么时候开始发货？",
     "tags": [
       "饭圈",
       "周边"
@@ -4836,8 +4836,8 @@
     "korean": "포장",
     "meaning_zh": "包装",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 포장에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论包装。",
+    "example_ko": "포장이 꼼꼼해서 하나도 안 구겨졌어요.",
+    "example_zh": "包装很仔细，一点也没压皱。",
     "tags": [
       "饭圈",
       "周边"
@@ -4849,8 +4849,8 @@
     "korean": "개봉",
     "meaning_zh": "开封",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 개봉에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论开封。",
+    "example_ko": "앨범 개봉할 때 같이 영상 찍자.",
+    "example_zh": "拆专辑时一起录个视频吧。",
     "tags": [
       "饭圈",
       "周边"
@@ -4862,8 +4862,8 @@
     "korean": "교환",
     "meaning_zh": "交换",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 교환에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论交换。",
+    "example_ko": "같은 카드가 나왔는데 교환할래요?",
+    "example_zh": "我抽到了重复的卡，要交换吗？",
     "tags": [
       "饭圈",
       "周边"
@@ -4875,8 +4875,8 @@
     "korean": "판매",
     "meaning_zh": "出售",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 판매에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论出售。",
+    "example_ko": "현장 판매는 몇 시에 끝나요?",
+    "example_zh": "现场销售几点结束？",
     "tags": [
       "饭圈",
       "周边"
@@ -4888,8 +4888,8 @@
     "korean": "구매",
     "meaning_zh": "购买",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 구매에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论购买。",
+    "example_ko": "구매 전에 크기를 꼭 확인하세요.",
+    "example_zh": "购买前一定要确认尺寸。",
     "tags": [
       "饭圈",
       "周边"
@@ -4901,8 +4901,8 @@
     "korean": "품절",
     "meaning_zh": "售罄",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 품절에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论售罄。",
+    "example_ko": "장바구니에 넣었는데 벌써 품절이에요.",
+    "example_zh": "刚放进购物车就已经售罄了。",
     "tags": [
       "饭圈",
       "周边"
@@ -4914,8 +4914,8 @@
     "korean": "재고",
     "meaning_zh": "库存",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 재고에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论库存。",
+    "example_ko": "다른 색은 재고가 남아 있나요?",
+    "example_zh": "其他颜色还有库存吗？",
     "tags": [
       "饭圈",
       "周边"
@@ -4927,8 +4927,8 @@
     "korean": "공식",
     "meaning_zh": "官方",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 공식에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论官方。",
+    "example_ko": "공식 공지가 나올 때까지 기다려요.",
+    "example_zh": "等官方公告出来吧。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4940,8 +4940,8 @@
     "korean": "비공식",
     "meaning_zh": "非官方",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 비공식에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论非官方。",
+    "example_ko": "이건 팬이 만든 비공식 굿즈예요.",
+    "example_zh": "这是粉丝制作的非官方周边。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4966,8 +4966,8 @@
     "korean": "데뷔",
     "meaning_zh": "出道",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 데뷔에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论出道。",
+    "example_ko": "데뷔 때부터 응원해 온 팬이에요.",
+    "example_zh": "我是从出道时就开始支持你的粉丝。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -4979,8 +4979,8 @@
     "korean": "신곡",
     "meaning_zh": "新歌",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 신곡에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论新歌。",
+    "example_ko": "신곡이 나오자마자 들어 봤어요.",
+    "example_zh": "新歌一出来我就听了。",
     "tags": [
       "饭圈",
       "音乐"
@@ -4992,8 +4992,8 @@
     "korean": "타이틀곡",
     "meaning_zh": "主打歌",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 타이틀곡에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论主打歌。",
+    "example_ko": "이번 타이틀곡은 후렴이 잘 기억나요.",
+    "example_zh": "这次主打歌的副歌很容易记住。",
     "tags": [
       "饭圈",
       "音乐"
@@ -5005,8 +5005,8 @@
     "korean": "수록곡",
     "meaning_zh": "收录曲",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 수록곡에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论收录曲。",
+    "example_ko": "저는 타이틀곡보다 이 수록곡이 더 좋아요.",
+    "example_zh": "比起主打歌，我更喜欢这首收录曲。",
     "tags": [
       "饭圈",
       "音乐"
@@ -5018,8 +5018,8 @@
     "korean": "뮤직비디오",
     "meaning_zh": "音乐视频",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 뮤직비디오를 확인해 주세요.",
-    "example_zh": "请在手机上确认音乐视频。",
+    "example_ko": "뮤직비디오 마지막 장면 봤어요?",
+    "example_zh": "你看了MV最后一幕吗？",
     "tags": [
       "饭圈",
       "数字生活"
@@ -5044,8 +5044,8 @@
     "korean": "콘셉트",
     "meaning_zh": "概念/风格",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 콘셉트에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论概念/风格。",
+    "example_ko": "이번 콘셉트는 지난번이랑 완전히 달라요.",
+    "example_zh": "这次的概念风格和上次完全不同。",
     "tags": [
       "饭圈",
       "造型"
@@ -5057,8 +5057,8 @@
     "korean": "스포",
     "meaning_zh": "剧透",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 스포에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论剧透。",
+    "example_ko": "아직 안 봤으니까 스포하지 마요.",
+    "example_zh": "我还没看，别剧透哦。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -5070,8 +5070,8 @@
     "korean": "스포일러",
     "meaning_zh": "剧透",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 스포일러에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论剧透。",
+    "example_ko": "스포일러 없는 후기만 읽었어요.",
+    "example_zh": "我只看了不含剧透的感想。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -5096,8 +5096,8 @@
     "korean": "떡밥 회수",
     "meaning_zh": "回收伏笔",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 떡밥 회수에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论回收伏笔。",
+    "example_ko": "마지막 장면에서 떡밥 회수가 되네요.",
+    "example_zh": "最后一幕回收了前面的伏笔。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -5109,8 +5109,8 @@
     "korean": "서사",
     "meaning_zh": "故事线/叙事",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 서사에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论故事线/叙事。",
+    "example_ko": "뮤직비디오의 서사가 다음 곡으로 이어져요.",
+    "example_zh": "MV的故事线延续到了下一首歌。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -5148,8 +5148,8 @@
     "korean": "비주얼",
     "meaning_zh": "视觉/颜值",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 비주얼에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论视觉/颜值。",
+    "example_ko": "오늘 무대 비주얼이 너무 좋았어요.",
+    "example_zh": "今天舞台上的颜值太绝了。",
     "tags": [
       "饭圈",
       "造型"
@@ -5161,8 +5161,8 @@
     "korean": "얼굴천재",
     "meaning_zh": "脸蛋天才/颜值天才",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 얼굴천재에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论脸蛋天才/颜值天才。",
+    "example_ko": "이 사진 보니까 얼굴천재라는 말이 이해돼요.",
+    "example_zh": "看了这张照片，就懂为什么叫脸蛋天才了。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -5174,8 +5174,8 @@
     "korean": "춤선",
     "meaning_zh": "舞蹈线条",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 춤선에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论舞蹈线条。",
+    "example_ko": "동작이 느려도 춤선이 또렷해요.",
+    "example_zh": "即使动作放慢，舞蹈线条仍很清晰。",
     "tags": [
       "饭圈",
       "舞台"
@@ -5187,8 +5187,8 @@
     "korean": "칼군무",
     "meaning_zh": "刀群舞",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 칼군무에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论刀群舞。",
+    "example_ko": "칼군무가 맞아떨어질 때 소름 돋았어요.",
+    "example_zh": "刀群舞整齐划一的时候，我起了鸡皮疙瘩。",
     "tags": [
       "饭圈",
       "舞台"
@@ -5200,8 +5200,8 @@
     "korean": "라이브 실력",
     "meaning_zh": "现场实力",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 라이브 실력에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论现场实力。",
+    "example_ko": "콘서트에서 라이브 실력을 제대로 느꼈어요.",
+    "example_zh": "在演唱会上真正感受到了现场实力。",
     "tags": [
       "饭圈",
       "舞台"
@@ -5213,8 +5213,8 @@
     "korean": "고음",
     "meaning_zh": "高音",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 고음에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论高音。",
+    "example_ko": "이 노래는 고음이 너무 높아서 못 따라 불러요.",
+    "example_zh": "这首歌高音太高，我跟着唱不上去。",
     "tags": [
       "饭圈",
       "音乐"
@@ -5226,8 +5226,8 @@
     "korean": "저음",
     "meaning_zh": "低音",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 저음에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论低音。",
+    "example_ko": "이어폰으로 들으면 저음이 더 잘 들려요.",
+    "example_zh": "用耳机听，低音会更清楚。",
     "tags": [
       "饭圈",
       "音乐"
@@ -5239,8 +5239,8 @@
     "korean": "킬링파트",
     "meaning_zh": "点睛部分",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 킬링파트에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论点睛部分。",
+    "example_ko": "킬링파트만 벌써 열 번 돌려 봤어요.",
+    "example_zh": "点睛的那一段已经重复看了十遍。",
     "tags": [
       "饭圈",
       "音乐"
@@ -5252,8 +5252,8 @@
     "korean": "파트",
     "meaning_zh": "分词/部分",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 파트에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论分词/部分。",
+    "example_ko": "제가 좋아하는 파트는 두 번째 후렴이에요.",
+    "example_zh": "我喜欢的部分是第二段副歌。",
     "tags": [
       "饭圈",
       "音乐"
@@ -5265,8 +5265,8 @@
     "korean": "안무",
     "meaning_zh": "编舞",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 안무에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论编舞。",
+    "example_ko": "이 안무는 보기보다 어렵네요.",
+    "example_zh": "这个编舞比看起来难呢。",
     "tags": [
       "饭圈",
       "舞台"
@@ -5278,8 +5278,8 @@
     "korean": "안무 연습",
     "meaning_zh": "练习室舞蹈",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 안무 연습에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论练习室舞蹈。",
+    "example_ko": "안무 연습 영상을 보면서 동작을 따라 했어요.",
+    "example_zh": "我看着练习室视频跟着做动作。",
     "tags": [
       "饭圈",
       "舞台"
@@ -5291,8 +5291,8 @@
     "korean": "연습실",
     "meaning_zh": "练习室",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 연습실에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论练习室。",
+    "example_ko": "연습실 불이 아직 켜져 있네요.",
+    "example_zh": "练习室的灯还亮着呢。",
     "tags": [
       "饭圈",
       "舞台"
@@ -5304,8 +5304,8 @@
     "korean": "의상",
     "meaning_zh": "服装",
     "part_of_speech": "名词",
-    "example_ko": "오늘 의상이 정말 잘 어울려요.",
-    "example_zh": "今天的服装真的很搭。",
+    "example_ko": "무대 의상을 직접 고른 거예요?",
+    "example_zh": "舞台服装是你自己选的吗？",
     "tags": [
       "追星",
       "造型"
@@ -5317,8 +5317,8 @@
     "korean": "스타일링",
     "meaning_zh": "造型搭配",
     "part_of_speech": "名词",
-    "example_ko": "오늘 스타일링이 정말 잘 어울려요.",
-    "example_zh": "今天的造型搭配真的很搭。",
+    "example_ko": "같은 옷도 스타일링에 따라 달라 보여요.",
+    "example_zh": "同一件衣服搭配不同，看起来也不同。",
     "tags": [
       "追星",
       "造型"
@@ -5330,8 +5330,8 @@
     "korean": "헤어",
     "meaning_zh": "发型",
     "part_of_speech": "名词",
-    "example_ko": "오늘 헤어가 정말 잘 어울려요.",
-    "example_zh": "今天的发型真的很搭。",
+    "example_ko": "이번 헤어 정말 잘 어울려요. 누가 추천했어요?",
+    "example_zh": "这次发型很适合你，是谁推荐的？",
     "tags": [
       "追星",
       "造型"
@@ -5343,8 +5343,8 @@
     "korean": "메이크업",
     "meaning_zh": "妆容",
     "part_of_speech": "名词",
-    "example_ko": "오늘 메이크업이 정말 잘 어울려요.",
-    "example_zh": "今天的妆容真的很搭。",
+    "example_ko": "오늘은 메이크업을 연하게 했어요.",
+    "example_zh": "今天化了淡妆。",
     "tags": [
       "追星",
       "造型"
@@ -5356,8 +5356,8 @@
     "korean": "네일",
     "meaning_zh": "美甲",
     "part_of_speech": "名词",
-    "example_ko": "오늘 네일이 정말 잘 어울려요.",
-    "example_zh": "今天的美甲真的很搭。",
+    "example_ko": "네일 색을 고르는데 한참 걸렸어요.",
+    "example_zh": "挑美甲颜色花了好久。",
     "tags": [
       "追星",
       "造型"
@@ -5369,8 +5369,8 @@
     "korean": "액세서리",
     "meaning_zh": "配饰",
     "part_of_speech": "名词",
-    "example_ko": "오늘 액세서리가 정말 잘 어울려요.",
-    "example_zh": "今天的配饰真的很搭。",
+    "example_ko": "액세서리는 하나만 해도 충분할 것 같아요.",
+    "example_zh": "配饰只戴一件感觉就够了。",
     "tags": [
       "追星",
       "造型"
@@ -5382,8 +5382,8 @@
     "korean": "귀걸이",
     "meaning_zh": "耳环",
     "part_of_speech": "名词",
-    "example_ko": "오늘 귀걸이가 정말 잘 어울려요.",
-    "example_zh": "今天的耳环真的很搭。",
+    "example_ko": "귀걸이 한쪽을 잃어버렸어요.",
+    "example_zh": "我弄丢了一只耳环。",
     "tags": [
       "追星",
       "造型"
@@ -5395,8 +5395,8 @@
     "korean": "목걸이",
     "meaning_zh": "项链",
     "part_of_speech": "名词",
-    "example_ko": "오늘 목걸이가 정말 잘 어울려요.",
-    "example_zh": "今天的项链真的很搭。",
+    "example_ko": "그 목걸이는 어디서 샀어요?",
+    "example_zh": "那条项链在哪里买的？",
     "tags": [
       "追星",
       "造型"
@@ -5408,8 +5408,8 @@
     "korean": "반지",
     "meaning_zh": "戒指",
     "part_of_speech": "名词",
-    "example_ko": "오늘 반지가 정말 잘 어울려요.",
-    "example_zh": "今天的戒指真的很搭。",
+    "example_ko": "이 반지는 손가락에 조금 꽉 껴요.",
+    "example_zh": "这枚戒指戴在手指上有点紧。",
     "tags": [
       "追星",
       "造型"
@@ -5421,8 +5421,8 @@
     "korean": "팔찌",
     "meaning_zh": "手链",
     "part_of_speech": "名词",
-    "example_ko": "오늘 팔찌가 정말 잘 어울려요.",
-    "example_zh": "今天的手链真的很搭。",
+    "example_ko": "친구랑 똑같은 팔찌를 맞췄어요.",
+    "example_zh": "我和朋友买了同款手链。",
     "tags": [
       "追星",
       "造型"
@@ -5434,8 +5434,8 @@
     "korean": "모자",
     "meaning_zh": "帽子",
     "part_of_speech": "名词",
-    "example_ko": "오늘 모자가 정말 잘 어울려요.",
-    "example_zh": "今天的帽子真的很搭。",
+    "example_ko": "햇빛이 강해서 모자를 쓰고 나왔어요.",
+    "example_zh": "阳光很强，我戴着帽子出门了。",
     "tags": [
       "追星",
       "造型"
@@ -5447,8 +5447,8 @@
     "korean": "안경",
     "meaning_zh": "眼镜",
     "part_of_speech": "名词",
-    "example_ko": "오늘 안경이 정말 잘 어울려요.",
-    "example_zh": "今天的眼镜真的很搭。",
+    "example_ko": "안경을 안 쓰면 멀리 있는 글씨가 안 보여요.",
+    "example_zh": "不戴眼镜就看不清远处的字。",
     "tags": [
       "追星",
       "造型"
@@ -5460,8 +5460,8 @@
     "korean": "신발",
     "meaning_zh": "鞋子",
     "part_of_speech": "名词",
-    "example_ko": "오늘 신발이 정말 잘 어울려요.",
-    "example_zh": "今天的鞋子真的很搭。",
+    "example_ko": "신발이 젖어서 양말까지 축축해요.",
+    "example_zh": "鞋湿了，连袜子都潮了。",
     "tags": [
       "追星",
       "造型"
@@ -5473,8 +5473,8 @@
     "korean": "부츠",
     "meaning_zh": "靴子",
     "part_of_speech": "名词",
-    "example_ko": "오늘 부츠가 정말 잘 어울려요.",
-    "example_zh": "今天的靴子真的很搭。",
+    "example_ko": "부츠 신고 오래 걸으니 발이 아파요.",
+    "example_zh": "穿靴子走久了脚疼。",
     "tags": [
       "追星",
       "造型"
@@ -5486,8 +5486,8 @@
     "korean": "자켓",
     "meaning_zh": "夹克",
     "part_of_speech": "名词",
-    "example_ko": "오늘 자켓이 정말 잘 어울려요.",
-    "example_zh": "今天的夹克真的很搭。",
+    "example_ko": "추우면 제 자켓 빌려 입어요.",
+    "example_zh": "冷的话就借我的夹克穿吧。",
     "tags": [
       "追星",
       "造型"
@@ -5499,8 +5499,8 @@
     "korean": "셔츠",
     "meaning_zh": "衬衫",
     "part_of_speech": "名词",
-    "example_ko": "오늘 셔츠가 정말 잘 어울려요.",
-    "example_zh": "今天的衬衫真的很搭。",
+    "example_ko": "셔츠에 커피를 쏟았어요.",
+    "example_zh": "我把咖啡洒在衬衫上了。",
     "tags": [
       "追星",
       "造型"
@@ -5512,8 +5512,8 @@
     "korean": "티셔츠",
     "meaning_zh": "T恤",
     "part_of_speech": "名词",
-    "example_ko": "오늘 티셔츠가 정말 잘 어울려요.",
-    "example_zh": "今天的T恤真的很搭。",
+    "example_ko": "이 티셔츠는 한 사이즈 크게 입고 싶어요.",
+    "example_zh": "这件T恤我想穿大一码。",
     "tags": [
       "追星",
       "造型"
@@ -5525,8 +5525,8 @@
     "korean": "청바지",
     "meaning_zh": "牛仔裤",
     "part_of_speech": "名词",
-    "example_ko": "오늘 청바지가 정말 잘 어울려요.",
-    "example_zh": "今天的牛仔裤真的很搭。",
+    "example_ko": "청바지는 입어 보고 사도 돼요?",
+    "example_zh": "牛仔裤可以试穿后再买吗？",
     "tags": [
       "追星",
       "造型"
@@ -5538,8 +5538,8 @@
     "korean": "치마",
     "meaning_zh": "裙子",
     "part_of_speech": "名词",
-    "example_ko": "오늘 치마가 정말 잘 어울려요.",
-    "example_zh": "今天的裙子真的很搭。",
+    "example_ko": "치마에 주머니가 있어서 편해요.",
+    "example_zh": "裙子有口袋，很方便。",
     "tags": [
       "追星",
       "造型"
@@ -5551,8 +5551,8 @@
     "korean": "원피스",
     "meaning_zh": "连衣裙",
     "part_of_speech": "名词",
-    "example_ko": "오늘 원피스가 정말 잘 어울려요.",
-    "example_zh": "今天的连衣裙真的很搭。",
+    "example_ko": "내일은 이 원피스를 입으려고요.",
+    "example_zh": "我明天打算穿这条连衣裙。",
     "tags": [
       "追星",
       "造型"
@@ -5564,8 +5564,8 @@
     "korean": "색깔",
     "meaning_zh": "颜色",
     "part_of_speech": "名词",
-    "example_ko": "오늘 색깔이 정말 잘 어울려요.",
-    "example_zh": "今天的颜色真的很搭。",
+    "example_ko": "사진이랑 실제 색깔이 조금 달라요.",
+    "example_zh": "实物颜色和照片有一点不同。",
     "tags": [
       "基础",
       "造型"
@@ -5577,8 +5577,8 @@
     "korean": "검정",
     "meaning_zh": "黑色",
     "part_of_speech": "名词",
-    "example_ko": "오늘 검정이 정말 잘 어울려요.",
-    "example_zh": "今天的黑色真的很搭。",
+    "example_ko": "저는 검정 바지를 자주 입어요.",
+    "example_zh": "我经常穿黑色裤子。",
     "tags": [
       "基础",
       "造型"
@@ -5590,8 +5590,8 @@
     "korean": "하얀색",
     "meaning_zh": "白色",
     "part_of_speech": "名词",
-    "example_ko": "오늘 하얀색이 정말 잘 어울려요.",
-    "example_zh": "今天的白色真的很搭。",
+    "example_ko": "하얀색 옷이라 얼룩이 잘 보여요.",
+    "example_zh": "因为是白色衣服，污渍很显眼。",
     "tags": [
       "基础",
       "造型"
@@ -5603,8 +5603,8 @@
     "korean": "빨간색",
     "meaning_zh": "红色",
     "part_of_speech": "名词",
-    "example_ko": "오늘 빨간색이 정말 잘 어울려요.",
-    "example_zh": "今天的红色真的很搭。",
+    "example_ko": "빨간색 가방을 들고 입구에 있을게요.",
+    "example_zh": "我会提着红色的包在入口等。",
     "tags": [
       "基础",
       "造型"
@@ -5616,8 +5616,8 @@
     "korean": "파란색",
     "meaning_zh": "蓝色",
     "part_of_speech": "名词",
-    "example_ko": "오늘 파란색이 정말 잘 어울려요.",
-    "example_zh": "今天的蓝色真的很搭。",
+    "example_ko": "파란색이랑 회색 중에 뭐가 더 나아요?",
+    "example_zh": "蓝色和灰色哪个更好看？",
     "tags": [
       "基础",
       "造型"
@@ -5629,8 +5629,8 @@
     "korean": "분홍색",
     "meaning_zh": "粉色",
     "part_of_speech": "名词",
-    "example_ko": "오늘 분홍색이 정말 잘 어울려요.",
-    "example_zh": "今天的粉色真的很搭。",
+    "example_ko": "분홍색 꽃을 몇 송이 샀어요.",
+    "example_zh": "我买了几朵粉色的花。",
     "tags": [
       "基础",
       "造型"
@@ -5642,8 +5642,8 @@
     "korean": "보라색",
     "meaning_zh": "紫色",
     "part_of_speech": "名词",
-    "example_ko": "오늘 보라색이 정말 잘 어울려요.",
-    "example_zh": "今天的紫色真的很搭。",
+    "example_ko": "해가 지니까 하늘이 보라색으로 변했어요.",
+    "example_zh": "太阳落山了，天空变成紫色。",
     "tags": [
       "基础",
       "造型"
@@ -5655,8 +5655,8 @@
     "korean": "노란색",
     "meaning_zh": "黄色",
     "part_of_speech": "名词",
-    "example_ko": "오늘 노란색이 정말 잘 어울려요.",
-    "example_zh": "今天的黄色真的很搭。",
+    "example_ko": "노란색 표지판을 따라가면 돼요.",
+    "example_zh": "跟着黄色指示牌走就行。",
     "tags": [
       "基础",
       "造型"
@@ -5668,8 +5668,8 @@
     "korean": "초록색",
     "meaning_zh": "绿色",
     "part_of_speech": "名词",
-    "example_ko": "오늘 초록색이 정말 잘 어울려요.",
-    "example_zh": "今天的绿色真的很搭。",
+    "example_ko": "방에 초록색 식물을 두고 싶어요.",
+    "example_zh": "我想在房间里放些绿色植物。",
     "tags": [
       "基础",
       "造型"
@@ -5681,8 +5681,8 @@
     "korean": "금발",
     "meaning_zh": "金发",
     "part_of_speech": "名词",
-    "example_ko": "오늘 금발이 정말 잘 어울려요.",
-    "example_zh": "今天的金发真的很搭。",
+    "example_ko": "금발로 바꾸니까 인상이 확 달라졌어요.",
+    "example_zh": "换成金发后，整体感觉完全变了。",
     "tags": [
       "追星",
       "造型"
@@ -5694,8 +5694,8 @@
     "korean": "흑발",
     "meaning_zh": "黑发",
     "part_of_speech": "名词",
-    "example_ko": "오늘 흑발이 정말 잘 어울려요.",
-    "example_zh": "今天的黑发真的很搭。",
+    "example_ko": "오랜만에 흑발을 보니 반가워요.",
+    "example_zh": "好久没看到黑发了，感觉好亲切。",
     "tags": [
       "追星",
       "造型"
@@ -5707,8 +5707,8 @@
     "korean": "염색",
     "meaning_zh": "染发",
     "part_of_speech": "名词",
-    "example_ko": "오늘 염색이 정말 잘 어울려요.",
-    "example_zh": "今天的染发真的很搭。",
+    "example_ko": "염색한 지 얼마 안 돼서 색이 진해요.",
+    "example_zh": "刚染没多久，所以颜色很深。",
     "tags": [
       "追星",
       "造型"
@@ -5720,8 +5720,8 @@
     "korean": "앞머리",
     "meaning_zh": "刘海",
     "part_of_speech": "名词",
-    "example_ko": "오늘 앞머리가 정말 잘 어울려요.",
-    "example_zh": "今天的刘海真的很搭。",
+    "example_ko": "앞머리가 눈을 찔러서 조금 잘랐어요.",
+    "example_zh": "刘海扎眼睛，我剪短了一点。",
     "tags": [
       "追星",
       "造型"
@@ -5733,8 +5733,8 @@
     "korean": "장발",
     "meaning_zh": "长发",
     "part_of_speech": "名词",
-    "example_ko": "오늘 장발이 정말 잘 어울려요.",
-    "example_zh": "今天的长发真的很搭。",
+    "example_ko": "장발일 때는 머리를 묶고 다녔어요.",
+    "example_zh": "长发的时候我经常扎着头发。",
     "tags": [
       "追星",
       "造型"
@@ -5746,8 +5746,8 @@
     "korean": "단발",
     "meaning_zh": "短发",
     "part_of_speech": "名词",
-    "example_ko": "오늘 단발이 정말 잘 어울려요.",
-    "example_zh": "今天的短发真的很搭。",
+    "example_ko": "이번에는 단발로 잘라 볼까 해요.",
+    "example_zh": "这次我想试试剪成短发。",
     "tags": [
       "追星",
       "造型"
@@ -5759,8 +5759,8 @@
     "korean": "파마",
     "meaning_zh": "烫发",
     "part_of_speech": "名词",
-    "example_ko": "오늘 파마가 정말 잘 어울려요.",
-    "example_zh": "今天的烫发真的很搭。",
+    "example_ko": "파마하고 나서 머리 손질이 편해졌어요.",
+    "example_zh": "烫发后，打理头发方便多了。",
     "tags": [
       "追星",
       "造型"
@@ -5772,8 +5772,8 @@
     "korean": "피어싱",
     "meaning_zh": "穿孔饰品",
     "part_of_speech": "名词",
-    "example_ko": "오늘 피어싱이 정말 잘 어울려요.",
-    "example_zh": "今天的穿孔饰品真的很搭。",
+    "example_ko": "피어싱은 언제 처음 했어요?",
+    "example_zh": "你第一次打耳洞是什么时候？",
     "tags": [
       "追星",
       "造型"
@@ -5785,8 +5785,8 @@
     "korean": "화보",
     "meaning_zh": "画报",
     "part_of_speech": "名词",
-    "example_ko": "오늘 화보가 정말 잘 어울려요.",
-    "example_zh": "今天的画报真的很搭。",
+    "example_ko": "이번 화보는 야외에서 찍었대요.",
+    "example_zh": "听说这次画报是在户外拍的。",
     "tags": [
       "追星",
       "造型"
@@ -5798,8 +5798,8 @@
     "korean": "컨셉 포토",
     "meaning_zh": "概念照",
     "part_of_speech": "名词",
-    "example_ko": "오늘 컨셉 포토가 정말 잘 어울려요.",
-    "example_zh": "今天的概念照真的很搭。",
+    "example_ko": "컨셉 포토가 공개돼서 바로 저장했어요.",
+    "example_zh": "概念照公开了，我马上保存了。",
     "tags": [
       "追星",
       "造型"
@@ -5811,8 +5811,8 @@
     "korean": "증명사진",
     "meaning_zh": "证件照",
     "part_of_speech": "名词",
-    "example_ko": "오늘 증명사진이 정말 잘 어울려요.",
-    "example_zh": "今天的证件照真的很搭。",
+    "example_ko": "여권에 쓸 증명사진을 찍으러 가요.",
+    "example_zh": "我要去拍护照用的证件照。",
     "tags": [
       "基础",
       "造型"
@@ -5824,8 +5824,8 @@
     "korean": "필터",
     "meaning_zh": "滤镜",
     "part_of_speech": "名词",
-    "example_ko": "오늘 필터가 정말 잘 어울려요.",
-    "example_zh": "今天的滤镜真的很搭。",
+    "example_ko": "필터를 빼니까 원래 색이 더 예쁘네요.",
+    "example_zh": "去掉滤镜后，原本的颜色反而更好看。",
     "tags": [
       "数字生活",
       "造型"
@@ -5837,8 +5837,8 @@
     "korean": "보정",
     "meaning_zh": "修图",
     "part_of_speech": "名词",
-    "example_ko": "오늘 보정이 정말 잘 어울려요.",
-    "example_zh": "今天的修图真的很搭。",
+    "example_ko": "보정을 너무 많이 하면 어색해 보여요.",
+    "example_zh": "修图修得太多会显得不自然。",
     "tags": [
       "数字生活",
       "造型"
@@ -5850,8 +5850,8 @@
     "korean": "보정하다",
     "meaning_zh": "修图",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 보정해요.",
-    "example_zh": "今天也修图。",
+    "example_ko": "사진이 어둡게 나와서 밝기만 보정했어요.",
+    "example_zh": "照片拍暗了，我只调整了亮度。",
     "tags": [
       "数字生活",
       "造型"
@@ -5915,8 +5915,8 @@
     "korean": "계정",
     "meaning_zh": "账号",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 계정을 확인해 주세요.",
-    "example_zh": "请在手机上确认账号。",
+    "example_ko": "덕질용 계정을 따로 만들었어요.",
+    "example_zh": "我另外建了一个追星账号。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -5928,8 +5928,8 @@
     "korean": "아이디",
     "meaning_zh": "用户名/ID",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 아이디를 확인해 주세요.",
-    "example_zh": "请在手机上确认用户名/ID。",
+    "example_ko": "아이디가 너무 길어서 기억이 안 나요.",
+    "example_zh": "用户名太长了，我记不住。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -5941,8 +5941,8 @@
     "korean": "비밀번호",
     "meaning_zh": "密码",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 비밀번호를 확인해 주세요.",
-    "example_zh": "请在手机上确认密码。",
+    "example_ko": "비밀번호를 잊어버려서 다시 설정했어요.",
+    "example_zh": "我忘了密码，所以重新设置了。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -5954,8 +5954,8 @@
     "korean": "알림",
     "meaning_zh": "通知",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 알림을 확인해 주세요.",
-    "example_zh": "请在手机上确认通知。",
+    "example_ko": "알림이 너무 많이 와서 잠깐 껐어요.",
+    "example_zh": "通知太多了，我暂时关掉了。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -5967,8 +5967,8 @@
     "korean": "설정",
     "meaning_zh": "设置",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 설정을 확인해 주세요.",
-    "example_zh": "请在手机上确认设置。",
+    "example_ko": "설정에서 글자 크기를 바꿀 수 있어요.",
+    "example_zh": "可以在设置里更改字号。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -5980,8 +5980,8 @@
     "korean": "프로필",
     "meaning_zh": "个人资料",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 프로필을 확인해 주세요.",
-    "example_zh": "请在手机上确认个人资料。",
+    "example_ko": "프로필 사진을 최근 셀카로 바꿨어요.",
+    "example_zh": "我把头像换成了最近的自拍。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -5993,8 +5993,8 @@
     "korean": "링크",
     "meaning_zh": "链接",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 링크를 확인해 주세요.",
-    "example_zh": "请在手机上确认链接。",
+    "example_ko": "링크가 안 열려요. 다시 보내 줄래요?",
+    "example_zh": "链接打不开，能再发一次吗？",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6006,8 +6006,8 @@
     "korean": "해시태그",
     "meaning_zh": "标签",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 해시태그를 확인해 주세요.",
-    "example_zh": "请在手机上确认标签。",
+    "example_ko": "생일 해시태그를 넣어서 글을 올렸어요.",
+    "example_zh": "我带上生日话题标签发了帖子。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6032,8 +6032,8 @@
     "korean": "구독",
     "meaning_zh": "订阅",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 구독을 확인해 주세요.",
-    "example_zh": "请在手机上确认订阅。",
+    "example_ko": "구독 기간이 다음 주에 끝나요.",
+    "example_zh": "订阅下周到期。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6058,8 +6058,8 @@
     "korean": "언팔",
     "meaning_zh": "取消关注（缩写）",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 언팔을 확인해 주세요.",
-    "example_zh": "请在手机上确认取消关注（缩写）。",
+    "example_ko": "실수로 언팔해서 다시 팔로우했어요.",
+    "example_zh": "我不小心取消关注了，又重新关注了。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6110,8 +6110,8 @@
     "korean": "게시물",
     "meaning_zh": "帖子",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 게시물을 확인해 주세요.",
-    "example_zh": "请在手机上确认帖子。",
+    "example_ko": "그 게시물은 지금 찾을 수가 없어요.",
+    "example_zh": "现在找不到那个帖子了。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6123,8 +6123,8 @@
     "korean": "피드",
     "meaning_zh": "动态流",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 피드를 확인해 주세요.",
-    "example_zh": "请在手机上确认动态流。",
+    "example_ko": "피드를 내리다가 반가운 사진을 봤어요.",
+    "example_zh": "往下刷动态时看到了一张喜欢的照片。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6136,8 +6136,8 @@
     "korean": "스토리",
     "meaning_zh": "限时动态",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 스토리를 확인해 주세요.",
-    "example_zh": "请在手机上确认限时动态。",
+    "example_ko": "스토리는 사라지기 전에 봐야 해요.",
+    "example_zh": "限时动态要在消失前看。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6149,8 +6149,8 @@
     "korean": "릴스",
     "meaning_zh": "短视频",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 릴스를 확인해 주세요.",
-    "example_zh": "请在手机上确认短视频。",
+    "example_ko": "친구랑 같이 릴스를 찍어 봤어요.",
+    "example_zh": "我和朋友试着拍了短视频。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6162,8 +6162,8 @@
     "korean": "숏폼",
     "meaning_zh": "短视频内容",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 숏폼을 확인해 주세요.",
-    "example_zh": "请在手机上确认短视频内容。",
+    "example_ko": "숏폼을 보다 보니 한 시간이 지났어요.",
+    "example_zh": "刷着短视频，不知不觉就过了一小时。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6175,8 +6175,8 @@
     "korean": "답글",
     "meaning_zh": "回复评论",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 답글을 확인해 주세요.",
-    "example_zh": "请在手机上确认回复评论。",
+    "example_ko": "제 댓글에 답글이 달렸어요!",
+    "example_zh": "我的评论收到回复了！",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6188,8 +6188,8 @@
     "korean": "쪽지",
     "meaning_zh": "私信",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 쪽지를 확인해 주세요.",
-    "example_zh": "请在手机上确认私信。",
+    "example_ko": "자세한 주소는 쪽지로 보내 드릴게요.",
+    "example_zh": "详细地址我通过私信发给你。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6214,8 +6214,8 @@
     "korean": "채팅",
     "meaning_zh": "聊天",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 채팅을 확인해 주세요.",
-    "example_zh": "请在手机上确认聊天。",
+    "example_ko": "채팅이 너무 빨리 올라가서 못 읽겠어요.",
+    "example_zh": "聊天消息刷得太快，读不过来。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6227,8 +6227,8 @@
     "korean": "단체 채팅",
     "meaning_zh": "群聊",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 단체 채팅을 확인해 주세요.",
-    "example_zh": "请在手机上确认群聊。",
+    "example_ko": "단체 채팅에서 만날 장소를 정했어요.",
+    "example_zh": "我们在群聊里定了见面地点。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6240,8 +6240,8 @@
     "korean": "오픈채팅",
     "meaning_zh": "开放群聊",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 오픈채팅을 확인해 주세요.",
-    "example_zh": "请在手机上确认开放群聊。",
+    "example_ko": "같이 공연 갈 사람을 오픈채팅에서 찾았어요.",
+    "example_zh": "我在开放群聊里找到了同行看演出的人。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6253,8 +6253,8 @@
     "korean": "읽음",
     "meaning_zh": "已读",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 읽음을 확인해 주세요.",
-    "example_zh": "请在手机上确认已读。",
+    "example_ko": "읽음 표시는 떴는데 아직 답장이 없어요.",
+    "example_zh": "显示已读了，但还没有回复。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6266,8 +6266,8 @@
     "korean": "안 읽음",
     "meaning_zh": "未读",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 안 읽음을 확인해 주세요.",
-    "example_zh": "请在手机上确认未读。",
+    "example_ko": "바쁠 때는 메시지가 계속 안 읽음으로 남아요.",
+    "example_zh": "忙的时候消息一直显示未读。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6279,8 +6279,8 @@
     "korean": "온라인",
     "meaning_zh": "在线",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 온라인을 확인해 주세요.",
-    "example_zh": "请在手机上确认在线。",
+    "example_ko": "온라인으로도 공연을 볼 수 있어요.",
+    "example_zh": "也可以在线看演出。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6292,8 +6292,8 @@
     "korean": "오프라인",
     "meaning_zh": "离线",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 오프라인을 확인해 주세요.",
-    "example_zh": "请在手机上确认离线。",
+    "example_ko": "인터넷이 끊겨서 오프라인 상태가 됐어요.",
+    "example_zh": "网络断了，变成了离线状态。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6305,8 +6305,8 @@
     "korean": "접속",
     "meaning_zh": "连接/上线",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 접속을 확인해 주세요.",
-    "example_zh": "请在手机上确认连接/上线。",
+    "example_ko": "사람이 몰려서 사이트 접속이 안 돼요.",
+    "example_zh": "人太多了，网站连不上。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6318,8 +6318,8 @@
     "korean": "인터넷",
     "meaning_zh": "网络",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 인터넷을 확인해 주세요.",
-    "example_zh": "请在手机上确认网络。",
+    "example_ko": "인터넷이 끊겨서 통화가 끝났어요.",
+    "example_zh": "网络断了，通话也结束了。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6331,8 +6331,8 @@
     "korean": "와이파이",
     "meaning_zh": "Wi-Fi",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 와이파이를 확인해 주세요.",
-    "example_zh": "请在手机上确认Wi-Fi。",
+    "example_ko": "와이파이 비밀번호가 뭐예요?",
+    "example_zh": "Wi-Fi密码是什么？",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6344,8 +6344,8 @@
     "korean": "데이터",
     "meaning_zh": "流量/数据",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 데이터를 확인해 주세요.",
-    "example_zh": "请在手机上确认流量/数据。",
+    "example_ko": "이번 달 데이터를 거의 다 썼어요.",
+    "example_zh": "这个月流量快用完了。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6357,8 +6357,8 @@
     "korean": "배터리",
     "meaning_zh": "电池",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 배터리를 확인해 주세요.",
-    "example_zh": "请在手机上确认电池。",
+    "example_ko": "배터리가 얼마 안 남아서 불안해요.",
+    "example_zh": "电池快没电了，我有点着急。",
     "tags": [
       "数字生活",
       "日常"
@@ -6370,8 +6370,8 @@
     "korean": "충전",
     "meaning_zh": "充电",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 충전을 확인해 주세요.",
-    "example_zh": "请在手机上确认充电。",
+    "example_ko": "충전 좀 해도 될까요? 콘센트가 필요해요.",
+    "example_zh": "可以充一下电吗？我需要插座。",
     "tags": [
       "数字生活",
       "日常"
@@ -6383,8 +6383,8 @@
     "korean": "충전기",
     "meaning_zh": "充电器",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 충전기를 확인해 주세요.",
-    "example_zh": "请在手机上确认充电器。",
+    "example_ko": "충전기를 숙소에 두고 왔어요.",
+    "example_zh": "我把充电器忘在住处了。",
     "tags": [
       "数字生活",
       "日常"
@@ -6396,8 +6396,8 @@
     "korean": "휴대폰",
     "meaning_zh": "手机",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 휴대폰을 확인해 주세요.",
-    "example_zh": "请在手机上确认手机。",
+    "example_ko": "휴대폰을 어디에 뒀는지 모르겠어요.",
+    "example_zh": "不知道把手机放哪儿了。",
     "tags": [
       "数字生活",
       "日常"
@@ -6409,8 +6409,8 @@
     "korean": "이어폰",
     "meaning_zh": "耳机",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 이어폰을 확인해 주세요.",
-    "example_zh": "请在手机上确认耳机。",
+    "example_ko": "이어폰 한쪽에서 소리가 안 나요.",
+    "example_zh": "耳机有一边没声音。",
     "tags": [
       "数字生活",
       "日常"
@@ -6422,8 +6422,8 @@
     "korean": "스크린샷",
     "meaning_zh": "截图",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 스크린샷을 확인해 주세요.",
-    "example_zh": "请在手机上确认截图。",
+    "example_ko": "예매 화면을 스크린샷으로 남겨 뒀어요.",
+    "example_zh": "我把订票页面截图保存了。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6435,8 +6435,8 @@
     "korean": "캡처",
     "meaning_zh": "截屏",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 캡처를 확인해 주세요.",
-    "example_zh": "请在手机上确认截屏。",
+    "example_ko": "이 장면 캡처해서 배경 화면으로 쓸래요.",
+    "example_zh": "我要把这一幕截下来当壁纸。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6448,8 +6448,8 @@
     "korean": "실시간",
     "meaning_zh": "实时",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 실시간을 확인해 주세요.",
-    "example_zh": "请在手机上确认实时。",
+    "example_ko": "댓글이 실시간으로 올라오네요.",
+    "example_zh": "评论正在实时刷新呢。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6461,8 +6461,8 @@
     "korean": "알고리즘",
     "meaning_zh": "算法",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 알고리즘을 확인해 주세요.",
-    "example_zh": "请在手机上确认算法。",
+    "example_ko": "알고리즘이 제 취향을 잘 아나 봐요.",
+    "example_zh": "算法好像很了解我的喜好。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6474,8 +6474,8 @@
     "korean": "트렌드",
     "meaning_zh": "趋势",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 트렌드를 확인해 주세요.",
-    "example_zh": "请在手机上确认趋势。",
+    "example_ko": "요즘 어떤 트렌드가 유행해요?",
+    "example_zh": "最近流行什么趋势？",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6487,8 +6487,8 @@
     "korean": "밈",
     "meaning_zh": "梗/迷因",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 밈을 확인해 주세요.",
-    "example_zh": "请在手机上确认梗/迷因。",
+    "example_ko": "이 밈은 어디서 시작된 거예요?",
+    "example_zh": "这个梗最早从哪里来的？",
     "tags": [
       "数字生活",
       "饭圈用语"
@@ -6500,8 +6500,8 @@
     "korean": "짤",
     "meaning_zh": "表情包/梗图",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 짤을 확인해 주세요.",
-    "example_zh": "请在手机上确认表情包/梗图。",
+    "example_ko": "이 짤 보자마자 네 생각이 났어.",
+    "example_zh": "一看到这张梗图就想起了你。",
     "tags": [
       "数字生活",
       "饭圈用语"
@@ -6513,8 +6513,8 @@
     "korean": "움짤",
     "meaning_zh": "动态表情图",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 움짤을 확인해 주세요.",
-    "example_zh": "请在手机上确认动态表情图。",
+    "example_ko": "웃는 장면으로 움짤을 만들었어요.",
+    "example_zh": "我用笑的那一幕做了动图。",
     "tags": [
       "数字生活",
       "饭圈用语"
@@ -6526,8 +6526,8 @@
     "korean": "짤방",
     "meaning_zh": "梗图",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 짤방을 확인해 주세요.",
-    "example_zh": "请在手机上确认梗图。",
+    "example_ko": "답장 대신 웃긴 짤방을 보냈어요.",
+    "example_zh": "我发了张搞笑梗图当回复。",
     "tags": [
       "数字生活",
       "饭圈用语"
@@ -6539,8 +6539,8 @@
     "korean": "리트윗",
     "meaning_zh": "转推",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 리트윗을 확인해 주세요.",
-    "example_zh": "请在手机上确认转推。",
+    "example_ko": "이벤트 참여하려면 리트윗을 해야 해요.",
+    "example_zh": "想参加活动，需要转推。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6552,8 +6552,8 @@
     "korean": "인용",
     "meaning_zh": "引用转发",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 인용을 확인해 주세요.",
-    "example_zh": "请在手机上确认引用转发。",
+    "example_ko": "인용으로 감상을 짧게 남겼어요.",
+    "example_zh": "我引用转发并写了简短感想。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6565,8 +6565,8 @@
     "korean": "실트",
     "meaning_zh": "实时热搜（缩写）",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 실트를 확인해 주세요.",
-    "example_zh": "请在手机上确认实时热搜（缩写）。",
+    "example_ko": "멤버 생일이 실트에 올라왔어요.",
+    "example_zh": "成员的生日上实时热搜了。",
     "tags": [
       "数字生活",
       "饭圈用语"
@@ -6578,8 +6578,8 @@
     "korean": "실시간 트렌드",
     "meaning_zh": "实时趋势",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 실시간 트렌드를 확인해 주세요.",
-    "example_zh": "请在手机上确认实时趋势。",
+    "example_ko": "실시간 트렌드에 익숙한 이름이 보여요.",
+    "example_zh": "实时趋势里看到了熟悉的名字。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6617,8 +6617,8 @@
     "korean": "라이브 방송",
     "meaning_zh": "直播",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 라이브 방송을 확인해 주세요.",
-    "example_zh": "请在手机上确认直播。",
+    "example_ko": "라이브 방송 시작하면 깨워 줘요.",
+    "example_zh": "直播开始的话叫醒我。",
     "tags": [
       "追星",
       "数字生活"
@@ -6630,8 +6630,8 @@
     "korean": "다시보기",
     "meaning_zh": "回放",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 다시보기를 확인해 주세요.",
-    "example_zh": "请在手机上确认回放。",
+    "example_ko": "생방송을 놓쳐서 다시보기로 봤어요.",
+    "example_zh": "错过了直播，我看了回放。",
     "tags": [
       "追星",
       "数字生活"
@@ -6656,8 +6656,8 @@
     "korean": "번역기",
     "meaning_zh": "翻译器",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 번역기를 확인해 주세요.",
-    "example_zh": "请在手机上确认翻译器。",
+    "example_ko": "번역기를 써도 이 농담은 이해가 안 돼요.",
+    "example_zh": "用了翻译器还是不懂这个玩笑。",
     "tags": [
       "数字生活",
       "学习"
@@ -6669,8 +6669,8 @@
     "korean": "자동 번역",
     "meaning_zh": "自动翻译",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 자동 번역을 확인해 주세요.",
-    "example_zh": "请在手机上确认自动翻译。",
+    "example_ko": "자동 번역이 이상해서 원문을 다시 읽었어요.",
+    "example_zh": "自动翻译很奇怪，所以我又读了原文。",
     "tags": [
       "数字生活",
       "学习"
@@ -6747,8 +6747,8 @@
     "korean": "업데이트",
     "meaning_zh": "更新",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 업데이트를 확인해 주세요.",
-    "example_zh": "请在手机上确认更新。",
+    "example_ko": "업데이트 후에 새 기능이 생겼어요.",
+    "example_zh": "更新后有了新功能。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6760,8 +6760,8 @@
     "korean": "오류",
     "meaning_zh": "错误/故障",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 오류를 확인해 주세요.",
-    "example_zh": "请在手机上确认错误/故障。",
+    "example_ko": "결제 중에 오류가 나서 다시 시도했어요.",
+    "example_zh": "付款时出了错误，我重新试了一次。",
     "tags": [
       "数字生活",
       "日常"
@@ -6773,8 +6773,8 @@
     "korean": "버그",
     "meaning_zh": "程序问题",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 버그를 확인해 주세요.",
-    "example_zh": "请在手机上确认程序问题。",
+    "example_ko": "이 버그 때문에 앱이 자꾸 꺼져요.",
+    "example_zh": "因为这个程序问题，应用总是闪退。",
     "tags": [
       "数字生活",
       "日常"
@@ -6786,8 +6786,8 @@
     "korean": "삭제",
     "meaning_zh": "删除",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 삭제를 확인해 주세요.",
-    "example_zh": "请在手机上确认删除。",
+    "example_ko": "사진 삭제 전에 한 번 더 확인하세요.",
+    "example_zh": "删除照片前再确认一次。",
     "tags": [
       "数字生活",
       "日常"
@@ -6799,8 +6799,8 @@
     "korean": "복구",
     "meaning_zh": "恢复",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 복구를 확인해 주세요.",
-    "example_zh": "请在手机上确认恢复。",
+    "example_ko": "지운 사진도 복구할 수 있나요?",
+    "example_zh": "删掉的照片也能恢复吗？",
     "tags": [
       "数字生活",
       "日常"
@@ -6812,8 +6812,8 @@
     "korean": "차단",
     "meaning_zh": "拉黑/屏蔽",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 차단을 확인해 주세요.",
-    "example_zh": "请在手机上确认拉黑/屏蔽。",
+    "example_ko": "모르는 사람이 계속 연락해서 차단했어요.",
+    "example_zh": "有陌生人一直联系我，我把对方拉黑了。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6825,8 +6825,8 @@
     "korean": "신고",
     "meaning_zh": "举报",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 신고를 확인해 주세요.",
-    "example_zh": "请在手机上确认举报。",
+    "example_ko": "사칭 계정을 발견해서 신고했어요.",
+    "example_zh": "我发现了冒充他人的账号，进行了举报。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6838,8 +6838,8 @@
     "korean": "인증",
     "meaning_zh": "验证",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 인증을 확인해 주세요.",
-    "example_zh": "请在手机上确认验证。",
+    "example_ko": "이메일 인증을 해야 가입이 끝나요.",
+    "example_zh": "完成邮箱验证才算注册成功。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6851,8 +6851,8 @@
     "korean": "인증번호",
     "meaning_zh": "验证码",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 인증번호를 확인해 주세요.",
-    "example_zh": "请在手机上确认验证码。",
+    "example_ko": "인증번호가 아직 안 왔어요.",
+    "example_zh": "验证码还没收到。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6864,8 +6864,8 @@
     "korean": "개인정보",
     "meaning_zh": "个人信息",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 개인정보를 확인해 주세요.",
-    "example_zh": "请在手机上确认个人信息。",
+    "example_ko": "개인정보가 보이는 부분은 가리고 올렸어요.",
+    "example_zh": "我遮住了个人信息再发布。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6877,8 +6877,8 @@
     "korean": "공개",
     "meaning_zh": "公开",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 공개를 확인해 주세요.",
-    "example_zh": "请在手机上确认公开。",
+    "example_ko": "새 영상 공개 시간이 언제예요?",
+    "example_zh": "新视频什么时候公开？",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6890,8 +6890,8 @@
     "korean": "비공개",
     "meaning_zh": "私密",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 비공개를 확인해 주세요.",
-    "example_zh": "请在手机上确认私密。",
+    "example_ko": "계정을 비공개로 바꿨어요.",
+    "example_zh": "我把账号改成了私密账号。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -6903,8 +6903,8 @@
     "korean": "예약",
     "meaning_zh": "预约/预定",
     "part_of_speech": "名词",
-    "example_ko": "오늘 예약에 대해 이야기해요.",
-    "example_zh": "今天聊预约/预定。",
+    "example_ko": "두 명 예약했는데 조금 늦을 것 같아요.",
+    "example_zh": "我订了两个人的位置，可能会晚一点到。",
     "tags": [
       "基础",
       "日常"
@@ -6916,8 +6916,8 @@
     "korean": "캘린더",
     "meaning_zh": "日历",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 캘린더를 확인해 주세요.",
-    "example_zh": "请在手机上确认日历。",
+    "example_ko": "캘린더에 티켓 예매 날짜를 표시했어요.",
+    "example_zh": "我在日历上标出了开票日期。",
     "tags": [
       "数字生活",
       "日常"
@@ -6929,8 +6929,8 @@
     "korean": "일정",
     "meaning_zh": "日程",
     "part_of_speech": "名词",
-    "example_ko": "오늘 일정에 대해 이야기해요.",
-    "example_zh": "今天聊日程。",
+    "example_ko": "갑자기 일정이 바뀌어서 못 가게 됐어요.",
+    "example_zh": "日程突然变了，我没法去了。",
     "tags": [
       "基础",
       "日常"
@@ -6942,8 +6942,8 @@
     "korean": "리마인더",
     "meaning_zh": "提醒",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 리마인더를 확인해 주세요.",
-    "example_zh": "请在手机上确认提醒。",
+    "example_ko": "잊지 않으려고 리마인더를 설정했어요.",
+    "example_zh": "为了不忘记，我设置了提醒。",
     "tags": [
       "数字生活",
       "日常"
@@ -6955,8 +6955,8 @@
     "korean": "메모",
     "meaning_zh": "备忘录",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 메모를 확인해 주세요.",
-    "example_zh": "请在手机上确认备忘录。",
+    "example_ko": "생각난 김에 메모해 둘게요.",
+    "example_zh": "趁现在想起来，我先记一下。",
     "tags": [
       "数字生活",
       "日常"
@@ -6968,8 +6968,8 @@
     "korean": "사진첩",
     "meaning_zh": "相册",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 사진첩을 확인해 주세요.",
-    "example_zh": "请在手机上确认相册。",
+    "example_ko": "사진첩이 온통 공연 사진이에요.",
+    "example_zh": "相册里全是演出照片。",
     "tags": [
       "数字生活",
       "日常"
@@ -6981,8 +6981,8 @@
     "korean": "파일",
     "meaning_zh": "文件",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 파일을 확인해 주세요.",
-    "example_zh": "请在手机上确认文件。",
+    "example_ko": "파일이 커서 이메일로 안 보내져요.",
+    "example_zh": "文件太大，邮件发不出去。",
     "tags": [
       "数字生活",
       "日常"
@@ -6994,8 +6994,8 @@
     "korean": "폴더",
     "meaning_zh": "文件夹",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 폴더를 확인해 주세요.",
-    "example_zh": "请在手机上确认文件夹。",
+    "example_ko": "사진을 날짜별 폴더에 나눠 넣었어요.",
+    "example_zh": "我把照片按日期分到各个文件夹里。",
     "tags": [
       "数字生活",
       "日常"
@@ -7007,8 +7007,8 @@
     "korean": "클라우드",
     "meaning_zh": "云端",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 클라우드를 확인해 주세요.",
-    "example_zh": "请在手机上确认云端。",
+    "example_ko": "클라우드에 올려 두면 다른 기기에서도 볼 수 있어요.",
+    "example_zh": "上传到云端后，在其他设备上也能看。",
     "tags": [
       "数字生活",
       "日常"
@@ -7020,8 +7020,8 @@
     "korean": "용량",
     "meaning_zh": "容量",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 용량을 확인해 주세요.",
-    "example_zh": "请在手机上确认容量。",
+    "example_ko": "용량이 부족해서 영상을 몇 개 지웠어요.",
+    "example_zh": "容量不够，我删了几个视频。",
     "tags": [
       "数字生活",
       "日常"
@@ -7033,8 +7033,8 @@
     "korean": "무료",
     "meaning_zh": "免费",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 무료를 확인해 주세요.",
-    "example_zh": "请在手机上确认免费。",
+    "example_ko": "이 전시는 무료로 볼 수 있어요.",
+    "example_zh": "这个展览可以免费观看。",
     "tags": [
       "数字生活",
       "日常"
@@ -7046,8 +7046,8 @@
     "korean": "유료",
     "meaning_zh": "付费",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 유료를 확인해 주세요.",
-    "example_zh": "请在手机上确认付费。",
+    "example_ko": "그 영상은 유료라서 결제해야 해요.",
+    "example_zh": "那个视频是付费的，要先付款。",
     "tags": [
       "数字生活",
       "日常"
@@ -7059,8 +7059,8 @@
     "korean": "결제",
     "meaning_zh": "支付",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 결제를 확인해 주세요.",
-    "example_zh": "请在手机上确认支付。",
+    "example_ko": "결제가 두 번 된 것 같아요.",
+    "example_zh": "好像重复付了两次款。",
     "tags": [
       "数字生活",
       "日常"
@@ -7072,8 +7072,8 @@
     "korean": "영수증",
     "meaning_zh": "收据",
     "part_of_speech": "名词",
-    "example_ko": "오늘 영수증에 대해 이야기해요.",
-    "example_zh": "今天聊收据。",
+    "example_ko": "영수증도 같이 넣어 주세요.",
+    "example_zh": "请把收据也一起放进去。",
     "tags": [
       "基础",
       "日常"
@@ -7085,8 +7085,8 @@
     "korean": "쿠폰",
     "meaning_zh": "优惠券",
     "part_of_speech": "名词",
-    "example_ko": "오늘 쿠폰에 대해 이야기해요.",
-    "example_zh": "今天聊优惠券。",
+    "example_ko": "이 쿠폰은 오늘까지 쓸 수 있어요.",
+    "example_zh": "这张优惠券有效期到今天。",
     "tags": [
       "基础",
       "日常"
@@ -7098,8 +7098,8 @@
     "korean": "할인",
     "meaning_zh": "折扣",
     "part_of_speech": "名词",
-    "example_ko": "오늘 할인에 대해 이야기해요.",
-    "example_zh": "今天聊折扣。",
+    "example_ko": "학생 할인도 되나요?",
+    "example_zh": "也有学生折扣吗？",
     "tags": [
       "基础",
       "日常"
@@ -7111,8 +7111,8 @@
     "korean": "배송비",
     "meaning_zh": "运费",
     "part_of_speech": "名词",
-    "example_ko": "오늘 배송비에 대해 이야기해요.",
-    "example_zh": "今天聊运费。",
+    "example_ko": "배송비까지 하면 총 얼마예요?",
+    "example_zh": "加上运费总共多少钱？",
     "tags": [
       "基础",
       "日常"
@@ -7124,8 +7124,8 @@
     "korean": "주소",
     "meaning_zh": "地址",
     "part_of_speech": "名词",
-    "example_ko": "오늘 주소에 대해 이야기해요.",
-    "example_zh": "今天聊地址。",
+    "example_ko": "주소를 잘못 적었는데 바꿀 수 있어요?",
+    "example_zh": "我填错了地址，可以修改吗？",
     "tags": [
       "基础",
       "日常"
@@ -7137,8 +7137,8 @@
     "korean": "우편번호",
     "meaning_zh": "邮编",
     "part_of_speech": "名词",
-    "example_ko": "오늘 우편번호에 대해 이야기해요.",
-    "example_zh": "今天聊邮编。",
+    "example_ko": "우편번호를 몰라서 검색했어요.",
+    "example_zh": "我不知道邮编，所以搜索了一下。",
     "tags": [
       "基础",
       "日常"
@@ -7150,8 +7150,8 @@
     "korean": "해외",
     "meaning_zh": "海外",
     "part_of_speech": "名词",
-    "example_ko": "오늘 해외에 대해 이야기해요.",
-    "example_zh": "今天聊海外。",
+    "example_ko": "해외 배송도 가능한가요?",
+    "example_zh": "也可以寄到海外吗？",
     "tags": [
       "基础",
       "出行"
@@ -7163,8 +7163,8 @@
     "korean": "국내",
     "meaning_zh": "国内",
     "part_of_speech": "名词",
-    "example_ko": "오늘 국내에 대해 이야기해요.",
-    "example_zh": "今天聊国内。",
+    "example_ko": "이 상품은 국내에서만 살 수 있대요.",
+    "example_zh": "听说这件商品只能在国内买到。",
     "tags": [
       "基础",
       "出行"
@@ -7176,8 +7176,8 @@
     "korean": "출발",
     "meaning_zh": "出发",
     "part_of_speech": "名词",
-    "example_ko": "오늘 출발에 대해 이야기해요.",
-    "example_zh": "今天聊出发。",
+    "example_ko": "출발 전에 여권부터 확인해요.",
+    "example_zh": "出发前先确认护照。",
     "tags": [
       "基础",
       "出行"
@@ -7189,8 +7189,8 @@
     "korean": "도착",
     "meaning_zh": "到达",
     "part_of_speech": "名词",
-    "example_ko": "오늘 도착에 대해 이야기해요.",
-    "example_zh": "今天聊到达。",
+    "example_ko": "도착 시간이 조금 늦어질 것 같아요.",
+    "example_zh": "到达时间可能会晚一点。",
     "tags": [
       "基础",
       "出行"
@@ -7202,8 +7202,8 @@
     "korean": "환승",
     "meaning_zh": "换乘",
     "part_of_speech": "名词",
-    "example_ko": "오늘 환승에 대해 이야기해요.",
-    "example_zh": "今天聊换乘。",
+    "example_ko": "이 역에서 환승하면 더 빨라요.",
+    "example_zh": "在这一站换乘会更快。",
     "tags": [
       "基础",
       "出行"
@@ -7215,8 +7215,8 @@
     "korean": "지하철",
     "meaning_zh": "地铁",
     "part_of_speech": "名词",
-    "example_ko": "오늘 지하철에 대해 이야기해요.",
-    "example_zh": "今天聊地铁。",
+    "example_ko": "지하철 막차가 몇 시예요?",
+    "example_zh": "地铁末班车是几点？",
     "tags": [
       "基础",
       "出行"
@@ -7228,8 +7228,8 @@
     "korean": "버스",
     "meaning_zh": "公交车",
     "part_of_speech": "名词",
-    "example_ko": "오늘 버스에 대해 이야기해요.",
-    "example_zh": "今天聊公交车。",
+    "example_ko": "버스를 잘못 타서 다시 돌아가요.",
+    "example_zh": "我坐错公交了，正在往回走。",
     "tags": [
       "基础",
       "出行"
@@ -7241,8 +7241,8 @@
     "korean": "택시",
     "meaning_zh": "出租车",
     "part_of_speech": "名词",
-    "example_ko": "오늘 택시에 대해 이야기해요.",
-    "example_zh": "今天聊出租车。",
+    "example_ko": "짐이 많으니까 택시를 탈까요?",
+    "example_zh": "行李很多，要不打车吧？",
     "tags": [
       "基础",
       "出行"
@@ -7254,8 +7254,8 @@
     "korean": "길",
     "meaning_zh": "路",
     "part_of_speech": "名词",
-    "example_ko": "오늘 길에 대해 이야기해요.",
-    "example_zh": "今天聊路。",
+    "example_ko": "이 길로 쭉 가면 되나요?",
+    "example_zh": "沿着这条路一直走就行吗？",
     "tags": [
       "基础",
       "出行"
@@ -7267,8 +7267,8 @@
     "korean": "지도",
     "meaning_zh": "地图",
     "part_of_speech": "名词",
-    "example_ko": "오늘 지도에 대해 이야기해요.",
-    "example_zh": "今天聊地图。",
+    "example_ko": "지도를 봐도 방향을 모르겠어요.",
+    "example_zh": "看了地图也分不清方向。",
     "tags": [
       "基础",
       "出行"
@@ -7280,8 +7280,8 @@
     "korean": "예약하다",
     "meaning_zh": "预约/预定",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 예약해요.",
-    "example_zh": "今天也预约/预定。",
+    "example_ko": "주말이라 식당을 미리 예약했어요.",
+    "example_zh": "因为是周末，我提前订了餐厅。",
     "tags": [
       "基础",
       "日常"
@@ -7293,8 +7293,8 @@
     "korean": "출발하다",
     "meaning_zh": "出发",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 출발해요.",
-    "example_zh": "今天也出发。",
+    "example_ko": "늦지 않으려면 지금 출발해야 해요.",
+    "example_zh": "想不迟到的话，现在就得出发。",
     "tags": [
       "基础",
       "出行"
@@ -7306,8 +7306,8 @@
     "korean": "도착하다",
     "meaning_zh": "到达",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 도착해요.",
-    "example_zh": "今天也到达。",
+    "example_ko": "도착하면 어디로 가야 하는지 알려 주세요.",
+    "example_zh": "请告诉我到达后该去哪里。",
     "tags": [
       "基础",
       "出行"
@@ -7319,8 +7319,8 @@
     "korean": "찾아요",
     "meaning_zh": "寻找",
     "part_of_speech": "动词",
-    "example_ko": "오늘도 찾아요.",
-    "example_zh": "今天也寻找。",
+    "example_ko": "검은색 가방을 찾아요. 혹시 보셨어요?",
+    "example_zh": "我在找一个黑色的包，你有看到吗？",
     "tags": [
       "基础",
       "出行"
@@ -7397,8 +7397,8 @@
     "korean": "오늘도 수고했어요",
     "meaning_zh": "今天也辛苦了",
     "part_of_speech": "表达",
-    "example_ko": "오늘도 수고했어요.",
-    "example_zh": "今天也辛苦了",
+    "example_ko": "오늘도 수고했어요. 이제 푹 쉬어요.",
+    "example_zh": "今天也辛苦了，现在好好休息吧。",
     "tags": [
       "追星",
       "互动"
@@ -7475,8 +7475,8 @@
     "korean": "이번 활동",
     "meaning_zh": "这次活动期",
     "part_of_speech": "名词",
-    "example_ko": "오늘 이번 활동에 대해 이야기해요.",
-    "example_zh": "今天聊这次活动期。",
+    "example_ko": "이번 활동 때는 어떤 무대가 제일 기억에 남아요?",
+    "example_zh": "这次活动期间，哪个舞台让你印象最深？",
     "tags": [
       "追星",
       "打歌"
@@ -7488,8 +7488,8 @@
     "korean": "활동 기간",
     "meaning_zh": "活动期间",
     "part_of_speech": "名词",
-    "example_ko": "오늘 활동 기간에 대해 이야기해요.",
-    "example_zh": "今天聊活动期间。",
+    "example_ko": "활동 기간이 짧아서 더 아쉬워요.",
+    "example_zh": "活动期很短，感觉更舍不得了。",
     "tags": [
       "追星",
       "打歌"
@@ -7501,8 +7501,8 @@
     "korean": "무대 의상",
     "meaning_zh": "舞台服装",
     "part_of_speech": "名词",
-    "example_ko": "오늘 무대 의상이 정말 잘 어울려요.",
-    "example_zh": "今天的舞台服装真的很搭。",
+    "example_ko": "무대 의상이 바뀌어서 같은 곡도 다르게 느껴져요.",
+    "example_zh": "舞台服装换了，同一首歌也有不同的感觉。",
     "tags": [
       "追星",
       "造型"
@@ -7514,8 +7514,8 @@
     "korean": "헤어스타일",
     "meaning_zh": "发型",
     "part_of_speech": "名词",
-    "example_ko": "오늘 헤어스타일이 정말 잘 어울려요.",
-    "example_zh": "今天的发型真的很搭。",
+    "example_ko": "새 헤어스타일 사진을 미용사에게 보여 줬어요.",
+    "example_zh": "我给发型师看了新发型的照片。",
     "tags": [
       "追星",
       "造型"
@@ -7527,8 +7527,8 @@
     "korean": "분장",
     "meaning_zh": "妆造/扮相",
     "part_of_speech": "名词",
-    "example_ko": "오늘 분장이 정말 잘 어울려요.",
-    "example_zh": "今天的妆造/扮相真的很搭。",
+    "example_ko": "할로윈 분장이 너무 실감 나서 놀랐어요.",
+    "example_zh": "万圣节扮相太逼真，吓了我一跳。",
     "tags": [
       "追星",
       "造型"
@@ -7540,8 +7540,8 @@
     "korean": "착장",
     "meaning_zh": "穿搭/服装造型",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 착장에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论穿搭/服装造型。",
+    "example_ko": "공항 착장이 편해 보여서 따라 입고 싶어요.",
+    "example_zh": "机场穿搭看起来很舒服，我想学着穿。",
     "tags": [
       "饭圈",
       "造型"
@@ -7553,8 +7553,8 @@
     "korean": "착장 정보",
     "meaning_zh": "穿搭信息",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 착장 정보에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论穿搭信息。",
+    "example_ko": "이 사진 속 착장 정보 아시는 분 있나요?",
+    "example_zh": "有人知道这张照片里的穿搭信息吗？",
     "tags": [
       "饭圈",
       "造型"
@@ -7566,8 +7566,8 @@
     "korean": "셀카 포즈",
     "meaning_zh": "自拍姿势",
     "part_of_speech": "名词",
-    "example_ko": "오늘 셀카 포즈라는 말을 들었어요.",
-    "example_zh": "今天听到了“自拍姿势”这句话。",
+    "example_ko": "셀카 포즈 좀 추천해 줘요. 늘 똑같이 찍어요.",
+    "example_zh": "推荐个自拍姿势吧，我每次都拍得一样。",
     "tags": [
       "追星",
       "互动"
@@ -7579,8 +7579,8 @@
     "korean": "인생네컷",
     "meaning_zh": "人生四格照",
     "part_of_speech": "名词",
-    "example_ko": "오늘 인생네컷이 정말 잘 어울려요.",
-    "example_zh": "今天的人生四格照真的很搭。",
+    "example_ko": "친구랑 인생네컷 찍고 한 장씩 나눠 가졌어요.",
+    "example_zh": "和朋友拍了人生四格，一人留了一张。",
     "tags": [
       "数字生活",
       "造型"
@@ -7592,8 +7592,8 @@
     "korean": "사진 저장",
     "meaning_zh": "保存照片",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 사진 저장을 확인해 주세요.",
-    "example_zh": "请在手机上确认保存照片。",
+    "example_ko": "사진 저장이 안 돼서 용량을 확인했어요.",
+    "example_zh": "照片保存不了，我检查了储存空间。",
     "tags": [
       "数字生活",
       "日常"
@@ -7605,8 +7605,8 @@
     "korean": "화질",
     "meaning_zh": "画质",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 화질을 확인해 주세요.",
-    "example_zh": "请在手机上确认画质。",
+    "example_ko": "화질을 높이니까 표정이 잘 보여요.",
+    "example_zh": "调高画质后，表情就看清楚了。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -7618,8 +7618,8 @@
     "korean": "고화질",
     "meaning_zh": "高清",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 고화질을 확인해 주세요.",
-    "example_zh": "请在手机上确认高清。",
+    "example_ko": "고화질로 보려면 와이파이에 연결하세요.",
+    "example_zh": "想看高清的话，连接Wi-Fi吧。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -7631,8 +7631,8 @@
     "korean": "저화질",
     "meaning_zh": "低清",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 저화질을 확인해 주세요.",
-    "example_zh": "请在手机上确认低清。",
+    "example_ko": "데이터가 부족해서 저화질로 보고 있어요.",
+    "example_zh": "流量不够了，我正在用低画质看。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -7644,8 +7644,8 @@
     "korean": "음소거",
     "meaning_zh": "静音",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 음소거를 확인해 주세요.",
-    "example_zh": "请在手机上确认静音。",
+    "example_ko": "회의 중이라 휴대폰을 음소거로 해 뒀어요.",
+    "example_zh": "正在开会，所以手机设成了静音。",
     "tags": [
       "数字生活",
       "日常"
@@ -7657,8 +7657,8 @@
     "korean": "재생",
     "meaning_zh": "播放",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 재생을 확인해 주세요.",
-    "example_zh": "请在手机上确认播放。",
+    "example_ko": "재생 버튼을 눌렀는데 소리가 안 나요.",
+    "example_zh": "按了播放按钮，却没有声音。",
     "tags": [
       "数字生活",
       "日常"
@@ -7670,8 +7670,8 @@
     "korean": "일시정지",
     "meaning_zh": "暂停",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 일시정지를 확인해 주세요.",
-    "example_zh": "请在手机上确认暂停。",
+    "example_ko": "모르는 말이 나와서 일시정지를 눌렀어요.",
+    "example_zh": "出现了不懂的话，我按了暂停。",
     "tags": [
       "数字生活",
       "日常"
@@ -7683,8 +7683,8 @@
     "korean": "반복 재생",
     "meaning_zh": "循环播放",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 반복 재생을 확인해 주세요.",
-    "example_zh": "请在手机上确认循环播放。",
+    "example_ko": "이 부분은 반복 재생해도 안 질려요.",
+    "example_zh": "这部分循环播放也听不腻。",
     "tags": [
       "数字生活",
       "日常"
@@ -7696,8 +7696,8 @@
     "korean": "재생목록",
     "meaning_zh": "播放列表",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 재생목록을 확인해 주세요.",
-    "example_zh": "请在手机上确认播放列表。",
+    "example_ko": "산책할 때 들을 재생목록을 만들었어요.",
+    "example_zh": "我做了一个散步时听的播放列表。",
     "tags": [
       "数字生活",
       "日常"
@@ -7722,8 +7722,8 @@
     "korean": "음원",
     "meaning_zh": "音源",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 음원에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论音源。",
+    "example_ko": "공연 버전도 음원으로 나오면 좋겠어요.",
+    "example_zh": "要是演唱会版本也发行音源就好了。",
     "tags": [
       "饭圈",
       "音乐"
@@ -7735,8 +7735,8 @@
     "korean": "음원 차트",
     "meaning_zh": "音源榜单",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 음원 차트에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论音源榜单。",
+    "example_ko": "음원 차트에서 처음 보는 노래를 발견했어요.",
+    "example_zh": "我在音源榜单上发现了一首没见过的歌。",
     "tags": [
       "饭圈",
       "音乐"
@@ -7748,8 +7748,8 @@
     "korean": "순위",
     "meaning_zh": "排名",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 순위에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论排名。",
+    "example_ko": "어제보다 순위가 세 계단 올랐어요.",
+    "example_zh": "排名比昨天上升了三位。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -7774,8 +7774,8 @@
     "korean": "사전 투표",
     "meaning_zh": "事前投票",
     "part_of_speech": "名词",
-    "example_ko": "팬들이 사전 투표에 대해 이야기하고 있어요.",
-    "example_zh": "粉丝们正在讨论事前投票。",
+    "example_ko": "사전 투표 마감 전에 참여했어요.",
+    "example_zh": "我赶在事前投票截止前参加了。",
     "tags": [
       "饭圈",
       "饭圈用语"
@@ -7800,8 +7800,8 @@
     "korean": "팬레터",
     "meaning_zh": "粉丝信",
     "part_of_speech": "名词",
-    "example_ko": "오늘 팬레터라는 말을 들었어요.",
-    "example_zh": "今天听到了“粉丝信”这句话。",
+    "example_ko": "팬레터를 한국어로 쓰려니 시간이 오래 걸려요.",
+    "example_zh": "用韩语写粉丝信，花的时间很长。",
     "tags": [
       "追星",
       "互动"
@@ -7813,8 +7813,8 @@
     "korean": "응원 메시지",
     "meaning_zh": "应援留言",
     "part_of_speech": "名词",
-    "example_ko": "오늘 응원 메시지라는 말을 들었어요.",
-    "example_zh": "今天听到了“应援留言”这句话。",
+    "example_ko": "응원 메시지를 읽고 다시 힘을 냈어요.",
+    "example_zh": "读了应援留言后，我又打起了精神。",
     "tags": [
       "追星",
       "互动"
@@ -7826,8 +7826,8 @@
     "korean": "인스타그램",
     "meaning_zh": "Instagram",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 인스타그램을 확인해 주세요.",
-    "example_zh": "请在手机上确认Instagram。",
+    "example_ko": "인스타그램에 여행 사진을 올렸어요.",
+    "example_zh": "我在Instagram上发了旅行照片。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -7839,8 +7839,8 @@
     "korean": "유튜브",
     "meaning_zh": "YouTube",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 유튜브를 확인해 주세요.",
-    "example_zh": "请在手机上确认YouTube。",
+    "example_ko": "유튜브에서 요리 영상을 보고 따라 했어요.",
+    "example_zh": "我看着YouTube上的做菜视频学着做了。",
     "tags": [
       "数字生活",
       "社交媒体"
@@ -7852,8 +7852,8 @@
     "korean": "트위터",
     "meaning_zh": "X/推特",
     "part_of_speech": "名词",
-    "example_ko": "휴대폰에서 트위터를 확인해 주세요.",
-    "example_zh": "请在手机上确认X/推特。",
+    "example_ko": "트위터에서 공연 후기를 찾아봤어요.",
+    "example_zh": "我在推特上搜了演出感想。",
     "tags": [
       "数字生活",
       "社交媒体"

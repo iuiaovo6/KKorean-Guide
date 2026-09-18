@@ -3,6 +3,7 @@
 import type { User } from "@supabase/supabase-js";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { buildStudyOptions } from "../lib/study-options";
+import { refreshLegacyExamples } from "../lib/example-updates";
 import { supabase } from "../lib/supabase";
 
 type Tab = "today" | "words" | "scenes" | "talk" | "import";
@@ -286,7 +287,7 @@ export default function Home() {
     const currentUser = user;
 
     async function loadLearningData() {
-      const [wordsResult, profileResult, progressResult] = await Promise.all([
+      const [wordsResult, profileResult, progressResult, publicWords] = await Promise.all([
         supabase
           .from("words")
           .select("id, korean, meaning_zh, part_of_speech, example_ko, example_zh, tags")
@@ -301,6 +302,9 @@ export default function Home() {
           .from("user_word_progress")
           .select("word_id, meaning_level, listening_level, next_review_at, review_count, last_reviewed_at")
           .eq("user_id", currentUser.id),
+        fetch(`${basePath}/words.json`, { cache: "no-store" })
+          .then((response) => response.ok ? response.json() : [])
+          .catch(() => []),
       ]);
 
       if (wordsResult.error) {
@@ -308,7 +312,7 @@ export default function Home() {
         return;
       }
 
-      const loadedWords: StudyWord[] = (wordsResult.data ?? []).map((word) => ({
+      const loadedWords: StudyWord[] = refreshLegacyExamples(wordsResult.data ?? [], publicWords).map((word) => ({
         id: word.id,
         korean: word.korean,
         meaning: word.meaning_zh,
@@ -674,7 +678,7 @@ export default function Home() {
           <NavButton active={activeTab === "today"} icon="⌂" label="今日学习" onClick={() => setActiveTab("today")} />
           <NavButton active={activeTab === "words"} icon="◫" label="单词本" onClick={() => setActiveTab("words")} />
           <NavButton active={activeTab === "scenes"} icon="◉" label="追星场景" onClick={() => setActiveTab("scenes")} />
-          <NavButton active={activeTab === "talk"} icon="▶" label="Talk 听力" badge="BETA" onClick={() => setActiveTab("talk")} />
+          <NavButton active={activeTab === "talk"} icon="▶" label="Talk 听力" onClick={() => setActiveTab("talk")} />
           {isAdmin && <NavButton active={activeTab === "import"} icon="＋" label="导入单词" onClick={() => setActiveTab("import")} />}
         </nav>
 
@@ -1400,8 +1404,10 @@ type TalkPhrase = {
   ko: string;
   zh: string;
   line: number;
+  rom?: string;
 };
 type TalkUsage = {
+  rom?: string;
   mean: string;
   when: string;
   tone: string;
@@ -1431,9 +1437,14 @@ type TalkUsageState = { token: string; left: number; top: number };
 
 const talkStages = ["盲听全貌", "捕捉韩文", "对照听懂", "带走一句"] as const;
 const talkSpeeds = [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5];
+function TalkLabels({ meta }: { meta: TalkManifestItem }) {
+  const scene = meta.where === "live" ? "live" : meta.where === "演唱会" ? "concert" : "broadcast";
+  const duration = meta.duration <= 30 ? "short" : meta.duration <= 60 ? "medium" : "long";
+  return <span className="talk-labels"><b className="talk-person">{meta.who}</b><span className={`talk-scene ${scene}`}>{meta.where}</span><span className={`talk-duration ${duration}`}>{formatTalkTime(meta.duration)}</span></span>;
+}
 function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<string, number> }) {
   const [lessons, setLessons] = useState<TalkLesson[]>([]);
-  const [lessonIndex, setLessonIndex] = useState(0);
+  const [lessonIndex, setLessonIndex] = useState<number | null>(null);
   const [loadError, setLoadError] = useState("");
   const [stage, setStage] = useState<TalkStage>(0);
   const [currentLine, setCurrentLine] = useState(0);
@@ -1446,7 +1457,7 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const segmentEndRef = useRef<number | null>(null);
   const lineRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const activeLesson = lessons[lessonIndex] ?? null;
+  const activeLesson = lessonIndex === null ? null : lessons[lessonIndex] ?? null;
   const source = activeLesson?.source ?? null;
   const speed = talkSpeeds[speedIndex];
   const talkWordMap = useMemo(() => new Map(words.map((word) => [word.korean, word])), [words]);
@@ -1472,7 +1483,7 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
     }
     const line = source.lines[Math.min(currentLine, source.lines.length - 1)];
     if (!line) return;
-    if (audio.ended || audio.currentTime < line.t || audio.currentTime > line.end + 0.8) audio.currentTime = line.t;
+    if (audio.ended) seekTalk(0);
     segmentEndRef.current = null;
     audio.playbackRate = speed;
     try {
@@ -1500,7 +1511,6 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
   function selectStage(nextStage: TalkStage) {
     stopTalk();
     setStage(nextStage);
-    setCurrentLine(0);
     setSubtitlesHidden(false);
     setOpenGrammarLine(null);
     setUsageCard(null);
@@ -1515,12 +1525,23 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
     setSubtitlesHidden(false);
     setOpenGrammarLine(null);
     setUsageCard(null);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function seekTalk(time: number) {
+    const audio = audioRef.current;
+    if (!audio || !source || !activeLesson) return;
+    segmentEndRef.current = null;
+    const next = Math.max(0, Math.min(time, Number.isFinite(audio.duration) ? audio.duration : activeLesson.meta.duration));
+    audio.currentTime = next;
+    setAudioTime(next);
+    setCurrentLine(Math.max(0, source.lines.findLastIndex((line) => next >= line.t)));
   }
 
   function selectLine(index: number) {
     stopTalk();
     setCurrentLine(index);
-    if (audioRef.current && source) audioRef.current.currentTime = source.lines[index].t;
+    if (source) seekTalk(source.lines[index].t);
   }
 
   function openUsageCard(token: string, target: HTMLElement) {
@@ -1553,27 +1574,35 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
   }, [source]);
 
   useEffect(() => {
-    if (stage === 1 || stage === 2) lineRefs.current[currentLine]?.scrollIntoView({ behavior: "smooth", block: "center" });
+    if (stage === 1 || stage === 2) {
+      const line = lineRefs.current[currentLine];
+      const container = line?.parentElement;
+      if (line && container) container.scrollTo({ top: line.offsetTop - container.offsetTop - container.clientHeight / 2 + line.clientHeight / 2, behavior: "smooth" });
+    }
   }, [currentLine, stage]);
 
   if (loadError) return <div className="content inner-page talk-page"><div className="talk-load-state">{loadError}</div></div>;
-  if (!source) return <div className="content inner-page talk-page"><div className="talk-load-state">正在准备听力素材…</div></div>;
+  if (lessons.length === 0) return <div className="content inner-page talk-page"><div className="talk-load-state" role="status"><span className="talk-loading-spinner" aria-hidden="true" /><span>正在准备听力素材…</span></div></div>;
+
+  if (!source) return <div className="content inner-page talk-page talk-enter">
+    <div className="page-title"><div><p className="eyebrow">LISTEN IN CONTEXT</p><h1>Talk 听力</h1></div></div>
+    <section className="talk-library" aria-label="选择听力素材">
+      {lessons.map((lesson, index) => <button key={lesson.meta.id} className="talk-lesson-card" onClick={() => selectLesson(index)}>
+        <TalkLabels meta={lesson.meta} />
+        <strong>{lesson.source.title_zh}<small>{lesson.source.title_ko}</small></strong>
+        <span>开始练习 →</span>
+      </button>)}
+    </section>
+  </div>;
 
   const durationText = formatTalkTime(activeLesson!.meta.duration);
   const usageEntry = usageCard ? findTalkUsage(usageCard.token, source.usage) : null;
   const vocabEntry = usageCard ? talkWordMap.get(usageCard.token) ?? wordsByTalkId.get(formsMap[usageCard.token]) : null;
   const progress = Math.min(100, (audioTime / activeLesson!.meta.duration) * 100);
 
-  return <div className="content inner-page talk-page">
-    <div className="page-title"><div><p className="eyebrow">LISTEN IN CONTEXT</p><h1>Talk 听力</h1></div></div>
-
-    <section className="talk-library" aria-label="选择听力素材">
-      {lessons.map((lesson, index) => <button key={lesson.meta.id} className={`talk-lesson-card ${lesson.meta.theme} ${index === lessonIndex ? "active" : ""}`} onClick={() => selectLesson(index)}>
-        <span className="talk-lesson-labels"><b>{lesson.meta.who}</b><i>{lesson.meta.where}</i><small>{formatTalkTime(lesson.meta.duration)}</small></span>
-        <strong>{lesson.source.title_zh} <small>{lesson.source.title_ko}</small></strong>
-        <span>{index === lessonIndex ? "正在学习" : "开始练习 →"}</span>
-      </button>)}
-    </section>
+  return <div className="content inner-page talk-page talk-enter" key={activeLesson!.meta.id}>
+    <button className="talk-back" onClick={() => { stopTalk(); setLessonIndex(null); setUsageCard(null); }}>← 退出听力</button>
+    <div className="page-title"><div><h1>{source.title_zh}</h1></div></div>
 
     <article className="talk-workspace">
       <audio key={activeLesson!.meta.id} ref={audioRef} src={`${basePath}/talk/${activeLesson!.meta.audio}`} preload="metadata" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)} onTimeUpdate={(event) => {
@@ -1587,7 +1616,7 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
         if (activeIndex >= 0) setCurrentLine(Math.min(activeIndex, source.lines.length - 1));
       }} />
       <header className="talk-workspace-head">
-        <div className={`talk-context ${activeLesson!.meta.theme}`}><span>{source.context.who}</span><span>{source.context.where}</span><small>{durationText}</small></div>
+        <TalkLabels meta={activeLesson!.meta} />
         <label className="talk-speed"><span>倍速 <strong>{speed.toFixed(1)}×</strong></span><input type="range" min="0" max={talkSpeeds.length - 1} step="1" value={speedIndex} onChange={(event) => { const next = Number(event.target.value); setSpeedIndex(next); if (audioRef.current) audioRef.current.playbackRate = talkSpeeds[next]; }} aria-label={`播放速度 ${speed} 倍`} /></label>
       </header>
 
@@ -1616,7 +1645,6 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
               </div>;
             })}
           </div>}
-          <div className="talk-audio-timeline"><i style={{ width: `${progress}%` }} /><span>{formatTalkTime(audioTime)}</span><span>{durationText}</span></div>
           <button className="talk-main-play" onClick={() => void toggleTalk()} aria-label={playing ? "暂停" : `从第 ${currentLine + 1} 句开始播放`}><span>{playing ? "Ⅱ" : "▶"}</span>{playing ? "暂停" : "从这里播放"}</button>
         </div>}
 
@@ -1624,9 +1652,14 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
           {source.phrases.slice(0, 5).map((phrase, index) => {
             const line = resolveTalkPhrase(source.lines, phrase);
             if (!line) return null;
-            return <button key={`${phrase.ko}-${index}`} onClick={() => void playTakeaway(line)}><span className="takeaway-play">▶</span><span><strong>{phrase.ko}</strong><small>{phrase.zh}</small></span></button>;
+            return <button key={`${phrase.ko}-${index}`} onClick={() => void playTakeaway(line)}><span className="takeaway-play">▶</span><span><strong>{phrase.ko}</strong>{phrase.rom && <em className="talk-romanization">{phrase.rom}</em>}<small>{phrase.zh}</small></span></button>;
           })}
         </div>}
+        {stage === 3 && <button className="talk-main-play" onClick={() => void toggleTalk()} aria-label={playing ? "暂停" : "从进度条位置播放"}><span>{playing ? "Ⅱ" : "▶"}</span>{playing ? "暂停" : "从这里播放"}</button>}
+        <div className="talk-seek">
+          <input type="range" min="0" max={activeLesson!.meta.duration} step="0.01" value={Math.min(audioTime, activeLesson!.meta.duration)} onChange={(event) => seekTalk(Number(event.target.value))} style={{ background: `linear-gradient(to right, var(--blue-strong) ${progress}%, #e5ebf0 ${progress}%)` }} aria-label="听力播放进度" aria-valuetext={`${formatTalkTime(audioTime)} / ${durationText}`} />
+          <div><span>{formatTalkTime(audioTime)}</span><span>{durationText}</span></div>
+        </div>
       </section>
 
       <footer className="talk-stage-footer">
@@ -1638,7 +1671,8 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
 
     {usageCard && <section className="talk-usage-card" role="dialog" aria-label={`${usageCard.token} 的用法`} style={{ left: usageCard.left, top: usageCard.top }}>
       <button className="talk-usage-close" onClick={() => setUsageCard(null)} aria-label="关闭用法卡">×</button>
-      <h3>{usageCard.token}</h3>
+      <h3>{usageEntry?.korean ?? usageCard.token}</h3>
+      {usageEntry?.rom && <p className="talk-romanization">{usageEntry.rom}</p>}
       <dl>
         <div><dt>意思</dt><dd>{usageEntry?.mean ?? vocabEntry?.meaning ?? "结合当前整句理解"}</dd></div>
         <div><dt>场合</dt><dd>{usageEntry?.when ?? `${source.context.where}中的自然表达`}</dd></div>
@@ -1651,9 +1685,9 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
 
 function findTalkUsage(token: string, usage: Record<string, TalkUsage>) {
   const direct = usage[token];
-  if (direct) return direct;
+  if (direct) return { ...direct, korean: token };
   const match = Object.entries(usage).find(([phrase]) => phrase.includes(token) || token.includes(phrase));
-  return match?.[1] ?? null;
+  return match ? { ...match[1], korean: match[0] } : null;
 }
 
 function resolveTalkPhrase(lines: TalkLine[], phrase: TalkPhrase) {

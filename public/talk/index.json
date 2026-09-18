@@ -41,7 +41,7 @@
     "audio": "lee-haechan-concert.m4a",
     "who": "李楷灿",
     "where": "演唱会",
-    "duration": 69.611,
+    "duration": 69.739,
     "theme": "peach"
   },
   {
@@ -70,5 +70,14 @@
     "where": "live",
     "duration": 33.408,
     "theme": "blue"
+  },
+  {
+    "id": "kim-jueun-live",
+    "json": "kim-jueun-live.json",
+    "audio": "kim-jueun-live.m4a",
+    "who": "金主恩",
+    "where": "live",
+    "duration": 39.585,
+    "theme": "sky"
   }
 ]
