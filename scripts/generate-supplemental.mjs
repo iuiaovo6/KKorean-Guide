@@ -20,7 +20,7 @@ const additions = rows.map((r, i) => {
   if (r.length !== 6 || !r[0] || !r[1]) throw new Error(`Invalid CSV row ${i + 2}`);
   return { id: -920001 - i, korean: r[0], meaning: r[1], type: r[2], example: r[3], translation: r[4], tags: r[5].split('|').filter(Boolean), romanization: romanize(r[0]) };
 });
-const moved = lesson.filter(word => word.id >= 90004 && word.id <= 90010);
+const moved = lesson.filter(word => word.id >= 90004 && word.id <= 90011);
 for (const word of moved) {
   const variants = word.korean.split(/\s*\/\s*/);
   variants.forEach((korean, index) => {
@@ -31,7 +31,7 @@ for (const word of moved) {
     else additions.push({ id: -930000 - word.id * 10 - index, korean, meaning, type: '名词', example: '', translation: '', tags: ['线下活动', '新增单词'], romanization: romanize(korean) });
   });
 }
-const sentences = lesson.filter(word => word.id < 90004 || word.id > 90010).map((word) => {
+const sentences = lesson.filter(word => word.id < 90004 || word.id > 90011).map((word) => {
   const korean = word.korean.replace('팬 드릴 테니', '펜 드릴 테니');
   return { ...word, id: -word.id, korean, tags: [...new Set([...word.tags, '入场check'])], romanization: romanize(korean) };
 });
@@ -41,4 +41,16 @@ const target = new URL('../lib/supplemental-words.json', import.meta.url);
 const output = JSON.stringify(data, null, 2) + '\n';
 if (process.argv.includes('--check')) { if (await readFile(target, 'utf8') !== output) throw new Error('Run node scripts/generate-supplemental.mjs'); }
 else await writeFile(target, output);
+const glossary = Object.fromEntries((await readFile(new URL('./entry-check-glosses.txt', import.meta.url), 'utf8')).trim().split(/\r?\n/).map(line => {
+  const [token, meaning] = line.split('|');
+  if (!token || !meaning) throw new Error('Invalid entry-check glossary line');
+  return [token, { meaning, romanization: romanize(token) }];
+}));
+for (const sentence of sentences) for (const token of sentence.korean.match(/\p{sc=Hangul}+/gu) ?? []) {
+  if (!glossary[token]) throw new Error(`Missing entry-check gloss: ${token}`);
+}
+const glossaryPath = new URL('../lib/entry-check-glosses.json', import.meta.url);
+const glossaryOutput = JSON.stringify(glossary, null, 2) + '\n';
+if (process.argv.includes('--check')) { if (await readFile(glossaryPath, 'utf8') !== glossaryOutput) throw new Error('Entry-check glossary is stale'); }
+else await writeFile(glossaryPath, glossaryOutput);
 console.log(`Validated ${additions.length} supplemental words and ${sentences.length} entry-check items.`);

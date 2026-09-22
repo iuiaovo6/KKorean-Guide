@@ -1,0 +1,530 @@
+{
+  "몇": {
+    "meaning": "几、多少",
+    "romanization": "myeot"
+  },
+  "번": {
+    "meaning": "号；次",
+    "romanization": "beon"
+  },
+  "이세요": {
+    "meaning": "是……吗（尊敬表达）",
+    "romanization": "iseyo"
+  },
+  "앞뒤": {
+    "meaning": "前后",
+    "romanization": "apdwi"
+  },
+  "번호": {
+    "meaning": "号码",
+    "romanization": "beonho"
+  },
+  "확인하고": {
+    "meaning": "确认后、确认并",
+    "romanization": "hwaginhago"
+  },
+  "본인": {
+    "meaning": "本人",
+    "romanization": "bonin"
+  },
+  "맞게": {
+    "meaning": "按照、使相符",
+    "romanization": "matge"
+  },
+  "서": {
+    "meaning": "站（서다 的活用）",
+    "romanization": "seo"
+  },
+  "주세요": {
+    "meaning": "请……、请给",
+    "romanization": "juseyo"
+  },
+  "인원": {
+    "meaning": "人数、人员",
+    "romanization": "inwon"
+  },
+  "체크": {
+    "meaning": "检查、核对",
+    "romanization": "chekeu"
+  },
+  "시작하겠습니다": {
+    "meaning": "现在开始、将开始（正式表达）",
+    "romanization": "sijakhagetseumnida"
+  },
+  "지금부터": {
+    "meaning": "从现在开始",
+    "romanization": "jigeumbuteo"
+  },
+  "도착하시는": {
+    "meaning": "到达的（尊敬表达）",
+    "romanization": "dochakhasineun"
+  },
+  "분은": {
+    "meaning": "这位／这些人（尊称，带主题助词）",
+    "romanization": "buneun"
+  },
+  "지각": {
+    "meaning": "迟到",
+    "romanization": "jigak"
+  },
+  "줄로": {
+    "meaning": "到……队伍中",
+    "romanization": "jullo"
+  },
+  "보내": {
+    "meaning": "送去、让……去",
+    "romanization": "bonae"
+  },
+  "도장": {
+    "meaning": "印章",
+    "romanization": "dojang"
+  },
+  "위버스": {
+    "meaning": "Weverse",
+    "romanization": "wibeoseu"
+  },
+  "한": {
+    "meaning": "一",
+    "romanization": "han"
+  },
+  "터치해서": {
+    "meaning": "点击后",
+    "romanization": "teochihaeseo"
+  },
+  "큰화면으로": {
+    "meaning": "以大屏／放大画面",
+    "romanization": "keunhwamyeoneuro"
+  },
+  "준비해": {
+    "meaning": "准备好",
+    "romanization": "junbihae"
+  },
+  "재모임": {
+    "meaning": "再次集合",
+    "romanization": "jaemoim"
+  },
+  "시간은": {
+    "meaning": "时间是（带主题助词）",
+    "romanization": "siganeun"
+  },
+  "입니다": {
+    "meaning": "是（正式表达）",
+    "romanization": "imnida"
+  },
+  "트위터": {
+    "meaning": "Twitter",
+    "romanization": "teuwiteo"
+  },
+  "통해": {
+    "meaning": "通过",
+    "romanization": "tonghae"
+  },
+  "공지": {
+    "meaning": "公告、通知",
+    "romanization": "gongji"
+  },
+  "올리겠습니다": {
+    "meaning": "将发布、将上传",
+    "romanization": "olligetseumnida"
+  },
+  "팔찌": {
+    "meaning": "手环",
+    "romanization": "paljji"
+  },
+  "훼손": {
+    "meaning": "损坏",
+    "romanization": "hweson"
+  },
+  "있는": {
+    "meaning": "有的、存在的",
+    "romanization": "inneun"
+  },
+  "경우": {
+    "meaning": "情况",
+    "romanization": "gyeou"
+  },
+  "재확인": {
+    "meaning": "再次确认",
+    "romanization": "jaehwagin"
+  },
+  "요청": {
+    "meaning": "请求",
+    "romanization": "yocheong"
+  },
+  "드릴": {
+    "meaning": "将给您／向您提出（谦语）",
+    "romanization": "deuril"
+  },
+  "수": {
+    "meaning": "可能、能够（用于 -ㄹ 수 있다）",
+    "romanization": "su"
+  },
+  "있으니": {
+    "meaning": "因为有／可能有，所以",
+    "romanization": "iseuni"
+  },
+  "잘": {
+    "meaning": "好好地",
+    "romanization": "jal"
+  },
+  "보관해": {
+    "meaning": "保管",
+    "romanization": "bogwanhae"
+  },
+  "안": {
+    "meaning": "不",
+    "romanization": "an"
+  },
+  "지워지게": {
+    "meaning": "被擦掉、消失（此处与 안 连用：不要被擦掉）",
+    "romanization": "jiwojige"
+  },
+  "유의해": {
+    "meaning": "留意、注意",
+    "romanization": "yuuihae"
+  },
+  "스티커": {
+    "meaning": "贴纸（同义词：라벨지）",
+    "romanization": "seutikeo"
+  },
+  "바로": {
+    "meaning": "马上、直接",
+    "romanization": "baro"
+  },
+  "붙여": {
+    "meaning": "贴上",
+    "romanization": "butyeo"
+  },
+  "옆에서": {
+    "meaning": "在旁边",
+    "romanization": "yeopeseo"
+  },
+  "공방판에": {
+    "meaning": "在打歌板上（공방판；同义词：팬카드）",
+    "romanization": "gongbangpane"
+  },
+  "개인정보": {
+    "meaning": "个人信息",
+    "romanization": "gaeinjeongbo"
+  },
+  "적고": {
+    "meaning": "写完后、写下并",
+    "romanization": "jeokgo"
+  },
+  "이동할게요": {
+    "meaning": "接下来移动／换位置",
+    "romanization": "idonghalgeyo"
+  },
+  "역조공": {
+    "meaning": "逆应援、艺人送给粉丝的礼物",
+    "romanization": "yeokjogong"
+  },
+  "받아가세요": {
+    "meaning": "请领取后带走",
+    "romanization": "badagaseyo"
+  },
+  "응원봉": {
+    "meaning": "应援棒",
+    "romanization": "euwonbong"
+  },
+  "손목에": {
+    "meaning": "在手腕上",
+    "romanization": "sonmoge"
+  },
+  "걸어": {
+    "meaning": "挂上",
+    "romanization": "georeo"
+  },
+  "확인할": {
+    "meaning": "将要检查的",
+    "romanization": "hwaginhal"
+  },
+  "거라": {
+    "meaning": "因为将要……（것이라 的口语形式）",
+    "romanization": "geora"
+  },
+  "보이게": {
+    "meaning": "让……看得见",
+    "romanization": "boige"
+  },
+  "들어가서": {
+    "meaning": "进去后",
+    "romanization": "deureogaseo"
+  },
+  "모든": {
+    "meaning": "所有的",
+    "romanization": "modeun"
+  },
+  "전자기기": {
+    "meaning": "电子设备",
+    "romanization": "jeonjagigi"
+  },
+  "금지입니다": {
+    "meaning": "禁止",
+    "romanization": "geumjiimnida"
+  },
+  "발견하면": {
+    "meaning": "如果发现",
+    "romanization": "balgyeonhamyeon"
+  },
+  "퇴장합니다": {
+    "meaning": "退场、离场",
+    "romanization": "toejanghamnida"
+  },
+  "가방에": {
+    "meaning": "放在包里／往包里",
+    "romanization": "gabae"
+  },
+  "넣어": {
+    "meaning": "放入",
+    "romanization": "neoeo"
+  },
+  "나오세요": {
+    "meaning": "请出来",
+    "romanization": "naoseyo"
+  },
+  "맨": {
+    "meaning": "最（用于最前、最后等）",
+    "romanization": "maen"
+  },
+  "앞으로": {
+    "meaning": "往前",
+    "romanization": "apeuro"
+  },
+  "가": {
+    "meaning": "去",
+    "romanization": "ga"
+  },
+  "신분증": {
+    "meaning": "身份证件",
+    "romanization": "sinbunjeung"
+  },
+  "꺼내": {
+    "meaning": "拿出",
+    "romanization": "kkeonae"
+  },
+  "아니시죠": {
+    "meaning": "不是吧（尊敬表达）",
+    "romanization": "anisijyo"
+  },
+  "마스크": {
+    "meaning": "口罩",
+    "romanization": "maseukeu"
+  },
+  "내려": {
+    "meaning": "放下、往下拉",
+    "romanization": "naeryeo"
+  },
+  "안경": {
+    "meaning": "眼镜",
+    "romanization": "angyeong"
+  },
+  "모자": {
+    "meaning": "帽子",
+    "romanization": "moja"
+  },
+  "올려": {
+    "meaning": "抬起、往上提",
+    "romanization": "ollyeo"
+  },
+  "저": {
+    "meaning": "我（谦称）",
+    "romanization": "jeo"
+  },
+  "좀": {
+    "meaning": "稍微、请（委婉语气）",
+    "romanization": "jom"
+  },
+  "봐": {
+    "meaning": "看",
+    "romanization": "bwa"
+  },
+  "생일": {
+    "meaning": "生日",
+    "romanization": "saeil"
+  },
+  "말씀해": {
+    "meaning": "请说、告诉（尊敬表达）",
+    "romanization": "malsseumhae"
+  },
+  "전화번호": {
+    "meaning": "电话号码",
+    "romanization": "jeonhwabeonho"
+  },
+  "다른": {
+    "meaning": "其他的、别的",
+    "romanization": "dareun"
+  },
+  "은행카드": {
+    "meaning": "银行卡",
+    "romanization": "eunhaengkadeu"
+  },
+  "있으실까요": {
+    "meaning": "请问有吗（委婉尊敬表达）",
+    "romanization": "iseusilkkayo"
+  },
+  "신분증에": {
+    "meaning": "在身份证件上",
+    "romanization": "sinbunjeue"
+  },
+  "적혀": {
+    "meaning": "写着、被写下",
+    "romanization": "jeokhyeo"
+  },
+  "주소": {
+    "meaning": "地址",
+    "romanization": "juso"
+  },
+  "하이코리아": {
+    "meaning": "HiKorea（韩国外国人综合服务平台）",
+    "romanization": "haikoria"
+  },
+  "로그인": {
+    "meaning": "登录",
+    "romanization": "rogeuin"
+  },
+  "해": {
+    "meaning": "做（与前面的名词组成动作）",
+    "romanization": "hae"
+  },
+  "나갔다가": {
+    "meaning": "退出后再……",
+    "romanization": "nagatdaga"
+  },
+  "다시": {
+    "meaning": "重新、再一次",
+    "romanization": "dasi"
+  },
+  "네이버": {
+    "meaning": "Naver",
+    "romanization": "neibeo"
+  },
+  "카카오": {
+    "meaning": "Kakao",
+    "romanization": "kakao"
+  },
+  "건물": {
+    "meaning": "建筑、楼",
+    "romanization": "geonmul"
+  },
+  "어떤": {
+    "meaning": "什么样的",
+    "romanization": "eotteon"
+  },
+  "색이에요": {
+    "meaning": "是什么颜色／是……颜色",
+    "romanization": "saegieyo"
+  },
+  "펜": {
+    "meaning": "笔",
+    "romanization": "pen"
+  },
+  "테니": {
+    "meaning": "因为会……，所以请……",
+    "romanization": "teni"
+  },
+  "여기에": {
+    "meaning": "在这里",
+    "romanization": "yeogie"
+  },
+  "이름": {
+    "meaning": "名字",
+    "romanization": "ireum"
+  },
+  "적어": {
+    "meaning": "写下",
+    "romanization": "jeogeo"
+  },
+  "아니에요": {
+    "meaning": "不是",
+    "romanization": "anieyo"
+  },
+  "오늘": {
+    "meaning": "今天",
+    "romanization": "oneul"
+  },
+  "입장": {
+    "meaning": "入场",
+    "romanization": "ipjang"
+  },
+  "어려우세요": {
+    "meaning": "有困难、不太可行（此处委婉表示不能入场）",
+    "romanization": "eoryeouseyo"
+  },
+  "해산해": {
+    "meaning": "解散",
+    "romanization": "haesanhae"
+  },
+  "나가셔서": {
+    "meaning": "出去后（尊敬表达）",
+    "romanization": "nagasyeoseo"
+  },
+  "줄": {
+    "meaning": "队伍",
+    "romanization": "jul"
+  },
+  "서세요": {
+    "meaning": "请站好／排队",
+    "romanization": "seoseyo"
+  },
+  "기프트": {
+    "meaning": "礼物",
+    "romanization": "gipeuteu"
+  },
+  "미팬": {
+    "meaning": "迷你粉丝见面会",
+    "romanization": "mipaen"
+  },
+  "공지는": {
+    "meaning": "公告（带主题助词）",
+    "romanization": "gongjineun"
+  },
+  "트위터에": {
+    "meaning": "在 Twitter 上",
+    "romanization": "teuwiteoe"
+  },
+  "간단하게": {
+    "meaning": "简单地、简短地",
+    "romanization": "gandanhage"
+  },
+  "멤버들이랑": {
+    "meaning": "和成员们一起",
+    "romanization": "membeodeurirang"
+  },
+  "할": {
+    "meaning": "将做的",
+    "romanization": "hal"
+  },
+  "예정입니다": {
+    "meaning": "计划、预定",
+    "romanization": "yejeoimnida"
+  },
+  "최애": {
+    "meaning": "最喜欢的成员、本命",
+    "romanization": "choeae"
+  },
+  "어떻게": {
+    "meaning": "怎样、如何",
+    "romanization": "eotteoge"
+  },
+  "되세요": {
+    "meaning": "是……（尊敬表达，此处询问本命是谁）",
+    "romanization": "doeseyo"
+  },
+  "누구": {
+    "meaning": "谁",
+    "romanization": "nugu"
+  },
+  "받으셨어요": {
+    "meaning": "领到了／收到了吗（尊敬表达）",
+    "romanization": "badeusyeoseoyo"
+  },
+  "혹시": {
+    "meaning": "请问、或许（委婉开场）",
+    "romanization": "hoksi"
+  },
+  "교환하시나요": {
+    "meaning": "请问要交换吗（尊敬表达）",
+    "romanization": "gyohwanhasinayo"
+  }
+}

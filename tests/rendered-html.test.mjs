@@ -12,8 +12,14 @@ const root = new URL("../", import.meta.url);
 test("entry-check words are moved, split, and cross-reference synonyms", async () => {
   const data = JSON.parse(await readFile(new URL('../lib/supplemental-words.json', import.meta.url), 'utf8'));
   const lesson = data.filter(w => w.tags.includes('入场check'));
-  assert.equal(lesson.length, 44);
-  assert.ok(lesson.every(w => w.id > -90004 || w.id < -90010));
+  assert.equal(lesson.length, 43);
+  assert.ok(lesson.every(w => w.id > -90004 || w.id < -90011));
+  assert.ok(!lesson.some(w => w.korean === '도장'));
+  assert.equal(data.filter(w => w.korean === '도장').length, 1);
+  const glosses = JSON.parse(await readFile(new URL('../lib/entry-check-glosses.json', import.meta.url), 'utf8'));
+  for (const sentence of lesson) for (const token of sentence.korean.match(/\p{sc=Hangul}+/gu) ?? []) {
+    assert.ok(glosses[token]?.meaning && glosses[token]?.romanization, token);
+  }
   assert.equal(new Set(data.map(w => w.id)).size, data.length);
   for (const [a, b] of [['공방판', '팬카드'], ['스티커', '라벨지']]) {
     for (const [word, other] of [[a, b], [b, a]]) {
@@ -57,6 +63,19 @@ test("listening choices finish before optional translation starts", async () => 
   assert.equal(context.saved, 2, "optional translation does not duplicate review writes");
   context.finishStudy();
   assert.equal(context.open, false);
+  context.current.tags = ['入场check'];
+  context.step = 'reverse';
+  context.wordIndex = context.studyQueue.length - 1;
+  await context.nextStudyStep();
+  assert.equal(context.step, 'meaning');
+  context.wordIndex = context.studyQueue.length - 1;
+  await context.nextStudyStep();
+  assert.equal(context.step, 'recall');
+  context.current.tags = [];
+  context.step = 'meaning';
+  context.wordIndex = context.studyQueue.length - 1;
+  await context.nextStudyStep();
+  assert.equal(context.step, 'reverse', 'ordinary vocabulary keeps the original round order');
   const recallCard = source.slice(source.indexOf('  if (step === "recall") return ('), source.indexOf('  if (step === "translate") return ('));
   assert.ok(!recallCard.includes("<input"), "listening choices must not contain the Chinese input");
 });

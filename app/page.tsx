@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { buildStudyOptions } from "../lib/study-options";
 import { refreshLegacyExamples } from "../lib/example-updates";
 import { mergeSupplemental } from "../lib/supplemental";
+import entryCheckGlosses from "../lib/entry-check-glosses.json";
 import { supabase } from "../lib/supabase";
 
 type Tab = "today" | "words" | "scenes" | "talk" | "import";
@@ -480,7 +481,7 @@ export default function Home() {
     setWordIndex(0);
     const candidates = words ? [...plannedWords.filter(word => !wordProgress[word.id]), ...plannedWords.filter(word => wordProgress[word.id])] : plannedWords;
     setStudyQueue(shuffleWords(candidates.slice(0, dailyWords)).map((word) => ({ word, repeat: false })));
-    setStep("meaning");
+    setStep(candidates.every(word => word.tags.includes("入场check")) ? "reverse" : "meaning");
     setSelected(null);
     setTypedAnswer("");
     setRecallFeedback("");
@@ -577,11 +578,13 @@ export default function Home() {
   }
 
   function openWordPopover(token: string, target: HTMLElement) {
+    const isEntryCheck = studyOpen && current.tags.includes("入场check");
+    const gloss = isEntryCheck ? (entryCheckGlosses as Record<string, { meaning: string; romanization: string }>)[token] : undefined;
     const speech = speechMap[token];
     const exact = wordMap.get(token);
     const speechBase = speech?.base && speech.base !== token ? wordMap.get(speech.base) : undefined;
     const formEntryId = formsMap[token];
-    const resolved = speechBase ?? exact ?? (formEntryId === undefined ? null : wordsById.get(formEntryId) ?? null);
+    const resolved = gloss ? { id: 0, korean: token, meaning: gloss.meaning, romanization: gloss.romanization, type: "", example: "", translation: "", tags: [] } : speechBase ?? exact ?? (formEntryId === undefined ? null : wordsById.get(formEntryId) ?? null);
     const rect = target.getBoundingClientRect();
     setWordPopover({
       token,
@@ -683,7 +686,7 @@ export default function Home() {
 
     setSelected(null);
     setTypedAnswer("");
-    const order: StudyStep[] = ["meaning", "reverse", "recall"];
+    const order: StudyStep[] = current.tags.includes("入场check") ? ["reverse", "meaning", "recall"] : ["meaning", "reverse", "recall"];
     const index = order.indexOf(step);
     if (wordIndex < studyQueue.length - 1) {
       setWordIndex((value) => value + 1);
@@ -1101,27 +1104,28 @@ function StudyCard({
   onSpeak: (text: string) => void;
   onWordTap: (token: string, target: HTMLElement) => void;
 }) {
-  const optionPool = word.tags.includes("入场check") ? allWords.filter(candidate => candidate.tags.includes("入场check")) : allWords.filter(candidate => !candidate.tags.includes("入场check"));
+  const isEntryCheck = word.tags.includes("入场check");
+  const optionPool = isEntryCheck ? allWords.filter(candidate => candidate.tags.includes("入场check")) : allWords.filter(candidate => !candidate.tags.includes("入场check"));
   const meaningOptions = buildStudyOptions(
     word.meaning,
-    [...optionPool.map((candidate) => candidate.meaning), ...fallbackMeaningDistractors],
+    [...optionPool.map((candidate) => candidate.meaning), ...(isEntryCheck ? [] : fallbackMeaningDistractors)],
     `${word.id}-meaning`,
   );
   const reverseOptions = buildStudyOptions(
     word.korean,
-    [...optionPool.map((candidate) => candidate.korean), ...fallbackKoreanDistractors],
+    [...optionPool.map((candidate) => candidate.korean), ...(isEntryCheck ? [] : fallbackKoreanDistractors)],
     `${word.id}-reverse`,
   );
   const recallOptions = buildStudyOptions(
     word.korean,
-    [...optionPool.map((candidate) => candidate.korean), ...fallbackKoreanDistractors],
+    [...optionPool.map((candidate) => candidate.korean), ...(isEntryCheck ? [] : fallbackKoreanDistractors)],
     `${word.id}-recall`,
   );
   if (step === "meaning") return (
     <div className={`learning-card ${word.tags.includes("入场check") ? "sentence-learning" : ""}`}>
-      <p className="eyebrow">ROUND 1 · 听词选义</p>
+      <p className="eyebrow">{isEntryCheck ? "ROUND 2 · 听句选义" : "ROUND 1 · 听词选义"}</p>
       <button className="sound-button" aria-label="播放发音" onClick={() => onSpeak(word.korean)}>♬</button>
-      <WordTrigger className="question-word tap-headword" token={word.korean} onWordTap={onWordTap} />
+      {isEntryCheck ? <div className="question-word tappable-example" lang="ko">{renderTappable(word.korean, onWordTap)}</div> : <WordTrigger className="question-word tap-headword" token={word.korean} onWordTap={onWordTap} />}
       <div className="answer-grid">
         {meaningOptions.map((answer) => (
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
@@ -1133,11 +1137,11 @@ function StudyCard({
   );
   if (step === "reverse") return (
     <div className={`learning-card ${word.tags.includes("入场check") ? "sentence-learning" : ""}`}>
-      <p className="eyebrow">ROUND 2 · 汉义选词</p>
+      <p className="eyebrow">{isEntryCheck ? "ROUND 1 · 汉义选句" : "ROUND 2 · 汉义选词"}</p>
       <h2 className="question-word meaning-question">{word.meaning}</h2>
       <div className="answer-grid compact">
         {reverseOptions.map((answer) => (
-          <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
+          isEntryCheck ? <div key={answer} className={`sentence-choice ${selected === answer ? "selected" : ""}`}><span lang="ko">{renderTappable(answer, onWordTap)}</span><button onClick={() => setSelected(answer)} aria-label={`选择：${answer}`}>选择</button></div> : <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => setSelected(answer)}>{answer}</button>
         ))}
       </div>
       {selected && <p className={`answer-note ${selected === word.korean ? "correct" : ""}`}>{selected === word.korean ? "✓ 答对了" : `正确答案是：${word.korean}`}</p>}
@@ -1145,11 +1149,11 @@ function StudyCard({
   );
   if (step === "recall") return (
     <div className="learning-card">
-      <p className="eyebrow">ROUND 3 · 听音选词</p>
+      <p className="eyebrow">{isEntryCheck ? "ROUND 3 · 听音选句" : "ROUND 3 · 听音选词"}</p>
       <button className="big-audio-button blue-audio-button" aria-label="播放单词发音" onClick={() => onSpeak(word.korean)}>♬<small>再听一次</small></button>
       <div className="answer-grid compact">
         {recallOptions.map((answer) => (
-          <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => onRecallOptionSelect(answer)}>{answer}</button>
+          isEntryCheck ? <div key={answer} className={`sentence-choice ${selected === answer ? "selected" : ""}`}><span lang="ko">{renderTappable(answer, onWordTap)}</span><button onClick={() => onRecallOptionSelect(answer)} aria-label={`选择：${answer}`}>选择</button></div> : <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => onRecallOptionSelect(answer)}>{answer}</button>
         ))}
       </div>
       {recallFeedback && <p className={`answer-note recall-feedback ${recallFeedbackTone ?? ""}`}>{recallFeedback}</p>}
@@ -1184,7 +1188,7 @@ function WordPopover({ state, onClose }: { state: WordPopoverState; onClose: () 
   return <section className="word-popover" role="dialog" aria-label={`${korean} 的释义`} style={{ left: state.left, top: state.top }}>
     <button className="word-popover-close" onClick={onClose} aria-label="关闭释义">×</button>
     <div className="popover-head"><strong>{korean}</strong><small>{state.romanization}</small></div>
-    {word && <div className="popover-meaning"><span className="popover-pos">{word.type}</span><b>{word.meaning}</b>{state.speech?.level && state.speech.reason && <SpeechChip key={state.token} speech={state.speech} />}</div>}
+    {word && <div className="popover-meaning">{word.type && <span className="popover-pos">{word.type}</span>}<b>{word.meaning}</b>{state.speech?.level && state.speech.reason && <SpeechChip key={state.token} speech={state.speech} />}</div>}
     {state.resolvedViaForm && word && <p className="popover-form-note">（这是 {word.korean} 的活用形）</p>}
     {word?.example && <p className="popover-example"><span>{word.example}</span><small>{word.translation}</small></p>}
     {!word && <p className="popover-unknown">词库中暂无释义 <a href={`https://ko.dict.naver.com/#/search?query=${encodeURIComponent(state.token)}`} target="_blank" rel="noreferrer">在 Naver 词典查 →</a></p>}
@@ -1482,7 +1486,7 @@ function ScenesPage({ books, words, progress, dailyWords, activeSceneTitle, setA
     <div className="page-title"><div><p className="eyebrow">FANDOM KOREAN · REAL SITUATIONS</p><h1>追星场景词书</h1><p>先选你最近会遇到的场景，再把需要说出口的词练熟。</p></div></div>
     <div className="scene-tabs" role="tablist" aria-label="选择追星场景">{books.map((book) => <button key={book.title} role="tab" aria-selected={book.title === activeScene?.title} className={book.title === activeScene?.title ? "active" : ""} onClick={() => setActiveSceneTitle(book.title)}>{book.icon} {book.title}<small>{book.count}</small></button>)}</div>
     {activeSceneTitle === "线下活动" && entryCheck.length > 0 && <button className="entry-check-course" onClick={() => startStudy(entryReady)} disabled={entryReady.length === 0}>
-      <span><small>句子课 · {entryCheck.length} 条</small><strong>入场check</strong><span>一轮 check · 二轮 check · 工作人员交流</span><small>新增内容的进度暂存于当前浏览器</small></span><b>{entryReady.length ? "开始学习 →" : "已全部掌握"}</b>
+      <span><strong>入场CHECK</strong><span>一轮 check · 二轮 check · stf交流</span><small>{entryCheck.length} 条 · 进度暂存于当前浏览器</small></span><b>{entryReady.length ? "开始学习 →" : "已全部掌握"}</b>
     </button>}
     {activeScene && <section className="scene-detail">
       <div className={`scene-detail-cover ${activeScene.color}`}><span>{activeScene.icon}</span><div><p className="eyebrow">SCENE WORD BOOK</p><h2>{activeScene.title}</h2><p>{activeScene.desc}</p></div><strong>{activeScene.count}<small>词</small></strong></div>

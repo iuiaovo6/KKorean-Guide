@@ -755,7 +755,8 @@
     "translation": "入场时会盖印章。",
     "tags": [
       "追星",
-      "线下活动"
+      "线下活动",
+      "新增单词"
     ],
     "romanization": "dojang"
   },
@@ -1114,20 +1115,6 @@
       "入场check"
     ],
     "romanization": "inwon chekeu sijakhagetseumnida. jigeumbuteo dochakhasineun buneun jigak jullo bonae juseyo"
-  },
-  {
-    "id": -90011,
-    "korean": "도장",
-    "meaning": "印章",
-    "type": "句子",
-    "example": "",
-    "translation": "",
-    "tags": [
-      "线下活动",
-      "一轮check",
-      "入场check"
-    ],
-    "romanization": "dojang"
   },
   {
     "id": -90012,
