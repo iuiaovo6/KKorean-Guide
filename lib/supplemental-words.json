@@ -1,0 +1,1692 @@
+[
+  {
+    "id": -920001,
+    "korean": "주다",
+    "meaning": "给",
+    "type": "动词",
+    "example": "친구한테 선물을 줬어요.",
+    "translation": "送了朋友一份礼物。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "juda"
+  },
+  {
+    "id": -920002,
+    "korean": "하다",
+    "meaning": "做；说",
+    "type": "动词",
+    "example": "오늘 숙제 했어요.",
+    "translation": "今天写作业了。",
+    "tags": [
+      "基础"
+    ],
+    "romanization": "hada"
+  },
+  {
+    "id": -920003,
+    "korean": "이다",
+    "meaning": "是",
+    "type": "动词",
+    "example": "이건 제 책이에요.",
+    "translation": "这是我的书。",
+    "tags": [
+      "基础"
+    ],
+    "romanization": "ida"
+  },
+  {
+    "id": -920004,
+    "korean": "가다",
+    "meaning": "去",
+    "type": "动词",
+    "example": "주말에 콘서트 갔어요.",
+    "translation": "周末去看演唱会了。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "gada"
+  },
+  {
+    "id": -920005,
+    "korean": "보다",
+    "meaning": "看",
+    "type": "动词",
+    "example": "뮤직비디오 다시 봤어요.",
+    "translation": "又把 MV 看了一遍。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "boda"
+  },
+  {
+    "id": -920006,
+    "korean": "받다",
+    "meaning": "收；拿",
+    "type": "动词",
+    "example": "응원 선물 받았어요!",
+    "translation": "收到应援礼物了！",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "batda"
+  },
+  {
+    "id": -920007,
+    "korean": "적다",
+    "meaning": "写",
+    "type": "动词",
+    "example": "다이어리에 오늘 일기 적었어요.",
+    "translation": "在日记里写了今天的事。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "jeokda"
+  },
+  {
+    "id": -920008,
+    "korean": "나가다",
+    "meaning": "出去",
+    "type": "动词",
+    "example": "점심 먹고 밖에 나갔어요.",
+    "translation": "吃完午饭出去了。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "nagada"
+  },
+  {
+    "id": -920009,
+    "korean": "들어가다",
+    "meaning": "进去",
+    "type": "动词",
+    "example": "교실에 들어가 봐요.",
+    "translation": "进教室看看吧。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "deureogada"
+  },
+  {
+    "id": -920010,
+    "korean": "올리다",
+    "meaning": "举起；发布",
+    "type": "动词",
+    "example": "오늘 인스타에 사진 올렸어요.",
+    "translation": "今天在 ins 发了照片。",
+    "tags": [
+      "基础",
+      "数字生活"
+    ],
+    "romanization": "ollida"
+  },
+  {
+    "id": -920011,
+    "korean": "내리다",
+    "meaning": "摘下；放下",
+    "type": "动词",
+    "example": "사진 다 찍고 모자 내렸어요.",
+    "translation": "拍完照把帽子摘了。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "naerida"
+  },
+  {
+    "id": -920012,
+    "korean": "걸다",
+    "meaning": "挂",
+    "type": "动词",
+    "example": "응원봉 가방에 걸어 놨어요.",
+    "translation": "把应援棒挂在包上了。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "geolda"
+  },
+  {
+    "id": -920013,
+    "korean": "넣다",
+    "meaning": "放（进）",
+    "type": "动词",
+    "example": "가방에 지갑 넣었어요.",
+    "translation": "把钱包装进包里了。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "neoda"
+  },
+  {
+    "id": -920014,
+    "korean": "꺼내다",
+    "meaning": "拿出",
+    "type": "动词",
+    "example": "책상에서 필통 꺼냈어요.",
+    "translation": "从书桌里拿出了笔袋。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "kkeonaeda"
+  },
+  {
+    "id": -920015,
+    "korean": "나오다",
+    "meaning": "出来",
+    "type": "动词",
+    "example": "결과가 나왔어요!",
+    "translation": "结果出来啦！",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "naoda"
+  },
+  {
+    "id": -920016,
+    "korean": "보이다",
+    "meaning": "显示；让…看见",
+    "type": "动词",
+    "example": "저기 우리 아이돌 보여요?",
+    "translation": "那边能看到我们家爱豆吗？",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "boida"
+  },
+  {
+    "id": -920017,
+    "korean": "되다",
+    "meaning": "成为；变得",
+    "type": "动词",
+    "example": "날씨가 추워졌어요.",
+    "translation": "天气变冷了。",
+    "tags": [
+      "基础"
+    ],
+    "romanization": "doeda"
+  },
+  {
+    "id": -920018,
+    "korean": "말하다",
+    "meaning": "说",
+    "type": "动词",
+    "example": "솔직히 말할게요.",
+    "translation": "跟你说实话吧。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "malhada"
+  },
+  {
+    "id": -920019,
+    "korean": "확인하다",
+    "meaning": "确认",
+    "type": "动词",
+    "example": "예매 확인했어요?",
+    "translation": "票确认好了吗？",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "hwaginhada"
+  },
+  {
+    "id": -920020,
+    "korean": "시작하다",
+    "meaning": "开始",
+    "type": "动词",
+    "example": "곧 공연 시작해요.",
+    "translation": "演出马上开始了。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "sijakhada"
+  },
+  {
+    "id": -920021,
+    "korean": "보내다",
+    "meaning": "送",
+    "type": "动词",
+    "example": "선배한테 메시지 보냈어요.",
+    "translation": "给前辈发消息了。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "bonaeda"
+  },
+  {
+    "id": -920022,
+    "korean": "이동하다",
+    "meaning": "移动",
+    "type": "动词",
+    "example": "자리 이동할게요.",
+    "translation": "我换个位置。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "idonghada"
+  },
+  {
+    "id": -920023,
+    "korean": "발견하다",
+    "meaning": "发现",
+    "type": "动词",
+    "example": "숨겨진 포토카드 발견했어요!",
+    "translation": "发现了隐藏的 photo card！",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "balgyeonhada"
+  },
+  {
+    "id": -920024,
+    "korean": "통하다",
+    "meaning": "通过",
+    "type": "动词",
+    "example": "앱을 통해 예매했어요.",
+    "translation": "是通过 app 买的票。",
+    "tags": [
+      "基础",
+      "数字生活"
+    ],
+    "romanization": "tonghada"
+  },
+  {
+    "id": -920025,
+    "korean": "서다",
+    "meaning": "站",
+    "type": "动词",
+    "example": "입구 앞에 서 있어요.",
+    "translation": "站在入口前面。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "seoda"
+  },
+  {
+    "id": -920026,
+    "korean": "드리다",
+    "meaning": "给（谦语）",
+    "type": "动词",
+    "example": "선물 드릴게요.",
+    "translation": "我给您送个礼物。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "deurida"
+  },
+  {
+    "id": -920027,
+    "korean": "유의하다",
+    "meaning": "注意",
+    "type": "动词",
+    "example": "미끄럼에 유의하세요.",
+    "translation": "小心地滑。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "yuuihada"
+  },
+  {
+    "id": -920028,
+    "korean": "보관하다",
+    "meaning": "保管",
+    "type": "动词",
+    "example": "소지품 잘 보관해요.",
+    "translation": "随身物品保管好。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "bogwanhada"
+  },
+  {
+    "id": -920029,
+    "korean": "지워지다",
+    "meaning": "被擦掉",
+    "type": "动词",
+    "example": "글씨가 다 지워졌어요.",
+    "translation": "字全被擦掉了。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "jiwojida"
+  },
+  {
+    "id": -920030,
+    "korean": "재확인",
+    "meaning": "再次确认",
+    "type": "名词",
+    "example": "예매 내역 재확인했어요.",
+    "translation": "又确认了一遍购票记录。",
+    "tags": [
+      "追星",
+      "线下活动"
+    ],
+    "romanization": "jaehwagin"
+  },
+  {
+    "id": -920031,
+    "korean": "요청",
+    "meaning": "请求",
+    "type": "名词",
+    "example": "도움이 필요하면 요청해 주세요.",
+    "translation": "需要帮忙就提一下。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "yocheong"
+  },
+  {
+    "id": -920032,
+    "korean": "있다",
+    "meaning": "有",
+    "type": "动词",
+    "example": "시간이 있어요.",
+    "translation": "我有空。",
+    "tags": [
+      "基础"
+    ],
+    "romanization": "itda"
+  },
+  {
+    "id": -920033,
+    "korean": "맞다",
+    "meaning": "正确；对",
+    "type": "形容词",
+    "example": "답이 맞아요.",
+    "translation": "答案是对的。",
+    "tags": [
+      "基础"
+    ],
+    "romanization": "matda"
+  },
+  {
+    "id": -920034,
+    "korean": "번",
+    "meaning": "号；次",
+    "type": "数词",
+    "example": "몇 번이세요?",
+    "translation": "您是几号？",
+    "tags": [
+      "基础",
+      "数字"
+    ],
+    "romanization": "beon"
+  },
+  {
+    "id": -920035,
+    "korean": "분",
+    "meaning": "位（对人的尊称）",
+    "type": "量词",
+    "example": "손님 세 분 오셨어요.",
+    "translation": "来了三位客人。",
+    "tags": [
+      "基础",
+      "敬语"
+    ],
+    "romanization": "bun"
+  },
+  {
+    "id": -920036,
+    "korean": "바로",
+    "meaning": "直接；马上",
+    "type": "副词",
+    "example": "지금 바로 갈게요.",
+    "translation": "我现在马上就去。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "baro"
+  },
+  {
+    "id": -920037,
+    "korean": "잘",
+    "meaning": "好好地",
+    "type": "副词",
+    "example": "잘 들으세요.",
+    "translation": "好好听哦。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "jal"
+  },
+  {
+    "id": -920038,
+    "korean": "안",
+    "meaning": "不",
+    "type": "副词",
+    "example": "오늘 안 가요.",
+    "translation": "今天不去了。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "an"
+  },
+  {
+    "id": -920039,
+    "korean": "맨",
+    "meaning": "最",
+    "type": "副词",
+    "example": "맨 앞줄이예요.",
+    "translation": "在最前排。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "maen"
+  },
+  {
+    "id": -920040,
+    "korean": "좀",
+    "meaning": "一点（表委婉）",
+    "type": "副词",
+    "example": "잠시만 좀요.",
+    "translation": "稍等一下嘛。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "jom"
+  },
+  {
+    "id": -920041,
+    "korean": "혹시",
+    "meaning": "或许；也许",
+    "type": "副词",
+    "example": "혹시 악세사리 있어요?",
+    "translation": "请问有配件吗？",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "hoksi"
+  },
+  {
+    "id": -920042,
+    "korean": "어떤",
+    "meaning": "什么；怎样的",
+    "type": "冠词",
+    "example": "어떤 노래 좋아해요?",
+    "translation": "喜欢哪首歌？",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "eotteon"
+  },
+  {
+    "id": -920043,
+    "korean": "다른",
+    "meaning": "别的；其他的",
+    "type": "冠词",
+    "example": "다른 색 없어요?",
+    "translation": "没有别的颜色吗？",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "dareun"
+  },
+  {
+    "id": -920044,
+    "korean": "전화번호",
+    "meaning": "电话号码",
+    "type": "名词",
+    "example": "전화번호 바꿨어요.",
+    "translation": "换手机号了。",
+    "tags": [
+      "基础",
+      "数字生活"
+    ],
+    "romanization": "jeonhwabeonho"
+  },
+  {
+    "id": -920045,
+    "korean": "손목",
+    "meaning": "手腕",
+    "type": "名词",
+    "example": "손목이 차가워요.",
+    "translation": "手腕好凉。",
+    "tags": [
+      "日常",
+      "身体"
+    ],
+    "romanization": "sonmok"
+  },
+  {
+    "id": -920046,
+    "korean": "가방",
+    "meaning": "包",
+    "type": "名词",
+    "example": "가방 무거워요.",
+    "translation": "包好重。",
+    "tags": [
+      "日常"
+    ],
+    "romanization": "gabang"
+  },
+  {
+    "id": -920047,
+    "korean": "마스크",
+    "meaning": "口罩",
+    "type": "名词",
+    "example": "마스크 잊고 왔어요.",
+    "translation": "忘带口罩了。",
+    "tags": [
+      "日常"
+    ],
+    "romanization": "maseukeu"
+  },
+  {
+    "id": -920048,
+    "korean": "건물",
+    "meaning": "建筑；楼",
+    "type": "名词",
+    "example": "저 건물이 우리 회사예요.",
+    "translation": "那栋楼是我们公司。",
+    "tags": [
+      "日常",
+      "地点"
+    ],
+    "romanization": "geonmul"
+  },
+  {
+    "id": -920049,
+    "korean": "색",
+    "meaning": "颜色",
+    "type": "名词",
+    "example": "색 마음에 들어요.",
+    "translation": "颜色很合心意。",
+    "tags": [
+      "日常",
+      "描述"
+    ],
+    "romanization": "saek"
+  },
+  {
+    "id": -920050,
+    "korean": "앞뒤",
+    "meaning": "前后",
+    "type": "名词",
+    "example": "앞뒤 번호 확인해요.",
+    "translation": "确认一下前后的号码。",
+    "tags": [
+      "日常",
+      "描述"
+    ],
+    "romanization": "apdwi"
+  },
+  {
+    "id": -920051,
+    "korean": "옆",
+    "meaning": "旁边",
+    "type": "名词",
+    "example": "옆 자리 비어 있어요.",
+    "translation": "旁边的座位空着。",
+    "tags": [
+      "日常",
+      "地点"
+    ],
+    "romanization": "yeop"
+  },
+  {
+    "id": -920052,
+    "korean": "부터",
+    "meaning": "从",
+    "type": "助词",
+    "example": "아침부터 공부해요.",
+    "translation": "从早上就开始学习。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "buteo"
+  },
+  {
+    "id": -920053,
+    "korean": "수",
+    "meaning": "数；可以（~할 수 있다）",
+    "type": "名词",
+    "example": "할 수 있어요.",
+    "translation": "我能做到。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "su"
+  },
+  {
+    "id": -920054,
+    "korean": "경우",
+    "meaning": "情况",
+    "type": "名词",
+    "example": "그런 경우는 드물어요.",
+    "translation": "那种情况很少见。",
+    "tags": [
+      "基础",
+      "对话"
+    ],
+    "romanization": "gyeou"
+  },
+  {
+    "id": -920055,
+    "korean": "예정",
+    "meaning": "计划；预定",
+    "type": "名词",
+    "example": "내일 만날 예정이에요.",
+    "translation": "明天约好要见面。",
+    "tags": [
+      "基础",
+      "时间"
+    ],
+    "romanization": "yejeong"
+  },
+  {
+    "id": -920056,
+    "korean": "간단하다",
+    "meaning": "简单的",
+    "type": "形容词",
+    "example": "설명이 간단해요.",
+    "translation": "说明很简单。",
+    "tags": [
+      "基础",
+      "描述"
+    ],
+    "romanization": "gandanhada"
+  },
+  {
+    "id": -920057,
+    "korean": "어렵다",
+    "meaning": "困难的；不容易的",
+    "type": "形容词",
+    "example": "한국어가 어려워요.",
+    "translation": "韩语好难。",
+    "tags": [
+      "基础",
+      "感受"
+    ],
+    "romanization": "eoryeopda"
+  },
+  {
+    "id": -920058,
+    "korean": "전자기기",
+    "meaning": "电子设备",
+    "type": "名词",
+    "example": "공연장에 전자기기 못 가져가요.",
+    "translation": "演出现场不能带电子设备。",
+    "tags": [
+      "追星",
+      "线下活动"
+    ],
+    "romanization": "jeonjagigi"
+  },
+  {
+    "id": -920059,
+    "korean": "도장",
+    "meaning": "印章",
+    "type": "名词",
+    "example": "입장할 때 도장 받아요.",
+    "translation": "入场时会盖印章。",
+    "tags": [
+      "追星",
+      "线下活动"
+    ],
+    "romanization": "dojang"
+  },
+  {
+    "id": -920060,
+    "korean": "역조공",
+    "meaning": "逆应援（粉丝回馈礼物）",
+    "type": "名词",
+    "example": "오늘 역조공 받았어요!",
+    "translation": "今天收到了逆应援！",
+    "tags": [
+      "应援"
+    ],
+    "romanization": "yeokjogong"
+  },
+  {
+    "id": -920061,
+    "korean": "재모임",
+    "meaning": "再集合；重新集合",
+    "type": "名词",
+    "example": "공연 끝나고 재모임 해요.",
+    "translation": "演出结束后再集合。",
+    "tags": [
+      "追星",
+      "线下活动"
+    ],
+    "romanization": "jaemoim"
+  },
+  {
+    "id": -920062,
+    "korean": "지각",
+    "meaning": "迟到",
+    "type": "名词",
+    "example": "지각해서 혼났어요.",
+    "translation": "迟到了被训了一顿。",
+    "tags": [
+      "追星",
+      "线下活动"
+    ],
+    "romanization": "jigak"
+  },
+  {
+    "id": -920063,
+    "korean": "인원",
+    "meaning": "人员",
+    "type": "名词",
+    "example": "인원 다 모였어요?",
+    "translation": "人都到齐了吗？",
+    "tags": [
+      "追星",
+      "线下活动"
+    ],
+    "romanization": "inwon"
+  },
+  {
+    "id": -920064,
+    "korean": "체크",
+    "meaning": "检查（check）",
+    "type": "名词",
+    "example": "입장 전에 체크해요.",
+    "translation": "入场前会检查。",
+    "tags": [
+      "追星",
+      "线下活动"
+    ],
+    "romanization": "chekeu"
+  },
+  {
+    "id": -920065,
+    "korean": "훼손",
+    "meaning": "损坏",
+    "type": "名词",
+    "example": "상품 훼손되면 안 돼요.",
+    "translation": "商品不能弄坏。",
+    "tags": [
+      "追星",
+      "线下活动"
+    ],
+    "romanization": "hweson"
+  },
+  {
+    "id": -920066,
+    "korean": "은행카드",
+    "meaning": "银行卡",
+    "type": "名词",
+    "example": "은행카드 분실했어요.",
+    "translation": "银行卡丢了。",
+    "tags": [
+      "日常",
+      "数字生活"
+    ],
+    "romanization": "eunhaengkadeu"
+  },
+  {
+    "id": -920067,
+    "korean": "공방판",
+    "meaning": "打歌板（同义词：팬카드）",
+    "type": "名词",
+    "example": "공방판 직접 만들었어요.",
+    "translation": "打歌板是自己做的。",
+    "tags": [
+      "打歌",
+      "线下活动",
+      "新增单词"
+    ],
+    "romanization": "gongbangpan"
+  },
+  {
+    "id": -920068,
+    "korean": "미팬",
+    "meaning": "MINI FAN（突袭小粉丝见面）",
+    "type": "名词",
+    "example": "오늘 미팬 당첨됐어요!",
+    "translation": "今天抽中 mini fan 了！",
+    "tags": [
+      "追星",
+      "线下活动"
+    ],
+    "romanization": "mipaen"
+  },
+  {
+    "id": -920069,
+    "korean": "하이코리아",
+    "meaning": "HiKorea（韩国政府外国人综合网）",
+    "type": "专有",
+    "example": "하이코리아에서 신고했어요.",
+    "translation": "在 HiKorea 上申报了。",
+    "tags": [
+      "追星",
+      "数字生活"
+    ],
+    "romanization": "haikoria"
+  },
+  {
+    "id": -920070,
+    "korean": "네이버",
+    "meaning": "Naver（韩国搜索/账号）",
+    "type": "专有",
+    "example": "네이버로 검색했어요.",
+    "translation": "用 Naver 搜的。",
+    "tags": [
+      "追星",
+      "数字生活"
+    ],
+    "romanization": "neibeo"
+  },
+  {
+    "id": -920071,
+    "korean": "카카오",
+    "meaning": "Kakao（韩国社交/账号）",
+    "type": "专有",
+    "example": "카카오톡 확인해 봐요.",
+    "translation": "看看 KakaoTalk。",
+    "tags": [
+      "追星",
+      "数字生活"
+    ],
+    "romanization": "kakao"
+  },
+  {
+    "id": -920072,
+    "korean": "기프트",
+    "meaning": "礼物（gift）",
+    "type": "名词",
+    "example": "이벤트 기프트 받았어요.",
+    "translation": "领到了活动礼物。",
+    "tags": [
+      "应援"
+    ],
+    "romanization": "gipeuteu"
+  },
+  {
+    "id": -920073,
+    "korean": "큰화면",
+    "meaning": "大屏幕",
+    "type": "名词",
+    "example": "큰화면으로 잘 보여요.",
+    "translation": "大屏幕看得清楚。",
+    "tags": [
+      "追星",
+      "线下活动"
+    ],
+    "romanization": "keunhwamyeon"
+  },
+  {
+    "id": -920074,
+    "korean": "터치",
+    "meaning": "触碰（touch）",
+    "type": "动词",
+    "example": "화면 한 번 터치하면 돼요.",
+    "translation": "点一下屏幕就行。",
+    "tags": [
+      "追星",
+      "数字生活"
+    ],
+    "romanization": "teochi"
+  },
+  {
+    "id": -920075,
+    "korean": "교환하다",
+    "meaning": "交换",
+    "type": "动词",
+    "example": "포토카드 교환했어요.",
+    "translation": "交换了 photo card。",
+    "tags": [
+      "饭圈用语"
+    ],
+    "romanization": "gyohwanhada"
+  },
+  {
+    "id": -920076,
+    "korean": "스밍횟수",
+    "meaning": "听歌次数",
+    "type": "名词",
+    "example": "오늘 스밍횟수 채웠어요.",
+    "translation": "今天听歌次数刷够了。",
+    "tags": [
+      "饭圈用语",
+      "音乐",
+      "线下活动",
+      "新增单词"
+    ],
+    "romanization": "seuminghoetsu"
+  },
+  {
+    "id": -920077,
+    "korean": "팬카드",
+    "meaning": "打歌板（同义词：공방판）",
+    "type": "名词",
+    "example": "팬카드 직접 만들었어요.",
+    "translation": "打歌板是自己做的。",
+    "tags": [
+      "打歌",
+      "线下活动",
+      "新增单词"
+    ],
+    "romanization": "paenkadeu"
+  },
+  {
+    "id": -920078,
+    "korean": "라벨지",
+    "meaning": "贴纸（同义词：스티커）",
+    "type": "名词",
+    "example": "라벨지에 이름 적었어요.",
+    "translation": "在标签纸上写了名字。",
+    "tags": [
+      "周边",
+      "线下活动",
+      "新增单词"
+    ],
+    "romanization": "rabelji"
+  },
+  {
+    "id": -1830040,
+    "korean": "신분증",
+    "meaning": "身份证",
+    "type": "名词",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "新增单词"
+    ],
+    "romanization": "sinbunjeung"
+  },
+  {
+    "id": -1830050,
+    "korean": "응원봉",
+    "meaning": "应援棒",
+    "type": "名词",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "新增单词"
+    ],
+    "romanization": "euwonbong"
+  },
+  {
+    "id": -1830060,
+    "korean": "음원",
+    "meaning": "音源",
+    "type": "名词",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "新增单词"
+    ],
+    "romanization": "eumwon"
+  },
+  {
+    "id": -1830090,
+    "korean": "스티커",
+    "meaning": "贴纸（同义词：라벨지）",
+    "type": "名词",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "新增单词"
+    ],
+    "romanization": "seutikeo"
+  },
+  {
+    "id": -1830100,
+    "korean": "팔찌",
+    "meaning": "手环",
+    "type": "名词",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "新增单词"
+    ],
+    "romanization": "paljji"
+  },
+  {
+    "id": -90001,
+    "korean": "몇 번 이세요?",
+    "meaning": "请问是几号？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check / 二轮check",
+      "入场check"
+    ],
+    "romanization": "myeot beon iseyo?"
+  },
+  {
+    "id": -90002,
+    "korean": "앞뒤 번호 확인하고 본인 번호 맞게 서 주세요",
+    "meaning": "确认前后的号码，站在本人的位置上",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check",
+      "入场check"
+    ],
+    "romanization": "apdwi beonho hwaginhago bonin beonho matge seo juseyo"
+  },
+  {
+    "id": -90003,
+    "korean": "인원 체크 시작하겠습니다. 지금부터 도착하시는 분은 지각 줄로 보내 주세요",
+    "meaning": "正式开始一轮check，之后到达的人请去迟到队伍",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check",
+      "入场check"
+    ],
+    "romanization": "inwon chekeu sijakhagetseumnida. jigeumbuteo dochakhasineun buneun jigak jullo bonae juseyo"
+  },
+  {
+    "id": -90011,
+    "korean": "도장",
+    "meaning": "印章",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check",
+      "入场check"
+    ],
+    "romanization": "dojang"
+  },
+  {
+    "id": -90012,
+    "korean": "위버스 QR 한 번 터치해서 큰화면으로 준비해 주세요",
+    "meaning": "点一下Weverse中选页的二维码放大",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check",
+      "入场check"
+    ],
+    "romanization": "wibeoseu QR han beon teochihaeseo keunhwamyeoneuro junbihae juseyo"
+  },
+  {
+    "id": -90013,
+    "korean": "재모임 시간은 XX입니다",
+    "meaning": "再集合 / 二轮check时间是XX",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check",
+      "入场check"
+    ],
+    "romanization": "jaemoim siganeun XXimnida"
+  },
+  {
+    "id": -90014,
+    "korean": "재모임 시간은 트위터 통해 공지 올리겠습니다",
+    "meaning": "集合时间会发在推特上",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check",
+      "入场check"
+    ],
+    "romanization": "jaemoim siganeun teuwiteo tonghae gongji olligetseumnida"
+  },
+  {
+    "id": -90015,
+    "korean": "팔찌 훼손 있는 경우 재확인 요청 드릴 수 있으니 잘 보관해 주세요",
+    "meaning": "手环有损坏会被二次确认，请妥善保管",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check",
+      "入场check"
+    ],
+    "romanization": "paljji hweson inneun gyeou jaehwagin yocheong deuril su iseuni jal bogwanhae juseyo"
+  },
+  {
+    "id": -90016,
+    "korean": "도장 안 지워지게 유의해 주세요",
+    "meaning": "注意不要让印章蹭掉",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check",
+      "入场check"
+    ],
+    "romanization": "dojang an jiwojige yuuihae juseyo"
+  },
+  {
+    "id": -90017,
+    "korean": "스티커 바로 붙여 주세요",
+    "meaning": "请直接把贴纸贴到打歌板上",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check",
+      "入场check"
+    ],
+    "romanization": "seutikeo baro butyeo juseyo"
+  },
+  {
+    "id": -90018,
+    "korean": "옆에서 공방판에 개인정보 적고 이동할게요",
+    "meaning": "在旁边把打歌板信息填完再移动",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check",
+      "入场check"
+    ],
+    "romanization": "yeopeseo gongbangpane gaeinjeongbo jeokgo idonghalgeyo"
+  },
+  {
+    "id": -90019,
+    "korean": "역조공 있으니 받아가세요",
+    "meaning": "请领取逆应援",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check",
+      "入场check"
+    ],
+    "romanization": "yeokjogong iseuni badagaseyo"
+  },
+  {
+    "id": -90020,
+    "korean": "응원봉 손목에 걸어 주세요",
+    "meaning": "应援棒挂到手腕上准备好",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "二轮check",
+      "入场check"
+    ],
+    "romanization": "euwonbong sonmoge georeo juseyo"
+  },
+  {
+    "id": -90021,
+    "korean": "팔찌 도장 확인할 거라 잘 보이게 준비해 주세요",
+    "meaning": "要检查手环和印章，提前准备好",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "二轮check",
+      "入场check"
+    ],
+    "romanization": "paljji dojang hwaginhal geora jal boige junbihae juseyo"
+  },
+  {
+    "id": -90022,
+    "korean": "들어가서 모든 전자기기 금지입니다",
+    "meaning": "进去之后不能使用任何电子设备",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "二轮check",
+      "入场check"
+    ],
+    "romanization": "deureogaseo modeun jeonjagigi geumjiimnida"
+  },
+  {
+    "id": -90023,
+    "korean": "들어가서 전자기기 발견하면 바로 퇴장합니다",
+    "meaning": "进去后发现使用电子设备会被强制退场",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "二轮check",
+      "入场check"
+    ],
+    "romanization": "deureogaseo jeonjagigi balgyeonhamyeon baro toejanghamnida"
+  },
+  {
+    "id": -90024,
+    "korean": "모든 전자기기 가방에 넣어 주세요",
+    "meaning": "把所有电子设备放进包里",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "二轮check",
+      "入场check"
+    ],
+    "romanization": "modeun jeonjagigi gabae neoeo juseyo"
+  },
+  {
+    "id": -90025,
+    "korean": "나오세요",
+    "meaning": "请出来",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "naoseyo"
+  },
+  {
+    "id": -90026,
+    "korean": "맨 앞으로 가 주세요",
+    "meaning": "请去最前面",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "maen apeuro ga juseyo"
+  },
+  {
+    "id": -90027,
+    "korean": "신분증 꺼내 주세요",
+    "meaning": "请拿出身份证",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "sinbunjeung kkeonae juseyo"
+  },
+  {
+    "id": -90028,
+    "korean": "본인 아니시죠?",
+    "meaning": "你不是本人吧？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "bonin anisijyo?"
+  },
+  {
+    "id": -90029,
+    "korean": "마스크 내려 주세요",
+    "meaning": "请摘下口罩",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "maseukeu naeryeo juseyo"
+  },
+  {
+    "id": -90030,
+    "korean": "안경 내려 주세요",
+    "meaning": "请摘一下眼镜",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "angyeong naeryeo juseyo"
+  },
+  {
+    "id": -90031,
+    "korean": "모자 올려 주세요",
+    "meaning": "请摘一下帽子",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "moja ollyeo juseyo"
+  },
+  {
+    "id": -90032,
+    "korean": "저 좀 봐 주세요",
+    "meaning": "请看着我",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "jeo jom bwa juseyo"
+  },
+  {
+    "id": -90033,
+    "korean": "생일 말씀해 주세요",
+    "meaning": "生日是什么时候？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "saeil malsseumhae juseyo"
+  },
+  {
+    "id": -90034,
+    "korean": "전화번호 말씀해 주세요",
+    "meaning": "电话号码是多少？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "jeonhwabeonho malsseumhae juseyo"
+  },
+  {
+    "id": -90035,
+    "korean": "다른 신분증 / 은행카드 있으실까요?",
+    "meaning": "有没有别的证件或者银行卡",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "dareun sinbunjeung / eunhaengkadeu iseusilkkayo?"
+  },
+  {
+    "id": -90036,
+    "korean": "신분증에 적혀 있는 주소 말씀해 주세요",
+    "meaning": "背一下身份证上的地址",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "sinbunjeue jeokhyeo inneun juso malsseumhae juseyo"
+  },
+  {
+    "id": -90037,
+    "korean": "하이코리아 로그인 해 주세요",
+    "meaning": "登录一下HiKorea",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "haikoria rogeuin hae juseyo"
+  },
+  {
+    "id": -90038,
+    "korean": "위버스 나갔다가 다시 로그인 해 주세요",
+    "meaning": "退出Weverse账号重新登录",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "wibeoseu nagatdaga dasi rogeuin hae juseyo"
+  },
+  {
+    "id": -90039,
+    "korean": "네이버 / 카카오 나갔다가 다시 로그인 해 주세요",
+    "meaning": "退出Naver/Kakao账号重新登录",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "neibeo / kakao nagatdaga dasi rogeuin hae juseyo"
+  },
+  {
+    "id": -90040,
+    "korean": "신분증 주소 건물 어떤 색이에요?",
+    "meaning": "身份证地址那栋楼是什么颜色？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "sinbunjeung juso geonmul eotteon saegieyo?"
+  },
+  {
+    "id": -90041,
+    "korean": "펜 드릴 테니 여기에 이름 적어 주세요",
+    "meaning": "给你笔，在这里写一下名字",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "pen deuril teni yeogie ireum jeogeo juseyo"
+  },
+  {
+    "id": -90042,
+    "korean": "본인 아니에요",
+    "meaning": "你不是本人",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "bonin anieyo"
+  },
+  {
+    "id": -90043,
+    "korean": "오늘 입장 어려우세요",
+    "meaning": "今天你不能入场",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流",
+      "入场check"
+    ],
+    "romanization": "oneul ipjang eoryeouseyo"
+  },
+  {
+    "id": -90044,
+    "korean": "바로 해산해 주세요",
+    "meaning": "出去之后直接解散",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束",
+      "入场check"
+    ],
+    "romanization": "baro haesanhae juseyo"
+  },
+  {
+    "id": -90045,
+    "korean": "나가셔서 번호 맞게 다시 줄 서세요",
+    "meaning": "出去后按号码重新排队",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束",
+      "入场check"
+    ],
+    "romanization": "nagasyeoseo beonho matge dasi jul seoseyo"
+  },
+  {
+    "id": -90046,
+    "korean": "나가셔서 기프트 / 역조공 받아가세요",
+    "meaning": "出去后别忘了领礼物/逆应援",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束",
+      "入场check"
+    ],
+    "romanization": "nagasyeoseo gipeuteu / yeokjogong badagaseyo"
+  },
+  {
+    "id": -90047,
+    "korean": "미팬 공지는 트위터에 올리겠습니다",
+    "meaning": "MINI FAN公告会发在推特上",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束",
+      "入场check"
+    ],
+    "romanization": "mipaen gongjineun teuwiteoe olligetseumnida"
+  },
+  {
+    "id": -90048,
+    "korean": "오늘 간단하게 멤버들이랑 미팬 할 예정입니다",
+    "meaning": "今天有突袭MINI FAN",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束",
+      "入场check"
+    ],
+    "romanization": "oneul gandanhage membeodeurirang mipaen hal yejeoimnida"
+  },
+  {
+    "id": -90049,
+    "korean": "최애 어떻게 되세요?",
+    "meaning": "你的本命是谁？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束",
+      "入场check"
+    ],
+    "romanization": "choeae eotteoge doeseyo?"
+  },
+  {
+    "id": -90050,
+    "korean": "누구 받으셨어요?",
+    "meaning": "请问领到了谁？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束",
+      "入场check"
+    ],
+    "romanization": "nugu badeusyeoseoyo?"
+  },
+  {
+    "id": -90051,
+    "korean": "혹시 교환하시나요?",
+    "meaning": "或许想交换吗？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束",
+      "入场check"
+    ],
+    "romanization": "hoksi gyohwanhasinayo?"
+  }
+]

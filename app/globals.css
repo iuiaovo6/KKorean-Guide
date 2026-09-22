@@ -61,7 +61,12 @@ button { color: inherit; }
 .icon-button.streak-bubble:active { transform: scale(.97); }
 .streak-bubble.is-active { border-color: #ed93b1; }
 .streak-bubble.is-empty { border-color: #b4b2a9; }
-.streak-heart { width: 22px; height: 22px; flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 20px; font-weight: 400; line-height: 1; }
+.streak-heart { width: 18px; height: 18px; flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 16px; font-weight: 400; line-height: 1; }
+.entry-check-course { width: 100%; margin: 0 0 20px; padding: 22px; border: 1px solid #cce6fa; border-radius: 18px; background: #edf7ff; color: #182c3a; display: flex; align-items: center; justify-content: space-between; gap: 14px; text-align: left; }
+.entry-check-course > span { display: grid; gap: 8px; }
+.entry-check-course strong { font-size: 22px; }
+.entry-check-course small { color: #687d8b; font-size: 11px; }
+.entry-check-course b { flex-shrink: 0; font-size: 12px; }
 .streak-value { color: #111827; font-size: 11px; font-weight: 800; line-height: 1; letter-spacing: -.02em; }
 .streak-bubble.is-empty .streak-value { color: #b4b2a9; }
 .content { max-width: 1220px; margin: 0 auto; padding: 48px 54px 72px; }
@@ -268,6 +273,7 @@ button { color: inherit; }
 .word-type { color: var(--muted); font-size: 11px; }
 .learning-hint { max-width: 350px; color: var(--muted); font-size: 12px; line-height: 1.7; margin-top: 24px; }
 .question-word { font-size: 46px; margin: 18px 0 30px; letter-spacing: -.05em; }
+.sentence-learning .question-word { font-size: clamp(20px, 4vw, 28px); line-height: 1.65; overflow-wrap: anywhere; letter-spacing: -.02em; }
 .tap-word { color: inherit; cursor: pointer; text-decoration: none; border: 0; background: transparent; font: inherit; touch-action: manipulation; }
 .tap-word:focus-visible { outline: 2px solid #91c9f7; outline-offset: 3px; border-radius: 3px; }
 .tap-word:active { background: rgba(145, 201, 247, .16); border-radius: 3px; }

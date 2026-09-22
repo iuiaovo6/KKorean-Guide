@@ -9,6 +9,25 @@ import { isLegacyExample, refreshLegacyExamples } from "../lib/example-updates.t
 
 const root = new URL("../", import.meta.url);
 
+test("entry-check words are moved, split, and cross-reference synonyms", async () => {
+  const data = JSON.parse(await readFile(new URL('../lib/supplemental-words.json', import.meta.url), 'utf8'));
+  const lesson = data.filter(w => w.tags.includes('入场check'));
+  assert.equal(lesson.length, 44);
+  assert.ok(lesson.every(w => w.id > -90004 || w.id < -90010));
+  assert.equal(new Set(data.map(w => w.id)).size, data.length);
+  for (const [a, b] of [['공방판', '팬카드'], ['스티커', '라벨지']]) {
+    for (const [word, other] of [[a, b], [b, a]]) {
+      const entries = data.filter(w => w.korean === word && !w.tags.includes('入场check'));
+      assert.equal(entries.length, 1);
+      assert.equal(entries[0].type, '名词');
+      assert.ok(entries[0].meaning.includes(other));
+    }
+  }
+  assert.ok(data.every(w => w.romanization));
+  const result = spawnSync(process.execPath, ['scripts/generate-supplemental.mjs', '--check'], { cwd: root.pathname, encoding: 'utf8' });
+  assert.equal(result.status, 0, result.stderr);
+});
+
 test("listening choices finish before optional translation starts", async () => {
   const source = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
   const handlers = source.slice(source.indexOf("  async function nextStudyStep()"), source.indexOf("\n  return (\n    <main"));

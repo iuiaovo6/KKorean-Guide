@@ -76,7 +76,7 @@ function romanizeRun(text) {
   }).join("");
 }
 
-function romanize(text) {
+export function romanize(text) {
   return text.split(/(\s+)/u).map((part) => /\s/u.test(part) ? part : romanizeRun(part)).join("").trim();
 }
 

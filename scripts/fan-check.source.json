@@ -1,0 +1,665 @@
+[
+  {
+    "id": 90001,
+    "korean": "몇 번 이세요?",
+    "meaning": "请问是几号？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check / 二轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90002,
+    "korean": "앞뒤 번호 확인하고 본인 번호 맞게 서 주세요",
+    "meaning": "确认前后的号码，站在本人的位置上",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90003,
+    "korean": "인원 체크 시작하겠습니다. 지금부터 도착하시는 분은 지각 줄로 보내 주세요",
+    "meaning": "正式开始一轮check，之后到达的人请去迟到队伍",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90004,
+    "korean": "신분증",
+    "meaning": "身份证",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90005,
+    "korean": "응원봉",
+    "meaning": "应援棒",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90006,
+    "korean": "음원",
+    "meaning": "音源",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90007,
+    "korean": "스밍횟수",
+    "meaning": "听歌次数",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90008,
+    "korean": "공방판 / 팬카드",
+    "meaning": "打歌板",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90009,
+    "korean": "스티커 / 라벨지",
+    "meaning": "贴纸",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90010,
+    "korean": "팔찌",
+    "meaning": "手环",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90011,
+    "korean": "도장",
+    "meaning": "印章",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90012,
+    "korean": "위버스 QR 한 번 터치해서 큰화면으로 준비해 주세요",
+    "meaning": "点一下Weverse中选页的二维码放大",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90013,
+    "korean": "재모임 시간은 XX입니다",
+    "meaning": "再集合 / 二轮check时间是XX",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90014,
+    "korean": "재모임 시간은 트위터 통해 공지 올리겠습니다",
+    "meaning": "集合时间会发在推特上",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90015,
+    "korean": "팔찌 훼손 있는 경우 재확인 요청 드릴 수 있으니 잘 보관해 주세요",
+    "meaning": "手环有损坏会被二次确认，请妥善保管",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90016,
+    "korean": "도장 안 지워지게 유의해 주세요",
+    "meaning": "注意不要让印章蹭掉",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90017,
+    "korean": "스티커 바로 붙여 주세요",
+    "meaning": "请直接把贴纸贴到打歌板上",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90018,
+    "korean": "옆에서 공방판에 개인정보 적고 이동할게요",
+    "meaning": "在旁边把打歌板信息填完再移动",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90019,
+    "korean": "역조공 있으니 받아가세요",
+    "meaning": "请领取逆应援",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "一轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90020,
+    "korean": "응원봉 손목에 걸어 주세요",
+    "meaning": "应援棒挂到手腕上准备好",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "二轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90021,
+    "korean": "팔찌 도장 확인할 거라 잘 보이게 준비해 주세요",
+    "meaning": "要检查手环和印章，提前准备好",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "二轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90022,
+    "korean": "들어가서 모든 전자기기 금지입니다",
+    "meaning": "进去之后不能使用任何电子设备",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "二轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90023,
+    "korean": "들어가서 전자기기 발견하면 바로 퇴장합니다",
+    "meaning": "进去后发现使用电子设备会被强制退场",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "二轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90024,
+    "korean": "모든 전자기기 가방에 넣어 주세요",
+    "meaning": "把所有电子设备放进包里",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "二轮check"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90025,
+    "korean": "나오세요",
+    "meaning": "请出来",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90026,
+    "korean": "맨 앞으로 가 주세요",
+    "meaning": "请去最前面",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90027,
+    "korean": "신분증 꺼내 주세요",
+    "meaning": "请拿出身份证",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90028,
+    "korean": "본인 아니시죠?",
+    "meaning": "你不是本人吧？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90029,
+    "korean": "마스크 내려 주세요",
+    "meaning": "请摘下口罩",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90030,
+    "korean": "안경 내려 주세요",
+    "meaning": "请摘一下眼镜",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90031,
+    "korean": "모자 올려 주세요",
+    "meaning": "请摘一下帽子",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90032,
+    "korean": "저 좀 봐 주세요",
+    "meaning": "请看着我",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90033,
+    "korean": "생일 말씀해 주세요",
+    "meaning": "生日是什么时候？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90034,
+    "korean": "전화번호 말씀해 주세요",
+    "meaning": "电话号码是多少？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90035,
+    "korean": "다른 신분증 / 은행카드 있으실까요?",
+    "meaning": "有没有别的证件或者银行卡",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90036,
+    "korean": "신분증에 적혀 있는 주소 말씀해 주세요",
+    "meaning": "背一下身份证上的地址",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90037,
+    "korean": "하이코리아 로그인 해 주세요",
+    "meaning": "登录一下HiKorea",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90038,
+    "korean": "위버스 나갔다가 다시 로그인 해 주세요",
+    "meaning": "退出Weverse账号重新登录",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90039,
+    "korean": "네이버 / 카카오 나갔다가 다시 로그인 해 주세요",
+    "meaning": "退出Naver/Kakao账号重新登录",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90040,
+    "korean": "신분증 주소 건물 어떤 색이에요?",
+    "meaning": "身份证地址那栋楼是什么颜色？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90041,
+    "korean": "팬 드릴 테니 여기에 이름 적어 주세요",
+    "meaning": "给你笔，在这里写一下名字",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90042,
+    "korean": "본인 아니에요",
+    "meaning": "你不是本人",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90043,
+    "korean": "오늘 입장 어려우세요",
+    "meaning": "今天你不能入场",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "stf交流"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90044,
+    "korean": "바로 해산해 주세요",
+    "meaning": "出去之后直接解散",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90045,
+    "korean": "나가셔서 번호 맞게 다시 줄 서세요",
+    "meaning": "出去后按号码重新排队",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90046,
+    "korean": "나가셔서 기프트 / 역조공 받아가세요",
+    "meaning": "出去后别忘了领礼物/逆应援",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90047,
+    "korean": "미팬 공지는 트위터에 올리겠습니다",
+    "meaning": "MINI FAN公告会发在推特上",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90048,
+    "korean": "오늘 간단하게 멤버들이랑 미팬 할 예정입니다",
+    "meaning": "今天有突袭MINI FAN",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90049,
+    "korean": "최애 어떻게 되세요?",
+    "meaning": "你的本命是谁？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90050,
+    "korean": "누구 받으셨어요?",
+    "meaning": "请问领到了谁？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束"
+    ],
+    "romanization": ""
+  },
+  {
+    "id": 90051,
+    "korean": "혹시 교환하시나요?",
+    "meaning": "或许想交换吗？",
+    "type": "句子",
+    "example": "",
+    "translation": "",
+    "tags": [
+      "线下活动",
+      "结束"
+    ],
+    "romanization": ""
+  }
+]

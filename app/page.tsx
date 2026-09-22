@@ -4,6 +4,7 @@ import type { User } from "@supabase/supabase-js";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { buildStudyOptions } from "../lib/study-options";
 import { refreshLegacyExamples } from "../lib/example-updates";
+import { mergeSupplemental } from "../lib/supplemental";
 import { supabase } from "../lib/supabase";
 
 type Tab = "today" | "words" | "scenes" | "talk" | "import";
@@ -280,7 +281,7 @@ export default function Home() {
           tags: word.tags ?? [],
           romanization: word.romanization ?? romanizeUnknownKorean(word.korean),
         }));
-        const visibleWords = loadedWords.length > 0 ? loadedWords : fallbackWords;
+        const visibleWords = mergeSupplemental(loadedWords.length > 0 ? loadedWords : fallbackWords);
         setStudyWords(visibleWords);
         setTodayWords(visibleWords.slice(0, dailyWords));
         setWordProgress({});
@@ -331,7 +332,7 @@ export default function Home() {
         return;
       }
 
-      const loadedWords: StudyWord[] = refreshLegacyExamples(wordsResult.data ?? [], publicWords).map((word) => ({
+      const loadedWords: StudyWord[] = mergeSupplemental(refreshLegacyExamples(wordsResult.data ?? [], publicWords).map((word) => ({
         id: word.id,
         korean: word.korean,
         meaning: word.meaning_zh,
@@ -340,11 +341,13 @@ export default function Home() {
           translation: word.example_zh ?? "",
           tags: word.tags ?? [],
           romanization: romanizeUnknownKorean(word.korean),
-      }));
+      })));
 
       if (loadedWords.length > 0) {
         setStudyWords(loadedWords);
-        const progressRows = (progressResult.data ?? []) as WordProgress[];
+        let localRows: WordProgress[] = [];
+        try { localRows = Object.values(JSON.parse(window.localStorage.getItem(`korean-guide-supplemental:${currentUser.id}`) ?? "{}")); } catch { /* unavailable or malformed local storage */ }
+        const progressRows = [...(progressResult.data ?? []), ...localRows] as WordProgress[];
         const progress = new Map(progressRows.map((item) => [item.word_id, item]));
         setWordProgress(Object.fromEntries(progressRows.map((item) => [item.word_id, item])));
         setStreakDays(calculateStudyStreak(progressRows));
@@ -353,7 +356,7 @@ export default function Home() {
           return record && new Date(record.next_review_at).getTime() <= Date.now();
         });
         const newLimit = profileResult.data?.daily_new_words ?? dailyWords;
-        const newWords = loadedWords.filter((word) => !progress.has(word.id)).slice(0, newLimit);
+        const newWords = loadedWords.filter((word) => !word.tags.includes("入场check") && !progress.has(word.id)).slice(0, newLimit);
         const plannedWords = [...dueWords, ...newWords.filter((word) => !dueWords.some((due) => due.id === word.id))];
         setTodayWords(plannedWords);
         setDataMessage(plannedWords.length > 0
@@ -458,7 +461,12 @@ export default function Home() {
       setAuthMessage("请先登录，学习记录才能保存。");
       return;
     }
-    const plannedWords = words ?? todayWords;
+    const plannedWords = (words ?? todayWords).filter(word => (wordProgress[word.id]?.meaning_level ?? 0) < 5);
+    if (words && plannedWords.length === 0) {
+      setToast("这组内容已经全部掌握了");
+      window.setTimeout(() => setToast(""), 2400);
+      return;
+    }
     if (plannedWords.length === 0 && studyWords.length === 0) {
       setToast("词库里还没有单词，先去导入一批吧");
       window.setTimeout(() => setToast(""), 2400);
@@ -470,7 +478,8 @@ export default function Home() {
       return;
     }
     setWordIndex(0);
-    setStudyQueue(shuffleWords(plannedWords.slice(0, dailyWords)).map((word) => ({ word, repeat: false })));
+    const candidates = words ? [...plannedWords.filter(word => !wordProgress[word.id]), ...plannedWords.filter(word => wordProgress[word.id])] : plannedWords;
+    setStudyQueue(shuffleWords(candidates.slice(0, dailyWords)).map((word) => ({ word, repeat: false })));
     setStep("meaning");
     setSelected(null);
     setTypedAnswer("");
@@ -481,10 +490,21 @@ export default function Home() {
   }
 
   async function saveProgress(word: StudyWord, rating: MemoryRating) {
-    if (!user || word.id < 0) return;
+    if (!user || (word.id < 0 && word.id > -90000)) return;
     const intervalDays = rating === "mastered" ? 36500 : rating === "again" ? 0 : rating === "hard" ? 1 : rating === "good" ? 3 : 7;
     const nextReviewAt = new Date(Date.now() + intervalDays * 24 * 60 * 60 * 1000).toISOString();
     const level = rating === "mastered" ? 5 : rating === "again" ? 0 : rating === "hard" ? 1 : rating === "good" ? 2 : 3;
+    if (word.id <= -90000) {
+      try {
+        const key = `korean-guide-supplemental:${user.id}`;
+        const records = JSON.parse(window.localStorage.getItem(key) ?? "{}");
+        const record: WordProgress = { word_id: word.id, meaning_level: level, listening_level: level, review_count: (records[word.id]?.review_count ?? 0) + 1, next_review_at: nextReviewAt, last_reviewed_at: new Date().toISOString() };
+        records[word.id] = record;
+        window.localStorage.setItem(key, JSON.stringify(records));
+        setWordProgress(previous => ({ ...previous, [word.id]: record }));
+      } catch { setToast("当前浏览器无法保存新增课程进度，请检查存储设置"); }
+      return;
+    }
     const { data: previous } = await supabase
       .from("user_word_progress")
       .select("review_count")
@@ -1081,23 +1101,24 @@ function StudyCard({
   onSpeak: (text: string) => void;
   onWordTap: (token: string, target: HTMLElement) => void;
 }) {
+  const optionPool = word.tags.includes("入场check") ? allWords.filter(candidate => candidate.tags.includes("入场check")) : allWords.filter(candidate => !candidate.tags.includes("入场check"));
   const meaningOptions = buildStudyOptions(
     word.meaning,
-    [...allWords.map((candidate) => candidate.meaning), ...fallbackMeaningDistractors],
+    [...optionPool.map((candidate) => candidate.meaning), ...fallbackMeaningDistractors],
     `${word.id}-meaning`,
   );
   const reverseOptions = buildStudyOptions(
     word.korean,
-    [...allWords.map((candidate) => candidate.korean), ...fallbackKoreanDistractors],
+    [...optionPool.map((candidate) => candidate.korean), ...fallbackKoreanDistractors],
     `${word.id}-reverse`,
   );
   const recallOptions = buildStudyOptions(
     word.korean,
-    [...allWords.map((candidate) => candidate.korean), ...fallbackKoreanDistractors],
+    [...optionPool.map((candidate) => candidate.korean), ...fallbackKoreanDistractors],
     `${word.id}-recall`,
   );
   if (step === "meaning") return (
-    <div className="learning-card">
+    <div className={`learning-card ${word.tags.includes("入场check") ? "sentence-learning" : ""}`}>
       <p className="eyebrow">ROUND 1 · 听词选义</p>
       <button className="sound-button" aria-label="播放发音" onClick={() => onSpeak(word.korean)}>♬</button>
       <WordTrigger className="question-word tap-headword" token={word.korean} onWordTap={onWordTap} />
@@ -1111,7 +1132,7 @@ function StudyCard({
     </div>
   );
   if (step === "reverse") return (
-    <div className="learning-card">
+    <div className={`learning-card ${word.tags.includes("入场check") ? "sentence-learning" : ""}`}>
       <p className="eyebrow">ROUND 2 · 汉义选词</p>
       <h2 className="question-word meaning-question">{word.meaning}</h2>
       <div className="answer-grid compact">
@@ -1213,7 +1234,8 @@ function normalizeAnswer(value: string) {
 
 function isAcceptedMeaning(value: string, meaning: string) {
   const answer = normalizeAnswer(value);
-  const accepted = meaning.split(/[·/、，,；;]+/).map(normalizeAnswer).filter(Boolean);
+  const definition = meaning.replace(/（同义词：[^）]*）/g, "");
+  const accepted = definition.split(/[·/、，,；;]+/).map(normalizeAnswer).filter(Boolean);
   return accepted.includes(answer) || normalizeAnswer(meaning) === answer;
 }
 
@@ -1451,12 +1473,17 @@ function ImportPage({ allowed, onImported }: { allowed: boolean; onImported: () 
 type SceneCard = (typeof sceneBooks)[number] & { count: number; progress: number };
 
 function ScenesPage({ books, words, progress, dailyWords, activeSceneTitle, setActiveSceneTitle, startStudy, onWordTap }: { books: SceneCard[]; words: StudyWord[]; progress: Record<number, WordProgress>; dailyWords: number; activeSceneTitle: string; setActiveSceneTitle: (title: (typeof sceneBooks)[number]["title"]) => void; startStudy: (words?: StudyWord[]) => void; onWordTap: (token: string, target: HTMLElement) => void }) {
+  const entryCheck = words.filter(word => word.tags.includes("入场check"));
+  const entryReady = entryCheck.filter(word => (progress[word.id]?.meaning_level ?? 0) < 5);
   const activeScene = books.find((book) => book.title === activeSceneTitle) ?? books[0];
-  const sceneWords = activeScene ? words.filter((word) => word.tags.some((tag) => (activeScene.tags as readonly string[]).includes(tag))) : [];
+  const sceneWords = activeScene ? words.filter((word) => !word.tags.includes("入场check") && word.tags.some((tag) => (activeScene.tags as readonly string[]).includes(tag))) : [];
   const readyWords = sceneWords.filter((word) => !progress[word.id] || Math.min(progress[word.id].meaning_level, progress[word.id].listening_level) < 2);
   return <div className="content inner-page">
     <div className="page-title"><div><p className="eyebrow">FANDOM KOREAN · REAL SITUATIONS</p><h1>追星场景词书</h1><p>先选你最近会遇到的场景，再把需要说出口的词练熟。</p></div></div>
     <div className="scene-tabs" role="tablist" aria-label="选择追星场景">{books.map((book) => <button key={book.title} role="tab" aria-selected={book.title === activeScene?.title} className={book.title === activeScene?.title ? "active" : ""} onClick={() => setActiveSceneTitle(book.title)}>{book.icon} {book.title}<small>{book.count}</small></button>)}</div>
+    {activeSceneTitle === "线下活动" && entryCheck.length > 0 && <button className="entry-check-course" onClick={() => startStudy(entryReady)} disabled={entryReady.length === 0}>
+      <span><small>句子课 · {entryCheck.length} 条</small><strong>入场check</strong><span>一轮 check · 二轮 check · 工作人员交流</span><small>新增内容的进度暂存于当前浏览器</small></span><b>{entryReady.length ? "开始学习 →" : "已全部掌握"}</b>
+    </button>}
     {activeScene && <section className="scene-detail">
       <div className={`scene-detail-cover ${activeScene.color}`}><span>{activeScene.icon}</span><div><p className="eyebrow">SCENE WORD BOOK</p><h2>{activeScene.title}</h2><p>{activeScene.desc}</p></div><strong>{activeScene.count}<small>词</small></strong></div>
       <div className="scene-detail-body"><div><h3>这一组先学什么</h3><p>{readyWords.length > 0 ? `这里有 ${readyWords.length} 个还不稳定的词。每次从中选 ${Math.min(dailyWords, readyWords.length)} 个练习。` : "这组词已经练得很稳了，可以换一个场景。"}</p><div className="scene-word-chips">{sceneWords.slice(0, 12).map((word) => <span key={word.id}><WordTrigger className="scene-word" token={word.korean} onWordTap={onWordTap} />{word.meaning}</span>)}</div></div><button className="primary-button" onClick={() => startStudy(readyWords.length > 0 ? readyWords : sceneWords)} disabled={sceneWords.length === 0}>{readyWords.length > 0 ? "开始本场景练习" : "复习本场景"} <span>→</span></button></div>

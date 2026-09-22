@@ -13,7 +13,7 @@
     "deploy": "vinext build && wrangler deploy",
     "build:static": "npm run validate:word-data && ./scripts/build-static.sh",
     "generate:word-data": "node scripts/generate-word-data.mjs",
-    "validate:word-data": "node scripts/generate-word-data.mjs --check && node scripts/generate-talk-glosses.mjs --check",
+    "validate:word-data": "node scripts/generate-word-data.mjs --check && node scripts/generate-talk-glosses.mjs --check && node scripts/generate-supplemental.mjs --check",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
