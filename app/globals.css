@@ -61,10 +61,7 @@ button { color: inherit; }
 .icon-button.streak-bubble:active { transform: scale(.97); }
 .streak-bubble.is-active { border-color: #ed93b1; }
 .streak-bubble.is-empty { border-color: #b4b2a9; }
-.streak-heart { width: 20px; height: 20px; flex: 0 0 auto; overflow: visible; }
-.streak-heart path { fill: #f4c0d1; }
-.streak-bubble.is-empty .streak-heart path { fill: #b4b2a9; }
-.streak-heart polyline { fill: none; stroke: white; stroke-width: 1.8px; stroke-linecap: round; stroke-linejoin: round; }
+.streak-heart { width: 22px; height: 22px; flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 20px; font-weight: 400; line-height: 1; }
 .streak-value { color: #111827; font-size: 11px; font-weight: 800; line-height: 1; letter-spacing: -.02em; }
 .streak-bubble.is-empty .streak-value { color: #b4b2a9; }
 .content { max-width: 1220px; margin: 0 auto; padding: 48px 54px 72px; }
@@ -261,6 +258,10 @@ button { color: inherit; }
 .study-progress { height: 4px; border-radius: 4px; background: #e7eaf0; overflow: hidden; }
 .study-progress i { display: block; height: 100%; background: var(--blue); }
 .learning-card { flex: 1; background: white; margin: 18px; border: 1px solid var(--line); border-radius: 16px; padding: 38px 50px; display: flex; flex-direction: column; justify-content: center; }
+.translation-choice { text-align: center; gap: 20px; animation: talk-enter .25s ease-out; }
+.translation-choice h2, .translation-choice p { margin: 0; }
+.translation-choice > p:not(.eyebrow) { color: var(--muted); }
+.translation-choice button { justify-content: center; }
 .center-card { align-items: center; text-align: center; }
 .sound-button { width: 50px; height: 50px; border: 0; border-radius: 50%; background: var(--blue-soft); color: var(--blue-strong); cursor: pointer; font-size: 20px; }
 .center-card h2 { margin: 18px 0 4px; font-size: 56px; letter-spacing: -.06em; }
@@ -426,6 +427,24 @@ button { color: inherit; }
 .talk-steps { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 22px; }
 .talk-steps span { border: 1px solid var(--line); padding: 10px 13px; border-radius: 8px; font-size: 9px; color: #666b73; }
 .talk-page { position: relative; }
+.talk-library-title { align-items: flex-end; gap: 16px; }
+.talk-filters { display: flex; gap: 10px; margin-left: auto; }
+.talk-filters label { display: grid; gap: 5px; color: #788493; font-size: 10px; }
+.talk-filters select { max-width: 140px; min-height: 38px; padding: 8px 24px 8px 10px; border: 1px solid #dce4eb; border-radius: 10px; background: white; color: #405769; font: inherit; font-size: 12px; cursor: pointer; }
+.talk-filter-empty { grid-column: 1 / -1; padding: 48px 20px; text-align: center; color: var(--muted); }
+.talk-filter-empty button { border: 0; border-radius: 10px; padding: 10px 15px; background: #e3f1ff; color: #3e6c93; cursor: pointer; }
+.talk-token-meaning { color: #253e50; font-size: 14px; line-height: 1.7; margin: 0 0 12px; }
+.talk-translation { border-top: 1px solid #edf0f3; margin: 10px 0; padding-top: 8px; }
+.talk-translation p { margin: 5px 0; font-size: 12px; line-height: 1.7; color: #657280; }
+.talk-translation p[lang=ko] { color: #303a44; }
+.talk-usage-card { max-height: min(70vh, 500px); overflow-y: auto; }
+@media (max-width: 760px) {
+  .page-title.talk-library-title { flex-direction: row; align-items: flex-end; flex-wrap: wrap; }
+  .talk-library-title h1 { font-size: 25px; }
+  .talk-library-title .eyebrow { font-size: 8px; }
+  .talk-filters { gap: 6px; }
+  .talk-filters select { max-width: 110px; padding-right: 16px; font-size: 11px; }
+}
 .talk-load-state { min-height: 420px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 18px; color: var(--muted); font-size: 12px; animation: talk-enter .35s ease both; }
 .talk-loading-spinner { width: 30px; height: 30px; border: 2px solid #e1eef9; border-top-color: #80bcea; border-radius: 50%; animation: talk-spin 1s linear infinite, talk-pulse 1.6s ease-in-out infinite; }
 .talk-enter { animation: talk-enter .3s ease both; }

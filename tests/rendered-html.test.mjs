@@ -2,10 +2,45 @@ import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
 import { readFile, stat } from "node:fs/promises";
 import test from "node:test";
+import vm from "node:vm";
+import ts from "typescript";
 import { buildStudyOptions } from "../lib/study-options.ts";
 import { isLegacyExample, refreshLegacyExamples } from "../lib/example-updates.ts";
 
 const root = new URL("../", import.meta.url);
+
+test("listening choices finish before optional translation starts", async () => {
+  const source = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
+  const handlers = source.slice(source.indexOf("  async function nextStudyStep()"), source.indexOf("\n  return (\n    <main"));
+  const state = { step: "recall", wordIndex: 0, studyQueue: [{ word: { id: 1 }, repeat: false }, { word: { id: 2 }, repeat: false }], current: { id: 1, meaning: "期待" }, recallReadyToRate: false, typedAnswer: "", saved: 0, open: true };
+  const context = vm.createContext({ ...state, window: { speechSynthesis: { cancel() {} }, setTimeout() {} }, shuffleQueue: (items) => items, isAcceptedMeaning: (answer, meaning) => answer === meaning });
+  for (const [setter, key] of Object.entries({ setStep: "step", setWordIndex: "wordIndex", setStudyQueue: "studyQueue", setRecallReadyToRate: "recallReadyToRate", setTypedAnswer: "typedAnswer", setSelected: "selected", setRecallFeedback: "feedback", setRecallFeedbackTone: "tone", setStudyOpen: "open", setToast: "toast", setDataVersion: "version" })) context[setter] = (value) => { context[key] = typeof value === "function" ? value(context[key] ?? 0) : value; };
+  context.saveProgress = async () => { context.saved++; };
+  vm.runInContext(ts.transpile(handlers, { target: ts.ScriptTarget.ES2022 }), context);
+  await context.rateWord("good");
+  assert.equal(context.step, "recall");
+  assert.equal(context.wordIndex, 1);
+  await context.rateWord("good");
+  assert.equal(context.step, "translation-choice");
+  context.startTranslation();
+  assert.equal(context.step, "translate");
+  assert.equal(context.wordIndex, 0);
+  context.typedAnswer = "错误";
+  await context.nextStudyStep();
+  assert.equal(context.tone, "wrong");
+  assert.equal(context.wordIndex, 0);
+  context.typedAnswer = "期待";
+  await context.nextStudyStep();
+  assert.equal(context.tone, "correct");
+  assert.equal(context.wordIndex, 0);
+  await context.nextStudyStep();
+  assert.equal(context.wordIndex, 1);
+  assert.equal(context.saved, 2, "optional translation does not duplicate review writes");
+  context.finishStudy();
+  assert.equal(context.open, false);
+  const recallCard = source.slice(source.indexOf('  if (step === "recall") return ('), source.indexOf('  if (step === "translate") return ('));
+  assert.ok(!recallCard.includes("<input"), "listening choices must not contain the Chinese input");
+});
 
 test("generated vocabulary data is complete and deterministic", async () => {
   const result = spawnSync(process.execPath, ["scripts/generate-word-data.mjs", "--check"], {
@@ -79,6 +114,11 @@ test("Talk listening loads every person-and-scene lesson with aligned audio", as
     assert.ok(source.title_ko && source.title_zh);
     assert.ok(source.lines.length > 0);
     assert.ok(source.lines.every((line) => line.t < line.end && line.ko && line.zh));
+    for (const line of source.lines) {
+      for (const token of line.ko.match(/\p{sc=Hangul}+/gu) ?? []) {
+        assert.ok(line.glosses?.[token]?.trim(), `${item.id}: no definition for ${token}`);
+      }
+    }
     assert.ok(source.phrases.length >= 3 && source.phrases.length <= 5);
     assert.ok(Object.keys(source.usage).length > 0);
     assert.ok(audio.size > 500_000);

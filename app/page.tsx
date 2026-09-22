@@ -7,7 +7,7 @@ import { refreshLegacyExamples } from "../lib/example-updates";
 import { supabase } from "../lib/supabase";
 
 type Tab = "today" | "words" | "scenes" | "talk" | "import";
-type StudyStep = "meaning" | "reverse" | "recall";
+type StudyStep = "meaning" | "reverse" | "recall" | "translation-choice" | "translate";
 type FeedbackTone = "correct" | "wrong" | "answer" | null;
 type AccountAction = "signout" | "delete" | null;
 type StudyWord = {
@@ -73,6 +73,25 @@ const sceneBooks = [
   { icon: "⌁", title: "泡泡与数字生活", desc: "泡泡、社媒、直播和短视频", color: "yellow", tags: ["数字生活", "泡泡", "社交媒体"] },
   { icon: "☻", title: "饭圈用语", desc: "缩写、物料、梗与粉丝交流", color: "blue", tags: ["饭圈", "口语", "周边"] },
 ] as const;
+
+// 为 Supabase 鉴权请求加上超时：supabase-js 默认不设超时，一旦 supabase.co 被墙
+// （国内常见），请求会被“黑洞”既不 resolve 也不 reject，UI 永远卡在“请稍候…”。
+// 这里用 Promise.race 兜一个超时，明确告诉用户是网络/梯子问题，而不是干等。
+function withTimeout<T>(promise: Promise<T>, ms: number, timeoutMessage: string): Promise<T> {
+  return new Promise<T>((resolve, reject) => {
+    const timer = setTimeout(() => reject(new Error(timeoutMessage)), ms);
+    promise.then(
+      (value) => {
+        clearTimeout(timer);
+        resolve(value);
+      },
+      (error) => {
+        clearTimeout(timer);
+        reject(error);
+      },
+    );
+  });
+}
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<Tab>("today");
@@ -215,7 +234,7 @@ export default function Home() {
   }, [accountAction, accountActionLoading]);
 
   useEffect(() => {
-    if (!studyOpen || !autoSpeak) return;
+    if (!studyOpen || !autoSpeak || step === "translation-choice") return;
     const timer = window.setTimeout(() => speakKorean(current.korean), 120);
     return () => window.clearTimeout(timer);
   }, [studyOpen, autoSpeak, step, wordIndex, current.korean]);
@@ -356,35 +375,52 @@ export default function Home() {
     setAuthLoading(true);
     setAuthMessage("");
 
-    if (authMode === "signup") {
-      const { data, error } = await supabase.auth.signUp({
-        email: authEmail,
-        password: authPassword,
-        options: { emailRedirectTo: window.location.origin },
-      });
-      if (error) {
-        setAuthMessage(error.message);
-      } else if (!data.session) {
-        setAuthMessage("注册成功，请打开邮箱里的确认链接，再回来登录。");
+    const AUTH_TIMEOUT_MS = 12000;
+    const timeoutMessage =
+      "登录请求超时。supabase.co 在国内被墙，请确认已开启梯子（且梯子能直通该域名，规则模式可能绕开它），或稍后重试。";
+
+    try {
+      if (authMode === "signup") {
+        const { data, error } = await withTimeout(
+          supabase.auth.signUp({
+            email: authEmail,
+            password: authPassword,
+            options: { emailRedirectTo: window.location.origin },
+          }),
+          AUTH_TIMEOUT_MS,
+          timeoutMessage,
+        );
+        if (error) {
+          setAuthMessage(error.message);
+        } else if (!data.session) {
+          setAuthMessage("注册成功，请打开邮箱里的确认链接，再回来登录。");
+        } else {
+          setAuthOpen(false);
+          setToast("注册成功，已经登录");
+          window.setTimeout(() => setToast(""), 2500);
+        }
       } else {
-        setAuthOpen(false);
-        setToast("注册成功，已经登录");
-        window.setTimeout(() => setToast(""), 2500);
+        const { error } = await withTimeout(
+          supabase.auth.signInWithPassword({
+            email: authEmail,
+            password: authPassword,
+          }),
+          AUTH_TIMEOUT_MS,
+          timeoutMessage,
+        );
+        if (error) {
+          setAuthMessage(error.message);
+        } else {
+          setAuthOpen(false);
+          setToast("登录成功，欢迎回来");
+          window.setTimeout(() => setToast(""), 2500);
+        }
       }
-    } else {
-      const { error } = await supabase.auth.signInWithPassword({
-        email: authEmail,
-        password: authPassword,
-      });
-      if (error) {
-        setAuthMessage(error.message);
-      } else {
-        setAuthOpen(false);
-        setToast("登录成功，欢迎回来");
-        window.setTimeout(() => setToast(""), 2500);
-      }
+    } catch (err) {
+      setAuthMessage(err instanceof Error ? err.message : "登录失败，请稍后重试。");
+    } finally {
+      setAuthLoading(false);
     }
-    setAuthLoading(false);
   }
 
   function handleProfileClick() {
@@ -568,8 +604,9 @@ export default function Home() {
     setTypedAnswer("");
     setRecallReadyToRate(false);
     if (answer === current.korean) {
-      setRecallFeedback("✓ 答对了，请写出中文意思");
+      setRecallFeedback("✓ 答对了");
       setRecallFeedbackTone("correct");
+      setRecallReadyToRate(true);
     } else {
       setRecallFeedback("还不对，再听一次试试。");
       setRecallFeedbackTone("wrong");
@@ -606,10 +643,11 @@ export default function Home() {
   }
 
   async function nextStudyStep() {
-    if (step === "recall") {
-      if (selected !== current.korean) {
-        setRecallFeedback("先选对刚才听到的韩语，再继续。");
-        setRecallFeedbackTone("wrong");
+    if (step === "translate") {
+      if (recallReadyToRate) {
+        if (wordIndex === studyQueue.length - 1) { finishStudy(); return; }
+        setWordIndex((value) => value + 1);
+        resetStudyAnswer();
         return;
       }
       if (!isAcceptedMeaning(typedAnswer, current.meaning)) {
@@ -642,6 +680,29 @@ export default function Home() {
     setRecallReadyToRate(false);
   }
 
+  function resetStudyAnswer() {
+    setSelected(null);
+    setTypedAnswer("");
+    setRecallFeedback("");
+    setRecallFeedbackTone(null);
+    setRecallReadyToRate(false);
+  }
+
+  function finishStudy() {
+    setStudyOpen(false);
+    setDataVersion((value) => value + 1);
+    setToast("本组完成。系统已经排好下一次复习");
+    window.setTimeout(() => setToast(""), 2800);
+  }
+
+  function startTranslation() {
+    // Repeated review items should appear only once in this optional training.
+    setStudyQueue(shuffleQueue(Array.from(new Map(studyQueue.map((item) => [item.word.id, { word: item.word, repeat: false }])).values())));
+    setWordIndex(0);
+    resetStudyAnswer();
+    setStep("translate");
+  }
+
   async function rateWord(rating: MemoryRating) {
     await saveProgress(current, rating);
     const shouldRepeat = rating === "again" || rating === "hard";
@@ -660,10 +721,9 @@ export default function Home() {
       return;
     }
 
-    setStudyOpen(false);
-    setDataVersion((value) => value + 1);
-    setToast("本组完成。系统已经排好下一次复习");
-    window.setTimeout(() => setToast(""), 2800);
+    resetStudyAnswer();
+    setStep("translation-choice");
+    window.speechSynthesis?.cancel();
   }
 
   return (
@@ -732,10 +792,7 @@ export default function Home() {
           </div>
           <div className="top-actions">
             <button className={`icon-button streak-bubble ${streakDays > 0 ? "is-active" : "is-empty"}`} aria-label={`连续学习 ${streakDays} 天`} onClick={() => setActiveTab("today")}>
-              <svg className="streak-heart" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                {streakDays === 0 && <polyline points="8.4,7.4 11.2,10.1 9.7,12.4 13.2,15.7" />}
-              </svg>
+              <span className="streak-heart" aria-hidden="true">{streakDays > 0 ? "🩷" : "🩶"}</span>
               <span className="streak-value">{streakDays > 0 ? `+${streakDays}` : "0"}</span>
             </button>
           </div>
@@ -747,7 +804,7 @@ export default function Home() {
               <div>
                 <p className="eyebrow">TODAY · DAILY PLAN</p>
                 <h1>오늘도 같이 해요 <span>↗</span></h1>
-                <p>今天也一起学吧。你的复习已经为你排好了。</p>
+                <p>今天也一起学吧～你的复习已经为你排好了。</p>
               </div>
               <button className="settings-link" onClick={handleProfileClick}>
                 我的设置 <span>↗</span>
@@ -956,9 +1013,16 @@ export default function Home() {
           <div className="study-modal">
             <header className="study-header">
               <button onClick={() => setStudyOpen(false)} aria-label="关闭学习">×</button>
-              <div className="study-progress"><i style={{ width: `${((wordIndex + 1) / Math.max(studyQueue.length, 1)) * 100}%` }} /></div>
-              <div className="study-header-actions"><button className="mastery-header" onClick={() => void markCurrentMastered()}>完全认识</button><span>{wordIndex + 1} / {studyQueue.length}</span></div>
+              {step !== "translation-choice" && <><div className="study-progress"><i style={{ width: `${((wordIndex + 1) / Math.max(studyQueue.length, 1)) * 100}%` }} /></div>
+              <div className="study-header-actions"><button className="mastery-header" onClick={() => void markCurrentMastered()}>完全认识</button><span>{wordIndex + 1} / {studyQueue.length}</span></div></>}
             </header>
+            {step === "translation-choice" ? <section className="learning-card translation-choice">
+              <p className="eyebrow">听音选词已完成</p>
+              <h2>要试试听音翻译吗？</h2>
+              <p>听单词，写出中文意思。</p>
+              <button className="primary-button" onClick={startTranslation}>开始听音翻译 →</button>
+              <button className="secondary-button" onClick={finishStudy}>今天先到这里</button>
+            </section> : <>
             <StudyCard step={step} word={current} allWords={studyWords} selected={selected} setSelected={setSelected} typedAnswer={typedAnswer} setTypedAnswer={updateRecallAnswer} recallFeedback={recallFeedback} recallFeedbackTone={recallFeedbackTone} onRecallOptionSelect={chooseRecallOption} onSpeak={speakKorean} onWordTap={openWordPopover} />
             <footer className="study-footer">
               {step === "recall" && recallReadyToRate ? (
@@ -971,11 +1035,12 @@ export default function Home() {
               ) : (
                 <>
                   <span className="study-tip">{studyQueue[wordIndex]?.repeat ? "这是本轮再次出现的词" : "按自己的真实记忆作答"}</span>
-                  {step === "recall" && <button className="forgot-button" onClick={revealRecallAnswer}>忘记了</button>}
-                  <button className="primary-button" onClick={nextStudyStep} disabled={(step === "meaning" || step === "reverse") && !selected || step === "recall" && (selected !== current.korean || !typedAnswer.trim())}>{step === "recall" ? "确认答案" : "继续"} <span>→</span></button>
+                  {(step === "recall" || step === "translate") && !recallReadyToRate && <button className="forgot-button" onClick={revealRecallAnswer}>忘记了</button>}
+                  {step !== "recall" && <button className="primary-button" onClick={nextStudyStep} disabled={(step === "meaning" || step === "reverse") && !selected || step === "translate" && !recallReadyToRate && !typedAnswer.trim()}>{step === "translate" && !recallReadyToRate ? "确认答案" : "继续"} <span>→</span></button>}
                 </>
               )}
             </footer>
+            </>}
           </div>
         </div>
       )}
@@ -1066,9 +1131,16 @@ function StudyCard({
           <button key={answer} className={selected === answer ? "selected" : ""} onClick={() => onRecallOptionSelect(answer)}>{answer}</button>
         ))}
       </div>
-      {selected === word.korean && <label className="spelling-input"><span>写出它对应的中文意思</span><input value={typedAnswer} onChange={(event) => setTypedAnswer(event.target.value)} placeholder="输入中文" autoFocus /></label>}
       {recallFeedback && <p className={`answer-note recall-feedback ${recallFeedbackTone ?? ""}`}>{recallFeedback}</p>}
       {recallFeedbackTone === "answer" && <button className="answer-audio" onClick={() => onSpeak(word.korean)}>再听一次</button>}
+    </div>
+  );
+  if (step === "translate") return (
+    <div className="learning-card">
+      <p className="eyebrow">听音翻译</p>
+      <button className="big-audio-button blue-audio-button" aria-label="播放单词发音" onClick={() => onSpeak(word.korean)}>♬<small>再听一次</small></button>
+      <label className="spelling-input"><span>写出你听到的中文意思</span><input key={word.id} value={typedAnswer} onChange={(event) => setTypedAnswer(event.target.value)} placeholder="输入中文" autoFocus /></label>
+      {recallFeedback && <p role="status" className={`answer-note recall-feedback ${recallFeedbackTone ?? ""}`}>{recallFeedback}</p>}
     </div>
   );
   return null;
@@ -1399,6 +1471,7 @@ type TalkLine = {
   ko: string;
   zh: string;
   note?: string;
+  glosses: Record<string, string>;
 };
 type TalkPhrase = {
   ko: string;
@@ -1433,18 +1506,23 @@ type TalkManifestItem = {
   theme: TalkTheme;
 };
 type TalkLesson = { meta: TalkManifestItem; source: TalkSource };
-type TalkUsageState = { token: string; left: number; top: number };
+type TalkUsageState = { token: string; lineIndex: number; wholeLine: boolean; left: number; top: number };
 
 const talkStages = ["盲听全貌", "捕捉韩文", "对照听懂", "带走一句"] as const;
 const talkSpeeds = [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5];
+function talkDurationBucket(duration: number) {
+  return duration <= 30 ? "short" : duration <= 60 ? "medium" : "long";
+}
 function TalkLabels({ meta }: { meta: TalkManifestItem }) {
   const scene = meta.where === "live" ? "live" : meta.where === "演唱会" ? "concert" : "broadcast";
-  const duration = meta.duration <= 30 ? "short" : meta.duration <= 60 ? "medium" : "long";
+  const duration = talkDurationBucket(meta.duration);
   return <span className="talk-labels"><b className="talk-person">{meta.who}</b><span className={`talk-scene ${scene}`}>{meta.where}</span><span className={`talk-duration ${duration}`}>{formatTalkTime(meta.duration)}</span></span>;
 }
 function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<string, number> }) {
   const [lessons, setLessons] = useState<TalkLesson[]>([]);
   const [lessonIndex, setLessonIndex] = useState<number | null>(null);
+  const [sceneFilter, setSceneFilter] = useState("all");
+  const [durationFilter, setDurationFilter] = useState("all");
   const [loadError, setLoadError] = useState("");
   const [stage, setStage] = useState<TalkStage>(0);
   const [currentLine, setCurrentLine] = useState(0);
@@ -1509,7 +1587,11 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
   }
 
   function selectStage(nextStage: TalkStage) {
+    const audio = audioRef.current;
+    const duration = audio && Number.isFinite(audio.duration) ? audio.duration : activeLesson?.meta.duration ?? 0;
+    const finished = audio?.ended || (duration > 0 && (audio?.currentTime ?? audioTime) >= duration - 0.05);
     stopTalk();
+    if (finished) seekTalk(0);
     setStage(nextStage);
     setSubtitlesHidden(false);
     setOpenGrammarLine(null);
@@ -1544,10 +1626,13 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
     if (source) seekTalk(source.lines[index].t);
   }
 
-  function openUsageCard(token: string, target: HTMLElement) {
+  function openUsageCard(token: string, target: HTMLElement, lineIndex: number, wholeLine = false) {
+    selectLine(lineIndex);
     const rect = target.getBoundingClientRect();
     setUsageCard({
       token,
+      lineIndex,
+      wholeLine,
       left: Math.min(Math.max(rect.left, 12), Math.max(12, window.innerWidth - 312)),
       top: Math.min(rect.bottom + 9, Math.max(12, window.innerHeight - 242)),
     });
@@ -1585,18 +1670,26 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
   if (lessons.length === 0) return <div className="content inner-page talk-page"><div className="talk-load-state" role="status"><span className="talk-loading-spinner" aria-hidden="true" /><span>正在准备听力素材…</span></div></div>;
 
   if (!source) return <div className="content inner-page talk-page talk-enter">
-    <div className="page-title"><div><p className="eyebrow">LISTEN IN CONTEXT</p><h1>Talk 听力</h1></div></div>
+    <div className="page-title talk-library-title"><div><p className="eyebrow">LISTEN IN CONTEXT</p><h1>Talk 听力</h1></div>
+      <div className="talk-filters">
+        <label><span>场景</span><select aria-label="筛选听力场景" value={sceneFilter} onChange={(event) => setSceneFilter(event.target.value)}><option value="all">全部场景</option><option value="live">live</option><option value="放送">放送</option><option value="演唱会">演唱会</option></select></label>
+        <label><span>时长</span><select aria-label="筛选听力时长" value={durationFilter} onChange={(event) => setDurationFilter(event.target.value)}><option value="all">全部时长</option><option value="short">≤30 秒</option><option value="medium">30–60 秒</option><option value="long">60 秒以上</option></select></label>
+      </div>
+    </div>
     <section className="talk-library" aria-label="选择听力素材">
-      {lessons.map((lesson, index) => <button key={lesson.meta.id} className="talk-lesson-card" onClick={() => selectLesson(index)}>
+      {lessons.map((lesson, index) => (sceneFilter === "all" || lesson.meta.where === sceneFilter) && (durationFilter === "all" || talkDurationBucket(lesson.meta.duration) === durationFilter) ? <button key={lesson.meta.id} className="talk-lesson-card" onClick={() => selectLesson(index)}>
         <TalkLabels meta={lesson.meta} />
         <strong>{lesson.source.title_zh}<small>{lesson.source.title_ko}</small></strong>
         <span>开始练习 →</span>
-      </button>)}
+      </button> : null)}
+      {!lessons.some((lesson) => (sceneFilter === "all" || lesson.meta.where === sceneFilter) && (durationFilter === "all" || talkDurationBucket(lesson.meta.duration) === durationFilter)) && <div className="talk-filter-empty"><p>这个组合暂时没有素材</p><button onClick={() => { setSceneFilter("all"); setDurationFilter("all"); }}>查看全部</button></div>}
     </section>
   </div>;
 
   const durationText = formatTalkTime(activeLesson!.meta.duration);
-  const usageEntry = usageCard ? findTalkUsage(usageCard.token, source.usage) : null;
+  const usageEntry = usageCard && !usageCard.wholeLine ? source.usage[usageCard.token] : null;
+  const usageLine = usageCard ? source.lines[usageCard.lineIndex] : null;
+  const tokenMeaning = usageCard ? usageLine?.glosses?.[usageCard.token] : null;
   const vocabEntry = usageCard ? talkWordMap.get(usageCard.token) ?? wordsByTalkId.get(formsMap[usageCard.token]) : null;
   const progress = Math.min(100, (audioTime / activeLesson!.meta.duration) * 100);
 
@@ -1635,9 +1728,9 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
             {source.lines.map((line, index) => {
               const isFutureHidden = stage === 1 && index > currentLine;
               const note = selectedNotes.get(index);
-              return <div ref={(node) => { lineRefs.current[index] = node; }} key={`${activeLesson!.meta.id}-${index}`} role="button" tabIndex={0} className={`talk-lyric-line ${index === currentLine ? "current" : index < currentLine ? "past" : "future"} ${isFutureHidden ? "spoiler-blank" : ""}`} onClick={() => selectLine(index)} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectLine(index); } }} aria-label={isFutureHidden ? `定位到第 ${index + 1} 句` : line.ko}>
+              return <div ref={(node) => { lineRefs.current[index] = node; }} key={`${activeLesson!.meta.id}-${index}`} role="button" tabIndex={0} className={`talk-lyric-line ${index === currentLine ? "current" : index < currentLine ? "past" : "future"} ${isFutureHidden ? "spoiler-blank" : ""}`} onClick={(event) => openUsageCard(line.ko, event.currentTarget, index, true)} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); openUsageCard(line.ko, event.currentTarget, index, true); } }} aria-label={isFutureHidden ? `定位到第 ${index + 1} 句` : line.ko}>
                 <span className="talk-line-copy">
-                  <strong>{isFutureHidden ? "" : stage === 2 ? renderTalkTappable(line.ko, openUsageCard) : line.ko}</strong>
+                  <strong>{isFutureHidden ? "" : renderTalkTappable(line.ko, (token, target) => openUsageCard(token, target, index))}</strong>
                   {stage === 2 && !isFutureHidden && <small>{line.zh}</small>}
                   {stage === 1 && !isFutureHidden && line.note && <em>{compactTalkNote(line.note)}</em>}
                 </span>
@@ -1669,25 +1762,19 @@ function TalkPage({ words, formsMap }: { words: StudyWord[]; formsMap: Record<st
       </footer>
     </article>
 
-    {usageCard && <section className="talk-usage-card" role="dialog" aria-label={`${usageCard.token} 的用法`} style={{ left: usageCard.left, top: usageCard.top }}>
+    {usageCard && usageLine && <section className="talk-usage-card" role="dialog" aria-label={usageCard.wholeLine ? "字幕翻译" : `${usageCard.token} 的用法`} style={{ left: usageCard.left, top: usageCard.top }}>
       <button className="talk-usage-close" onClick={() => setUsageCard(null)} aria-label="关闭用法卡">×</button>
-      <h3>{usageEntry?.korean ?? usageCard.token}</h3>
+      <h3>{usageCard.wholeLine ? "这一句" : usageCard.token}</h3>
       {usageEntry?.rom && <p className="talk-romanization">{usageEntry.rom}</p>}
-      <dl>
-        <div><dt>意思</dt><dd>{usageEntry?.mean ?? vocabEntry?.meaning ?? "结合当前整句理解"}</dd></div>
-        <div><dt>场合</dt><dd>{usageEntry?.when ?? `${source.context.where}中的自然表达`}</dd></div>
-        <div><dt>语气</dt><dd>{usageEntry?.tone ?? "结合说话人的停顿和上下文理解"}</dd></div>
-        <div><dt>也常说</dt><dd>{usageEntry?.also ?? vocabEntry?.example ?? "暂时没有收录近似说法"}</dd></div>
-      </dl>
+      {!usageCard.wholeLine && <p className="talk-token-meaning">{tokenMeaning ?? usageEntry?.mean ?? vocabEntry?.meaning ?? <a href={`https://korean.dict.naver.com/kozhdict/#/search?query=${encodeURIComponent(usageCard.token)}`} target="_blank" rel="noreferrer">在 Naver 词典查 →</a>}</p>}
+      <div className="talk-translation"><p lang="ko">{usageLine.ko}</p><p>{usageLine.zh}</p></div>
+      {usageEntry && <dl>
+        <div><dt>场合</dt><dd>{usageEntry.when}</dd></div>
+        <div><dt>语气</dt><dd>{usageEntry.tone}</dd></div>
+        <div><dt>也常说</dt><dd>{usageEntry.also}</dd></div>
+      </dl>}
     </section>}
   </div>;
-}
-
-function findTalkUsage(token: string, usage: Record<string, TalkUsage>) {
-  const direct = usage[token];
-  if (direct) return { ...direct, korean: token };
-  const match = Object.entries(usage).find(([phrase]) => phrase.includes(token) || token.includes(phrase));
-  return match ? { ...match[1], korean: match[0] } : null;
 }
 
 function resolveTalkPhrase(lines: TalkLine[], phrase: TalkPhrase) {
