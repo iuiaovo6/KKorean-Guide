@@ -578,12 +578,12 @@ export default function Home() {
   }
 
   function openWordPopover(token: string, target: HTMLElement) {
-    const gloss = (wordGlosses as Record<string, { meaning: string; romanization: string }>)[token];
+    const gloss = (wordGlosses as Record<string, { meaning: string; romanization: string; type?: string }>)[token];
     const speech = speechMap[token];
     const exact = wordMap.get(token);
     const speechBase = speech?.base && speech.base !== token ? wordMap.get(speech.base) : undefined;
     const formEntryId = formsMap[token];
-    const resolved = speechBase ?? exact ?? (formEntryId === undefined ? null : wordsById.get(formEntryId) ?? null) ?? (gloss ? { id: 0, korean: token, meaning: gloss.meaning, romanization: gloss.romanization, type: "", example: "", translation: "", tags: [] } : null);
+    const resolved = speechBase ?? exact ?? (formEntryId === undefined ? null : wordsById.get(formEntryId) ?? null) ?? (gloss ? { id: 0, korean: token, meaning: gloss.meaning, romanization: gloss.romanization, type: gloss.type ?? "", example: "", translation: "", tags: [] } : null);
     const rect = target.getBoundingClientRect();
     setWordPopover({
       token,
