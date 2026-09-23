@@ -5,7 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { buildStudyOptions } from "../lib/study-options";
 import { refreshLegacyExamples } from "../lib/example-updates";
 import { mergeSupplemental } from "../lib/supplemental";
-import entryCheckGlosses from "../lib/entry-check-glosses.json";
+import wordGlosses from "../lib/word-glosses.json";
 import { supabase } from "../lib/supabase";
 
 type Tab = "today" | "words" | "scenes" | "talk" | "import";
@@ -578,13 +578,12 @@ export default function Home() {
   }
 
   function openWordPopover(token: string, target: HTMLElement) {
-    const isEntryCheck = studyOpen && current.tags.includes("入场check");
-    const gloss = isEntryCheck ? (entryCheckGlosses as Record<string, { meaning: string; romanization: string }>)[token] : undefined;
+    const gloss = (wordGlosses as Record<string, { meaning: string; romanization: string }>)[token];
     const speech = speechMap[token];
     const exact = wordMap.get(token);
     const speechBase = speech?.base && speech.base !== token ? wordMap.get(speech.base) : undefined;
     const formEntryId = formsMap[token];
-    const resolved = gloss ? { id: 0, korean: token, meaning: gloss.meaning, romanization: gloss.romanization, type: "", example: "", translation: "", tags: [] } : speechBase ?? exact ?? (formEntryId === undefined ? null : wordsById.get(formEntryId) ?? null);
+    const resolved = speechBase ?? exact ?? (formEntryId === undefined ? null : wordsById.get(formEntryId) ?? null) ?? (gloss ? { id: 0, korean: token, meaning: gloss.meaning, romanization: gloss.romanization, type: "", example: "", translation: "", tags: [] } : null);
     const rect = target.getBoundingClientRect();
     setWordPopover({
       token,
